@@ -1,9 +1,10 @@
-#LyX file created by tex2lyx 2.0.6
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
 \lyxformat 413
 \begin_document
 \begin_header
 \textclass report
 \use_default_options false
+\maintain_unincluded_children false
 \language english
 \language_package default
 \inputencoding utf8
@@ -17,12 +18,15 @@
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
+
 \graphics default
 \default_output_format default
 \output_sync 0
+\bibtex_command default
+\index_command default
 \paperfontsize 11
 \spacing single
-\use_hyperref 0
+\use_hyperref false
 \papersize a4paper
 \use_geometry true
 \use_amsmath 2
@@ -35,6 +39,10 @@
 \paperorientation portrait
 \suppress_date false
 \use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -53,133 +61,106 @@
 \begin_body
 
 \begin_layout Standard
-
-
 \begin_inset FormulaMacro
-\def\veraw #1#2#3{#1\models_{#2}#3}
+\newcommand{\veraw}[3]{#1\models_{#2}#3}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset FormulaMacro
-\def\vera #1#2{#1\models#2}
+\newcommand{\vera}[2]{#1\models#2}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset FormulaMacro
-\def\verita #1#2{#1\in V(#2)}
+\newcommand{\verita}[2]{#1\in V(#2)}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset FormulaMacro
-\def\entail #1#2{#1\models#2}
+\newcommand{\entail}[2]{#1\models#2}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset FormulaMacro
-\def\semantica #1#2#3{#1\vdash_{#2}#3}
+\newcommand{\semantica}[3]{#1\vdash_{#2}#3}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset FormulaMacro
-\def\semGen #1#2{#1\vdash#2}
+\newcommand{\semGen}[2]{#1\vdash#2}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset FormulaMacro
-\def\boxx #1{\square#1}
+\newcommand{\boxx}[1]{\square#1}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset FormulaMacro
-\def\diam #1{\diamond#1}
+\newcommand{\diam}[1]{\diamond#1}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset FormulaMacro
-\def\dia {\diamond a}
+\newcommand{\dia}{\diamond a}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset FormulaMacro
-\def\boa {\boxx a}
+\newcommand{\boa}{\boxx a}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset FormulaMacro
-\def\forhten #1#2#3{\forall#1#2\Rightarrow#3}
+\newcommand{\forhten}[3]{\forall#1#2\Rightarrow#3}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset FormulaMacro
-\def\implica #1#2{#1\Rightarrow#2}
+\newcommand{\implica}[2]{#1\Rightarrow#2}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Chapter
-
 Introduction
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset Formula $a$
 \end_inset
 
@@ -195,13 +176,10 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-
 se 
 \end_layout
 
 \begin_layout Itemize
-
-
 \begin_inset Formula $a$
 \end_inset
 
@@ -213,8 +191,6 @@ se
 \end_layout
 
 \begin_layout Itemize
-
-
 \begin_inset Formula $a$
 \end_inset
 
@@ -222,7 +198,9 @@ se
 \begin_inset Formula $a\lor b$
 \end_inset
 
- .... allora.... 
+ ....
+ allora....
+ 
 \begin_inset Formula $\mu\models_{\alpha}a$
 \end_inset
 
@@ -234,26 +212,21 @@ se
 \end_layout
 
 \begin_layout Section
-
 Formule di Logica modale e significato
 \end_layout
 
 \begin_layout Standard
-
-
-\begin_inset Tabular 
+\begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="3">
-<features tabularvalignment="middle" tabularwidth="0pt">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
-
-
+\begin_layout Plain Layout
 \begin_inset Formula $\diam{}{a\Rightarrow}\boxx a$
 \end_inset
 
@@ -265,8 +238,7 @@ Formule di Logica modale e significato
 <cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
-
+\begin_layout Plain Layout
 funzione parziale 
 \end_layout
 
@@ -275,9 +247,7 @@ funzione parziale
 <cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
-
-
+\begin_layout Plain Layout
 \begin_inset Formula $\forhten{\alpha}{:\,\alpha R\beta,\:\beta R\gamma}{\beta}=\gamma$
 \end_inset
 
@@ -295,22 +265,18 @@ funzione parziale
 \end_layout
 
 \begin_layout Standard
-
 Funzione parziale, dimostrazione
 \end_layout
 
 \begin_layout Standard
-
 .
 \end_layout
 
 \begin_layout Standard
-
 Ip) funzione parziale
 \end_layout
 
 \begin_layout Standard
-
 Ts) 
 \begin_inset Formula $\diam{}{a\Rightarrow}\boxx a$
 \end_inset
@@ -319,13 +285,10 @@ Ts)
 \end_layout
 
 \begin_layout Standard
-
 .
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset Formula $\diam{}a$
 \end_inset
 
@@ -337,8 +300,6 @@ Ts)
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset Formula $\diam{}a$
 \end_inset
 
@@ -362,7 +323,6 @@ Ts)
 \end_layout
 
 \begin_layout Standard
-
 da cui 
 \begin_inset Formula $\vera{\mu}{\implica{\diamond a}{\boxx a}}$
 \end_inset
@@ -371,17 +331,14 @@ da cui
 \end_layout
 
 \begin_layout Standard
-
 .
 \end_layout
 
 \begin_layout Standard
-
 .
 \end_layout
 
 \begin_layout Standard
-
 Ip) 
 \begin_inset Formula $\diam{}{a\Rightarrow}\boxx a$
 \end_inset
@@ -390,23 +347,20 @@ Ip)
 \end_layout
 
 \begin_layout Standard
-
 Ts) funzione parziale
 \end_layout
 
 \begin_layout Standard
-
 .
 \end_layout
 
 \begin_layout Standard
-
 .
 \end_layout
 
 \begin_layout Standard
-
-Per assurdo: suppongo non che la funzione non sia parziale. Se è così 
+Per assurdo: suppongo non che la funzione non sia parziale.
+ Se è così 
 \begin_inset Formula $\exists\alpha:$
 \end_inset
 
@@ -446,21 +400,17 @@ Per assurdo: suppongo non che la funzione non sia parziale. Se è così
 \end_layout
 
 \begin_layout Standard
-
-
-\begin_inset Tabular 
+\begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="3">
-<features tabularvalignment="middle" tabularwidth="0pt">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
-
-
+\begin_layout Plain Layout
 \begin_inset Formula $\diam{}{a\iff}\boxx a$
 \end_inset
 
@@ -472,8 +422,7 @@ Per assurdo: suppongo non che la funzione non sia parziale. Se è così
 <cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
-
+\begin_layout Plain Layout
 funzione totale 
 \end_layout
 
@@ -482,9 +431,7 @@ funzione totale
 <cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
-
-
+\begin_layout Plain Layout
 \begin_inset Formula $\forall\alpha\exists\,!\,\beta:\:\alpha R\beta$
 \end_inset
 
@@ -510,7 +457,6 @@ funzione totale
 \end_layout
 
 \begin_layout Standard
-
 non ci sono 
 \begin_inset Quotes eld
 \end_inset
@@ -531,36 +477,30 @@ conti
 \end_layout
 
 \begin_layout Standard
-
-quindi dato che l'implica prevede un and di implica da una parte e dall'altra per definizione abbiamo la tesi
+quindi dato che l'implica prevede un and di implica da una parte e dall'altra
+ per definizione abbiamo la tesi
 \end_layout
 
 \begin_layout Standard
-
 .
 \end_layout
 
 \begin_layout Standard
-
 .
 \end_layout
 
 \begin_layout Standard
-
-
-\begin_inset Tabular 
+\begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="3">
-<features tabularvalignment="middle" tabularwidth="0pt">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
-
-
+\begin_layout Plain Layout
 \begin_inset Formula $\diam{}{a\Rightarrow}\boxx{\diam a}$
 \end_inset
 
@@ -572,8 +512,7 @@ quindi dato che l'implica prevede un and di implica da una parte e dall'altra pe
 <cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
-
+\begin_layout Plain Layout
 relazione euclidea 
 \end_layout
 
@@ -582,9 +521,7 @@ relazione euclidea
 <cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
-
-
+\begin_layout Plain Layout
 \begin_inset Formula $\forhten{\alpha,\beta,\gamma}{:\:(\alpha R\beta,\:\alpha R\gamma)}{\beta}R\gamma$
 \end_inset
 
@@ -630,12 +567,10 @@ R
 \end_layout
 
 \begin_layout Standard
-
 Ip) relazione euclidea
 \end_layout
 
 \begin_layout Standard
-
 Ts) 
 \begin_inset Formula $\diam{}{a\Rightarrow}\boxx{\diam a}$
 \end_inset
@@ -644,7 +579,6 @@ Ts)
 \end_layout
 
 \begin_layout Standard
-
 Suppongo sia vero l'antecedente (se falso ho finito), quindi vale: 
 \begin_inset Formula $\dia$
 \end_inset
@@ -657,7 +591,6 @@ Suppongo sia vero l'antecedente (se falso ho finito), quindi vale:
 \end_layout
 
 \begin_layout Standard
-
 dato che 
 \begin_inset Formula $\dia$
 \end_inset
@@ -670,7 +603,6 @@ dato che
 \end_layout
 
 \begin_layout Standard
-
 solo un beta: autoanello perché euclidea e quindi 
 \begin_inset Formula $\boxx{\dia}$
 \end_inset
@@ -679,7 +611,6 @@ solo un beta: autoanello perché euclidea e quindi
 \end_layout
 
 \begin_layout Standard
-
 diversi beta: ognuno dei vari 
 \begin_inset Formula $\beta'$
 \end_inset
@@ -688,7 +619,8 @@ diversi beta: ognuno dei vari
 \begin_inset Formula $\beta''$
 \end_inset
 
- , ecc. sono in relazione con 
+ , ecc.
+ sono in relazione con 
 \begin_inset Formula $\beta$
 \end_inset
 
@@ -712,7 +644,6 @@ diversi beta: ognuno dei vari
 \end_layout
 
 \begin_layout Standard
-
 Ip)
 \begin_inset Formula $\diam{}{a\Rightarrow}\boxx{\diam a}$
 \end_inset
@@ -721,17 +652,14 @@ Ip)
 \end_layout
 
 \begin_layout Standard
-
 Ts) relazione euclidea
 \end_layout
 
 \begin_layout Standard
-
 Per assurdo, suppondo valga ip) ma non la tesi
 \end_layout
 
 \begin_layout Standard
-
 Considero un Frame in cui: 
 \begin_inset Formula $\alpha R\beta,$
 \end_inset
@@ -748,7 +676,8 @@ Considero un Frame in cui:
 \begin_inset Formula $\beta R\gamma$
 \end_inset
 
- cioè si ha un frammento in cui non vale l'euclidea. Poniamo che il modello sia tale che 
+ cioè si ha un frammento in cui non vale l'euclidea.
+ Poniamo che il modello sia tale che 
 \begin_inset Formula $V(A)$
 \end_inset
 
@@ -760,7 +689,6 @@ Considero un Frame in cui:
 \end_layout
 
 \begin_layout Standard
-
 In queste ipotesi vale 
 \begin_inset Formula $\dia$
 \end_inset
@@ -773,7 +701,8 @@ In queste ipotesi vale
 \begin_inset Formula $a$
 \end_inset
 
-. In 
+.
+ In 
 \begin_inset Formula $\beta$
 \end_inset
 
@@ -812,131 +741,232 @@ uscite
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Standard
+\begin_inset ERT
+status open
 
-Semantica
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 
-\begin_inset Formula $\semGen ab$
-\end_inset
-
- cioè a è conseguenza semantica di b, se in ogni Frame, Modello e Mondo in cui 
-\begin_inset Formula $\vera{\mu}b$
-\end_inset
-
- si ha anche 
-\begin_inset Formula $\vera{\mu}a$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
+\backslash
+begin{tikzpicture}[scale=0.2] 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 
-\begin_inset Formula $\dia\equiv\sim\boxx{\sim a}$
-\end_inset
-
-
+\backslash
+tikzstyle{every node}+=[inner sep=0pt]
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
-Vale da sinistra a destra,
+
+\backslash
+draw [black] (24.5,-18.4) circle (3);
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
-Infatti:
+
+\backslash
+draw (24.5,-18.4) node {$
+\backslash
+alpha$};
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
-se 
-\begin_inset Formula $\veraw{\mu}{\alpha}{\dia}$
-\end_inset
 
- allora
+\backslash
+draw [black] (46.5,-18.4) circle (3); 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 
-\begin_inset Formula $\exists\beta:$
-\end_inset
-
-
-\begin_inset Formula $\alpha R\beta$
-\end_inset
-
- e 
-\begin_inset Formula $\veraw{\mu}{\beta}a$
-\end_inset
-
- da cui:
+\backslash
+draw (46.5,-18.4) node {$
+\backslash
+beta$};
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 
-\begin_inset Formula $\mu\nvDash_{\beta}\sim a$
-\end_inset
-
-
+\backslash
+draw [black] (36.7,-27.3) circle (3); 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
-per questo in 
-\begin_inset Formula $\alpha$
-\end_inset
 
- non vale 
-\begin_inset Formula $\boxx{\sim a}$
-\end_inset
-
- (perché non vale 
-\begin_inset Formula $\sim a$
-\end_inset
-
- in 
-\begin_inset Formula $\beta$
-\end_inset
-
-)
+\backslash
+draw (36.7,-27.3) node {$
+\backslash
+beta'$};
 \end_layout
 
-\begin_layout Standard
-
-allora in 
-\begin_inset Formula $\alpha$
-\end_inset
-
- vale 
-\begin_inset Formula $\sim\boxx{\sim a}$
-\end_inset
-
- cioè 
-\begin_inset Formula $\veraw{\mu}{\alpha}{\sim\boxx{\sim a}}$
-\end_inset
-
- cioè la tesi. 
-\begin_inset Newline newline
-\end_inset
+\begin_layout Plain Layout
 
 
+\backslash
+draw (23.9,-12.8) node {$
+\backslash
+dia$};
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
-Vale anche da destra a sinistra, dimostrazione simile. 
+
+\backslash
+draw (46.5,-12.8) node {$
+\backslash
+dia, a$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (36.7,-22.1) node {$
+\backslash
+dia$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (36.7,-10.4) circle (3);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (36.7,-10.4) node {$
+\backslash
+beta''$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (36.7,-4.9) node {$
+\backslash
+dia$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (27.5,-18.4) -- (43.5,-18.4); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (43.5,-18.4) -- (42.7,-17.9) -- (42.7,-18.9);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (26.92,-20.17) -- (34.28,-25.53); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (34.28,-25.53) -- (33.92,-24.66) -- (33.34,-25.46); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (27.01,-16.75) -- (34.19,-12.05); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (34.19,-12.05) -- (33.25,-12.07) -- (33.8,-12.9); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (49.18,-17.077) arc (144:-144:2.25);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (49.18,-19.72) -- (49.53,-20.6) -- (50.12,-19.79);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (39.02,-12.3) -- (44.18,-16.5);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (44.18,-16.5) -- (43.87,-15.61) -- (43.24,-16.38);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (38.92,-25.28) -- (44.28,-20.42);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (44.28,-20.42) -- (43.35,-20.58) -- (44.02,-21.32); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center} 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
