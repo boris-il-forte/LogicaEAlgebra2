@@ -1,0 +1,169 @@
+\global\long\def\veraw#1#2#3{#1\models_{#2}#3}
+ 
+
+\global\long\def\vera#1#2{#1\models#2}
+
+
+\global\long\def\verita#1#2{#1\in V(#2)}
+ 
+
+\global\long\def\entail#1#2{#1\models#2}
+ 
+
+\global\long\def\semantica#1#2#3{#1\vdash_{#2}#3}
+
+
+\global\long\def\semGen#1#2{#1\vdash#2}
+
+
+\global\long\def\boxx#1{\square#1}
+
+
+\global\long\def\diam#1{\diamond#1}
+
+
+\global\long\def\dia{\diamond a}
+
+
+\global\long\def\boa{\boxx a}
+
+
+\global\long\def\forhten#1#2#3{\forall#1#2\Rightarrow#3}
+
+
+\global\long\def\implica#1#2{#1\Rightarrow#2}
+
+
+
+\chapter{Introduction}
+
+$a$ è vera nel mondo $\alpha$, e scriviamo $\mu\models_{\alpha}a$
+
+se
+\begin{itemize}
+\item $a$ è una lettera enunciativa allora deve valere $\verita a{\alpha}$ 
+\item $a$ è del tipo: $a\lor b$ .... allora.... $\mu\models_{\alpha}a$
+oppure $\mu\models_{\alpha}b$
+\end{itemize}
+
+\section{Formule di Logica modale e significato}
+
+\begin{tabular}{|c|c|c|}
+\hline 
+$\diam{}{a\Rightarrow}\boxx a$  & funzione parziale & $\forhten{\alpha}{:\,\alpha R\beta,\:\beta R\gamma}{\beta}=\gamma$\tabularnewline
+\hline 
+\end{tabular}
+
+Funzione parziale, dimostrazione
+
+.
+
+Ip) funzione parziale 
+
+Ts) $\diam{}{a\Rightarrow}\boxx a$
+
+.
+
+$\diam{}a$ falsa allora dato che l'antecedente è falso di ha $\implica{\diam{}a}{\boxx a}$
+
+$\diam{}a$ vera allora $\exists\beta$:$\alpha R\beta$ e$\in V(\beta)$,
+ma dato che la funzione è parziale questo $\beta$ è unico !
+
+da cui $\vera{\mu}{\implica{\diamond a}{\boxx a}}$
+
+.
+
+.
+
+Ip) $\diam{}{a\Rightarrow}\boxx a$
+
+Ts) funzione parziale
+
+.
+
+.
+
+Per assurdo: suppongo non che la funzione non sia parziale. Se è così
+$\exists\alpha:$ $\alpha R\beta,$ $\alpha R\gamma$, considero un
+modello in cui V(A) = \{$\beta$ \} , $\boxx A$ non vale in $\alpha$
+dato che A è falsa in $\gamma$, il che contraddice l'ipotesi (BAM!)\\\\
+
+\begin{tabular}{|c|c|c|}
+\hline 
+$\diam{}{a\iff}\boxx a$  & funzione totale & $\forall\alpha\exists\,!\,\beta:\:\alpha R\beta$ \tabularnewline
+\hline 
+\end{tabular}\\\\
+
+non ci sono ``conti'' da fare, R è seriale sse R è seriale $\boxx a\implies\diam a$
+, e se R è una funzione parziale $\implica{\diam a}{\boxx a}$
+
+quindi dato che l'implica prevede un and di implica da una parte e
+dall'altra per definizione abbiamo la tesi
+
+.
+
+.
+
+\begin{tabular}{|c|c|c|}
+\hline 
+$\diam{}{a\Rightarrow}\boxx{\diam a}$  & relazione euclidea & $\forhten{\alpha,\beta,\gamma}{:\:(\alpha R\beta,\:\alpha R\gamma)}{\beta}R\gamma$
+da cui anche: $\beta$R$\beta$, $\gamma R\gamma$, $\gamma$R$\beta$\tabularnewline
+\hline 
+\end{tabular} \\\\
+
+Ip) relazione euclidea
+
+Ts) $\diam{}{a\Rightarrow}\boxx{\diam a}$ 
+
+Suppongo sia vero l'antecedente (se falso ho finito), quindi vale:
+$\dia$ da cui: $\vera{\mu}{\dia}$
+
+dato che $\dia$ si ha che esiste almeno un $\beta$ tale che in beta
+vale a 
+
+solo un beta: autoanello perché euclidea e quindi $\boxx{\dia}$
+
+diversi beta: ognuno dei vari $\beta'$, $\beta''$ , ecc. sono in
+relazione con $\beta$, dato che la relazione è euclidea, pertanto
+dato che in $\beta$ vale $a$, in ognuno di loro vale $\dia$ \\
+
+Ip)$\diam{}{a\Rightarrow}\boxx{\diam a}$ 
+
+Ts) relazione euclidea
+
+Per assurdo, suppondo valga ip) ma non la tesi
+
+Considero un Frame in cui: $\alpha R\beta,$ $\alpha R\gamma,$ $\beta R\gamma$
+ma NON $\beta R\gamma$ cioè si ha un frammento in cui non vale l'euclidea.
+Poniamo che il modello sia tale che $V(A)$$=\{\gamma\}$
+
+In queste ipotesi vale $\dia$ dato che in $\gamma$ vale $a$. In
+$\beta$ non vale $a$ e neppure $\dia$ perché non ha ``uscite'',
+da cui in $a$ non vale $\boxx{\dia}$ contraddicendo così l'ipotesi
+(BAM!) \\\\
+
+
+\section{Semantica}
+
+$\semGen ab$ cioè a è conseguenza semantica di b, se in ogni Frame,
+Modello e Mondo in cui $\vera{\mu}b$ si ha anche $\vera{\mu}a$\\
+
+$\dia\equiv\sim\boxx{\sim a}$
+
+Vale da sinistra a destra,
+
+Infatti:
+
+se $\veraw{\mu}{\alpha}{\dia}$ allora 
+
+$\exists\beta:$$\alpha R\beta$ e $\veraw{\mu}{\beta}a$ da cui:
+
+$\mu\nvDash_{\beta}\sim a$
+
+per questo in $\alpha$ non vale $\boxx{\sim a}$ (perché non vale
+$\sim a$ in $\beta$)
+
+allora in $\alpha$ vale $\sim\boxx{\sim a}$ cioè $\veraw{\mu}{\alpha}{\sim\boxx{\sim a}}$
+cioè la tesi. \\
+
+Vale anche da destra a sinistra, dimostrazione simile.

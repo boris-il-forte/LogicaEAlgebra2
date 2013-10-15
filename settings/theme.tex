@@ -1,0 +1,37 @@
+%% STILE DELLE INTESTAZIONI %%
+
+
+\pagestyle{fancy} \global\long\def\chaptermark#1{\markboth{#1}{}}
+ % aggiungi \thechapter.\ per anche il numero capitolo
+%\renewcommand{\sectionmark}[1]{\markright{#1}} % titoli di sezione
+\fancyhf{} \fancyhead[RE,RO]{\small\thepage} \fancyhead[LE,LO]{\small\em\leftmark}
+% \leftmark = 2.TitoloCapitolo, \rightmark = TitoloSezione
+%\fancyhead[LO]{\small\em\rightmark}  % LO = Left Odd, RO = Right Odd, LE = Left Even, RE = Right Even
+\fancypagestyle{plain}{ % titolo di sezione e simili
+ \fancyhf{} % remove everything
+ \global\long\def\headrulewidth{0pt}
+ % remove lines as well
+ \global\long\def\footrulewidth{0pt}
+ }
+
+%%% Cambia il carattere dei titoli di sezione %%
+%\usepackage{titlesec}
+%\titleformat{\section}{\Large\bfseries\sffamily}{\thesection}{1em}{}
+
+
+%% Stile dei titoli di capitolo %%
+\makeatletter \global\long\def\thickhrulefill{\leavevmode\leaders\hrule height 0.7ex \hfill\kern \z@}
+ \global\long\def\@#1#2#3#4#5#6#7#8#9{%
+\vspace*{10\p@}%
+{\parindent\z@ \centering\reset@font %thickhrulefillparnobreakvspace{3p@}
+{\huge\bfseries\rmfamily\strut\thechapter.\ #1}\par\nobreak\interlinepenalty\@M \hrule\vspace*{10\p@}%
+\vskip30\p@ }}
+
+
+\global\long\def\@#1#2#3#4#5#6#7#8#9{%
+\vspace*{10\p@}%
+\vspace*{10\p@}%
+{\parindent\z@ \centering\reset@font %thickhrulefillparnobreakvspace{3p@}
+{\huge\bfseries\rmfamily\strut#1}\par\nobreak\interlinepenalty\@M \hrule\vspace*{10\p@}%
+\vskip30\p@ }}
+
