@@ -13,7 +13,7 @@
 \global\long\def\nonSem#1#2{#1\nvdash#2}
 
 
-\global\long\def\nonSemW{}
+\global\long\def\nonSemW#1#2#3{#1\nvdash_{#2}#3}
 
 
 \global\long\def\verita#1#2{#1\in V(#2)}
@@ -81,12 +81,13 @@ cioè la tesi. \\
 Vale anche da destra a sinistra, dimostrazione simile. \\
 
 
+
 \section{Logiche}
 
-Una logica $\Lambda$ su L è un insieme di fbf su L che:
+Una logica $\Lambda$ su L è un insieme di fbf su L che: 
 \begin{itemize}
-\item contiene tutte le tautologie
-\item è chiusa rispetto al Modus Ponens
+\item contiene tutte le tautologie 
+\item è chiusa rispetto al Modus Ponens 
 \end{itemize}
 Ad esempio; $PL(\phi)$ cioè i teoremi della logica proposizionale
 
@@ -94,11 +95,11 @@ Altro esempio $\Lambda_{C}=\{a\,|\,\vera F{a\: per}\ ogni\ F\in C\}$
 
 infatti: 
 \begin{itemize}
-\item contiene tutte le tautologie perché sono vere mondo per mondo dappertutto
+\item contiene tutte le tautologie perché sono vere mondo per mondo dappertutto 
 \item MP : suppongo che in un mondo $\alpha$ accada che: $\nonveraw{\mu}{\alpha}b$
 , $\veraw{\mu}{\alpha}a$ . Se vale anche $\veraw{\mu}{\alpha}{\implica ab}$
 ... l'antecedente è vero, quindi dato che l'implicazione è vera, deve
-essere vero anche il conseguente da cui non può che essere $\veraw{\mu}{\alpha}b$
+essere vero anche il conseguente da cui non può che essere $\veraw{\mu}{\alpha}b$ 
 \end{itemize}
 Una logica si dice \textbf{uniforme }se è chiusa rispetto a sostituzioni
 uniformi cioè se sostituendo a una lettere uguali formule uguali in
@@ -108,24 +109,26 @@ Es. $\Lambda_{C}=\{a\,|\,\vera F{a\: per}\ ogni\ F\in C\}$ NON è
 uniforme infatti se considero $V(A)=S$, dove S sono tutti gli stati
 possibili (mondi), vale anche $\veraw{\mu}{\alpha}A$, e cioè A è
 una tautologia, se al posto di A sostituisco $B\wedge\sim B$ (falsa
-in ogni modello e mondo) non ottengo una tautologia.\\\\
+in ogni modello e mondo) non ottengo una tautologia.\\
+\\
 
-\textbf{\emph{\large{Teorema}}}{\large \par}
 
-	Sono equivalenti:
+\textbf{\emph{\large{{Teorema}}}}{\large \par}
+
+Sono equivalenti: 
 \begin{enumerate}
-\item $\Lambda$ è normale
-\item per ogni intero n $\geq0$, 
+\item $\Lambda$ è normale 
+\item per ogni intero n $\geq0$,
 
 
-$\teorema{a1\wedge a2\wedge...\wedge an}\implies a$ implica $\teorema{\boa1\wedge\boa2\wedge...\wedge\boa n}\implies\boa$ 
+$\teorema{a1\wedge a2\wedge...\wedge an}\implies a$ implica $\teorema{\boa1\wedge\boa2\wedge...\wedge\boa n}\implies\boa$
 
 \item valgono:
 
 \begin{enumerate}
-\item $\teorema{\boxx T}$
-\item $\teorema{\boa\wedge\boxx b}\implies\boxx{(a\wedge b)}$
-\item $\teorema{\implica ab}$ implica $\teorema{\boa\implies\boxx b}$
+\item $\teorema{\boxx T}$ 
+\item $\teorema{\boa\wedge\boxx b}\implies\boxx{(a\wedge b)}$ 
+\item $\teorema{\implica ab}$ implica $\teorema{\boa\implies\boxx b}$ 
 \end{enumerate}
 \end{enumerate}
 Dimostrazione
@@ -138,6 +141,6 @@ se n = 0 allora $\teorema a$ allora $\teorema{\boa}$ per la regola
 RN che vale in $\Lambda$ per ipotesi
 
 se n > 0 (passo induttivo) suppongo valga l'antecedente, altrimenti
-2 vale senz'altro; 
+2 vale senz'altro;
 
 Ricordiamo che $a1\wedge a2\wedge...\wedge an\implies a\equiv a1\wedge a2\wedge...a_{n-1}\implies(an\implies a)$ 
