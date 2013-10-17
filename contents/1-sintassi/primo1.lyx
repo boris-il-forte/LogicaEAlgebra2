@@ -435,7 +435,7 @@ draw (24,-17.3) node {
 \backslash
 sout{$
 \backslash
-dia$}};
+dia$}};   %%diamond a sbarrato
 \end_layout
 
 \begin_layout Plain Layout
@@ -504,6 +504,663 @@ status open
 
 \strikeout default
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsection{Relazione simmetrica}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ip) R simmetrica
+\end_layout
+
+\begin_layout Standard
+Ts) 
+\begin_inset Formula $a\implies\boxx{\dia}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Suppongo che 
+\begin_inset Formula $\veraw{\mu}{\alpha}a$
+\end_inset
+
+ (se no avrei già la tesi), due casi:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Caso 1
+\series default
+: Da 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ non parte nessun arco, allora sicuramente 
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx x}$
+\end_inset
+
+ con 
+\begin_inset Formula $x$
+\end_inset
+
+ qualsiasi e in particolare 
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx{\dia}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (24.2,-13) circle (3);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (24.2,-13) node {$
+\backslash
+alpha$};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture} 
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Caso 2
+\series default
+: Esiste almeno un 
+\begin_inset Formula $\beta$
+\end_inset
+
+ tale che 
+\begin_inset Formula $\alpha R\beta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.2]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{every node}+=[inner sep=0pt]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (24.2,-12.7) circle (3);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (24.2,-12.7) node {$
+\backslash
+alpha$};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (24.2,-8.3) node {$a$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (38.5,-8.3) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (38.5,-8.3) node {$
+\backslash
+beta$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (38.5,-15.8) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (38.5,-15.8) node {$
+\backslash
+beta'$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (38.5,-24) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (38.5,-24) node {$
+\backslash
+beta''$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (38.5,-3.7) node {$
+\backslash
+dia$};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (38.5,-11.7) node {$
+\backslash
+dia$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (38.5,-20.2) node {$
+\backslash
+dia$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (27.07,-11.82) -- (35.63,-9.18);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (35.63,-9.18) -- (34.72,-8.94) -- (35.02,-9.9); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (35.63,-9.18) -- (27.07,-11.82); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (27.07,-11.82) -- (27.98,-12.06) -- (27.68,-11.1);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (27.13,-13.34) -- (35.57,-15.16);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (35.57,-15.16) -- (34.89,-14.51) -- (34.68,-15.48);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (35.57,-15.16) -- (27.13,-13.34); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (27.13,-13.34) -- (27.81,-13.99) -- (28.02,-13.02); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (26.55,-14.56) -- (36.15,-22.14);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (36.15,-22.14) -- (35.83,-21.25) -- (35.21,-22.04); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (36.15,-22.14) -- (26.55,-14.56); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (26.55,-14.56) -- (26.87,-15.45) -- (27.49,-14.66);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture} 
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dato che la relazione è simmetrica se 
+\begin_inset Formula $\alpha R\beta$
+\end_inset
+
+ allora 
+\series bold
+
+\begin_inset Formula $\beta R\alpha$
+\end_inset
+
+.
+
+\series default
+ Dato che 
+\begin_inset Formula $\veraw{\mu}{\alpha}a,$
+\end_inset
+
+ in ognuno di questi 
+\begin_inset Formula $\beta$
+\end_inset
+
+, 
+\begin_inset Formula $\beta'$
+\end_inset
+
+,
+\begin_inset Formula $\beta''$
+\end_inset
+
+ ecc.
+ vale 
+\begin_inset Formula $\dia$
+\end_inset
+
+ perché ognuno di loro è in relazione con 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Allora per ognuno di questi 
+\begin_inset Formula $\beta$
+\end_inset
+
+ si ha 
+\begin_inset Formula $\veraw{\mu}{\beta}{\dia}$
+\end_inset
+
+, (esiste infatti un mondo, 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, in cui vale 
+\begin_inset Formula $a$
+\end_inset
+
+) da cui: 
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx{\dia}}$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ip) 
+\begin_inset Formula $a\implies\boxx{\dia}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ts) R simmetrica
+\end_layout
+
+\begin_layout Standard
+Per assurdo:
+\end_layout
+
+\begin_layout Standard
+suppongo R non sia simmetrica e considero un frame con soli 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ e 
+\begin_inset Formula $\beta$
+\end_inset
+
+ e in cui 
+\begin_inset Formula $R=\{(\alpha,\beta)\}$
+\end_inset
+
+ .
+ In questo frame considero un modello con funzione di verità tale che: 
+\begin_inset Formula $V(A)=\{\alpha\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In 
+\begin_inset Formula $\beta$
+\end_inset
+
+ non vale 
+\begin_inset Formula $\dia$
+\end_inset
+
+ perché 
+\begin_inset Formula $\beta$
+\end_inset
+
+ non è in relazione con nessun mondo, per questo: 
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{\boxx{\dia}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (24.2,-12.7) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (24.2,-12.7) node {$
+\backslash
+alpha$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (24.2,-7.5) node {$A$};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (37.9,-12.7) circle (3);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (37.9,-12.7) node {$
+\backslash
+beta$};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (37.9,-7.5) node {
+\backslash
+sout{$
+\backslash
+dia$}}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (24.2,-17.8) node {
+\backslash
+sout{$
+\backslash
+boxx{
+\backslash
+dia}$}}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (27.2,-12.7) -- (34.9,-12.7);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (34.9,-12.7) -- (34.1,-12.2) -- (34.1,-13.2); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture} 
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
