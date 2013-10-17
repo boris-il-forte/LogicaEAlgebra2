@@ -78,6 +78,22 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
+\newcommand{\nonvera}[2]{#1\nvDash#2}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\nonveraw}[3]{#1\nvDash_{#2}#3}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
 \newcommand{\verita}[2]{#1\in V(#2)}
 \end_inset
 
@@ -213,6 +229,273 @@ se
 
 \begin_layout Section
 Formule di Logica modale e significato
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsection{Relazione seriale}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ip) Frame F con relazione R seriale
+\end_layout
+
+\begin_layout Standard
+Ts) 
+\begin_inset Formula $\boa\implies\dia$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dimostrazione:
+\end_layout
+
+\begin_layout Standard
+Se non vale: 
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boa}$
+\end_inset
+
+ allora immediatemente si ha la tesi in quanto l'antecedente è falso.
+\end_layout
+
+\begin_layout Standard
+Se invce: 
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boa}$
+\end_inset
+
+ allora
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forhten{\beta}{\,:\,\alpha R\beta}{\veraw{\mu}{\beta}a}$
+\end_inset
+
+ per definizione di box, 
+\end_layout
+
+\begin_layout Standard
+inoltre dato che R seriale per Ip si ha anche che 
+\begin_inset Formula $\exists\beta:\:(\alpha,\beta)\:\in R$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+da cui: 
+\begin_inset Formula $\veraw{\mu}{\alpha}{\dia}$
+\end_inset
+
+ per definizione di diamond (esiste 
+\begin_inset Formula $\beta$
+\end_inset
+
+ in relazione con 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ per la serialità e in 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ vale 
+\begin_inset Formula $a$
+\end_inset
+
+ dato che 
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boa}$
+\end_inset
+
+ )
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+		
+\end_layout
+
+\begin_layout Standard
+Ip) 
+\begin_inset Formula $\boa\implies\dia$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ts) Frame F con relazione R seriale
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (24.2,-13) circle (3);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (24.2,-13) node {$
+\backslash
+alpha$};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (24.2,-8.6) node {$
+\backslash
+boxx{a}$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (38.9,-13.2) circle (3);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (38.9,-13.2) node {$
+\backslash
+beta$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (24,-17.3) node {
+\backslash
+sout{$
+\backslash
+dia$}};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture} 
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Per assurdo:
+\end_layout
+
+\begin_layout Standard
+Suppongo di trovarmi in un mondo come quello in figura (wow) in cui 
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boa}$
+\end_inset
+
+ , e suppongo che la relazione R del frame NON sia seriale cioè 
+\begin_inset Formula $\sim\exists\beta:(\alpha R\beta)$
+\end_inset
+
+, se è così vale sicuramente 
+\begin_inset Formula $\veraw{\mu}a{\boa}$
+\end_inset
+
+ (dato che 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ non ha successori) , d'altra parte per come è il mondo considerato, cioè
+ si nega la tesi, assurdo
+\strikeout on
+.
+
+\strikeout default
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsection{Funzione parziale}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -397,6 +680,19 @@ Per assurdo: suppongo non che la funzione non sia parziale.
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsection{Funzione totale}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -486,7 +782,19 @@ quindi dato che l'implica prevede un and di implica da una parte e dall'altra
 \end_layout
 
 \begin_layout Standard
-.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsection{Relazione euclidea}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -637,104 +945,6 @@ diversi beta: ognuno dei vari
 \end_inset
 
  
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Ip)
-\begin_inset Formula $\diam{}{a\Rightarrow}\boxx{\diam a}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Ts) relazione euclidea
-\end_layout
-
-\begin_layout Standard
-Per assurdo, suppondo valga ip) ma non la tesi
-\end_layout
-
-\begin_layout Standard
-Considero un Frame in cui: 
-\begin_inset Formula $\alpha R\beta,$
-\end_inset
-
- 
-\begin_inset Formula $\alpha R\gamma,$
-\end_inset
-
- 
-\begin_inset Formula $\beta R\gamma$
-\end_inset
-
- ma NON 
-\begin_inset Formula $\beta R\gamma$
-\end_inset
-
- cioè si ha un frammento in cui non vale l'euclidea.
- Poniamo che il modello sia tale che 
-\begin_inset Formula $V(A)$
-\end_inset
-
-
-\begin_inset Formula $=\{\gamma\}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-In queste ipotesi vale 
-\begin_inset Formula $\dia$
-\end_inset
-
- dato che in 
-\begin_inset Formula $\gamma$
-\end_inset
-
- vale 
-\begin_inset Formula $a$
-\end_inset
-
-.
- In 
-\begin_inset Formula $\beta$
-\end_inset
-
- non vale 
-\begin_inset Formula $a$
-\end_inset
-
- e neppure 
-\begin_inset Formula $\dia$
-\end_inset
-
- perché non ha 
-\begin_inset Quotes eld
-\end_inset
-
-uscite
-\begin_inset Quotes erd
-\end_inset
-
-, da cui in 
-\begin_inset Formula $a$
-\end_inset
-
- non vale 
-\begin_inset Formula $\boxx{\dia}$
-\end_inset
-
- contraddicendo così l'ipotesi (BAM!) 
-\begin_inset Newline newline
-\end_inset
-
-
 \begin_inset Newline newline
 \end_inset
 
@@ -964,6 +1174,104 @@ end{tikzpicture}
 end{center} 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ip)
+\begin_inset Formula $\diam{}{a\Rightarrow}\boxx{\diam a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ts) relazione euclidea
+\end_layout
+
+\begin_layout Standard
+Per assurdo, suppondo valga ip) ma non la tesi
+\end_layout
+
+\begin_layout Standard
+Considero un Frame in cui: 
+\begin_inset Formula $\alpha R\beta,$
+\end_inset
+
+ 
+\begin_inset Formula $\alpha R\gamma,$
+\end_inset
+
+ 
+\begin_inset Formula $\beta R\gamma$
+\end_inset
+
+ ma NON 
+\begin_inset Formula $\beta R\gamma$
+\end_inset
+
+ cioè si ha un frammento in cui non vale l'euclidea.
+ Poniamo che il modello sia tale che 
+\begin_inset Formula $V(A)$
+\end_inset
+
+
+\begin_inset Formula $=\{\gamma\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In queste ipotesi vale 
+\begin_inset Formula $\dia$
+\end_inset
+
+ dato che in 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ vale 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ In 
+\begin_inset Formula $\beta$
+\end_inset
+
+ non vale 
+\begin_inset Formula $a$
+\end_inset
+
+ e neppure 
+\begin_inset Formula $\dia$
+\end_inset
+
+ perché non ha 
+\begin_inset Quotes eld
+\end_inset
+
+uscite
+\begin_inset Quotes erd
+\end_inset
+
+, da cui in 
+\begin_inset Formula $a$
+\end_inset
+
+ non vale 
+\begin_inset Formula $\boxx{\dia}$
+\end_inset
+
+ contraddicendo così l'ipotesi (BAM!) 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 

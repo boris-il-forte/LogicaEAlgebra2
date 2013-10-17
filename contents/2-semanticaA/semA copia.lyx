@@ -78,7 +78,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\nonvera}[2]{#1\nvDash#2}
+\newcommand{\nonvera}[2]{#1\nvDash#2}
 \end_inset
 
 
@@ -86,7 +86,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\nonveraw}[3]{#1\nvDash_{#2}#3}
+\newcommand{\nonveraw}[3]{#1\nvDash_{#2}#3}
 \end_inset
 
 
@@ -102,7 +102,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\nonSemW}[3]{#1\nvdash_{#2}#3}
+\newcommand{\nonSemW}{}
 \end_inset
 
 
@@ -313,7 +313,18 @@ allora in
 \begin_layout Standard
 Vale anche da destra a sinistra, dimostrazione simile.
  
-\begin_inset Newline newline
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
 \end_inset
 
 
@@ -328,15 +339,15 @@ Una logica
 \begin_inset Formula $\Lambda$
 \end_inset
 
- su L è un insieme di fbf su L che: 
+ su L è un insieme di fbf su L che:
 \end_layout
 
 \begin_layout Itemize
-contiene tutte le tautologie 
+contiene tutte le tautologie
 \end_layout
 
 \begin_layout Itemize
-è chiusa rispetto al Modus Ponens 
+è chiusa rispetto al Modus Ponens
 \end_layout
 
 \begin_layout Standard
@@ -361,7 +372,6 @@ infatti:
 
 \begin_layout Itemize
 contiene tutte le tautologie perché sono vere mondo per mondo dappertutto
- 
 \end_layout
 
 \begin_layout Itemize
@@ -388,7 +398,7 @@ MP : suppongo che in un mondo
 \begin_inset Formula $\veraw{\mu}{\alpha}b$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
@@ -419,11 +429,22 @@ Es.
 \end_inset
 
  (falsa in ogni modello e mondo) non ottengo una tautologia.
-\begin_inset Newline newline
-\end_inset
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
 
 
-\begin_inset Newline newline
+\backslash
+
+\backslash
+
+\backslash
+
+\backslash
+
+\end_layout
+
 \end_inset
 
 
@@ -434,39 +455,18 @@ Es.
 \series bold
 \size large
 \emph on
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
 Teorema
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
-Sono equivalenti: 
+	Sono equivalenti:
 \end_layout
 
 \begin_layout Enumerate
 \begin_inset Formula $\Lambda$
 \end_inset
 
- è normale 
+ è normale
 \end_layout
 
 \begin_layout Enumerate
@@ -474,22 +474,21 @@ per ogni intero n
 \begin_inset Formula $\geq0$
 \end_inset
 
-,
-\end_layout
+, 
+\begin_inset Formula $\se$
+\end_inset
 
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula $\teorema{a1\wedge a2\wedge...\wedge an}\implies a$
+
+\begin_inset Formula $\teorema{a1\teorema a1\wedge a2\wedge...\wedge an}\implies a$
 \end_inset
 
  implica 
 \begin_inset Formula $\teorema{\boa1\wedge\boa2\wedge...\wedge\boa n}\implies\boa$
 \end_inset
 
-
+ 
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 valgono:
 \end_layout
@@ -499,14 +498,14 @@ valgono:
 \begin_inset Formula $\teorema{\boxx T}$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Enumerate
 \begin_inset Formula $\teorema{\boa\wedge\boxx b}\implies\boxx{(a\wedge b)}$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Enumerate
@@ -517,7 +516,7 @@ valgono:
 \begin_inset Formula $\teorema{\boa\implies\boxx b}$
 \end_inset
 
- 
+
 \end_layout
 
 \end_deeper
@@ -554,7 +553,7 @@ se n = 0 allora
 
 \begin_layout Standard
 se n > 0 (passo induttivo) suppongo valga l'antecedente, altrimenti 2 vale
- senz'altro;
+ senz'altro; 
 \end_layout
 
 \begin_layout Standard

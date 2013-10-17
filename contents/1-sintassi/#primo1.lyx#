@@ -78,22 +78,6 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\nonvera}[2]{#1\nvDash#2}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\nonveraw}[3]{#1\nvDash_{#2}#3}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
 \newcommand{\verita}[2]{#1\in V(#2)}
 \end_inset
 
@@ -458,31 +442,7 @@ Per assurdo:
 
 \begin_layout Standard
 Suppongo di trovarmi in un mondo come quello in figura (wow) in cui 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-mbox{
-\end_layout
-
-\end_inset
-
-
 \begin_inset Formula $\veraw{\mu}{\alpha}{\boa}$
-\end_inset
-
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
 \end_inset
 
 , e suppongo che la relazione R del frame NON sia seriale cioè 
@@ -497,13 +457,11 @@ status open
 \begin_inset Formula $\alpha$
 \end_inset
 
- non ha successori) , d'altra parte per come è il mondo considerato, cioè
- si nega la tesi, assurdo
-\strikeout on
-.
+ non ha successori) , d'altra parte per come è il mondo considerato 
+\begin_inset Formula $ $
+\end_inset
 
-\strikeout default
- 
+
 \end_layout
 
 \begin_layout Standard

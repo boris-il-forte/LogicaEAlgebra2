@@ -1,10 +1,9 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
+#LyX file created by tex2lyx 2.0.6
 \lyxformat 413
 \begin_document
 \begin_header
 \textclass report
 \use_default_options false
-\maintain_unincluded_children false
 \language english
 \language_package default
 \inputencoding utf8
@@ -18,15 +17,12 @@
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
-\bibtex_command default
-\index_command default
 \paperfontsize 11
 \spacing single
-\use_hyperref false
+\use_hyperref 0
 \papersize a4paper
 \use_geometry true
 \use_amsmath 2
@@ -39,10 +35,6 @@
 \paperorientation portrait
 \suppress_date false
 \use_refstyle 0
-\index Index
-\shortcut idx
-\color #008000
-\end_index
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -61,10 +53,13 @@
 \begin_body
 
 \begin_layout Chapter
+
 Introduzione
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset CommandInset label
 LatexCommand label
 name "cap:introduction"
@@ -75,18 +70,18 @@ name "cap:introduction"
 \end_layout
 
 \begin_layout Section
+
 Intro
 \end_layout
 
 \begin_layout Standard
-Se voi signorine finirete questo corso, e se sopravviverete sarete dispensatori
- di fbf e pregherete per modellizzare sistemi assurdi in modo ancora più
- assurdo, ma fino a quel giorno non siete altro che buoni annulla convinti
- che tutti i cretesi sono stupidi e forse mentono.
+
+Se voi signorine finirete questo corso, e se sopravviverete sarete dispensatori di fbf e pregherete per modellizzare sistemi assurdi in modo ancora più assurdo, ma fino a quel giorno non siete altro che buoni annulla convinti che tutti i cretesi sono stupidi e forse mentono.
 \end_layout
 
 \begin_layout Standard
-Lasciate il formaggio fuori dall'aula.
+
+Lasciate il formaggio fuori dall'aula. 
 \end_layout
 
 \end_body

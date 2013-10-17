@@ -1,4 +1,4 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
+#LyX file created by tex2lyx 2.0.6
 \lyxformat 413
 \begin_document
 \begin_header
@@ -39,10 +39,16 @@
 
 
 
+
 \usepackage{babel}
+
+
+
+
+\usepackage{babel}
+
 \end_preamble
 \use_default_options false
-\maintain_unincluded_children false
 \language english
 \language_package default
 \inputencoding utf8
@@ -56,15 +62,12 @@
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
-\bibtex_command default
-\index_command default
 \paperfontsize 11
 \spacing single
-\use_hyperref false
+\use_hyperref 0
 \papersize a4paper
 \use_geometry true
 \use_amsmath 2
@@ -77,10 +80,6 @@
 \paperorientation portrait
 \suppress_date false
 \use_refstyle 0
-\index Index
-\shortcut idx
-\color #008000
-\end_index
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -99,10 +98,12 @@
 \begin_body
 
 \begin_layout Standard
+
+
 \begin_inset ERT
 status collapsed
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 
 \backslash
@@ -115,7 +116,7 @@ newgeometry
 \begin_inset ERT
 status collapsed
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 {
 \end_layout
@@ -126,7 +127,7 @@ top=4cm,bottom=4cm,right=4cm,left=4cm
 \begin_inset ERT
 status collapsed
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 }
 \end_layout
@@ -137,17 +138,20 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset ERT
 status collapsed
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 %
 \backslash
 include{settings/theme}
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
+
 
 \end_layout
 
@@ -157,6 +161,8 @@ include{settings/theme}
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
@@ -166,16 +172,18 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset ERT
 status collapsed
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
-% ------------------------------------------------------------------------------
---------------------------------------
+% --------------------------------------------------------------------------------------------------------------------
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
+
 
 \end_layout
 
@@ -185,12 +193,13 @@ status collapsed
 \begin_inset ERT
 status collapsed
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 % Capitoli
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
+
 
 \end_layout
 
@@ -200,17 +209,20 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset ERT
 status collapsed
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 % 
 \backslash
 include con i nomi dei capitoli
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
+
 
 \end_layout
 
@@ -219,6 +231,7 @@ include con i nomi dei capitoli
 
 \begin_inset CommandInset include
 LatexCommand include
+preview false
 filename "contents/0-intro/introduction.lyx"
 
 \end_inset
@@ -227,9 +240,12 @@ filename "contents/0-intro/introduction.lyx"
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset CommandInset include
 LatexCommand include
-filename "/Users/edoardopasi/Documents/Latex Documents/Lyx/Logica 2/Logica2/contents/1-sintassi/primo1.lyx"
+preview false
+filename "contents/1-sintassi/primo1.lyx"
 
 \end_inset
 
@@ -237,8 +253,11 @@ filename "/Users/edoardopasi/Documents/Latex Documents/Lyx/Logica 2/Logica2/cont
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset CommandInset include
 LatexCommand include
+preview false
 filename "contents/2-semanticaA/semA.lyx"
 
 \end_inset
@@ -247,15 +266,18 @@ filename "contents/2-semanticaA/semA.lyx"
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset ERT
 status collapsed
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 % Our test cases
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
+
 
 \end_layout
 
@@ -265,12 +287,13 @@ status collapsed
 \begin_inset ERT
 status collapsed
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 % Appendici
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
+
 
 \end_layout
 

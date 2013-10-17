@@ -1,9 +1,10 @@
-#LyX file created by tex2lyx 2.0.6
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
 \lyxformat 413
 \begin_document
 \begin_header
 \textclass report
 \use_default_options false
+\maintain_unincluded_children false
 \language english
 \language_package default
 \inputencoding utf8
@@ -17,12 +18,15 @@
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
+
 \graphics default
 \default_output_format default
 \output_sync 0
+\bibtex_command default
+\index_command default
 \paperfontsize 11
 \spacing single
-\use_hyperref 0
+\use_hyperref false
 \papersize a4paper
 \use_geometry true
 \use_amsmath 2
@@ -35,6 +39,10 @@
 \paperorientation portrait
 \suppress_date false
 \use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -53,777 +61,155 @@
 \begin_body
 
 \begin_layout Standard
-
-
 \begin_inset FormulaMacro
-\def\veraw #1#2#3{#1\models_{#2}#3}
+\renewcommand{\veraw}[3]{#1\models_{#2}#3}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset FormulaMacro
-\def\vera #1#2{#1\models#2}
+\renewcommand{\vera}[2]{#1\models#2}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset FormulaMacro
-\def\verita #1#2{#1\in V(#2)}
+\renewcommand{\nonvera}[2]{#1\nvDash#2}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset FormulaMacro
-\def\entail #1#2{#1\models#2}
+\renewcommand{\nonveraw}[3]{#1\nvDash_{#2}#3}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset FormulaMacro
-\def\semantica #1#2#3{#1\vdash_{#2}#3}
+\renewcommand{\nonSem}[2]{#1\nvdash#2}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset FormulaMacro
-\def\semGen #1#2{#1\vdash#2}
+\renewcommand{\nonSemW}[3]{#1\nvdash_{#2}#3}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset FormulaMacro
-\def\boxx #1{\square#1}
+\renewcommand{\verita}[2]{#1\in V(#2)}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset FormulaMacro
-\def\diam #1{\diamond#1}
+\renewcommand{\entail}[2]{#1\models#2}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset FormulaMacro
-\def\dia {\diamond a}
+\renewcommand{\semantica}[3]{#1\vdash_{#2}#3}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset FormulaMacro
-\def\boa {\boxx a}
+\renewcommand{\semGen}[2]{#1\vdash#2}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset FormulaMacro
-\def\forhten #1#2#3{\forall#1#2\Rightarrow#3}
+\renewcommand{\boxx}[1]{\square#1}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset FormulaMacro
-\def\implica #1#2{#1\Rightarrow#2}
+\renewcommand{\diam}[1]{\diamond#1}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\dia}{\diamond a}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\boa}{\boxx a}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\forhten}[3]{\forall#1#2\Rightarrow#3}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\implica}[2]{#1\Rightarrow#2}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\teorema}[1]{\vdash_{\Lambda}#1}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Chapter
-
-Introduction
-\end_layout
-
-\begin_layout Standard
-
-
-\begin_inset Formula $a$
-\end_inset
-
- è vera nel mondo 
-\begin_inset Formula $\alpha$
-\end_inset
-
-, e scriviamo 
-\begin_inset Formula $\mu\models_{\alpha}a$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-se 
-\end_layout
-
-\begin_layout Itemize
-
-
-\begin_inset Formula $a$
-\end_inset
-
- è una lettera enunciativa allora deve valere 
-\begin_inset Formula $\verita a{\alpha}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Itemize
-
-
-\begin_inset Formula $a$
-\end_inset
-
- è del tipo: 
-\begin_inset Formula $a\lor b$
-\end_inset
-
- .... allora.... 
-\begin_inset Formula $\mu\models_{\alpha}a$
-\end_inset
-
- oppure 
-\begin_inset Formula $\mu\models_{\alpha}b$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Section
-
-Formule di Logica modale e significato
-\end_layout
-
-\begin_layout Standard
-
-
-\begin_inset Tabular 
-<lyxtabular version="3" rows="1" columns="3">
-<features tabularvalignment="middle" tabularwidth="0pt">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Standard
-
-
-\begin_inset Formula $\diam{}{a\Rightarrow}\boxx a$
-\end_inset
-
- 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Standard
-
-funzione parziale 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Standard
-
-
-\begin_inset Formula $\forhten{\alpha}{:\,\alpha R\beta,\:\beta R\gamma}{\beta}=\gamma$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-Funzione parziale, dimostrazione
-\end_layout
-
-\begin_layout Standard
-
-.
-\end_layout
-
-\begin_layout Standard
-
-Ip) funzione parziale
-\end_layout
-
-\begin_layout Standard
-
-Ts) 
-\begin_inset Formula $\diam{}{a\Rightarrow}\boxx a$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-.
-\end_layout
-
-\begin_layout Standard
-
-
-\begin_inset Formula $\diam{}a$
-\end_inset
-
- falsa allora dato che l'antecedente è falso di ha 
-\begin_inset Formula $\implica{\diam{}a}{\boxx a}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-
-\begin_inset Formula $\diam{}a$
-\end_inset
-
- vera allora 
-\begin_inset Formula $\exists\beta$
-\end_inset
-
-:
-\begin_inset Formula $\alpha R\beta$
-\end_inset
-
- e
-\begin_inset Formula $\in V(\beta)$
-\end_inset
-
-, ma dato che la funzione è parziale questo 
-\begin_inset Formula $\beta$
-\end_inset
-
- è unico !
-\end_layout
-
-\begin_layout Standard
-
-da cui 
-\begin_inset Formula $\vera{\mu}{\implica{\diamond a}{\boxx a}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-.
-\end_layout
-
-\begin_layout Standard
-
-.
-\end_layout
-
-\begin_layout Standard
-
-Ip) 
-\begin_inset Formula $\diam{}{a\Rightarrow}\boxx a$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-Ts) funzione parziale
-\end_layout
-
-\begin_layout Standard
-
-.
-\end_layout
-
-\begin_layout Standard
-
-.
-\end_layout
-
-\begin_layout Standard
-
-Per assurdo: suppongo non che la funzione non sia parziale. Se è così 
-\begin_inset Formula $\exists\alpha:$
-\end_inset
-
- 
-\begin_inset Formula $\alpha R\beta,$
-\end_inset
-
- 
-\begin_inset Formula $\alpha R\gamma$
-\end_inset
-
-, considero un modello in cui V(A) = {
-\begin_inset Formula $\beta$
-\end_inset
-
- } , 
-\begin_inset Formula $\boxx A$
-\end_inset
-
- non vale in 
-\begin_inset Formula $\alpha$
-\end_inset
-
- dato che A è falsa in 
-\begin_inset Formula $\gamma$
-\end_inset
-
-, il che contraddice l'ipotesi (BAM!)
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-
-\begin_inset Tabular 
-<lyxtabular version="3" rows="1" columns="3">
-<features tabularvalignment="middle" tabularwidth="0pt">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Standard
-
-
-\begin_inset Formula $\diam{}{a\iff}\boxx a$
-\end_inset
-
- 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Standard
-
-funzione totale 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Standard
-
-
-\begin_inset Formula $\forall\alpha\exists\,!\,\beta:\:\alpha R\beta$
-\end_inset
-
- 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-non ci sono 
-\begin_inset Quotes eld
-\end_inset
-
-conti
-\begin_inset Quotes erd
-\end_inset
-
- da fare, R è seriale sse R è seriale 
-\begin_inset Formula $\boxx a\implies\diam a$
-\end_inset
-
- , e se R è una funzione parziale 
-\begin_inset Formula $\implica{\diam a}{\boxx a}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-quindi dato che l'implica prevede un and di implica da una parte e dall'altra per definizione abbiamo la tesi
-\end_layout
-
-\begin_layout Standard
-
-.
-\end_layout
-
-\begin_layout Standard
-
-.
-\end_layout
-
-\begin_layout Standard
-
-
-\begin_inset Tabular 
-<lyxtabular version="3" rows="1" columns="3">
-<features tabularvalignment="middle" tabularwidth="0pt">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Standard
-
-
-\begin_inset Formula $\diam{}{a\Rightarrow}\boxx{\diam a}$
-\end_inset
-
- 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Standard
-
-relazione euclidea 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Standard
-
-
-\begin_inset Formula $\forhten{\alpha,\beta,\gamma}{:\:(\alpha R\beta,\:\alpha R\gamma)}{\beta}R\gamma$
-\end_inset
-
- da cui anche: 
-\begin_inset Formula $\beta$
-\end_inset
-
-R
-\begin_inset Formula $\beta$
-\end_inset
-
-, 
-\begin_inset Formula $\gamma R\gamma$
-\end_inset
-
-, 
-\begin_inset Formula $\gamma$
-\end_inset
-
-R
-\begin_inset Formula $\beta$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-Ip) relazione euclidea
-\end_layout
-
-\begin_layout Standard
-
-Ts) 
-\begin_inset Formula $\diam{}{a\Rightarrow}\boxx{\diam a}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-Suppongo sia vero l'antecedente (se falso ho finito), quindi vale: 
-\begin_inset Formula $\dia$
-\end_inset
-
- da cui: 
-\begin_inset Formula $\vera{\mu}{\dia}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-dato che 
-\begin_inset Formula $\dia$
-\end_inset
-
- si ha che esiste almeno un 
-\begin_inset Formula $\beta$
-\end_inset
-
- tale che in beta vale a
-\end_layout
-
-\begin_layout Standard
-
-solo un beta: autoanello perché euclidea e quindi 
-\begin_inset Formula $\boxx{\dia}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-diversi beta: ognuno dei vari 
-\begin_inset Formula $\beta'$
-\end_inset
-
-, 
-\begin_inset Formula $\beta''$
-\end_inset
-
- , ecc. sono in relazione con 
-\begin_inset Formula $\beta$
-\end_inset
-
-, dato che la relazione è euclidea, pertanto dato che in 
-\begin_inset Formula $\beta$
-\end_inset
-
- vale 
-\begin_inset Formula $a$
-\end_inset
-
-, in ognuno di loro vale 
-\begin_inset Formula $\dia$
-\end_inset
-
- 
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-Ip)
-\begin_inset Formula $\diam{}{a\Rightarrow}\boxx{\diam a}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-Ts) relazione euclidea
-\end_layout
-
-\begin_layout Standard
-
-Per assurdo, suppondo valga ip) ma non la tesi
-\end_layout
-
-\begin_layout Standard
-
-Considero un Frame in cui: 
-\begin_inset Formula $\alpha R\beta,$
-\end_inset
-
- 
-\begin_inset Formula $\alpha R\gamma,$
-\end_inset
-
- 
-\begin_inset Formula $\beta R\gamma$
-\end_inset
-
- ma NON 
-\begin_inset Formula $\beta R\gamma$
-\end_inset
-
- cioè si ha un frammento in cui non vale l'euclidea. Poniamo che il modello sia tale che 
-\begin_inset Formula $V(A)$
-\end_inset
-
-
-\begin_inset Formula $=\{\gamma\}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-In queste ipotesi vale 
-\begin_inset Formula $\dia$
-\end_inset
-
- dato che in 
-\begin_inset Formula $\gamma$
-\end_inset
-
- vale 
-\begin_inset Formula $a$
-\end_inset
-
-. In 
-\begin_inset Formula $\beta$
-\end_inset
-
- non vale 
-\begin_inset Formula $a$
-\end_inset
-
- e neppure 
-\begin_inset Formula $\dia$
-\end_inset
-
- perché non ha 
-\begin_inset Quotes eld
-\end_inset
-
-uscite
-\begin_inset Quotes erd
-\end_inset
-
-, da cui in 
-\begin_inset Formula $a$
-\end_inset
-
- non vale 
-\begin_inset Formula $\boxx{\dia}$
-\end_inset
-
- contraddicendo così l'ipotesi (BAM!) 
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-
 Semantica
 \end_layout
 
+\begin_layout Section
+Simboli secessari
+\end_layout
+
 \begin_layout Standard
-
-
 \begin_inset Formula $\semGen ab$
 \end_inset
 
- cioè a è conseguenza semantica di b, se in ogni Frame, Modello e Mondo in cui 
+ cioè a è conseguenza semantica di b, se in ogni Frame, Modello e Mondo
+ in cui 
 \begin_inset Formula $\vera{\mu}b$
 \end_inset
 
@@ -839,8 +225,6 @@ Semantica
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset Formula $\dia\equiv\sim\boxx{\sim a}$
 \end_inset
 
@@ -848,17 +232,14 @@ Semantica
 \end_layout
 
 \begin_layout Standard
-
 Vale da sinistra a destra,
 \end_layout
 
 \begin_layout Standard
-
 Infatti:
 \end_layout
 
 \begin_layout Standard
-
 se 
 \begin_inset Formula $\veraw{\mu}{\alpha}{\dia}$
 \end_inset
@@ -867,8 +248,6 @@ se
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset Formula $\exists\beta:$
 \end_inset
 
@@ -884,8 +263,6 @@ se
 \end_layout
 
 \begin_layout Standard
-
-
 \begin_inset Formula $\mu\nvDash_{\beta}\sim a$
 \end_inset
 
@@ -893,7 +270,6 @@ se
 \end_layout
 
 \begin_layout Standard
-
 per questo in 
 \begin_inset Formula $\alpha$
 \end_inset
@@ -914,7 +290,6 @@ per questo in
 \end_layout
 
 \begin_layout Standard
-
 allora in 
 \begin_inset Formula $\alpha$
 \end_inset
@@ -927,7 +302,127 @@ allora in
 \begin_inset Formula $\veraw{\mu}{\alpha}{\sim\boxx{\sim a}}$
 \end_inset
 
- cioè la tesi. 
+ cioè la tesi.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vale anche da destra a sinistra, dimostrazione simile.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Logiche
+\end_layout
+
+\begin_layout Standard
+Una logica 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ su L è un insieme di fbf su L che: 
+\end_layout
+
+\begin_layout Itemize
+contiene tutte le tautologie 
+\end_layout
+
+\begin_layout Itemize
+è chiusa rispetto al Modus Ponens 
+\end_layout
+
+\begin_layout Standard
+Ad esempio; 
+\begin_inset Formula $PL(\phi)$
+\end_inset
+
+ cioè i teoremi della logica proposizionale
+\end_layout
+
+\begin_layout Standard
+Altro esempio 
+\begin_inset Formula $\Lambda_{C}=\{a\,|\,\vera F{a\: per}\ ogni\ F\in C\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+infatti: 
+\end_layout
+
+\begin_layout Itemize
+contiene tutte le tautologie perché sono vere mondo per mondo dappertutto
+ 
+\end_layout
+
+\begin_layout Itemize
+MP : suppongo che in un mondo 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ accada che: 
+\begin_inset Formula $\nonveraw{\mu}{\alpha}b$
+\end_inset
+
+ , 
+\begin_inset Formula $\veraw{\mu}{\alpha}a$
+\end_inset
+
+ .
+ Se vale anche 
+\begin_inset Formula $\veraw{\mu}{\alpha}{\implica ab}$
+\end_inset
+
+ ...
+ l'antecedente è vero, quindi dato che l'implicazione è vera, deve essere
+ vero anche il conseguente da cui non può che essere 
+\begin_inset Formula $\veraw{\mu}{\alpha}b$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Una logica si dice 
+\series bold
+uniforme 
+\series default
+se è chiusa rispetto a sostituzioni uniformi cioè se sostituendo a una lettere
+ uguali formule uguali in una tautologia, ottengo una tautologia.
+\end_layout
+
+\begin_layout Standard
+Es.
+ 
+\begin_inset Formula $\Lambda_{C}=\{a\,|\,\vera F{a\: per}\ ogni\ F\in C\}$
+\end_inset
+
+ NON è uniforme infatti se considero 
+\begin_inset Formula $V(A)=S$
+\end_inset
+
+, dove S sono tutti gli stati possibili (mondi), vale anche 
+\begin_inset Formula $\veraw{\mu}{\alpha}A$
+\end_inset
+
+, e cioè A è una tautologia, se al posto di A sostituisco 
+\begin_inset Formula $B\wedge\sim B$
+\end_inset
+
+ (falsa in ogni modello e mondo) non ottengo una tautologia.
+\begin_inset Newline newline
+\end_inset
+
+
 \begin_inset Newline newline
 \end_inset
 
@@ -936,7 +431,138 @@ allora in
 
 \begin_layout Standard
 
-Vale anche da destra a sinistra, dimostrazione simile. 
+\series bold
+\size large
+\emph on
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Teorema
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sono equivalenti: 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ è normale 
+\end_layout
+
+\begin_layout Enumerate
+per ogni intero n 
+\begin_inset Formula $\geq0$
+\end_inset
+
+,
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\teorema{a1\wedge a2\wedge...\wedge an}\implies a$
+\end_inset
+
+ implica 
+\begin_inset Formula $\teorema{\boa1\wedge\boa2\wedge...\wedge\boa n}\implies\boa$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+valgono:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\teorema{\boxx T}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\teorema{\boa\wedge\boxx b}\implies\boxx{(a\wedge b)}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\teorema{\implica ab}$
+\end_inset
+
+ implica 
+\begin_inset Formula $\teorema{\boa\implies\boxx b}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Dimostrazione
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $1\implies$
+\end_inset
+
+2
+\end_layout
+
+\begin_layout Standard
+per induzione.
+\end_layout
+
+\begin_layout Standard
+se n = 0 allora 
+\begin_inset Formula $\teorema a$
+\end_inset
+
+ allora 
+\begin_inset Formula $\teorema{\boa}$
+\end_inset
+
+ per la regola RN che vale in 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ per ipotesi
+\end_layout
+
+\begin_layout Standard
+se n > 0 (passo induttivo) suppongo valga l'antecedente, altrimenti 2 vale
+ senz'altro;
+\end_layout
+
+\begin_layout Standard
+Ricordiamo che 
+\begin_inset Formula $a1\wedge a2\wedge...\wedge an\implies a\equiv a1\wedge a2\wedge...a_{n-1}\implies(an\implies a)$
+\end_inset
+
+ 
 \end_layout
 
 \end_body

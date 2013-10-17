@@ -115,11 +115,13 @@ in ogni modello e mondo) non ottengo una tautologia.\\\\
 	Sono equivalenti:
 \begin{enumerate}
 \item $\Lambda$ è normale
-\item per ogni intero n $\geq0$, 
 
 
-$\teorema{a1\wedge a2\wedge...\wedge an}\implies a$ implica $\teorema{\boa1\wedge\boa2\wedge...\wedge\boa n}\implies\boa$ 
 
+\item per ogni intero n $\geq0$,
+ $\teorema{a1\teorema a1\wedge a2\wedge...\wedge an}\implies a$
+
+implica $\teorema{\boa1\wedge\boa2\wedge...\wedge\boa n}\implies\boa$ 
 \item valgono:
 
 \begin{enumerate}
