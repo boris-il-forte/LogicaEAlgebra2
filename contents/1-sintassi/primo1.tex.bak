@@ -4,6 +4,12 @@
 \global\long\def\vera#1#2{#1\models#2}
 
 
+\global\long\def\nonvera#1#2{#1\nvDash#2}
+
+
+\global\long\def\nonveraw#1#2#3{#1\nvDash_{#2}#3}
+
+
 \global\long\def\verita#1#2{#1\in V(#2)}
 
 
@@ -70,7 +76,7 @@ da cui: $\veraw{\mu}{\alpha}{\dia}$ per definizione di diamond (esiste
 $\beta$ in relazione con $\alpha$ per la serialità e in $\alpha$
 vale $a$ dato che $\veraw{\mu}{\alpha}{\boa}$ )\\
 
-
+		
 
 Ip) $\boa\implies\dia$
 
@@ -86,8 +92,116 @@ Ts) Frame F con relazione R seriale
 \draw [black] (38.9,-13.2) circle (3);
 \draw (38.9,-13.2) node {$\beta$}; 
 
-\draw (24,-17.3) node {\sout{$\dia$}};
+\draw (24,-17.3) node {\sout{$\dia$}};   
 \end{tikzpicture} \end{center}
+
+Per assurdo:
+
+Suppongo di trovarmi in un mondo come quello in figura (wow) in cui
+\mbox{$\veraw{\mu}{\alpha}{\boa}$ }, e suppongo che la relazione
+R del frame NON sia seriale cioè $\sim\exists\beta:(\alpha R\beta)$,
+se è così vale sicuramente $\veraw{\mu}a{\boa}$ (dato che $\alpha$
+non ha successori) , d'altra parte per come è il mondo considerato,
+cioè si nega la tesi, assurdo\sout{.} 
+
+\subsection{Relazione simmetrica}
+
+Ip) R simmetrica
+
+Ts) $a\implies\boxx{\dia}$
+
+Suppongo che $\veraw{\mu}{\alpha}a$ (se no avrei già la tesi), due
+casi:
+
+\textbf{Caso 1}: Da $\alpha$ non parte nessun arco, allora sicuramente
+$\veraw{\mu}{\alpha}{\boxx x}$ con $x$ qualsiasi e in particolare
+$\veraw{\mu}{\alpha}{\boxx{\dia}}$
+
+\begin{center} 
+\begin{tikzpicture}[scale=0.2] 
+\tikzstyle{every node}+=[inner sep=0pt] 
+
+\draw [black] (24.2,-13) circle (3);
+\draw (24.2,-13) node {$\alpha$};
+
+\end{tikzpicture} \end{center}
+
+\textbf{Caso 2}: Esiste almeno un $\beta$ tale che $\alpha R\beta$.
+
+\begin{center} 
+\begin{tikzpicture}[scale=0.2]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (24.2,-12.7) circle (3);
+\draw (24.2,-12.7) node {$\alpha$};
+
+\draw (24.2,-8.3) node {$a$}; 
+\draw [black] (38.5,-8.3) circle (3); 
+\draw (38.5,-8.3) node {$\beta$}; 
+\draw [black] (38.5,-15.8) circle (3); 
+\draw (38.5,-15.8) node {$\beta'$}; 
+\draw [black] (38.5,-24) circle (3); 
+\draw (38.5,-24) node {$\beta''$}; 
+
+\draw (38.5,-3.7) node {$\dia$};
+
+\draw (38.5,-11.7) node {$\dia$}; 
+\draw (38.5,-20.2) node {$\dia$}; 
+
+\draw [black] (27.07,-11.82) -- (35.63,-9.18);
+\fill [black] (35.63,-9.18) -- (34.72,-8.94) -- (35.02,-9.9); 
+\draw [black] (35.63,-9.18) -- (27.07,-11.82); 
+\fill [black] (27.07,-11.82) -- (27.98,-12.06) -- (27.68,-11.1);
+\draw [black] (27.13,-13.34) -- (35.57,-15.16);
+\fill [black] (35.57,-15.16) -- (34.89,-14.51) -- (34.68,-15.48);
+\draw [black] (35.57,-15.16) -- (27.13,-13.34); 
+\fill [black] (27.13,-13.34) -- (27.81,-13.99) -- (28.02,-13.02); 
+\draw [black] (26.55,-14.56) -- (36.15,-22.14);
+\fill [black] (36.15,-22.14) -- (35.83,-21.25) -- (35.21,-22.04); 
+\draw [black] (36.15,-22.14) -- (26.55,-14.56); 
+\fill [black] (26.55,-14.56) -- (26.87,-15.45) -- (27.49,-14.66);
+\end{tikzpicture} \end{center}
+
+Dato che la relazione è simmetrica se $\alpha R\beta$ allora \textbf{$\beta R\alpha$.}
+Dato che $\veraw{\mu}{\alpha}a,$ in ognuno di questi $\beta$, $\beta'$,$\beta''$
+ecc. vale $\dia$ perché ognuno di loro è in relazione con $\alpha$. 
+
+Allora per ognuno di questi $\beta$ si ha $\veraw{\mu}{\beta}{\dia}$,
+(esiste infatti un mondo, $\alpha$, in cui vale $a$) da cui: $\veraw{\mu}{\alpha}{\boxx{\dia}}$
+\\
+
+Ip) $a\implies\boxx{\dia}$
+
+Ts) R simmetrica
+
+Per assurdo:
+
+suppongo R non sia simmetrica e considero un frame con soli $\alpha$
+e $\beta$ e in cui $R=\{(\alpha,\beta)\}$ . In questo frame considero
+un modello con funzione di verità tale che: $V(A)=\{\alpha\}$.
+
+In $\beta$ non vale $\dia$ perché $\beta$ non è in relazione con
+nessun mondo, per questo: $\nonveraw{\mu}{\alpha}{\boxx{\dia}}$
+
+\begin{center} 
+\begin{tikzpicture}[scale=0.2] \tikzstyle{every node}+=[inner sep=0pt] 
+\draw [black] (24.2,-12.7) circle (3); 
+\draw (24.2,-12.7) node {$\alpha$}; 
+
+\draw (24.2,-7.5) node {$A$};
+
+\draw [black] (37.9,-12.7) circle (3);
+\draw (37.9,-12.7) node {$\beta$};
+
+
+\draw (37.9,-7.5) node {\sout{$\dia$}}; 
+
+\draw (24.2,-17.8) node {\sout{$\boxx{\dia}$}}; 
+
+\draw [black] (27.2,-12.7) -- (34.9,-12.7);
+\fill [black] (34.9,-12.7) -- (34.1,-12.2) -- (34.1,-13.2); 
+\end{tikzpicture} \end{center}
+
+$ $
 
 \subsection{Funzione parziale}
 

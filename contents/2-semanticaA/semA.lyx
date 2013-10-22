@@ -1,10 +1,9 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
+#LyX file created by tex2lyx 2.0.6
 \lyxformat 413
 \begin_document
 \begin_header
 \textclass report
 \use_default_options false
-\maintain_unincluded_children false
 \language english
 \language_package default
 \inputencoding utf8
@@ -18,15 +17,12 @@
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
-\bibtex_command default
-\index_command default
 \paperfontsize 11
 \spacing single
-\use_hyperref false
+\use_hyperref 0
 \papersize a4paper
 \use_geometry true
 \use_amsmath 2
@@ -39,10 +35,6 @@
 \paperorientation portrait
 \suppress_date false
 \use_refstyle 0
-\index Index
-\shortcut idx
-\color #008000
-\end_index
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -61,155 +53,192 @@
 \begin_body
 
 \begin_layout Standard
+
+
 \begin_inset FormulaMacro
-\renewcommand{\veraw}[3]{#1\models_{#2}#3}
+\def\veraw #1#2#3{#1\models_{#2}#3}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset FormulaMacro
-\renewcommand{\vera}[2]{#1\models#2}
+\def\vera #1#2{#1\models#2}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset FormulaMacro
-\renewcommand{\nonvera}[2]{#1\nvDash#2}
+\def\nonvera #1#2{#1\nvDash#2}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset FormulaMacro
-\renewcommand{\nonveraw}[3]{#1\nvDash_{#2}#3}
+\def\nonveraw #1#2#3{#1\nvDash_{#2}#3}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset FormulaMacro
-\newcommand{\nonSem}[2]{#1\nvdash#2}
+\def\nonSem #1#2{#1\nvdash#2}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset FormulaMacro
-\newcommand{\nonSemW}[3]{#1\nvdash_{#2}#3}
+\def\nonSemW #1#2#3{#1\nvdash_{#2}#3}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset FormulaMacro
-\renewcommand{\verita}[2]{#1\in V(#2)}
+\def\verita #1#2{#1\in V(#2)}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset FormulaMacro
-\renewcommand{\entail}[2]{#1\models#2}
+\def\entail #1#2{#1\models#2}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset FormulaMacro
-\renewcommand{\semantica}[3]{#1\vdash_{#2}#3}
+\def\semantica #1#2#3{#1\vdash_{#2}#3}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset FormulaMacro
-\renewcommand{\semGen}[2]{#1\vdash#2}
+\def\semGen #1#2{#1\vdash#2}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset FormulaMacro
-\renewcommand{\boxx}[1]{\square#1}
+\def\boxx #1{\square#1}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset FormulaMacro
-\renewcommand{\diam}[1]{\diamond#1}
+\def\diam #1{\diamond#1}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset FormulaMacro
-\renewcommand{\dia}{\diamond a}
+\def\dia {\diamond a}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset FormulaMacro
-\renewcommand{\boa}{\boxx a}
+\def\boa {\boxx a}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset FormulaMacro
-\renewcommand{\forhten}[3]{\forall#1#2\Rightarrow#3}
+\def\forhten #1#2#3{\forall#1#2\Rightarrow#3}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset FormulaMacro
-\renewcommand{\implica}[2]{#1\Rightarrow#2}
+\def\implica #1#2{#1\Rightarrow#2}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset FormulaMacro
-\newcommand{\teorema}[1]{\vdash_{\Lambda}#1}
+\def\teorema #1{\vdash_{\Lambda}#1}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Chapter
+
 Semantica
 \end_layout
 
 \begin_layout Section
+
 Simboli secessari
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset Formula $\semGen ab$
 \end_inset
 
- cioè a è conseguenza semantica di b, se in ogni Frame, Modello e Mondo
- in cui 
+ cioè a è conseguenza semantica di b, se in ogni Frame, Modello e Mondo in cui 
 \begin_inset Formula $\vera{\mu}b$
 \end_inset
 
@@ -225,6 +254,8 @@ Simboli secessari
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset Formula $\dia\equiv\sim\boxx{\sim a}$
 \end_inset
 
@@ -232,14 +263,17 @@ Simboli secessari
 \end_layout
 
 \begin_layout Standard
+
 Vale da sinistra a destra,
 \end_layout
 
 \begin_layout Standard
+
 Infatti:
 \end_layout
 
 \begin_layout Standard
+
 se 
 \begin_inset Formula $\veraw{\mu}{\alpha}{\dia}$
 \end_inset
@@ -248,6 +282,8 @@ se
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset Formula $\exists\beta:$
 \end_inset
 
@@ -263,6 +299,8 @@ se
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset Formula $\mu\nvDash_{\beta}\sim a$
 \end_inset
 
@@ -270,6 +308,7 @@ se
 \end_layout
 
 \begin_layout Standard
+
 per questo in 
 \begin_inset Formula $\alpha$
 \end_inset
@@ -290,6 +329,7 @@ per questo in
 \end_layout
 
 \begin_layout Standard
+
 allora in 
 \begin_inset Formula $\alpha$
 \end_inset
@@ -302,8 +342,7 @@ allora in
 \begin_inset Formula $\veraw{\mu}{\alpha}{\sim\boxx{\sim a}}$
 \end_inset
 
- cioè la tesi.
- 
+ cioè la tesi. 
 \begin_inset Newline newline
 \end_inset
 
@@ -311,8 +350,8 @@ allora in
 \end_layout
 
 \begin_layout Standard
-Vale anche da destra a sinistra, dimostrazione simile.
- 
+
+Vale anche da destra a sinistra, dimostrazione simile. 
 \begin_inset Newline newline
 \end_inset
 
@@ -320,10 +359,12 @@ Vale anche da destra a sinistra, dimostrazione simile.
 \end_layout
 
 \begin_layout Section
+
 Logiche
 \end_layout
 
 \begin_layout Standard
+
 Una logica 
 \begin_inset Formula $\Lambda$
 \end_inset
@@ -332,14 +373,17 @@ Una logica
 \end_layout
 
 \begin_layout Itemize
+
 contiene tutte le tautologie 
 \end_layout
 
 \begin_layout Itemize
+
 è chiusa rispetto al Modus Ponens 
 \end_layout
 
 \begin_layout Standard
+
 Ad esempio; 
 \begin_inset Formula $PL(\phi)$
 \end_inset
@@ -348,6 +392,7 @@ Ad esempio;
 \end_layout
 
 \begin_layout Standard
+
 Altro esempio 
 \begin_inset Formula $\Lambda_{C}=\{a\,|\,\vera F{a\: per}\ ogni\ F\in C\}$
 \end_inset
@@ -356,15 +401,17 @@ Altro esempio
 \end_layout
 
 \begin_layout Standard
+
 infatti: 
 \end_layout
 
 \begin_layout Itemize
-contiene tutte le tautologie perché sono vere mondo per mondo dappertutto
- 
+
+contiene tutte le tautologie perché sono vere mondo per mondo dappertutto 
 \end_layout
 
 \begin_layout Itemize
+
 MP : suppongo che in un mondo 
 \begin_inset Formula $\alpha$
 \end_inset
@@ -377,14 +424,11 @@ MP : suppongo che in un mondo
 \begin_inset Formula $\veraw{\mu}{\alpha}a$
 \end_inset
 
- .
- Se vale anche 
+ . Se vale anche 
 \begin_inset Formula $\veraw{\mu}{\alpha}{\implica ab}$
 \end_inset
 
- ...
- l'antecedente è vero, quindi dato che l'implicazione è vera, deve essere
- vero anche il conseguente da cui non può che essere 
+ ... l'antecedente è vero, quindi dato che l'implicazione è vera, deve essere vero anche il conseguente da cui non può che essere 
 \begin_inset Formula $\veraw{\mu}{\alpha}b$
 \end_inset
 
@@ -392,17 +436,17 @@ MP : suppongo che in un mondo
 \end_layout
 
 \begin_layout Standard
+
 Una logica si dice 
 \series bold
 uniforme 
 \series default
-se è chiusa rispetto a sostituzioni uniformi cioè se sostituendo a una lettere
- uguali formule uguali in una tautologia, ottengo una tautologia.
+se è chiusa rispetto a sostituzioni uniformi cioè se sostituendo a una lettere uguali formule uguali in una tautologia, ottengo una tautologia.
 \end_layout
 
 \begin_layout Standard
-Es.
- 
+
+Es. 
 \begin_inset Formula $\Lambda_{C}=\{a\,|\,\vera F{a\: per}\ ogni\ F\in C\}$
 \end_inset
 
@@ -422,7 +466,7 @@ Es.
 \begin_inset Newline newline
 \end_inset
 
-
+ 
 \begin_inset Newline newline
 \end_inset
 
@@ -431,13 +475,28 @@ Es.
 
 \begin_layout Standard
 
+
 \series bold
-\size large
+
 \emph on
+
+\size large
+
 \begin_inset ERT
 status collapsed
 
-\begin_layout Plain Layout
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
 
 {
 \end_layout
@@ -448,7 +507,7 @@ Teorema
 \begin_inset ERT
 status collapsed
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 }
 \end_layout
@@ -456,13 +515,33 @@ status collapsed
 \end_inset
 
 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+
+\emph default
+
+\series default
+
+\size large
+
 \end_layout
 
 \begin_layout Standard
+
 Sono equivalenti: 
 \end_layout
 
 \begin_layout Enumerate
+
+
 \begin_inset Formula $\Lambda$
 \end_inset
 
@@ -470,6 +549,7 @@ Sono equivalenti:
 \end_layout
 
 \begin_layout Enumerate
+
 per ogni intero n 
 \begin_inset Formula $\geq0$
 \end_inset
@@ -479,6 +559,8 @@ per ogni intero n
 
 \begin_deeper
 \begin_layout Standard
+
+
 \begin_inset Formula $\teorema{a1\wedge a2\wedge...\wedge an}\implies a$
 \end_inset
 
@@ -491,11 +573,14 @@ per ogni intero n
 
 \end_deeper
 \begin_layout Enumerate
+
 valgono:
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
+
+
 \begin_inset Formula $\teorema{\boxx T}$
 \end_inset
 
@@ -503,6 +588,8 @@ valgono:
 \end_layout
 
 \begin_layout Enumerate
+
+
 \begin_inset Formula $\teorema{\boa\wedge\boxx b}\implies\boxx{(a\wedge b)}$
 \end_inset
 
@@ -510,6 +597,8 @@ valgono:
 \end_layout
 
 \begin_layout Enumerate
+
+
 \begin_inset Formula $\teorema{\implica ab}$
 \end_inset
 
@@ -522,10 +611,13 @@ valgono:
 
 \end_deeper
 \begin_layout Standard
+
 Dimostrazione
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset Formula $1\implies$
 \end_inset
 
@@ -533,10 +625,12 @@ Dimostrazione
 \end_layout
 
 \begin_layout Standard
+
 per induzione.
 \end_layout
 
 \begin_layout Standard
+
 se n = 0 allora 
 \begin_inset Formula $\teorema a$
 \end_inset
@@ -553,11 +647,12 @@ se n = 0 allora
 \end_layout
 
 \begin_layout Standard
-se n > 0 (passo induttivo) suppongo valga l'antecedente, altrimenti 2 vale
- senz'altro;
+
+se n > 0 (passo induttivo) suppongo valga l'antecedente, altrimenti 2 vale senz'altro;
 \end_layout
 
 \begin_layout Standard
+
 Ricordiamo che 
 \begin_inset Formula $a1\wedge a2\wedge...\wedge an\implies a\equiv a1\wedge a2\wedge...a_{n-1}\implies(an\implies a)$
 \end_inset

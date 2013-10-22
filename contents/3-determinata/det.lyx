@@ -1,0 +1,913 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass report
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8
+\fontencoding T1
+\font_roman default
+\font_sans default
+\font_typewriter mathpazo
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\veraw}[3]{#1\models_{#2}#3}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\vera}[2]{#1\models#2}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\nonvera}[2]{#1\nvDash#2}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\nonveraw}[3]{#1\nvDash_{#2}#3}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\nonSem}[2]{#1\nvdash#2}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\nonSemW}[3]{#1\nvdash_{#2}#3}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\verita}[2]{#1\in V(#2)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\entail}[2]{#1\models#2}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\semantica}[3]{#1\vdash_{#2}#3}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\semGen}[2]{#1\vdash#2}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\boxx}[1]{\square#1}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\diam}[1]{\diamond#1}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\dia}{\diamond a}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\boa}{\boxx a}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\noa}{\sim}
+{a}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\forhten}[3]{\forall#1#2\Rightarrow#3}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\implica}[2]{#1\Rightarrow#2}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\teorema}[1]{\vdash_{\Lambda}#1}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\teorGamma}[1]{\Gamma\vdash_{\Lambda}#1}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\teoa}{\teorGamma a}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\consist}{\mbox{\Lambda}-consistente}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\consMax}{\Lambda-consistente\: massimale}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Verso la decidibilità - Logica determinata
+\end_layout
+
+\begin_layout Section
+Insieme 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ consistente e sue proprietà
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ una logica (cioè ha tutte le tautologie ed è chiusa rispetto al Modus Ponens)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ si dice 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+-consistente se: 
+\begin_inset Formula $\nonSemW{\Gamma}{\Lambda}{\bot}$
+\end_inset
+
+, dove 
+\begin_inset Formula $\bot=A\wedge\sim A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Delta$
+\end_inset
+
+
+ si dice 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+
+\lang english
+-consistente massimale se per ogni fbf 
+\begin_inset Formula $a$
+\end_inset
+
+
+ 
+\begin_inset Formula $a\in\Delta$
+\end_inset
+
+
+\lang english
+ oppure 
+\begin_inset Formula $\sim a\in\Delta$
+\end_inset
+
+ 
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Proprietà:
+\end_layout
+
+\begin_layout Enumerate
+Se 
+\begin_inset Formula $\teoa$
+\end_inset
+
+ e 
+\begin_inset Formula $\Gamma\subseteq\Delta$
+\end_inset
+
+ allora 
+\begin_inset Formula $\Delta\teorema a$
+\end_inset
+
+.
+ Ovvero se alcune premesse non mi servono posso comunque metterle per dedurre
+ una formula
+\end_layout
+
+\begin_layout Enumerate
+Se 
+\begin_inset Formula $\teorGamma a$
+\end_inset
+
+ e 
+\begin_inset Formula $\Lambda\subseteq\Lambda'$
+\end_inset
+
+ allora 
+\begin_inset Formula $\Gamma\vdash_{\Lambda'}a$
+\end_inset
+
+.
+ Ovvero quello che posso dedurre in una logica più scarna (es.
+ PL) lo posso dedurre anche in una più ricca che la contien (es.
+ Modale)
+\end_layout
+
+\begin_layout Enumerate
+se 
+\begin_inset Formula $a\in\Gamma$
+\end_inset
+
+ allora 
+\begin_inset Formula $\teoa$
+\end_inset
+
+ .
+ 
+\begin_inset Newline newline
+\end_inset
+
+Infatti 
+\begin_inset Formula $\teorema{a\implies a}$
+\end_inset
+
+ è un teorema dato che 
+\begin_inset Formula $a\implies a$
+\end_inset
+
+ è una tautologia
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\{a|\teoa\}$
+\end_inset
+
+ è la minima logica che contiene 
+\begin_inset Formula $\Gamma\cup\Lambda$
+\end_inset
+
+.
+ Infatti posso dedurre tutte le tautologie da 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+, anche se non userò nessuna formula di 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ ma solo quelle che già sono nella logica 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Se 
+\begin_inset Formula $\teoa$
+\end_inset
+
+ e 
+\begin_inset Formula $\{a\}$
+\end_inset
+
+
+\begin_inset Formula $\teorema b$
+\end_inset
+
+ allora 
+\begin_inset Formula $\teorGamma b$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+Infatti: per dedurre 
+\begin_inset Formula $a$
+\end_inset
+
+ uso regole di inferenza, formule di 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+, assiomi di 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+.
+ Per arrivare in 
+\begin_inset Formula $b$
+\end_inset
+
+ uso assiomi di 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ e regole di inferenza, quindi posso arrivare da 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ direttamente in 
+\begin_inset Formula $b$
+\end_inset
+
+ usando formule di 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+, regole di inf.
+ e assiomi di 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Se 
+\begin_inset Formula $\teoa$
+\end_inset
+
+ e 
+\begin_inset Formula $\teorGamma{\implica ab}$
+\end_inset
+
+ allora 
+\begin_inset Formula $\teorGamma b$
+\end_inset
+
+, dato che 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ è chiusa rispetto al MP
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Gamma\cup\{a\}\teorema b$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $\teorGamma{\implica ab}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Andata
+\series default
+: 
+\begin_inset Formula $\teorema{a_{1}\wedge...\wedge a\wedge...\wedge}a_{n}\implies b$
+\end_inset
+
+ (per definizione di teorema), si può portare 
+\begin_inset Formula $a$
+\end_inset
+
+ alla destra dell'implicazione 
+\begin_inset Formula $\teorema{a_{1}\wedge...\wedge}a_{n}\implies(a\implies b)$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Ritorno
+\series default
+: 
+\begin_inset Formula $\teorema{a_{1}\wedge}...\wedge a_{n}\implies(a\implies b)$
+\end_inset
+
+, basta portare 
+\begin_inset Formula $a$
+\end_inset
+
+ tra le 
+\begin_inset Formula $ $
+\end_inset
+
+and.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\teoa$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $\Gamma\cup\{\sim a\}$
+\end_inset
+
+ non è 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+-consistente 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Andata
+\series default
+: 
+\begin_inset Formula $\teoa$
+\end_inset
+
+, 
+\begin_inset Formula $\Gamma\teorema{\sim a}$
+\end_inset
+
+, posso dedure 
+\begin_inset Formula $\bot$
+\end_inset
+
+ che è contro la definizione di 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+-consistenza
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Ritorno
+\series default
+: Se
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $\Gamma\cup\{\sim a\}$
+\end_inset
+
+ non è 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+-consistente, allora 
+\begin_inset Formula $\Gamma\cup\{\sim a\}\teorema{\bot}$
+\end_inset
+
+ da cui per 7.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Gamma\teorema{\sim a\implies\bot}$
+\end_inset
+
+ (sposto 
+\begin_inset Formula $\sim a$
+\end_inset
+
+ a destra e metto l'implica), 
+\begin_inset Newline newline
+\end_inset
+
+Dato che 
+\begin_inset Formula $(\sim a\implies\bot)\implies a$
+\end_inset
+
+ è una tatutologica, per MP ottengo
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ è 
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $\consist$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $\exists\beta:\nonSem{\Gamma}{_{\Lambda}\beta}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Andata
+\series default
+: Basta prendere 
+\begin_inset Formula $\sim a\wedge a$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Ritorno
+\series default
+: Se deducessi tutte le formule (
+\begin_inset Formula $\sim$
+\end_inset
+
+
+\begin_inset Formula $\exists\beta:\nonSem{\Gamma}{_{\Lambda}\beta}$
+\end_inset
+
+ significa 
+\begin_inset Formula $\forall\beta:\teorGamma{\beta}$
+\end_inset
+
+) , potrei dedurre anche 
+\begin_inset Formula $\bot$
+\end_inset
+
+, da cui la non consistenza
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ è 
+\begin_inset Formula $\consist$
+\end_inset
+
+ se per ogni 
+\begin_inset Formula $a$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Gamma\cup\{a\}$
+\end_inset
+
+ o 
+\begin_inset Formula $\Gamma\cup\{\sim a\}$
+\end_inset
+
+ è 
+\begin_inset Formula $\consist$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+se 
+\begin_inset Formula $\teoa$
+\end_inset
+
+ allora 
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $\Gamma\cup\{\sim a\}$
+\end_inset
+
+ non è consistente perché con 
+\begin_inset Formula $a$
+\end_inset
+
+ e 
+\begin_inset Formula $\sim a$
+\end_inset
+
+ posso dedurre 
+\begin_inset Formula $\bot$
+\end_inset
+
+, ma 
+\begin_inset Formula $\Gamma\cup\{a\}$
+\end_inset
+
+ lo è 
+\begin_inset Newline newline
+\end_inset
+
+se 
+\begin_inset Formula $\Gamma\teorema{\sim a}$
+\end_inset
+
+ allora 
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $\Gamma\cup\{\sim a\}$
+\end_inset
+
+ è consistente ma non 
+\begin_inset Formula $\Gamma\cup\{a\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\bot$
+\end_inset
+
+
+\begin_inset Formula $\notin\Gamma$
+\end_inset
+
+ se 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ è 
+\begin_inset Formula $\consist$
+\end_inset
+
+ (altrimenti potrei dedurlo per il 3.)
+\end_layout
+
+\begin_layout Enumerate
+Se 
+\begin_inset Formula $\Delta$
+\end_inset
+
+è 
+\begin_inset Formula $\consist\: massimale$
+\end_inset
+
+ e 
+\begin_inset Formula $\Delta\teorema a$
+\end_inset
+
+ allora 
+\begin_inset Formula $a\in\Delta$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+se 
+\begin_inset Formula $a\notin\Delta$
+\end_inset
+
+ allora 
+\begin_inset Formula $\sim a\in\Delta$
+\end_inset
+
+ (dato che 
+\begin_inset Formula $\Delta$
+\end_inset
+
+è massimale) 
+\begin_inset Newline newline
+\end_inset
+
+ma se 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ contiene 
+\begin_inset Formula $\sim a$
+\end_inset
+
+ allora per il 2.)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Delta\teorema{\sim a}$
+\end_inset
+
+ , che insieme a 
+\begin_inset Formula $\Delta\teorema a$
+\end_inset
+
+ mi da 
+\begin_inset Formula $\Delta\teorema{\bot}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Se 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ è 
+\begin_inset Formula $\consMax$
+\end_inset
+
+ e 
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $a\in\Delta$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\implica ab\in\Delta$
+\end_inset
+
+ allora 
+\begin_inset Formula $b\in\Delta$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Lo si vede subito usando 2.) se tutti e tre, e poi 6.) (deduco 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $\implica ab$
+\end_inset
+
+, allora deduco anche 
+\begin_inset Formula $b$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
