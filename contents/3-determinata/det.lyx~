@@ -859,5 +859,55 @@ ma se
 
 \end_layout
 
+\begin_layout Enumerate
+Se 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ è 
+\begin_inset Formula $\consMax$
+\end_inset
+
+ e 
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $a\in\Delta$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\implica ab\in\Delta$
+\end_inset
+
+ allora 
+\begin_inset Formula $b\in\Delta$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Lo si vede subito usando 2.) se tutti e tre, e poi 6.) (deduco 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $\implica ab$
+\end_inset
+
+, allora deduco anche 
+\begin_inset Formula $b$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document

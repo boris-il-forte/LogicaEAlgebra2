@@ -231,7 +231,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\consMax}{\Lambda-consistente\: massimale}
+\renewcommand{\consMax}{\Lambda-consistente\: massimale}
 \end_inset
 
 
@@ -903,10 +903,6 @@ Lo si vede subito usando 2.) se tutti e tre, e poi 6.) (deduco
 \end_inset
 
 )
-\end_layout
-
-\begin_layout Standard
-
 \end_layout
 
 \end_body

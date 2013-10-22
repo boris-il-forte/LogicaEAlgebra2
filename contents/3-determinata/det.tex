@@ -40,6 +40,9 @@
 \global\long\def\boa{\boxx a}
 
 
+\global\long\def\noa{\sim}
+
+
 \global\long\def\forhten#1#2#3{\forall#1#2\Rightarrow#3}
 
 
@@ -55,17 +58,29 @@
 \global\long\def\teoa{\teorGamma a}
 
 
+\global\long\def\consist{\mbox{\ensuremath{\Lambda}}-consistente}
+
+
+\global\long\def\consMax{\Lambda-consistente\: massimale}
+
+
 
 \chapter{Verso la decidibilità - Logica determinata}
 
 
 \section{Insieme $\Lambda$ consistente e sue proprietà}
 
-$\Gamma$ si dice $\Lambda$-consistente se: $\nonSemW{\Gamma}{\Lambda}{\perp}$,
-dove $\perp=A\wedge\sim A$
+Sia $\Lambda$ una logica (cioè ha tutte le tautologie ed è chiusa
+rispetto al Modus Ponens)
+
+$\Gamma$ si dice $\Lambda$-consistente se: $\nonSemW{\Gamma}{\Lambda}{\bot}$,
+dove $\bot=A\wedge\sim A$
 
 $\Delta${ si dice $\Lambda$}-consistente massimale se per ogni fbf
-$a${ $a\in\Delta$} oppure $\sim a\in\Delta$
+$a${ $a\in\Delta$} oppure $\sim a\in\Delta$ $ $\\
+
+
+
 
 \textbf{Proprietà:}
 \begin{enumerate}
@@ -75,16 +90,63 @@ dedurre una formula
 \item Se $\teorGamma a$ e $\Lambda\subseteq\Lambda'$ allora $\Gamma\vdash_{\Lambda'}a$.
 Ovvero quello che posso dedurre in una logica più scarna (es. PL)
 lo posso dedurre anche in una più ricca che la contien (es. Modale)
-\item se $a\in\Gamma$ allora $\teoa$ . \\Infatti $\teorema{a\implies a}$
-è un teorema dato che $a\implies a$ è una tautologia
+\item se $a\in\Gamma$ allora $\teoa$ . \\
+Infatti $\teorema{a\implies a}$ è un teorema dato che $a\implies a$
+è una tautologia
 \item $\{a|\teoa\}$ è la minima logica che contiene $\Gamma\cup\Lambda$.
 Infatti posso dedurre tutte le tautologie da $\Gamma$, anche se non
 userò nessuna formula di $\Gamma$ ma solo quelle che già sono nella
 logica $\Lambda$
-\item Se $\teoa$ e $\{a\}$$\teorema b$ allora $\teorGamma b$ 
+\item Se $\teoa$ e $\{a\}$$\teorema b$ allora $\teorGamma b$ \\
+Infatti: per dedurre $a$ uso regole di inferenza, formule di $\Gamma$,
+assiomi di $\Lambda$. Per arrivare in $b$ uso assiomi di $\Lambda$
+e regole di inferenza, quindi posso arrivare da $\Gamma$ direttamente
+in $b$ usando formule di $\Gamma$, regole di inf. e assiomi di $\Lambda$
+\item Se $\teoa$ e $\teorGamma{\implica ab}$ allora $\teorGamma b$, dato
+che $\Lambda$ è chiusa rispetto al MP
+\item $\Gamma\cup\{a\}\teorema b$ se e solo se $\teorGamma{\implica ab}$
 \\
-Infatti:
-per dedurre $a$ uso regole di inferenza, formule di $\Gamma$, assiomi
-di $\Lambda$$ $per arrivare in $b$ uso assiomi di $\Lambda$
-\item fgsdfg\end{enumerate}
+\textbf{Andata}: $\teorema{a_{1}\wedge...\wedge a\wedge...\wedge}a_{n}\implies b$
+(per definizione di teorema), si può portare $a$ alla destra dell'implicazione
+$\teorema{a_{1}\wedge...\wedge}a_{n}\implies(a\implies b)$ \\
+\textbf{Ritorno}: $\teorema{a_{1}\wedge}...\wedge a_{n}\implies(a\implies b)$,
+basta portare $a$ tra le $ $and.
+\item $\teoa$ se e solo se $\Gamma\cup\{\sim a\}$ non è $\Lambda$-consistente
+\\
+\\
+\textbf{Andata}: $\teoa$, $\Gamma\teorema{\sim a}$, posso dedure
+$\bot$ che è contro la definizione di $\Lambda$-consistenza\\
+\textbf{Ritorno}: Se$ $$\Gamma\cup\{\sim a\}$ non è $\Lambda$-consistente,
+allora $\Gamma\cup\{\sim a\}\teorema{\bot}$ da cui per 7. \\
+$\Gamma\teorema{\sim a\implies\bot}$ (sposto $\sim a$ a destra e
+metto l'implica), \\
+Dato che $(\sim a\implies\bot)\implies a$ è una tatutologica, per
+MP ottengo\\
+$a$
+\item $\Gamma$ è $ $$\consist$ se e solo se $\exists\beta:\nonSem{\Gamma}{_{\Lambda}\beta}$
+\\
+\textbf{Andata}: Basta prendere $\sim a\wedge a$\\
+\textbf{Ritorno}: Se deducessi tutte le formule ($\sim$$\exists\beta:\nonSem{\Gamma}{_{\Lambda}\beta}$
+significa $\forall\beta:\teorGamma{\beta}$) , potrei dedurre anche
+$\bot$, da cui la non consistenza
+\item $\Gamma$ è $\consist$ se per ogni $a$ \\
+$\Gamma\cup\{a\}$ o $\Gamma\cup\{\sim a\}$ è $\consist$\\
+se $\teoa$ allora $ $$\Gamma\cup\{\sim a\}$ non è consistente perché
+con $a$ e $\sim a$ posso dedurre $\bot$, ma $\Gamma\cup\{a\}$
+lo è \\
+se $\Gamma\teorema{\sim a}$ allora $ $$\Gamma\cup\{\sim a\}$ è
+consistente ma non $\Gamma\cup\{a\}$
+\item $\bot$$\notin\Gamma$ se $\Gamma$ è $\consist$ (altrimenti potrei
+dedurlo per il 3.)
+\item Se $\Delta$è $\consist\: massimale$ e $\Delta\teorema a$ allora
+$a\in\Delta$\\
+se $a\notin\Delta$ allora $\sim a\in\Delta$ (dato che $\Delta$è
+massimale) \\
+ma se $\Delta$ contiene $\sim a$ allora per il 2.)\\
+$\Delta\teorema{\sim a}$ , che insieme a $\Delta\teorema a$ mi da
+$\Delta\teorema{\bot}$
+\item Se $\Delta$ è $\consMax$ e $ $$a\in\Delta$. $\implica ab\in\Delta$
+allora $b\in\Delta$. \\
+Lo si vede subito usando 2.) se tutti e tre, e poi 6.) (deduco $a$,
+$\implica ab$, allora deduco anche $b$)\end{enumerate}
 
