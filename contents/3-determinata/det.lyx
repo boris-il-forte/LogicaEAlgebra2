@@ -174,7 +174,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\noa}{\sim}
+\newcommand{\noa}{\neg a}
 \end_inset
 
 
@@ -182,7 +182,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\forhten}[3]{\forall#1#2\Rightarrow#3}
+\renewcommand{\forhten}[3]{\forall#1#2\implies#3}
 \end_inset
 
 
@@ -190,7 +190,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\implica}[2]{#1\Rightarrow#2}
+\renewcommand{\implica}[2]{#1\implies#2}
 \end_inset
 
 
@@ -269,7 +269,7 @@ Sia
 \end_inset
 
 , dove 
-\begin_inset Formula $\bot=A\wedge\sim A$
+\begin_inset Formula $\bot=A\wedge\neg A$
 \end_inset
 
 
@@ -292,7 +292,7 @@ Sia
 \end_inset
 
  oppure 
-\begin_inset Formula $\sim a\in\Delta$
+\begin_inset Formula $\neg a\in\Delta$
 \end_inset
 
  
@@ -539,7 +539,7 @@ and.
 \end_inset
 
  se e solo se 
-\begin_inset Formula $\Gamma\cup\{\sim a\}$
+\begin_inset Formula $\Gamma\cup\{\neg a\}$
 \end_inset
 
  non è 
@@ -563,7 +563,7 @@ Andata
 \end_inset
 
 , 
-\begin_inset Formula $\Gamma\teorema{\sim a}$
+\begin_inset Formula $\Gamma\teorema{\neg a}$
 \end_inset
 
 , posso dedure 
@@ -587,7 +587,7 @@ Ritorno
 \end_inset
 
 
-\begin_inset Formula $\Gamma\cup\{\sim a\}$
+\begin_inset Formula $\Gamma\cup\{\neg a\}$
 \end_inset
 
  non è 
@@ -595,7 +595,7 @@ Ritorno
 \end_inset
 
 -consistente, allora 
-\begin_inset Formula $\Gamma\cup\{\sim a\}\teorema{\bot}$
+\begin_inset Formula $\Gamma\cup\{\neg a\}\teorema{\bot}$
 \end_inset
 
  da cui per 7.
@@ -604,11 +604,11 @@ Ritorno
 \end_inset
 
  
-\begin_inset Formula $\Gamma\teorema{\sim a\implies\bot}$
+\begin_inset Formula $\Gamma\teorema{\neg a\implies\bot}$
 \end_inset
 
  (sposto 
-\begin_inset Formula $\sim a$
+\begin_inset Formula $\neg a$
 \end_inset
 
  a destra e metto l'implica), 
@@ -616,7 +616,7 @@ Ritorno
 \end_inset
 
  Dato che 
-\begin_inset Formula $(\sim a\implies\bot)\implies a$
+\begin_inset Formula $(\neg a\implies\bot)\implies a$
 \end_inset
 
  è una tatutologica, per MP ottengo
@@ -655,7 +655,7 @@ Ritorno
 Andata
 \series default
 : Basta prendere 
-\begin_inset Formula $\sim a\wedge a$
+\begin_inset Formula $\neg a\wedge a$
 \end_inset
 
 
@@ -667,7 +667,7 @@ Andata
 Ritorno
 \series default
 : Se deducessi tutte le formule (
-\begin_inset Formula $\sim$
+\begin_inset Formula $\neg$
 \end_inset
 
 
@@ -706,7 +706,7 @@ Ritorno
 \end_inset
 
  o 
-\begin_inset Formula $\Gamma\cup\{\sim a\}$
+\begin_inset Formula $\Gamma\cup\{\neg a\}$
 \end_inset
 
  è 
@@ -726,7 +726,7 @@ Ritorno
 \end_inset
 
 
-\begin_inset Formula $\Gamma\cup\{\sim a\}$
+\begin_inset Formula $\Gamma\cup\{\neg a\}$
 \end_inset
 
  non è consistente perché con 
@@ -734,7 +734,7 @@ Ritorno
 \end_inset
 
  e 
-\begin_inset Formula $\sim a$
+\begin_inset Formula $\neg a$
 \end_inset
 
  posso dedurre 
@@ -750,7 +750,7 @@ Ritorno
 \end_inset
 
  se 
-\begin_inset Formula $\Gamma\teorema{\sim a}$
+\begin_inset Formula $\Gamma\teorema{\neg a}$
 \end_inset
 
  allora 
@@ -758,7 +758,7 @@ Ritorno
 \end_inset
 
 
-\begin_inset Formula $\Gamma\cup\{\sim a\}$
+\begin_inset Formula $\Gamma\cup\{\neg a\}$
 \end_inset
 
  è consistente ma non 
@@ -813,7 +813,7 @@ Se
 \end_inset
 
  allora 
-\begin_inset Formula $\sim a\in\Delta$
+\begin_inset Formula $\neg a\in\Delta$
 \end_inset
 
  (dato che 
@@ -829,7 +829,7 @@ Se
 \end_inset
 
  contiene 
-\begin_inset Formula $\sim a$
+\begin_inset Formula $\neg a$
 \end_inset
 
  allora per il 2.)
@@ -837,7 +837,7 @@ Se
 \end_inset
 
  
-\begin_inset Formula $\Delta\teorema{\sim a}$
+\begin_inset Formula $\Delta\teorema{\neg a}$
 \end_inset
 
  , che insieme a 
@@ -1038,7 +1038,7 @@ Dopodichè iterativamente, per ogni formula mi chiedo
  ? 
 \begin_inset Formula $\begin{cases}
 si: & \Gamma_{1}=\Gamma_{0}\cup b1\\
-no: & \Gamma_{1}=\Gamma_{0}\cup\sim b1
+no: & \Gamma_{1}=\Gamma_{0}\cup\neg b1
 \end{cases}$
 \end_inset
 
@@ -1060,7 +1060,7 @@ no: & \Gamma_{1}=\Gamma_{0}\cup\sim b1
  ? 
 \begin_inset Formula $\begin{cases}
 si: & \Gamma_{2}=\Gamma_{1}\cup b2\\
-no: & \Gamma_{2}=\Gamma_{1}\cup\sim b2
+no: & \Gamma_{2}=\Gamma_{1}\cup\neg b2
 \end{cases}$
 \end_inset
 
@@ -1087,7 +1087,7 @@ Massimale in quanto contiene
 \end_inset
 
  oppure 
-\begin_inset Formula $\sim a$
+\begin_inset Formula $\neg a$
 \end_inset
 
  per costruzione 
@@ -1190,7 +1190,7 @@ es.
 \end_inset
 
  contiene 
-\begin_inset Formula $\sim b$
+\begin_inset Formula $\neg b$
 \end_inset
 
 )
@@ -1268,7 +1268,7 @@ Per assurdo, se
 \end_inset
 
  allora 
-\begin_inset Formula $\Gamma\cup\{\sim a\}$
+\begin_inset Formula $\Gamma\cup\{\neg a\}$
 \end_inset
 
  è 
@@ -1284,7 +1284,7 @@ da cui per Lindellman esiste
 \end_inset
 
  che contiene 
-\begin_inset Formula $\Gamma\cup\{\sim a\}$
+\begin_inset Formula $\Gamma\cup\{\neg a\}$
 \end_inset
 
  consistente massimale

@@ -174,7 +174,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\noa}{\sim}
+\newcommand{\noa}{\neg a}
 \end_inset
 
 
@@ -182,7 +182,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\forhten}[3]{\forall#1#2\Rightarrow#3}
+\renewcommand{\forhten}[3]{\forall#1#2\implies#3}
 \end_inset
 
 
@@ -190,7 +190,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\implica}[2]{#1\Rightarrow#2}
+\renewcommand{\implica}[2]{#1\implies#2}
 \end_inset
 
 
@@ -1312,6 +1312,10 @@ lightning
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 

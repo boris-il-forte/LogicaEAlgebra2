@@ -174,7 +174,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\forhten}[3]{\forall#1#2\Rightarrow#3}
+\renewcommand{\forhten}[3]{\forall#1#2\implies#3}
 \end_inset
 
 
@@ -182,7 +182,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\implica}[2]{#1\Rightarrow#2}
+\renewcommand{\implica}[2]{#1\implies#2}
 \end_inset
 
 
@@ -225,7 +225,7 @@ Simboli secessari
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\dia\equiv\sim\boxx{\sim a}$
+\begin_inset Formula $\dia\equiv\neg\boxx{\neg a}$
 \end_inset
 
 
@@ -263,7 +263,7 @@ se
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\mu\nvDash_{\beta}\sim a$
+\begin_inset Formula $\mu\nvDash_{\beta}\neg a$
 \end_inset
 
 
@@ -275,11 +275,11 @@ per questo in
 \end_inset
 
  non vale 
-\begin_inset Formula $\boxx{\sim a}$
+\begin_inset Formula $\boxx{\neg a}$
 \end_inset
 
  (perché non vale 
-\begin_inset Formula $\sim a$
+\begin_inset Formula $\neg a$
 \end_inset
 
  in 
@@ -295,11 +295,11 @@ allora in
 \end_inset
 
  vale 
-\begin_inset Formula $\sim\boxx{\sim a}$
+\begin_inset Formula $\neg\boxx{\neg a}$
 \end_inset
 
  cioè 
-\begin_inset Formula $\veraw{\mu}{\alpha}{\sim\boxx{\sim a}}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\neg\boxx{\neg a}}$
 \end_inset
 
  cioè la tesi.
@@ -422,7 +422,7 @@ Es.
 \begin_inset Newline newline
 \end_inset
 
-
+ 
 \begin_inset Newline newline
 \end_inset
 
@@ -444,7 +444,51 @@ status collapsed
 
 \end_inset
 
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
 Teorema
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \begin_inset ERT
 status collapsed
 
