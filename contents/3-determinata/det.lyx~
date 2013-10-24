@@ -175,7 +175,6 @@
 \begin_layout Standard
 \begin_inset FormulaMacro
 \newcommand{\noa}{\sim}
-{a}
 \end_inset
 
 
@@ -223,7 +222,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\consist}{\mbox{\Lambda}-consistente}
+\newcommand{\consist}{\mbox{\ensuremath{\Lambda}}-consistente}
 \end_inset
 
 
@@ -280,24 +279,18 @@ Sia
 \begin_inset Formula $\Delta$
 \end_inset
 
-
  si dice 
 \begin_inset Formula $\Lambda$
 \end_inset
 
-
-\lang english
 -consistente massimale se per ogni fbf 
 \begin_inset Formula $a$
 \end_inset
-
 
  
 \begin_inset Formula $a\in\Delta$
 \end_inset
 
-
-\lang english
  oppure 
 \begin_inset Formula $\sim a\in\Delta$
 \end_inset
@@ -315,12 +308,10 @@ Sia
 
 \begin_layout Standard
 
-\end_layout
-
-\begin_layout Standard
-
 \series bold
 Proprietà:
+\series default
+ 
 \end_layout
 
 \begin_layout Enumerate
@@ -338,7 +329,7 @@ Se
 
 .
  Ovvero se alcune premesse non mi servono posso comunque metterle per dedurre
- una formula
+ una formula 
 \end_layout
 
 \begin_layout Enumerate
@@ -357,7 +348,7 @@ Se
 .
  Ovvero quello che posso dedurre in una logica più scarna (es.
  PL) lo posso dedurre anche in una più ricca che la contien (es.
- Modale)
+ Modale) 
 \end_layout
 
 \begin_layout Enumerate
@@ -374,7 +365,7 @@ se
 \begin_inset Newline newline
 \end_inset
 
-Infatti 
+ Infatti 
 \begin_inset Formula $\teorema{a\implies a}$
 \end_inset
 
@@ -382,7 +373,7 @@ Infatti
 \begin_inset Formula $a\implies a$
 \end_inset
 
- è una tautologia
+ è una tautologia 
 \end_layout
 
 \begin_layout Enumerate
@@ -406,7 +397,7 @@ Infatti
 \begin_inset Formula $\Lambda$
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Enumerate
@@ -430,7 +421,7 @@ Se
 \begin_inset Newline newline
 \end_inset
 
-Infatti: per dedurre 
+ Infatti: per dedurre 
 \begin_inset Formula $a$
 \end_inset
 
@@ -468,7 +459,7 @@ Infatti: per dedurre
 \begin_inset Formula $\Lambda$
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Enumerate
@@ -488,7 +479,7 @@ Se
 \begin_inset Formula $\Lambda$
 \end_inset
 
- è chiusa rispetto al MP
+ è chiusa rispetto al MP 
 \end_layout
 
 \begin_layout Enumerate
@@ -503,7 +494,7 @@ Se
 \begin_inset Newline newline
 \end_inset
 
-
+ 
 \series bold
 Andata
 \series default
@@ -523,7 +514,7 @@ Andata
 \begin_inset Newline newline
 \end_inset
 
-
+ 
 \series bold
 Ritorno
 \series default
@@ -540,6 +531,7 @@ Ritorno
 \end_inset
 
 and.
+ 
 \end_layout
 
 \begin_layout Enumerate
@@ -558,11 +550,11 @@ and.
 \begin_inset Newline newline
 \end_inset
 
-
+ 
 \begin_inset Newline newline
 \end_inset
 
-
+ 
 \series bold
 Andata
 \series default
@@ -586,7 +578,7 @@ Andata
 \begin_inset Newline newline
 \end_inset
 
-
+ 
 \series bold
 Ritorno
 \series default
@@ -611,7 +603,7 @@ Ritorno
 \begin_inset Newline newline
 \end_inset
 
-
+ 
 \begin_inset Formula $\Gamma\teorema{\sim a\implies\bot}$
 \end_inset
 
@@ -623,7 +615,7 @@ Ritorno
 \begin_inset Newline newline
 \end_inset
 
-Dato che 
+ Dato che 
 \begin_inset Formula $(\sim a\implies\bot)\implies a$
 \end_inset
 
@@ -631,11 +623,11 @@ Dato che
 \begin_inset Newline newline
 \end_inset
 
-
+ 
 \begin_inset Formula $a$
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Enumerate
@@ -658,7 +650,7 @@ Dato che
 \begin_inset Newline newline
 \end_inset
 
-
+ 
 \series bold
 Andata
 \series default
@@ -670,7 +662,7 @@ Andata
 \begin_inset Newline newline
 \end_inset
 
-
+ 
 \series bold
 Ritorno
 \series default
@@ -690,7 +682,7 @@ Ritorno
 \begin_inset Formula $\bot$
 \end_inset
 
-, da cui la non consistenza
+, da cui la non consistenza 
 \end_layout
 
 \begin_layout Enumerate
@@ -709,7 +701,7 @@ Ritorno
 \begin_inset Newline newline
 \end_inset
 
-
+ 
 \begin_inset Formula $\Gamma\cup\{a\}$
 \end_inset
 
@@ -725,7 +717,7 @@ Ritorno
 \begin_inset Newline newline
 \end_inset
 
-se 
+ se 
 \begin_inset Formula $\teoa$
 \end_inset
 
@@ -757,7 +749,7 @@ se
 \begin_inset Newline newline
 \end_inset
 
-se 
+ se 
 \begin_inset Formula $\Gamma\teorema{\sim a}$
 \end_inset
 
@@ -773,7 +765,7 @@ se
 \begin_inset Formula $\Gamma\cup\{a\}$
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Enumerate
@@ -792,7 +784,7 @@ se
 \begin_inset Formula $\consist$
 \end_inset
 
- (altrimenti potrei dedurlo per il 3.)
+ (altrimenti potrei dedurlo per il 3.) 
 \end_layout
 
 \begin_layout Enumerate
@@ -816,7 +808,7 @@ Se
 \begin_inset Newline newline
 \end_inset
 
-se 
+ se 
 \begin_inset Formula $a\notin\Delta$
 \end_inset
 
@@ -832,7 +824,7 @@ se
 \begin_inset Newline newline
 \end_inset
 
-ma se 
+ ma se 
 \begin_inset Formula $\Delta$
 \end_inset
 
@@ -844,7 +836,7 @@ ma se
 \begin_inset Newline newline
 \end_inset
 
-
+ 
 \begin_inset Formula $\Delta\teorema{\sim a}$
 \end_inset
 
@@ -856,7 +848,7 @@ ma se
 \begin_inset Formula $\Delta\teorema{\bot}$
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Enumerate
@@ -890,7 +882,7 @@ Se
 \begin_inset Newline newline
 \end_inset
 
-Lo si vede subito usando 2.) se tutti e tre, e poi 6.) (deduco 
+ Lo si vede subito usando 2.) se tutti e tre, e poi 6.) (deduco 
 \begin_inset Formula $a$
 \end_inset
 
@@ -902,10 +894,424 @@ Lo si vede subito usando 2.) se tutti e tre, e poi 6.) (deduco
 \begin_inset Formula $b$
 \end_inset
 
+) 
+\end_layout
+
+\begin_layout Section
+Insieme 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ consistente massimale
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\emph on
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Lemma di Lindelman - Esistenza dell'insieme 
+\begin_inset Formula $\consMax$
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\emph default
+ 
+\emph on
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+in una logica 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\emph default
+ 
+\emph on
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+consistente
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\emph default
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+ Considero tutte le formule 
+\begin_inset Formula $b1,\ b2,\ b3,\dots$
+\end_inset
+
+ della logica 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ (posso farlo perché sono un'infinità numerabile)
+\end_layout
+
+\begin_layout Standard
+Chiamo 
+\begin_inset Formula $\Gamma_{0}$
+\end_inset
+
+ un insieme che contiene una sola formula (ad esempio una tautologia)
+\end_layout
+
+\begin_layout Standard
+Dopodichè iterativamente, per ogni formula mi chiedo
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Gamma_{0}$
+\end_inset
+
+
+\begin_inset Formula $\teorema{b1}$
+\end_inset
+
+ ? 
+\begin_inset Formula $\begin{cases}
+si: & \Gamma_{1}=\Gamma_{0}\cup b1\\
+no: & \Gamma_{1}=\Gamma_{0}\cup\sim b1
+\end{cases}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Gamma_{1}$
+\end_inset
+
+
+\begin_inset Formula $\teorema{b2}$
+\end_inset
+
+ ? 
+\begin_inset Formula $\begin{cases}
+si: & \Gamma_{2}=\Gamma_{1}\cup b2\\
+no: & \Gamma_{2}=\Gamma_{1}\cup\sim b2
+\end{cases}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\Delta=\bigcup_{n\geq0}\Gamma_{i}$
+\end_inset
+
+ (nota, questa unione è infinita) 
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\Delta$
+\end_inset
+
+ è consistente massimale infatti:
+\end_layout
+
+\begin_layout Enumerate
+Massimale in quanto contiene 
+\begin_inset Formula $a$
+\end_inset
+
+ oppure 
+\begin_inset Formula $\sim a$
+\end_inset
+
+ per costruzione 
+\end_layout
+
+\begin_layout Enumerate
+Consistente.
+ Per assurdo se non lo fosse avrei: 
+\begin_inset Formula $\Delta\teorema{\bot}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ cioè esiste un numero finito di formule di 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ da cui deduco il falso,
+\begin_inset Newline newline
+\end_inset
+
+ dato che è un numero finito di formule, sta in 
+\begin_inset Formula $\Gamma_{i}$
+\end_inset
+
+ , cioè esiste un 
+\begin_inset Formula $\Gamma_{i}$
+\end_inset
+
+ non consistente, assurdo perché lo sono tutti per costruzione 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lightning
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\emph on
+Nota:
+\end_layout
+
+\begin_layout Itemize
+Non sappiamo costruire 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ perché nasce da unione infinita
+\end_layout
+
+\begin_layout Itemize
+Non è unico, infatti se considero formule in ordine diverse potrei 
+\begin_inset Quotes eld
+\end_inset
+
+dire
+\begin_inset Quotes erd
+\end_inset
+
+ si o no in modo diverso 
+\begin_inset Newline newline
+\end_inset
+
+es.
+ 
+\begin_inset Formula $a,\ \implica ab,\ b$
+\end_inset
+
+ (allora 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ contiene 
+\begin_inset Formula $b$
+\end_inset
+
+)
+\begin_inset Newline newline
+\end_inset
+
+es.
+ 
+\begin_inset Formula $b,\ c$
+\end_inset
+
+ (allora 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ contiene 
+\begin_inset Formula $\sim b$
+\end_inset
+
 )
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsection{Teorema}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teoa$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $a\in$
+\end_inset
+
+ a tutti i quei 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ 
+\begin_inset Formula $\Lambda-consistenti\ massimali$
+\end_inset
+
+ tali che: 
+\begin_inset Formula $\Gamma\subseteq\Delta$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Andata:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teoa$
+\end_inset
+
+, anche 
+\begin_inset Formula $\Delta\teorema a$
+\end_inset
+
+ per la 1.)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Ritorno:
+\end_layout
+
+\begin_layout Standard
+Per assurdo, se 
+\begin_inset Formula $\nonSem{\Gamma}{_{\Lambda}a}$
+\end_inset
+
+ allora 
+\begin_inset Formula $\Gamma\cup\{\sim a\}$
+\end_inset
+
+ è 
+\begin_inset Formula $\consist$
+\end_inset
+
+ (per la 8.)
+\end_layout
+
+\begin_layout Standard
+da cui per Lindellman esiste 
+\begin_inset Formula $\Delta'$
+\end_inset
+
+ che contiene 
+\begin_inset Formula $\Gamma\cup\{\sim a\}$
+\end_inset
+
+ consistente massimale
+\end_layout
+
+\begin_layout Standard
+data la consistenza 
+\begin_inset Formula $\Delta'$
+\end_inset
+
+ non contiene 
+\begin_inset Formula $a$
+\end_inset
+
+, il che è contro l'ipotesi 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lightning
+\end_layout
+
+\end_inset
+
 
 \end_layout
 

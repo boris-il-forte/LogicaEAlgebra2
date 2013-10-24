@@ -76,8 +76,8 @@ rispetto al Modus Ponens)
 $\Gamma$ si dice $\Lambda$-consistente se: $\nonSemW{\Gamma}{\Lambda}{\bot}$,
 dove $\bot=A\wedge\sim A$
 
-$\Delta${ si dice $\Lambda$}-consistente massimale se per ogni fbf
-$a${ $a\in\Delta$} oppure $\sim a\in\Delta$ $ $\\
+$\Delta$ si dice $\Lambda$-consistente massimale se per ogni fbf
+$a$ $a\in\Delta$ oppure $\sim a\in\Delta$ $ $\\
 
 
 
@@ -148,5 +148,42 @@ $\Delta\teorema{\bot}$
 \item Se $\Delta$ è $\consMax$ e $ $$a\in\Delta$. $\implica ab\in\Delta$
 allora $b\in\Delta$. \\
 Lo si vede subito usando 2.) se tutti e tre, e poi 6.) (deduco $a$,
-$\implica ab$, allora deduco anche $b$)\end{enumerate}
+$\implica ab$, allora deduco anche $b$)
+\end{enumerate}
+
+\section{Insieme $\Lambda$ consistente massimale}
+
+\emph{\large{Esistenza dell'insieme $\consMax$}} \emph{\large{in
+una logica $\Lambda$}} \emph{\large{consistente}}\\
+\\
+Considero tutte le formule $b1,\ b2,\ b3,\dots$ della logica $\Lambda$
+(posso farlo perché sono un'infinità numerabile)
+
+Chiamo $\Gamma_{0}$ un insieme che contiene una sola formula (ad
+esempio una tautologia)
+
+Dopodichè iterativamente, per ogni formula mi chiedo\\
+
+
+$\Gamma_{0}$$\teorema{b1}$ ? $\begin{cases}
+si: & \Gamma_{1}=\Gamma_{0}\cup b1\\
+no: & \Gamma_{1}=\Gamma_{0}\cup\sim b1
+\end{cases}$\\
+
+
+$\Gamma_{1}$$\teorema{b2}$ ? $\begin{cases}
+si: & \Gamma_{2}=\Gamma_{1}\cup b2\\
+no: & \Gamma_{2}=\Gamma_{1}\cup\sim b2
+\end{cases}$
+\begin{description}
+\item [{$\Delta=\bigcup_{n\geq0}\Gamma_{i}$}] (nota, questa unione è infinita)
+\item [{$\Delta$}] è consistente massimale infatti:\end{description}
+\begin{enumerate}
+\item Massimale in quanto contiene $a$ oppure $\sim a$ per costruzione
+\item Consistente. Per assurdo se non lo fosse avrei: $\Delta\teorema{\bot}$\\
+cioè esiste un numero finito di formule di $\Delta$ da cui deduco
+il falso,\\
+dato che è un numero finito di formule, sta in $\Gamma_{i}$ , cioè
+esiste un $\Gamma_{i}$ non consistente, assurdo perché lo sono tutti
+per costruzione \lightning \end{enumerate}
 

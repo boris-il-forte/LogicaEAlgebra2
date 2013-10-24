@@ -13,3 +13,4 @@
 \contentsline {section}{\numberline {3.2}Logiche}{7}
 \contentsline {chapter}{\numberline {4}Verso la decidibilit\IeC {\`a} - Logica determinata}{9}
 \contentsline {section}{\numberline {4.1}Insieme $\Lambda $ consistente e sue propriet\IeC {\`a}}{9}
+\contentsline {section}{\numberline {4.2}Insieme $\Lambda $ consistente massimale}{10}

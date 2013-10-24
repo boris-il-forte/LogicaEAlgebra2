@@ -1,14 +1,20 @@
 dimostrazioni:
-schema k
-R seriale									FATTO
-R riflessiva
-R transitiva
-R simmetrica
-R funzione parziale							FATTO
-R funzione									FATTO
-R euclidea
-R diretta
-R debolmente densa
-R debolmente connessa
-equivalenza diamond box
-definizione di logica normale per sse
+schema k											DA FARE
+R seriale											FATTO
+R riflessiva   										DA FARE
+R transitiva   										DA FARE
+R simmetrica    									FATTO
+R funzione parziale									FATTO
+R funzione											FATTO
+R euclidea      									FATTO
+R diretta											DA FARE
+R debolmente densa									DA FARE
+R debolmente connessa								DA FARE
+equivalenza diamond box	 							FATTO
+definizione di logica normale per sse  (3 th)		ACCENNATA(DA FARE)
+insieme Lambda-cons e sue 13 proprietà				FATTO
+insieme lambda-cons max, costruzione (lindelman)	FATTO
+lemma di verità 									DA FARE
+correttezza e completezza della logica k			DA FARE
+determinatezza di k4								DA FARE
+th. box a in beta akkira diam a in alfa				DA FARE
