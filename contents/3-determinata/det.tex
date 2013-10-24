@@ -1,83 +1,3 @@
-%% LyX 2.0.6 created this file.  For more info, see http://www.lyx.org/.
-%% Do not edit unless you really know what you are doing.
-\documentclass[11pt,twoside,english]{report}
-\renewcommand{\ttdefault}{mathpazo}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[a4paper]{geometry}
-\geometry{verbose}
-\setcounter{secnumdepth}{3}
-\setcounter{tocdepth}{3}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{babel}
-\begin{document}
-\global\long\def\veraw#1#2#3{#1\models_{#2}#3}
-
-
-\global\long\def\vera#1#2{#1\models#2}
-
-
-\global\long\def\nonvera#1#2{#1\nvDash#2}
-
-
-\global\long\def\nonveraw#1#2#3{#1\nvDash_{#2}#3}
-
-
-\global\long\def\nonSem#1#2{#1\nvdash#2}
-
-
-\global\long\def\nonSemW#1#2#3{#1\nvdash_{#2}#3}
-
-
-\global\long\def\verita#1#2{#1\in V(#2)}
-
-
-\global\long\def\entail#1#2{#1\models#2}
-
-
-\global\long\def\semantica#1#2#3{#1\vdash_{#2}#3}
-
-
-\global\long\def\semGen#1#2{#1\vdash#2}
-
-
-\global\long\def\boxx#1{\square#1}
-
-
-\global\long\def\diam#1{\diamond#1}
-
-
-\global\long\def\dia{\diamond a}
-
-
-\global\long\def\boa{\boxx a}
-
-
-\global\long\def\noa{\neg a}
-
-
-\global\long\def\forhten#1#2#3{\forall#1#2\implies#3}
-
-
-\global\long\def\implica#1#2{#1\implies#2}
-
-
-\global\long\def\teorema#1{\vdash_{\Lambda}#1}
-
-
-\global\long\def\teorGamma#1{\Gamma\vdash_{\Lambda}#1}
-
-
-\global\long\def\teoa{\teorGamma a}
-
-
-\global\long\def\consist{\mbox{\ensuremath{\Lambda}}-consistente}
-
-
-\global\long\def\consMax{\Lambda-consistente\: massimale}
-
-
 
 \chapter{Verso la decidibilità - Logica determinata}
 
@@ -87,7 +7,7 @@
 Sia $\Lambda$ una logica (cioè ha tutte le tautologie ed è chiusa
 rispetto al Modus Ponens)
 
-$\Gamma$ si dice $\Lambda$-consistente se: $\nonSemW{\Gamma}{\Lambda}{\bot}$,
+$\Gamma$ si dice $\Lambda$-consistente se: $\nonSemW\Gamma\Lambda\bot$,
 dove $\bot=A\wedge\neg A$
 
 $\Delta$ si dice $\Lambda$-consistente massimale se per ogni fbf
@@ -129,7 +49,7 @@ basta portare $a$ tra le $ $and.
  \textbf{Andata}: $\teoa$, $\Gamma\teorema{\neg a}$, posso dedure
 $\bot$ che è contro la definizione di $\Lambda$-consistenza\\
  \textbf{Ritorno}: Se$ $$\Gamma\cup\{\neg a\}$ non è $\Lambda$-consistente,
-allora $\Gamma\cup\{\neg a\}\teorema{\bot}$ da cui per 7. \\
+allora $\Gamma\cup\{\neg a\}\teorema\bot$ da cui per 7. \\
  $\Gamma\teorema{\neg a\implies\bot}$ (sposto $\neg a$ a destra
 e metto l'implica), \\
  Dato che $(\neg a\implies\bot)\implies a$ è una tatutologica, per
@@ -229,4 +149,3 @@ data la consistenza $\Delta'$ non contiene $a$, il che è contro
 l'ipotesi \lightning
 
 
-\end{document}
