@@ -158,7 +158,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\forhten}[3]{\forall#1#2\Rightarrow#3}
+\newcommand{\forhten}[3]{\forall#1#2\implies#3}
 \end_inset
 
 
@@ -166,7 +166,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\implica}[2]{#1\Rightarrow#2}
+\newcommand{\implica}[2]{#1\implies#2}
 \end_inset
 
 
@@ -225,6 +225,143 @@ se
 \end_inset
 
  
+\end_layout
+
+\begin_layout Section
+Formule Valide in ogni frame
+\end_layout
+
+\begin_layout Standard
+Le seguenti formule sono valide in ogni frame F
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\boxx{\top}$
+\end_inset
+
+ con 
+\begin_inset Formula $\top\equiv a\vee\neg a\not\not$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+infatti 
+\begin_inset Formula $\top$
+\end_inset
+
+è valida in ogni modello di ogni frame F, banalmente è valida 
+\begin_inset Formula $\boxx{\top}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\boxx{(a}\implies b)\implies(\boa\implies\boxx b)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+infatti:
+\begin_inset Newline newline
+\end_inset
+
+Se 
+\begin_inset Formula $\nonveraw M{\alpha}{\boxx{(a\implies b)}}$
+\end_inset
+
+ la formula è vera
+\begin_inset Newline newline
+\end_inset
+
+Se 
+\begin_inset Formula $\entail M{_{\alpha}\boxx{(a\implies b)}}$
+\end_inset
+
+ allora:
+\end_layout
+
+\begin_layout Itemize
+Se 
+\begin_inset Formula $\nonveraw M{\alpha}{\boa}$
+\end_inset
+
+ allora 
+\begin_inset Formula $\veraw M{\alpha}{\boa}\implies\boxx b$
+\end_inset
+
+ è vera e la formula iniziale è vera
+\end_layout
+
+\begin_layout Itemize
+se 
+\begin_inset Formula $\veraw M{\alpha}{\boa}$
+\end_inset
+
+ allora 
+\begin_inset Formula $\forall\beta:(\alpha,\beta)\in R$
+\end_inset
+
+ 
+\begin_inset Formula $\veraw M{\beta}a\implies b$
+\end_inset
+
+, 
+\begin_inset Formula $\veraw M{\beta}a$
+\end_inset
+
+, 
+\begin_inset Formula $\veraw M{\beta}b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esistono relazioni che non solo valide in ogni frame:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\boa\implies\dia$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Non è valida in ogni frame, infatti 
+\begin_inset Formula $\boa$
+\end_inset
+
+ implica che in tutti gli stati raggiungibili (ma potrebbero anche non esserci
+ stati) da 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, a è vera.
+ Mentre 
+\begin_inset Formula $\dia$
+\end_inset
+
+ implica che esiste almeno uno stato raggiungibile da 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ in cui a è vero.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Tutte le tautologie sono valide in ogni frame
 \end_layout
 
 \begin_layout Section
@@ -456,7 +593,7 @@ status collapsed
 \end_inset
 
 , e suppongo che la relazione R del frame NON sia seriale cioè 
-\begin_inset Formula $\sim\exists\beta:(\alpha R\beta)$
+\begin_inset Formula $\neg\exists\beta:(\alpha R\beta)$
 \end_inset
 
 , se è così vale sicuramente 
@@ -889,6 +1026,74 @@ status open
 
 \begin_layout Plain Layout
 
+
+\backslash
+begin{center}  
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\backslash
+tikzstyle{every node}+=[inner sep=0pt]  
+\backslash
+draw [black] (24.2,-12.7) circle (3);  
+\backslash
+draw (24.2,-12.7) node {$
+\backslash
+alpha$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (24.2,-7.5) node {$A$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (37.9,-12.7) circle (3); 
+\backslash
+draw (37.9,-12.7) node {$
+\backslash
+beta$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (37.9,-7.5) node {
+\backslash
+sout{$
+\backslash
+dia$}}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (24.2,-17.8) node {
+\backslash
+sout{$
+\backslash
+boxx{
+\backslash
+dia}$}}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (27.2,-12.7) -- (34.9,-12.7); 
+\backslash
+fill [black] (34.9,-12.7) -- (34.1,-12.2) -- (34.1,-13.2);  
+\backslash
+end{tikzpicture} 
+\backslash
+end{center}
 \end_layout
 
 \end_inset
@@ -919,7 +1124,7 @@ Funzione parziale
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\diam{}{a\Rightarrow}\boxx a$
+\begin_inset Formula $\dia\implies\boa$
 \end_inset
 
  
@@ -958,10 +1163,10 @@ funzione parziale
 
 \begin_layout Standard
 Funzione parziale, dimostrazione
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Standard
-.
+
 \end_layout
 
 \begin_layout Standard
@@ -970,14 +1175,14 @@ Ip) funzione parziale
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\diam{}{a\Rightarrow}\boxx a$
+\begin_inset Formula $\dia\implies\boa$
+\end_inset
+
+ 
+\begin_inset Newline newline
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-.
 \end_layout
 
 \begin_layout Standard
@@ -1020,37 +1225,33 @@ da cui
 \end_inset
 
 
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Standard
-.
-\end_layout
 
-\begin_layout Standard
-.
-\end_layout
-
-\begin_layout Standard
-Ip) 
-\begin_inset Formula $\diam{}{a\Rightarrow}\boxx a$
+\begin_inset Newline newline
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+Ip) 
+\begin_inset Formula $\dia\implies\boa$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
 Ts) funzione parziale
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Standard
-.
-\end_layout
 
-\begin_layout Standard
-.
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Standard
 Per assurdo: suppongo non che la funzione non sia parziale.
  Se è così 
 \begin_inset Formula $\exists\alpha:$
@@ -1107,7 +1308,7 @@ Funzione totale
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\diam{}{a\iff}\boxx a$
+\begin_inset Formula $\diam a\iff\boxx a$
 \end_inset
 
  
@@ -1175,10 +1376,10 @@ conti
 \begin_layout Standard
 quindi dato che l'implica prevede un and di implica da una parte e dall'altra
  per definizione abbiamo la tesi
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Standard
-.
+
 \end_layout
 
 \begin_layout Subsection
@@ -1197,7 +1398,7 @@ Relazione euclidea
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\diam{}{a\Rightarrow}\boxx{\diam a}$
+\begin_inset Formula $\diam a\implies\boxx{\diam a}$
 \end_inset
 
  
@@ -1268,7 +1469,7 @@ Ip) relazione euclidea
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\diam{}{a\Rightarrow}\boxx{\diam a}$
+\begin_inset Formula $\diam a\implies\boxx{\diam a}$
 \end_inset
 
 
@@ -1346,84 +1547,81 @@ status open
 
 \begin_layout Plain Layout
 
-
+ 
 \backslash
 begin{center}  
-\end_layout
-
-\begin_layout Plain Layout
-
-
 \backslash
 begin{tikzpicture}[scale=0.2]  
-\end_layout
-
-\begin_layout Plain Layout
-
-
 \backslash
-tikzstyle{every node}+=[inner sep=0pt]  
-\end_layout
-
-\begin_layout Plain Layout
-
-
+tikzstyle{every node}+=[inner sep=0pt] 
 \backslash
-draw [black] (24.2,-13) circle (3); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+draw [black] (24.5,-18.4) circle (3); 
 \backslash
-draw (24.2,-13) node {$
+draw (24.5,-18.4) node {$
 \backslash
-alpha$};
-\end_layout
-
-\begin_layout Plain Layout
-
-
+alpha$}; 
 \backslash
-draw (24.2,-8.6) node {$
+draw [black] (46.5,-18.4) circle (3);  
 \backslash
-boxx{a}$};
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw [black] (38.9,-13.2) circle (3);
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw (38.9,-13.2) node {$
+draw (46.5,-18.4) node {$
 \backslash
 beta$}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
 \backslash
-draw (24,-17.3) node {
+draw [black] (36.7,-27.3) circle (3);  
 \backslash
-sout{$
+draw (36.7,-27.3) node {$
 \backslash
-dia$}};   
-\end_layout
-
-\begin_layout Plain Layout
-
-
+beta'$}; 
+\backslash
+draw (23.9,-12.8) node {$
+\backslash
+dia$}; 
+\backslash
+draw (46.5,-12.8) node {$
+\backslash
+dia, a$}; 
+\backslash
+draw (36.7,-22.1) node {$
+\backslash
+dia$}; 
+\backslash
+draw [black] (36.7,-10.4) circle (3); 
+\backslash
+draw (36.7,-10.4) node {$
+\backslash
+beta''$}; 
+\backslash
+draw (36.7,-4.9) node {$
+\backslash
+dia$}; 
+\backslash
+draw [black] (27.5,-18.4) -- (43.5,-18.4);  
+\backslash
+fill [black] (43.5,-18.4) -- (42.7,-17.9) -- (42.7,-18.9); 
+\backslash
+draw [black] (26.92,-20.17) -- (34.28,-25.53);  
+\backslash
+fill [black] (34.28,-25.53) -- (33.92,-24.66) -- (33.34,-25.46);  
+\backslash
+draw [black] (27.01,-16.75) -- (34.19,-12.05);  
+\backslash
+fill [black] (34.19,-12.05) -- (33.25,-12.07) -- (33.8,-12.9);  
+\backslash
+draw [black] (49.18,-17.077) arc (144:-144:2.25); 
+\backslash
+fill [black] (49.18,-19.72) -- (49.53,-20.6) -- (50.12,-19.79); 
+\backslash
+draw [black] (39.02,-12.3) -- (44.18,-16.5); 
+\backslash
+fill [black] (44.18,-16.5) -- (43.87,-15.61) -- (43.24,-16.38); 
+\backslash
+draw [black] (38.92,-25.28) -- (44.28,-20.42); 
+\backslash
+fill [black] (44.28,-20.42) -- (43.35,-20.58) -- (44.02,-21.32);  
 \backslash
 end{tikzpicture} 
 \backslash
-end{center}
+end{center} 
 \end_layout
 
 \end_inset
@@ -1433,7 +1631,7 @@ end{center}
 
 \begin_layout Standard
 Ip)
-\begin_inset Formula $\diam{}{a\Rightarrow}\boxx{\diam a}$
+\begin_inset Formula $\diam a\implies\boxx{\diam a}$
 \end_inset
 
 

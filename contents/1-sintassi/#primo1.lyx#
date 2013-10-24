@@ -227,10 +227,6 @@ se
  
 \end_layout
 
-\begin_layout Section
-Formule di Logica modale e significato
-\end_layout
-
 \begin_layout Standard
 \begin_inset ERT
 status open
@@ -239,12 +235,131 @@ status open
 
 
 \backslash
-subsection{Relazione seriale}
+subsection{Formule Valide in ogni frame}
 \end_layout
 
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+Le seguenti formule sono valide in ogni frame F
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\boxx{\top}$
+\end_inset
+
+ con 
+\begin_inset Formula $\top\equiv a\vee\neg a\not\not$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+infatti 
+\begin_inset Formula $\top$
+\end_inset
+
+è valida in ogni modello di ogni frame F, banalmente è valida 
+\begin_inset Formula $\boxx{\top}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\boxx{(a}\implies b)\implies(\boa\implies\boxx b)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+infatti:
+\begin_inset Newline newline
+\end_inset
+
+Se 
+\begin_inset Formula $\nonveraw M{\alpha}{\boxx{(a\implies b)}}$
+\end_inset
+
+ la formula è vera
+\begin_inset Newline newline
+\end_inset
+
+Se 
+\begin_inset Formula $\entail M{_{\alpha}\boxx{(a\implies b)}}$
+\end_inset
+
+ allora:
+\end_layout
+
+\begin_layout Itemize
+Se 
+\begin_inset Formula $\nonveraw M{\alpha}{\boa}$
+\end_inset
+
+ allora 
+\begin_inset Formula $\veraw M{\alpha}{\boa}\implies\boxx b$
+\end_inset
+
+ è vera e la formula iniziale è vera
+\end_layout
+
+\begin_layout Itemize
+se 
+\begin_inset Formula $\veraw M{\alpha}{\boa}$
+\end_inset
+
+ allora 
+\begin_inset Formula $\forall\beta:(\alpha,\beta)\in R$
+\end_inset
+
+ 
+\begin_inset Formula $\veraw M{\beta}a\implies b$
+\end_inset
+
+, 
+\begin_inset Formula $\veraw M{\beta}a$
+\end_inset
+
+, 
+\begin_inset Formula $\veraw M{\beta}b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esistono relazioni che non solo valide in ogni frame:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\boa\implies\dia$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Non è valida in ogni frame, infatti 
+\begin_inset Formula $\\b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Formule di Logica modale e significato
+\end_layout
+
+\begin_layout Subsection
+Relazione seriale
 \end_layout
 
 \begin_layout Standard
@@ -283,7 +398,7 @@ Se invce:
 \begin_inset Formula $\forhten{\beta}{\,:\,\alpha R\beta}{\veraw{\mu}{\beta}a}$
 \end_inset
 
- per definizione di box, 
+ per definizione di box,
 \end_layout
 
 \begin_layout Standard
@@ -291,7 +406,7 @@ inoltre dato che R seriale per Ip si ha anche che
 \begin_inset Formula $\exists\beta:\:(\alpha,\beta)\:\in R$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
@@ -320,25 +435,10 @@ da cui:
 \end_inset
 
  )
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
+\begin_inset Newline newline
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-		
 \end_layout
 
 \begin_layout Standard
@@ -354,6 +454,11 @@ Ts) Frame F con relazione R seriale
 \end_layout
 
 \begin_layout Standard
+\align center
+\begin_inset Formula $ $
+\end_inset
+
+
 \begin_inset ERT
 status open
 
@@ -361,28 +466,28 @@ status open
 
 
 \backslash
-begin{center} 
+begin{center}  
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-begin{tikzpicture}[scale=0.2] 
+begin{tikzpicture}[scale=0.2]  
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-tikzstyle{every node}+=[inner sep=0pt] 
+tikzstyle{every node}+=[inner sep=0pt]  
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-draw [black] (24.2,-13) circle (3);
+draw [black] (24.2,-13) circle (3); 
 \end_layout
 
 \begin_layout Plain Layout
@@ -392,10 +497,6 @@ draw [black] (24.2,-13) circle (3);
 draw (24.2,-13) node {$
 \backslash
 alpha$};
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \begin_layout Plain Layout
@@ -425,17 +526,13 @@ beta$};
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
 
 \backslash
 draw (24,-17.3) node {
 \backslash
 sout{$
 \backslash
-dia$}};
+dia$}};   
 \end_layout
 
 \begin_layout Plain Layout
@@ -459,7 +556,7 @@ Per assurdo:
 \begin_layout Standard
 Suppongo di trovarmi in un mondo come quello in figura (wow) in cui 
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -476,7 +573,7 @@ mbox{
 
  
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -501,25 +598,10 @@ status open
  si nega la tesi, assurdo
 \strikeout on
 .
-
-\strikeout default
- 
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-subsection{Relazione simmetrica}
-\end_layout
-
-\end_inset
-
-
+\begin_layout Subsection
+Relazione simmetrica
 \end_layout
 
 \begin_layout Standard
@@ -567,6 +649,7 @@ Caso 1
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset ERT
 status open
 
@@ -593,10 +676,6 @@ tikzstyle{every node}+=[inner sep=0pt]
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
 
 \backslash
 draw [black] (24.2,-13) circle (3);
@@ -613,15 +692,16 @@ alpha$};
 
 \begin_layout Plain Layout
 
+
+\backslash
+end{tikzpicture}
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-end{tikzpicture} 
-\backslash
-end{center}
+end{center} 
 \end_layout
 
 \end_inset
@@ -646,6 +726,7 @@ Caso 2
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset ERT
 status open
 
@@ -660,21 +741,21 @@ begin{center}
 
 
 \backslash
-begin{tikzpicture}[scale=0.2]
+begin{tikzpicture}[scale=0.2] 
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-tikzstyle{every node}+=[inner sep=0pt]
+tikzstyle{every node}+=[inner sep=0pt] 
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-draw [black] (24.2,-12.7) circle (3);
+draw [black] (24.2,-12.7) circle (3); 
 \end_layout
 
 \begin_layout Plain Layout
@@ -688,25 +769,21 @@ alpha$};
 
 \begin_layout Plain Layout
 
+
+\backslash
+draw (24.2,-8.3) node {$a$};  
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-draw (24.2,-8.3) node {$a$}; 
+draw [black] (38.5,-8.3) circle (3);
 \end_layout
 
 \begin_layout Plain Layout
 
-
-\backslash
-draw [black] (38.5,-8.3) circle (3); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+ 
 \backslash
 draw (38.5,-8.3) node {$
 \backslash
@@ -717,7 +794,7 @@ beta$};
 
 
 \backslash
-draw [black] (38.5,-15.8) circle (3); 
+draw [black] (38.5,-15.8) circle (3);  
 \end_layout
 
 \begin_layout Plain Layout
@@ -726,14 +803,14 @@ draw [black] (38.5,-15.8) circle (3);
 \backslash
 draw (38.5,-15.8) node {$
 \backslash
-beta'$}; 
+beta'$};  
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-draw [black] (38.5,-24) circle (3); 
+draw [black] (38.5,-24) circle (3);  
 \end_layout
 
 \begin_layout Plain Layout
@@ -747,10 +824,6 @@ beta''$};
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
 
 \backslash
 draw (38.5,-3.7) node {$
@@ -760,20 +833,11 @@ dia$};
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
 
 \backslash
 draw (38.5,-11.7) node {$
 \backslash
-dia$}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+dia$};  
 \backslash
 draw (38.5,-20.2) node {$
 \backslash
@@ -782,95 +846,31 @@ dia$};
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
 
 \backslash
-draw [black] (27.07,-11.82) -- (35.63,-9.18);
-\end_layout
-
-\begin_layout Plain Layout
-
-
+draw [black] (27.07,-11.82) -- (35.63,-9.18); 
 \backslash
-fill [black] (35.63,-9.18) -- (34.72,-8.94) -- (35.02,-9.9); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+fill [black] (35.63,-9.18) -- (34.72,-8.94) -- (35.02,-9.9);  
 \backslash
-draw [black] (35.63,-9.18) -- (27.07,-11.82); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+draw [black] (35.63,-9.18) -- (27.07,-11.82);  
 \backslash
-fill [black] (27.07,-11.82) -- (27.98,-12.06) -- (27.68,-11.1);
-\end_layout
-
-\begin_layout Plain Layout
-
-
+fill [black] (27.07,-11.82) -- (27.98,-12.06) -- (27.68,-11.1); 
 \backslash
-draw [black] (27.13,-13.34) -- (35.57,-15.16);
-\end_layout
-
-\begin_layout Plain Layout
-
-
+draw [black] (27.13,-13.34) -- (35.57,-15.16); 
 \backslash
-fill [black] (35.57,-15.16) -- (34.89,-14.51) -- (34.68,-15.48);
-\end_layout
-
-\begin_layout Plain Layout
-
-
+fill [black] (35.57,-15.16) -- (34.89,-14.51) -- (34.68,-15.48); 
 \backslash
-draw [black] (35.57,-15.16) -- (27.13,-13.34); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+draw [black] (35.57,-15.16) -- (27.13,-13.34);  
 \backslash
-fill [black] (27.13,-13.34) -- (27.81,-13.99) -- (28.02,-13.02); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+fill [black] (27.13,-13.34) -- (27.81,-13.99) -- (28.02,-13.02);  
 \backslash
-draw [black] (26.55,-14.56) -- (36.15,-22.14);
-\end_layout
-
-\begin_layout Plain Layout
-
-
+draw [black] (26.55,-14.56) -- (36.15,-22.14); 
 \backslash
-fill [black] (36.15,-22.14) -- (35.83,-21.25) -- (35.21,-22.04); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+fill [black] (36.15,-22.14) -- (35.83,-21.25) -- (35.21,-22.04);  
 \backslash
-draw [black] (36.15,-22.14) -- (26.55,-14.56); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+draw [black] (36.15,-22.14) -- (26.55,-14.56);  
 \backslash
-fill [black] (26.55,-14.56) -- (26.87,-15.45) -- (27.49,-14.66);
-\end_layout
-
-\begin_layout Plain Layout
-
-
+fill [black] (26.55,-14.56) -- (26.87,-15.45) -- (27.49,-14.66); 
 \backslash
 end{tikzpicture} 
 \backslash
@@ -922,7 +922,6 @@ Dato che la relazione è simmetrica se
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Standard
@@ -947,18 +946,7 @@ Allora per ognuno di questi
 \end_inset
 
  
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
+\begin_inset Newline newline
 \end_inset
 
 
@@ -1022,6 +1010,7 @@ In
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset ERT
 status open
 
@@ -1029,39 +1018,17 @@ status open
 
 
 \backslash
-begin{center} 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+begin{center}  
 \backslash
 begin{tikzpicture}[scale=0.2] 
 \backslash
-tikzstyle{every node}+=[inner sep=0pt] 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+tikzstyle{every node}+=[inner sep=0pt]  
 \backslash
-draw [black] (24.2,-12.7) circle (3); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+draw [black] (24.2,-12.7) circle (3);  
 \backslash
 draw (24.2,-12.7) node {$
 \backslash
 alpha$}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw [black] (24.2,-7.5) circle (3); 
 \end_layout
 
 \begin_layout Plain Layout
@@ -1075,12 +1042,7 @@ draw (24.2,-7.5) node {$A$};
 
 
 \backslash
-draw [black] (37.9,-12.7) circle (3);
-\end_layout
-
-\begin_layout Plain Layout
-
-
+draw [black] (37.9,-12.7) circle (3); 
 \backslash
 draw (37.9,-12.7) node {$
 \backslash
@@ -1091,49 +1053,33 @@ beta$};
 
 
 \backslash
-draw [black] (37.9,-7.5) circle (3); 
+draw (37.9,-7.5) node {
+\backslash
+sout{$
+\backslash
+dia$}}; 
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-draw (37.9,-7.5) node {$nd
+draw (24.2,-17.8) node {
 \backslash
-mbox{ }a$}; 
+sout{$
+\backslash
+boxx{
+\backslash
+dia}$}}; 
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-draw [black] (24.2,-17.8) circle (3); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+draw [black] (27.2,-12.7) -- (34.9,-12.7); 
 \backslash
-draw (24.2,-17.8) node {$nbda$}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw [black] (27.2,-12.7) -- (34.9,-12.7);
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-fill [black] (34.9,-12.7) -- (34.1,-12.2) -- (34.1,-13.2); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+fill [black] (34.9,-12.7) -- (34.1,-12.2) -- (34.1,-13.2);  
 \backslash
 end{tikzpicture} 
 \backslash
@@ -1152,20 +1098,8 @@ end{center}
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-subsection{Funzione parziale}
-\end_layout
-
-\end_inset
-
-
+\begin_layout Subsection
+Funzione parziale
 \end_layout
 
 \begin_layout Standard
@@ -1345,24 +1279,15 @@ Per assurdo: suppongo non che la funzione non sia parziale.
 \begin_inset Newline newline
 \end_inset
 
-
+ 
 \begin_inset Newline newline
 \end_inset
 
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-subsection{Funzione totale}
+ 
 \end_layout
 
-\end_inset
-
-
+\begin_layout Subsection
+Funzione totale
 \end_layout
 
 \begin_layout Standard
@@ -1415,7 +1340,7 @@ funzione totale
 \begin_inset Newline newline
 \end_inset
 
-
+ 
 \begin_inset Newline newline
 \end_inset
 
@@ -1451,20 +1376,8 @@ quindi dato che l'implica prevede un and di implica da una parte e dall'altra
 .
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-subsection{Relazione euclidea}
-\end_layout
-
-\end_inset
-
-
+\begin_layout Subsection
+Relazione euclidea
 \end_layout
 
 \begin_layout Standard
@@ -1537,7 +1450,7 @@ R
 \begin_inset Newline newline
 \end_inset
 
-
+ 
 \begin_inset Newline newline
 \end_inset
 
@@ -1622,224 +1535,85 @@ diversi beta: ognuno dei vari
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-
+ 
 \backslash
-begin{center} 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+begin{center}  
 \backslash
-begin{tikzpicture}[scale=0.2] 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+begin{tikzpicture}[scale=0.2]  
 \backslash
-tikzstyle{every node}+=[inner sep=0pt]
-\end_layout
-
-\begin_layout Plain Layout
-
-
+tikzstyle{every node}+=[inner sep=0pt] 
 \backslash
-draw [black] (24.5,-18.4) circle (3);
-\end_layout
-
-\begin_layout Plain Layout
-
-
+draw [black] (24.5,-18.4) circle (3); 
 \backslash
 draw (24.5,-18.4) node {$
 \backslash
-alpha$};
-\end_layout
-
-\begin_layout Plain Layout
-
-
+alpha$}; 
 \backslash
-draw [black] (46.5,-18.4) circle (3); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+draw [black] (46.5,-18.4) circle (3);  
 \backslash
 draw (46.5,-18.4) node {$
 \backslash
-beta$};
-\end_layout
-
-\begin_layout Plain Layout
-
-
+beta$}; 
 \backslash
-draw [black] (36.7,-27.3) circle (3); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+draw [black] (36.7,-27.3) circle (3);  
 \backslash
 draw (36.7,-27.3) node {$
 \backslash
-beta'$};
-\end_layout
-
-\begin_layout Plain Layout
-
-
+beta'$}; 
 \backslash
 draw (23.9,-12.8) node {$
 \backslash
-dia$};
-\end_layout
-
-\begin_layout Plain Layout
-
-
+dia$}; 
 \backslash
 draw (46.5,-12.8) node {$
 \backslash
-dia, a$};
-\end_layout
-
-\begin_layout Plain Layout
-
-
+dia, a$}; 
 \backslash
 draw (36.7,-22.1) node {$
 \backslash
-dia$};
-\end_layout
-
-\begin_layout Plain Layout
-
-
+dia$}; 
 \backslash
-draw [black] (36.7,-10.4) circle (3);
-\end_layout
-
-\begin_layout Plain Layout
-
-
+draw [black] (36.7,-10.4) circle (3); 
 \backslash
 draw (36.7,-10.4) node {$
 \backslash
-beta''$};
-\end_layout
-
-\begin_layout Plain Layout
-
-
+beta''$}; 
 \backslash
 draw (36.7,-4.9) node {$
 \backslash
-dia$};
-\end_layout
-
-\begin_layout Plain Layout
-
-
+dia$}; 
 \backslash
-draw [black] (27.5,-18.4) -- (43.5,-18.4); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+draw [black] (27.5,-18.4) -- (43.5,-18.4);  
 \backslash
-fill [black] (43.5,-18.4) -- (42.7,-17.9) -- (42.7,-18.9);
-\end_layout
-
-\begin_layout Plain Layout
-
-
+fill [black] (43.5,-18.4) -- (42.7,-17.9) -- (42.7,-18.9); 
 \backslash
-draw [black] (26.92,-20.17) -- (34.28,-25.53); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+draw [black] (26.92,-20.17) -- (34.28,-25.53);  
 \backslash
-fill [black] (34.28,-25.53) -- (33.92,-24.66) -- (33.34,-25.46); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+fill [black] (34.28,-25.53) -- (33.92,-24.66) -- (33.34,-25.46);  
 \backslash
-draw [black] (27.01,-16.75) -- (34.19,-12.05); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+draw [black] (27.01,-16.75) -- (34.19,-12.05);  
 \backslash
-fill [black] (34.19,-12.05) -- (33.25,-12.07) -- (33.8,-12.9); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+fill [black] (34.19,-12.05) -- (33.25,-12.07) -- (33.8,-12.9);  
 \backslash
-draw [black] (49.18,-17.077) arc (144:-144:2.25);
-\end_layout
-
-\begin_layout Plain Layout
-
-
+draw [black] (49.18,-17.077) arc (144:-144:2.25); 
 \backslash
-fill [black] (49.18,-19.72) -- (49.53,-20.6) -- (50.12,-19.79);
-\end_layout
-
-\begin_layout Plain Layout
-
-
+fill [black] (49.18,-19.72) -- (49.53,-20.6) -- (50.12,-19.79); 
 \backslash
-draw [black] (39.02,-12.3) -- (44.18,-16.5);
-\end_layout
-
-\begin_layout Plain Layout
-
-
+draw [black] (39.02,-12.3) -- (44.18,-16.5); 
 \backslash
-fill [black] (44.18,-16.5) -- (43.87,-15.61) -- (43.24,-16.38);
-\end_layout
-
-\begin_layout Plain Layout
-
-
+fill [black] (44.18,-16.5) -- (43.87,-15.61) -- (43.24,-16.38); 
 \backslash
-draw [black] (38.92,-25.28) -- (44.28,-20.42);
-\end_layout
-
-\begin_layout Plain Layout
-
-
+draw [black] (38.92,-25.28) -- (44.28,-20.42); 
 \backslash
-fill [black] (44.28,-20.42) -- (43.35,-20.58) -- (44.02,-21.32); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+fill [black] (44.28,-20.42) -- (43.35,-20.58) -- (44.02,-21.32);  
 \backslash
-end{tikzpicture}
-\end_layout
-
-\begin_layout Plain Layout
-
-
+end{tikzpicture} 
 \backslash
 end{center} 
 \end_layout
@@ -1940,7 +1714,7 @@ uscite
 \begin_inset Newline newline
 \end_inset
 
-
+ 
 \begin_inset Newline newline
 \end_inset
 
