@@ -60,118 +60,6 @@
 
 \begin_body
 
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\veraw}[3]{#1\models_{#2}#3}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\vera}[2]{#1\models#2}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\nonvera}[2]{#1\nvDash#2}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\nonveraw}[3]{#1\nvDash_{#2}#3}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\verita}[2]{#1\in V(#2)}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\entail}[2]{#1\models#2}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\semantica}[3]{#1\vdash_{#2}#3}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\semGen}[2]{#1\vdash#2}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\boxx}[1]{\square#1}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\diam}[1]{\diamond#1}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\dia}{\diamond a}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\boa}{\boxx a}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\forhten}[3]{\forall#1#2\implies#3}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\implica}[2]{#1\implies#2}
-\end_inset
-
-
-\end_layout
-
 \begin_layout Chapter
 Introduction
 \end_layout
@@ -200,7 +88,7 @@ se
 \end_inset
 
  è una lettera enunciativa allora deve valere 
-\begin_inset Formula $\verita a{\alpha}$
+\begin_inset Formula $\verita a\alpha$
 \end_inset
 
  
@@ -237,7 +125,7 @@ Le seguenti formule sono valide in ogni frame F
 \end_inset
 
 
-\begin_inset Formula $\boxx{\top}$
+\begin_inset Formula $\boxx\top$
 \end_inset
 
  con 
@@ -253,7 +141,7 @@ infatti
 \end_inset
 
 è valida in ogni modello di ogni frame F, banalmente è valida 
-\begin_inset Formula $\boxx{\top}$
+\begin_inset Formula $\boxx\top$
 \end_inset
 
 
@@ -273,7 +161,7 @@ infatti:
 \end_inset
 
 Se 
-\begin_inset Formula $\nonveraw M{\alpha}{\boxx{(a\implies b)}}$
+\begin_inset Formula $\nonveraw M\alpha{\boxx{(a\implies b)}}$
 \end_inset
 
  la formula è vera
@@ -289,11 +177,11 @@ Se
 
 \begin_layout Itemize
 Se 
-\begin_inset Formula $\nonveraw M{\alpha}{\boa}$
+\begin_inset Formula $\nonveraw M\alpha\boa$
 \end_inset
 
  allora 
-\begin_inset Formula $\veraw M{\alpha}{\boa}\implies\boxx b$
+\begin_inset Formula $\veraw M\alpha\boa\implies\boxx b$
 \end_inset
 
  è vera e la formula iniziale è vera
@@ -301,7 +189,7 @@ Se
 
 \begin_layout Itemize
 se 
-\begin_inset Formula $\veraw M{\alpha}{\boa}$
+\begin_inset Formula $\veraw M\alpha\boa$
 \end_inset
 
  allora 
@@ -309,15 +197,15 @@ se
 \end_inset
 
  
-\begin_inset Formula $\veraw M{\beta}a\implies b$
+\begin_inset Formula $\veraw M\beta a\implies b$
 \end_inset
 
 , 
-\begin_inset Formula $\veraw M{\beta}a$
+\begin_inset Formula $\veraw M\beta a$
 \end_inset
 
 , 
-\begin_inset Formula $\veraw M{\beta}b$
+\begin_inset Formula $\veraw M\beta b$
 \end_inset
 
 

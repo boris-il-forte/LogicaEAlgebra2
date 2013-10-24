@@ -415,7 +415,7 @@ Es.
 \end_inset
 
 , e cioè A è una tautologia, se al posto di A sostituisco 
-\begin_inset Formula $B\wedge\sim B$
+\begin_inset Formula $B\wedge\neg B$
 \end_inset
 
  (falsa in ogni modello e mondo) non ottengo una tautologia.

@@ -1,5 +1,5 @@
 dimostrazioni:
-schema k											DA FARE
+schema k											FATTO
 R seriale											FATTO
 R riflessiva   										DA FARE
 R transitiva   										DA FARE

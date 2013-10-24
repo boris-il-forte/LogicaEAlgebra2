@@ -1,3 +1,17 @@
+%% LyX 2.0.6 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[11pt,twoside,english]{report}
+\renewcommand{\ttdefault}{mathpazo}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{babel}
+\begin{document}
 \global\long\def\veraw#1#2#3{#1\models_{#2}#3}
 
 
@@ -40,10 +54,10 @@
 \global\long\def\boa{\boxx a}
 
 
-\global\long\def\forhten#1#2#3{\forall#1#2\Rightarrow#3}
+\global\long\def\forhten#1#2#3{\forall#1#2\implies#3}
 
 
-\global\long\def\implica#1#2{#1\Rightarrow#2}
+\global\long\def\implica#1#2{#1\implies#2}
 
 
 \global\long\def\teorema#1{\vdash_{\Lambda}#1}
@@ -59,7 +73,7 @@ $\semGen ab$ cioè a è conseguenza semantica di b, se in ogni Frame,
 Modello e Mondo in cui $\vera{\mu}b$ si ha anche $\vera{\mu}a$\\
 
 
-$\dia\equiv\sim\boxx{\sim a}$
+$\dia\equiv\neg\boxx{\neg a}$
 
 Vale da sinistra a destra,
 
@@ -69,12 +83,12 @@ se $\veraw{\mu}{\alpha}{\dia}$ allora
 
 $\exists\beta:$$\alpha R\beta$ e $\veraw{\mu}{\beta}a$ da cui:
 
-$\mu\nvDash_{\beta}\sim a$
+$\mu\nvDash_{\beta}\neg a$
 
-per questo in $\alpha$ non vale $\boxx{\sim a}$ (perché non vale
-$\sim a$ in $\beta$)
+per questo in $\alpha$ non vale $\boxx{\neg a}$ (perché non vale
+$\neg a$ in $\beta$)
 
-allora in $\alpha$ vale $\sim\boxx{\sim a}$ cioè $\veraw{\mu}{\alpha}{\sim\boxx{\sim a}}$
+allora in $\alpha$ vale $\neg\boxx{\neg a}$ cioè $\veraw{\mu}{\alpha}{\neg\boxx{\neg a}}$
 cioè la tesi. \\
 
 
@@ -108,12 +122,12 @@ una tautologia, ottengo una tautologia.
 Es. $\Lambda_{C}=\{a\,|\,\vera F{a\: per}\ ogni\ F\in C\}$ NON è
 uniforme infatti se considero $V(A)=S$, dove S sono tutti gli stati
 possibili (mondi), vale anche $\veraw{\mu}{\alpha}A$, e cioè A è
-una tautologia, se al posto di A sostituisco $B\wedge\sim B$ (falsa
+una tautologia, se al posto di A sostituisco $B\wedge\neg B$ (falsa
 in ogni modello e mondo) non ottengo una tautologia.\\
  \\
 
 
-\textbf{\emph{\large{{{Teorema}}}}}{\large \par}
+\textbf{\emph{\large{{{{Teorema}}}}}}{\large \par}
 
 Sono equivalenti: 
 \begin{enumerate}
@@ -144,3 +158,4 @@ se n > 0 (passo induttivo) suppongo valga l'antecedente, altrimenti
 2 vale senz'altro;
 
 Ricordiamo che $a1\wedge a2\wedge...\wedge an\implies a\equiv a1\wedge a2\wedge...a_{n-1}\implies(an\implies a)$ 
+\end{document}

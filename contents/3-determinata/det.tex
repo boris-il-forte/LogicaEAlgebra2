@@ -1,3 +1,17 @@
+%% LyX 2.0.6 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[11pt,twoside,english]{report}
+\renewcommand{\ttdefault}{mathpazo}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{babel}
+\begin{document}
 \global\long\def\veraw#1#2#3{#1\models_{#2}#3}
 
 
@@ -40,13 +54,13 @@
 \global\long\def\boa{\boxx a}
 
 
-\global\long\def\noa{\sim}
+\global\long\def\noa{\neg a}
 
 
-\global\long\def\forhten#1#2#3{\forall#1#2\Rightarrow#3}
+\global\long\def\forhten#1#2#3{\forall#1#2\implies#3}
 
 
-\global\long\def\implica#1#2{#1\Rightarrow#2}
+\global\long\def\implica#1#2{#1\implies#2}
 
 
 \global\long\def\teorema#1{\vdash_{\Lambda}#1}
@@ -74,90 +88,88 @@ Sia $\Lambda$ una logica (cioè ha tutte le tautologie ed è chiusa
 rispetto al Modus Ponens)
 
 $\Gamma$ si dice $\Lambda$-consistente se: $\nonSemW{\Gamma}{\Lambda}{\bot}$,
-dove $\bot=A\wedge\sim A$
+dove $\bot=A\wedge\neg A$
 
 $\Delta$ si dice $\Lambda$-consistente massimale se per ogni fbf
-$a$ $a\in\Delta$ oppure $\sim a\in\Delta$ $ $\\
+$a$ $a\in\Delta$ oppure $\neg a\in\Delta$ $ $\\
 
 
-
-
-\textbf{Proprietà:}
+\textbf{Proprietà:} 
 \begin{enumerate}
 \item Se $\teoa$ e $\Gamma\subseteq\Delta$ allora $\Delta\teorema a$.
 Ovvero se alcune premesse non mi servono posso comunque metterle per
-dedurre una formula
+dedurre una formula 
 \item Se $\teorGamma a$ e $\Lambda\subseteq\Lambda'$ allora $\Gamma\vdash_{\Lambda'}a$.
 Ovvero quello che posso dedurre in una logica più scarna (es. PL)
-lo posso dedurre anche in una più ricca che la contien (es. Modale)
+lo posso dedurre anche in una più ricca che la contien (es. Modale) 
 \item se $a\in\Gamma$ allora $\teoa$ . \\
-Infatti $\teorema{a\implies a}$ è un teorema dato che $a\implies a$
-è una tautologia
+ Infatti $\teorema{a\implies a}$ è un teorema dato che $a\implies a$
+è una tautologia 
 \item $\{a|\teoa\}$ è la minima logica che contiene $\Gamma\cup\Lambda$.
 Infatti posso dedurre tutte le tautologie da $\Gamma$, anche se non
 userò nessuna formula di $\Gamma$ ma solo quelle che già sono nella
-logica $\Lambda$
+logica $\Lambda$ 
 \item Se $\teoa$ e $\{a\}$$\teorema b$ allora $\teorGamma b$ \\
-Infatti: per dedurre $a$ uso regole di inferenza, formule di $\Gamma$,
+ Infatti: per dedurre $a$ uso regole di inferenza, formule di $\Gamma$,
 assiomi di $\Lambda$. Per arrivare in $b$ uso assiomi di $\Lambda$
 e regole di inferenza, quindi posso arrivare da $\Gamma$ direttamente
-in $b$ usando formule di $\Gamma$, regole di inf. e assiomi di $\Lambda$
+in $b$ usando formule di $\Gamma$, regole di inf. e assiomi di $\Lambda$ 
 \item Se $\teoa$ e $\teorGamma{\implica ab}$ allora $\teorGamma b$, dato
-che $\Lambda$ è chiusa rispetto al MP
+che $\Lambda$ è chiusa rispetto al MP 
 \item $\Gamma\cup\{a\}\teorema b$ se e solo se $\teorGamma{\implica ab}$
 \\
-\textbf{Andata}: $\teorema{a_{1}\wedge...\wedge a\wedge...\wedge}a_{n}\implies b$
+ \textbf{Andata}: $\teorema{a_{1}\wedge...\wedge a\wedge...\wedge}a_{n}\implies b$
 (per definizione di teorema), si può portare $a$ alla destra dell'implicazione
 $\teorema{a_{1}\wedge...\wedge}a_{n}\implies(a\implies b)$ \\
-\textbf{Ritorno}: $\teorema{a_{1}\wedge}...\wedge a_{n}\implies(a\implies b)$,
-basta portare $a$ tra le $ $and.
-\item $\teoa$ se e solo se $\Gamma\cup\{\sim a\}$ non è $\Lambda$-consistente
+ \textbf{Ritorno}: $\teorema{a_{1}\wedge}...\wedge a_{n}\implies(a\implies b)$,
+basta portare $a$ tra le $ $and. 
+\item $\teoa$ se e solo se $\Gamma\cup\{\neg a\}$ non è $\Lambda$-consistente
 \\
-\\
-\textbf{Andata}: $\teoa$, $\Gamma\teorema{\sim a}$, posso dedure
+ \\
+ \textbf{Andata}: $\teoa$, $\Gamma\teorema{\neg a}$, posso dedure
 $\bot$ che è contro la definizione di $\Lambda$-consistenza\\
-\textbf{Ritorno}: Se$ $$\Gamma\cup\{\sim a\}$ non è $\Lambda$-consistente,
-allora $\Gamma\cup\{\sim a\}\teorema{\bot}$ da cui per 7. \\
-$\Gamma\teorema{\sim a\implies\bot}$ (sposto $\sim a$ a destra e
-metto l'implica), \\
-Dato che $(\sim a\implies\bot)\implies a$ è una tatutologica, per
+ \textbf{Ritorno}: Se$ $$\Gamma\cup\{\neg a\}$ non è $\Lambda$-consistente,
+allora $\Gamma\cup\{\neg a\}\teorema{\bot}$ da cui per 7. \\
+ $\Gamma\teorema{\neg a\implies\bot}$ (sposto $\neg a$ a destra
+e metto l'implica), \\
+ Dato che $(\neg a\implies\bot)\implies a$ è una tatutologica, per
 MP ottengo\\
-$a$
+ $a$ 
 \item $\Gamma$ è $ $$\consist$ se e solo se $\exists\beta:\nonSem{\Gamma}{_{\Lambda}\beta}$
 \\
-\textbf{Andata}: Basta prendere $\sim a\wedge a$\\
-\textbf{Ritorno}: Se deducessi tutte le formule ($\sim$$\exists\beta:\nonSem{\Gamma}{_{\Lambda}\beta}$
+ \textbf{Andata}: Basta prendere $\neg a\wedge a$\\
+ \textbf{Ritorno}: Se deducessi tutte le formule ($\neg$$\exists\beta:\nonSem{\Gamma}{_{\Lambda}\beta}$
 significa $\forall\beta:\teorGamma{\beta}$) , potrei dedurre anche
-$\bot$, da cui la non consistenza
+$\bot$, da cui la non consistenza 
 \item $\Gamma$ è $\consist$ se per ogni $a$ \\
-$\Gamma\cup\{a\}$ o $\Gamma\cup\{\sim a\}$ è $\consist$\\
-se $\teoa$ allora $ $$\Gamma\cup\{\sim a\}$ non è consistente perché
-con $a$ e $\sim a$ posso dedurre $\bot$, ma $\Gamma\cup\{a\}$
+ $\Gamma\cup\{a\}$ o $\Gamma\cup\{\neg a\}$ è $\consist$\\
+ se $\teoa$ allora $ $$\Gamma\cup\{\neg a\}$ non è consistente
+perché con $a$ e $\neg a$ posso dedurre $\bot$, ma $\Gamma\cup\{a\}$
 lo è \\
-se $\Gamma\teorema{\sim a}$ allora $ $$\Gamma\cup\{\sim a\}$ è
-consistente ma non $\Gamma\cup\{a\}$
+ se $\Gamma\teorema{\neg a}$ allora $ $$\Gamma\cup\{\neg a\}$ è
+consistente ma non $\Gamma\cup\{a\}$ 
 \item $\bot$$\notin\Gamma$ se $\Gamma$ è $\consist$ (altrimenti potrei
-dedurlo per il 3.)
+dedurlo per il 3.) 
 \item Se $\Delta$è $\consist\: massimale$ e $\Delta\teorema a$ allora
 $a\in\Delta$\\
-se $a\notin\Delta$ allora $\sim a\in\Delta$ (dato che $\Delta$è
+ se $a\notin\Delta$ allora $\neg a\in\Delta$ (dato che $\Delta$è
 massimale) \\
-ma se $\Delta$ contiene $\sim a$ allora per il 2.)\\
-$\Delta\teorema{\sim a}$ , che insieme a $\Delta\teorema a$ mi da
-$\Delta\teorema{\bot}$
+ ma se $\Delta$ contiene $\neg a$ allora per il 2.)\\
+ $\Delta\teorema{\neg a}$ , che insieme a $\Delta\teorema a$ mi
+da $\Delta\teorema{\bot}$ 
 \item Se $\Delta$ è $\consMax$ e $ $$a\in\Delta$. $\implica ab\in\Delta$
 allora $b\in\Delta$. \\
-Lo si vede subito usando 2.) se tutti e tre, e poi 6.) (deduco $a$,
-$\implica ab$, allora deduco anche $b$)
+ Lo si vede subito usando 2.) se tutti e tre, e poi 6.) (deduco $a$,
+$\implica ab$, allora deduco anche $b$) 
 \end{enumerate}
 
 \section{Insieme $\Lambda$ consistente massimale}
 
-\emph{\large{Esistenza dell'insieme $\consMax$}} \emph{\large{in
-una logica $\Lambda$}} \emph{\large{consistente}}\\
-\\
-Considero tutte le formule $b1,\ b2,\ b3,\dots$ della logica $\Lambda$
-(posso farlo perché sono un'infinità numerabile)
+\emph{\large{{Lemma di Lindelman - Esistenza dell'insieme $\consMax$}}}{\large{
+}}\emph{\large{{in una logica $\Lambda$}}}{\large{ }}\emph{\large{{consistente}}}{\large{}}\\
+{\large{ }}\\
+{\large{ Considero tutte le formule $b1,\ b2,\ b3,\dots$ della logica
+$\Lambda$ (posso farlo perché sono un'infinità numerabile)}}{\large \par}
 
 Chiamo $\Gamma_{0}$ un insieme che contiene una sola formula (ad
 esempio una tautologia)
@@ -167,23 +179,54 @@ Dopodichè iterativamente, per ogni formula mi chiedo\\
 
 $\Gamma_{0}$$\teorema{b1}$ ? $\begin{cases}
 si: & \Gamma_{1}=\Gamma_{0}\cup b1\\
-no: & \Gamma_{1}=\Gamma_{0}\cup\sim b1
+no: & \Gamma_{1}=\Gamma_{0}\cup\neg b1
 \end{cases}$\\
 
 
 $\Gamma_{1}$$\teorema{b2}$ ? $\begin{cases}
 si: & \Gamma_{2}=\Gamma_{1}\cup b2\\
-no: & \Gamma_{2}=\Gamma_{1}\cup\sim b2
-\end{cases}$
+no: & \Gamma_{2}=\Gamma_{1}\cup\neg b2
+\end{cases}$ 
 \begin{description}
-\item [{$\Delta=\bigcup_{n\geq0}\Gamma_{i}$}] (nota, questa unione è infinita)
+\item [{$\Delta=\bigcup_{n\geq0}\Gamma_{i}$}] (nota, questa unione è infinita) 
 \item [{$\Delta$}] è consistente massimale infatti:\end{description}
 \begin{enumerate}
-\item Massimale in quanto contiene $a$ oppure $\sim a$ per costruzione
+\item Massimale in quanto contiene $a$ oppure $\neg a$ per costruzione 
 \item Consistente. Per assurdo se non lo fosse avrei: $\Delta\teorema{\bot}$\\
-cioè esiste un numero finito di formule di $\Delta$ da cui deduco
+ cioè esiste un numero finito di formule di $\Delta$ da cui deduco
 il falso,\\
-dato che è un numero finito di formule, sta in $\Gamma_{i}$ , cioè
+ dato che è un numero finito di formule, sta in $\Gamma_{i}$ , cioè
 esiste un $\Gamma_{i}$ non consistente, assurdo perché lo sono tutti
-per costruzione \lightning \end{enumerate}
+per costruzione \lightning
+\end{enumerate}
+\emph{\large{Nota:}}{\large \par}
+\begin{itemize}
+\item Non sappiamo costruire $\Delta$ perché nasce da unione infinita
+\item Non è unico, infatti se considero formule in ordine diverse potrei
+``dire'' si o no in modo diverso \\
+es. $a,\ \implica ab,\ b$ (allora $\Delta$ contiene $b$)\\
+es. $b,\ c$ (allora $\Delta$ contiene $\neg b$)
+\end{itemize}
+\subsection{Teorema}
 
+$\teoa$ se e solo se $a\in$ a tutti i quei $\Delta$ $\Lambda-consistenti\ massimali$
+tali che: $\Gamma\subseteq\Delta$\\
+
+
+\textbf{Andata:}
+
+$\teoa$, anche $\Delta\teorema a$ per la 1.)
+
+\textbf{Ritorno:}
+
+Per assurdo, se $\nonSem{\Gamma}{_{\Lambda}a}$ allora $\Gamma\cup\{\neg a\}$
+è $\consist$ (per la 8.)
+
+da cui per Lindellman esiste $\Delta'$ che contiene $\Gamma\cup\{\neg a\}$
+consistente massimale
+
+data la consistenza $\Delta'$ non contiene $a$, il che è contro
+l'ipotesi \lightning
+
+
+\end{document}

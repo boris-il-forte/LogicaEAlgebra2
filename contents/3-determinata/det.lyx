@@ -60,182 +60,6 @@
 
 \begin_body
 
-\begin_layout Standard
-\begin_inset FormulaMacro
-\renewcommand{\veraw}[3]{#1\models_{#2}#3}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\renewcommand{\vera}[2]{#1\models#2}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\renewcommand{\nonvera}[2]{#1\nvDash#2}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\renewcommand{\nonveraw}[3]{#1\nvDash_{#2}#3}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\renewcommand{\nonSem}[2]{#1\nvdash#2}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\renewcommand{\nonSemW}[3]{#1\nvdash_{#2}#3}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\renewcommand{\verita}[2]{#1\in V(#2)}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\renewcommand{\entail}[2]{#1\models#2}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\renewcommand{\semantica}[3]{#1\vdash_{#2}#3}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\renewcommand{\semGen}[2]{#1\vdash#2}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\renewcommand{\boxx}[1]{\square#1}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\renewcommand{\diam}[1]{\diamond#1}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\renewcommand{\dia}{\diamond a}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\renewcommand{\boa}{\boxx a}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\noa}{\neg a}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\renewcommand{\forhten}[3]{\forall#1#2\implies#3}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\renewcommand{\implica}[2]{#1\implies#2}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\renewcommand{\teorema}[1]{\vdash_{\Lambda}#1}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\teorGamma}[1]{\Gamma\vdash_{\Lambda}#1}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\teoa}{\teorGamma a}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\consist}{\mbox{\ensuremath{\Lambda}}-consistente}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\consMax}{\Lambda-consistente\: massimale}
-\end_inset
-
-
-\end_layout
-
 \begin_layout Chapter
 Verso la decidibilità - Logica determinata
 \end_layout
@@ -265,7 +89,7 @@ Sia
 \end_inset
 
 -consistente se: 
-\begin_inset Formula $\nonSemW{\Gamma}{\Lambda}{\bot}$
+\begin_inset Formula $\nonSemW\Gamma\Lambda\bot$
 \end_inset
 
 , dove 
@@ -595,7 +419,7 @@ Ritorno
 \end_inset
 
 -consistente, allora 
-\begin_inset Formula $\Gamma\cup\{\neg a\}\teorema{\bot}$
+\begin_inset Formula $\Gamma\cup\{\neg a\}\teorema\bot$
 \end_inset
 
  da cui per 7.
