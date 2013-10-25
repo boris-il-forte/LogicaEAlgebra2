@@ -60,6 +60,118 @@
 
 \begin_body
 
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\veraw}[3]{#1\models_{#2}#3}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\vera}[2]{#1\models#2}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\nonvera}[2]{#1\nvDash#2}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\nonveraw}[3]{#1\nvDash_{#2}#3}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\verita}[2]{#1\in V(#2)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\entail}[2]{#1\models#2}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\semantica}[3]{#1\vdash_{#2}#3}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\semGen}[2]{#1\vdash#2}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\boxx}[1]{\square#1}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\diam}[1]{\diamond#1}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\dia}{\diamond a}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\boa}{\boxx a}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\forhten}[3]{\forall#1#2\Rightarrow#3}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\implica}[2]{#1\Rightarrow#2}
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Introduction
 \end_layout
@@ -88,7 +200,7 @@ se
 \end_inset
 
  è una lettera enunciativa allora deve valere 
-\begin_inset Formula $\verita a\alpha$
+\begin_inset Formula $\verita a{\alpha}$
 \end_inset
 
  
@@ -113,143 +225,6 @@ se
 \end_inset
 
  
-\end_layout
-
-\begin_layout Section
-Formule Valide in ogni frame
-\end_layout
-
-\begin_layout Standard
-Le seguenti formule sono valide in ogni frame F
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $\boxx\top$
-\end_inset
-
- con 
-\begin_inset Formula $\top\equiv a\vee\neg a\not\not$
-\end_inset
-
- 
-\begin_inset Newline newline
-\end_inset
-
-infatti 
-\begin_inset Formula $\top$
-\end_inset
-
-è valida in ogni modello di ogni frame F, banalmente è valida 
-\begin_inset Formula $\boxx\top$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $\boxx{(a}\implies b)\implies(\boa\implies\boxx b)$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-infatti:
-\begin_inset Newline newline
-\end_inset
-
-Se 
-\begin_inset Formula $\nonveraw M\alpha{\boxx{(a\implies b)}}$
-\end_inset
-
- la formula è vera
-\begin_inset Newline newline
-\end_inset
-
-Se 
-\begin_inset Formula $\entail M{_{\alpha}\boxx{(a\implies b)}}$
-\end_inset
-
- allora:
-\end_layout
-
-\begin_layout Itemize
-Se 
-\begin_inset Formula $\nonveraw M\alpha\boa$
-\end_inset
-
- allora 
-\begin_inset Formula $\veraw M\alpha\boa\implies\boxx b$
-\end_inset
-
- è vera e la formula iniziale è vera
-\end_layout
-
-\begin_layout Itemize
-se 
-\begin_inset Formula $\veraw M\alpha\boa$
-\end_inset
-
- allora 
-\begin_inset Formula $\forall\beta:(\alpha,\beta)\in R$
-\end_inset
-
- 
-\begin_inset Formula $\veraw M\beta a\implies b$
-\end_inset
-
-, 
-\begin_inset Formula $\veraw M\beta a$
-\end_inset
-
-, 
-\begin_inset Formula $\veraw M\beta b$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Esistono relazioni che non solo valide in ogni frame:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\boa\implies\dia$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Non è valida in ogni frame, infatti 
-\begin_inset Formula $\boa$
-\end_inset
-
- implica che in tutti gli stati raggiungibili (ma potrebbero anche non esserci
- stati) da 
-\begin_inset Formula $\alpha$
-\end_inset
-
-, a è vera.
- Mentre 
-\begin_inset Formula $\dia$
-\end_inset
-
- implica che esiste almeno uno stato raggiungibile da 
-\begin_inset Formula $\alpha$
-\end_inset
-
- in cui a è vero.
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-Tutte le tautologie sono valide in ogni frame
 \end_layout
 
 \begin_layout Section
@@ -481,7 +456,7 @@ status collapsed
 \end_inset
 
 , e suppongo che la relazione R del frame NON sia seriale cioè 
-\begin_inset Formula $\neg\exists\beta:(\alpha R\beta)$
+\begin_inset Formula $\sim\exists\beta:(\alpha R\beta)$
 \end_inset
 
 , se è così vale sicuramente 
@@ -1012,7 +987,7 @@ Funzione parziale
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\dia\implies\boa$
+\begin_inset Formula $\diam{}{a\Rightarrow}\boxx a$
 \end_inset
 
  
@@ -1051,10 +1026,10 @@ funzione parziale
 
 \begin_layout Standard
 Funzione parziale, dimostrazione
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
-
+\begin_layout Standard
+.
 \end_layout
 
 \begin_layout Standard
@@ -1063,14 +1038,14 @@ Ip) funzione parziale
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\dia\implies\boa$
-\end_inset
-
- 
-\begin_inset Newline newline
+\begin_inset Formula $\diam{}{a\Rightarrow}\boxx a$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+.
 \end_layout
 
 \begin_layout Standard
@@ -1113,33 +1088,37 @@ da cui
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
+\begin_layout Standard
+.
+\end_layout
 
-\begin_inset Newline newline
-\end_inset
-
-
+\begin_layout Standard
+.
 \end_layout
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\dia\implies\boa$
+\begin_inset Formula $\diam{}{a\Rightarrow}\boxx a$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
 Ts) funzione parziale
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
+\begin_layout Standard
+.
+\end_layout
 
-\begin_inset Newline newline
-\end_inset
+\begin_layout Standard
+.
+\end_layout
 
+\begin_layout Standard
 Per assurdo: suppongo non che la funzione non sia parziale.
  Se è così 
 \begin_inset Formula $\exists\alpha:$
@@ -1196,7 +1175,7 @@ Funzione totale
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\diam a\iff\boxx a$
+\begin_inset Formula $\diam{}{a\iff}\boxx a$
 \end_inset
 
  
@@ -1264,10 +1243,10 @@ conti
 \begin_layout Standard
 quindi dato che l'implica prevede un and di implica da una parte e dall'altra
  per definizione abbiamo la tesi
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
-
+\begin_layout Standard
+.
 \end_layout
 
 \begin_layout Subsection
@@ -1286,7 +1265,7 @@ Relazione euclidea
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\diam a\implies\boxx{\diam a}$
+\begin_inset Formula $\diam{}{a\Rightarrow}\boxx{\diam a}$
 \end_inset
 
  
@@ -1357,7 +1336,7 @@ Ip) relazione euclidea
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\diam a\implies\boxx{\diam a}$
+\begin_inset Formula $\diam{}{a\Rightarrow}\boxx{\diam a}$
 \end_inset
 
 
@@ -1519,7 +1498,7 @@ end{center}
 
 \begin_layout Standard
 Ip)
-\begin_inset Formula $\diam a\implies\boxx{\diam a}$
+\begin_inset Formula $\diam{}{a\Rightarrow}\boxx{\diam a}$
 \end_inset
 
 

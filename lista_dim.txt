@@ -18,3 +18,5 @@ lemma di verità 									DA FARE
 correttezza e completezza della logica k			DA FARE
 determinatezza di k4								DA FARE
 th. box a in beta akkira diam a in alfa				DA FARE
+
+..

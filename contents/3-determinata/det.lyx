@@ -1,10 +1,9 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
+#LyX file created by tex2lyx 2.0.6
 \lyxformat 413
 \begin_document
 \begin_header
 \textclass report
 \use_default_options false
-\maintain_unincluded_children false
 \language english
 \language_package default
 \inputencoding utf8
@@ -18,15 +17,12 @@
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
-\bibtex_command default
-\index_command default
 \paperfontsize 11
 \spacing single
-\use_hyperref false
+\use_hyperref 0
 \papersize a4paper
 \use_geometry true
 \use_amsmath 2
@@ -39,10 +35,6 @@
 \paperorientation portrait
 \suppress_date false
 \use_refstyle 0
-\index Index
-\shortcut idx
-\color #008000
-\end_index
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -61,10 +53,12 @@
 \begin_body
 
 \begin_layout Chapter
+
 Verso la decidibilità - Logica determinata
 \end_layout
 
 \begin_layout Section
+
 Insieme 
 \begin_inset Formula $\Lambda$
 \end_inset
@@ -73,6 +67,7 @@ Insieme
 \end_layout
 
 \begin_layout Standard
+
 Sia 
 \begin_inset Formula $\Lambda$
 \end_inset
@@ -81,6 +76,8 @@ Sia
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset Formula $\Gamma$
 \end_inset
 
@@ -100,6 +97,8 @@ Sia
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset Formula $\Delta$
 \end_inset
 
@@ -132,6 +131,7 @@ Sia
 
 \begin_layout Standard
 
+
 \series bold
 Proprietà:
 \series default
@@ -139,6 +139,7 @@ Proprietà:
 \end_layout
 
 \begin_layout Enumerate
+
 Se 
 \begin_inset Formula $\teoa$
 \end_inset
@@ -151,12 +152,11 @@ Se
 \begin_inset Formula $\Delta\teorema a$
 \end_inset
 
-.
- Ovvero se alcune premesse non mi servono posso comunque metterle per dedurre
- una formula 
+. Ovvero se alcune premesse non mi servono posso comunque metterle per dedurre una formula 
 \end_layout
 
 \begin_layout Enumerate
+
 Se 
 \begin_inset Formula $\teorGamma a$
 \end_inset
@@ -169,13 +169,11 @@ Se
 \begin_inset Formula $\Gamma\vdash_{\Lambda'}a$
 \end_inset
 
-.
- Ovvero quello che posso dedurre in una logica più scarna (es.
- PL) lo posso dedurre anche in una più ricca che la contien (es.
- Modale) 
+. Ovvero quello che posso dedurre in una logica più scarna (es. PL) lo posso dedurre anche in una più ricca che la contien (es. Modale) 
 \end_layout
 
 \begin_layout Enumerate
+
 se 
 \begin_inset Formula $a\in\Gamma$
 \end_inset
@@ -184,8 +182,7 @@ se
 \begin_inset Formula $\teoa$
 \end_inset
 
- .
- 
+ . 
 \begin_inset Newline newline
 \end_inset
 
@@ -201,6 +198,8 @@ se
 \end_layout
 
 \begin_layout Enumerate
+
+
 \begin_inset Formula $\{a|\teoa\}$
 \end_inset
 
@@ -208,8 +207,7 @@ se
 \begin_inset Formula $\Gamma\cup\Lambda$
 \end_inset
 
-.
- Infatti posso dedurre tutte le tautologie da 
+. Infatti posso dedurre tutte le tautologie da 
 \begin_inset Formula $\Gamma$
 \end_inset
 
@@ -225,6 +223,7 @@ se
 \end_layout
 
 \begin_layout Enumerate
+
 Se 
 \begin_inset Formula $\teoa$
 \end_inset
@@ -257,8 +256,7 @@ Se
 \begin_inset Formula $\Lambda$
 \end_inset
 
-.
- Per arrivare in 
+. Per arrivare in 
 \begin_inset Formula $b$
 \end_inset
 
@@ -278,8 +276,7 @@ Se
 \begin_inset Formula $\Gamma$
 \end_inset
 
-, regole di inf.
- e assiomi di 
+, regole di inf. e assiomi di 
 \begin_inset Formula $\Lambda$
 \end_inset
 
@@ -287,6 +284,7 @@ Se
 \end_layout
 
 \begin_layout Enumerate
+
 Se 
 \begin_inset Formula $\teoa$
 \end_inset
@@ -307,6 +305,8 @@ Se
 \end_layout
 
 \begin_layout Enumerate
+
+
 \begin_inset Formula $\Gamma\cup\{a\}\teorema b$
 \end_inset
 
@@ -354,11 +354,12 @@ Ritorno
 \begin_inset Formula $ $
 \end_inset
 
-and.
- 
+and. 
 \end_layout
 
 \begin_layout Enumerate
+
+
 \begin_inset Formula $\teoa$
 \end_inset
 
@@ -422,8 +423,7 @@ Ritorno
 \begin_inset Formula $\Gamma\cup\{\neg a\}\teorema\bot$
 \end_inset
 
- da cui per 7.
- 
+ da cui per 7. 
 \begin_inset Newline newline
 \end_inset
 
@@ -455,6 +455,8 @@ Ritorno
 \end_layout
 
 \begin_layout Enumerate
+
+
 \begin_inset Formula $\Gamma$
 \end_inset
 
@@ -510,6 +512,8 @@ Ritorno
 \end_layout
 
 \begin_layout Enumerate
+
+
 \begin_inset Formula $\Gamma$
 \end_inset
 
@@ -593,6 +597,8 @@ Ritorno
 \end_layout
 
 \begin_layout Enumerate
+
+
 \begin_inset Formula $\bot$
 \end_inset
 
@@ -612,6 +618,7 @@ Ritorno
 \end_layout
 
 \begin_layout Enumerate
+
 Se 
 \begin_inset Formula $\Delta$
 \end_inset
@@ -676,6 +683,7 @@ Se
 \end_layout
 
 \begin_layout Enumerate
+
 Se 
 \begin_inset Formula $\Delta$
 \end_inset
@@ -692,8 +700,7 @@ Se
 \begin_inset Formula $a\in\Delta$
 \end_inset
 
-.
- 
+. 
 \begin_inset Formula $\implica ab\in\Delta$
 \end_inset
 
@@ -701,8 +708,7 @@ Se
 \begin_inset Formula $b\in\Delta$
 \end_inset
 
-.
- 
+. 
 \begin_inset Newline newline
 \end_inset
 
@@ -722,6 +728,7 @@ Se
 \end_layout
 
 \begin_layout Section
+
 Insieme 
 \begin_inset Formula $\Lambda$
 \end_inset
@@ -731,12 +738,26 @@ Insieme
 
 \begin_layout Standard
 
-\size large
+
 \emph on
+
+\size large
+
 \begin_inset ERT
 status collapsed
 
-\begin_layout Plain Layout
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
 
 {
 \end_layout
@@ -751,7 +772,18 @@ Lemma di Lindelman - Esistenza dell'insieme
 \begin_inset ERT
 status collapsed
 
-\begin_layout Plain Layout
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
 
 }
 \end_layout
@@ -760,13 +792,52 @@ status collapsed
 
 
 \emph default
- 
-\emph on
+
+\size large
 
 \begin_inset ERT
 status collapsed
 
-\begin_layout Plain Layout
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\emph on
+
+\size large
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
 
 {
 \end_layout
@@ -781,7 +852,18 @@ in una logica
 \begin_inset ERT
 status collapsed
 
-\begin_layout Plain Layout
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
 
 }
 \end_layout
@@ -790,13 +872,52 @@ status collapsed
 
 
 \emph default
- 
-\emph on
+
+\size large
 
 \begin_inset ERT
 status collapsed
 
-\begin_layout Plain Layout
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\emph on
+
+\size large
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
 
 {
 \end_layout
@@ -807,7 +928,18 @@ consistente
 \begin_inset ERT
 status collapsed
 
-\begin_layout Plain Layout
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
 
 }
 \end_layout
@@ -817,11 +949,65 @@ status collapsed
 
 \emph default
 
+\size large
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{}
+\end_layout
+
+\end_inset
+
+
+\size default
+
 \begin_inset Newline newline
 \end_inset
 
  
+\size large
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+
+\size default
+
 \begin_inset Newline newline
+\end_inset
+
+ 
+\size large
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
 \end_inset
 
  Considero tutte le formule 
@@ -833,9 +1019,25 @@ status collapsed
 \end_inset
 
  (posso farlo perché sono un'infinità numerabile)
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\size large
+
 \end_layout
 
 \begin_layout Standard
+
 Chiamo 
 \begin_inset Formula $\Gamma_{0}$
 \end_inset
@@ -844,6 +1046,7 @@ Chiamo
 \end_layout
 
 \begin_layout Standard
+
 Dopodichè iterativamente, per ogni formula mi chiedo
 \begin_inset Newline newline
 \end_inset
@@ -852,6 +1055,8 @@ Dopodichè iterativamente, per ogni formula mi chiedo
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset Formula $\Gamma_{0}$
 \end_inset
 
@@ -874,6 +1079,8 @@ no: & \Gamma_{1}=\Gamma_{0}\cup\neg b1
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset Formula $\Gamma_{1}$
 \end_inset
 
@@ -892,6 +1099,8 @@ no: & \Gamma_{2}=\Gamma_{1}\cup\neg b2
 \end_layout
 
 \begin_layout Description
+
+
 \begin_inset Formula $\Delta=\bigcup_{n\geq0}\Gamma_{i}$
 \end_inset
 
@@ -899,6 +1108,8 @@ no: & \Gamma_{2}=\Gamma_{1}\cup\neg b2
 \end_layout
 
 \begin_layout Description
+
+
 \begin_inset Formula $\Delta$
 \end_inset
 
@@ -906,6 +1117,7 @@ no: & \Gamma_{2}=\Gamma_{1}\cup\neg b2
 \end_layout
 
 \begin_layout Enumerate
+
 Massimale in quanto contiene 
 \begin_inset Formula $a$
 \end_inset
@@ -918,8 +1130,8 @@ Massimale in quanto contiene
 \end_layout
 
 \begin_layout Enumerate
-Consistente.
- Per assurdo se non lo fosse avrei: 
+
+Consistente. Per assurdo se non lo fosse avrei: 
 \begin_inset Formula $\Delta\teorema{\bot}$
 \end_inset
 
@@ -945,9 +1157,9 @@ Consistente.
 
  non consistente, assurdo perché lo sono tutti per costruzione 
 \begin_inset ERT
-status open
+status collapsed
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 
 \backslash
@@ -956,25 +1168,60 @@ lightning
 
 \end_inset
 
+ 
+\end_layout
+
+\begin_layout Standard
+
+
+\emph on
+
+\size large
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+Nota:
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+
+\emph default
+
+\size large
 
 \end_layout
 
 \begin_layout Standard
 
-\size large
-\emph on
-Nota:
+ 
 \end_layout
 
 \begin_layout Itemize
+
 Non sappiamo costruire 
 \begin_inset Formula $\Delta$
 \end_inset
 
- perché nasce da unione infinita
+ perché nasce da unione infinita 
 \end_layout
 
 \begin_layout Itemize
+
 Non è unico, infatti se considero formule in ordine diverse potrei 
 \begin_inset Quotes eld
 \end_inset
@@ -987,8 +1234,7 @@ dire
 \begin_inset Newline newline
 \end_inset
 
-es.
- 
+ es. 
 \begin_inset Formula $a,\ \implica ab,\ b$
 \end_inset
 
@@ -1004,8 +1250,7 @@ es.
 \begin_inset Newline newline
 \end_inset
 
-es.
- 
+ es. 
 \begin_inset Formula $b,\ c$
 \end_inset
 
@@ -1017,26 +1262,17 @@ es.
 \begin_inset Formula $\neg b$
 \end_inset
 
-)
+) 
+\end_layout
+
+\begin_layout Subsection
+
+Teorema
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
 
 
-\backslash
-subsection{Teorema}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula $\teoa$
 \end_inset
 
@@ -1065,11 +1301,16 @@ subsection{Teorema}
 
 \begin_layout Standard
 
+
 \series bold
 Andata:
+\series default
+
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset Formula $\teoa$
 \end_inset
 
@@ -1082,11 +1323,15 @@ Andata:
 
 \begin_layout Standard
 
+
 \series bold
 Ritorno:
+\series default
+
 \end_layout
 
 \begin_layout Standard
+
 Per assurdo, se 
 \begin_inset Formula $\nonSem{\Gamma}{_{\Lambda}a}$
 \end_inset
@@ -1103,6 +1348,7 @@ Per assurdo, se
 \end_layout
 
 \begin_layout Standard
+
 da cui per Lindellman esiste 
 \begin_inset Formula $\Delta'$
 \end_inset
@@ -1115,6 +1361,7 @@ da cui per Lindellman esiste
 \end_layout
 
 \begin_layout Standard
+
 data la consistenza 
 \begin_inset Formula $\Delta'$
 \end_inset
@@ -1125,9 +1372,9 @@ data la consistenza
 
 , il che è contro l'ipotesi 
 \begin_inset ERT
-status open
+status collapsed
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 
 \backslash
@@ -1136,10 +1383,6 @@ lightning
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 
 \end_layout
 
