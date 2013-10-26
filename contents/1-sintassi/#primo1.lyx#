@@ -60,6 +60,10 @@
 
 \begin_body
 
+\begin_layout Standard
+
+\end_layout
+
 \begin_layout Chapter
 Introduction
 \end_layout
@@ -317,7 +321,7 @@ Per assurdo:
 \begin_layout Standard
 Suppongo di trovarmi in un mondo come quello in figura (wow) in cui 
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1386,7 +1390,7 @@ end{center}
 
 \begin_layout Standard
 Ip)
-\begin_inset Formula $\dia\implies\boxx{\diam a}$
+\begin_inset Formula $\diam{}{a\Rightarrow}\boxx{\diam a}$
 \end_inset
 
 
