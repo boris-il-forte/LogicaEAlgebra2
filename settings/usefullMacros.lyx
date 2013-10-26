@@ -3,15 +3,15 @@
 \begin_document
 \begin_header
 \textclass report
-\use_default_options true
+\use_default_options false
 \maintain_unincluded_children false
 \language english
 \language_package default
-\inputencoding auto
-\fontencoding global
+\inputencoding utf8
+\fontencoding T1
 \font_roman default
 \font_sans default
-\font_typewriter default
+\font_typewriter mathpazo
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
@@ -24,20 +24,21 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\paperfontsize default
+\paperfontsize 11
+\spacing single
 \use_hyperref false
-\papersize default
-\use_geometry false
-\use_amsmath 1
+\papersize a4paper
+\use_geometry true
+\use_amsmath 2
 \use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_mhchem 0
+\use_mathdots 0
 \cite_engine basic
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\use_refstyle 1
+\use_refstyle 0
 \index Index
 \shortcut idx
 \color #008000
@@ -48,7 +49,7 @@
 \paragraph_indentation default
 \quotes_language english
 \papercolumns 1
-\papersides 1
+\papersides 2
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
@@ -230,6 +231,38 @@
 \begin_layout Standard
 \begin_inset FormulaMacro
 \newcommand{\consMax}{\Lambda-consistente\: massimale}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\veraCanAlfa}[1]{\vera{M^{\Lambda}}{_{\alpha}}#1}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\veraCA}{\vera{M^{\Lambda}}{_{\alpha}}a}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\veraCan}[2]{\vera{M^{\Lambda}}{_{#1}}#2}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\nonveraCan}[2]{\nonveraw{M^{\Lambda}}{#1}{#2}}
 \end_inset
 
 

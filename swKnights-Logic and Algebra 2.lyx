@@ -1,18 +1,29 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
+#LyX file created by tex2lyx 2.0.6
 \lyxformat 413
 \begin_document
 \begin_header
 \textclass report
 \begin_preamble
 
+\newlength\tindent
+\setlength{\tindent}{\parindent}
+\setlength{\parindent}{0pt}
+\renewcommand{\indent}{\hspace*{\tindent}}
 
 \title{Logica e Algebra 2}
 
 \usepackage[english]{babel}
 \usepackage{tikz}
 
-\usepackage{booktabs}
-\usepackage{listings}\lstset{columns=fullflexible}
+\usepackage{color}   %May be necessary if you want to color links
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true, %set true if you want colored links
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=black,  %choose some color if you want links to stand out
+}
+
+\usepackage{booktabs}\usepackage{listings}\lstset{columns=fullflexible}
 
 \usepackage{wasysym}
 
@@ -37,9 +48,14 @@
 
 
 \usepackage{babel}
+
+
+
+
+\usepackage{babel}
+
 \end_preamble
 \use_default_options false
-\maintain_unincluded_children false
 \language english
 \language_package default
 \inputencoding utf8
@@ -53,15 +69,12 @@
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
-\bibtex_command default
-\index_command default
 \paperfontsize 11
 \spacing single
-\use_hyperref false
+\use_hyperref 0
 \papersize a4paper
 \use_geometry true
 \use_amsmath 2
@@ -74,10 +87,6 @@
 \paperorientation portrait
 \suppress_date false
 \use_refstyle 0
-\index Index
-\shortcut idx
-\color #008000
-\end_index
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -96,10 +105,8 @@
 \begin_body
 
 \begin_layout Standard
-	
-\end_layout
 
-\begin_layout Standard
+
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
@@ -109,8 +116,11 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset CommandInset include
 LatexCommand include
+preview false
 filename "settings/usefullMacros.lyx"
 
 \end_inset
@@ -120,11 +130,10 @@ filename "settings/usefullMacros.lyx"
 
 \begin_layout Standard
 
-\end_layout
 
-\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
+preview false
 filename "contents/0-intro/introduction.lyx"
 
 \end_inset
@@ -133,8 +142,11 @@ filename "contents/0-intro/introduction.lyx"
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset CommandInset include
 LatexCommand include
+preview false
 filename "contents/1-sintassi/primo1.lyx"
 
 \end_inset
@@ -143,8 +155,11 @@ filename "contents/1-sintassi/primo1.lyx"
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset CommandInset include
 LatexCommand include
+preview false
 filename "contents/2-semanticaA/semA.lyx"
 
 \end_inset
@@ -153,13 +168,16 @@ filename "contents/2-semanticaA/semA.lyx"
 \end_layout
 
 \begin_layout Standard
+
+
 \begin_inset CommandInset include
 LatexCommand include
+preview false
 filename "contents/3-determinata/det.lyx"
 
 \end_inset
 
-
+ 
 \end_layout
 
 \end_body

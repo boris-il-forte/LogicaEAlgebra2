@@ -2043,7 +2043,7 @@ Dall'ipotesi segue che
 \end_inset
 
  si ha: 
-\begin_inset Formula $\veraCan{\beta}b$
+\begin_inset Formula $\veraCan\beta b$
 \end_inset
 
  (questo per la definizione di 
@@ -2268,26 +2268,6 @@ TS)
 \begin_inset Newline newline
 \end_inset
 
-Se 
-\begin_inset Formula $\boxx b\in\alpha$
-\end_inset
-
- per definizione di 
-\begin_inset Formula $R^{\Lambda}$
-\end_inset
-
- per ogni mondo 
-\begin_inset Formula $\beta$
-\end_inset
-
- con 
-\begin_inset Formula $(\alpha,\beta)\in R^{\Lambda}$
-\end_inset
-
- si ha 
-\begin_inset Formula $b\in\beta$
-\end_inset
-
 
 \end_layout
 
@@ -2304,38 +2284,10 @@ Notiamo che
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $ $
+\begin_inset Formula $\forall\beta:(\alpha,\beta)\in R^{\Lambda}$
 \end_inset
 
-
-\begin_inset Formula $b\in\beta$
-\end_inset
-
- se e solo se 
-\begin_inset Formula $\veraCan{\beta}b$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Dato che questo vale 
-\begin_inset Formula $ $
-\end_inset
-
-per ogni 
-\begin_inset Formula $\beta$
-\end_inset
-
- in relazione con 
-\begin_inset Formula $\alpha$
-\end_inset
-
-, si ha: 
-\begin_inset Formula $\veraCanAlfa{\boxx b}$
-\end_inset
-
-
+ 
 \end_layout
 
 \begin_layout Section
