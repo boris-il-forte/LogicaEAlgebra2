@@ -11,9 +11,8 @@
 \usepackage[english]{babel}
 \usepackage{tikz}
 
-\usepackage{settings/usefulMacros} 
-
-\usepackage{booktabs}\usepackage{listings}\lstset{columns=fullflexible}
+\usepackage{booktabs}
+\usepackage{listings}\lstset{columns=fullflexible}
 
 \usepackage{wasysym}
 
@@ -97,11 +96,29 @@
 \begin_body
 
 \begin_layout Standard
+	
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "settings/usefullMacros.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
@@ -142,7 +159,7 @@ filename "contents/3-determinata/det.lyx"
 
 \end_inset
 
- 
+
 \end_layout
 
 \end_body

@@ -2,17 +2,16 @@
 \contentsline {chapter}{\numberline {1}Introduzione}{2}
 \contentsline {section}{\numberline {1.1}Intro}{2}
 \contentsline {chapter}{\numberline {2}Introduction}{3}
-\contentsline {section}{\numberline {2.1}Formule Valide in ogni frame}{3}
-\contentsline {section}{\numberline {2.2}Formule di Logica modale e significato}{4}
-\contentsline {subsection}{\numberline {2.2.1}Relazione seriale}{4}
-\contentsline {subsection}{\numberline {2.2.2}Relazione simmetrica}{4}
-\contentsline {subsection}{\numberline {2.2.3}Funzione parziale}{5}
-\contentsline {subsection}{\numberline {2.2.4}Funzione totale}{6}
-\contentsline {subsection}{\numberline {2.2.5}Relazione euclidea}{6}
-\contentsline {chapter}{\numberline {3}Semantica}{8}
-\contentsline {section}{\numberline {3.1}Simboli secessari}{8}
-\contentsline {section}{\numberline {3.2}Logiche}{8}
-\contentsline {chapter}{\numberline {4}Verso la decidibilit\IeC {\`a} - Logica determinata}{10}
-\contentsline {section}{\numberline {4.1}Insieme $\Lambda $ consistente e sue propriet\IeC {\`a}}{10}
-\contentsline {section}{\numberline {4.2}Insieme $\Lambda $ consistente massimale}{11}
-\contentsline {subsection}{\numberline {4.2.1}Teorema}{12}
+\contentsline {section}{\numberline {2.1}Formule di Logica modale e significato}{3}
+\contentsline {subsection}{\numberline {2.1.1}Relazione seriale}{3}
+\contentsline {subsection}{\numberline {2.1.2}Relazione simmetrica}{4}
+\contentsline {subsection}{\numberline {2.1.3}Funzione parziale}{5}
+\contentsline {subsection}{\numberline {2.1.4}Funzione totale}{5}
+\contentsline {subsection}{\numberline {2.1.5}Relazione euclidea}{6}
+\contentsline {chapter}{\numberline {3}Semantica}{7}
+\contentsline {section}{\numberline {3.1}Simboli secessari}{7}
+\contentsline {section}{\numberline {3.2}Logiche}{7}
+\contentsline {chapter}{\numberline {4}Verso la decidibilit\IeC {\`a} - Logica determinata}{9}
+\contentsline {section}{\numberline {4.1}Insieme $\Lambda $ consistente e sue propriet\IeC {\`a}}{9}
+\contentsline {section}{\numberline {4.2}Insieme $\Lambda $ consistente massimale}{10}
+\contentsline {subsection}{\numberline {4.2.1}Teorema}{11}

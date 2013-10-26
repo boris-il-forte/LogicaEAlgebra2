@@ -1,42 +1,16 @@
 
+
+
 \chapter{Introduction}
 
 $a$ è vera nel mondo $\alpha$, e scriviamo $\mu\models_{\alpha}a$
 
 se 
 \begin{itemize}
-\item $a$ è una lettera enunciativa allora deve valere $\verita a\alpha$ 
+\item $a$ è una lettera enunciativa allora deve valere $\verita a{\alpha}$ 
 \item $a$ è del tipo: $a\lor b$ .... allora.... $\mu\models_{\alpha}a$
 oppure $\mu\models_{\alpha}b$ 
 \end{itemize}
-
-\section{Formule Valide in ogni frame}
-
-Le seguenti formule sono valide in ogni frame F\\
-$\boxx\top$ con $\top\equiv a\vee\neg a\not\not$ \\
-infatti $\top$è valida in ogni modello di ogni frame F, banalmente
-è valida $\boxx\top$\\
-$\boxx{(a}\implies b)\implies(\boa\implies\boxx b)$\\
-infatti:\\
-Se $\nonveraw M\alpha{\boxx{(a\implies b)}}$ la formula è vera\\
-Se $\entail M{_{\alpha}\boxx{(a\implies b)}}$ allora:
-\begin{itemize}
-\item Se $\nonveraw M\alpha\boa$ allora $\veraw M\alpha\boa\implies\boxx b$
-è vera e la formula iniziale è vera
-\item se $\veraw M\alpha\boa$ allora $\forall\beta:(\alpha,\beta)\in R$
-$\veraw M\beta a\implies b$, $\veraw M\beta a$, $\veraw M\beta b$
-\end{itemize}
-Esistono relazioni che non solo valide in ogni frame:
-
-$\boa\implies\dia$
-
-Non è valida in ogni frame, infatti $\boa$ implica che in tutti gli
-stati raggiungibili (ma potrebbero anche non esserci stati) da $\alpha$,
-a è vera. Mentre $\dia$ implica che esiste almeno uno stato raggiungibile
-da $\alpha$ in cui a è vero.\\
-\\
-Tutte le tautologie sono valide in ogni frame
-
 
 \section{Formule di Logica modale e significato}
 
@@ -85,7 +59,7 @@ Per assurdo:
 
 Suppongo di trovarmi in un mondo come quello in figura (wow) in cui
 \mbox{$\veraw{\mu}{\alpha}{\boa}$ }, e suppongo che la relazione
-R del frame NON sia seriale cioè $\neg\exists\beta:(\alpha R\beta)$,
+R del frame NON sia seriale cioè $\sim\exists\beta:(\alpha R\beta)$,
 se è così vale sicuramente $\veraw{\mu}a{\boa}$ (dato che $\alpha$
 non ha successori) , d'altra parte per come è il mondo considerato,
 cioè si nega la tesi, assurdo\sout{.}
@@ -172,31 +146,39 @@ $ $
 
 \begin{tabular}{|c|c|c|}
 \hline 
-$\dia\implies\boa$  & funzione parziale  & $\forhten{\alpha}{:\,\alpha R\beta,\:\beta R\gamma}{\beta}=\gamma$\tabularnewline
+$\diam{}{a\Rightarrow}\boxx a$  & funzione parziale  & $\forhten{\alpha}{:\,\alpha R\beta,\:\beta R\gamma}{\beta}=\gamma$\tabularnewline
 \hline 
 \end{tabular}
 
-Funzione parziale, dimostrazione\\
+Funzione parziale, dimostrazione
 
+.
 
 Ip) funzione parziale
 
-Ts) $\dia\implies\boa$ \\
+Ts) $\diam{}{a\Rightarrow}\boxx a$
 
+.
 
 $\diam{}a$ falsa allora dato che l'antecedente è falso di ha $\implica{\diam{}a}{\boxx a}$
 
 $\diam{}a$ vera allora $\exists\beta$:$\alpha R\beta$ e$\in V(\beta)$,
 ma dato che la funzione è parziale questo $\beta$ è unico !
 
-da cui $\vera{\mu}{\implica{\diamond a}{\boxx a}}$\\
-\\
+da cui $\vera{\mu}{\implica{\diamond a}{\boxx a}}$
 
+.
 
-Ip) $\dia\implies\boa$ 
+.
 
-Ts) funzione parziale\\
-\\
+Ip) $\diam{}{a\Rightarrow}\boxx a$
+
+Ts) funzione parziale
+
+.
+
+.
+
 Per assurdo: suppongo non che la funzione non sia parziale. Se è così
 $\exists\alpha:$ $\alpha R\beta,$ $\alpha R\gamma$, considero un
 modello in cui V(A) = \{$\beta$ \} , $\boxx A$ non vale in $\alpha$
@@ -209,7 +191,7 @@ dato che A è falsa in $\gamma$, il che contraddice l'ipotesi (BAM!)\\
 
 \begin{tabular}{|c|c|c|}
 \hline 
-$\diam a\iff\boxx a$  & funzione totale  & $\forall\alpha\exists\,!\,\beta:\:\alpha R\beta$ \tabularnewline
+$\diam{}{a\iff}\boxx a$  & funzione totale  & $\forall\alpha\exists\,!\,\beta:\:\alpha R\beta$ \tabularnewline
 \hline 
 \end{tabular}\\
  \\
@@ -219,15 +201,16 @@ non ci sono ``conti'' da fare, R è seriale sse R è seriale $\boxx a\implies\di
 , e se R è una funzione parziale $\implica{\diam a}{\boxx a}$
 
 quindi dato che l'implica prevede un and di implica da una parte e
-dall'altra per definizione abbiamo la tesi\\
+dall'altra per definizione abbiamo la tesi
 
+.
 
 
 \subsection{Relazione euclidea}
 
 \begin{tabular}{|c|c|c|}
 \hline 
-$\diam a\implies\boxx{\diam a}$  & relazione euclidea  & $\forhten{\alpha,\beta,\gamma}{:\:(\alpha R\beta,\:\alpha R\gamma)}{\beta}R\gamma$
+$\diam{}{a\Rightarrow}\boxx{\diam a}$  & relazione euclidea  & $\forhten{\alpha,\beta,\gamma}{:\:(\alpha R\beta,\:\alpha R\gamma)}{\beta}R\gamma$
 da cui anche: $\beta$R$\beta$, $\gamma R\gamma$, $\gamma$R$\beta$\tabularnewline
 \hline 
 \end{tabular}\\
@@ -236,7 +219,7 @@ da cui anche: $\beta$R$\beta$, $\gamma R\gamma$, $\gamma$R$\beta$\tabularnewline
 
 Ip) relazione euclidea
 
-Ts) $\diam a\implies\boxx{\diam a}$
+Ts) $\diam{}{a\Rightarrow}\boxx{\diam a}$
 
 Suppongo sia vero l'antecedente (se falso ho finito), quindi vale:
 $\dia$ da cui: $\vera{\mu}{\dia}$
@@ -255,7 +238,7 @@ dato che in $\beta$ vale $a$, in ognuno di loro vale $\dia$ \\
  \begin{center}  \begin{tikzpicture}[scale=0.2]  \tikzstyle{every node}+=[inner sep=0pt] \draw [black] (24.5,-18.4) circle (3); \draw (24.5,-18.4) node {$\alpha$}; \draw [black] (46.5,-18.4) circle (3);  \draw (46.5,-18.4) node {$\beta$}; \draw [black] (36.7,-27.3) circle (3);  \draw (36.7,-27.3) node {$\beta'$}; \draw (23.9,-12.8) node {$\dia$}; \draw (46.5,-12.8) node {$\dia, a$}; \draw (36.7,-22.1) node {$\dia$}; \draw [black] (36.7,-10.4) circle (3); \draw (36.7,-10.4) node {$\beta''$}; \draw (36.7,-4.9) node {$\dia$}; \draw [black] (27.5,-18.4) -- (43.5,-18.4);  \fill [black] (43.5,-18.4) -- (42.7,-17.9) -- (42.7,-18.9); \draw [black] (26.92,-20.17) -- (34.28,-25.53);  \fill [black] (34.28,-25.53) -- (33.92,-24.66) -- (33.34,-25.46);  \draw [black] (27.01,-16.75) -- (34.19,-12.05);  \fill [black] (34.19,-12.05) -- (33.25,-12.07) -- (33.8,-12.9);  \draw [black] (49.18,-17.077) arc (144:-144:2.25); \fill [black] (49.18,-19.72) -- (49.53,-20.6) -- (50.12,-19.79); \draw [black] (39.02,-12.3) -- (44.18,-16.5); \fill [black] (44.18,-16.5) -- (43.87,-15.61) -- (43.24,-16.38); \draw [black] (38.92,-25.28) -- (44.28,-20.42); \fill [black] (44.28,-20.42) -- (43.35,-20.58) -- (44.02,-21.32);  \end{tikzpicture} \end{center} 
 \par\end{center}
 
-Ip)$\diam a\implies\boxx{\diam a}$
+Ip)$\diam{}{a\Rightarrow}\boxx{\diam a}$
 
 Ts) relazione euclidea
 

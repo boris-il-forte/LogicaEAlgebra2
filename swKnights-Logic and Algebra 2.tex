@@ -13,8 +13,6 @@
 \PassOptionsToPackage{normalem}{ulem}
 \usepackage{ulem}
 
-\usepackage{settings/usefulMacros} 
-
 \makeatletter
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
@@ -29,7 +27,8 @@
 \usepackage[english]{babel}
 \usepackage{tikz}
 
-\usepackage{booktabs}\usepackage{listings}\lstset{columns=fullflexible}
+\usepackage{booktabs}
+\usepackage{listings}\lstset{columns=fullflexible}
 
 \usepackage{wasysym}
 
@@ -51,15 +50,19 @@
 %per le tabelle lunghe e particolari
 \usepackage{lscape}
 
+
+
+\usepackage{babel}
+
 \makeatother
 
 \usepackage{babel}
 \begin{document}
-%\include{settings/theme}
-%\include{settings/usefulMacros}
-
+	
 
 \tableofcontents{}
+
+\include{settings/usefullMacros}
 
 \include{contents/0-intro/introduction}
 

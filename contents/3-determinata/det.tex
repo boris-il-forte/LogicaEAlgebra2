@@ -7,14 +7,14 @@
 Sia $\Lambda$ una logica (cioè ha tutte le tautologie ed è chiusa
 rispetto al Modus Ponens)
 
-$\Gamma$ si dice $\Lambda$-consistente se: $\nonSemW\Gamma\Lambda\bot$,
+$\Gamma$ si dice $\Lambda$-consistente se: $\nonSemW{\Gamma}{\Lambda}{\bot}$,
 dove $\bot=A\wedge\neg A$
 
 $\Delta$ si dice $\Lambda$-consistente massimale se per ogni fbf
 $a$ $a\in\Delta$ oppure $\neg a\in\Delta$ $ $\\
 
 
-\textbf{Proprietà:} 
+\textbf{Proprietà:} $ $
 \begin{enumerate}
 \item Se $\teoa$ e $\Gamma\subseteq\Delta$ allora $\Delta\teorema a$.
 Ovvero se alcune premesse non mi servono posso comunque metterle per
@@ -28,7 +28,7 @@ lo posso dedurre anche in una più ricca che la contien (es. Modale)
 \item $\{a|\teoa\}$ è la minima logica che contiene $\Gamma\cup\Lambda$.
 Infatti posso dedurre tutte le tautologie da $\Gamma$, anche se non
 userò nessuna formula di $\Gamma$ ma solo quelle che già sono nella
-logica $\Lambda$ 
+logica $\Lambda$ $ $
 \item Se $\teoa$ e $\{a\}$$\teorema b$ allora $\teorGamma b$ \\
  Infatti: per dedurre $a$ uso regole di inferenza, formule di $\Gamma$,
 assiomi di $\Lambda$. Per arrivare in $b$ uso assiomi di $\Lambda$
@@ -49,7 +49,7 @@ basta portare $a$ tra le $ $and.
  \textbf{Andata}: $\teoa$, $\Gamma\teorema{\neg a}$, posso dedure
 $\bot$ che è contro la definizione di $\Lambda$-consistenza\\
  \textbf{Ritorno}: Se$ $$\Gamma\cup\{\neg a\}$ non è $\Lambda$-consistente,
-allora $\Gamma\cup\{\neg a\}\teorema\bot$ da cui per 7. \\
+allora $\Gamma\cup\{\neg a\}\teorema{\bot}$ da cui per 7. \\
  $\Gamma\teorema{\neg a\implies\bot}$ (sposto $\neg a$ a destra
 e metto l'implica), \\
  Dato che $(\neg a\implies\bot)\implies a$ è una tatutologica, per
@@ -85,11 +85,11 @@ $\implica ab$, allora deduco anche $b$)
 
 \section{Insieme $\Lambda$ consistente massimale}
 
-\emph{\large{{Lemma di Lindelman - Esistenza dell'insieme $\consMax$}}}{\large{
-}}\emph{\large{{in una logica $\Lambda$}}}{\large{ }}\emph{\large{{consistente}}}{\large{}}\\
-{\large{ }}\\
-{\large{ Considero tutte le formule $b1,\ b2,\ b3,\dots$ della logica
-$\Lambda$ (posso farlo perché sono un'infinità numerabile)}}{\large \par}
+\emph{\large{{{Lemma di Lindelman - Esistenza dell'insieme $\consMax$}}}}{\large{{
+}}}\emph{\large{{{in una logica $\Lambda$}}}}{\large{{ }}}\emph{\large{{{consistente}}}}{\large{{}}}\\
+ {\large{{ }}}\\
+ {\large{{ Considero tutte le formule $b1,\ b2,\ b3,\dots$ della
+logica $\Lambda$ (posso farlo perché sono un'infinità numerabile)}}}{\large \par}
 
 Chiamo $\Gamma_{0}$ un insieme che contiene una sola formula (ad
 esempio una tautologia)
@@ -117,16 +117,19 @@ no: & \Gamma_{2}=\Gamma_{1}\cup\neg b2
 il falso,\\
  dato che è un numero finito di formule, sta in $\Gamma_{i}$ , cioè
 esiste un $\Gamma_{i}$ non consistente, assurdo perché lo sono tutti
-per costruzione \lightning
+per costruzione \lightning 
 \end{enumerate}
-\emph{\large{Nota:}}{\large \par}
+\emph{\large{{Nota:}}}{\large \par}
+
+ 
 \begin{itemize}
-\item Non sappiamo costruire $\Delta$ perché nasce da unione infinita
+\item Non sappiamo costruire $\Delta$ perché nasce da unione infinita 
 \item Non è unico, infatti se considero formule in ordine diverse potrei
 ``dire'' si o no in modo diverso \\
-es. $a,\ \implica ab,\ b$ (allora $\Delta$ contiene $b$)\\
-es. $b,\ c$ (allora $\Delta$ contiene $\neg b$)
+ es. $a,\ \implica ab,\ b$ (allora $\Delta$ contiene $b$)\\
+ es. $b,\ c$ (allora $\Delta$ contiene $\neg b$) 
 \end{itemize}
+
 \subsection{Teorema}
 
 $\teoa$ se e solo se $a\in$ a tutti i quei $\Delta$ $\Lambda-consistenti\ massimali$
@@ -147,5 +150,3 @@ consistente massimale
 
 data la consistenza $\Delta'$ non contiene $a$, il che è contro
 l'ipotesi \lightning
-
-
