@@ -14,7 +14,7 @@ $\Delta$ si dice $\Lambda$-consistente massimale se per ogni fbf
 $a$ $a\in\Delta$ oppure $\neg a\in\Delta$ $ $\\
 
 
-\textbf{Proprietà:} $ $
+\textbf{Proprietà:} $ $ 
 \begin{enumerate}
 \item Se $\teoa$ e $\Gamma\subseteq\Delta$ allora $\Delta\teorema a$.
 Ovvero se alcune premesse non mi servono posso comunque metterle per
@@ -28,7 +28,7 @@ lo posso dedurre anche in una più ricca che la contien (es. Modale)
 \item $\{a|\teoa\}$ è la minima logica che contiene $\Gamma\cup\Lambda$.
 Infatti posso dedurre tutte le tautologie da $\Gamma$, anche se non
 userò nessuna formula di $\Gamma$ ma solo quelle che già sono nella
-logica $\Lambda$ $ $
+logica $\Lambda$ $ $ 
 \item Se $\teoa$ e $\{a\}$$\teorema b$ allora $\teorGamma b$ \\
  Infatti: per dedurre $a$ uso regole di inferenza, formule di $\Gamma$,
 assiomi di $\Lambda$. Per arrivare in $b$ uso assiomi di $\Lambda$
@@ -85,11 +85,12 @@ $\implica ab$, allora deduco anche $b$)
 
 \section{Insieme $\Lambda$ consistente massimale}
 
-\emph{\large{{{Lemma di Lindelman - Esistenza dell'insieme $\consMax$}}}}{\large{{
-}}}\emph{\large{{{in una logica $\Lambda$}}}}{\large{{ }}}\emph{\large{{{consistente}}}}{\large{{}}}\\
- {\large{{ }}}\\
- {\large{{ Considero tutte le formule $b1,\ b2,\ b3,\dots$ della
-logica $\Lambda$ (posso farlo perché sono un'infinità numerabile)}}}{\large \par}
+\emph{\large{{{{Lemma di Lindelman - Esistenza dell'insieme $\consMax$}}}}}{\large{{{
+}}}}\emph{\large{{{{in una logica $\Lambda$}}}}}{\large{{{
+}}}}\emph{\large{{{{consistente}}}}}{\large{{{}}}}\\
+ {\large{{{ }}}}\\
+ {\large{{{ Considero tutte le formule $b1,\ b2,\ b3,\dots$ della
+logica $\Lambda$ (posso farlo perché sono un'infinità numerabile)}}}}{\large \par}
 
 Chiamo $\Gamma_{0}$ un insieme che contiene una sola formula (ad
 esempio una tautologia)
@@ -119,9 +120,7 @@ il falso,\\
 esiste un $\Gamma_{i}$ non consistente, assurdo perché lo sono tutti
 per costruzione \lightning 
 \end{enumerate}
-\emph{\large{{Nota:}}}{\large \par}
-
- 
+\emph{\large{{{Nota:}}}}{\large \par}
 \begin{itemize}
 \item Non sappiamo costruire $\Delta$ perché nasce da unione infinita 
 \item Non è unico, infatti se considero formule in ordine diverse potrei
@@ -149,4 +148,159 @@ da cui per Lindellman esiste $\Delta'$ che contiene $\Gamma\cup\{\neg a\}$
 consistente massimale
 
 data la consistenza $\Delta'$ non contiene $a$, il che è contro
-l'ipotesi \lightning
+l'ipotesi \lightning 
+
+
+\section{Lemma di Verità}
+
+Sia $M^{\Lambda}(S^{\Lambda},R^{\Lambda},V^{\Lambda})$ il modello
+canonico di $\Lambda$
+
+$\veraCanAlfa a$ se e solo se $a\in\alpha$\\
+
+
+Ip) $\veraCanAlfa a$ 
+
+TS) $a\in\alpha$\\
+
+
+Dimostrazione per \textbf{induzione} sul numero n dei connettivi della
+formula $a$
+
+\ovalbox{n=0} cioè $a$ è del tipo $A$ (lettera enunciativa) da
+cui $\veraCA$ se e solo se $\alpha\in V^{\Lambda}(A)$ se e solo
+se $A\in\alpha$
+
+\ovalbox{Ipotesi di Induzione} $a$ con n connettivi, può essere
+dei seguenti tipi:
+\begin{enumerate}
+\item $\neg b$
+\item $\implica bc$
+\item $\boxx b$
+\end{enumerate}
+\textbf{Caso 1:} $\veraCA$ se e solo se $\veraCanAlfa{\neg b}$ se
+e solo se $\nonveraCan{\alpha}b$\\
+
+
+$b$ ha $n-1$ connettivi (dato che $b$) ne ha $n$, quindi vale
+l'ipotesi di induzione da cui:
+
+$b\notin\alpha$, d'altra parte $\alpha$ è $\consMax$ (per come
+è definito $S^{\Lambda}$) da cui:
+
+\textbf{$b\notin\alpha$ }se e solo se \textbf{$ $}$\neg b\in\alpha$
+cioè se:
+
+$a\in\alpha$ 
+
+\textbf{Caso}2:$ $ $\veraCA$ se e solo se
+
+Caso 21: $\nonveraCan{\alpha}b$ 
+
+Caso 22: $\veraCan{\alpha}c$\\
+
+
+\textbf{Caso 21}: $\nonveraCan{\alpha}b$ \\
+
+
+Il numero di connettivi di $b$ e di $c$ sommati dà $n-1$
+
+quindi per ipotesi induttiva $\nonveraCan{\alpha}b$ se e solo se
+$b\notin\alpha$ 
+
+se e solo se $\neg b\in\alpha$ (per la compattezza max di $\Lambda$)
+\textbf{({*})}
+
+D'altra parte $\neg b\implies(b\implies c)$ è una tautologi della
+PL e quindi è un teorema di $\Lambda$ (perché un logica contiene
+tutte le tautologie)
+
+e quindi $\neg b\implies(b\implies c)$ $\in\alpha$ \textbf{({*}{*})}
+
+da cui per MP con \textbf{({*})} e \textbf{({*}{*})} si ha che $b\implies c$
+appartiene ad $\alpha$\\
+\\
+\textbf{Caso 22}: $\veraCan{\alpha}c$\\
+
+
+Vale l'ipotesi di induzione da cui:
+
+quindi per ipotesi induttiva $\veraCan{\alpha}c$ se e solo se $c\in\alpha$
+\textbf{({*})}
+
+D'altra parte $c\implies(b\implies c)$ è una tautologi della PL e
+quindi è un teorema di $\Lambda$ (perché un logica contiene tutte
+le tautologie)
+
+e quindi $c\implies(b\implies c)$ $\in\alpha$ \textbf{({*}{*})}
+
+MP \textbf{({*}) }e \textbf{({*}{*}) }ci dà $b\implies c$ appartiene
+ad $\alpha$\\
+\\
+\textbf{Caso 3}: $a$ è del tipo $\boxx b$
+
+Ip)$\veraCan{\alpha}{\boxx b}$
+
+Ts)$\boxx b\in\alpha$\\
+
+
+Dall'ipotesi segue che $\forall\beta:(\alpha,\beta)\in R^{\Lambda}$
+si ha: $\veraCan{\beta}b$ (questo per la definizione di $\boa$)
+
+$b$ ha $n-1$ connettivi quindi vale per lei l'ipotesi di induzione: 
+
+$b\in\beta$
+
+\ovalbox{\parbox[t][1\totalheight][c]{0.9\textwidth}{%
+$(\alpha,\beta)\in R^{\Lambda}$ se e solo se: $\{a\ |\ \boa\in\alpha\}\subseteq\beta$
+
+$\alpha\in V^{\Lambda}(A)$ se e solo se: $A\in\alpha$%
+}} \\
+
+
+Ognuno dei $\beta$ con cui $\alpha$ è in relazione è $\consMax$
+e ognuno contiene l'insieme $\{a\ |\ \boa\in\alpha\}$ 
+
+$\Gamma\teorema a$ se e solo se $a$ appartiene a tutti i $\Delta_{i}$
+$\consMax$ con $\Gamma\subseteq\Delta_{i}$
+
+$\beta\teorema b$ se e solo se $b$ appartiene a tutti i $\Delta_{i}$
+$\consMax$ con $\beta\subseteq\Delta_{i}$
+
+$\{a\ |\ \boa\in\alpha\}$ è consistente massimale (davvero??) e quindi
+
+$\{a\ |\ \boa\in\alpha\}$ $\teorema b$, per la 2. definizione equivalente
+di Logica Normale ``aggiungo $\square$ ad entrambi i lati'' da
+cui:
+
+$\{\boa\ |\ \boa\in\alpha\}$ $\teorema b$
+
+Ma $\{\boa\ |\ \boa\in\alpha\}$ è un sottoinsieme di formule di $\alpha$
+quindi a maggior ragione ricavo $b$ da tutto $\alpha$ da cui:
+
+$\alpha\teorema b$\\
+Ip) $\boxx b\in\alpha$
+
+TS) $\veraCanAlfa{\boxx b}$\\
+Se $\boxx b\in\alpha$ per definizione di $R^{\Lambda}$ per ogni
+mondo $\beta$ con $(\alpha,\beta)\in R^{\Lambda}$ si ha $b\in\beta$
+
+Notiamo che $b$ ha $n-1$ connettivi, quindi vale l'ipotesi di induzione
+e quindi:
+
+$ $$b\in\beta$ se e solo se $\veraCan{\beta}b$
+
+Dato che questo vale $ $per ogni $\beta$ in relazione con $\alpha$,
+si ha: $\veraCanAlfa{\boxx b}$
+
+
+\section{$ $Correttezza e completezza della logica K}
+
+Dimostriamo che la logica K (minima logica modale normale) è corretta
+e completa
+
+Ip) $\teoa$ 
+
+Ts)$\vera Fa$
+
+Nella logica K, dato che è una logica, valgono A1, A2, A3
