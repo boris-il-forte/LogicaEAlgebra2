@@ -60,10 +60,6 @@
 
 \begin_body
 
-\begin_layout Standard
-
-\end_layout
-
 \begin_layout Chapter
 Introduction
 \end_layout
@@ -321,7 +317,7 @@ Per assurdo:
 \begin_layout Standard
 Suppongo di trovarmi in un mondo come quello in figura (wow) in cui 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -864,6 +860,496 @@ end{center}
 \end_layout
 
 \begin_layout Subsection
+Relazione Transitiva
+\end_layout
+
+\begin_layout Standard
+Ip) R relazione transitiva
+\end_layout
+
+\begin_layout Standard
+Ts) 
+\begin_inset Formula $\boa\implies\boxx{\boa}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se 
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{\boa}$
+\end_inset
+
+ la tesi è dimostrata, consideriamo allora il caso in cui 
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boa}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+per ipotesi:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\exists\beta\,:\,(\alpha,\beta)\,\in R\,(\beta,\gamma)\,\in R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+allora abbiamo che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\alpha,\gamma)\,\in R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\gamma}a$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+e quindi varrà ovviamente che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\beta}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+da cui segue:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx{\boa}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+e la tesi è dimostrata.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (16,-26.5) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (16,-26.5) node {$
+\backslash
+alpha$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (36.8,-16.1) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (36.8,-16.1) node {$
+\backslash
+beta_1$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (54.2,-25.4) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (54.2,-25.4) node {$
+\backslash
+gamma$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (37.5,-38.1) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (37.5,-38.1) node {$
+\backslash
+beta_2$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (15.9,-21.5) node {$
+\backslash
+boa$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (37.5,-33.4) node {$
+\backslash
+boa$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (15.9,-18) node {$
+\backslash
+boxx{
+\backslash
+boa}$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (36.8,-11.9) node {$
+\backslash
+boa$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (53.6,-20.6) node {$a$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (18.68,-25.16) -- (34.12,-17.44); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (34.12,-17.44) -- (33.18,-17.35) -- (33.62,-18.25); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (39.45,-17.51) -- (51.55,-23.99); 
+\backslash
+fill [black] (51.55,-23.99) -- (51.08,-23.17) -- (50.61,-24.05); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (19,-26.41) -- (51.2,-25.49); 
+\backslash
+fill [black] (51.2,-25.49) -- (50.39,-25.01) -- (50.42,-26.01); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (18.64,-27.92) -- (34.86,-36.68); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (34.86,-36.68) -- (34.39,-35.86) -- (33.92,-36.74); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ip) 
+\begin_inset Formula $\boa\implies\boxx{\boa}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ts) R relazione transitiva
+\end_layout
+
+\begin_layout Standard
+supponiamo per assurdo che esista uno stato
+\begin_inset Formula $\alpha$
+\end_inset
+
+ per cui non vale la proprietà transitiva
+\end_layout
+
+\begin_layout Standard
+consideriamo il caso in cui valga la seguente funzione di valutazione:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V(a)=\{S\,|\,(\alpha,\delta)\,\in R\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Allora a sarà vera in 
+\begin_inset Formula $\beta$
+\end_inset
+
+, ma non in 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+ per cui in 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ sarà vera 
+\begin_inset Formula $\boa$
+\end_inset
+
+ ma non 
+\begin_inset Formula $\boxx{\boa}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (16,-28.2) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (16,-28.2) node {$
+\backslash
+alpha$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (34.6,-28.2) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (34.6,-28.2) node {$
+\backslash
+beta$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (54.1,-28.2) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (54.1,-28.2) node {$
+\backslash
+gamma$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (16,-23.6) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (16,-23.6) node {$
+\backslash
+boa$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (34.6,-23.6) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (34.6,-23.6) node {$a$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (54.1,-23.6) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (54.1,-23.6) node {$a$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (16,-32.9) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (16,-32.9) node {$
+\backslash
+boxx{
+\backslash
+boa}$}; 
+\backslash
+draw [black] (34.6,-32.9) circle (3); 
+\backslash
+draw (34.6,-32.9) node {$
+\backslash
+boa$}; 
+\backslash
+draw [black] (19,-28.2) -- (31.6,-28.2); 
+\backslash
+fill [black] (31.6,-28.2) -- (30.8,-27.7) -- (30.8,-28.7); 
+\backslash
+draw [black] (37.6,-28.2) -- (51.1,-28.2); 
+\backslash
+fill [black] (51.1,-28.2) -- (50.3,-27.7) -- (50.3,-28.7); 
+\backslash
+end{tikzpicture} 
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Subsection
 Funzione parziale
 \end_layout
 
@@ -1390,7 +1876,7 @@ end{center}
 
 \begin_layout Standard
 Ip)
-\begin_inset Formula $\diam{}{a\Rightarrow}\boxx{\diam a}$
+\begin_inset Formula $\dia\implies\boxx{\diam a}$
 \end_inset
 
 

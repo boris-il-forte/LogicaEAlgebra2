@@ -2,7 +2,7 @@ dimostrazioni:
 schema k											FATTO
 R seriale											FATTO
 R riflessiva   										DA FARE
-R transitiva   										DA FARE
+R transitiva   										FATTO
 R simmetrica    									FATTO
 R funzione parziale									FATTO
 R funzione											FATTO
