@@ -362,6 +362,254 @@ status collapsed
 \end_layout
 
 \begin_layout Subsection
+Relazione riflessiva
+\end_layout
+
+\begin_layout Standard
+Ip) R riflessiva
+\end_layout
+
+\begin_layout Standard
+Ts) 
+\begin_inset Formula $\boa\implies a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+se l'antecedente è falso il teorema è dimostrato, consideriamo il caso in
+ cui l'antecedente è vero:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boa}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+poichè il frame è riflessivo, abbiamo 
+\begin_inset Formula $\alpha R\alpha$
+\end_inset
+
+, e quindi varrà:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\alpha}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e la tesi è dimostrata.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (32.4,-24.8) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (32.4,-24.8) node {$
+\backslash
+alpha$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (32.4,-20.6) node {$
+\backslash
+boa$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (32.4,-18.1) node {$a$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (35.08,-23.477) arc (144:-144:2.25); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (35.08,-26.12) -- (35.43,-27) -- (36.02,-26.19); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture} 
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ip) 
+\begin_inset Formula $\boa\implies a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ts) R è riflessiva
+\end_layout
+
+\begin_layout Standard
+Supponiamo per assurdo che R non sia riflessiva, allora prendiamo uno stato
+ 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ tale che 
+\begin_inset Formula $\nexists\beta:\,\alpha R\beta$
+\end_inset
+
+.
+ Allora si avrà che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boa}\wedge\nonveraw{\mu}{\alpha}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+che è assurdo perchè contraddice la tesi.
+ La tesi allora è valida.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (32.4,-24.8) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (32.4,-24.8) node {$
+\backslash
+alpha$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (32.4,-20.6) node {$
+\backslash
+boa$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (32.4,-18.1) node {
+\backslash
+sout{$a$}}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Relazione simmetrica
 \end_layout
 
@@ -1973,11 +2221,1156 @@ uscite
 \end_inset
 
  contraddicendo così l'ipotesi (BAM!) 
-\begin_inset Newline newline
+\end_layout
+
+\begin_layout Subsection
+Relazione Debolmente Densa
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\dia\implies\diam{\diam a}$
 \end_inset
 
  
-\begin_inset Newline newline
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+relazione debolmente densa 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\forhten{\alpha,\beta}{:\:(\alpha R\beta)}{\exists\gamma:\,(\alpha R\gamma\wedge\gamma R\beta)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ip) R debolmente densa
+\end_layout
+
+\begin_layout Standard
+Ts) 
+\begin_inset Formula $\dia\implies\diam{\diam a}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+supponiamo che sia vero l'antecedente (se è falso la tesi è dimostrata)
+ avremo quindi:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\alpha}{\dia}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+allora segue che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\exists\beta:\,\veraw{\mu}{\beta}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ma poichè la relazione è debolmente densa, si avrà che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\exists\gamma:\,(\alpha R\gamma\wedge\gamma R\beta)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+poichè in 
+\begin_inset Formula $\beta$
+\end_inset
+
+ è vera a, allora segue:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\gamma}{\dia}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+da cui segue:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\alpha}{\diam{\dia}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e la tesi è dimostrata.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (18.2,-20) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (18.2,-20) node {$
+\backslash
+alpha$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (47.3,-20) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (47.3,-20) node {$
+\backslash
+beta$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (33.6,-32.3) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (33.6,-32.3) node {$
+\backslash
+gamma$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (18.2,-15.1) node {$
+\backslash
+dia$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (18.2,-12.4) node {$
+\backslash
+diam{
+\backslash
+dia}$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (47.3,-15.1) node {$a$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (33.6,-36.9) node {$
+\backslash
+dia$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (21.2,-20) -- (44.3,-20); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (44.3,-20) -- (43.5,-19.5) -- (43.5,-20.5); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (20.54,-21.87) -- (31.26,-30.43); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (31.26,-30.43) -- (30.94,-29.54) -- (30.32,-30.32); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (35.83,-30.3) -- (45.07,-22); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (45.07,-22) -- (44.14,-22.17) -- (44.81,-22.91); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ip) 
+\begin_inset Formula $\dia\implies\diam{\diam a}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Ts) R debolmente densa
+\end_layout
+
+\begin_layout Standard
+Supponiamo per assurdo che R non sia debolmente densa.
+\end_layout
+
+\begin_layout Standard
+Supponiamo allora che esista uno stato 
+\begin_inset Formula $\beta$
+\end_inset
+
+ pozzo e 
+\begin_inset Formula $\alpha R\beta$
+\end_inset
+
+ in cui sia vera a
+\end_layout
+
+\begin_layout Standard
+segue che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\alpha}{\dia}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ma avremo anche che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonveraw{\mu}{\beta}{\dia}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e allora otteniamo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{\diam{\dia}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+che è assurdo perchè contraddice l'ipotesi, e quindi la tesi è dimostrata.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (22,-22.3) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (22,-22.3) node {$
+\backslash
+alpha$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (43.8,-22.3) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (43.8,-22.3) node {$
+\backslash
+beta$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (22,-17.8) node {$
+\backslash
+dia$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (43.8,-17.8) node {$a$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (43.8,-27.1) node {
+\backslash
+sout{$
+\backslash
+dia$}}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (22,-27.1) node {
+\backslash
+sout{$
+\backslash
+diam{
+\backslash
+dia}$}}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (25,-22.3) -- (40.8,-22.3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (40.8,-22.3) -- (40,-21.8) -- (40,-22.8); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Relazione Diretta
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\diam{\boa}\implies\boxx{\dia}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+relazione diretta 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\forhten{\alpha,\beta}{,\gamma:\:(\alpha R\beta\wedge\alpha R\gamma)}{\exists\delta:\,(\beta R\delta\wedge\gamma R\delta)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ip) R è diretta
+\end_layout
+
+\begin_layout Standard
+Ts) 
+\begin_inset Formula $\diam{\boa}\implies\boxx{\dia}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Se l'antecedente è falso, il teorema è dimostrato.
+ poniamoci quindi nel caso:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\alpha}{\diam{\boa}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+avremo allora che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\exists\beta:\,\alpha R\beta\wedge\veraw{\mu}{\beta}{\boa}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+allora necessariamente si avrà che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\exists\delta:\,\beta R\delta\wedge\veraw{\mu}{\delta}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+allora si avrà che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\beta}{\dia}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+prendiamo ora un qualsiasi mondo
+\begin_inset Formula $\gamma$
+\end_inset
+
+ tale che 
+\begin_inset Formula $\alpha R\gamma$
+\end_inset
+
+, poichè la relazione è diretta si avrà 
+\begin_inset Formula $\gamma R\delta$
+\end_inset
+
+, e quindi:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\gamma}{\dia}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e allora possiamo osservare che vale:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx{\dia}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e la tesi è dimostrata
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (17.1,-28) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (17.1,-28) node {$
+\backslash
+alpha$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (33.1,-19.2) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (33.1,-19.2) node {$
+\backslash
+beta$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (33.1,-38.3) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (33.1,-38.3) node {$
+\backslash
+gamma$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (48,-28) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (48,-28) node {$
+\backslash
+delta$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (17.1,-23.7) node {$
+\backslash
+diam{
+\backslash
+boa}$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (33.1,-14.3) node {$
+\backslash
+boa$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (48,-23.1) node {$a$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (33.1,-42.8) node {$
+\backslash
+dia$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (17.1,-21.1) node {$
+\backslash
+boxx{
+\backslash
+dia}$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (33.1,-11.7) node {$
+\backslash
+dia$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (19.62,-29.62) -- (30.58,-36.68); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (30.58,-36.68) -- (30.18,-35.82) -- (29.63,-36.66); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (19.73,-26.55) -- (30.47,-20.65); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (30.47,-20.65) -- (29.53,-20.59) -- (30.01,-21.47); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (35.68,-20.73) -- (45.42,-26.47); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (45.42,-26.47) -- (44.98,-25.64) -- (44.47,-26.5); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (35.57,-36.59) -- (45.53,-29.71); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (45.53,-29.71) -- (44.59,-29.75) -- (45.16,-30.57); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ip) 
+\begin_inset Formula $\diam{\boa}\implies\boxx{\dia}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Ts) R è diretta
+\end_layout
+
+\begin_layout Standard
+Supponiamo per assurdo R non diretta.
+\end_layout
+
+\begin_layout Standard
+Consideriamo la funzione di valutazione:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V(a)=\{\delta|\beta R\delta\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+supponiamo che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\exists\alpha:\,\veraw{\alpha R\beta\wedge\mu}{\alpha}{\diam{\boa}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+allora si avrà:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\beta}{\boa}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Prendiamo ora un qualsiasi mondo 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ tale che 
+\begin_inset Formula $\alpha R\gamma$
+\end_inset
+
+, e supponiamo che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nexists\eta:\,\gamma R\eta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si avrà dunque che
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonveraw{\mu}{\gamma}{\dia}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+allora avremo che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{\boxx{\dia}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+che è assurdo, perchè contraddice la tesi.
+ La tesi è allora valida.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (16.5,-26) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (16.5,-26) node {$
+\backslash
+alpha$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (32.1,-15.3) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (32.1,-15.3) node {$
+\backslash
+beta$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (46.9,-26) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (46.9,-26) node {$
+\backslash
+delta$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (32.1,-37.6) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (32.1,-37.6) node {$
+\backslash
+gamma$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (16.5,-21.3) node {$
+\backslash
+diam{
+\backslash
+boa}$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (31.9,-10.5) node {$
+\backslash
+boa$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (46.9,-21.3) node {$a$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (31.9,-32.8) node {
+\backslash
+sout{$
+\backslash
+dia$}}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (16.5,-18.9) node {
+\backslash
+sout{$
+\backslash
+boxx{
+\backslash
+dia}$}}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (18.97,-24.3) -- (29.63,-17); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (29.63,-17) -- (28.68,-17.04) -- (29.25,-17.86); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (34.53,-17.06) -- (44.47,-24.24); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (44.47,-24.24) -- (44.11,-23.37) -- (43.53,-24.18); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (18.91,-27.79) -- (29.69,-35.81); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (29.69,-35.81) -- (29.35,-34.93) -- (28.75,-35.73); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
 \end_inset
 
 
