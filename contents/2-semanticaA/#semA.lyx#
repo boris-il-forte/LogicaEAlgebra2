@@ -287,10 +287,6 @@ Es.
 \end_inset
 
  
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -697,14 +693,14 @@ dimostriamo due tesi: che la 3 è chiusa rispetto alla necessitazione e che
 \begin_inset Formula $\teolm{\Lambda}{\boxx{\top}\implies\boa}$
 \end_inset
 
- -- per 3.3
+ -- per 3.c
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $\teolm{\Lambda}{\boa}$
 \end_inset
 
- 
+ -- per 3.a e MP
 \end_layout
 
 \begin_layout Standard
@@ -722,14 +718,14 @@ abbiamo così dimostrato la chiusura secondo la necessitazione.
 \begin_inset Formula $\teolm{\Lambda}{\boxx{(a\wedge b)\implies\boxx c}}$
 \end_inset
 
- -- per 3.3
+ -- per 3.c
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $\teolm{\Lambda}{\boa}\wedge\boxx b\implies\boxx{(a\wedge b)}$
 \end_inset
 
- -- per 3.2
+ -- per 3.b
 \end_layout
 
 \begin_layout Standard
@@ -737,6 +733,13 @@ abbiamo così dimostrato la chiusura secondo la necessitazione.
 \end_inset
 
  -- per la combinazione delle due implicazioni precedenti
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teolm{\Lambda}a\wedge(a\implies b)\implies b$
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Standard
@@ -754,7 +757,8 @@ abbiamo così dimostrato la chiusura secondo la necessitazione.
 \end_layout
 
 \begin_layout Standard
-e anche 
+e così è dimostrato che K è implicato da 3.
+ Il teorema dunque è dimostrato.
 \end_layout
 
 \end_body
