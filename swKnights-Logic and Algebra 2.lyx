@@ -11,7 +11,7 @@
 \renewcommand{\indent}{\hspace*{\tindent}}
 
 \title{Logica e Algebra 2}
-
+ 
 \usepackage[english]{babel}
 \usepackage{tikz}
 
