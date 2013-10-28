@@ -1,14 +1,14 @@
 dimostrazioni:
-schema k											FATTO
-R seriale											FATTO
-R riflessiva   										DA FARE
-R transitiva   										DA FARE
+schema k										FATTO
+R seriale										FATTO
+R riflessiva   										FATTO
+R transitiva   										FATTO
 R simmetrica    									FATTO
 R funzione parziale									FATTO
-R funzione											FATTO
+R funzione										FATTO
 R euclidea      									FATTO
-R diretta											DA FARE
-R debolmente densa									DA FARE
+R diretta										FATTO
+R debolmente densa									FATTO
 R debolmente connessa								DA FARE
 equivalenza diamond box	 							FATTO
 definizione di logica normale per sse  (3 th)		ACCENNATA(DA FARE)
