@@ -11,7 +11,9 @@ R diretta										FATTO
 R debolmente densa									FATTO
 R debolmente connessa								DA FARE
 equivalenza diamond box	 							FATTO
-definizione di logica normale per sse  (3 th)		ACCENNATA(DA FARE)
+logica Lambda							DA FARE
+logiche modali normali 						DA FARE
+definizione di logica normale per sse  (3 th)		DA CONTROLLARE!
 insieme Lambda-cons e sue 13 proprietà				FATTO
 insieme lambda-cons max, costruzione (lindelman)	FATTO
 lemma di verità 									FATTO

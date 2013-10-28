@@ -287,6 +287,10 @@ Es.
 \end_inset
 
  
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -750,8 +754,7 @@ abbiamo così dimostrato la chiusura secondo la necessitazione.
 \end_layout
 
 \begin_layout Standard
-e così è dimostrato che K è implicato da 3.
- Il teorema dunque è dimostrato.
+e anche 
 \end_layout
 
 \end_body
