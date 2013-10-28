@@ -5,7 +5,7 @@
 \textclass report
 \use_default_options false
 \maintain_unincluded_children false
-\language english
+\language italian
 \language_package default
 \inputencoding utf8
 \fontencoding T1
@@ -89,7 +89,7 @@ Sia
 \end_inset
 
 -consistente se: 
-\begin_inset Formula $\nonSemW\Gamma\Lambda\bot$
+\begin_inset Formula $\nonSemW{\Gamma}{\Lambda}{\bot}$
 \end_inset
 
 , dove 

@@ -1,5 +1,5 @@
 
-\chapter{Introduction}
+\chapter{Formule di Logica modale e significato}
 
 $a$ è vera nel mondo $\alpha$, e scriviamo $\mu\models_{\alpha}a$
 
@@ -10,10 +10,7 @@ se
 oppure $\mu\models_{\alpha}b$ 
 \end{itemize}
 
-\section{Formule di Logica modale e significato}
-
-
-\subsection{Relazione seriale}
+\section{Relazione seriale}
 
 Ip) Frame F con relazione R seriale
 
@@ -63,7 +60,59 @@ non ha successori) , d'altra parte per come è il mondo considerato,
 cioè si nega la tesi, assurdo\sout{.}
 
 
-\subsection{Relazione simmetrica}
+\section{Relazione riflessiva}
+
+Ip) R riflessiva
+
+Ts) $\boa\implies a$
+
+se l'antecedente è falso il teorema è dimostrato, consideriamo il
+caso in cui l'antecedente è vero:
+
+$\veraw{\mu}{\alpha}{\boa}$
+
+poichè il frame è riflessivo, abbiamo $\alpha R\alpha$, e quindi
+varrà:
+
+$\veraw{\mu}{\alpha}a$
+
+e la tesi è dimostrata.
+
+\begin{center} 
+\begin{tikzpicture}[scale=0.2] 
+\tikzstyle{every node}+=[inner sep=0pt] 
+\draw [black] (32.4,-24.8) circle (3); 
+\draw (32.4,-24.8) node {$\alpha$}; 
+\draw (32.4,-20.6) node {$\boa$}; 
+\draw (32.4,-18.1) node {$a$}; 
+\draw [black] (35.08,-23.477) arc (144:-144:2.25); 
+\fill [black] (35.08,-26.12) -- (35.43,-27) -- (36.02,-26.19); 
+\end{tikzpicture} \end{center}
+
+Ip) $\boa\implies a$
+
+Ts) R è riflessiva
+
+Supponiamo per assurdo che R non sia riflessiva, allora prendiamo
+uno stato $\alpha$ tale che $\nexists\beta:\,\alpha R\beta$. Allora
+si avrà che:
+
+$\veraw{\mu}{\alpha}{\boa}\wedge\nonveraw{\mu}{\alpha}a$
+
+che è assurdo perchè contraddice la tesi. La tesi allora è valida.
+
+\begin{center} 
+\begin{tikzpicture}[scale=0.2] 
+\tikzstyle{every node}+=[inner sep=0pt] 
+\draw [black] (32.4,-24.8) circle (3); 
+\draw (32.4,-24.8) node {$\alpha$}; 
+\draw (32.4,-20.6) node {$\boa$}; 
+\draw (32.4,-18.1) node {\sout{$a$}}; 
+\end{tikzpicture} 
+\end{center}
+
+
+\section{Relazione simmetrica}
 
 Ip) R simmetrica
 
@@ -140,7 +189,97 @@ nessun mondo, per questo: $\nonveraw{\mu}{\alpha}{\boxx{\dia}}$
 $ $
 
 
-\subsection{Funzione parziale}
+\section{Relazione Transitiva}
+
+Ip) R relazione transitiva
+
+Ts) $\boa\implies\boxx{\boa}$
+
+Se $\nonveraw{\mu}{\alpha}{\boa}$ la tesi è dimostrata, consideriamo
+allora il caso in cui $\veraw{\mu}{\alpha}{\boa}$
+
+per ipotesi:
+
+$\exists\beta\,:\,(\alpha,\beta)\,\in R\,(\beta,\gamma)\,\in R$
+
+allora abbiamo che:
+
+$(\alpha,\gamma)\,\in R$
+
+$\veraw{\mu}{\gamma}a$ 
+
+e quindi varrà ovviamente che:
+
+$\veraw{\mu}{\beta}a$
+
+da cui segue:
+
+$\veraw{\mu}{\alpha}{\boxx{\boa}}$ 
+
+e la tesi è dimostrata.
+
+\begin{center} \begin{tikzpicture}[scale=0.2] 
+\tikzstyle{every node}+=[inner sep=0pt] 
+\draw [black] (16,-26.5) circle (3); 
+\draw (16,-26.5) node {$\alpha$}; 
+\draw [black] (36.8,-16.1) circle (3); 
+\draw (36.8,-16.1) node {$\beta_1$}; 
+\draw [black] (54.2,-25.4) circle (3); 
+\draw (54.2,-25.4) node {$\gamma$}; 
+\draw [black] (37.5,-38.1) circle (3); 
+\draw (37.5,-38.1) node {$\beta_2$}; 
+\draw (15.9,-21.5) node {$\boa$}; 
+\draw (37.5,-33.4) node {$\boa$}; 
+\draw (15.9,-18) node {$\boxx{\boa}$}; 
+\draw (36.8,-11.9) node {$\boa$}; 
+\draw (53.6,-20.6) node {$a$}; 
+\draw [black] (18.68,-25.16) -- (34.12,-17.44); 
+\fill [black] (34.12,-17.44) -- (33.18,-17.35) -- (33.62,-18.25); 
+\draw [black] (39.45,-17.51) -- (51.55,-23.99); \fill [black] (51.55,-23.99) -- (51.08,-23.17) -- (50.61,-24.05); 
+\draw [black] (19,-26.41) -- (51.2,-25.49); \fill [black] (51.2,-25.49) -- (50.39,-25.01) -- (50.42,-26.01); 
+\draw [black] (18.64,-27.92) -- (34.86,-36.68); 
+\fill [black] (34.86,-36.68) -- (34.39,-35.86) -- (33.92,-36.74); 
+\end{tikzpicture} 
+\end{center}
+
+Ip) $\boa\implies\boxx{\boa}$
+
+Ts) R relazione transitiva
+
+supponiamo per assurdo che esista uno stato$\alpha$ per cui non vale
+la proprietà transitiva
+
+consideriamo il caso in cui valga la seguente funzione di valutazione:
+
+$V(a)=\{S\,|\,(\alpha,\delta)\,\in R\}$ 
+
+Allora a sarà vera in $\beta$, ma non in $\gamma$. per cui in $\alpha$
+sarà vera $\boa$ ma non $\boxx{\boa}$
+
+\begin{center} 
+\begin{tikzpicture}[scale=0.2] \tikzstyle{every node}+=[inner sep=0pt] 
+\draw [black] (16,-28.2) circle (3); 
+\draw (16,-28.2) node {$\alpha$}; 
+\draw [black] (34.6,-28.2) circle (3); 
+\draw (34.6,-28.2) node {$\beta$}; 
+\draw [black] (54.1,-28.2) circle (3); 
+\draw (54.1,-28.2) node {$\gamma$}; 
+\draw (16,-23.6) node {$\boa$}; 
+\draw (34.6,-23.6) node {$a$}; 
+\draw (54.1,-23.6) node {\sout{$a$}}; 
+\draw (16,-32.9) node {\sout{$\boxx{\boa}$}}; 
+\draw (34.6,-32.9) node {\sout{$\boa$}}; 
+\draw [black] (19,-28.2) -- (31.6,-28.2); 
+\fill [black] (31.6,-28.2) -- (30.8,-27.7) -- (30.8,-28.7); 
+\draw [black] (37.6,-28.2) -- (51.1,-28.2); 
+\fill [black] (51.1,-28.2) -- (50.3,-27.7) -- (50.3,-28.7); 
+\end{tikzpicture} 
+\end{center}
+
+
+
+
+\section{Funzione parziale}
 
 \begin{tabular}{|c|c|c|}
 \hline 
@@ -185,7 +324,7 @@ dato che A è falsa in $\gamma$, il che contraddice l'ipotesi (BAM!)\\
  
 
 
-\subsection{Funzione totale}
+\section{Funzione totale}
 
 \begin{tabular}{|c|c|c|}
 \hline 
@@ -204,7 +343,7 @@ dall'altra per definizione abbiamo la tesi
 .
 
 
-\subsection{Relazione euclidea}
+\section{Relazione euclidea}
 
 \begin{tabular}{|c|c|c|}
 \hline 
@@ -249,6 +388,227 @@ Poniamo che il modello sia tale che $V(A)$$=\{\gamma\}$
 In queste ipotesi vale $\dia$ dato che in $\gamma$ vale $a$. In
 $\beta$ non vale $a$ e neppure $\dia$ perché non ha ``uscite'',
 da cui in $a$ non vale $\boxx{\dia}$ contraddicendo così l'ipotesi
-(BAM!) \\
- \\
+(BAM!) 
 
+
+\section{Relazione Debolmente Densa}
+
+\begin{tabular}{|c|c|c|}
+\hline 
+$\dia\implies\diam{\diam a}$  & relazione debolmente densa  & $\forhten{\alpha,\beta}{:\:(\alpha R\beta)}{\exists\gamma:\,(\alpha R\gamma\wedge\gamma R\beta)}$\tabularnewline
+\hline 
+\end{tabular}
+
+Ip) R debolmente densa
+
+Ts) $\dia\implies\diam{\diam a}$ 
+
+supponiamo che sia vero l'antecedente (se è falso la tesi è dimostrata)
+avremo quindi:
+
+$\veraw{\mu}{\alpha}{\dia}$
+
+allora segue che:
+
+$\exists\beta:\,\veraw{\mu}{\beta}a$
+
+ma poichè la relazione è debolmente densa, si avrà che:
+
+$\exists\gamma:\,(\alpha R\gamma\wedge\gamma R\beta)$
+
+poichè in $\beta$ è vera a, allora segue:
+
+$\veraw{\mu}{\gamma}{\dia}$
+
+da cui segue:
+
+$\veraw{\mu}{\alpha}{\diam{\dia}}$
+
+e la tesi è dimostrata.
+
+\begin{center} 
+\begin{tikzpicture}[scale=0.2] 
+\tikzstyle{every node}+=[inner sep=0pt] 
+\draw [black] (18.2,-20) circle (3); 
+\draw (18.2,-20) node {$\alpha$}; 
+\draw [black] (47.3,-20) circle (3); 
+\draw (47.3,-20) node {$\beta$}; 
+\draw [black] (33.6,-32.3) circle (3); 
+\draw (33.6,-32.3) node {$\gamma$}; 
+\draw (18.2,-15.1) node {$\dia$}; 
+\draw (18.2,-12.4) node {$\diam{\dia}$}; 
+\draw (47.3,-15.1) node {$a$}; 
+\draw (33.6,-36.9) node {$\dia$}; 
+\draw [black] (21.2,-20) -- (44.3,-20); 
+\fill [black] (44.3,-20) -- (43.5,-19.5) -- (43.5,-20.5); 
+\draw [black] (20.54,-21.87) -- (31.26,-30.43); 
+\fill [black] (31.26,-30.43) -- (30.94,-29.54) -- (30.32,-30.32); 
+\draw [black] (35.83,-30.3) -- (45.07,-22); 
+\fill [black] (45.07,-22) -- (44.14,-22.17) -- (44.81,-22.91); 
+\end{tikzpicture} 
+\end{center} 
+
+Ip) $\dia\implies\diam{\diam a}$ 
+
+Ts) R debolmente densa
+
+Supponiamo per assurdo che R non sia debolmente densa.
+
+Supponiamo allora che esista uno stato $\beta$ pozzo e $\alpha R\beta$
+in cui sia vera a
+
+segue che:
+
+$\veraw{\mu}{\alpha}{\dia}$
+
+ma avremo anche che:
+
+$\nonveraw{\mu}{\beta}{\dia}$
+
+e allora otteniamo:
+
+$\nonveraw{\mu}{\alpha}{\diam{\dia}}$
+
+che è assurdo perchè contraddice l'ipotesi, e quindi la tesi è dimostrata.
+
+\begin{center} 
+\begin{tikzpicture}[scale=0.2] 
+\tikzstyle{every node}+=[inner sep=0pt] 
+\draw [black] (22,-22.3) circle (3); 
+\draw (22,-22.3) node {$\alpha$}; 
+\draw [black] (43.8,-22.3) circle (3); 
+\draw (43.8,-22.3) node {$\beta$}; 
+\draw (22,-17.8) node {$\dia$}; 
+\draw (43.8,-17.8) node {$a$}; 
+\draw (43.8,-27.1) node {\sout{$\dia$}}; 
+\draw (22,-27.1) node {\sout{$\diam{\dia}$}}; 
+\draw [black] (25,-22.3) -- (40.8,-22.3); 
+\fill [black] (40.8,-22.3) -- (40,-21.8) -- (40,-22.8); 
+\end{tikzpicture} 
+\end{center}
+
+
+\section{Relazione Diretta}
+
+\begin{tabular}{|c|c|c|}
+\hline 
+$\diam{\boa}\implies\boxx{\dia}$  & relazione diretta  & $\forhten{\alpha,\beta}{,\gamma:\:(\alpha R\beta\wedge\alpha R\gamma)}{\exists\delta:\,(\beta R\delta\wedge\gamma R\delta)}$\tabularnewline
+\hline 
+\end{tabular}
+
+Ip) R è diretta
+
+Ts) $\diam{\boa}\implies\boxx{\dia}$ 
+
+Se l'antecedente è falso, il teorema è dimostrato. poniamoci quindi
+nel caso:
+
+$\veraw{\mu}{\alpha}{\diam{\boa}}$
+
+avremo allora che:
+
+$\exists\beta:\,\alpha R\beta\wedge\veraw{\mu}{\beta}{\boa}$
+
+allora necessariamente si avrà che:
+
+$\exists\delta:\,\beta R\delta\wedge\veraw{\mu}{\delta}a$
+
+allora si avrà che:
+
+$\veraw{\mu}{\beta}{\dia}$
+
+prendiamo ora un qualsiasi mondo$\gamma$ tale che $\alpha R\gamma$,
+poichè la relazione è diretta si avrà $\gamma R\delta$, e quindi:
+
+$\veraw{\mu}{\gamma}{\dia}$
+
+e allora possiamo osservare che vale:
+
+$\veraw{\mu}{\alpha}{\boxx{\dia}}$
+
+e la tesi è dimostrata
+
+\begin{center} 
+\begin{tikzpicture}[scale=0.2] 
+\tikzstyle{every node}+=[inner sep=0pt] 
+\draw [black] (17.1,-28) circle (3); 
+\draw (17.1,-28) node {$\alpha$}; 
+\draw [black] (33.1,-19.2) circle (3); 
+\draw (33.1,-19.2) node {$\beta$}; 
+\draw [black] (33.1,-38.3) circle (3); 
+\draw (33.1,-38.3) node {$\gamma$}; 
+\draw [black] (48,-28) circle (3); 
+\draw (48,-28) node {$\delta$}; 
+\draw (17.1,-23.7) node {$\diam{\boa}$}; 
+\draw (33.1,-14.3) node {$\boa$}; 
+\draw (48,-23.1) node {$a$}; 
+\draw (33.1,-42.8) node {$\dia$}; 
+\draw (17.1,-21.1) node {$\boxx{\dia}$}; 
+\draw (33.1,-11.7) node {$\dia$}; 
+\draw [black] (19.62,-29.62) -- (30.58,-36.68); 
+\fill [black] (30.58,-36.68) -- (30.18,-35.82) -- (29.63,-36.66); 
+\draw [black] (19.73,-26.55) -- (30.47,-20.65); 
+\fill [black] (30.47,-20.65) -- (29.53,-20.59) -- (30.01,-21.47); 
+\draw [black] (35.68,-20.73) -- (45.42,-26.47); 
+\fill [black] (45.42,-26.47) -- (44.98,-25.64) -- (44.47,-26.5); 
+\draw [black] (35.57,-36.59) -- (45.53,-29.71); 
+\fill [black] (45.53,-29.71) -- (44.59,-29.75) -- (45.16,-30.57); 
+\end{tikzpicture} 
+\end{center}
+
+Ip) $\diam{\boa}\implies\boxx{\dia}$ 
+
+Ts) R è diretta
+
+Supponiamo per assurdo R non diretta.
+
+Consideriamo la funzione di valutazione:
+
+$V(a)=\{\delta|\beta R\delta\}$
+
+supponiamo che:
+
+$\exists\alpha:\,\veraw{\alpha R\beta\wedge\mu}{\alpha}{\diam{\boa}}$
+
+allora si avrà:
+
+$\veraw{\mu}{\beta}{\boa}$
+
+Prendiamo ora un qualsiasi mondo $\gamma$ tale che $\alpha R\gamma$,
+e supponiamo che:
+
+$\nexists\eta:\,\gamma R\eta$
+
+Si avrà dunque che
+
+$\nonveraw{\mu}{\gamma}{\dia}$
+
+allora avremo che:
+
+$\nonveraw{\mu}{\alpha}{\boxx{\dia}}$
+
+che è assurdo, perchè contraddice la tesi. La tesi è allora valida.
+
+\begin{center} 
+\begin{tikzpicture}[scale=0.2] \tikzstyle{every node}+=[inner sep=0pt] 
+\draw [black] (16.5,-26) circle (3); 
+\draw (16.5,-26) node {$\alpha$}; 
+\draw [black] (32.1,-15.3) circle (3); 
+\draw (32.1,-15.3) node {$\beta$}; 
+\draw [black] (46.9,-26) circle (3); 
+\draw (46.9,-26) node {$\delta$}; 
+\draw [black] (32.1,-37.6) circle (3); 
+\draw (32.1,-37.6) node {$\gamma$}; 
+\draw (16.5,-21.3) node {$\diam{\boa}$}; 
+\draw (31.9,-10.5) node {$\boa$}; 
+\draw (46.9,-21.3) node {$a$}; 
+\draw (31.9,-32.8) node {\sout{$\dia$}}; 
+\draw (16.5,-18.9) node {\sout{$\boxx{\dia}$}}; 
+\draw [black] (18.97,-24.3) -- (29.63,-17); 
+\fill [black] (29.63,-17) -- (28.68,-17.04) -- (29.25,-17.86); 
+\draw [black] (34.53,-17.06) -- (44.47,-24.24); 
+\fill [black] (44.47,-24.24) -- (44.11,-23.37) -- (43.53,-24.18); 
+\draw [black] (18.91,-27.79) -- (29.69,-35.81); 
+\fill [black] (29.69,-35.81) -- (29.35,-34.93) -- (28.75,-35.73); 
+\end{tikzpicture} 
+\end{center}

@@ -49,8 +49,8 @@
 \end_preamble
 \use_default_options false
 \maintain_unincluded_children false
-\language english
-\language_package default
+\language italian
+\language_package babel
 \inputencoding utf8
 \fontencoding T1
 \font_roman default

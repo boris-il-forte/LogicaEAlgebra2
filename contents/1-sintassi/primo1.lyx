@@ -5,7 +5,7 @@
 \textclass report
 \use_default_options false
 \maintain_unincluded_children false
-\language english
+\language italian
 \language_package default
 \inputencoding utf8
 \fontencoding T1
@@ -61,7 +61,7 @@
 \begin_body
 
 \begin_layout Chapter
-Introduction
+Formule di Logica modale e significato
 \end_layout
 
 \begin_layout Standard
@@ -116,10 +116,6 @@ se
 \end_layout
 
 \begin_layout Section
-Formule di Logica modale e significato
-\end_layout
-
-\begin_layout Subsection
 Relazione seriale
 \end_layout
 
@@ -361,7 +357,7 @@ status collapsed
 .
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Relazione riflessiva
 \end_layout
 
@@ -609,7 +605,7 @@ end{center}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Relazione simmetrica
 \end_layout
 
@@ -1107,7 +1103,7 @@ end{center}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Relazione Transitiva
 \end_layout
 
@@ -1608,7 +1604,7 @@ end{center}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Funzione parziale
 \end_layout
 
@@ -1796,7 +1792,7 @@ Per assurdo: suppongo non che la funzione non sia parziale.
  
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Funzione totale
 \end_layout
 
@@ -1886,7 +1882,7 @@ quindi dato che l'implica prevede un and di implica da una parte e dall'altra
 .
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Relazione euclidea
 \end_layout
 
@@ -2223,7 +2219,7 @@ uscite
  contraddicendo così l'ipotesi (BAM!) 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Relazione Debolmente Densa
 \end_layout
 
@@ -2717,7 +2713,7 @@ end{center}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Relazione Diretta
 \end_layout
 
