@@ -1,35 +1,35 @@
 dimostrazioni:
-schema k										FATTO
-R seriale										FATTO
-R riflessiva   										FATTO
-R transitiva   										FATTO
-R simmetrica    									FATTO
-R funzione parziale									FATTO
-R funzione										FATTO
-R euclidea      									FATTO
-R diretta										FATTO
-R debolmente densa									FATTO
+schema k												FATTO
+R seriale												FATTO
+R riflessiva   											FATTO
+R transitiva   											FATTO
+R simmetrica    										FATTO
+R funzione parziale										FATTO
+R funzione												FATTO
+R euclidea      										FATTO
+R diretta												FATTO
+R debolmente densa										FATTO
 R debolmente connessa									DA FARE
 equivalenza diamond box	 								FATTO
-logica Lambda										DA FARE
+logica Lambda											DA FARE
 logiche modali normali 									DA FARE
-definizione di logica normale per sse  (3 th)						FATTO
-insieme Lambda-cons e sue 13 proprietà							FATTO
-insieme lambda-cons max, costruzione (lindelman)					FATTO
-lemma di verità 									FATTO
-correttezza e completezza della logica k						DA FARE
-determinatezza di k4									DA FARE
+definizione di logica normale per sse  (3 th)			FATTO
+insieme Lambda-cons e sue 13 proprietà					FATTO
+insieme lambda-cons max, costruzione (lindelman)		FATTO
+lemma di verità 										FATTO
+correttezza e completezza della logica k4				FATTO
+determinatezza di k4									FATTO
 th. di raggiungibilità									DA FARE
 modello canonico in kd									DA FARE
-modello canonico in debolmente densa							DA FARE
+modello canonico in debolmente densa					DA FARE
 modello canonico in kt									DA FARE
 modello canonico in kb									DA FARE
-correttezza e completezza di kd								DA FARE
-filtrazione										DA FARE
-lemma filtrazione									DA FARE
-decidibilità di kd									DA FARE
-decidibilità di k4									DA FARE
-tableaux										DA FARE
+correttezza e completezza di kd							DA FARE
+filtrazione												DA FARE
+lemma filtrazione										DA FARE
+decidibilità di kd										DA FARE
+decidibilità di k4										DA FARE
+tableaux												DA FARE
 
 
 -----
