@@ -1,18 +1,20 @@
 \BOOKMARK [0][-]{chapter.1}{Introduzione}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Intro}{chapter.1}% 2
-\BOOKMARK [0][-]{chapter.2}{Introduction}{}% 3
-\BOOKMARK [1][-]{section.2.1}{Formule di Logica modale e significato}{chapter.2}% 4
-\BOOKMARK [2][-]{subsection.2.1.1}{Relazione seriale}{section.2.1}% 5
-\BOOKMARK [2][-]{subsection.2.1.2}{Relazione simmetrica}{section.2.1}% 6
-\BOOKMARK [2][-]{subsection.2.1.3}{Funzione parziale}{section.2.1}% 7
-\BOOKMARK [2][-]{subsection.2.1.4}{Funzione totale}{section.2.1}% 8
-\BOOKMARK [2][-]{subsection.2.1.5}{Relazione euclidea}{section.2.1}% 9
-\BOOKMARK [0][-]{chapter.3}{Semantica}{}% 10
-\BOOKMARK [1][-]{section.3.1}{Simboli secessari}{chapter.3}% 11
-\BOOKMARK [1][-]{section.3.2}{Logiche}{chapter.3}% 12
-\BOOKMARK [0][-]{chapter.4}{Verso la decidibilit\340 - Logica determinata}{}% 13
-\BOOKMARK [1][-]{section.4.1}{Insieme \040consistente e sue propriet\340}{chapter.4}% 14
-\BOOKMARK [1][-]{section.4.2}{Insieme \040consistente massimale}{chapter.4}% 15
-\BOOKMARK [2][-]{subsection.4.2.1}{Teorema}{section.4.2}% 16
-\BOOKMARK [1][-]{section.4.3}{Lemma di Verit\340}{chapter.4}% 17
-\BOOKMARK [1][-]{section.4.4}{ Correttezza e completezza della logica K}{chapter.4}% 18
+\BOOKMARK [0][-]{chapter.2}{Formule di Logica modale e significato}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Relazione seriale}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Relazione riflessiva}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.3}{Relazione simmetrica}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.4}{Relazione Transitiva}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.5}{Funzione parziale}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.6}{Funzione totale}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.7}{Relazione euclidea}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.8}{Relazione Debolmente Densa}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.9}{Relazione Diretta}{chapter.2}% 11
+\BOOKMARK [0][-]{chapter.3}{Semantica}{}% 12
+\BOOKMARK [1][-]{section.3.1}{Simboli secessari}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.2}{Logiche}{chapter.3}% 14
+\BOOKMARK [0][-]{chapter.4}{Verso la decidibilit\340 - Logica determinata}{}% 15
+\BOOKMARK [1][-]{section.4.1}{Insieme \040consistente e sue propriet\340}{chapter.4}% 16
+\BOOKMARK [1][-]{section.4.2}{Insieme \040consistente massimale}{chapter.4}% 17
+\BOOKMARK [2][-]{subsection.4.2.1}{Teorema}{section.4.2}% 18
+\BOOKMARK [1][-]{section.4.3}{Lemma di Verit\340}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.4}{ Correttezza e completezza della logica K}{chapter.4}% 20

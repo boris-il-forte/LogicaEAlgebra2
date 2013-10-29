@@ -5,7 +5,7 @@
 \textclass report
 \use_default_options false
 \maintain_unincluded_children false
-\language english
+\language italian
 \language_package default
 \inputencoding utf8
 \fontencoding T1
@@ -1513,7 +1513,7 @@ data la consistenza
 
 , il che è contro l'ipotesi 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -2043,7 +2043,7 @@ Dall'ipotesi segue che
 \end_inset
 
  si ha: 
-\begin_inset Formula $\veraCan\beta b$
+\begin_inset Formula $\veraCan{\beta}b$
 \end_inset
 
  (questo per la definizione di 
@@ -2268,6 +2268,73 @@ TS)
 \begin_inset Newline newline
 \end_inset
 
+Se 
+\begin_inset Formula $\boxx b\in\alpha$
+\end_inset
+
+ per definizione di 
+\begin_inset Formula $R^{\Lambda}$
+\end_inset
+
+ per ogni mondo 
+\begin_inset Formula $\beta$
+\end_inset
+
+ con 
+\begin_inset Formula $(\alpha,\beta)\in R^{\Lambda}$
+\end_inset
+
+ si ha 
+\begin_inset Formula $b\in\beta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notiamo che 
+\begin_inset Formula $b$
+\end_inset
+
+ ha 
+\begin_inset Formula $n-1$
+\end_inset
+
+ connettivi, quindi vale l'ipotesi di induzione e quindi:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $b\in\beta$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $\veraCan\beta b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dato che questo vale 
+\begin_inset Formula $ $
+\end_inset
+
+per ogni 
+\begin_inset Formula $\beta$
+\end_inset
+
+ in relazione con 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, si ha: 
+\begin_inset Formula $\veraCanAlfa{\boxx b}$
+\end_inset
+
 
 \end_layout
 
@@ -2275,7 +2342,7 @@ TS)
 \begin_inset Formula $ $
 \end_inset
 
-Correttezza e completezza della logica K
+Correttezza e completezza della logica K rispetto a tutti i Frame
 \end_layout
 
 \begin_layout Standard
@@ -2285,7 +2352,7 @@ Dimostriamo che la logica K (minima logica modale normale) è corretta e
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\teoa$
+\begin_inset Formula $\teolm Ka$
 \end_inset
 
  
@@ -2297,10 +2364,527 @@ Ts)
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Nella logica K, dato che è una logica, valgono A1, A2, A3
+A1, A2, A3 sono tautologie e quindi valide su tutti i frame
+\end_layout
+
+\begin_layout Standard
+MP, sia la regola di necessitazione (RN) fanno passare da formule valide
+ su un frame a formule valide su quello stesso frame.
+ 
+\end_layout
+
+\begin_layout Standard
+Essendo 
+\begin_inset Formula $a$
+\end_inset
+
+ l’ultima formula di una sequenza finita di fbf che o sono istanze degli
+ assiomi A1, A2, A3, K o sono ottenute da fbf precedenti tramite MP o RN,
+ è una fbf valida su ogni frame.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Ip) 
+\begin_inset Formula $\vera Fa$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ts)
+\begin_inset Formula $\teolm Ka$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Supponiamo 
+\begin_inset Formula $\nonTeor ka$
+\end_inset
+
+, allora per il corollario del lemma di verità
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box ovalbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 1
+use_makebox 0
+width "90text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+Per ogni formula 
+\begin_inset Formula $a$
+\end_inset
+
+, sia 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ una logica, si ha 
+\begin_inset Formula $\vera{M^{\Lambda}}a$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $\teorema a$
+\end_inset
+
+, dove 
+\begin_inset Formula $M^{\Lambda}$
+\end_inset
+
+ è il modello canonico
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si avrebbe: 
+\begin_inset Formula $\nonvera{M^{K}}a$
+\end_inset
+
+ da cui anche
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonvera{F^{K}}a$
+\end_inset
+
+, cioè 
+\begin_inset Formula $a$
+\end_inset
+
+ non valida sul frame su cui 
+\begin_inset Formula $M^{K}$
+\end_inset
+
+ è costruito quindi:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonvera Fa$
+\end_inset
+
+ (infatti esiste almeno un frame, 
+\begin_inset Formula $F^{K},$
+\end_inset
+
+ in cui non è valida 
+\begin_inset Formula $a$
+\end_inset
+
+) il che però è contro l'ipotesi 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lightning
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+\begin_inset Formula $ $
+\end_inset
+
+Correttezza e completezza della logica K4 rispetto ai Frame transitivi
+\end_layout
+
+\begin_layout Standard
+Nota: K4 è costruita a partire dalla logica K a cui si aggiunge l'assioma
+ della transitività 
+\begin_inset Formula $\boa\implies\boxx\boa$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+Ip)
+\begin_inset Formula $\teolm{K4}a$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Ts) 
+\begin_inset Formula $\entail Fa$
+\end_inset
+
+ con F frame transitivo
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Simile al caso precedente in cui anche 4 è valido in quando il frame è transitiv
+o
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ip) 
+\begin_inset Formula $\entail Fa$
+\end_inset
+
+ con F frame transitivo (cioè la cui relazione è transitiva)
+\end_layout
+
+\begin_layout Standard
+Ts)
+\begin_inset Formula $\teolm{K4}a$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Per procedere con una dimostrazione sulla falsa riga della precedente abbiamo
+ bisogno di dimostrare la transitività di 
+\begin_inset Formula $R^{K4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+cioè della relazione 
+\begin_inset Formula $R^{K4}$
+\end_inset
+
+ del modello canonico 
+\begin_inset Formula $M^{K4}=(S^{K4},R^{K4},V^{K4})$
+\end_inset
+
+, servirà ragionando per assurdo.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Transitività di 
+\begin_inset Formula $R^{K4}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+se 
+\begin_inset Formula $(\alpha,\beta)\in R^{K4}$
+\end_inset
+
+, 
+\begin_inset Formula $(\beta,\gamma)\in R^{K4}$
+\end_inset
+
+ allora 
+\begin_inset Formula $(\alpha,\gamma)\in R^{K4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+cioè deve avvenire che: 
+\begin_inset Formula $\{a\ |\ \boa\in\alpha\}\subseteq\gamma$
+\end_inset
+
+ (definizione di essere in relazione 
+\begin_inset Formula $\alpha R^{K4}\gamma$
+\end_inset
+
+ del modello canonico)
+\end_layout
+
+\begin_layout Standard
+se 
+\begin_inset Formula $\boa\in\alpha$
+\end_inset
+
+ , ricordando che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\alpha$
+\end_inset
+
+ è un insieme 
+\begin_inset Formula $K4-consistente\ massimale$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+4 è un teorema della logica 
+\end_layout
+
+\begin_layout Standard
+i teoremi di na logica appartengono a tutti gli insiemi consistenti massimali
+ rispetto a quella logica quindi
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\alpha$
+\end_inset
+
+, così come ogni insieme 
+\begin_inset Formula $K4-consistente\ massimale$
+\end_inset
+
+, contiene anche 
+\begin_inset Formula $\boa\implies\boxx\boa$
+\end_inset
+
+ (4) da cui
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula $\boxx\boa\in\alpha$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang italian
+.
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula $\{a\ |\ \boa\in$
+\end_inset
+
+
+\begin_inset Formula $\alpha\}\subseteq\beta$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang italian
+ (per ipotesi 
+\begin_inset Formula $\alpha R^{K4}\beta$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+ma per ogni formula 
+\begin_inset Formula $\boa\in\alpha$
+\end_inset
+
+ si ha che 
+\begin_inset Formula $\boxx{\boxx a}\in\alpha$
+\end_inset
+
+ e quindi: 
+\begin_inset Formula $\{\boa\ |\ \boxx{\boxx a}\boa\in\alpha\}\subseteq\beta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula $\{a\ |\ \boa\in$
+\end_inset
+
+
+\begin_inset Formula $\beta\}\subseteq\gamma$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang italian
+ (per ipotesi 
+\begin_inset Formula $\beta R^{K4}\gamma$
+\end_inset
+
+), ma le formule del tipo 
+\begin_inset Formula $\boa$
+\end_inset
+
+ contenute in 
+\begin_inset Formula $\beta$
+\end_inset
+
+ sono le stesse contenute in 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, quindi si ha anche:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula $\{a\ |\ \boa\in$
+\end_inset
+
+
+\begin_inset Formula $\alpha\}\subseteq\gamma$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang italian
+ cioè 
+\begin_inset Formula $(\alpha,\gamma)\in R^{K4}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ajeflkasjdfkla fjakldf jadlksfaj 
 \end_layout
 
 \end_body

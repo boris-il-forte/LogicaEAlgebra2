@@ -59,8 +59,7 @@ uniforme infatti se considero $V(A)=S$, dove S sono tutti gli stati
 possibili (mondi), vale anche $\veraw{\mu}{\alpha}A$, e cioè A è
 una tautologia, se al posto di A sostituisco $B\wedge\neg B$ (falsa
 in ogni modello e mondo) non ottengo una tautologia.\\
- \\
-
+ 
 
 \textbf{\emph{\large{{{{{{Teorema}}}}}}}}{\large \par}
 
@@ -92,4 +91,91 @@ RN che vale in $\Lambda$ per ipotesi
 se n > 0 (passo induttivo) suppongo valga l'antecedente, altrimenti
 2 vale senz'altro;
 
-Ricordiamo che $a1\wedge a2\wedge...\wedge an\implies a\equiv a1\wedge a2\wedge...a_{n-1}\implies(an\implies a)$ 
+si può dimostrare quindi nel seguente modo:
+
+$\teolm{\Lambda}{a_{1}\wedge a_{2}\wedge...\wedge a_{n}n\implies a}$
+
+$\teolm{\Lambda}{a_{1}\wedge a_{2}\wedge...\wedge a_{n-1}\implies(a_{n}\implies a)}$ 
+
+$\teolm{\Lambda}{\boxx{a_{1}}\wedge\boxx{a_{2}}\wedge...\wedge\boxx{a_{n-1}}\implies\boxx{(a_{n}\implies a)}}$
+-- per ipotesi di induzione
+
+$\teolm{\Lambda}{\boxx{a_{1}}\wedge\boxx{a_{2}}\wedge...\wedge\boxx{a_{n-1}}\implies(\boxx{a_{n}\implies\boa}})$
+-- per K
+
+$\teolm{\Lambda}{\boxx{a_{1}}\wedge\boxx{a_{2}}\wedge...\wedge\boxx{a_{n-1}\wedge\boxx{a_{n}}}\implies\boa}$ 
+
+E la tesi è dimostrata.
+
+2$\implies$1
+
+$\teolm{\Lambda}{(a\wedge(a\implies b))\implies b}$ -- per MP
+
+$\teolm{\Lambda}{(\boa\wedge\boxx{(a\implies b))}}\implies\boxx b$
+-- per enunciato 2
+
+$\teolm{\Lambda}{\boxx{(a\implies b)}}\implies\boa\implies\boxx b$
+-- che è K
+
+Abbiamo ricavato usando solo il modus ponens e l'enunciato 2, l'assioma
+K. segue quindi la tesi.
+
+1$\implies3$
+
+$\teolm{\Lambda}{\top}$
+
+$\teolm{\Lambda}{\boxx{\top}}$-- per RN
+
+$\teolm{\Lambda}{a\wedge b\implies a\wedge b}$ -- per tautologia
+($a\implies a)$
+
+$\teolm{\Lambda}{\boa\wedge\boxx b\implies}\boxx{(a\wedge b)}$ --
+per proposizione 2
+
+$\teolm{\Lambda}{a\implies b}$ -- per ipotesi
+
+$\teolm{\Lambda}{\boxx{(a\implies b)}}$ -- per RN
+
+$\teolm{\Lambda}{\boxx{(a\implies b)}\implies(\boa\implies\boxx{b)}}$
+-- per K
+
+$\teolm{\Lambda}{\boa\implies\boxx b}$ -- per MP
+
+La tesi allora è verificata.
+
+3$\implies$1
+
+dimostriamo due tesi: che la 3 è chiusa rispetto alla necessitazione
+e che implica l'assioma K.
+
+$\teolm{\Lambda}a$
+
+$\teolm{\Lambda}a\implies(\top\implies a)$ -- per A1
+
+$\teolm{\Lambda}{\top\implies a}$ -- per MP
+
+$\teolm{\Lambda}{\boxx{\top}\implies\boa}$ -- per 3.c
+
+$\teolm{\Lambda}{\boa}$ -- per 3.a e MP
+
+abbiamo così dimostrato la chiusura secondo la necessitazione.
+
+$\teolm{\Lambda}{a\wedge b\implies c}$
+
+$\teolm{\Lambda}{\boxx{(a\wedge b)\implies\boxx c}}$ -- per 3.c
+
+$\teolm{\Lambda}{\boa}\wedge\boxx b\implies\boxx{(a\wedge b)}$ --
+per 3.b
+
+$\teolm{\Lambda}{\boa\wedge\boxx b\implies\boxx c}$ -- per la combinazione
+delle due implicazioni precedenti
+
+$\teolm{\Lambda}a\wedge(a\implies b)\implies b$ -- per tautologia
+
+$\teolm{\Lambda}{\boa}\wedge\boxx{(a\implies b)}\implies\boxx b$
+-- per applicazione dello schema $\boa\wedge\boxx b\implies\boxx c$
+dimostrato precedentemente
+
+$\teolm{\Lambda}{\boxx{(a\implies b)}\implies(\boa\implies\boxx{b)}}$
+
+e così è dimostrato che K è implicato da 3. Il teorema dunque è dimostrato.

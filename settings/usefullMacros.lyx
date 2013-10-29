@@ -62,7 +62,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\veraw}[3]{#1\models_{#2}#3}
+\newcommand{\veraw}[3]{#1\models_{#2}#3}
 \end_inset
 
 
@@ -70,7 +70,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\vera}[2]{#1\models#2}
+\newcommand{\vera}[2]{#1\models#2}
 \end_inset
 
 
@@ -78,7 +78,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\nonvera}[2]{#1\nvDash#2}
+\newcommand{\nonvera}[2]{#1\nvDash#2}
 \end_inset
 
 
@@ -86,7 +86,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\nonveraw}[3]{#1\nvDash_{#2}#3}
+\newcommand{\nonveraw}[3]{#1\nvDash_{#2}#3}
 \end_inset
 
 
@@ -94,7 +94,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\nonSem}[2]{#1\nvdash#2}
+\newcommand{\nonSem}[2]{#1\nvdash#2}
 \end_inset
 
 
@@ -102,7 +102,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\nonSemW}[3]{#1\nvdash_{#2}#3}
+\newcommand{\nonTeor}[2]{\nvdash_{#1}#2}
 \end_inset
 
 
@@ -110,7 +110,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\verita}[2]{#1\in V(#2)}
+\newcommand{\nonSemW}[3]{#1\nvdash_{#2}#3}
 \end_inset
 
 
@@ -118,7 +118,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\entail}[2]{#1\models#2}
+\newcommand{\verita}[2]{#1\in V(#2)}
 \end_inset
 
 
@@ -126,7 +126,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\semantica}[3]{#1\vdash_{#2}#3}
+\newcommand{\entail}[2]{#1\models#2}
 \end_inset
 
 
@@ -134,7 +134,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\teolm}[2]{\vdash_{#1}#2}
+\newcommand{\semantica}[3]{#1\vdash_{#2}#3}
 \end_inset
 
 
@@ -142,7 +142,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\semGen}[2]{#1\vdash#2}
+\newcommand{\teolm}[2]{\vdash_{#1}#2}
 \end_inset
 
 
@@ -150,7 +150,15 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\boxx}[1]{\square#1}
+\newcommand{\semGen}[2]{#1\vdash#2}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\boxx}[1]{\square#1}
 \end_inset
 
 
@@ -182,7 +190,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\noa}{\neg a}
+\renewcommand{\noa}{\neg a}
 \end_inset
 
 
@@ -190,7 +198,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\forhten}[3]{\forall#1#2\implies#3}
+\renewcommand{\forhten}[3]{\forall#1#2\implies#3}
 \end_inset
 
 
@@ -198,7 +206,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\implica}[2]{#1\implies#2}
+\renewcommand{\implica}[2]{#1\implies#2}
 \end_inset
 
 
@@ -206,7 +214,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\teorema}[1]{\vdash_{\Lambda}#1}
+\renewcommand{\teorema}[1]{\vdash_{\Lambda}#1}
 \end_inset
 
 
@@ -214,7 +222,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\teorGamma}[1]{\Gamma\vdash_{\Lambda}#1}
+\renewcommand{\teorGamma}[1]{\Gamma\vdash_{\Lambda}#1}
 \end_inset
 
 
@@ -222,7 +230,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\teoa}{\teorGamma a}
+\renewcommand{\teoa}{\teorGamma a}
 \end_inset
 
 
@@ -230,7 +238,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\consist}{\mbox{\ensuremath{\Lambda}}-consistente}
+\renewcommand{\consist}{\mbox{\ensuremath{\Lambda}}-consistente}
 \end_inset
 
 
@@ -238,7 +246,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\consMax}{\Lambda-consistente\: massimale}
+\renewcommand{\consMax}{\Lambda-consistente\: massimale}
 \end_inset
 
 
@@ -246,7 +254,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\veraCanAlfa}[1]{\vera{M^{\Lambda}}{_{\alpha}}#1}
+\renewcommand{\veraCanAlfa}[1]{\vera{M^{\Lambda}}{_{\alpha}}#1}
 \end_inset
 
 
@@ -254,7 +262,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\veraCA}{\vera{M^{\Lambda}}{_{\alpha}}a}
+\renewcommand{\veraCA}{\vera{M^{\Lambda}}{_{\alpha}}a}
 \end_inset
 
 
@@ -262,7 +270,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\veraCan}[2]{\vera{M^{\Lambda}}{_{#1}}#2}
+\renewcommand{\veraCan}[2]{\vera{M^{\Lambda}}{_{#1}}#2}
 \end_inset
 
 
@@ -270,7 +278,15 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\nonveraCan}[2]{\nonveraw{M^{\Lambda}}{#1}{#2}}
+\renewcommand{\nonveraCan}[2]{\nonveraw{M^{\Lambda}}{#1}{#2}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\consMaxLog}[1]{#1-consistente\ massimale}
 \end_inset
 
 
