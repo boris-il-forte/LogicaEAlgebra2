@@ -166,7 +166,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\diam}[1]{\diamond#1}
+\newcommand{\diam}[1]{\diamond#1}
 \end_inset
 
 
@@ -174,7 +174,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\dia}{\diamond a}
+\newcommand{\dia}{\diamond a}
 \end_inset
 
 
@@ -182,7 +182,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\boa}{\boxx a}
+\newcommand{\boa}{\boxx a}
 \end_inset
 
 
@@ -190,7 +190,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\noa}{\neg a}
+\newcommand{\noa}{\neg a}
 \end_inset
 
 
@@ -287,6 +287,22 @@
 \begin_layout Standard
 \begin_inset FormulaMacro
 \renewcommand{\consMaxLog}[1]{#1-consistente\ massimale}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\relazCAB}[2]{\{a\ |\ \boa\in#1\}\subseteq#2}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\relazCAD}[2]{\{\diamond b\ |\ b\in#2\}\subseteq#1}
 \end_inset
 
 

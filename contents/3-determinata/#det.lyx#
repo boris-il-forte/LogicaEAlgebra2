@@ -2416,7 +2416,7 @@ Ts)
 \end_inset
 
 Supponiamo 
-\begin_inset Formula $\nonTeor ka$
+\begin_inset Formula $\nonTeor Ka$
 \end_inset
 
 , allora per il corollario del lemma di verità
@@ -2438,7 +2438,7 @@ width "90text%"
 special "none"
 height "1in"
 height_special "totalheight"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Per ogni formula 
@@ -2676,8 +2676,8 @@ se
 \end_layout
 
 \begin_layout Standard
-i teoremi di una logica appartengono a tutti gli insiemi consistenti massimali
- rispetto a quella logica
+i teoremi di na logica appartengono a tutti gli insiemi consistenti massimali
+ rispetto a quella logica quindi
 \end_layout
 
 \begin_layout Standard
@@ -2688,7 +2688,7 @@ i teoremi di una logica appartengono a tutti gli insiemi consistenti massimali
 \begin_inset Formula $K4-consistente\ massimale$
 \end_inset
 
-, allora contiene anche 
+, contiene anche 
 \begin_inset Formula $\boa\implies\boxx\boa$
 \end_inset
 
@@ -2712,6 +2712,19 @@ i teoremi di una logica appartengono a tutti gli insiemi consistenti massimali
 \begin_inset Formula $\boxx\boa\in\alpha$
 \end_inset
 
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang italian
 .
 \end_layout
 
@@ -2766,7 +2779,419 @@ ma per ogni formula
 \end_inset
 
  e quindi: 
-\begin_inset Formula $\{\boa\ |\ \boa\in\alpha\}\subseteq\beta$
+\begin_inset Formula $\{\boa\ |\ \boxx{\boxx a}\in\alpha\}\subseteq\beta$
+\end_inset
+
+ da cui 
+\begin_inset Formula $\{\boa\ |\ \boxx a\in\alpha\}\subseteq\beta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula $\{a\ |\ \boa\in$
+\end_inset
+
+
+\begin_inset Formula $\beta\}\subseteq\gamma$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang italian
+ (per ipotesi 
+\begin_inset Formula $\beta R^{K4}\gamma$
+\end_inset
+
+), ma le formule del tipo 
+\begin_inset Formula $\boa$
+\end_inset
+
+ contenute in 
+\begin_inset Formula $\beta$
+\end_inset
+
+ sono le stesse contenute in 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, quindi si ha anche:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula $\{a\ |\ \boa\in$
+\end_inset
+
+
+\begin_inset Formula $\alpha\}\subseteq\gamma$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang italian
+ cioè 
+\begin_inset Formula $(\alpha,\gamma)\in R^{K4}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+A questo punto possiamo usare in modo profiquo il corollario del lemma di
+ verità.
+\end_layout
+
+\begin_layout Standard
+Dimostriamo la tesi per assurdo: supponiamo che 
+\begin_inset Formula $\nonTeor{K4}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+allora per il corollario del teorema di verità si avrebbe anche 
+\begin_inset Formula $\nonvera{M{}^{K4}}a$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+e in particolare si avrebbe 
+\begin_inset Formula $\nonvera{F^{K4}}a$
+\end_inset
+
+, cioè si avrebbe un Frame transtivo (infatti 
+\begin_inset Formula $R^{K4}$
+\end_inset
+
+ è transitiva) nel quale non è valida 
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ma ciò contraddice l'ipotesi 
+\begin_inset Formula $\entail Fa$
+\end_inset
+
+ (con 
+\begin_inset Formula $F$
+\end_inset
+
+ transitivo) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lightning
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset Formula $ $
+\end_inset
+
+Teorema di Raggiungibilità
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\alpha,\beta)\in R^{\Lambda}$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $\relazCAB\alpha\beta$
+\end_inset
+
+ se e solo se 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $\relazCAD\alpha\beta$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang italian
+ 
+\begin_inset Newline newline
+\end_inset
+
+Ip)
+\begin_inset Formula $\relazCAB\alpha\beta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ts)
+\begin_inset Formula $\relazCAD\alpha\beta$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Per assurdo supponiamo che
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $b\in\beta$
+\end_inset
+
+ e che 
+\begin_inset Formula $\diamond b\notin\alpha$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula $\neg\diamond b\in\alpha$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang italian
+ (dato che 
+\begin_inset Formula $\alpha$
+\end_inset
+
+) è 
+\begin_inset Formula $\consMax$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\boxx{\neg b\in\alpha}$
+\end_inset
+
+ (equivalenza 
+\begin_inset Formula $\boxx{\neg a}$
+\end_inset
+
+ 
+\begin_inset Formula $\equiv$
+\end_inset
+
+
+\begin_inset Formula $\neg\dia$
+\end_inset
+
+) da cui
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\neg b\in\beta$
+\end_inset
+
+ (definizione di 
+\begin_inset Formula $\boxx x$
+\end_inset
+
+ e considerato 
+\begin_inset Formula $\alpha R^{\Lambda}\beta$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+il che è assurdo perché 
+\begin_inset Formula $b\in\beta$
+\end_inset
+
+, e 
+\begin_inset Formula $\beta$
+\end_inset
+
+ è 
+\begin_inset Formula $\consMax$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lightning
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ip)
+\begin_inset Formula $\relazCAD\alpha\beta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ts)
+\begin_inset Formula $\relazCAB\alpha\beta$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Per assurdo supponiamo che
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\boa\in\alpha$
+\end_inset
+
+ ma 
+\begin_inset Formula $a\notin\beta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\neg a\in\beta$
+\end_inset
+
+ (dato che 
+\begin_inset Formula $\beta$
+\end_inset
+
+ è 
+\begin_inset Formula $\consMax$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\diamond\neg a\in\alpha$
 \end_inset
 
 

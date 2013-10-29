@@ -2947,6 +2947,306 @@ lightning
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset Formula $ $
+\end_inset
+
+Teorema di Raggiungibilità
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\alpha,\beta)\in R^{\Lambda}$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $\relazCAB\alpha\beta$
+\end_inset
+
+ se e solo se 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $\relazCAD\alpha\beta$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang italian
+ 
+\begin_inset Newline newline
+\end_inset
+
+Ip)
+\begin_inset Formula $\relazCAB\alpha\beta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ts)
+\begin_inset Formula $\relazCAD\alpha\beta$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Per assurdo supponiamo che
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $b\in\beta$
+\end_inset
+
+ e che 
+\begin_inset Formula $\diamond b\notin\alpha$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula $\neg\diamond b\in\alpha$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang italian
+ (dato che 
+\begin_inset Formula $\alpha$
+\end_inset
+
+) è 
+\begin_inset Formula $\consMax$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\boxx{\neg b\in\alpha}$
+\end_inset
+
+ (equivalenza 
+\begin_inset Formula $\boxx{\neg a}$
+\end_inset
+
+ 
+\begin_inset Formula $\equiv$
+\end_inset
+
+
+\begin_inset Formula $\neg\dia$
+\end_inset
+
+) da cui
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\neg b\in\beta$
+\end_inset
+
+ (definizione di 
+\begin_inset Formula $\boxx x$
+\end_inset
+
+ e considerato 
+\begin_inset Formula $\alpha R^{\Lambda}\beta$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+il che è assurdo perché 
+\begin_inset Formula $b\in\beta$
+\end_inset
+
+, e 
+\begin_inset Formula $\beta$
+\end_inset
+
+ è 
+\begin_inset Formula $\consMax$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lightning
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ip)
+\begin_inset Formula $\relazCAD\alpha\beta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ts)
+\begin_inset Formula $\relazCAB\alpha\beta$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Per assurdo supponiamo cioè che
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\boa\in\alpha$
+\end_inset
+
+ e 
+\begin_inset Formula $a\notin\beta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\neg a\in\beta$
+\end_inset
+
+ (dato che 
+\begin_inset Formula $\beta$
+\end_inset
+
+ è 
+\begin_inset Formula $\consMax$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\diamond\neg a\in\alpha$
+\end_inset
+
+ (infatti 
+\begin_inset Formula $\alpha R^{\Lambda}\beta$
+\end_inset
+
+ e in 
+\begin_inset Formula $\beta$
+\end_inset
+
+ è vera 
+\begin_inset Formula $\neg a$
+\end_inset
+
+, quindi 
+\begin_inset Formula $a$
+\end_inset
+
+ ha almeno un successore nel quale 
+\begin_inset Formula $\neg a$
+\end_inset
+
+ è vera)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\neg\boxx{a\in\alpha}$
+\end_inset
+
+ contro l'ipotesi della consistenza e massimalità di 
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lightning
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body
