@@ -166,7 +166,7 @@ filename "contents/3-determinata/det.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "contents/3-determinata/dec.lyx"
+filename "contents/4-decidibile/dec.lyx"
 
 \end_inset
 
