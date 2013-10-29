@@ -150,7 +150,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\semGen}[2]{#1\vdash#2}
+\renewcommand{\semGen}[2]{#1\vdash#2}
 \end_inset
 
 
@@ -158,7 +158,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\boxx}[1]{\square#1}
+\renewcommand{\boxx}[1]{\square#1}
 \end_inset
 
 
@@ -166,7 +166,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\diam}[1]{\diamond#1}
+\renewcommand{\diam}[1]{\diamond#1}
 \end_inset
 
 
@@ -174,7 +174,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\dia}{\diamond a}
+\renewcommand{\dia}{\diamond a}
 \end_inset
 
 
@@ -182,7 +182,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\boa}{\boxx a}
+\renewcommand{\boa}{\boxx a}
 \end_inset
 
 
@@ -190,7 +190,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\noa}{\sim a}
+\renewcommand{\noa}{\neg a}
 \end_inset
 
 
@@ -198,7 +198,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\forhten}[3]{\forall#1#2\implies#3}
+\renewcommand{\forhten}[3]{\forall#1#2\implies#3}
 \end_inset
 
 
@@ -206,7 +206,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\implica}[2]{#1\implies#2}
+\renewcommand{\implica}[2]{#1\implies#2}
 \end_inset
 
 
@@ -214,7 +214,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\teorema}[1]{\vdash_{\Lambda}#1}
+\renewcommand{\teorema}[1]{\vdash_{\Lambda}#1}
 \end_inset
 
 
@@ -222,7 +222,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\teorGamma}[1]{\Gamma\vdash_{\Lambda}#1}
+\renewcommand{\teorGamma}[1]{\Gamma\vdash_{\Lambda}#1}
 \end_inset
 
 
@@ -230,7 +230,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\teoa}{\teorGamma a}
+\renewcommand{\teoa}{\teorGamma a}
 \end_inset
 
 
@@ -238,7 +238,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\consist}{\mbox{\ensuremath{\Lambda}}-consistente}
+\renewcommand{\consist}{\mbox{\ensuremath{\Lambda}}-consistente}
 \end_inset
 
 
@@ -246,7 +246,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\consMax}{\Lambda-consistente\: massimale}
+\renewcommand{\consMax}{\Lambda-consistente\: massimale}
 \end_inset
 
 
@@ -254,7 +254,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\veraCanAlfa}[1]{\vera{M^{\Lambda}}{_{\alpha}}#1}
+\renewcommand{\veraCanAlfa}[1]{\vera{M^{\Lambda}}{_{\alpha}}#1}
 \end_inset
 
 
@@ -262,7 +262,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\veraCA}{\vera{M^{\Lambda}}{_{\alpha}}a}
+\renewcommand{\veraCA}{\vera{M^{\Lambda}}{_{\alpha}}a}
 \end_inset
 
 
@@ -270,7 +270,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\veraCan}[2]{\vera{M^{\Lambda}}{_{#1}}#2}
+\renewcommand{\veraCan}[2]{\vera{M^{\Lambda}}{_{#1}}#2}
 \end_inset
 
 
@@ -278,7 +278,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\nonveraCan}[2]{\nonveraw{M^{\Lambda}}{#1}{#2}}
+\renewcommand{\nonveraCan}[2]{\nonveraw{M^{\Lambda}}{#1}{#2}}
 \end_inset
 
 
@@ -286,7 +286,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\consMaxLog}[1]{#1-consistente\ massimale}
+\renewcommand{\consMaxLog}[1]{#1-consistente\ massimale}
 \end_inset
 
 
@@ -294,7 +294,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\relazCAB}[2]{\{a\ |\ \boa\in#1\}\subseteq#2}
+\renewcommand{\relazCAB}[2]{\{a\ |\ \boa\in#1\}\subseteq#2}
 \end_inset
 
 
