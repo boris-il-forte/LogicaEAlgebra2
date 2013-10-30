@@ -173,5 +173,15 @@ filename "contents/4-decidibile/dec.lyx"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "contents/5-decidibile/dec.lyx"
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
