@@ -124,7 +124,7 @@ width "100text%"
 special "none"
 height "1in"
 height_special "totalheight"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -436,6 +436,10 @@ La partenza del ragionamento è simile a quello del precedente in cui come
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -443,7 +447,332 @@ Per assurdo:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\teoremaDi{\Lambda}\andoria{_{n}\wedge\diam{b_{1}\wedge...\wedge\diam{b_{n}}}}\implies\bot$
+\begin_inset Formula $\teoremaDi\Lambda\andoria{_{n}\wedge\diam{b_{1}\wedge...\wedge\diam{b_{n}}}}\implies\bot$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+dove 
+\begin_inset Formula $a_{1},...,a_{n}$
+\end_inset
+
+ sono formule di 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, e 
+\begin_inset Formula $b_{1},...,b_{n}$
+\end_inset
+
+ sono formule di 
+\begin_inset Formula $\beta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teoremaDi\Lambda\andoria{_{n}}\implies\neg(\diamond b_{1}\wedge...\wedge\diamond b_{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+pongo 
+\begin_inset Formula $b=b_{1}\wedge...\wedge b_{n}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema al volo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{\neg(\diamond c\wedge\diamond d)\implies\neg\diamond(c\wedge d)}$
+\end_inset
+
+, cioè:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset Formula $\teorema{\diamond(c\wedge d)\implies\diamond c\wedge\diamond d}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+infatti, sono tautologie della logica proposizionale: 
+\begin_inset Formula $\neg c\implies\neg c\vee\neg d$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e 
+\begin_inset Formula $\neg d\implies\neg c\vee\neg d$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+queste sono anche teoremi di 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+dato che 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ è normale si ha 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $\boxx{\neg c}\implies\boxx{\neg c\vee\neg d}$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang italian
+ (definizione 3.3 di logica normale)
+\end_layout
+
+\begin_layout Standard
+e lo stesso vale per la seconda 
+\begin_inset Formula $\boxx{\neg d}\implies\boxx{\neg c\vee\neg d}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+dato che il conseguente si ha per due antecedenti diversi allora:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula $\boxx{\neg c}\vee\boxx{\neg d\implies}\boxx{\neg c\vee\neg d}$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang italian
+ da cui negando e scambiando antecedente e conseguente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\neg(\boxx{\neg c\vee\neg d})\implies\neg(\boxx{\neg c}\vee\boxx{\neg d)}$
+\end_inset
+
+, sviluppo il 
+\begin_inset Formula $\neg$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\diamond(c\wedge d)\implies\diamond c\wedge\diamond d$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Uso il teorema ottenendo (in un certo senso 
+\begin_inset Quotes eld
+\end_inset
+
+portiamo fuori
+\begin_inset Quotes erd
+\end_inset
+
+ il 
+\begin_inset Formula $\diamond$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula $\teoremaDi\Lambda\andoria{_{n}}\implies\neg\diamond(b_{1}\wedge...\wedge\diamond b_{n})$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang italian
+ cioè (per come ho posto b)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teoremaDi\Lambda\andoria{_{n}}\implies\neg\diamond b$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Uso la definizione 2.
+ di logica normale e riscrivo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teoremaDi\Lambda\andbox{_{n}}\implies\boxx{\neg\diamond b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teoremaDi\Lambda\andbox{_{n}}\implies\neg\diamond\diamond b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+dato che 
+\begin_inset Formula $\andbox{_{n}}\implies\neg\diamond\diamond b\in\alpha$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+e che: 
+\begin_inset Formula $\andbox{_{n}\in\alpha}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+anche 
+\begin_inset Formula $\neg\diamond\diamond b\in\alpha$
+\end_inset
+
+ (MP dalle due precedenti)
+\end_layout
+
+\begin_layout Standard
+dato che 
+\begin_inset Formula $\diamond b\in\alpha$
+\end_inset
+
+ anche 
+\begin_inset Formula $\diamond\diamond b\in\alpha$
+\end_inset
+
+ per lo schema delle relazioni debolmente dense
+\end_layout
+
+\begin_layout Standard
+il che ci porterebbe alla non massimalità di 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ contro l'ipotesi.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lightning
+\end_layout
+
 \end_inset
 
 
