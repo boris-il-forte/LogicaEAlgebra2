@@ -254,7 +254,96 @@ Si può dimostrare con il teorema di fattorizzazzione delle applicazioni
 \end_layout
 
 \begin_layout Standard
-<<inserire grafico>>
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\backslash
+draw [black] (22.1,-16.4) circle (3); 
+\backslash
+draw (22.1,-16.4) node {$
+\backslash
+alpha$}; 
+\backslash
+draw [black] (43.8,-16.4) circle (3); 
+\backslash
+draw (43.8,-16.4) node {$
+\backslash
+Gamma(
+\backslash
+alpha)$}; 
+\backslash
+draw [black] (33.7,-31.4) circle (3); 
+\backslash
+draw (33.7,-31.4) node {$S/kerf$}; 
+\backslash
+draw [black] (35.38,-28.91) -- (42.12,-18.89); 
+\backslash
+fill [black] (42.12,-18.89) -- (41.26,-19.27) -- (42.09,-19.83); 
+\backslash
+draw (39.36,-25.24) node [right] {$g$}; 
+\backslash
+draw [black] (25.1,-16.4) -- (40.8,-16.4); 
+\backslash
+fill [black] (40.8,-16.4) -- (40,-15.9) -- (40,-16.9); 
+\backslash
+draw (32.95,-16.9) node [below] {$f$}; 
+\backslash
+draw [black] (23.94,-18.77) -- (31.86,-29.03); 
+\backslash
+fill [black] (31.86,-29.03) -- (31.77,-28.09) -- (30.98,-28.7); 
+\backslash
+draw (27.33,-25.31) node [left] {$kerf$}; 
+\backslash
+end{tikzpicture} 
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Per dimostrarlo basta prendere:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:\,\alpha\rightarrow\mathcal{P}(\Gamma)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+risulta banale verificare che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ker\, f\equiv\sim_{\Gamma}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e quindi, ricordando che g è iniettiva, risulta banale che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $|S/\sim_{\Gamma}|\leq\Gamma(\alpha)$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -289,10 +378,64 @@ F1)
 
 \begin_layout Standard
 F2) 
-\begin_inset Formula $([\alpha],[\beta])\in R'\implies\forall\boxx b\in\Gamma,\,\veraw{\mu}{\alpha}b\implies\veraw{\mu}{\beta}b$
+\begin_inset Formula $([\alpha],[\beta])\in R'\implies\forall\boxx b\in\Gamma,\,\veraw{\mu}{\alpha}{\boxx b}\implies\veraw{\mu}{\beta}b$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Una relazione che gode delle proprietà F1 e F2 si chiama 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+-filtrazione della relazione R.
+\end_layout
+
+\begin_layout Standard
+prendiamo infine:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V^{\Gamma}:\,\Phi\cap\Gamma\rightarrow\mathcal{P}(S^{\Gamma})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+che gode della seguente proprietà:
+\end_layout
+
+\begin_layout Standard
+presa una formula atomica 
+\begin_inset Formula $A\in\Phi\cap\Gamma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\alpha\in V^{\Gamma}(A)\iff\alpha\in V(A)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Teorema
 \end_layout
 
 \begin_layout Standard
@@ -403,13 +546,178 @@ e quindi:
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
-Una relazione che gode delle proprietà F1 e F2 si chiama 
+\begin_layout Section
+Lemma di Filtrazione
+\end_layout
+
+\begin_layout Standard
+dato un insieme
 \begin_inset Formula $\Gamma$
 \end_inset
 
+ chiuso rispetto alle sottoformule di a, con 
+\begin_inset Formula $a\in\Gamma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\alpha}{a\iff}\veraw{\mu^{\Gamma}}{\alpha}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+per ogni 
+\begin_inset Formula $\mu^{\Gamma}$
+\end_inset
+
+
+\begin_inset Formula $\Gamma$
+\end_inset
+
+-filtrazione di 
+\begin_inset Formula $\mu$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dimostrazione:
+\end_layout
+
+\begin_layout Standard
+Ts) 
+\begin_inset Formula $\veraw{\mu}{\alpha}{a\iff}\veraw{\mu^{\Gamma}}{[\alpha]}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ip) 
+\begin_inset Formula $\mu^{\Gamma}$
+\end_inset
+
+
+\begin_inset Formula $\Gamma$
+\end_inset
+
+-filtrazione di 
+\begin_inset Formula $\mu$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Per induzione sul numero di connettivi di a
+\end_layout
+
+\begin_layout Standard
+Caso Base, n=0:
+\end_layout
+
+\begin_layout Standard
+a non ha connettivi, allora 
+\begin_inset Formula $a\equiv A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\alpha}A\iff\alpha\in V(A)\iff\alpha\in V^{\Gamma}(A)\iff\veraw{\mu^{\Gamma}}{[\alpha]}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ipotesi di induzione: il teorema vale per ogni formula di 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ con m<n connettivi.
+\end_layout
+
+\begin_layout Standard
+a può essere:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\neg b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $b\implies c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\boxx b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Caso 1:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\alpha}{\neg b}\iff\nonveraw{\mu}{\alpha}b\iff\nonveraw{\mu^{\Gamma}}{[\alpha]}b\iff\veraw{\mu^{\Gamma}}{[\alpha]}{\neg b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Caso 2:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\alpha}{b\implies c}$
+\end_inset
+
+ se e solo se 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\nonveraw{\mu}{\alpha}b$
+\end_inset
+
+ oppure 
+\begin_inset Formula $\veraw{\mu}{\alpha}c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+quindi si può affermare
+\end_layout
+
+\begin_layout Standard
 
 \family roman
 \series medium
@@ -422,17 +730,101 @@ Una relazione che gode delle proprietà F1 e F2 si chiama
 \uwave off
 \noun off
 \color none
--filtrazione della relazione R.
-\end_layout
-
-\begin_layout Standard
-prendiamo infine:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $V^{\Gamma}:\,\Phi\cap\Gamma\rightarrow$
+\begin_inset Formula $\nonveraw{\mu}{\alpha}b\iff\nonveraw{\mu^{\Gamma}}{[\alpha]}b$
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\veraw{\mu}{\alpha}c\iff\veraw{\mu^{\Gamma}}{[\alpha]}c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ma vale almeno una delle due se e solo se
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu^{\Gamma}}{[\alpha]}{b\implies c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Caso 3:
+\end_layout
+
+\begin_layout Standard
+Ip) 
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ts) 
+\begin_inset Formula $\veraw{\mu^{\Gamma}}{[\alpha]}{\boxx b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consideriamo la reazione R' avente le proprietà F1 e F2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall[\beta]\,:\,([\alpha],\,[\beta])\in R'\implies\veraw{\mu^{\Gamma}}{[\beta]}b$
+\end_inset
+
+ -- per F2
+\end_layout
+
+\begin_layout Standard
+allora si può affermare che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\beta}b\implies\veraw{\mu^{\Gamma}}{[\beta]}b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ip)
+\begin_inset Formula $\veraw{\mu^{\Gamma}}{[\alpha]}{\boxx b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ts)
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 

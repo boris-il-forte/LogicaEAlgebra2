@@ -20,13 +20,14 @@ lemma di verità 										FATTO
 correttezza e completezza della logica k4				FATTO
 determinatezza di k4									FATTO
 th. di raggiungibilità									FATTO 
-modello canonico in kd									DA FARE
-modello canonico in debolmente densa					DA FARE
-modello canonico in kt									DA FARE
-modello canonico in kb									DA FARE
-correttezza e completezza di kd							DA FARE
-filtrazione												DA FARE
-lemma filtrazione										DA FARE
+modello canonico in kd									FATTO
+modello canonico in debolmente densa					FATTO
+modello canonico in kt									FATTO
+modello canonico in kb									FATTO
+correttezza e completezza di kd							FATTO
+filtrazione												FATTO
+lemma filtrazione										FATTO
+decidibilità di k										DA FARE
 decidibilità di kd										DA FARE
 decidibilità di k4										DA FARE
 tableaux												DA FARE
