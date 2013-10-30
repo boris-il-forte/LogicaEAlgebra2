@@ -791,11 +791,58 @@ Determinatezza di KT rispetto ai Frame Riflessivi
 \end_layout
 
 \begin_layout Standard
-allora abbiamo che:
+Voglioamo dimostrare che l'insime 
+\begin_inset Formula $\{a\,|\,\boa\in\alpha\}$
+\end_inset
+
+ di formule è contenuto in 
+\begin_inset Formula $\alpha$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\{a\,|\,\boa\in\alpha\}\in\alpha$
+Se 
+\begin_inset Formula $\boxx x\in\alpha$
+\end_inset
+
+ cioè se 
+\begin_inset Formula $\teoremaDi{KT}\boxx x$
+\end_inset
+
+ allora
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teoremaDi{KT}x$
+\end_inset
+
+ dato che 
+\begin_inset Formula $\boxx{x\implies x}$
+\end_inset
+
+ è uno schema della logica 
+\begin_inset Formula $KT$
+\end_inset
+
+ e quindi:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x\in\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Per questi motivi 
+\begin_inset Formula $\{a\,|\,\boa\in\alpha\}$
+\end_inset
+
+ è in effetti contenuto in 
+\begin_inset Formula $\alpha$
 \end_inset
 
 
@@ -821,7 +868,11 @@ Determinatezza di KB rispetto ai frame Simmetrici
 \end_layout
 
 \begin_layout Standard
-Vale:
+Se 
+\begin_inset Formula $\beta R^{K4}\alpha$
+\end_inset
+
+ allora:
 \end_layout
 
 \begin_layout Standard
@@ -832,30 +883,54 @@ Vale:
 \end_layout
 
 \begin_layout Standard
-poichè è vero l'assioma B, abbiamo 
-\begin_inset Formula $a\implies\boxx{\dia}$
-\end_inset
-
-
+per definizione di R del modello canonico.
 \end_layout
 
 \begin_layout Standard
-e quindi:
+Dal momento che vale l'assioma B: 
+\begin_inset Formula $a\implies\boxx\dia$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+per ogni formula 
+\begin_inset Formula $b\in\alpha$
+\end_inset
+
+ si ha che:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $\boxx{\diam b\in\alpha}$
 \end_inset
 
-
+,
 \end_layout
 
 \begin_layout Standard
-ma allora:
+D'altra parte ogni volta che 
+\begin_inset Formula $b\in\alpha$
+\end_inset
+
+, 
+\begin_inset Formula $\diamond b\in\beta$
+\end_inset
+
+ dato che 
+\begin_inset Formula $\beta R^{K4}\alpha$
+\end_inset
+
+ e quindi:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\diam{b\in b}$
+\begin_inset Formula $\relazCAB{\alpha}{\beta}$
+\end_inset
+
+ cioè 
+\begin_inset Formula $\alpha R\beta$
 \end_inset
 
 
