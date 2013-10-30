@@ -900,6 +900,41 @@ Supponiamo per assurdo che:
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula $\nonTeor{KD}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+allora avremo che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonvera{\mu^{KD}}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e quindi:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonvera{F^{KD}}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Poichè a non è vera nel frame canonico, non può essere vera in alcun frame,
+ ma questo va contro l'ipotesi, assurdo.
+ Allora la tesi deve essere valida.
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
