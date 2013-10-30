@@ -153,10 +153,6 @@ Determinatezza di KD rispetto ai Frame Seriali
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $R^{KD}$
-\end_inset
-
- è seriale se: 
 \begin_inset Formula $\forall\alpha\in S^{KD}\exists\beta:(\alpha,\beta)\in R^{KD}$
 \end_inset
 
@@ -364,86 +360,7 @@ e
  (**) 
 \series default
 si ha 
-\begin_inset Formula $\dia_{n}\in\alpha$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Da cui 
-\begin_inset Formula $\alpha$
-\end_inset
-
- non consistente, assurdo.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lightning
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-\begin_inset Formula $ $
-\end_inset
-
-Determinatezza rispetto ai Frame Debolmente Densi
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $R$
-\end_inset
-
- è debolmente densa se: 
-\begin_inset Formula $\forhten{\alpha,\beta}{:\:(\alpha R\beta)}{\exists\gamma:\,(\alpha R\gamma\wedge\gamma R\beta)}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Chiamiamo 
-\begin_inset Formula $\Lambda$
-\end_inset
-
- una costruita a partire dalla logica 
-\begin_inset Formula $K$
-\end_inset
-
- aggiungendo lo schema: 
-\begin_inset Formula $\dia\implies\diam{\diam a}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-La partenza del ragionamento è simile a quello del precedente in cui come
- insieme considero:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\gamma_{0}=\{a\ |\ a\in\alpha\}\cup\{\diamond b\ |\ b\in\beta\}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Per assurdo:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\teoremaDi{\Lambda}\andoria{_{n}\wedge\diam{b_{1}\wedge...\wedge\diam{b_{n}}}}\implies\bot$
+\begin_inset Formula $\dia$
 \end_inset
 
 
