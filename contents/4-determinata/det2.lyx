@@ -61,7 +61,7 @@
 \begin_body
 
 \begin_layout Chapter
-Logiche modali particolari e Decibilità (Finalmente!)
+Logiche modali particolari e Determinatezza
 \end_layout
 
 \begin_layout Standard
@@ -105,14 +105,6 @@ Provo quindi a vedere se
 \end_layout
 
 \begin_layout Standard
-Questo per provare ad avere un risultato almeno in negativo.
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Box Shadowbox
 position "c"
 hor_pos "c"
@@ -146,9 +138,6 @@ Con questa chiave di lettura diamo alcune dimostrazioni di determinatezza.
 \end_layout
 
 \begin_layout Section
-\begin_inset Formula $ $
-\end_inset
-
 Determinatezza di KD rispetto ai Frame Seriali
 \end_layout
 
@@ -791,7 +780,7 @@ Determinatezza di KT rispetto ai Frame Riflessivi
 \end_layout
 
 \begin_layout Standard
-Voglioamo dimostrare che l'insime 
+Vogliamo dimostrare che l'insime 
 \begin_inset Formula $\{a\,|\,\boa\in\alpha\}$
 \end_inset
 
@@ -804,11 +793,11 @@ Voglioamo dimostrare che l'insime
 
 \begin_layout Standard
 Se 
-\begin_inset Formula $\boxx x\in\alpha$
+\begin_inset Formula $\boxx a\in\alpha$
 \end_inset
 
  cioè se 
-\begin_inset Formula $\teoremaDi{KT}\boxx x$
+\begin_inset Formula $\teoremaDi{KT}\boxx a$
 \end_inset
 
  allora
@@ -819,7 +808,7 @@ Se
 \end_inset
 
  dato che 
-\begin_inset Formula $\boxx{x\implies x}$
+\begin_inset Formula $\boxx{a\implies a}$
 \end_inset
 
  è uno schema della logica 
@@ -830,7 +819,7 @@ Se
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $x\in\alpha$
+\begin_inset Formula $a\in\alpha$
 \end_inset
 
 .
@@ -860,7 +849,7 @@ Determinatezza di KB rispetto ai frame Simmetrici
 \begin_inset Formula $R^{KB}$
 \end_inset
 
-è simmetruca se 
+è simmetrica se 
 \begin_inset Formula $\forhten{\alpha,\beta}{\,\alpha R^{KB}\beta}{\beta R^{KB}\alpha}$
 \end_inset
 
@@ -888,7 +877,7 @@ per definizione di R del modello canonico.
 
 \begin_layout Standard
 Dal momento che vale l'assioma B: 
-\begin_inset Formula $a\implies\boxx\dia$
+\begin_inset Formula $a\implies\boxx{\dia}$
 \end_inset
 
 ,
@@ -1004,8 +993,8 @@ e quindi:
 \end_layout
 
 \begin_layout Standard
-Poichè a non è vera nel frame canonico, non può essere vera in alcun frame,
- ma questo va contro l'ipotesi, assurdo.
+Poichè a non è vera nel frame canonico, non può essere vera in alcun frame
+ seriale, ma questo va contro l'ipotesi, assurdo.
  Allora la tesi deve essere valida.
 \end_layout
 

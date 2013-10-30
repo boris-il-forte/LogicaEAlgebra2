@@ -89,7 +89,7 @@ Sia
 \end_inset
 
 -consistente se: 
-\begin_inset Formula $\nonSemW\Gamma\Lambda\bot$
+\begin_inset Formula $\nonSemW{\Gamma}{\Lambda}{\bot}$
 \end_inset
 
 , dove 
@@ -427,7 +427,7 @@ Ritorno
 \end_inset
 
 -consistente, allora 
-\begin_inset Formula $\Gamma\cup\{\neg a\}\teorema\bot$
+\begin_inset Formula $\Gamma\cup\{\neg a\}\teorema{\bot}$
 \end_inset
 
  da cui per 7.
@@ -475,7 +475,7 @@ Ritorno
 \end_inset
 
  se e solo se 
-\begin_inset Formula $\exists\beta:\nonSem\Gamma{_{\Lambda}\beta}$
+\begin_inset Formula $\exists\beta:\nonSem{\Gamma}{_{\Lambda}\beta}$
 \end_inset
 
  
@@ -503,11 +503,11 @@ Ritorno
 \end_inset
 
 
-\begin_inset Formula $\exists\beta:\nonSem\Gamma{_{\Lambda}\beta}$
+\begin_inset Formula $\exists\beta:\nonSem{\Gamma}{_{\Lambda}\beta}$
 \end_inset
 
  significa 
-\begin_inset Formula $\forall\beta:\teorGamma\beta$
+\begin_inset Formula $\forall\beta:\teorGamma{\beta}$
 \end_inset
 
 ) , potrei dedurre anche 
@@ -677,7 +677,7 @@ Se
 \end_inset
 
  mi da 
-\begin_inset Formula $\Delta\teorema\bot$
+\begin_inset Formula $\Delta\teorema{\bot}$
 \end_inset
 
  
@@ -1277,7 +1277,7 @@ Massimale in quanto contiene
 \begin_layout Enumerate
 Consistente.
  Per assurdo se non lo fosse avrei: 
-\begin_inset Formula $\Delta\teorema\bot$
+\begin_inset Formula $\Delta\teorema{\bot}$
 \end_inset
 
 
@@ -1476,7 +1476,7 @@ Ritorno:
 
 \begin_layout Standard
 Per assurdo, se 
-\begin_inset Formula $\nonSem\Gamma{_{\Lambda}a}$
+\begin_inset Formula $\nonSem{\Gamma}{_{\Lambda}a}$
 \end_inset
 
  allora 
@@ -1695,7 +1695,7 @@ Caso 1:
 \end_inset
 
  se e solo se 
-\begin_inset Formula $\nonveraCan\alpha b$
+\begin_inset Formula $\nonveraCan{\alpha}b$
 \end_inset
 
 
@@ -1778,7 +1778,7 @@ se e solo se
 \series bold
 Caso
 \series default
-2:
+ 2:
 \begin_inset Formula $ $
 \end_inset
 
@@ -1791,7 +1791,7 @@ Caso
 
 \begin_layout Standard
 Caso 21: 
-\begin_inset Formula $\nonveraCan\alpha b$
+\begin_inset Formula $\nonveraCan{\alpha}b$
 \end_inset
 
  
@@ -1799,7 +1799,7 @@ Caso 21:
 
 \begin_layout Standard
 Caso 22: 
-\begin_inset Formula $\veraCan\alpha c$
+\begin_inset Formula $\veraCan{\alpha}c$
 \end_inset
 
 
@@ -1815,7 +1815,7 @@ Caso 22:
 Caso 21
 \series default
 : 
-\begin_inset Formula $\nonveraCan\alpha b$
+\begin_inset Formula $\nonveraCan{\alpha}b$
 \end_inset
 
  
@@ -1843,7 +1843,7 @@ Il numero di connettivi di
 
 \begin_layout Standard
 quindi per ipotesi induttiva 
-\begin_inset Formula $\nonveraCan\alpha b$
+\begin_inset Formula $\nonveraCan{\alpha}b$
 \end_inset
 
  se e solo se 
@@ -1923,7 +1923,7 @@ da cui per MP con
 Caso 22
 \series default
 : 
-\begin_inset Formula $\veraCan\alpha c$
+\begin_inset Formula $\veraCan{\alpha}c$
 \end_inset
 
 
@@ -1939,7 +1939,7 @@ Vale l'ipotesi di induzione da cui:
 
 \begin_layout Standard
 quindi per ipotesi induttiva 
-\begin_inset Formula $\veraCan\alpha c$
+\begin_inset Formula $\veraCan{\alpha}c$
 \end_inset
 
  se e solo se 
@@ -2019,7 +2019,7 @@ Caso 3
 
 \begin_layout Standard
 Ip)
-\begin_inset Formula $\veraCan\alpha{\boxx b}$
+\begin_inset Formula $\veraCan{\alpha}{\boxx b}$
 \end_inset
 
 
@@ -2312,7 +2312,7 @@ Notiamo che
 \end_inset
 
  se e solo se 
-\begin_inset Formula $\veraCan\beta b$
+\begin_inset Formula $\veraCan{\beta}b$
 \end_inset
 
 
@@ -2339,9 +2339,6 @@ per ogni
 \end_layout
 
 \begin_layout Section
-\begin_inset Formula $ $
-\end_inset
-
 Correttezza e completezza della logica K rispetto a tutti i Frame
 \end_layout
 
@@ -2525,16 +2522,13 @@ lightning
 \end_layout
 
 \begin_layout Section
-\begin_inset Formula $ $
-\end_inset
-
 Correttezza e completezza della logica K4 rispetto ai Frame transitivi
 \end_layout
 
 \begin_layout Standard
 Nota: K4 è costruita a partire dalla logica K a cui si aggiunge l'assioma
  della transitività 
-\begin_inset Formula $\boa\implies\boxx\boa$
+\begin_inset Formula $\boa\implies\boxx{\boa}$
 \end_inset
 
  
@@ -2689,7 +2683,7 @@ i teoremi di na logica appartengono a tutti gli insiemi consistenti massimali
 \end_inset
 
 , contiene anche 
-\begin_inset Formula $\boa\implies\boxx\boa$
+\begin_inset Formula $\boa\implies\boxx{\boa}$
 \end_inset
 
  (4) da cui
@@ -2709,7 +2703,7 @@ i teoremi di na logica appartengono a tutti gli insiemi consistenti massimali
 \noun off
 \color none
 \lang english
-\begin_inset Formula $\boxx\boa\in\alpha$
+\begin_inset Formula $\boxx{\boa}\in\alpha$
 \end_inset
 
 
@@ -2954,9 +2948,6 @@ lightning
 \end_layout
 
 \begin_layout Section
-\begin_inset Formula $ $
-\end_inset
-
 Teorema di Raggiungibilità
 \end_layout
 
@@ -2965,7 +2956,7 @@ Teorema di Raggiungibilità
 \end_inset
 
  se e solo se 
-\begin_inset Formula $\relazCAB\alpha\beta$
+\begin_inset Formula $\relazCAB{\alpha}{\beta}$
 \end_inset
 
  se e solo se 
@@ -2982,7 +2973,7 @@ Teorema di Raggiungibilità
 \color none
 \lang english
 
-\begin_inset Formula $\relazCAD\alpha\beta$
+\begin_inset Formula $\relazCAD{\alpha}{\beta}$
 \end_inset
 
 
@@ -3003,7 +2994,7 @@ Teorema di Raggiungibilità
 \end_inset
 
 Ip)
-\begin_inset Formula $\relazCAB\alpha\beta$
+\begin_inset Formula $\relazCAB{\alpha}{\beta}$
 \end_inset
 
 
@@ -3011,7 +3002,7 @@ Ip)
 
 \begin_layout Standard
 Ts)
-\begin_inset Formula $\relazCAD\alpha\beta$
+\begin_inset Formula $\relazCAD{\alpha}{\beta}$
 \end_inset
 
 
@@ -3146,7 +3137,7 @@ lightning
 
 \begin_layout Standard
 Ip)
-\begin_inset Formula $\relazCAD\alpha\beta$
+\begin_inset Formula $\relazCAD{\alpha}{\beta}$
 \end_inset
 
 
@@ -3154,21 +3145,21 @@ Ip)
 
 \begin_layout Standard
 Ts)
-\begin_inset Formula $\relazCAB\alpha\beta$
+\begin_inset Formula $\relazCAB{\alpha}{\beta}$
 \end_inset
 
 
 \begin_inset Newline newline
 \end_inset
 
-Per assurdo supponiamo che
+Per assurdo supponiamo cioè che
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $\boa\in\alpha$
 \end_inset
 
- ma 
+ e 
 \begin_inset Formula $a\notin\beta$
 \end_inset
 
@@ -3194,6 +3185,58 @@ Per assurdo supponiamo che
 \begin_inset Formula $\diamond\neg a\in\alpha$
 \end_inset
 
+ (infatti 
+\begin_inset Formula $\alpha R^{\Lambda}\beta$
+\end_inset
+
+ e in 
+\begin_inset Formula $\beta$
+\end_inset
+
+ è vera 
+\begin_inset Formula $\neg a$
+\end_inset
+
+, quindi 
+\begin_inset Formula $a$
+\end_inset
+
+ ha almeno un successore nel quale 
+\begin_inset Formula $\neg a$
+\end_inset
+
+ è vera)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\neg\boxx{a\in\alpha}$
+\end_inset
+
+ contro l'ipotesi della consistenza e massimalità di 
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lightning
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 

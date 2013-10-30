@@ -156,7 +156,7 @@ filename "contents/2-semanticaA/semA.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "contents/3-determinata/det.lyx"
+filename "contents/3-determinata/det1.lyx"
 
 \end_inset
 
@@ -166,7 +166,7 @@ filename "contents/3-determinata/det.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "contents/4-decidibile/dec.lyx"
+filename "contents/4-determinata/det2.lyx"
 
 \end_inset
 
