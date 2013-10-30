@@ -193,7 +193,7 @@ cioè se:
 
 $a\in\alpha$ 
 
-\textbf{Caso}2:$ $ $\veraCA$ se e solo se
+\textbf{Caso} 2:$ $ $\veraCA$ se e solo se
 
 Caso 21: $\nonveraCan{\alpha}b$ 
 
@@ -294,13 +294,170 @@ Dato che questo vale $ $per ogni $\beta$ in relazione con $\alpha$,
 si ha: $\veraCanAlfa{\boxx b}$
 
 
-\section{$ $Correttezza e completezza della logica K}
+\section{$ $Correttezza e completezza della logica K rispetto a tutti i Frame}
 
 Dimostriamo che la logica K (minima logica modale normale) è corretta
 e completa
 
-Ip) $\teoa$ 
+Ip) $\teolm Ka$ 
 
-Ts)$\vera Fa$
+Ts)$\vera Fa$\\
 
-Nella logica K, dato che è una logica, valgono A1, A2, A3
+
+A1, A2, A3 sono tautologie e quindi valide su tutti i frame
+
+MP, sia la regola di necessitazione (RN) fanno passare da formule
+valide su un frame a formule valide su quello stesso frame. 
+
+Essendo $a$ l’ultima formula di una sequenza finita di fbf che o
+sono istanze degli assiomi A1, A2, A3, K o sono ottenute da fbf precedenti
+tramite MP o RN, è una fbf valida su ogni frame.\\
+\\
+Ip) $\vera Fa$
+
+Ts)$\teolm Ka$ \\
+\\
+Supponiamo $\nonTeor Ka$, allora per il corollario del lemma di verità\\
+
+
+\ovalbox{\parbox[t][1\totalheight][c]{0.9\textwidth}{%
+Per ogni formula $a$, sia $\Lambda$ una logica, si ha $\vera{M^{\Lambda}}a$
+se e solo se $\teorema a$, dove $M^{\Lambda}$ è il modello canonico%
+}} \\
+
+
+Si avrebbe: $\nonvera{M^{K}}a$ da cui anche
+
+$\nonvera{F^{K}}a$, cioè $a$ non valida sul frame su cui $M^{K}$
+è costruito quindi:
+
+$\nonvera Fa$ (infatti esiste almeno un frame, $F^{K},$ in cui non
+è valida $a$) il che però è contro l'ipotesi \lightning.
+
+
+\section{$ $Correttezza e completezza della logica K4 rispetto ai Frame transitivi}
+
+Nota: K4 è costruita a partire dalla logica K a cui si aggiunge l'assioma
+della transitività $\boa\implies\boxx{\boa}$ \\
+Ip)$\teolm{K4}a$ 
+
+Ts) $\entail Fa$ con F frame transitivo\\
+\\
+Simile al caso precedente in cui anche 4 è valido in quando il frame
+è transitivo\\
+
+
+Ip) $\entail Fa$ con F frame transitivo (cioè la cui relazione è
+transitiva)
+
+Ts)$\teolm{K4}a$\\
+\\
+Per procedere con una dimostrazione sulla falsa riga della precedente
+abbiamo bisogno di dimostrare la transitività di $R^{K4}$
+
+cioè della relazione $R^{K4}$ del modello canonico $M^{K4}=(S^{K4},R^{K4},V^{K4})$,
+servirà ragionando per assurdo.\\
+
+
+\textbf{Transitività di $R^{K4}$ }
+
+se $(\alpha,\beta)\in R^{K4}$, $(\beta,\gamma)\in R^{K4}$ allora
+$(\alpha,\gamma)\in R^{K4}$
+
+cioè deve avvenire che: $\{a\ |\ \boa\in\alpha\}\subseteq\gamma$
+(definizione di essere in relazione $\alpha R^{K4}\gamma$ del modello
+canonico)
+
+se $\boa\in\alpha$ , ricordando che:
+
+$\alpha$ è un insieme $K4-consistente\ massimale$,
+
+4 è un teorema della logica 
+
+i teoremi di na logica appartengono a tutti gli insiemi consistenti
+massimali rispetto a quella logica quindi
+
+$\alpha$, così come ogni insieme $K4-consistente\ massimale$, contiene
+anche $\boa\implies\boxx{\boa}$ (4) da cui
+
+\selectlanguage{english}%
+$\boxx{\boa}\in\alpha$\foreignlanguage{italian}{.}
+
+$\{a\ |\ \boa\in$$\alpha\}\subseteq\beta$\foreignlanguage{italian}{
+(per ipotesi $\alpha R^{K4}\beta$)}
+
+\selectlanguage{italian}%
+ma per ogni formula $\boa\in\alpha$ si ha che $\boxx{\boxx a}\in\alpha$
+e quindi: $\{\boa\ |\ \boxx{\boxx a}\in\alpha\}\subseteq\beta$ da
+cui $\{\boa\ |\ \boxx a\in\alpha\}\subseteq\beta$
+
+\selectlanguage{english}%
+$\{a\ |\ \boa\in$$\beta\}\subseteq\gamma$\foreignlanguage{italian}{
+(per ipotesi $\beta R^{K4}\gamma$), ma le formule del tipo $\boa$
+contenute in $\beta$ sono le stesse contenute in $\alpha$, quindi
+si ha anche:}
+
+$\{a\ |\ \boa\in$$\alpha\}\subseteq\gamma$\foreignlanguage{italian}{
+cioè $(\alpha,\gamma)\in R^{K4}$ }\\
+\foreignlanguage{italian}{}\\
+\foreignlanguage{italian}{A questo punto possiamo usare in modo profiquo
+il corollario del lemma di verità.}
+
+\selectlanguage{italian}%
+Dimostriamo la tesi per assurdo: supponiamo che $\nonTeor{K4}a$
+
+allora per il corollario del teorema di verità si avrebbe anche $\nonvera{M{}^{K4}}a$ 
+
+e in particolare si avrebbe $\nonvera{F^{K4}}a$, cioè si avrebbe
+un Frame transtivo (infatti $R^{K4}$ è transitiva) nel quale non
+è valida $a$
+
+ma ciò contraddice l'ipotesi $\entail Fa$ (con $F$ transitivo) \lightning\\
+
+
+
+\section{$ $Teorema di Raggiungibilità}
+
+$(\alpha,\beta)\in R^{\Lambda}$ se e solo se $\relazCAB{\alpha}{\beta}$
+se e solo se \foreignlanguage{english}{$\relazCAD{\alpha}{\beta}$}
+\\
+Ip)$\relazCAB{\alpha}{\beta}$
+
+Ts)$\relazCAD{\alpha}{\beta}$\\
+
+
+Per assurdo supponiamo che
+
+$b\in\beta$ e che $\diamond b\notin\alpha$, 
+
+\selectlanguage{english}%
+$\neg\diamond b\in\alpha$\foreignlanguage{italian}{ (dato che $\alpha$)
+è $\consMax$}
+
+\selectlanguage{italian}%
+$\boxx{\neg b\in\alpha}$ (equivalenza $\boxx{\neg a}$ $\equiv$$\neg\dia$)
+da cui
+
+$\neg b\in\beta$ (definizione di $\boxx x$ e considerato $\alpha R^{\Lambda}\beta$)
+
+il che è assurdo perché $b\in\beta$, e $\beta$ è $\consMax$\lightning\\
+
+
+Ip)$\relazCAD{\alpha}{\beta}$
+
+Ts)$\relazCAB{\alpha}{\beta}$\\
+Per assurdo supponiamo cioè che
+
+$\boa\in\alpha$ e $a\notin\beta$
+
+$\neg a\in\beta$ (dato che $\beta$ è $\consMax$)
+
+$\diamond\neg a\in\alpha$ (infatti $\alpha R^{\Lambda}\beta$ e in
+$\beta$ è vera $\neg a$, quindi $a$ ha almeno un successore nel
+quale $\neg a$ è vera)
+
+$\neg\boxx{a\in\alpha}$ contro l'ipotesi della consistenza e massimalità
+di $\alpha$\lightning\\
+
+
+

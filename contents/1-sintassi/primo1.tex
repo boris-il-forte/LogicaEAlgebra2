@@ -287,15 +287,12 @@ $\diam a\implies\boxx a$  & funzione parziale  & $\forhten{\alpha}{:\,\alpha R\b
 \hline 
 \end{tabular}
 
-Funzione parziale, dimostrazione
+Funzione parziale, dimostrazione\\
 
-.
 
 Ip) funzione parziale
 
 Ts) $\diam a\implies\boxx a$ 
-
-.
 
 $\diam{}a$ falsa allora dato che l'antecedente è falso di ha $\implica{\diam{}a}{\boxx a}$
 
@@ -304,17 +301,9 @@ ma dato che la funzione è parziale questo $\beta$ è unico !
 
 da cui $\vera{\mu}{\implica{\diamond a}{\boxx a}}$
 
-.
-
-.
-
 Ip) $\diam a\implies\boxx a$ 
 
 Ts) funzione parziale
-
-.
-
-.
 
 Per assurdo: suppongo non che la funzione non sia parziale. Se è così
 $\exists\alpha:$ $\alpha R\beta,$ $\alpha R\gamma$, considero un
@@ -610,5 +599,196 @@ che è assurdo, perchè contraddice la tesi. La tesi è allora valida.
 \fill [black] (44.47,-24.24) -- (44.11,-23.37) -- (43.53,-24.18); 
 \draw [black] (18.91,-27.79) -- (29.69,-35.81); 
 \fill [black] (29.69,-35.81) -- (29.35,-34.93) -- (28.75,-35.73); 
+\end{tikzpicture} 
+\end{center}
+
+
+\section{Relazione Debolmente Connessa}
+
+\begin{tabular}{|c|c|c|}
+\hline 
+$\boxx{(a\wedge\boa\implies b)}\vee\boxx{(b\wedge\boxx b\implies a)}$  & relazione debolmente connessa  & $\forhten{\alpha,\beta}{:\:(\alpha R\beta\wedge\alpha R\gamma)}{(\beta R\gamma\vee\beta=\gamma\vee\gamma R\beta)}$\tabularnewline
+\hline 
+\end{tabular}
+
+Ip) R debolmente connessa
+
+Ts) $\boxx{(a\wedge\boa\implies b)}\vee\boxx{(b\wedge\boxx b\implies a)}$
+
+Se il primo termine è vero, il teorema è verificato. allora supponiamo
+che:
+
+$\nonveraw{\mu}{\alpha}{\boxx{(a\wedge\boa\implies b)}}$
+
+ne consegue che:
+
+$\nonveraw{\mu}{\beta}{a\wedge\boa\implies b}$
+
+che si ha solo se valgono:
+
+$\nonveraw{\mu}{\beta}b$
+
+$\veraw{\mu}{\beta}{a\wedge\boa}$
+
+Dobbiamo allora verificare 3 casi:
+
+\textbf{Caso 1 }
+
+se da $\alpha$ non esco in altri stati, poichè è falsa b, allora:
+
+$\veraw{\mu}{\beta}{b\wedge\boxx b\implies a}$
+
+da cui segue che:
+
+$\veraw{\mu}{\alpha}{\boxx{(b\wedge\boxx b\implies a)}}$
+
+E la tesi è verificata.
+
+\begin{center} 
+\begin{tikzpicture}[scale=0.2] 
+\tikzstyle{every node}+=[inner sep=0pt] 
+\draw [black] (21.9,-20.5) circle (3); 
+\draw (21.9,-20.5) node {$\alpha$}; 
+\draw [black] (40.7,-20.5) circle (3); 
+\draw (40.7,-20.5) node {$\beta$}; 
+\draw (21.5,-16.2) node {\sout{$\boxx{(a\wedge\boa\implies b)}$}}; 
+\draw (21.5,-14.2) node {$\boxx{(b\wedge\boxx b\implies a)}$}; 
+\draw (40.7,-16.2) node {\sout{$a\wedge\boa\implies b$}}; 
+\draw (40.7,-14.2) node {$a\wedge\boa$}; 
+\draw (40.7,-12.5) node {\sout{$b$}}; 
+\draw (40.7,-10.5) node {$b\wedge\boxx b\implies a$}; 
+\draw [black] (24.9,-20.5) -- (37.7,-20.5); 
+\fill [black] (37.7,-20.5) -- (36.9,-20) -- (36.9,-21); 
+\end{tikzpicture} 
+\end{center}
+
+\textbf{Caso 2 }
+
+Se da $\alpha$ vado in un altro mondo $\gamma$ raggiungibile da
+$\beta$:
+
+$\veraw{\mu}{\gamma}a$
+
+e quindi:
+
+$\veraw{\mu}{\beta}{b\wedge\boxx b\implies a}$
+
+da cui segue che:
+
+$\veraw{\mu}{\alpha}{\boxx{(b\wedge\boxx b\implies a)}}$
+
+E la tesi è verificata.
+
+\begin{center} 
+\begin{tikzpicture}[scale=0.2] 
+\tikzstyle{every node}+=[inner sep=0pt] 
+\draw [black] (21.9,-20.5) circle (3); 
+\draw (21.9,-20.5) node {$\alpha$}; 
+\draw [black] (40.7,-20.5) circle (3); 
+\draw (40.7,-20.5) node {$\beta$}; 
+\draw [black] (40.7,-36.4) circle (3); 
+\draw (40.7,-36.4) node {$\gamma$}; 
+\draw (40.7,-16.2) node {$a\wedge\boa$}; 
+\draw (40.7,-40.8) node {$a$}; 
+\draw (40.7,-14) node {$b\wedge\boxx{b}\implies a$}; 
+\draw (21.9,-16.2) node {$\boxx{(b\wedge\boxx{b}\implies a)}$}; 
+\draw [black] (24.9,-20.5) -- (37.7,-20.5); 
+\fill [black] (37.7,-20.5) -- (36.9,-20) -- (36.9,-21); 
+\draw [black] (40.7,-23.5) -- (40.7,-33.4); 
+\fill [black] (40.7,-33.4) -- (41.2,-32.6) -- (40.2,-32.6); 
+\draw [black] (24.19,-22.44) -- (38.41,-34.46); 
+\fill [black] (38.41,-34.46) -- (38.12,-33.56) -- (37.48,-34.33); 
+\end{tikzpicture} 
+\end{center}
+
+\textbf{Caso 3 }
+
+Se da $\alpha$ vado in un altro mondo $\delta$ che raggiunge $\beta$:
+
+$\nonveraw{\mu}{\delta}{\boxx b}$
+
+e quindi, poichè è falso l'antecedente, dovrà essere:
+
+$\veraw{\mu}{\delta}{b\wedge\boxx b\implies a}$
+
+da cui segue che:
+
+$\veraw{\mu}{\alpha}{\boxx{(b\wedge\boxx b\implies a)}}$
+
+E la tesi è verificata.
+
+\begin{center} 
+\begin{tikzpicture}[scale=0.2] 
+\tikzstyle{every node}+=[inner sep=0pt] 
+\draw [black] (21.9,-20.5) circle (3); 
+\draw (21.9,-20.5) node {$\alpha$}; 
+\draw [black] (40.7,-20.5) circle (3); 
+\draw (40.7,-20.5) node {$\beta$}; 
+\draw [black] (40.7,-33.7) circle (3); 
+\draw (40.7,-33.7) node {$\delta$}; 
+\draw (40.7,-16.2) node {$a\wedge\boa$}; 
+\draw (40.7,-38.2) node {\sout{$\boxx{b}$}}; 
+\draw (21.9,-16.2) node {$\boxx{(b\wedge\boxx{b}\implies\ a)}$}; 
+\draw (40.7,-40.2) node {$b\wedge\boxx{b}\implies\ a$}; 
+\draw [black] (24.9,-20.5) -- (37.7,-20.5); 
+\fill [black] (37.7,-20.5) -- (36.9,-20) -- (36.9,-21); 
+\draw [black] (24.36,-22.22) -- (38.24,-31.98); 
+\fill [black] (38.24,-31.98) -- (37.88,-31.11) -- (37.3,-31.93); 
+\draw [black] (40.7,-30.7) -- (40.7,-23.5); 
+\fill [black] (40.7,-23.5) -- (40.2,-24.3) -- (41.2,-24.3); 
+\end{tikzpicture} 
+\end{center}
+
+Ip) $\boxx{(a\wedge\boa\implies b)}\vee\boxx{(b\wedge\boxx b\implies a)}$
+
+Ts) R debolmente connessa
+
+Supponiamo per assurdo che R non sia debolmente connessa.
+
+Consideriamo il caso in cui dallo stato $\alpha$ si raggiungano due
+stati $\beta$ e $\gamma$, tali che $\nexists\delta:\,\beta R\delta\vee\gamma R\delta$.
+Supponiamo inoltre che:
+
+$\veraw{\mu}{\beta}{a\wedge\neg b}$
+
+$\veraw{\mu}{\gamma}{b\wedge\neg a}$
+
+avremo allora:
+
+$\veraw{\mu}{\beta}{a\wedge\boa}$
+
+$\veraw{\mu}{\gamma}{b\wedge\boxx b}$
+
+ma, poichè l'antecedente è vero e il conseguente no, avremo anche:
+
+$\nonveraw{\mu}{\beta}{a\wedge\boa}\implies b$
+
+$\nonveraw{\mu}{\gamma}{b\wedge\boxx b}\implies a$
+
+allora:
+
+$\nonveraw{\mu}{\alpha}{\boxx{(a\wedge\boa\implies b)}\vee\boxx{(b\wedge\boxx b\implies a)}}$
+
+che è assurdo, perchè va contro l'ipotesi. La tesi allora deve essere
+valida.
+
+\begin{center} 
+\begin{tikzpicture}[scale=0.2] 
+\tikzstyle{every node}+=[inner sep=0pt] 
+\draw [black] (42.2,-28.8) circle (3); 
+\draw (42.2,-28.8) node {$\alpha$}; 
+\draw [black] (27,-17.7) circle (3); 
+\draw (27,-17.7) node {$\beta$}; 
+\draw [black] (57.7,-17.7) circle (3); 
+\draw (57.7,-17.7) node {$\gamma$}; 
+\draw (27,-13.7) node {$a\wedge\boa$}; 
+\draw (57.7,-13.7) node {$b\wedge\boxx{b}$}; 
+\draw (27,-11.3) node {\sout{$b$}}; 
+\draw (57.7,-11.3) node {\sout{$a$}}; 
+\draw (42.2,-33.5) node {\sout{$\boxx{(a\wedge\boa\implies b)}\vee\boxx{(b\wedge\boxx b\implies a)}$}}; 
+\draw [black] (44.64,-27.05) -- (55.26,-19.45); 
+\fill [black] (55.26,-19.45) -- (54.32,-19.51) -- (54.9,-20.32); 
+\draw [black] (39.78,-27.03) -- (29.42,-19.47); 
+\fill [black] (29.42,-19.47) -- (29.77,-20.34) -- (30.36,-19.54); 
 \end{tikzpicture} 
 \end{center}

@@ -1659,10 +1659,10 @@ funzione parziale
 
 \begin_layout Standard
 Funzione parziale, dimostrazione
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
-
+\begin_layout Standard
+.
 \end_layout
 
 \begin_layout Standard
@@ -1675,6 +1675,10 @@ Ts)
 \end_inset
 
  
+\end_layout
+
+\begin_layout Standard
+.
 \end_layout
 
 \begin_layout Standard
@@ -1720,6 +1724,14 @@ da cui
 \end_layout
 
 \begin_layout Standard
+.
+\end_layout
+
+\begin_layout Standard
+.
+\end_layout
+
+\begin_layout Standard
 Ip) 
 \begin_inset Formula $\diam a\implies\boxx a$
 \end_inset
@@ -1729,6 +1741,14 @@ Ip)
 
 \begin_layout Standard
 Ts) funzione parziale
+\end_layout
+
+\begin_layout Standard
+.
+\end_layout
+
+\begin_layout Standard
+.
 \end_layout
 
 \begin_layout Standard
@@ -3746,77 +3766,38 @@ begin{tikzpicture}[scale=0.2]
 
 \backslash
 tikzstyle{every node}+=[inner sep=0pt] 
-\end_layout
-
-\begin_layout Plain Layout
-
-
 \backslash
 draw [black] (21.9,-20.5) circle (3); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
 \backslash
 draw (21.9,-20.5) node {$
 \backslash
 alpha$}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
 \backslash
 draw [black] (40.7,-20.5) circle (3); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
 \backslash
 draw (40.7,-20.5) node {$
 \backslash
 beta$}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
 \backslash
 draw [black] (40.7,-36.4) circle (3); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
 \backslash
 draw (40.7,-36.4) node {$
 \backslash
 gamma$}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+\backslash
+draw [black] (40.7,-16.2) circle (3); 
 \backslash
 draw (40.7,-16.2) node {$a
 \backslash
 wedge
 \backslash
 boa$}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+\backslash
+draw [black] (40.7,-40.8) circle (3); 
 \backslash
 draw (40.7,-40.8) node {$a$}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+\backslash
+draw [black] (40.7,-14) circle (3); 
 \backslash
 draw (40.7,-14) node {$b
 \backslash
@@ -3824,76 +3805,37 @@ wedge
 \backslash
 boxx{b}
 \backslash
-implies a$}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+implies
+\backslash
+mbox{ }a$}; 
+\backslash
+draw [black] (21.9,-16.2) circle (3); 
 \backslash
 draw (21.9,-16.2) node {$
 \backslash
-boxx{(b
+boxx{b
 \backslash
 wedge
 \backslash
 boxx{b}
 \backslash
-implies a)}$}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+implies
+\backslash
+mbox{ }a$}; 
 \backslash
 draw [black] (24.9,-20.5) -- (37.7,-20.5); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
 \backslash
 fill [black] (37.7,-20.5) -- (36.9,-20) -- (36.9,-21); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
 \backslash
 draw [black] (40.7,-23.5) -- (40.7,-33.4); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
 \backslash
 fill [black] (40.7,-33.4) -- (41.2,-32.6) -- (40.2,-32.6); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
 \backslash
 draw [black] (24.19,-22.44) -- (38.41,-34.46); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
 \backslash
 fill [black] (38.41,-34.46) -- (38.12,-33.56) -- (37.48,-34.33); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
 \backslash
 end{tikzpicture} 
-\end_layout
-
-\begin_layout Plain Layout
-
-
 \backslash
 end{center}
 \end_layout
@@ -3956,191 +3898,7 @@ da cui segue che:
 
 \begin_layout Standard
 E la tesi è verificata.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center} 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tikzpicture}[scale=0.2] 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-tikzstyle{every node}+=[inner sep=0pt] 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw [black] (21.9,-20.5) circle (3); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw (21.9,-20.5) node {$
-\backslash
-alpha$}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw [black] (40.7,-20.5) circle (3); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw (40.7,-20.5) node {$
-\backslash
-beta$}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw [black] (40.7,-33.7) circle (3); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw (40.7,-33.7) node {$
-\backslash
-delta$}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw (40.7,-16.2) node {$a
-\backslash
-wedge
-\backslash
-boa$}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw (40.7,-38.2) node {
-\backslash
-sout{$
-\backslash
-boxx{b}$}}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw (21.9,-16.2) node {$
-\backslash
-boxx{(b
-\backslash
-wedge
-\backslash
-boxx{b}
-\backslash
-implies
-\backslash
- a)}$}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw (40.7,-40.2) node {$b
-\backslash
-wedge
-\backslash
-boxx{b}
-\backslash
-implies
-\backslash
- a$}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw [black] (24.9,-20.5) -- (37.7,-20.5); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-fill [black] (37.7,-20.5) -- (36.9,-20) -- (36.9,-21); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw [black] (24.36,-22.22) -- (38.24,-31.98); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-fill [black] (38.24,-31.98) -- (37.88,-31.11) -- (37.3,-31.93); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw [black] (40.7,-30.7) -- (40.7,-23.5); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-fill [black] (40.7,-23.5) -- (40.2,-24.3) -- (41.2,-24.3); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tikzpicture} 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
+\begin_inset Newline newline
 \end_inset
 
 
@@ -4247,193 +4005,6 @@ allora:
 \begin_layout Standard
 che è assurdo, perchè va contro l'ipotesi.
  La tesi allora deve essere valida.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center} 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tikzpicture}[scale=0.2] 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-tikzstyle{every node}+=[inner sep=0pt] 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw [black] (42.2,-28.8) circle (3); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw (42.2,-28.8) node {$
-\backslash
-alpha$}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw [black] (27,-17.7) circle (3); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw (27,-17.7) node {$
-\backslash
-beta$}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw [black] (57.7,-17.7) circle (3); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw (57.7,-17.7) node {$
-\backslash
-gamma$}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw (27,-13.7) node {$a
-\backslash
-wedge
-\backslash
-boa$}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw (57.7,-13.7) node {$b
-\backslash
-wedge
-\backslash
-boxx{b}$}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw (27,-11.3) node {
-\backslash
-sout{$b$}}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw (57.7,-11.3) node {
-\backslash
-sout{$a$}}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw (42.2,-33.5) node {
-\backslash
-sout{$
-\backslash
-boxx{(a
-\backslash
-wedge
-\backslash
-boa
-\backslash
-implies b)}
-\backslash
-vee
-\backslash
-boxx{(b
-\backslash
-wedge
-\backslash
-boxx b
-\backslash
-implies a)}$}}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw [black] (44.64,-27.05) -- (55.26,-19.45); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-fill [black] (55.26,-19.45) -- (54.32,-19.51) -- (54.9,-20.32); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw [black] (39.78,-27.03) -- (29.42,-19.47); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-fill [black] (29.42,-19.47) -- (29.77,-20.34) -- (30.36,-19.54); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tikzpicture} 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_body
