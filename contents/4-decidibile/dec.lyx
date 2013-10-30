@@ -180,7 +180,7 @@ TS)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\relazCAB\alpha\beta$
+\begin_inset Formula $\relazCAB{\alpha}{\beta}$
 \end_inset
 
  se e solo se 
@@ -444,6 +444,92 @@ Per assurdo:
 
 \begin_layout Standard
 \begin_inset Formula $\teoremaDi{\Lambda}\andoria{_{n}\wedge\diam{b_{1}\wedge...\wedge\diam{b_{n}}}}\implies\bot$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Determinatezza di KT rispetto ai Frame Riflessivi
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R^{KT}$
+\end_inset
+
+ è riflessiva se: 
+\begin_inset Formula $\forall\alpha,\,\alpha R^{KT}\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+allora abbiamo che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\{a\,|\,\boa\in\alpha\}\in\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Da cui segue la tesi.
+\end_layout
+
+\begin_layout Section
+Determinatezza di KB rispetto ai frame Simmetrici
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R^{KB}$
+\end_inset
+
+è simmetruca se 
+\begin_inset Formula $\forhten{\alpha,\beta}{\,\alpha R^{KB}\beta}{\beta R^{KB}\alpha}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vale:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\{\diam b\,|\, b\in\alpha\}\subseteq\beta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+poichè è vero l'assioma B, abbiamo 
+\begin_inset Formula $a\implies\boxx{\dia}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e quindi:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\boxx{\diam b\in\alpha}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ma allora:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\diam{b\in b}$
 \end_inset
 
 
