@@ -1,4 +1,232 @@
 
-\chapter{Logiche modali particolari e Decibilità (Finalmente!)}
+\chapter{Logiche modali particolari e Determinatezza}
+
+Per il teorema dicorrettezza e completezza abbiamo che $\teorema a$
+se e solo se $\vera{M^{\Lambda}}a$
+
+Il problema di $\vera{M^{\Lambda}}a$ è che non so costruire a livello
+``pratico'' il modello canonico dato che i suoi mondi sono infiniti.
+
+Provo quindi a vedere se $\teorema a$ se e solo se $\vera{F^{\Lambda}}a$
+possa valere almeno per particolari classi di frame.
+
+\shadowbox{\parbox[c]{1\textwidth}{%
+\textbf{Nota: }Per dimostrare la determinatezza di una logica rispetto
+a una classe di frame con una proprietà si può mostrare che la relazione
+del Frame canonico costruito da quella logica gode della stessa proprietà.
+
+Con questa chiave di lettura diamo alcune dimostrazioni di determinatezza.%
+}}
+
+
+\section{Determinatezza di KD rispetto ai Frame Seriali}
+
+$R^{KD}$ è seriale se: $\forall\alpha\in S^{KD}\exists\beta:(\alpha,\beta)\in R^{KD}$
+
+TS) $\teoremaDi{KD}a$ se e solo se $R^{KD}$ è seriale
+
+
+
+$\relazCAB{\alpha}{\beta}$ se e solo se $\alpha$ e $\beta$ sono
+in relazione.
+
+Vogliamo quindi provare che per ogni insieme $\{a\ |\ \boa\in\alpha\}$
+esiste un $\beta$ che sia $KD-consistente\ massimale$ che lo contiene,
+
+per farlo mi basta mostrare che esiste un insieme $\beta_{0}$ consistente
+che lo contiene, poi per il teorema di Lindelmann saprò anche che
+ne esiste uno consistente massimale.\\
+
+
+$\beta_{0}=\{a\ |\ \boa\in\alpha\}$ , dimostro che $\beta_{0}$ è
+consistente.
+
+Se per assurdo non lo fosse
+
+$\teoremaDi{KD}\andoria{_{n}\implies\bot}$, dove $a_{1},a_{2},...,a_{n}$
+sono formule di $\beta_{0}$
+
+(da cui spostando $a_{n}$ dopo l'implica)
+
+$\teoremaDi{KD}\andoria{_{n-1}\implies\neg a_{n}}$ (uso la definizione
+2. di logica normale)
+
+$\teoremaDi{KD}\andbox{_{n}}\implies\boxx{\neg a_{n}}$ 
+
+$\andbox{_{n}}\implies\boxx{\neg a_{n}}\in\alpha$ (dato che $\alpha$
+è $\consMaxLog{KD}$ contiene tutti i teoremi di $KD$)
+
+$\andbox{_{n}}\in\alpha$ per costruzione di $\beta_{0}$ (in $\beta_{0}$
+valgono tutto le $\boxx x$ se $x$ vale in $\alpha)$
+
+$\boxx{\neg a_{n}}\in\alpha$ (per MP dalle due precedenti)
+
+$\neg\dia_{n}\in\alpha$
+
+$\boa_{n}\in\alpha$ \textbf{({*})}
+
+$\boa_{n}\implies\dia_{n}$ (schema seriale) \textbf{({*}{*})}
+
+Per MP fra \textbf{({*}) }e\textbf{ ({*}{*}) }si ha $\dia_{n}\in\alpha$ 
+
+Da cui $\alpha$ non consistente, assurdo. \lightning
+
+
+\section{Determinatezza rispetto ai Frame Debolmente Densi}
+
+$R$ è debolmente densa se: $\forhten{\alpha,\beta}{:\:(\alpha R\beta)}{\exists\gamma:\,(\alpha R\gamma\wedge\gamma R\beta)}$
+
+Chiamiamo $\Lambda$ una costruita a partire dalla logica $K$ aggiungendo
+lo schema: $\dia\implies\diam{\diam a}$ 
+
+La partenza del ragionamento è simile a quello del precedente in cui
+come insieme considero:
+
+$\gamma_{0}=\{a\ |\ a\in\alpha\}\cup\{\diamond b\ |\ b\in\beta\}$\\
+
+
+Per assurdo:
+
+$\teoremaDi{\Lambda}\andoria{_{n}\wedge\diam{b_{1}\wedge...\wedge\diam{b_{n}}}}\implies\bot$
+
+dove $a_{1},...,a_{n}$ sono formule di $\alpha$, e $b_{1},...,b_{n}$
+sono formule di $\beta$
+
+$\teoremaDi{\Lambda}\andoria{_{n}}\implies\neg(\diamond b_{1}\wedge...\wedge\diamond b_{n})$
+
+pongo $b=b_{1}\wedge...\wedge b_{n}$\\
+
+
+\textbf{Teorema al volo:}
+
+$\teorema{\neg(\diamond c\wedge\diamond d)\implies\neg\diamond(c\wedge d)}$,
+cioè:
+
+\textbf{$\teorema{\diamond(c\wedge d)\implies\diamond c\wedge\diamond d}$}\\
+infatti, sono tautologie della logica proposizionale: $\neg c\implies\neg c\vee\neg d$
+
+e $\neg d\implies\neg c\vee\neg d$,
+
+queste sono anche teoremi di $\Lambda$
+
+dato che $\Lambda$ è normale si ha \foreignlanguage{english}{$\boxx{\neg c}\implies\boxx{\neg c\vee\neg d}$}
+(definizione 3.3 di logica normale)
+
+e lo stesso vale per la seconda $\boxx{\neg d}\implies\boxx{\neg c\vee\neg d}$
+
+dato che il conseguente si ha per due antecedenti diversi allora:
+
+\selectlanguage{english}%
+$\boxx{\neg c}\vee\boxx{\neg d\implies}\boxx{\neg c\vee\neg d}$\foreignlanguage{italian}{
+da cui negando e scambiando antecedente e conseguente:}
+
+\selectlanguage{italian}%
+$\neg(\boxx{\neg c\vee\neg d})\implies\neg(\boxx{\neg c}\vee\boxx{\neg d)}$,
+sviluppo il $\neg$
+
+$\diamond(c\wedge d)\implies\diamond c\wedge\diamond d$\\
+
+
+Uso il teorema ottenendo (in un certo senso ``portiamo fuori'' il
+$\diamond$)
+
+\selectlanguage{english}%
+$\teoremaDi{\Lambda}\andoria{_{n}}\implies\neg\diamond(b_{1}\wedge...\wedge\diamond b_{n})$\foreignlanguage{italian}{
+cioè (per come ho posto b)}
+
+\selectlanguage{italian}%
+$\teoremaDi{\Lambda}\andoria{_{n}}\implies\neg\diamond b$ 
+
+Uso la definizione 2. di logica normale e riscrivo:
+
+$\teoremaDi{\Lambda}\andbox{_{n}}\implies\boxx{\neg\diamond b}$
+
+$\teoremaDi{\Lambda}\andbox{_{n}}\implies\neg\diamond\diamond b$
+
+dato che $\andbox{_{n}}\implies\neg\diamond\diamond b\in\alpha$ 
+
+e che: $\andbox{_{n}\in\alpha}$
+
+anche $\neg\diamond\diamond b\in\alpha$ (MP dalle due precedenti)
+
+dato che $\diamond b\in\alpha$ anche $\diamond\diamond b\in\alpha$
+per lo schema delle relazioni debolmente dense
+
+il che ci porterebbe alla non massimalità di $\alpha$ contro l'ipotesi.
+\lightning
+
+
+\section{Determinatezza di KT rispetto ai Frame Riflessivi}
+
+$R^{KT}$ è riflessiva se: $\forall\alpha,\,\alpha R^{KT}\alpha$
+
+Vogliamo dimostrare che l'insime $\{a\,|\,\boa\in\alpha\}$ di formule
+è contenuto in $\alpha$
+
+Se $\boxx a\in\alpha$ cioè se $\teoremaDi{KT}\boxx a$ allora
+
+$\teoremaDi{KT}x$ dato che $\boxx{a\implies a}$ è uno schema della
+logica $KT$ e quindi:
+
+$a\in\alpha$.
+
+Per questi motivi $\{a\,|\,\boa\in\alpha\}$ è in effetti contenuto
+in $\alpha$
+
+Da cui segue la tesi.
+
+
+\section{Determinatezza di KB rispetto ai frame Simmetrici}
+
+$R^{KB}$è simmetrica se $\forhten{\alpha,\beta}{\,\alpha R^{KB}\beta}{\beta R^{KB}\alpha}$
+
+Se $\beta R^{K4}\alpha$ allora:
+
+$\{\diam b\,|\, b\in\alpha\}\subseteq\beta$
+
+per definizione di R del modello canonico.
+
+Dal momento che vale l'assioma B: $a\implies\boxx{\dia}$,
+
+per ogni formula $b\in\alpha$ si ha che:
+
+$\boxx{\diam b\in\alpha}$,
+
+D'altra parte ogni volta che $b\in\alpha$, $\diamond b\in\beta$
+dato che $\beta R^{K4}\alpha$ e quindi:
+
+$\relazCAB{\alpha}{\beta}$ cioè $\alpha R\beta$
+
+
+\section{Correttezza e completezza di KD}
+
+La logica KD è corretta e completa rispetto alla classe dei Frame
+seriali
+
+Dimostrazione
+
+Ts) $\teoremaDi{KD}a$
+
+Ip) $\vera Fa$ con F seriale
+
+se a è un teorema di KD, è ricavato da una serie di formule che possono
+essere applicazioni degli schemi A1, A2, A3, K, D oppure applicazioni
+del modus ponens o della regola di necessitazione.
+
+Supponiamo per assurdo che:
+
+$\nonTeor{KD}a$
+
+allora avremo che:
+
+$\nonvera{\mu^{KD}}a$
+
+e quindi:
+
+$\nonvera{F^{KD}}a$
+
+Poichè a non è vera nel frame canonico, non può essere vera in alcun
+frame seriale, ma questo va contro l'ipotesi, assurdo. Allora la tesi
+deve essere valida.
 
 

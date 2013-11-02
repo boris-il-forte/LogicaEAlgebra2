@@ -10,7 +10,17 @@
 \setlength{\parindent}{0pt}
 \renewcommand{\indent}{\hspace*{\tindent}}
 
+\providecommand{\coursename}{Logica e Algebra 2}
+\providecommand{\documentsubtitle}{Appunti}
+\providecommand{\annoacc}{2013-2014}
+\providecommand{\principaladviser}{Prof. Alessandra Cherubini}
+\providecommand{\firstauthor}{Edoardo Pasi}
+\providecommand{\firstauthorid}{edogay}
+\providecommand{\secondauthor}{Davide Tateo}
+\providecommand{\secondauthorid}{799311}
 \title{Logica e Algebra 2}
+\author{\firstauthor, \secondauthor}
+
  
 \usepackage{tikz}
 
@@ -46,6 +56,8 @@
 
 %per le tabelle lunghe e particolari
 \usepackage{lscape}
+%per includere il comando che genera la pagina del titolo...
+\usepackage{settings/frontesp}
 \end_preamble
 \use_default_options false
 \maintain_unincluded_children false
@@ -103,6 +115,22 @@
 \end_header
 
 \begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+titlep
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset toc

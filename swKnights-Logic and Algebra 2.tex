@@ -28,7 +28,17 @@
 \setlength{\parindent}{0pt}
 \renewcommand{\indent}{\hspace*{\tindent}}
 
+\providecommand{\coursename}{Logica e Algebra 2}
+\providecommand{\documentsubtitle}{Appunti}
+\providecommand{\annoacc}{2011-2012}
+\providecommand{\principaladviser}{Prof. Alessandra Cherubini}
+\providecommand{\firstauthor}{Edoardo Pasi}
+\providecommand{\firstauthorid}{edogay}
+\providecommand{\secondauthor}{Davide Tateo}
+\providecommand{\secondauthorid}{799311}
 \title{Logica e Algebra 2}
+\author{\firstauthor, \secondauthor}
+
  
 \usepackage{tikz}
 
@@ -64,11 +74,15 @@
 
 %per le tabelle lunghe e particolari
 \usepackage{lscape}
+%include il comando per creare la pagina dei titoli
+\usepackage{settings/frontesp}
 
 \makeatother
 
 \usepackage{babel}
 \begin{document}
+\titlep
+
 \tableofcontents{}
 
 \include{settings/usefullMacros}
@@ -79,7 +93,9 @@
 
 \include{contents/2-semanticaA/semA}
 
-\include{contents/3-determinata/det}
+\include{contents/3-determinata/det1}
 
-\include{contents/4-decidibile/dec}
+\include{contents/4-determinata/det2}
+
+\include{contents/5-decidibile/dec}
 \end{document}
