@@ -127,7 +127,7 @@ Dato una logica
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\teoremaDi{\Lambda}a\iff\vera{\mu}a$
+\begin_inset Formula $\teoremaDi\Lambda a\iff\vera\mu a$
 \end_inset
 
 
@@ -147,7 +147,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\exists\mu:\,\teoremaDi{\Lambda}a\iff\vera{\mu}a$
+\begin_inset Formula $\exists\mu:\,\teoremaDi\Lambda a\iff\vera\mu a$
 \end_inset
 
 
@@ -173,7 +173,7 @@ che gode della seguente proprietà:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\Gamma_{\alpha}=\{a\in\Gamma\,|\,\veraw{\mu}{\alpha}a\}$
+\begin_inset Formula $\Gamma_{\alpha}=\{a\in\Gamma\,|\,\veraw\mu\alpha a\}$
 \end_inset
 
 
@@ -378,7 +378,7 @@ F1)
 
 \begin_layout Standard
 F2) 
-\begin_inset Formula $([\alpha],[\beta])\in R'\implies\forall\boxx b\in\Gamma,\,\veraw{\mu}{\alpha}{\boxx b}\implies\veraw{\mu}{\beta}b$
+\begin_inset Formula $([\alpha],[\beta])\in R'\implies\forall\boxx b\in\Gamma,\,\veraw\mu\alpha{\boxx b}\implies\veraw\mu\beta b$
 \end_inset
 
 
@@ -490,7 +490,7 @@ Ip)
 \end_inset
 
 , 
-\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx b}$
+\begin_inset Formula $\veraw\mu\alpha{\boxx b}$
 \end_inset
 
 
@@ -520,14 +520,14 @@ avremo che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\delta}{\boxx b}$
+\begin_inset Formula $\veraw\mu\delta{\boxx b}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\eta}b$
+\begin_inset Formula $\veraw\mu\eta b$
 \end_inset
 
 
@@ -538,7 +538,7 @@ e quindi:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\beta}b$
+\begin_inset Formula $\veraw\mu\beta b$
 \end_inset
 
 
@@ -565,7 +565,7 @@ dato un insieme
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{a\iff}\veraw{\mu^{\Gamma}}{\alpha}a$
+\begin_inset Formula $\veraw\mu\alpha{a\iff}\veraw{\mu^{\Gamma}}\alpha a$
 \end_inset
 
 
@@ -593,7 +593,7 @@ Dimostrazione:
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\veraw{\mu}{\alpha}{a\iff}\veraw{\mu^{\Gamma}}{[\alpha]}a$
+\begin_inset Formula $\veraw\mu\alpha{a\iff}\veraw{\mu^{\Gamma}}{[\alpha]}a$
 \end_inset
 
 
@@ -632,7 +632,7 @@ a non ha connettivi, allora
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}A\iff\alpha\in V(A)\iff\alpha\in V^{\Gamma}(A)\iff\veraw{\mu^{\Gamma}}{[\alpha]}a$
+\begin_inset Formula $\veraw\mu\alpha A\iff\alpha\in V(A)\iff\alpha\in V^{\Gamma}(A)\iff\veraw{\mu^{\Gamma}}{[\alpha]}a$
 \end_inset
 
 
@@ -676,7 +676,7 @@ Caso 1:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\neg b}\iff\nonveraw{\mu}{\alpha}b\iff\nonveraw{\mu^{\Gamma}}{[\alpha]}b\iff\veraw{\mu^{\Gamma}}{[\alpha]}{\neg b}$
+\begin_inset Formula $\veraw\mu\alpha{\neg b}\iff\nonveraw\mu\alpha b\iff\nonveraw{\mu^{\Gamma}}{[\alpha]}b\iff\veraw{\mu^{\Gamma}}{[\alpha]}{\neg b}$
 \end_inset
 
 
@@ -687,7 +687,7 @@ Caso 2:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{b\implies c}$
+\begin_inset Formula $\veraw\mu\alpha{b\implies c}$
 \end_inset
 
  se e solo se 
@@ -703,11 +703,11 @@ Caso 2:
 \noun off
 \color none
 
-\begin_inset Formula $\nonveraw{\mu}{\alpha}b$
+\begin_inset Formula $\nonveraw\mu\alpha b$
 \end_inset
 
  oppure 
-\begin_inset Formula $\veraw{\mu}{\alpha}c$
+\begin_inset Formula $\veraw\mu\alpha c$
 \end_inset
 
 
@@ -730,7 +730,7 @@ quindi si può affermare
 \uwave off
 \noun off
 \color none
-\begin_inset Formula $\nonveraw{\mu}{\alpha}b\iff\nonveraw{\mu^{\Gamma}}{[\alpha]}b$
+\begin_inset Formula $\nonveraw\mu\alpha b\iff\nonveraw{\mu^{\Gamma}}{[\alpha]}b$
 \end_inset
 
 
@@ -749,7 +749,7 @@ quindi si può affermare
 \uwave off
 \noun off
 \color none
-\begin_inset Formula $\veraw{\mu}{\alpha}c\iff\veraw{\mu^{\Gamma}}{[\alpha]}c$
+\begin_inset Formula $\veraw\mu\alpha c\iff\veraw{\mu^{\Gamma}}{[\alpha]}c$
 \end_inset
 
 
@@ -772,7 +772,7 @@ Caso 3:
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx b}$
+\begin_inset Formula $\veraw\mu\alpha{\boxx b}$
 \end_inset
 
 
@@ -802,7 +802,7 @@ allora si può affermare che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\beta}b\implies\veraw{\mu^{\Gamma}}{[\beta]}b$
+\begin_inset Formula $\veraw\mu\beta b\implies\veraw{\mu^{\Gamma}}{[\beta]}b\implies\veraw{\mu^{\Gamma}}{[\alpha]}{\boxx b}$
 \end_inset
 
 
@@ -818,7 +818,7 @@ Ip)
 
 \begin_layout Standard
 Ts)
-\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx b}$
+\begin_inset Formula $\veraw\mu\alpha{\boxx b}$
 \end_inset
 
 
@@ -826,6 +826,462 @@ Ts)
 
 \begin_layout Standard
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\forall[\beta]\,:\,(\alpha,\,\beta)\in R,\,([\alpha],\,[\beta])\in R'$
+\end_inset
+
+ --per F1
+\end_layout
+
+\begin_layout Standard
+allora si può affermare che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\veraw{\mu^{\Gamma}}{[\beta]}b\implies\mu}\beta b\implies\veraw\mu\alpha{\boxx b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Determinatezza di K dai Frame Finiti
+\end_layout
+
+\begin_layout Standard
+La minima logica normale K è determinata dalla classe di tutti i frame finiti.
+\end_layout
+
+\begin_layout Standard
+Se 
+\begin_inset Formula $a$
+\end_inset
+
+ ha n sottoformule 
+\begin_inset Formula $a$
+\end_inset
+
+ è un teorema di K se e solo se A è valida in tutti i frame con meno di
+ 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ mondi.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teoremaDi Ka$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $\vera Fa$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ip)
+\begin_inset Formula $\teoremaDi Ka$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Ts)
+\begin_inset Formula $\vera Fa$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se 
+\begin_inset Formula $a$
+\end_inset
+
+ è un teorema di K allora 
+\begin_inset Formula $a$
+\end_inset
+
+ è valida in tutti i frame (infatti K è determinata rispetto alla classe
+ di tutti i frame) è a maggior ragione valida in tutti i frame finiti ed
+ in tutti i frame con meno di 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ mondi.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ip)
+\begin_inset Formula $\vera Fa$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ts)
+\begin_inset Formula $\teoremaDi Ka$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Suppongo per assurdo che
+\begin_inset Formula $\nonTeor Ka$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $\nonvera{M^{K}}a$
+\end_inset
+
+ se e solo se (per il lemma di filtrazione) 
+\begin_inset Formula $\nonvera{(M^{K})^{\Gamma}}a$
+\end_inset
+
+ il che implica che
+\end_layout
+
+\begin_layout Standard
+in particolare 
+\begin_inset Formula $\nonvera{(F^{K})^{\Gamma}}a$
+\end_inset
+
+ dove 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $(F^{K})^{\Gamma}$
+\end_inset
+
+ è il Frame su cui è costruita la filtrazione del modello canonico costruito
+ rispetto alla logica 
+\begin_inset Formula $K$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ 
+\end_layout
+
+\begin_layout Standard
+Si noti che 
+\begin_inset Formula $(M^{K})^{\Gamma}$
+\end_inset
+
+ ha al più 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ mondi.
+\end_layout
+
+\begin_layout Section
+Determinatezza di KD dai Frame seriali finiti
+\end_layout
+
+\begin_layout Standard
+Per seguire lo stesso ragionamente della dimostrazione appena fatta, dobbiamo
+ solo mostrare che se 
+\begin_inset Formula $R$
+\end_inset
+
+ è seriale allora 
+\begin_inset Formula $R^{\sigma}$
+\end_inset
+
+ lo è.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box ovalbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Nota:
+\series default
+
+\begin_inset Formula $R^{\sigma}\subseteq S^{\Gamma}\times S^{\Gamma}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+così definita:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $([\alpha],[\beta])\in R^{\sigma}\iff\exists\delta\in[\alpha],\eta\in[\beta]\,:\,(\delta,\,\eta)\in R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Sia 
+\begin_inset Formula $[\alpha]\in S^{\Gamma}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se 
+\begin_inset Formula $R^{KD}$
+\end_inset
+
+ è seriale allora 
+\begin_inset Formula $\forall\delta\in S^{KD}\exists\eta\in S^{KD}:\ (\delta,\eta)\in R^{KD}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In particolare esiste
+\begin_inset Formula $\delta$
+\end_inset
+
+ appartiene alla classe di equivalenza 
+\begin_inset Formula $[\alpha]$
+\end_inset
+
+ (di cui al limite potrebbe essere l'unico elemento con 
+\begin_inset Formula $\alpha=\delta$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Dalla serialità abbiamo che esiste
+\begin_inset Formula $\eta$
+\end_inset
+
+ appartiene alla classe di equivalenza 
+\begin_inset Formula $[\beta]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Da cui 
+\begin_inset Formula $([\alpha],[\beta])\in R^{\sigma}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Determinatezza di K4 dai Frame transitivi finiti
+\end_layout
+
+\begin_layout Standard
+L'aspetto interessante di questa dimostrazione sta nel fatto che non possiamo
+ usare la relazione 
+\begin_inset Quotes eld
+\end_inset
+
+classica
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $R^{\sigma}$
+\end_inset
+
+ come 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+-filtrazione ma dobbiamo costruirne una ad hoc, dato che se 
+\begin_inset Formula $R^{K4}$
+\end_inset
+
+ è transitiva la sua filtrazione standard non è detto che lo sia
+\end_layout
+
+\begin_layout Standard
+Definiamo quindi 
+\begin_inset Formula $R^{\tau}$
+\end_inset
+
+così:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $([\alpha],[\beta])\in R^{\tau}$
+\end_inset
+
+ se se e solo se per ogni fbf 
+\begin_inset Formula $b$
+\end_inset
+
+, 
+\begin_inset Formula $\boxx b\in\Gamma$
+\end_inset
+
+ e 
+\begin_inset Formula $\vera M{_{\alpha}\boxx b}$
+\end_inset
+
+ implicano 
+\begin_inset Formula $\vera M{_{\beta}b\wedge\boxx b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+dimostriamo che 
+\begin_inset Formula $R^{\tau}$
+\end_inset
+
+ è una 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+-filtrazione transitiva
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R^{\tau}$
+\end_inset
+
+è una 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+-filtrazione
+\end_layout
+
+\begin_layout Standard
+F2) 
+\begin_inset Formula $([\alpha],[\beta])\in R^{\tau}$
+\end_inset
+
+ se e solo se
+\begin_inset Formula $\vera M{_{\alpha}\boxx b}$
+\end_inset
+
+ implicano 
+\begin_inset Formula $\vera M{_{\beta}b\wedge\boxx b}$
+\end_inset
+
+ da cui: 
+\begin_inset Formula $\{b\ |\ \boxx{b\in\alpha\}\subseteq\beta}$
+\end_inset
+
+ e quindi 
+\begin_inset Formula $\alpha,\beta\in R^{K4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+F1) 
+\begin_inset Formula $(\alpha,\beta)\in R^{K4}$
+\end_inset
+
+per ogni 
+\begin_inset Formula $\boxx{b\in\Gamma}$
+\end_inset
+
+, se 
+\begin_inset Formula $\vera M{_{\alpha}\boxx b}$
+\end_inset
+
+ allora anche (schema 4) 
+\begin_inset Formula $\veraw M{\alpha}{\boxx{\boxx b}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+dato che 
 \end_layout
 
 \end_body
