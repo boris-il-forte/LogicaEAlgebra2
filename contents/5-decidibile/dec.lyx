@@ -802,7 +802,7 @@ allora si può affermare che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\beta b\implies\veraw{\mu^{\Gamma}}{[\beta]}b\implies\veraw{\mu^{\Gamma}}{[\alpha]}{\boxx b}$
+\begin_inset Formula $\veraw{\mu}{\beta}b\implies\veraw{\mu^{\Gamma}}{[\beta]}b\implies\veraw{\mu^{\Gamma}}{[\alpha]}{\boxx b}$
 \end_inset
 
 
@@ -818,7 +818,7 @@ Ip)
 
 \begin_layout Standard
 Ts)
-\begin_inset Formula $\veraw\mu\alpha{\boxx b}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx b}$
 \end_inset
 
 
@@ -848,7 +848,7 @@ allora si può affermare che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\veraw{\mu^{\Gamma}}{[\beta]}b\implies\mu}\beta b\implies\veraw\mu\alpha{\boxx b}$
+\begin_inset Formula $\veraw{\veraw{\mu^{\Gamma}}{[\beta]}b\implies\mu}{\beta}b\implies\veraw{\mu}{\alpha}{\boxx b}$
 \end_inset
 
 
@@ -1363,6 +1363,337 @@ Sia
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Tableaux
+\end_layout
+
+\begin_layout Standard
+I Tableaux sono un metodo efficiente per dimostrare la verità, falsità e
+ soddisfacibilità di una formula
+\end_layout
+
+\begin_layout Standard
+Il metodo consiste nel partire dalla formula che si vuole considerare, negandola.
+\end_layout
+
+\begin_layout Standard
+Dopodichè si procede passo passo alla costruzione di un albero seguendo
+ delle regole di espansione che aggiungono uno o più nodi o rami all'albero.
+\end_layout
+
+\begin_layout Standard
+Le regole con la virgola aggiungono un nodo allo stesso ramo, mentre le
+ regole con il pipe sdoppiano il ramo.
+\end_layout
+
+\begin_layout Standard
+Se espando una formula, devo aggiungere coerentemente l'espansione a tutti
+ i sottorami, e non posso più espanderla.
+\end_layout
+
+\begin_layout Standard
+Se un cammino contiene sia una formula che la sua negazione il cammino si
+ chiude.
+\end_layout
+
+\begin_layout Standard
+Se esiste almeno un cammino chiuso, la formula di partenza è soddisfacibile,
+ se tutti i cammini sono chiusi, la formula è logicamente valita, altrimenti
+ la formula è falsa.
+\end_layout
+
+\begin_layout Subsection
+Tableaux per la logica proposizionale
+\end_layout
+
+\begin_layout Standard
+Le regole Per applicare l'algoritmo dei tableaux nella logica proposizionale
+ sono le seguenti:
+\end_layout
+
+\begin_layout Itemize
+Radice dell'albero
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\neg a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Regola del 
+\begin_inset Formula $\neg$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\dfrac{\neg\neg a}{a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Regole di tipo 
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\dfrac{a\wedge b}{a,\, b}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfrac{\neg(a\vee b)}{\neg a,\,\neg b}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfrac{\neg(a\implies b)}{a,\,\neg b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Regole di tipo 
+\begin_inset Formula $\beta$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\dfrac{a\vee b}{a|b}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfrac{\neg(a\wedge b)}{\neg a|\neg b}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfrac{a\implies b}{\neg a|b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Regole di tipo 
+\begin_inset Formula $\iff$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\dfrac{a\iff b}{a,\, b|\neg a,\,\neg b}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfrac{\neg(a\iff b)}{a,\,\neg b|\neg a,\, b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Tableaux per le logiche modali
+\end_layout
+
+\begin_layout Standard
+Per le logiche modali, si può modificare l'algoritmo già usato per le logiche
+ proposizionali, aggiungendo le regole per la necessitazione e considerando
+ che ogni regola deve essere vera in un mondo.
+\end_layout
+
+\begin_layout Standard
+Per fare ciò devo aggiungere l'indice del mondo a tutte le regole, e si
+ potrà chiudere un ramo solo se si trova la regola e il suo negato nello
+ stesso mondo.
+\end_layout
+
+\begin_layout Standard
+Le regole dei tableaux per le logiche modali saranno:
+\end_layout
+
+\begin_layout Itemize
+Radice dell'albero
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $1.\neg a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Regola del 
+\begin_inset Formula $\neg$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\dfrac{\delta\,\neg\neg a}{\delta a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Regole di tipo 
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\dfrac{\delta\, a\wedge b}{\delta\, a,\,\delta\, b}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfrac{\delta\,\neg(a\vee b)}{\delta\,\neg a,\,\delta\,\neg b}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfrac{\delta\,\neg(a\implies b)}{\delta\, a,\,\delta\,\neg b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Regole di tipo 
+\begin_inset Formula $\beta$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\dfrac{\delta\, a\vee b}{\delta\, a|\delta\, b}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfrac{\delta\,\neg(a\wedge b)}{\delta\,\neg a|\delta\,\neg b}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfrac{\delta\, a\implies b}{\delta\,\neg a|\delta\, b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Regole di tipo 
+\begin_inset Formula $\iff$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\dfrac{\delta\, a\iff b}{\delta\, a,\,\delta\, b|\delta\,\neg a,\,\delta\,\neg b}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfrac{\delta\,\neg(a\iff b)}{\delta\, a,\,\delta\,\neg b|\delta\,\neg a,\,\delta\, b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Regole di necessitazione
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\dfrac{\sigma\,\boa}{\sigma_{n}\, a}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfrac{\sigma\,\neg\dia}{\sigma_{n}\,\neg a}$
+\end_inset
+
+ -- con 
+\begin_inset Formula $\sigma_{n}$
+\end_inset
+
+ già presente nei nodi precedenti
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\dfrac{\sigma\,\neg\boa}{\sigma_{n}\,\neg a}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfrac{\sigma\,\dia}{\sigma_{n}\, a}$
+\end_inset
+
+ -- con 
+\begin_inset Formula $\sigma_{n}$
+\end_inset
+
+ non presente nei nodi precedenti
+\end_layout
+
+\begin_layout Standard
+Tuttavia queste regole non sono sufficienti se vogliamo usare una regola
+ modale differente da K.
+\end_layout
+
+\begin_layout Standard
+Per lavorare su regole con proprietà dei frame particolari, devo necessariamente
+ cambiare le regole di necessitazione aggiungendo dei vincoli alla generazione
+ di nuovi mondi in modo tale che rispettino le proprietà del frame.
 \end_layout
 
 \end_body

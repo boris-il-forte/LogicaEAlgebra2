@@ -127,7 +127,7 @@ Dato una logica
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\teoremaDi\Lambda a\iff\vera\mu a$
+\begin_inset Formula $\teoremaDi{\Lambda}a\iff\vera{\mu}a$
 \end_inset
 
 
@@ -147,7 +147,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\exists\mu:\,\teoremaDi\Lambda a\iff\vera\mu a$
+\begin_inset Formula $\exists\mu:\,\teoremaDi{\Lambda}a\iff\vera{\mu}a$
 \end_inset
 
 
@@ -173,7 +173,7 @@ che gode della seguente proprietà:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\Gamma_{\alpha}=\{a\in\Gamma\,|\,\veraw\mu\alpha a\}$
+\begin_inset Formula $\Gamma_{\alpha}=\{a\in\Gamma\,|\,\veraw{\mu}{\alpha}a\}$
 \end_inset
 
 
@@ -802,7 +802,7 @@ allora si può affermare che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\beta b\implies\veraw{\mu^{\Gamma}}{[\beta]}b\implies\veraw{\mu^{\Gamma}}{[\alpha]}{\boxx b}$
+\begin_inset Formula $\veraw{\mu}{\beta}b\implies\veraw{\mu^{\Gamma}}{[\beta]}b\implies\veraw{\mu^{\Gamma}}{[\alpha]}{\boxx b}$
 \end_inset
 
 
@@ -818,7 +818,7 @@ Ip)
 
 \begin_layout Standard
 Ts)
-\begin_inset Formula $\veraw\mu\alpha{\boxx b}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx b}$
 \end_inset
 
 
@@ -848,7 +848,7 @@ allora si può affermare che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\veraw{\mu^{\Gamma}}{[\beta]}b\implies\mu}\beta b\implies\veraw\mu\alpha{\boxx b}$
+\begin_inset Formula $\veraw{\veraw{\mu^{\Gamma}}{[\beta]}b\implies\mu}{\beta}b\implies\veraw{\mu}{\alpha}{\boxx b}$
 \end_inset
 
 
@@ -1234,6 +1234,10 @@ dimostriamo che
 \end_inset
 
 -filtrazione
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1282,6 +1286,393 @@ per ogni
 
 \begin_layout Standard
 dato che 
+\begin_inset Formula $(\alpha,\beta)\in R^{K4}$
+\end_inset
+
+ , anche:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw M{\beta}b$
+\end_inset
+
+ e 
+\begin_inset Formula $\veraw M{\beta}{\boxx b}$
+\end_inset
+
+ e quindi:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw M{\beta}{b\wedge\boxx b}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R^{\tau}$
+\end_inset
+
+ è transitiva
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $([\alpha],[\beta])\in R^{\tau}$
+\end_inset
+
+, 
+\begin_inset Formula $([\beta],[\gamma])\in R^{\tau}$
+\end_inset
+
+ ora la prima implica che per ogni fbf 
+\begin_inset Formula $b$
+\end_inset
+
+, da 
+\begin_inset Formula $\boxx{b\in\Gamma}$
+\end_inset
+
+ e 
+\begin_inset Formula $\veraw M{\alpha}{\boxx b}$
+\end_inset
+
+ segua 
+\begin_inset Formula $\vera M{_{\beta}\boxx{b\wedge b}}$
+\end_inset
+
+, e da questa essendo 
+\begin_inset Formula $([\alpha],[\beta])\in R^{\tau}$
+\end_inset
+
+, segue anche 
+\begin_inset Formula $\vera M{_{\gamma}\boxx{b\wedge b}}$
+\end_inset
+
+, cioè 
+\begin_inset Formula $([\beta],[\gamma])\in R^{\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Tableaux
+\end_layout
+
+\begin_layout Standard
+I Tableaux sono un metodo efficiente per dimostrare la verità, falsità e
+ soddisfacibilità di una formula
+\end_layout
+
+\begin_layout Standard
+Il metodo consiste nel partire dalla formula che si vuole considerare, negandola.
+\end_layout
+
+\begin_layout Standard
+Dopodichè si procede passo passo alla costruzione di un albero seguendo
+ delle regole.
+\end_layout
+
+\begin_layout Standard
+Se un cammino contiene sia una formula che ila sua negazione il cammino
+ si chiude.
+\end_layout
+
+\begin_layout Standard
+Se esiste almeno un cammino chiuso, la formula di partenza è soddisfacibile,
+ se tutti i cammini sono chiusi, la formula è logicamente valita, altrimenti
+ la formula è falsa.
+\end_layout
+
+\begin_layout Subsection
+Tableaux per la logica proposizionale
+\end_layout
+
+\begin_layout Standard
+Le regole Per applicare l'algoritmo dei tableaux nella logica proposizionale
+ sono le seguenti:
+\end_layout
+
+\begin_layout Itemize
+Radice dell'albero
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\neg a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Regola del 
+\begin_inset Formula $\neg$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\dfrac{\neg\neg a}{a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Regole di tipo 
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\dfrac{a\wedge b}{a,\, b}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfrac{\neg(a\vee b)}{\neg a,\,\neg b}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfrac{\neg(a\implies b)}{a,\,\neg b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Regole di tipo 
+\begin_inset Formula $\beta$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\dfrac{a\vee b}{a|b}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfrac{\neg(a\wedge b)}{\neg a|\neg b}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfrac{a\implies b}{\neg a|b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Regole di tipo 
+\begin_inset Formula $\iff$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\dfrac{a\iff b}{a,\, b|\neg a,\,\neg b}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfrac{\neg(a\iff b)}{a,\,\neg b|\neg a,\, b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Tableaux per le logiche modali
+\end_layout
+
+\begin_layout Standard
+Per le logiche modali, si può modificare l'algoritmo già usato per le logiche
+ proposizionali, aggiungendo le regole per la necessitazione e considerando
+ che ogni regola deve essere vera in un mondo.
+\end_layout
+
+\begin_layout Standard
+Per fare ciò devo aggiungere l'indice del mondo a tutte le regole, e si
+ potrà chiudere un ramo solo se si trova la regola e il suo negato nello
+ stesso mondo.
+\end_layout
+
+\begin_layout Standard
+Le regole dei tableaux per le logiche modali saranno:
+\end_layout
+
+\begin_layout Itemize
+Radice dell'albero
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $1.\neg a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Regola del 
+\begin_inset Formula $\neg$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\dfrac{\delta\,\neg\neg a}{\delta a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Regole di tipo 
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\dfrac{\delta\, a\wedge b}{\delta\, a,\,\delta\, b}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfrac{\delta\,\neg(a\vee b)}{\delta\,\neg a,\,\delta\,\neg b}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfrac{\delta\,\neg(a\implies b)}{\delta\, a,\,\delta\,\neg b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Regole di tipo 
+\begin_inset Formula $\beta$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\dfrac{\delta\, a\vee b}{\delta\, a|\delta\, b}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfrac{\delta\,\neg(a\wedge b)}{\delta\,\neg a|\delta\,\neg b}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfrac{\delta\, a\implies b}{\delta\,\neg a|\delta\, b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Regole di tipo 
+\begin_inset Formula $\iff$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\dfrac{\delta\, a\iff b}{\delta\, a,\,\delta\, b|\delta\,\neg a,\,\delta\,\neg b}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfrac{\delta\,\neg(a\iff b)}{\delta\, a,\,\delta\,\neg b|\delta\,\neg a,\,\delta\, b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Regole di necessitazione
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\dfrac{\sigma\,\boa}{\sigma_{n}\, a}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfrac{\sigma\,\neg\dia}{\sigma_{n}\,\neg a}$
+\end_inset
+
+ -- con 
+\begin_inset Formula $\sigma_{n}$
+\end_inset
+
+ già presente nelle precedenti formule
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\dfrac{\sigma\,\neg\boa}{\sigma_{n}\,\neg a}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfrac{\sigma\,\dia}{\sigma_{n}\, a}$
+\end_inset
+
+ -- con 
+\begin_inset Formula $\sigma_{n}$
+\end_inset
+
+ non presente nelle pre
 \end_layout
 
 \end_body
