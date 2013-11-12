@@ -127,7 +127,7 @@ Dato una logica
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\teoremaDi\Lambda a\iff\vera\mu a$
+\begin_inset Formula $\teoremaDi{\Lambda}a\iff\vera{\mu}a$
 \end_inset
 
 
@@ -147,7 +147,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\exists\mu:\,\teoremaDi\Lambda a\iff\vera\mu a$
+\begin_inset Formula $\exists\mu:\,\teoremaDi{\Lambda}a\iff\vera{\mu}a$
 \end_inset
 
 
@@ -1729,7 +1729,7 @@ T:
 
 \lang italian
 4:
-\begin_inset Formula $\boa\implies\boxx\boa$
+\begin_inset Formula $\boa\implies\boxx{\boa}$
 \end_inset
 
  (transitiva)
@@ -1739,7 +1739,7 @@ T:
 
 \lang italian
 B: 
-\begin_inset Formula $a\implies\boxx\dia$
+\begin_inset Formula $a\implies\boxx{\dia}$
 \end_inset
 
  (simmetrica)
@@ -2381,6 +2381,174 @@ Dato che vale 5:
 \end_inset
 
  cioè B.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Reticolo delle logiche
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\backslash
+draw [black] (39.9,-53.7) circle (3); 
+\backslash
+draw (39.9,-53.7) node {$K$}; 
+\backslash
+draw [black] (18,-42.8) circle (3); 
+\backslash
+draw (18,-42.8) node {$KD$}; 
+\backslash
+draw [black] (33,-42.8) circle (3); 
+\backslash
+draw (33,-42.8) node {$K4$}; 
+\backslash
+draw [black] (65.5,-41.5) circle (3); 
+\backslash
+draw (65.5,-41.5) node {$KB$}; 
+\backslash
+draw [black] (46.8,-42.8) circle (3); 
+\backslash
+draw (46.8,-42.8) node {$K5$}; 
+\backslash
+draw [black] (12.1,-28.5) circle (3); 
+\backslash
+draw (12.1,-28.5) node {$KT$}; 
+\backslash
+draw [black] (26.6,-27.7) circle (3); 
+\backslash
+draw (26.6,-27.7) node {$KD4$}; 
+\backslash
+draw [black] (53.4,-27.7) circle (3); 
+\backslash
+draw (53.4,-27.7) node {$KD5$}; 
+\backslash
+draw [black] (67.6,-27.7) circle (3); 
+\backslash
+draw (67.6,-27.7) node {$K45$}; 
+\backslash
+draw [black] (23.2,-16.4) circle (3); 
+\backslash
+draw (23.2,-16.4) node {$KT4$}; 
+\backslash
+draw [black] (39.9,-15.4) circle (3); 
+\backslash
+draw (39.9,-15.4) node {$KTB$}; 
+\backslash
+draw [black] (55.7,-16.4) circle (3); 
+\backslash
+draw (55.7,-16.4) node {$KB4$}; 
+\backslash
+draw [black] (39.9,-4.2) circle (3); 
+\backslash
+draw (39.9,-4.2) node {$KT5$}; 
+\backslash
+draw [black] (41,-27.7) circle (3); 
+\backslash
+draw (41,-27.7) node {$KDB$}; 
+\backslash
+draw [black] (37.21,-52.36) -- (20.69,-44.14); 
+\backslash
+fill [black] (20.69,-44.14) -- (21.18,-44.94) -- (21.62,-44.05); 
+\backslash
+draw [black] (38.3,-51.17) -- (34.6,-45.33); 
+\backslash
+fill [black] (34.6,-45.33) -- (34.61,-46.28) -- (35.45,-45.74); 
+\backslash
+draw [black] (42.61,-52.41) -- (62.79,-42.79); 
+\backslash
+fill [black] (62.79,-42.79) -- (61.85,-42.68) -- (62.28,-43.59); 
+\backslash
+draw [black] (41.5,-51.17) -- (45.2,-45.33); 
+\backslash
+fill [black] (45.2,-45.33) -- (44.35,-45.74) -- (45.19,-46.28); 
+\backslash
+draw [black] (16.86,-40.03) -- (13.24,-31.27); 
+\backslash
+fill [black] (13.24,-31.27) -- (13.09,-32.2) -- (14.01,-31.82); 
+\backslash
+draw [black] (14.13,-26.29) -- (21.17,-18.61); 
+\backslash
+fill [black] (21.17,-18.61) -- (20.26,-18.86) -- (21,-19.54); 
+\backslash
+draw [black] (25.74,-24.83) -- (24.06,-19.27); 
+\backslash
+fill [black] (24.06,-19.27) -- (23.82,-20.18) -- (24.77,-19.89); 
+\backslash
+draw [black] (31.83,-40.04) -- (27.77,-30.46); 
+\backslash
+fill [black] (27.77,-30.46) -- (27.62,-31.39) -- (28.54,-31); 
+\backslash
+draw [black] (19.48,-40.19) -- (25.12,-30.31); 
+\backslash
+fill [black] (25.12,-30.31) -- (24.28,-30.75) -- (25.15,-31.25); 
+\backslash
+draw [black] (20.76,-41.62) -- (50.64,-28.88); 
+\backslash
+fill [black] (50.64,-28.88) -- (49.71,-28.73) -- (50.1,-29.65); 
+\backslash
+draw [black] (35.75,-41.6) -- (64.85,-28.9); 
+\backslash
+fill [black] (64.85,-28.9) -- (63.92,-28.76) -- (64.32,-29.68); 
+\backslash
+draw [black] (49.23,-41.04) -- (65.17,-29.46); 
+\backslash
+fill [black] (65.17,-29.46) -- (64.23,-29.53) -- (64.82,-30.34); 
+\backslash
+draw [black] (64.41,-38.71) -- (56.79,-19.19); 
+\backslash
+fill [black] (56.79,-19.19) -- (56.62,-20.12) -- (57.55,-19.76); 
+\backslash
+draw [black] (62.89,-40.03) -- (43.61,-29.17); 
+\backslash
+fill [black] (43.61,-29.17) -- (44.07,-30) -- (44.56,-29.13); 
+\backslash
+draw [black] (20.51,-41.15) -- (38.49,-29.35); 
+\backslash
+fill [black] (38.49,-29.35) -- (37.55,-29.37) -- (38.1,-30.2); 
+\backslash
+draw [black] (14.81,-27.22) -- (37.19,-16.68); 
+\backslash
+fill [black] (37.19,-16.68) -- (36.25,-16.57) -- (36.68,-17.47); 
+\backslash
+draw [black] (40.73,-24.71) -- (40.17,-18.39); 
+\backslash
+fill [black] (40.17,-18.39) -- (39.74,-19.23) -- (40.74,-19.14); 
+\backslash
+draw [black] (25.62,-14.63) -- (37.48,-5.97); 
+\backslash
+fill [black] (37.48,-5.97) -- (36.54,-6.04) -- (37.13,-6.85); 
+\backslash
+draw [black] (39.9,-12.4) -- (39.9,-7.2); 
+\backslash
+fill [black] (39.9,-7.2) -- (39.4,-8) -- (40.4,-8); 
+\backslash
+draw [black] (53.33,-14.57) -- (42.27,-6.03); 
+\backslash
+fill [black] (42.27,-6.03) -- (42.6,-6.92) -- (43.21,-6.13); 
+\backslash
+end{tikzpicture} 
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
