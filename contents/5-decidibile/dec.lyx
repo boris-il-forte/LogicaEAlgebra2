@@ -1278,7 +1278,7 @@ per ogni
 \end_inset
 
  allora anche (schema 4) 
-\begin_inset Formula $\veraw M{\alpha}{\boxx{\boxx b}}$
+\begin_inset Formula $\veraw M\alpha{\boxx{\boxx b}}$
 \end_inset
 
  
@@ -1293,18 +1293,18 @@ dato che
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw M{\beta}b$
+\begin_inset Formula $\veraw M\beta b$
 \end_inset
 
  e 
-\begin_inset Formula $\veraw M{\beta}{\boxx b}$
+\begin_inset Formula $\veraw M\beta{\boxx b}$
 \end_inset
 
  e quindi:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw M{\beta}{b\wedge\boxx b}$
+\begin_inset Formula $\veraw M\beta{b\wedge\boxx b}$
 \end_inset
 
 
@@ -1343,7 +1343,7 @@ Sia
 \end_inset
 
  e 
-\begin_inset Formula $\veraw M{\alpha}{\boxx b}$
+\begin_inset Formula $\veraw M\alpha{\boxx b}$
 \end_inset
 
  segua 
@@ -1729,7 +1729,7 @@ T:
 
 \lang italian
 4:
-\begin_inset Formula $\boa\implies\boxx{\boa}$
+\begin_inset Formula $\boa\implies\boxx\boa$
 \end_inset
 
  (transitiva)
@@ -1739,7 +1739,7 @@ T:
 
 \lang italian
 B: 
-\begin_inset Formula $a\implies\boxx{\dia}$
+\begin_inset Formula $a\implies\boxx\dia$
 \end_inset
 
  (simmetrica)
@@ -2229,7 +2229,11 @@ Valendo 4 vale anche 4
 \end_layout
 
 \begin_layout Standard
-abbiamoA⇒Acioèloschema5.
+abbiamo 
+\begin_inset Formula $\diamond a\implies\boxx{\dia}$
+\end_inset
+
+ cioè lo schema5.
  
 \begin_inset Newline newline
 \end_inset
@@ -2256,7 +2260,7 @@ Da 5 infatti deduciamo 5
 \end_layout
 
 \begin_layout Standard
-, e tenuto conto della prima osservazione (con
+Tenuto conto della prima osservazione (con
 \begin_inset Formula $C$
 \end_inset
 
@@ -2268,7 +2272,7 @@ Da 5 infatti deduciamo 5
 \begin_inset Formula $a$
 \end_inset
 
-),
+)
 \end_layout
 
 \begin_layout Standard
@@ -2301,12 +2305,20 @@ o a rimanere equivalenti;
 
 \begin_layout Standard
 aggiungere 4 a KDB5 non produce alcun effetto perché lo contiene già.
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 Inoltre notiamo che: 
 \series bold
-KT4B⊇KDB4
+KDB4
+\begin_inset Formula $\subseteq$
+\end_inset
+
+KTB4
 \series default
  in quanto KT contiene KD
 \end_layout
@@ -2314,13 +2326,61 @@ KT4B⊇KDB4
 \begin_layout Standard
 e 
 \series bold
-KT4B⊇KT5
+KT5
+\begin_inset Formula $\subseteq$
+\end_inset
+
+KTB4
 \series default
  in quando KT4B contiene KT4 che coincide con KT5.
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
+Mostriamo che 
+\series bold
+KTB4
+\begin_inset Formula $\mbox{\subseteq}$
+\end_inset
 
+KDB4 
+\series default
+così da arrivare a KTB4 = KDB4
+\end_layout
+
+\begin_layout Standard
+Cioe' mostriamo che nella logica K, dall'assioma T, con B e 4 posso dedurre
+ l'assioma D
+\end_layout
+
+\begin_layout Standard
+Dall'assioma T deduciamo l'assioma T
+\begin_inset Formula $\diamond$
+\end_inset
+
+ cioe' 
+\begin_inset Formula $a\implies\diamond a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dato che vale 5: 
+\begin_inset Formula $\diam a\implies\boxx{\diam a}$
+\end_inset
+
+, sfruttando la catena di implicazioni delle due precedenti abbiamo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a\implies\boxx{\dia}$
+\end_inset
+
+ cioè B.
 \end_layout
 
 \end_body

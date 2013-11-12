@@ -1729,7 +1729,7 @@ T:
 
 \lang italian
 4:
-\begin_inset Formula $\boa\implies\boxx{\boa}$
+\begin_inset Formula $\boa\implies\boxx\boa$
 \end_inset
 
  (transitiva)
@@ -1739,7 +1739,7 @@ T:
 
 \lang italian
 B: 
-\begin_inset Formula $a\implies\boxx{\dia}$
+\begin_inset Formula $a\implies\boxx\dia$
 \end_inset
 
  (simmetrica)
@@ -2291,21 +2291,91 @@ KDB4.
 \end_layout
 
 \begin_layout Standard
-KDB4 = KDB5 = KD45, infatti aggiungendo l'assioma D a due logiche equivalenti
- (KB4, KB5) continuano a rimanere equivalenti, aggiungere 4 a KDB5 non produce
- alcun effetto 
+
+\series bold
+KDB4 = KDB5 = KD45
+\series default
+, infatti aggiungendo l'assioma D a due logiche equivalenti (KB4, KB5) continuan
+o a rimanere equivalenti;
 \end_layout
 
 \begin_layout Standard
-tre seguono da quanto appena detto
+aggiungere 4 a KDB5 non produce alcun effetto perché lo contiene già.
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Inoltre notiamo che: KT4B⊇KDB4 in quanto 
+Inoltre notiamo che: 
+\series bold
+KDB4
+\begin_inset Formula $\subseteq$
+\end_inset
+
+KTB4
+\series default
+ in quanto KT contiene KD
 \end_layout
 
 \begin_layout Standard
-e KT4B⊇KT5.
+e 
+\series bold
+KT5
+\begin_inset Formula $\subseteq$
+\end_inset
+
+KTB4
+\series default
+ in quando KT4B contiene KT4 che coincide con KT5.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Mostriamo che 
+\series bold
+KTB4
+\begin_inset Formula $\mbox{\subseteq}$
+\end_inset
+
+KDB4 
+\series default
+così da arrivare a KTB4 = KDB4
+\end_layout
+
+\begin_layout Standard
+Cioè mostriamo che dall'assioma T, con B, 4 in K deduco l'assioma D
+\end_layout
+
+\begin_layout Standard
+Dall'assioma T deduciamo l'assioma T
+\begin_inset Formula $\diamond$
+\end_inset
+
+: 
+\begin_inset Formula $a\implies\diamond a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dato che vale 5: 
+\begin_inset Formula $\diam a\implies\boxx{\diam a}$
+\end_inset
+
+, sfruttando la catena di implicazioni delle due precedenti abbiamo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a\implies\boxx{\dia}$
+\end_inset
+
+ cioè
 \end_layout
 
 \end_body
