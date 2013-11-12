@@ -127,7 +127,7 @@ Dato una logica
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\teoremaDi{\Lambda}a\iff\vera{\mu}a$
+\begin_inset Formula $\teoremaDi\Lambda a\iff\vera\mu a$
 \end_inset
 
 
@@ -147,7 +147,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\exists\mu:\,\teoremaDi{\Lambda}a\iff\vera{\mu}a$
+\begin_inset Formula $\exists\mu:\,\teoremaDi\Lambda a\iff\vera\mu a$
 \end_inset
 
 
@@ -173,7 +173,7 @@ che gode della seguente proprietà:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\Gamma_{\alpha}=\{a\in\Gamma\,|\,\veraw{\mu}{\alpha}a\}$
+\begin_inset Formula $\Gamma_{\alpha}=\{a\in\Gamma\,|\,\veraw\mu\alpha a\}$
 \end_inset
 
 
@@ -802,7 +802,7 @@ allora si può affermare che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\beta}b\implies\veraw{\mu^{\Gamma}}{[\beta]}b\implies\veraw{\mu^{\Gamma}}{[\alpha]}{\boxx b}$
+\begin_inset Formula $\veraw\mu\beta b\implies\veraw{\mu^{\Gamma}}{[\beta]}b\implies\veraw{\mu^{\Gamma}}{[\alpha]}{\boxx b}$
 \end_inset
 
 
@@ -818,7 +818,7 @@ Ip)
 
 \begin_layout Standard
 Ts)
-\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx b}$
+\begin_inset Formula $\veraw\mu\alpha{\boxx b}$
 \end_inset
 
 
@@ -848,7 +848,7 @@ allora si può affermare che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\veraw{\mu^{\Gamma}}{[\beta]}b\implies\mu}{\beta}b\implies\veraw{\mu}{\alpha}{\boxx b}$
+\begin_inset Formula $\veraw{\veraw{\mu^{\Gamma}}{[\beta]}b\implies\mu}\beta b\implies\veraw\mu\alpha{\boxx b}$
 \end_inset
 
 
@@ -1278,7 +1278,7 @@ per ogni
 \end_inset
 
  allora anche (schema 4) 
-\begin_inset Formula $\veraw M{\alpha}{\boxx{\boxx b}}$
+\begin_inset Formula $\veraw M\alpha{\boxx{\boxx b}}$
 \end_inset
 
  
@@ -1293,18 +1293,18 @@ dato che
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw M{\beta}b$
+\begin_inset Formula $\veraw M\beta b$
 \end_inset
 
  e 
-\begin_inset Formula $\veraw M{\beta}{\boxx b}$
+\begin_inset Formula $\veraw M\beta{\boxx b}$
 \end_inset
 
  e quindi:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw M{\beta}{b\wedge\boxx b}$
+\begin_inset Formula $\veraw M\beta{b\wedge\boxx b}$
 \end_inset
 
 
@@ -1343,7 +1343,7 @@ Sia
 \end_inset
 
  e 
-\begin_inset Formula $\veraw M{\alpha}{\boxx b}$
+\begin_inset Formula $\veraw M\alpha{\boxx b}$
 \end_inset
 
  segua 
@@ -1380,12 +1380,22 @@ Il metodo consiste nel partire dalla formula che si vuole considerare, negandola
 
 \begin_layout Standard
 Dopodichè si procede passo passo alla costruzione di un albero seguendo
- delle regole.
+ delle regole di espansione che aggiungono uno o più nodi o rami all'albero.
 \end_layout
 
 \begin_layout Standard
-Se un cammino contiene sia una formula che ila sua negazione il cammino
- si chiude.
+Le regole con la virgola aggiungono un nodo allo stesso ramo, mentre le
+ regole con il pipe sdoppiano il ramo.
+\end_layout
+
+\begin_layout Standard
+Se espando una formula, devo aggiungere coerentemente l'espansione a tutti
+ i sottorami, e non posso più espanderla.
+\end_layout
+
+\begin_layout Standard
+Se un cammino contiene sia una formula che la sua negazione il cammino si
+ chiude.
 \end_layout
 
 \begin_layout Standard
@@ -1656,7 +1666,7 @@ Regole di necessitazione
 \begin_inset Formula $\sigma_{n}$
 \end_inset
 
- già presente nelle precedenti formule
+ già presente nei nodi precedenti
 \begin_inset Newline newline
 \end_inset
 
@@ -1672,7 +1682,630 @@ Regole di necessitazione
 \begin_inset Formula $\sigma_{n}$
 \end_inset
 
- non presente nelle pre
+ non presente nei nodi precedenti
+\end_layout
+
+\begin_layout Standard
+Tuttavia queste regole non sono sufficienti se vogliamo usare una regola
+ modale differente da K.
+\end_layout
+
+\begin_layout Standard
+Per lavorare su regole con proprietà dei frame particolari, devo necessariamente
+ cambiare le regole di necessitazione aggiungendo dei vincoli alla generazione
+ di nuovi mondi in modo tale che rispettino le proprietà del frame.
+\end_layout
+
+\begin_layout Section
+Logiche notevoli
+\end_layout
+
+\begin_layout Standard
+Abbiamo visto K essere la logica modale minima, a partire da questa logica
+ ne possiamo ottenere altre aggiungendo ad essa alcuni schemi di assiomi:
+\end_layout
+
+\begin_layout Itemize
+D : 
+\lang italian
+
+\begin_inset Formula $\boa\implies\dia$
+\end_inset
+
+ (seriale)
+\end_layout
+
+\begin_layout Itemize
+
+\lang italian
+T: 
+\begin_inset Formula $\boa\implies a$
+\end_inset
+
+ (riflessiva)
+\end_layout
+
+\begin_layout Itemize
+
+\lang italian
+4:
+\begin_inset Formula $\boa\implies\boxx{\boa}$
+\end_inset
+
+ (transitiva)
+\end_layout
+
+\begin_layout Itemize
+
+\lang italian
+B: 
+\begin_inset Formula $a\implies\boxx{\dia}$
+\end_inset
+
+ (simmetrica)
+\end_layout
+
+\begin_layout Itemize
+
+\lang italian
+5: 
+\begin_inset Formula $\diam a\implies\boxx{\diam a}$
+\end_inset
+
+ (euclidea)
+\end_layout
+
+\begin_layout Standard
+Per ognuno di questi schemi di assiomi (X) ne esiste il cosiddetto duale
+ (X
+\begin_inset Formula $\diamond$
+\end_inset
+
+), cioè lo schema che si ottine invertendo antecedente e conseguente e negando
+ 
+\begin_inset Formula $\boxx a$
+\end_inset
+
+ con 
+\begin_inset Formula $\dia$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Teorema: validità del duale 
+\end_layout
+
+\begin_layout Standard
+M sia una sequenza di connettivi 
+\begin_inset Formula $\square$
+\end_inset
+
+, 
+\begin_inset Formula $\diamond$
+\end_inset
+
+ ed M' il suo duale.
+\end_layout
+
+\begin_layout Standard
+Idem per N ed N'.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ip) 
+\begin_inset Formula $Ma\implies Nb$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ts) 
+\begin_inset Formula $N'b\implies M'a$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se vale lo schema d'assiomi 
+\begin_inset Formula $Ma$
+\end_inset
+
+ deve valere anche 
+\begin_inset Formula $M\neg a$
+\end_inset
+
+ dato che appunto è uno schema.
+\end_layout
+
+\begin_layout Standard
+Riscrivo l'ipotesi come:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M\neg a\implies N\neg b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Considero la tautologia della PL: 
+\begin_inset Formula $(C\implies D)\implies(\neg D\implies\neg C)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+la applico all'ipotesi ottenendo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(M\neg a\implies N\neg b)\implies(\neg(N\neg b)\implies\neg(M\neg a))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Da cui per MP con l'ipotesi (riscritta) ottengo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\neg(N\neg b)\implies\neg(M\neg a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Usando ripetutamente le equivalenze tra
+\begin_inset Formula $\square$
+\end_inset
+
+ e 
+\begin_inset Formula $\diamond$
+\end_inset
+
+ ottengo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N'\neg\neg b\implies M'\neg\neg a$
+\end_inset
+
+ semplificando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N'b\implies M'a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La dimostrazione nell'altro senso è del tutto simmetrica dato che le operazioni
+ effettuate sono valide in entrambe le direzioni
+\end_layout
+
+\begin_layout Subsection
+Esempio validità del duale: schema 5
+\end_layout
+
+\begin_layout Standard
+Ip) 
+\begin_inset Formula $\diam a\implies\boxx{\diam a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ts)
+\begin_inset Formula $\diamond\boxx a\implies\boxx a$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Riscrivo l'ipotesi come:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\diam{\neg a}\implies\boxx{\diam{\neg a}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Considero la tautologia della PL: 
+\begin_inset Formula $(C\implies D)\implies(\neg D\implies\neg C)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\diam{\neg a}\implies\boxx{\diam{\neg a}})\implies(\neg\boxx{\diam{\neg a}}\implies\neg\diam{\neg a})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Semplifico il conseguente :
+\begin_inset Formula $\neg\boxx{\diam{\neg a}}\implies\neg\diam{\neg a}$
+\end_inset
+
+ diventa
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\diam{\square\neg\neg a\implies\square\neg\neg a}$
+\end_inset
+
+ , semplificando i 
+\begin_inset Formula $\neg$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\diam{\square a\implies\square a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cioè la tesi.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vogliamo ora mostrare come alcune notazione della forma KX denotino la stessa
+ logica.
+\end_layout
+
+\begin_layout Standard
+Ricordiamo che con KX intendiamo la logica K a cui abbiamo aggiunto il generico
+ assioma X
+\end_layout
+
+\begin_layout Standard
+KB4 = K + assioma B + assioma 4
+\end_layout
+
+\begin_layout Subsection
+Inclusione di KD in KT
+\end_layout
+
+\begin_layout Standard
+Pare ovvio che una logica riflessiva sia anche seriale (se parlo da solo
+ parlo con qualcuno), ma dimostriamolo comunque.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ip) KT
+\end_layout
+
+\begin_layout Standard
+Ts) KD
+\begin_inset Newline newline
+\end_inset
+
+Se vale T: 
+\end_layout
+
+\begin_layout Standard
+
+\lang italian
+\begin_inset Formula $\boa\implies a$
+\end_inset
+
+
+\lang english
+ (riflessiva)
+\end_layout
+
+\begin_layout Standard
+allora vale anche il suo duale 
+\begin_inset Formula $T\diamond$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a\implies\dia$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Per la catena di implicazioni 
+\begin_inset Formula $(\implica ab,\ \implica bc,\ \mbox{\implica ac})$
+\end_inset
+
+ abbiamo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\boa\implies\dia$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cioè lo schema D
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Lemma implica in KB:
+\end_layout
+
+\begin_layout Standard
+IP)
+\begin_inset Formula $\teoremaDi{KB}\diamond C\implies D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+TS) 
+\begin_inset Formula $\teoremaDi{KB}\implica C{\boxx D}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Per Ip) 
+\begin_inset Formula $\diamond C\implies D$
+\end_inset
+
+ e quindi, dato che è un teorema della logica KB, (che è una logica normale)
+\end_layout
+
+\begin_layout Standard
+posso usare la definizione 3 equivalente di logica normale ottenendo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\square\diamond C\implies\square D$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Inoltre vale lo schema B
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $C\implies\boxx{\diam C}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Leggendo i due schemi appena scritti dal secondo al primo riconosciamo la
+ catena di implicazioni 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $(\implica ab,\ \implica bc,\ \mbox{\implica ac})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Da cui: 
+\begin_inset Formula $C\implies\boxx D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Equivalenza KB4, KB5
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Da KB4 a KB5
+\end_layout
+
+\begin_layout Standard
+Valendo 4 vale anche 4
+\begin_inset Formula $\diamond$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\diamond(\dia)\implies(\diamond a)$
+\end_inset
+
+, e tenendo conto del precedente lemma 
+\end_layout
+
+\begin_layout Standard
+(dove 
+\begin_inset Formula $C$
+\end_inset
+
+ è 
+\begin_inset Formula $\diamond a$
+\end_inset
+
+ e 
+\begin_inset Formula $B$
+\end_inset
+
+ è 
+\begin_inset Formula $\diamond a$
+\end_inset
+
+), 
+\end_layout
+
+\begin_layout Standard
+abbiamoA⇒Acioèloschema5.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Da KB5 a KB4
+\end_layout
+
+\begin_layout Standard
+Da 5 infatti deduciamo 5
+\begin_inset Formula $\diamond$
+\end_inset
+
+: 
+\begin_inset Formula $\diam{(\square a)\implies(\boa)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+, e tenuto conto della prima osservazione (con
+\begin_inset Formula $C$
+\end_inset
+
+ e
+\begin_inset Formula $B$
+\end_inset
+
+ uguali ad 
+\begin_inset Formula $a$
+\end_inset
+
+),
+\end_layout
+
+\begin_layout Standard
+abbiamo 
+\begin_inset Formula $\boa\implies\boxx{\boa}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Equivalenza 
+\series bold
+KDB4.
+ KDB5, KDB45, KTB4, KT5
+\end_layout
+
+\begin_layout Standard
+KDB4 = KDB5 = KD45, infatti aggiungendo l'assioma D a due logiche equivalenti
+ (KB4, KB5) continuano a rimanere equivalenti, aggiungere 4 a KDB5 non produce
+ alcun effetto 
+\end_layout
+
+\begin_layout Standard
+tre seguono da quanto appena detto
+\end_layout
+
+\begin_layout Standard
+Inoltre notiamo che: KT4B⊇KDB4 in quanto 
+\end_layout
+
+\begin_layout Standard
+e KT4B⊇KT5.
 \end_layout
 
 \end_body

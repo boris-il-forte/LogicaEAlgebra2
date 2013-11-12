@@ -1278,7 +1278,7 @@ per ogni
 \end_inset
 
  allora anche (schema 4) 
-\begin_inset Formula $\veraw M{\alpha}{\boxx{\boxx b}}$
+\begin_inset Formula $\veraw M\alpha{\boxx{\boxx b}}$
 \end_inset
 
  
@@ -1293,18 +1293,18 @@ dato che
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw M{\beta}b$
+\begin_inset Formula $\veraw M\beta b$
 \end_inset
 
  e 
-\begin_inset Formula $\veraw M{\beta}{\boxx b}$
+\begin_inset Formula $\veraw M\beta{\boxx b}$
 \end_inset
 
  e quindi:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw M{\beta}{b\wedge\boxx b}$
+\begin_inset Formula $\veraw M\beta{b\wedge\boxx b}$
 \end_inset
 
 
@@ -1343,7 +1343,7 @@ Sia
 \end_inset
 
  e 
-\begin_inset Formula $\veraw M{\alpha}{\boxx b}$
+\begin_inset Formula $\veraw M\alpha{\boxx b}$
 \end_inset
 
  segua 
@@ -1729,7 +1729,7 @@ T:
 
 \lang italian
 4:
-\begin_inset Formula $\boa\implies\boxx{\boa}$
+\begin_inset Formula $\boa\implies\boxx\boa$
 \end_inset
 
  (transitiva)
@@ -1739,7 +1739,7 @@ T:
 
 \lang italian
 B: 
-\begin_inset Formula $a\implies\boxx{\dia}$
+\begin_inset Formula $a\implies\boxx\dia$
 \end_inset
 
  (simmetrica)
@@ -1752,16 +1752,12 @@ B:
 \begin_inset Formula $\diam a\implies\boxx{\diam a}$
 \end_inset
 
- (euclidea)
+
 \end_layout
 
 \begin_layout Standard
-Per ognuno di questi schemi di assiomi (X) ne esiste il cosiddetto duale
- (X
-\begin_inset Formula $\diamond$
-\end_inset
-
-), cioè lo schema che si ottine invertendo antecedente e conseguente e negando
+Per ognuno di questi schemi di assiomi ne esiste il cosiddetto duale, cioè
+ lo schema che si ottine invertendo antecedente e conseguente e negando
  
 \begin_inset Formula $\boxx a$
 \end_inset
@@ -1972,354 +1968,9 @@ Semplifico il conseguente :
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\diam{\square\neg\neg a\implies\square\neg\neg a}$
+\begin_inset Formula $\diam{\square\neg\neg a\implies\square\neg\\neg}$
 \end_inset
 
- , semplificando i 
-\begin_inset Formula $\neg$
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\diam{\square a\implies\square a}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Cioè la tesi.
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Vogliamo ora mostrare come alcune notazione della forma KX denotino la stessa
- logica.
-\end_layout
-
-\begin_layout Standard
-Ricordiamo che con KX intendiamo la logica K a cui abbiamo aggiunto il generico
- assioma X
-\end_layout
-
-\begin_layout Standard
-KB4 = K + assioma B + assioma 4
-\end_layout
-
-\begin_layout Subsection
-Inclusione di KD in KT
-\end_layout
-
-\begin_layout Standard
-Pare ovvio che una logica riflessiva sia anche seriale (se parlo da solo
- parlo con qualcuno), ma dimostriamolo comunque.
- 
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Ip) KT
-\end_layout
-
-\begin_layout Standard
-Ts) KD
-\begin_inset Newline newline
-\end_inset
-
-Se vale T: 
-\end_layout
-
-\begin_layout Standard
-
-\lang italian
-\begin_inset Formula $\boa\implies a$
-\end_inset
-
-
-\lang english
- (riflessiva)
-\end_layout
-
-\begin_layout Standard
-allora vale anche il suo duale 
-\begin_inset Formula $T\diamond$
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $a\implies\dia$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Per la catena di implicazioni 
-\begin_inset Formula $(\implica ab,\ \implica bc,\ \mbox{\implica ac})$
-\end_inset
-
- abbiamo:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\boa\implies\dia$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Cioè lo schema D
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Lemma implica in KB:
-\end_layout
-
-\begin_layout Standard
-IP)
-\begin_inset Formula $\teoremaDi{KB}\diamond C\implies D$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-TS) 
-\begin_inset Formula $\teoremaDi{KB}\implica C{\boxx D}$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Per Ip) 
-\begin_inset Formula $\diamond C\implies D$
-\end_inset
-
- e quindi, dato che è un teorema della logica KB, (che è una logica normale)
-\end_layout
-
-\begin_layout Standard
-posso usare la definizione 3 equivalente di logica normale ottenendo:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\square\diamond C\implies\square D$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Inoltre vale lo schema B
-\end_layout
-
-\begin_layout Standard
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\begin_inset Formula $C\implies\boxx{\diam C}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Leggendo i due schemi appena scritti dal secondo al primo riconosciamo la
- catena di implicazioni 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-
-\begin_inset Formula $(\implica ab,\ \implica bc,\ \mbox{\implica ac})$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Da cui: 
-\begin_inset Formula $C\implies\boxx D$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Equivalenza KB4, KB5
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Da KB4 a KB5
-\end_layout
-
-\begin_layout Standard
-Valendo 4 vale anche 4
-\begin_inset Formula $\diamond$
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\diamond(\dia)\implies(\diamond a)$
-\end_inset
-
-, e tenendo conto del precedente lemma 
-\end_layout
-
-\begin_layout Standard
-(dove 
-\begin_inset Formula $C$
-\end_inset
-
- è 
-\begin_inset Formula $\diamond a$
-\end_inset
-
- e 
-\begin_inset Formula $B$
-\end_inset
-
- è 
-\begin_inset Formula $\diamond a$
-\end_inset
-
-), 
-\end_layout
-
-\begin_layout Standard
-abbiamoA⇒Acioèloschema5.
- 
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Da KB5 a KB4
-\end_layout
-
-\begin_layout Standard
-Da 5 infatti deduciamo 5
-\begin_inset Formula $\diamond$
-\end_inset
-
-: 
-\begin_inset Formula $\diam{(\square a)\implies(\boa)}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-, e tenuto conto della prima osservazione (con
-\begin_inset Formula $C$
-\end_inset
-
- e
-\begin_inset Formula $B$
-\end_inset
-
- uguali ad 
-\begin_inset Formula $a$
-\end_inset
-
-),
-\end_layout
-
-\begin_layout Standard
-abbiamo 
-\begin_inset Formula $\boa\implies\boxx{\boa}$
-\end_inset
-
-.
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Equivalenza 
-\series bold
-KDB4.
- KDB5, KDB45, KTB4, KT5
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-KDB4 = KDB5 = KD45
-\series default
-, infatti aggiungendo l'assioma D a due logiche equivalenti (KB4, KB5) continuan
-o a rimanere equivalenti;
-\end_layout
-
-\begin_layout Standard
-aggiungere 4 a KDB5 non produce alcun effetto perché lo contiene già.
-\end_layout
-
-\begin_layout Standard
-Inoltre notiamo che: 
-\series bold
-KT4B⊇KDB4
-\series default
- in quanto KT contiene KD
-\end_layout
-
-\begin_layout Standard
-e 
-\series bold
-KT4B⊇KT5
-\series default
- in quando KT4B contiene KT4 che coincide con KT5.
-\end_layout
-
-\begin_layout Standard
 
 \end_layout
 
