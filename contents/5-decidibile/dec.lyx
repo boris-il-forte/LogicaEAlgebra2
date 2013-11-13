@@ -173,7 +173,7 @@ che gode della seguente proprietà:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\Gamma_{\alpha}=\{a\in\Gamma\,|\,\veraw\mu\alpha a\}$
+\begin_inset Formula $\Gamma_{\alpha}=\{a\in\Gamma\,|\,\veraw{\mu}{\alpha}a\}$
 \end_inset
 
 
@@ -1728,21 +1728,21 @@ T:
 \begin_layout Itemize
 
 \lang italian
-4:
-\begin_inset Formula $\boa\implies\boxx{\boa}$
+B: 
+\begin_inset Formula $a\implies\boxx\dia$
 \end_inset
 
- (transitiva)
+ (simmetrica)
 \end_layout
 
 \begin_layout Itemize
 
 \lang italian
-B: 
-\begin_inset Formula $a\implies\boxx{\dia}$
+4:
+\begin_inset Formula $\boa\implies\boxx\boa$
 \end_inset
 
- (simmetrica)
+ (transitiva)
 \end_layout
 
 \begin_layout Itemize
@@ -2544,6 +2544,584 @@ fill [black] (42.27,-6.03) -- (42.6,-6.92) -- (43.21,-6.13);
 end{tikzpicture} 
 \backslash
 end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size large
+Somma diretta di Frame
+\size default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+S5 è determinata dalla classe dei frame d’ equivalenza (cioè frame in cui
+ la relazione di accessibilità è una relazione di equivalenza), S5 = KT5
+ = KTB4 (riflessiva, simmetrica, transitiva)
+\end_layout
+
+\begin_layout Standard
+S5 è determinata dalla classe dei frame universali (cioè frame in cui la
+ relazione di accessibilità è la relazione universale).
+\end_layout
+
+\begin_layout Standard
+Mostriamo (almeno argomentiamo) la seconda affermazione.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Data una collezione di frame con insiemi di mondi a due a due disgiunti,
+ si dice somma diretta di questi frame il frame che ha come insieme dei
+ mondi l’unione dell’insieme dei mondi dei frame della collezione e come
+ relazione la unione delle relazioni dei frame della collezione.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F=(S,R)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F1=(S1,R1)$
+\end_inset
+
+, 
+\begin_inset Formula $F2=(S2,R2)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F=F1\oplus F2$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $F=(S1\cup S2,\ R1\cup R2)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si dimostra che 
+\begin_inset Formula $\vera Fa$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $\vera{F1}a$
+\end_inset
+
+ e 
+\begin_inset Formula $\vera{F2}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dato che una relazione di equivalenza forma una partizione sull'insieme
+ su cui è definita, e che in ogni classe di equivalenza è una relazione
+ universale, possiamo vedere una relazione di equivalenza come somma di
+ relazioni universali e il suo insieme come somma disgiunta di insiemi;
+ la somma diretta pertanto ci mostra quindi che S5 è determinata dai frame
+ universali.
+\end_layout
+
+\begin_layout Subsection
+Tableau rivisitato per KT, KB
+\end_layout
+
+\begin_layout Standard
+Se una logica contiene l'assioma B devo aggiungere alle regole del Tableau
+\end_layout
+
+\begin_layout Itemize
+Regole di necessitazione
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\dfrac{\sigma\,\boa}{\sigma_{n}\, a}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfrac{\sigma\,\neg\dia}{\sigma_{n}\,\neg a}$
+\end_inset
+
+ -- con 
+\begin_inset Formula $\sigma_{n}$
+\end_inset
+
+ già presente nei nodi precedenti, oppure 
+\begin_inset Formula $\sigma_{n}$
+\end_inset
+
+ 
+\series bold
+nodo corrente
+\end_layout
+
+\begin_layout Standard
+es.
+ Si provi che la formula: 
+\begin_inset Formula $(\boa\implies a)$
+\end_inset
+
+ è un teorema in KB
+\end_layout
+
+\begin_layout Standard
+1: 
+\begin_inset Formula $\neg(\boa\implies a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1: 
+\begin_inset Formula $\boa$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1: 
+\begin_inset Formula $\neg a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+1
+\series default
+: 
+\begin_inset Formula $a$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (26.8,-10.8) circle (3);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (26.8,-10.8) node {1}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (26.8,-6.6) node {$
+\backslash
+boa$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (26.8,-15.1) node {$
+\backslash
+neg{a}$};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (26.7,-18.1) node {$a$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dove nell'ultimo passaggio ho usato proprio la regola appena introdotta,
+ avendo ottenuto 
+\begin_inset Formula $a$
+\end_inset
+
+ e 
+\begin_inset Formula $\neg a$
+\end_inset
+
+ nello stesso stato (mondo) deduco che negare 
+\begin_inset Formula $a$
+\end_inset
+
+ mi porta a un assurdo e quindi deve per forza essere un teorema.
+\begin_inset Newline newline
+\end_inset
+
+Se una logica contiene l'assioma T devo aggiungere alle regole del Tableau
+\end_layout
+
+\begin_layout Itemize
+Regole di necessitazione
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\dfrac{\sigma\,\boa}{\sigma_{n}\, a}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfrac{\sigma\,\neg\dia}{\sigma_{n}\,\neg a}$
+\end_inset
+
+ -- con 
+\begin_inset Formula $\sigma_{n}$
+\end_inset
+
+ già presente nei nodi precedenti, oppure 
+\begin_inset Formula $\sigma_{n}$
+\end_inset
+
+ 
+\series bold
+nodo prefisso del nodo corrente
+\series default
+ (es 11 è prefisso di 111)
+\end_layout
+
+\begin_layout Standard
+es.
+ Si provi che la formula 
+\begin_inset Formula $(a\implies\boxx{\diamond a})$
+\end_inset
+
+ è un teorema in KT
+\end_layout
+
+\begin_layout Standard
+1:
+\begin_inset Formula $\neg(a\implies\boxx{\diamond a})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1:
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1:
+\begin_inset Formula $\neg(\boxx{\dia})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1: 
+\begin_inset Formula $\diamond\boxx{\neg a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+11: 
+\begin_inset Formula $\boxx{\neg a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+1: 
+\begin_inset Formula $\neg a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.2]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (26.7,-10.8) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (26.7,-10.8) node {$1$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (26.7,-15) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (26.7,-15) node {=
+\backslash
+mbox{ }DBNA$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (26.7,-18.9) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (26.7,-18.9) node {$NA$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (39.8,-10.8) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (39.8,-10.8) node {$2$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (26.7,-6.3) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (26.7,-6.3) node {$a$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (39.8,-6.1) circle (3);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (39.8,-6.1) node {$NDA$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (39.8,-16.1) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (39.8,-16.1) node {$BNA$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (29.7,-10.8) -- (36.8,-10.8); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (36.8,-10.8) -- (36,-10.3) -- (36,-11.3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (36.8,-10.8) -- (29.7,-10.8); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (29.7,-10.8) -- (30.5,-11.3) -- (30.5,-10.3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture} 
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
