@@ -210,7 +210,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\veraw{\mu}{\beta}a\iff\veraw{\mu^{\beta}}{\beta}a$
+\begin_inset Formula $\veraw\mu\beta a\iff\veraw{\mu^{\beta}}\beta a$
 \end_inset
 
 
@@ -332,37 +332,43 @@ Ts)
 \end_layout
 
 \begin_layout Standard
-supponiamo che esistana 
-\begin_inset Formula $\gamma$
+Per ogni 
+\begin_inset Formula $\delta$
 \end_inset
 
  tale che 
-\begin_inset Formula $\beta R\gamma$
+\begin_inset Formula $\beta R^{\alpha}\delta$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-allora
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\beta\in S^{\alpha}\iff\alpha R*\beta\iff\alpha R*\delta$
+si ha che 
+\begin_inset Formula $\beta R\delta$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-allora abbiamo che:
+infatti 
+\begin_inset Formula $R^{\alpha}=R\cap S^{\alpha}\times S^{\alpha}$
+\end_inset
+
+ e quindi se 
+\begin_inset Formula $(\beta,\delta)\in R^{\alpha}$
+\end_inset
+
+ deve essere anche 
+\begin_inset Formula $(\beta,\delta)\in R$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\delta\in S^{\alpha}$
-\end_inset
-
- e 
+Dall'ipotesi 
 \family roman
 \series medium
 \shape up
@@ -375,18 +381,34 @@ allora abbiamo che:
 \noun off
 \color none
 
-\begin_inset Formula $\beta R^{\alpha}\delta\iff\beta R\delta$
+\begin_inset Formula $\veraw{\mu}{\beta}{\boxx b}$
+\end_inset
+
+, sappiamo che 
+\begin_inset Formula $b$
+\end_inset
+
+ è vera in tutti i 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ tali che 
+\begin_inset Formula $(\beta,\gamma)\in R$
+\end_inset
+
+ cioè 
+\begin_inset Formula $\vera{\mu}{_{\gamma}b}$
+\end_inset
+
+, ma per ipotesi induttiva si ha anche 
+\begin_inset Formula $\vera{\mu^{\alpha}}{_{\gamma}b}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-e quindi:
-\end_layout
-
-\begin_layout Standard
-MANCA!
+Da cui la tesi.
 \end_layout
 
 \begin_layout Subsection
@@ -511,7 +533,7 @@ Siano
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu_{1}}{\alpha}a\iff\veraw{\mu_{2}}{f(\alpha)}a$
+\begin_inset Formula $\veraw{\mu_{1}}\alpha a\iff\veraw{\mu_{2}}{f(\alpha)}a$
 \end_inset
 
 
