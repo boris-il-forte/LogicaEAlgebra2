@@ -41,7 +41,7 @@
 \end_preamble
 \use_default_options false
 \maintain_unincluded_children false
-\language english
+\language italian
 \language_package default
 \inputencoding utf8
 \fontencoding T1
@@ -210,7 +210,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\veraw\mu\beta a\iff\veraw{\mu^{\beta}}\beta a$
+\begin_inset Formula $\veraw{\mu}{\beta}a\iff\veraw{\mu^{\beta}}{\beta}a$
 \end_inset
 
 
@@ -533,7 +533,7 @@ Siano
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu_{1}}\alpha a\iff\veraw{\mu_{2}}{f(\alpha)}a$
+\begin_inset Formula $\veraw{\mu_{1}}{\alpha}a\iff\veraw{\mu_{2}}{f(\alpha)}a$
 \end_inset
 
 
@@ -981,7 +981,16 @@ beta+n$};
 
 
 \backslash
-draw [black] (73.1,-24) circle (3); 
+draw [black] (39.5,-28.6) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (39.5,-28.6) node {$
+\backslash
+beta$}; 
 \end_layout
 
 \begin_layout Plain Layout
@@ -995,30 +1004,7 @@ draw (73.1,-24) node {$a$};
 
 
 \backslash
-draw [black] (56.6,-24) circle (3);
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
 draw (56.6,-24) node {$a$}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw [black] (39.5,-28.6) circle (3); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw (39.5,-28.6) node {$
-\backslash
-beta$}; 
 \end_layout
 
 \begin_layout Plain Layout
@@ -1065,11 +1051,11 @@ boa}$};
 \backslash
 draw (6.1,-21.9) node {$
 \backslash
-boxx{
+boxx{(
 \backslash
 boa
 \backslash
-implies a}$}; 
+implies a)}$}; 
 \end_layout
 
 \begin_layout Plain Layout
