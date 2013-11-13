@@ -138,7 +138,7 @@ Con questa chiave di lettura diamo alcune dimostrazioni di determinatezza.
 \end_layout
 
 \begin_layout Section
-Determinatezza di KD rispetto ai Frame Seriali
+Serialità del frame canonico di KD
 \end_layout
 
 \begin_layout Standard
@@ -382,7 +382,7 @@ lightning
 \end_layout
 
 \begin_layout Section
-Determinatezza rispetto ai Frame Debolmente Densi
+Frame canonico debolmente denso
 \end_layout
 
 \begin_layout Standard
@@ -765,7 +765,7 @@ lightning
 \end_layout
 
 \begin_layout Section
-Determinatezza di KT rispetto ai Frame Riflessivi
+Riflessività del frame canonico di KT
 \end_layout
 
 \begin_layout Standard
@@ -842,7 +842,7 @@ Da cui segue la tesi.
 \end_layout
 
 \begin_layout Section
-Determinatezza di KB rispetto ai frame Simmetrici
+Simmetria del frame canonico di KB
 \end_layout
 
 \begin_layout Standard
