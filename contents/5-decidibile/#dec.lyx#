@@ -127,7 +127,7 @@ Dato una logica
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\teoremaDi\Lambda a\iff\vera\mu a$
+\begin_inset Formula $\teoremaDi{\Lambda}a\iff\vera{\mu}a$
 \end_inset
 
 
@@ -147,7 +147,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\exists\mu:\,\teoremaDi\Lambda a\iff\vera\mu a$
+\begin_inset Formula $\exists\mu:\,\teoremaDi{\Lambda}a\iff\vera{\mu}a$
 \end_inset
 
 
@@ -173,7 +173,7 @@ che gode della seguente proprietà:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\Gamma_{\alpha}=\{a\in\Gamma\,|\,\veraw\mu\alpha a\}$
+\begin_inset Formula $\Gamma_{\alpha}=\{a\in\Gamma\,|\,\veraw{\mu}{\alpha}a\}$
 \end_inset
 
 
@@ -2230,7 +2230,7 @@ Valendo 4 vale anche 4
 
 \begin_layout Standard
 abbiamo 
-\begin_inset Formula $\diamond a\implies\boxx\dia$
+\begin_inset Formula $\diamond a\implies\boxx{\dia}$
 \end_inset
 
  cioè lo schema5.
@@ -2277,7 +2277,7 @@ Tenuto conto della prima osservazione (con
 
 \begin_layout Standard
 abbiamo 
-\begin_inset Formula $\boa\implies\boxx\boa$
+\begin_inset Formula $\boa\implies\boxx{\boa}$
 \end_inset
 
 .
@@ -2377,7 +2377,7 @@ Dato che vale 5:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $a\implies\boxx\dia$
+\begin_inset Formula $a\implies\boxx{\dia}$
 \end_inset
 
  cioè B.
@@ -2549,10 +2549,6 @@ end{center}
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -2684,7 +2680,11 @@ nodo corrente
 
 \begin_layout Standard
 es.
- 
+ Si provi che la formula: 
+\begin_inset Formula $(\boa\implies a)$
+\end_inset
+
+ è un teorema in KB
 \end_layout
 
 \begin_layout Standard
@@ -2721,14 +2721,250 @@ es.
 \end_inset
 
  
-\begin_inset Newline newline
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (26.8,-10.8) circle (3);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (26.8,-10.8) node {1}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (26.8,-6.6) node {$
+\backslash
+boa$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (26.8,-15.1) node {$
+\backslash
+neg{a}$};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (26.7,-18.1) node {$a$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center} 
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Dove nell'ultimo passaggio ho usato proprio la regola appena introdotta
+Dove nell'ultimo passaggio ho usato proprio la regola appena introdotta,
+ avendo ottenuto 
+\begin_inset Formula $a$
+\end_inset
+
+ e 
+\begin_inset Formula $\neg a$
+\end_inset
+
+ nello stesso stato (mondo) deduco che negare 
+\begin_inset Formula $a$
+\end_inset
+
+ mi porta a un assurdo e quindi deve per forza essere un teorema.
+\begin_inset Newline newline
+\end_inset
+
+Se una logica contiene l'assioma T devo aggiungere alle regole del Tableau
+\end_layout
+
+\begin_layout Itemize
+Regole di necessitazione
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\dfrac{\sigma\,\boa}{\sigma_{n}\, a}$
+\end_inset
+
+ 
+\begin_inset Formula $\dfrac{\sigma\,\neg\dia}{\sigma_{n}\,\neg a}$
+\end_inset
+
+ -- con 
+\begin_inset Formula $\sigma_{n}$
+\end_inset
+
+ già presente nei nodi precedenti, oppure 
+\begin_inset Formula $\sigma_{n}$
+\end_inset
+
+ 
+\series bold
+nodo prefisso del nodo corrente
+\series default
+ (es 11 è prefisso di 111)
+\end_layout
+
+\begin_layout Standard
+es.
+ Si provi che la formula 
+\begin_inset Formula $(a\implies\boxx{\diamond a})$
+\end_inset
+
+ è un teorema in KT
+\end_layout
+
+\begin_layout Standard
+1:
+\begin_inset Formula $\neg(a\implies\boxx{\diamond a})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1:
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1:
+\begin_inset Formula $\neg(\boxx{\dia})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1: 
+\begin_inset Formula $\diamond\boxx{\neg a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+11: 
+\begin_inset Formula $\boxx{\neg a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+1: 
+\begin_inset Formula $\neg a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

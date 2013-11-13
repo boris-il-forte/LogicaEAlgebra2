@@ -127,7 +127,7 @@ Dato una logica
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\teoremaDi{\Lambda}a\iff\vera{\mu}a$
+\begin_inset Formula $\teoremaDi\Lambda a\iff\vera\mu a$
 \end_inset
 
 
@@ -147,7 +147,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\exists\mu:\,\teoremaDi{\Lambda}a\iff\vera{\mu}a$
+\begin_inset Formula $\exists\mu:\,\teoremaDi\Lambda a\iff\vera\mu a$
 \end_inset
 
 
@@ -173,7 +173,7 @@ che gode della seguente proprietà:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\Gamma_{\alpha}=\{a\in\Gamma\,|\,\veraw{\mu}{\alpha}a\}$
+\begin_inset Formula $\Gamma_{\alpha}=\{a\in\Gamma\,|\,\veraw\mu\alpha a\}$
 \end_inset
 
 
@@ -2944,92 +2944,49 @@ status open
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
 
 \backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
+begin{center} 
 \backslash
-begin{tikzpicture}[scale=0.2]
-\end_layout
-
-\begin_layout Plain Layout
-
-
+begin{tikzpicture}[scale=0.2] 
 \backslash
 tikzstyle{every node}+=[inner sep=0pt] 
-\end_layout
-
-\begin_layout Plain Layout
-
-
 \backslash
 draw [black] (26.7,-10.8) circle (3); 
+\backslash
+draw (26.7,-10.8) node {$1$};
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-draw (26.7,-10.8) node {$1$}; 
+draw (26.7,-14.9) node {$
+\backslash
+neg(
+\backslash
+boxx{
+\backslash
+dia})=
+\backslash
+diamond
+\backslash
+boxx{
+\backslash
+neg a}$};
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-draw [black] (26.7,-15) circle (3); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+draw (26.7,-18.3) node {$
 \backslash
-draw (26.7,-15) node {=
-\backslash
-mbox{ }DBNA$}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw [black] (26.7,-18.9) circle (3); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw (26.7,-18.9) node {$NA$}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+neg a$}; 
 \backslash
 draw [black] (39.8,-10.8) circle (3); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
 \backslash
-draw (39.8,-10.8) node {$2$}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw [black] (26.7,-6.3) circle (3); 
+draw (39.8,-10.8) node {$2$};
 \end_layout
 
 \begin_layout Plain Layout
@@ -3043,81 +3000,34 @@ draw (26.7,-6.3) node {$a$};
 
 
 \backslash
-draw [black] (39.8,-6.1) circle (3);
+draw (39.8,-6.1) node {$
+\backslash
+neg
+\backslash
+diamond a$};
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-draw (39.8,-6.1) node {$NDA$};
-\end_layout
-
-\begin_layout Plain Layout
-
-
+draw (39.8,-16.1) node {$
 \backslash
-draw [black] (39.8,-16.1) circle (3); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+square
 \backslash
-draw (39.8,-16.1) node {$BNA$}; 
-\end_layout
-
-\begin_layout Plain Layout
-
-
+neg a$}; 
 \backslash
 draw [black] (29.7,-10.8) -- (36.8,-10.8); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
 \backslash
 fill [black] (36.8,-10.8) -- (36,-10.3) -- (36,-11.3); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
 \backslash
 draw [black] (36.8,-10.8) -- (29.7,-10.8); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
 \backslash
 fill [black] (29.7,-10.8) -- (30.5,-11.3) -- (30.5,-10.3); 
-\end_layout
-
-\begin_layout Plain Layout
-
-
 \backslash
 end{tikzpicture} 
 \backslash
 end{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \begin_layout Plain Layout
