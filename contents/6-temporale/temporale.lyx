@@ -185,7 +185,7 @@ e la valutazione tale che:
 \end_layout
 
 \begin_layout Subsection
-Teorema
+Lemma
 \end_layout
 
 \begin_layout Standard
@@ -325,18 +325,18 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\veraw{\mu^{\alpha}}{\beta}a$
+\begin_inset Formula $\veraw{\mu^{\alpha}}{\beta}{\boxx b}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-supponiamo che esistano 
-\begin_inset Formula $\beta,\,\gamma\in S^{\alpha}$
+supponiamo che esistana 
+\begin_inset Formula $\gamma$
 \end_inset
 
-tali che 
+ tale che 
 \begin_inset Formula $\beta R\gamma$
 \end_inset
 
@@ -344,21 +344,491 @@ tali che
 \end_layout
 
 \begin_layout Standard
-allora poichè uno stato può essere in 
-\begin_inset Formula $S^{\alpha}$
-\end_inset
-
- solo se è in relazione con 
-\begin_inset Formula $\alpha$
-\end_inset
-
- tramite R*: 
+allora
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\forall\gamma\in S\,(\beta,\,\gamma)\in R\,\cap\, S^{\alpha}\times S^{\alpha}=R^{\alpha}$
+\begin_inset Formula $\beta\in S^{\alpha}\iff\alpha R*\beta\iff\alpha R*\delta$
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+allora abbiamo che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta\in S^{\alpha}$
+\end_inset
+
+ e 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\beta R^{\alpha}\delta\iff\beta R\delta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e quindi:
+\end_layout
+
+\begin_layout Standard
+MANCA!
+\end_layout
+
+\begin_layout Subsection
+Corollario
+\end_layout
+
+\begin_layout Standard
+Valgono le seguenti:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera{\mu}a\implies\vera{\mu^{\alpha}}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera{\mu}a\iff\vera{\mu^{\alpha}}a\,\forall\alpha\in S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera Fa\iff\vera{F^{\alpha}}a\,\forall\alpha\in S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+p-Morfismo
+\end_layout
+
+\begin_layout Standard
+siano 
+\begin_inset Formula $F_{1}(S_{1},\, R_{1}),\, F_{2}(S_{2},\, R_{2})$
+\end_inset
+
+ frame.
+\end_layout
+
+\begin_layout Standard
+c'è un p-morfismo (pseudo-morfismo) tra 
+\begin_inset Formula $F_{1}$
+\end_inset
+
+ e 
+\begin_inset Formula $F_{2}$
+\end_inset
+
+ se esiste una applicazione che gode delle seguenti proprietà:
+\end_layout
+
+\begin_layout Standard
+1) 
+\begin_inset Formula $(\alpha,\,\beta)\in R_{1}\implies(f(\alpha),\, f(\beta))\in R_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2) 
+\begin_inset Formula $(f(\alpha),\,\eta)\in R_{2}\implies\exists\beta\in S_{1}\,:\, f(\beta)=\eta\,\wedge\,(\alpha,\,\beta)\in R_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Considerati poi due modelli 
+\begin_inset Formula $M_{1}(F_{1},\, V_{1}),\, M_{2}(F_{2},\, V_{2})$
+\end_inset
+
+, esiste un p-morfismo tra 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ e 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+se vale la proprietà:
+\end_layout
+
+\begin_layout Standard
+3) 
+\begin_inset Formula $\alpha\in V_{1}(A)\iff f(\alpha)\in V_{2}(A)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+se f è suriettiva, allora il p-morfismo si dice suriettivo
+\end_layout
+
+\begin_layout Subsection
+Lemma
+\end_layout
+
+\begin_layout Standard
+Siano 
+\begin_inset Formula $\mu_{1}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mu_{2}$
+\end_inset
+
+ due modelli e f un p-morfismo di 
+\begin_inset Formula $\mu_{1}$
+\end_inset
+
+ su 
+\begin_inset Formula $\mu_{2}$
+\end_inset
+
+, allora: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu_{1}}{\alpha}a\iff\veraw{\mu_{2}}{f(\alpha)}a$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Siano 
+\begin_inset Formula $F_{1}$
+\end_inset
+
+e 
+\begin_inset Formula $F_{2}$
+\end_inset
+
+ due frame e f un p-morfismo suriettivo di 
+\begin_inset Formula $F_{1}$
+\end_inset
+
+su 
+\begin_inset Formula $F_{2}$
+\end_inset
+
+, allora:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera{F_{1}}a\implies\vera{F_{2}}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Frame (w, <)
+\end_layout
+
+\begin_layout Standard
+Il frame (w, <) è il frame che rappresenta la retta dei numeri naturali.
+\end_layout
+
+\begin_layout Standard
+E' adatto a rappresentare il tempo discreto continuocon un istante iniziale.
+\end_layout
+
+\begin_layout Standard
+La logica che rappresenta questo frame è la logica K4DLZ, che è corretta
+ e completa rispetto a (w, <)
+\end_layout
+
+\begin_layout Section
+La logica K4DLZ
+\end_layout
+
+\begin_layout Standard
+la logica K4DLZ, detta anche logica 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ è la logicha che ha, oltre all'assioma K, i seguenti assiomi:
+\end_layout
+
+\begin_layout Itemize
+4: 
+\begin_inset Formula $\boa\implies\boxx{\boa}$
+\end_inset
+
+ --> transitività
+\end_layout
+
+\begin_layout Itemize
+D: 
+\begin_inset Formula $\boa\implies\dia$
+\end_inset
+
+ --> serialità
+\end_layout
+
+\begin_layout Itemize
+L: 
+\begin_inset Formula $\boxx{(a\wedge\boa\implies b)}\vee\boxx{(b\wedge\boxx b\implies a)}$
+\end_inset
+
+ --> debole connessione
+\end_layout
+
+\begin_layout Itemize
+Z: 
+\begin_inset Formula $\boxx{(\boa\implies a)\implies(\diam{\boa}\implies\boa)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+L'azssioma Z, non ha alcuna interpretazione preso a se stante, ma in combinazion
+e con gli altri implica che tra due mondi connessi c'è solo un numero finito
+ di mondi, a due a due connessi.
+\end_layout
+
+\begin_layout Section
+Correttezza di K4DLZ
+\end_layout
+
+\begin_layout Standard
+Ip) 
+\begin_inset Formula $\teolm{\Omega}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ts) 
+\begin_inset Formula $\vera{(w,<)}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Per dimostrare questo teorema dobbiamo dimostrare che ogni teorema di K4DLZ
+ è una formula valida.
+ Poichè ogni teorema di 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ è una serie di applicazioni degli assiomi o delle regole di inferenza,
+ dobbiamo assicurare che:
+\end_layout
+
+\begin_layout Enumerate
+Modus Ponens e la regola di necessitazione fanno passare da formule valide
+ a formule valide.
+ Come abbiamo dimostrato, questo è sempre vero.
+\end_layout
+
+\begin_layout Enumerate
+Gli assiomi siano formule valide:
+\end_layout
+
+\begin_layout Itemize
+A1, A2, A3, K sono validi su ogni frame, e quindi sono validi anche su (w,
+ <)
+\end_layout
+
+\begin_layout Itemize
+4 è valido su ogni frame transitivo, e quindi è valido anche su (w, <) essendo
+ transitivo
+\end_layout
+
+\begin_layout Itemize
+D è valido su ogni frame seriale, e quindi è valido anche su (w, <) essendo
+ seriale.
+\end_layout
+
+\begin_layout Itemize
+L è valido su ogni frame debolmente connesso, e quindi è valido anche su
+ (w, <) essendo debolmente connesso.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dobiamo quindi dimostrare solo la validità di Z.
+\end_layout
+
+\begin_layout Standard
+Z è l'assioma 
+\begin_inset Formula $\boxx{(\boa\implies a)\implies(\diam{\boa}\implies\boa)}$
+\end_inset
+
+, per dimostrare che è valido basta considerare il caso in cui gli antecedenti
+ delle implicazioni siano validi
+\end_layout
+
+\begin_layout Standard
+supponiamo dunque che esistano due mondi 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ e 
+\begin_inset Formula $\beta$
+\end_inset
+
+ con 
+\begin_inset Formula $\alpha<\beta$
+\end_inset
+
+ tali che
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{(w,\,<)}{\alpha}{\boxx{(\boa\implies a)}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\veraw{(w,\,<)}{\alpha}{\diam{\boa}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{(w,\,<)}{\beta}{\boa}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+allora da quest'ultima, viste le altre proprietà del frame, 
+\begin_inset Formula $\forall\eta>\beta$
+\end_inset
+
+ avremo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{(w,\,<)}{\eta}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+dalla prima invece abbiamo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{(w,\,<)}{\beta}{\boa\implies a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e allora, applicando il modus ponens
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{(w,\,<)}{\beta}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ma, allora possiamo applicare lo stesso ragionamento per 
+\begin_inset Formula $\beta-1$
+\end_inset
+
+, poichè:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{(w,\,<)}{\beta-1}{\boa}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ma, siccome esiste un numero finito di mondi tra 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ e 
+\begin_inset Formula $\beta$
+\end_inset
+
+, arriveremo a un certo punto a provare che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{(w,\,<)}{\alpha+1}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e quindi:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{(w,\,<)}{\alpha}{\boa}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e la tesi è dimostrata.
+\end_layout
+
+\begin_layout Section
+Completezza di K4DLZ
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
