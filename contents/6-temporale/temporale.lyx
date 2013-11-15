@@ -1932,5 +1932,451 @@ Sia
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula $\approx$
+\end_inset
+
+è una relazione di equivalenza infatti:
+\end_layout
+
+\begin_layout Standard
+è riflessiva per costruzione 
+\end_layout
+
+\begin_layout Standard
+è simmetrica infatti: 
+\begin_inset Formula $\alpha\approx\beta$
+\end_inset
+
+ 
+\begin_inset Formula $(\alpha\neq\beta)$
+\end_inset
+
+se e solo se: 
+\begin_inset Formula $(\alpha R\beta)\ e\ (\beta R\alpha)$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $\beta\approx\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+è transitiva infatti: 
+\begin_inset Formula $\alpha\approx\beta$
+\end_inset
+
+, 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $\beta\approx\gamma$
+\end_inset
+
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang italian
+se e solo se: 
+\begin_inset Formula $(\alpha R\beta)\ e\ (\beta R\alpha)$
+\end_inset
+
+ e 
+\begin_inset Formula $(\gamma R\beta)\ e\ (\beta R\gamma)$
+\end_inset
+
+, per la transitività di 
+\begin_inset Formula $R$
+\end_inset
+
+ si ha anche 
+\begin_inset Formula $(\alpha R\gamma),\ (\gamma R\alpha)$
+\end_inset
+
+ da cui: 
+\begin_inset Formula $\alpha\approx\gamma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Per questi motivi 
+\begin_inset Formula $\approx$
+\end_inset
+
+è una relazione d'equivalenza, e come tale partiziona l'insieme 
+\begin_inset Formula $S$
+\end_inset
+
+ e ne definisce un insieme quoziente 
+\begin_inset Formula $S/\approx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Chiamiamo R-cluster la classe di equivalenza
+\begin_inset Formula $C_{\alpha}$
+\end_inset
+
+ di 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, e definiamo in modo abbastanza naturale la relazione di 
+\begin_inset Formula $\leq$
+\end_inset
+
+nel modo seguente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C_{\alpha}\leq C_{\beta}$
+\end_inset
+
+ se e solo se: 
+\begin_inset Formula $\alpha R\beta$
+\end_inset
+
+ oppure 
+\begin_inset Formula $C_{\alpha}=C_{\beta}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C_{\alpha}<C_{\beta}$
+\end_inset
+
+ se e solo se: 
+\begin_inset Formula $\alpha R\beta$
+\end_inset
+
+ e 
+\begin_inset Formula $C_{\alpha}\neq C_{\beta}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\backslash
+draw [black] (5.1,-5.6) circle (3); 
+\backslash
+draw (5.1,-5.6) node {$1$}; 
+\backslash
+draw [black] (5.2,-16.1) circle (3); 
+\backslash
+draw (5.2,-16.1) node {$2$}; 
+\backslash
+draw [black] (5.2,-28.2) circle (3); 
+\backslash
+draw (5.2,-28.2) node {$3$}; 
+\backslash
+draw [black] (14.4,-7) circle (3); 
+\backslash
+draw (14.4,-7) node {$4$}; 
+\backslash
+draw [black] (25.3,-10.6) circle (3); 
+\backslash
+draw (25.3,-10.6) node {$5$}; 
+\backslash
+draw [black] (14.4,-19.4) circle (3); 
+\backslash
+draw (14.4,-19.4) node {$6$}; 
+\backslash
+draw [black] (44.3,-5.7) circle (3); 
+\backslash
+draw (44.3,-5.7) node {$1$}; 
+\backslash
+draw [black] (44.3,-14.5) circle (3); 
+\backslash
+draw (44.3,-14.5) node {$2$}; 
+\backslash
+draw [black] (44.3,-25.2) circle (3); 
+\backslash
+draw (44.3,-25.2) node {$3$}; 
+\backslash
+draw [black] (55.5,-5.7) circle (3); 
+\backslash
+draw (55.5,-5.7) node {$4$}; 
+\backslash
+draw [black] (71.7,-5.7) circle (3); 
+\backslash
+draw (71.7,-5.7) node {$5$}; 
+\backslash
+draw [black] (64.3,-16.1) circle (3); 
+\backslash
+draw (64.3,-16.1) node {$6$}; 
+\backslash
+draw [black] (44.3,-38.1) circle (4); 
+\backslash
+draw (44.3,-38.1) node {$1$}; 
+\backslash
+draw [black] (44.3,-50.2) circle (4); 
+\backslash
+draw (44.3,-50.2) node {$2=3$}; 
+\backslash
+draw [black] (64.3,-38.1) circle (5); 
+\backslash
+draw (64.3,-38.1) node {$4=5=6$}; 
+\backslash
+draw [black] (5.13,-8.6) -- (5.17,-13.1); 
+\backslash
+fill [black] (5.17,-13.1) -- (5.66,-12.3) -- (4.66,-12.3); 
+\backslash
+draw (4.64,-10.85) node [left] {$R$}; 
+\backslash
+draw [black] (5.2,-19.1) -- (5.2,-25.2); 
+\backslash
+fill [black] (5.2,-25.2) -- (5.7,-24.4) -- (4.7,-24.4); 
+\backslash
+draw (4.7,-22.15) node [left] {$R$}; 
+\backslash
+draw [black] (5.2,-25.2) -- (5.2,-19.1); 
+\backslash
+fill [black] (5.2,-19.1) -- (4.7,-19.9) -- (5.7,-19.9); 
+\backslash
+draw [black] (7.37,-26.13) -- (12.23,-21.47); 
+\backslash
+fill [black] (12.23,-21.47) -- (11.31,-21.67) -- (12,-22.39); 
+\backslash
+draw [black] (14.4,-10) -- (14.4,-16.4); 
+\backslash
+fill [black] (14.4,-16.4) -- (14.9,-15.6) -- (13.9,-15.6); 
+\backslash
+draw (13.9,-13.2) node [left] {$R$}; 
+\backslash
+draw [black] (14.4,-16.4) -- (14.4,-10); 
+\backslash
+fill [black] (14.4,-10) -- (13.9,-10.8) -- (14.9,-10.8); 
+\backslash
+draw [black] (17.25,-7.94) -- (22.45,-9.66); 
+\backslash
+fill [black] (22.45,-9.66) -- (21.85,-8.93) -- (21.53,-9.88); 
+\backslash
+draw (18.83,-9.34) node [below] {$R$}; 
+\backslash
+draw [black] (22.45,-9.66) -- (17.25,-7.94); 
+\backslash
+fill [black] (17.25,-7.94) -- (17.85,-8.67) -- (18.17,-7.72); 
+\backslash
+draw [black] (22.97,-12.48) -- (16.73,-17.52); 
+\backslash
+fill [black] (16.73,-17.52) -- (17.67,-17.4) -- (17.04,-16.62); 
+\backslash
+draw [black] (16.73,-17.52) -- (22.97,-12.48); 
+\backslash
+fill [black] (22.97,-12.48) -- (22.03,-12.6) -- (22.66,-13.38); 
+\backslash
+draw (21.01,-15.49) node [below] {$R$}; 
+\backslash
+draw [black] (12.23,-21.47) -- (7.37,-26.13); 
+\backslash
+fill [black] (7.37,-26.13) -- (8.29,-25.93) -- (7.6,-25.21); 
+\backslash
+draw (8.63,-23.32) node [above] {$R$}; 
+\backslash
+draw [black] (44.3,-17.5) -- (44.3,-22.2); 
+\backslash
+fill [black] (44.3,-22.2) -- (44.8,-21.4) -- (43.8,-21.4); 
+\backslash
+draw (43.8,-19.85) node [left] {$
+\backslash
+approx$}; 
+\backslash
+draw [black] (44.3,-22.2) -- (44.3,-17.5); 
+\backslash
+fill [black] (44.3,-17.5) -- (43.8,-18.3) -- (44.8,-18.3); 
+\backslash
+draw [black] (58.5,-5.7) -- (68.7,-5.7); 
+\backslash
+fill [black] (68.7,-5.7) -- (67.9,-5.2) -- (67.9,-6.2); 
+\backslash
+draw (63.6,-6.2) node [below] {$
+\backslash
+approx$}; 
+\backslash
+draw [black] (68.7,-5.7) -- (58.5,-5.7); 
+\backslash
+fill [black] (58.5,-5.7) -- (59.3,-6.2) -- (59.3,-5.2); 
+\backslash
+draw [black] (57.44,-7.99) -- (62.36,-13.81); 
+\backslash
+fill [black] (62.36,-13.81) -- (62.23,-12.88) -- (61.46,-13.52); 
+\backslash
+draw (59.35,-12.34) node [left] {$
+\backslash
+approx$}; 
+\backslash
+draw [black] (66.04,-13.66) -- (69.96,-8.14); 
+\backslash
+fill [black] (69.96,-8.14) -- (69.09,-8.51) -- (69.9,-9.09); 
+\backslash
+draw (68.59,-12.27) node [right] {$
+\backslash
+approx$}; 
+\backslash
+draw [black] (69.96,-8.14) -- (66.04,-13.66); 
+\backslash
+fill [black] (66.04,-13.66) -- (66.91,-13.29) -- (66.1,-12.71); 
+\backslash
+draw [black] (62.36,-13.81) -- (57.44,-7.99); 
+\backslash
+fill [black] (57.44,-7.99) -- (57.57,-8.92) -- (58.34,-8.28); 
+\backslash
+draw [black] (41.62,-7.023) arc (-36:-324:2.25); 
+\backslash
+draw (37.05,-5.7) node [left] {$
+\backslash
+approx$}; 
+\backslash
+fill [black] (41.62,-4.38) -- (41.27,-3.5) -- (40.68,-4.31); 
+\backslash
+draw [black] (44.3,-41.1) -- (44.3,-47.2); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (44.3,-47.2) -- (44.8,-46.4) -- (43.8,-46.4); 
+\backslash
+draw (43.8,-44.15) node [left] {$<$}; 
+\backslash
+draw [black] (46.87,-48.65) -- (61.73,-39.65); 
+\backslash
+fill [black] (61.73,-39.65) -- (60.79,-39.64) -- (61.31,-40.49); 
+\backslash
+draw (55.35,-44.65) node [below] {$<$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture} 
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se un R-cluster C contiene più di un elemento, la relazione R è riflessiva
+ su 
+\begin_inset Formula $C$
+\end_inset
+
+ e si ha 
+\begin_inset Formula $C\leq C$
+\end_inset
+
+, infatti detti 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ e 
+\begin_inset Formula $\beta$
+\end_inset
+
+ due elementi di 
+\begin_inset Formula $C$
+\end_inset
+
+ si ha 
+\begin_inset Formula $\alpha R\beta$
+\end_inset
+
+ e 
+\begin_inset Formula $\beta R\alpha$
+\end_inset
+
+ quindi, per la transitività di 
+\begin_inset Formula $R$
+\end_inset
+
+ 
+\begin_inset Formula $\alpha R\alpha$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+inoltre 
+\begin_inset Formula $C=$
+\end_inset
+
+
+\begin_inset Formula $C_{\alpha}\leq C\alpha$
+\end_inset
+
+ 
+\begin_inset Formula $=C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Se non è 
+\begin_inset Formula $C\leq C$
+\end_inset
+
+, l’R-cluster 
+\begin_inset Formula $C$
+\end_inset
+
+ si dice degenere ed è formato da un unico elemento 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ per il quale non risulta 
+\begin_inset Formula $\alpha R\alpha$
+\end_inset
+
+ 
+\end_layout
+
 \end_body
 \end_document
