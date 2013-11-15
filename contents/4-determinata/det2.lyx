@@ -382,7 +382,7 @@ lightning
 \end_layout
 
 \begin_layout Section
-Frame canonico debolmente denso
+Debole densità del frame canonico di KL
 \end_layout
 
 \begin_layout Standard
@@ -397,15 +397,11 @@ Frame canonico debolmente denso
 \end_layout
 
 \begin_layout Standard
-Chiamiamo 
-\begin_inset Formula $\Lambda$
-\end_inset
-
- una costruita a partire dalla logica 
+Chiamiamo KL una logica costruita a partire dalla logica 
 \begin_inset Formula $K$
 \end_inset
 
- aggiungendo lo schema: 
+ aggiungendo lo schema L: 
 \begin_inset Formula $\dia\implies\diam{\diam a}$
 \end_inset
 
@@ -433,7 +429,7 @@ Per assurdo:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\teoremaDi{\Lambda}\andoria{_{n}\wedge\diam{b_{1}\wedge...\wedge\diam{b_{n}}}}\implies\bot$
+\begin_inset Formula $\teoremaDi{KL}\andoria{_{n}\wedge\diam{b_{1}\wedge...\wedge\diam{b_{n}}}}\implies\bot$
 \end_inset
 
 
@@ -460,7 +456,7 @@ dove
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\teoremaDi{\Lambda}\andoria{_{n}}\implies\neg(\diamond b_{1}\wedge...\wedge\diamond b_{n})$
+\begin_inset Formula $\teoremaDi{KL}\andoria{_{n}}\implies\neg(\diamond b_{1}\wedge...\wedge\diamond b_{n})$
 \end_inset
 
 
@@ -485,7 +481,7 @@ Teorema al volo:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\teorema{\neg(\diamond c\wedge\diamond d)\implies\neg\diamond(c\wedge d)}$
+\begin_inset Formula $\teoremaDi{KL}\neg(\diamond c\wedge\diamond d)\implies\neg\diamond(c\wedge d)$
 \end_inset
 
 , cioè:
@@ -494,7 +490,7 @@ Teorema al volo:
 \begin_layout Standard
 
 \series bold
-\begin_inset Formula $\teorema{\diamond(c\wedge d)\implies\diamond c\wedge\diamond d}$
+\begin_inset Formula $\teoremaDi{KL}\diamond(c\wedge d)\implies\diamond c\wedge\diamond d$
 \end_inset
 
 
@@ -661,7 +657,7 @@ portiamo fuori
 \noun off
 \color none
 \lang english
-\begin_inset Formula $\teoremaDi{\Lambda}\andoria{_{n}}\implies\neg\diamond(b_{1}\wedge...\wedge\diamond b_{n})$
+\begin_inset Formula $\teoremaDi{KL}\andoria{_{n}}\implies\neg\diamond(b_{1}\wedge...\wedge\diamond b_{n})$
 \end_inset
 
 
@@ -681,7 +677,7 @@ portiamo fuori
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\teoremaDi{\Lambda}\andoria{_{n}}\implies\neg\diamond b$
+\begin_inset Formula $\teoremaDi{KL}\andoria{_{n}}\implies\neg\diamond b$
 \end_inset
 
  
@@ -693,14 +689,14 @@ Uso la definizione 2.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\teoremaDi{\Lambda}\andbox{_{n}}\implies\boxx{\neg\diamond b}$
+\begin_inset Formula $\teoremaDi{KL}\andbox{_{n}}\implies\boxx{\neg\diamond b}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\teoremaDi{\Lambda}\andbox{_{n}}\implies\neg\diamond\diamond b$
+\begin_inset Formula $\teoremaDi{KL}\andbox{_{n}}\implies\neg\diamond\diamond b$
 \end_inset
 
 
