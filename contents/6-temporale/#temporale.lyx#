@@ -882,7 +882,7 @@ Ma, allora possiamo applicare lo stesso ragionamento per
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{(w,\,<)}{\beta-1}\boa$
+\begin_inset Formula $\veraw{(w,\,<)}{\beta-1}{\boa}$
 \end_inset
 
 
@@ -1184,7 +1184,7 @@ e quindi:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{(w,\,<)}\alpha\boa$
+\begin_inset Formula $\veraw{(w,\,<)}{\alpha}{\boa}$
 \end_inset
 
 
@@ -1314,7 +1314,7 @@ Ip)
 
 \begin_layout Standard
 Ts)
-\begin_inset Formula $\teolm\Omega a$
+\begin_inset Formula $\teolm{\Omega}a$
 \end_inset
 
  
@@ -1336,7 +1336,7 @@ Per assurdo supponiamo che non valga la tesi, cioè che
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonTeor\Omega a$
+\begin_inset Formula $\nonTeor{\Omega}a$
 \end_inset
 
 , per il lemma di verità si ha anche 
@@ -1368,7 +1368,7 @@ Dato che
 \end_inset
 
  in cui 
-\begin_inset Formula $\nonveraw{M_{1}}\alpha a$
+\begin_inset Formula $\nonveraw{M_{1}}{\alpha}a$
 \end_inset
 
 
@@ -2303,11 +2303,15 @@ end{center}
 
 \begin_layout Standard
 Se un R-cluster C contiene più di un elemento, la relazione R è riflessiva
- su C e si ha C 
-\begin_inset Formula $\leq$
+ su 
+\begin_inset Formula $C$
 \end_inset
 
- C, infatti detti 
+ e si ha 
+\begin_inset Formula $C\leq C$
+\end_inset
+
+, infatti detti 
 \begin_inset Formula $\alpha$
 \end_inset
 
@@ -2315,7 +2319,11 @@ Se un R-cluster C contiene più di un elemento, la relazione R è riflessiva
 \begin_inset Formula $\beta$
 \end_inset
 
- due elementi di C si ha 
+ due elementi di 
+\begin_inset Formula $C$
+\end_inset
+
+ si ha 
 \begin_inset Formula $\alpha R\beta$
 \end_inset
 
@@ -2323,7 +2331,11 @@ Se un R-cluster C contiene più di un elemento, la relazione R è riflessiva
 \begin_inset Formula $\beta R\alpha$
 \end_inset
 
- quindi, per la transitività di R 
+ quindi, per la transitività di 
+\begin_inset Formula $R$
+\end_inset
+
+ 
 \begin_inset Formula $\alpha R\alpha$
 \end_inset
 
@@ -2344,9 +2356,234 @@ inoltre
 \end_inset
 
 .
- Se non è C ≤ C, l’R-cluster C si dice degenere ed è formato da un unico
- elemento α per il quale non risulta αRα.
+\end_layout
+
+\begin_layout Standard
+Se non è 
+\begin_inset Formula $C\leq C$
+\end_inset
+
+, l’R-cluster 
+\begin_inset Formula $C$
+\end_inset
+
+ si dice degenere ed è formato da un unico elemento 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ per il quale non risulta 
+\begin_inset Formula $\alpha R\alpha$
+\end_inset
+
  
+\end_layout
+
+\begin_layout Section
+Z-Lemma
+\end_layout
+
+\begin_layout Standard
+preso un modello 
+\begin_inset Formula $\mu$
+\end_inset
+
+ finito, seriale, transitivo, connesso, su cui è vero l'assioma Z, se la
+ formula 
+\begin_inset Formula $\boxx b$
+\end_inset
+
+ è falsa in un mondo 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ che non appartenga all'ultimo R-cluster allora esiste in 
+\begin_inset Formula $\beta$
+\end_inset
+
+ in un cluster successivo 
+\begin_inset Formula $c_{\alpha}$
+\end_inset
+
+ in cui b è falso.
+\end_layout
+
+\begin_layout Standard
+Ip) 
+\begin_inset Formula $\mu$
+\end_inset
+
+ finito, seriale, transitivo, connesso e vale Z.
+ In un cluster 
+\begin_inset Formula $C_{\alpha}$
+\end_inset
+
+ esiste un mondo 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ in cui non vale 
+\begin_inset Formula $\boxx b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ts) 
+\begin_inset Formula $\nonveraw{\mu}{\beta}b$
+\end_inset
+
+ per tutti i 
+\begin_inset Formula $\beta$
+\end_inset
+
+ appartenenti a r-cluster successivi a 
+\begin_inset Formula $C_{\alpha}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Per assurdo, supponiamo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\beta}b$
+\end_inset
+
+ per ogni 
+\begin_inset Formula $\beta$
+\end_inset
+
+ appartenente ai cluster successivi a 
+\begin_inset Formula $C_{\alpha}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+allora deve valere
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonveraw{\mu}{\delta}b$
+\end_inset
+
+ in qualche mondo 
+\begin_inset Formula $\delta$
+\end_inset
+
+ tale che 
+\begin_inset Formula $C_{\alpha}=C_{\delta}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+allora, poichè la trelazione è transitiva e connessa, abbiamo che
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonveraw{\mu}{\gamma}{\boxx b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e quindi, per questo possiamo dire che vale:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\gamma}{\boxx b\implies b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+per ogni cluster precedente a 
+\begin_inset Formula $C_{\alpha}$
+\end_inset
+
+ e a 
+\begin_inset Formula $C_{\alpha}$
+\end_inset
+
+stesso, essendo falso il suo antecedente.
+\end_layout
+
+\begin_layout Standard
+ma poichè in tutti i mondi successivi è vera b, allora in tutti i mondi
+ del modello è vera:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera{\mu}{\boxx{(\boxx{b\implies b)}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Però applicando a questo punto il modus ponens all'assioma Z e alla precedente
+ abbiamo che vale:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera{\mu}{\diam{\boxx b}\implies\boxx b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Poichè per tutti i mondi dopo 
+\begin_inset Formula $C_{\alpha}$
+\end_inset
+
+ è vera b, allora è vera anche 
+\begin_inset Formula $\boxx b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ma allora in 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ vale:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\alpha}{\diam{\boxx b}}$
+\end_inset
+
+ poichè esistono dei mondi raggiungibili in cui è vera 
+\begin_inset Formula $\boxx b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ma allora per Modus Ponens, è vale anche:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A
 \end_layout
 
 \end_body
