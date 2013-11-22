@@ -2744,5 +2744,50 @@ ma allora per Modus Ponens, è vale anche:
 Assurdo! La tesi allora deve essere valida.
 \end_layout
 
+\begin_layout Section
+Altre logiche temporali
+\end_layout
+
+\begin_layout Standard
+Ci sono altre due logiche temporali interessanti:
+\end_layout
+
+\begin_layout Enumerate
+K4DLDum, corretta e completa sul frame (w, 
+\begin_inset Formula $\leq$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+K4DLX corretta e completa sui frame (Q,<) e (R,<)
+\end_layout
+
+\begin_layout Standard
+Dove all'assioma Z vengono sostituiti rispettivamente:
+\end_layout
+
+\begin_layout Itemize
+Dum: 
+\begin_inset Formula $\boxx{(\boa\implies a)\implies(\diam{\boa}\implies\boa)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+X: 
+\begin_inset Formula $\boxx{\boa}\implies\boa$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Come si può notare non si può distinguere un tempo numerabile da un tempo
+ continuo.
+\end_layout
+
 \end_body
 \end_document
