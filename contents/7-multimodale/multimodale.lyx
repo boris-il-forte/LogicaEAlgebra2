@@ -942,6 +942,284 @@ Distinzione tra (
  ,<)
 \end_layout
 
+\begin_layout Standard
+Nella logica unimodale non siamo in grado di distinguere i frame (
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ ,<) e (
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ ,<), entrambi sono espressi dalla logica K4DLX
+\end_layout
+
+\begin_layout Standard
+Per convenzione poniamo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\boa\equiv\necp a\wedge a\wedge\necf a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+L'assioma che esprime la continuità della relazione è il seguente:
+\end_layout
+
+\begin_layout Standard
+Cont: 
+\begin_inset Formula $\boxx{(\necp a\implies\posf{\necp{a)}}\implies(\necp a\implies\necf{a)}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si dimostra che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonvera{(\mathbb{Q},<)}{Cont}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera{(\mathbb{R},<)}{Cont}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Ip) 
+\begin_inset Formula $V(A)=\{q\in\mathbb{Q}\,|\, q<\sqrt{2}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ts) 
+\begin_inset Formula $\nonvera{(\mathbb{Q},<)}{Cont}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Preso 
+\begin_inset Formula $\alpha<\sqrt{2}$
+\end_inset
+
+, varranno:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\alpha}{\necp A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necf A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e quindi possiamo scrivere 
+\begin_inset Formula $\forall\alpha<\sqrt{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necp A\implies\necf A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tuttavia l'antecedente di Cont è vero, infatti 
+\begin_inset Formula $\forall\alpha<\sqrt{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\alpha}{\posf{\necp A}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+e quindi l'antecedente di Cont è vero
+\end_layout
+
+\begin_layout Standard
+mentre 
+\begin_inset Formula $\forall\alpha>\sqrt{2}$
+\end_inset
+
+ vale:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necp A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e quindi l'antecedente di Cont è ancora vero.
+\end_layout
+
+\begin_layout Standard
+Poichè l'antecedente di Cont è sempre vero, mentre la conseguenza no, allora:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonvera{(\mathbb{Q},<)}{Cont}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e la tesi è dimostrata.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Ip) 
+\begin_inset Formula $\delta=\max\limits _{\eta\in\mathbb{R}}(\veraw{\mu}{\eta}{A\,\eta<\delta)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ts) 
+\begin_inset Formula $\vera{(\mathbb{R},<)}{Cont}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall\alpha<\delta$
+\end_inset
+
+ possiamo scrivere:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\alpha}{\necp A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necf A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tuttavia l'antecedente di Cont è falso, infatti:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\delta}{\necp A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ma poichè non può esistere nessun mondo 
+\begin_inset Formula $\xi>\delta$
+\end_inset
+
+ in cui sia vera A, essendo 
+\begin_inset Formula $\delta$
+\end_inset
+
+ massimo, avremo che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonveraw{\mu}{\delta}{\posf{\necp A}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e quindi non potrà che essere che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\delta}{\necp a\implies\posf{\necp a}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Poichè 
+\begin_inset Formula $\delta$
+\end_inset
+
+ è raggiungibile da a avremo che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx{(\necp a\implies\posf{\necp a})}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+allora avremo che in 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ l'antecedente di Cont è falso solo quando è falso il conseguente, e quindi
+ il teorema è dimostrato.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Questo significa che esiste una differente potenza espressiva tra la logica
+ unimodale e la logica multimodale.
+\end_layout
+
 \begin_layout Section
 Logica lineare temporale
 \end_layout

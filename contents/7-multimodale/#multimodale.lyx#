@@ -501,6 +501,261 @@ Ma allora, poichè in
 Assurdo! allora la tesi è dimostrata.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (17,-27.7) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (17,-27.7) node {$
+\backslash
+alpha$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (37.7,-27.7) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (37.7,-27.7) node {$
+\backslash
+beta$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (59.2,-17.2) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (59.2,-17.2) node {$...$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (60,-38.3) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (60,-38.3) node {$...$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (17,-23.6) node {$A$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (37.7,-23.6) node {
+\backslash
+sout{$
+\backslash
+posf{A}$}}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (17,-21.4) node {
+\backslash
+sout{$
+\backslash
+necp{
+\backslash
+posf{A}}$}}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (17,-19.1) node {
+\backslash
+sout{$A
+\backslash
+implies 
+\backslash
+necp{
+\backslash
+posf{A}}$}}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (40.641,-28.292) arc (76.71074:52.44238:44.889);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (57.68,-36.39) -- (57.36,-35.51) -- (56.75,-36.3);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (51.76,-30.92) node [above] {$R_P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (39.988,-25.761) arc (128.26646:103.79273:42.728);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (56.26,-17.81) -- (55.37,-17.52) -- (55.61,-18.49); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (45.52,-20.4) node [above] {$R_P$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (20,-27.7) -- (34.7,-27.7);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (34.7,-27.7) -- (33.9,-27.2) -- (33.9,-28.2);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (27.35,-28.2) node [below] {$R_P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (56.855,-19.07) arc (-53.2117:-74.72911:48.403);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (40.62,-27) -- (41.52,-27.27) -- (41.26,-26.31);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (51.28,-24.31) node [below] {$R_F$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (57.059,-37.71) arc (-103.2634:-127.58348:44.797); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (40.01,-29.61) -- (40.34,-30.49) -- (40.95,-29.7); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (45.94,-35.08) node [below] {$R_F$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Frame Temporale
 \end_layout
@@ -661,9 +916,315 @@ F1)
 
 \begin_layout Standard
 F2) 
-\begin_inset Formula $([\alpha],\,[\beta])\in R\implies\forall$
+\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necf b\in\Gamma\,\veraw{\mu}{\alpha}{\necf b}\implies\veraw{\mu}{\beta}b)$
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+F3) 
+\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necp b\in\Gamma\,\veraw{\mu}{\beta}{\necp b}\implies\veraw{\mu}{\alpha}b)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Distinzione tra (
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ ,<) e (
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ ,<)
+\end_layout
+
+\begin_layout Standard
+Nella logica unimodale non siamo in grado di distinguere i frame (
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ ,<) e (
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ ,<), entrambi sono espressi dalla logica K4DLX
+\end_layout
+
+\begin_layout Standard
+Per convenzione poniamo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\boa\equiv\necp a\wedge a\wedge\necf a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+L'assioma che esprime la continuità della relazione è il seguente:
+\end_layout
+
+\begin_layout Standard
+Cont: 
+\begin_inset Formula $\boxx{(\necp a\implies\posf{\necp{a)}}\implies(\necp a\implies\necf{a)}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si dimostra che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonvera{(\mathbb{Q},<)}{Cont}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera{(\mathbb{R},<)}{Cont}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Ip) 
+\begin_inset Formula $V(A)=\{q\in\mathbb{Q}\,|\, q<\sqrt{2}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ts) 
+\begin_inset Formula $\nonvera{(\mathbb{Q},<)}{Cont}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Preso 
+\begin_inset Formula $\alpha<\sqrt{2}$
+\end_inset
+
+, varranno:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\alpha}{\necp A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necf A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e quindi possiamo scrivere 
+\begin_inset Formula $\forall\alpha<\sqrt{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necp A\implies\necf A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tuttavia l'antecedente di Cont è vero, infatti 
+\begin_inset Formula $\forall\alpha<\sqrt{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\alpha}{\posf{\necp A}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+e quindi l'antecedente di Cont è vero
+\end_layout
+
+\begin_layout Standard
+mentre 
+\begin_inset Formula $\forall\alpha>\sqrt{2}$
+\end_inset
+
+ vale:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necp A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e quindi l'antecedente di Cont è ancora vero.
+\end_layout
+
+\begin_layout Standard
+Poichè l'antecedente di Cont è sempre vero, mentre la conseguenza no, allora:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonvera{(\mathbb{Q},<)}{Cont}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e la tesi è dimostrata.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Ip) 
+\begin_inset Formula $\delta=\max\limits _{\eta\in\mathbb{R}}(\veraw{\mu}{\eta}{A\,\eta<\delta)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ts) 
+\begin_inset Formula $\vera{(\mathbb{R},<)}{Cont}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall\alpha<\delta$
+\end_inset
+
+ possiamo scrivere:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\alpha}{\necp A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necf A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tuttavia l'antecedente di Cont è falso, infatti:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\delta}{\necp A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ma poichè non può esistere nessun mondo 
+\begin_inset Formula $\xi>\delta$
+\end_inset
+
+ in cui sia vera A, essendo 
+\begin_inset Formula $\delta$
+\end_inset
+
+ massimo, avremo che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonveraw{\mu}{\delta}{\posf{\necp A}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e quindi non potrà che essere che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\delta}{\necp a\implies\posf{\necp a}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Poichè 
+\begin_inset Formula $\delta$
+\end_inset
+
+ è raggiungibile da a avremo che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx{(\necp a\implies\posf{\necp a})}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+allora avremo che in 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ l'antecedente di Cont è falso solo quando è falso il conseguente, e quindi
+ il teorema è dimostrato.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Questo significa che esiste una differente potenza espressiva tra la logica
+ unimodale e la logica multimodale.
+\end_layout
+
+\begin_layout Section
+Logica lineare temporale
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
