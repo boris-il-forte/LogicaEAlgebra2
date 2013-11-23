@@ -661,34 +661,10 @@ F1)
 
 \begin_layout Standard
 F2) 
-\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necf b\in\Gamma\,\veraw{\mu}{\alpha}{\necf b}\implies\veraw{\mu}{\beta}b)$
+\begin_inset Formula $([\alpha],\,[\beta])\in R\implies\forall$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-F3) 
-\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necp b\in\Gamma\,\veraw{\mu}{\beta}{\necp b}\implies\veraw{\mu}{\alpha}b)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Distinzione tra (
-\begin_inset Formula $\mathbb{Q}$
-\end_inset
-
- ,<) e (
-\begin_inset Formula $\mathbb{R}$
-\end_inset
-
- ,<)
-\end_layout
-
-\begin_layout Section
-Logica lineare temporale
 \end_layout
 
 \end_body

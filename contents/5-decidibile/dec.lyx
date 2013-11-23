@@ -118,16 +118,16 @@ Dato una logica
 \begin_inset Formula $\Lambda$
 \end_inset
 
- e una formula a, si può garantire cheesiste un modello 
+ e una formula a, si può garantire che esiste un modello 
 \begin_inset Formula $\mu$
 \end_inset
 
-, con un numerodi mondi limitato da f(n), con n numero di sottoformule di
- a tale che:
+, con un numero di mondi limitato da f(n), con n numero di sottoformule
+ di a tale che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\teoremaDi\Lambda a\iff\vera\mu a$
+\begin_inset Formula $\teoremaDi{\Lambda}a\iff\vera{\mu}a$
 \end_inset
 
 
@@ -147,7 +147,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\exists\mu:\,\teoremaDi\Lambda a\iff\vera\mu a$
+\begin_inset Formula $\exists\mu:\,\teoremaDi{\Lambda}a\iff\vera{\mu}a$
 \end_inset
 
 
@@ -173,7 +173,7 @@ che gode della seguente proprietà:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\Gamma_{\alpha}=\{a\in\Gamma\,|\,\veraw\mu\alpha a\}$
+\begin_inset Formula $\Gamma_{\alpha}=\{a\in\Gamma\,|\,\veraw{\mu}{\alpha}a\}$
 \end_inset
 
 
@@ -378,7 +378,7 @@ F1)
 
 \begin_layout Standard
 F2) 
-\begin_inset Formula $([\alpha],[\beta])\in R'\implies\forall\boxx b\in\Gamma,\,\veraw\mu\alpha{\boxx b}\implies\veraw\mu\beta b$
+\begin_inset Formula $([\alpha],[\beta])\in R'\implies\forall\boxx b\in\Gamma,\,\veraw{\mu}{\alpha}{\boxx b}\implies\veraw{\mu}{\beta}b$
 \end_inset
 
 
@@ -490,7 +490,7 @@ Ip)
 \end_inset
 
 , 
-\begin_inset Formula $\veraw\mu\alpha{\boxx b}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx b}$
 \end_inset
 
 
@@ -520,14 +520,14 @@ avremo che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\delta{\boxx b}$
+\begin_inset Formula $\veraw{\mu}{\delta}{\boxx b}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\eta b$
+\begin_inset Formula $\veraw{\mu}{\eta}b$
 \end_inset
 
 
@@ -538,7 +538,7 @@ e quindi:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\beta b$
+\begin_inset Formula $\veraw{\mu}{\beta}b$
 \end_inset
 
 
@@ -565,7 +565,7 @@ dato un insieme
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\alpha{a\iff}\veraw{\mu^{\Gamma}}\alpha a$
+\begin_inset Formula $\veraw{\mu}{\alpha}{a\iff}\veraw{\mu^{\Gamma}}{\alpha}a$
 \end_inset
 
 
@@ -593,7 +593,7 @@ Dimostrazione:
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\veraw\mu\alpha{a\iff}\veraw{\mu^{\Gamma}}{[\alpha]}a$
+\begin_inset Formula $\veraw{\mu}{\alpha}{a\iff}\veraw{\mu^{\Gamma}}{[\alpha]}a$
 \end_inset
 
 
@@ -632,7 +632,7 @@ a non ha connettivi, allora
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\alpha A\iff\alpha\in V(A)\iff\alpha\in V^{\Gamma}(A)\iff\veraw{\mu^{\Gamma}}{[\alpha]}a$
+\begin_inset Formula $\veraw{\mu}{\alpha}A\iff\alpha\in V(A)\iff\alpha\in V^{\Gamma}(A)\iff\veraw{\mu^{\Gamma}}{[\alpha]}a$
 \end_inset
 
 
@@ -802,7 +802,7 @@ allora si può affermare che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\beta b\implies\veraw{\mu^{\Gamma}}{[\beta]}b\implies\veraw{\mu^{\Gamma}}{[\alpha]}{\boxx b}$
+\begin_inset Formula $\veraw{\mu}{\beta}b\implies\veraw{\mu^{\Gamma}}{[\beta]}b\implies\veraw{\mu^{\Gamma}}{[\alpha]}{\boxx b}$
 \end_inset
 
 
@@ -818,7 +818,7 @@ Ip)
 
 \begin_layout Standard
 Ts)
-\begin_inset Formula $\veraw\mu\alpha{\boxx b}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx b}$
 \end_inset
 
 
@@ -848,7 +848,7 @@ allora si può affermare che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\veraw{\mu^{\Gamma}}{[\beta]}b\implies\mu}\beta b\implies\veraw\mu\alpha{\boxx b}$
+\begin_inset Formula $\veraw{\veraw{\mu^{\Gamma}}{[\beta]}b\implies\mu}{\beta}b\implies\veraw{\mu}{\alpha}{\boxx b}$
 \end_inset
 
 
@@ -1278,7 +1278,7 @@ per ogni
 \end_inset
 
  allora anche (schema 4) 
-\begin_inset Formula $\veraw M\alpha{\boxx{\boxx b}}$
+\begin_inset Formula $\veraw M{\alpha}{\boxx{\boxx b}}$
 \end_inset
 
  
@@ -1293,18 +1293,18 @@ dato che
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw M\beta b$
+\begin_inset Formula $\veraw M{\beta}b$
 \end_inset
 
  e 
-\begin_inset Formula $\veraw M\beta{\boxx b}$
+\begin_inset Formula $\veraw M{\beta}{\boxx b}$
 \end_inset
 
  e quindi:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw M\beta{b\wedge\boxx b}$
+\begin_inset Formula $\veraw M{\beta}{b\wedge\boxx b}$
 \end_inset
 
 
@@ -1343,7 +1343,7 @@ Sia
 \end_inset
 
  e 
-\begin_inset Formula $\veraw M\alpha{\boxx b}$
+\begin_inset Formula $\veraw M{\alpha}{\boxx b}$
 \end_inset
 
  segua 
@@ -1729,7 +1729,7 @@ T:
 
 \lang italian
 B: 
-\begin_inset Formula $a\implies\boxx\dia$
+\begin_inset Formula $a\implies\boxx{\dia}$
 \end_inset
 
  (simmetrica)
@@ -1739,7 +1739,7 @@ B:
 
 \lang italian
 4:
-\begin_inset Formula $\boa\implies\boxx\boa$
+\begin_inset Formula $\boa\implies\boxx{\boa}$
 \end_inset
 
  (transitiva)

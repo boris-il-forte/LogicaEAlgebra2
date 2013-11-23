@@ -214,7 +214,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\teorema}[1]{\vdash_{\Lambda}#1}
+\newcommand{\teorema}[1]{\vdash_{\Lambda}#1}
 \end_inset
 
 
@@ -222,7 +222,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\teorGamma}[1]{\Gamma\vdash_{\Lambda}#1}
+\newcommand{\teorGamma}[1]{\Gamma\vdash_{\Lambda}#1}
 \end_inset
 
 
@@ -230,7 +230,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\teoa}{\teorGamma a}
+\newcommand{\teoa}{\teorGamma a}
 \end_inset
 
 
@@ -238,7 +238,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\teoremaDi}[1]{\vdash_{#1}}
+\newcommand{\teoremaDi}[1]{\vdash_{#1}}
 \end_inset
 
 
@@ -246,7 +246,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\consist}{\mbox{\ensuremath{\Lambda}}-consistente}
+\newcommand{\consist}{\mbox{\ensuremath{\Lambda}}-consistente}
 \end_inset
 
 
@@ -254,7 +254,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\consMax}{\Lambda-consistente\: massimale}
+\newcommand{\consMax}{\Lambda-consistente\: massimale}
 \end_inset
 
 
@@ -327,6 +327,54 @@
 \begin_layout Standard
 \begin_inset FormulaMacro
 \renewcommand{\andbox}[1]{\boa_{1}\wedge\dots\wedge\boxx a#1}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\neci}[2]{[#1]#2}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\posi}[2]{<#1>#2}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\necf}[1]{[F]#1}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\posf}[1]{<F>#1}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\necp}[1]{[P]#1}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\posp}[1]{<P>#1}
 \end_inset
 
 

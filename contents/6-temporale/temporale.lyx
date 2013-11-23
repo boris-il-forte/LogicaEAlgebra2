@@ -2761,7 +2761,15 @@ K4DLDum, corretta e completa sul frame (w,
 \end_layout
 
 \begin_layout Enumerate
-K4DLX corretta e completa sui frame (Q,<) e (R,<)
+K4DLX corretta e completa sui frame (
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+,<) e (
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+,<)
 \end_layout
 
 \begin_layout Standard
