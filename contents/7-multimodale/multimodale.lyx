@@ -501,6 +501,261 @@ Ma allora, poichè in
 Assurdo! allora la tesi è dimostrata.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (17,-27.7) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (17,-27.7) node {$
+\backslash
+alpha$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (37.7,-27.7) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (37.7,-27.7) node {$
+\backslash
+beta$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (59.2,-17.2) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (59.2,-17.2) node {$...$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (60,-38.3) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (60,-38.3) node {$...$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (17,-23.6) node {$A$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (37.7,-23.6) node {
+\backslash
+sout{$
+\backslash
+posf{A}$}}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (17,-21.4) node {
+\backslash
+sout{$
+\backslash
+necp{
+\backslash
+posf{A}}$}}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (17,-19.1) node {
+\backslash
+sout{$A
+\backslash
+implies 
+\backslash
+necp{
+\backslash
+posf{A}}$}}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (40.641,-28.292) arc (76.71074:52.44238:44.889);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (57.68,-36.39) -- (57.36,-35.51) -- (56.75,-36.3);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (51.76,-30.92) node [above] {$R_P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (39.988,-25.761) arc (128.26646:103.79273:42.728);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (56.26,-17.81) -- (55.37,-17.52) -- (55.61,-18.49); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (45.52,-20.4) node [above] {$R_P$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (20,-27.7) -- (34.7,-27.7);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (34.7,-27.7) -- (33.9,-27.2) -- (33.9,-28.2);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (27.35,-28.2) node [below] {$R_P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (56.855,-19.07) arc (-53.2117:-74.72911:48.403);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (40.62,-27) -- (41.52,-27.27) -- (41.26,-26.31);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (51.28,-24.31) node [below] {$R_F$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (57.059,-37.71) arc (-103.2634:-127.58348:44.797); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (40.01,-29.61) -- (40.34,-30.49) -- (40.95,-29.7); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (45.94,-35.08) node [below] {$R_F$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Frame Temporale
 \end_layout
