@@ -882,7 +882,7 @@ Ma, allora possiamo applicare lo stesso ragionamento per
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{(w,\,<)}{\beta-1}{\boa}$
+\begin_inset Formula $\veraw{(w,\,<)}{\beta-1}\boa$
 \end_inset
 
 
@@ -1184,7 +1184,7 @@ e quindi:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{(w,\,<)}{\alpha}{\boa}$
+\begin_inset Formula $\veraw{(w,\,<)}\alpha\boa$
 \end_inset
 
 
@@ -1314,7 +1314,7 @@ Ip)
 
 \begin_layout Standard
 Ts)
-\begin_inset Formula $\teolm{\Omega}a$
+\begin_inset Formula $\teolm\Omega a$
 \end_inset
 
  
@@ -1336,7 +1336,7 @@ Per assurdo supponiamo che non valga la tesi, cioè che
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonTeor{\Omega}a$
+\begin_inset Formula $\nonTeor\Omega a$
 \end_inset
 
 , per il lemma di verità si ha anche 
@@ -1368,7 +1368,7 @@ Dato che
 \end_inset
 
  in cui 
-\begin_inset Formula $\nonveraw{M_{1}}{\alpha}a$
+\begin_inset Formula $\nonveraw{M_{1}}\alpha a$
 \end_inset
 
 
@@ -2378,6 +2378,973 @@ Se non è
  
 \end_layout
 
+\begin_layout Standard
+Un palloncino può essere visto come una sequenza finita di cluster di cui
+ solo l’ultimo è non degenere.
+ Ma nel nostro modello possono esserci, oltre all’ultimo R-cluster 
+\begin_inset Formula $C_{\alpha}$
+\end_inset
+
+, altri R-cluster non degeneri.
+\end_layout
+
+\begin_layout Standard
+Per ricondurmi a un palloncino, a partire da 
+\begin_inset Formula $M_{3}$
+\end_inset
+
+ considero la relazione 
+\begin_inset Formula $R'$
+\end_inset
+
+ che ordina in modo arbitrario i mondi appartenenti a uno stesso R-cluster
+ che non sia l'ultimo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R'$
+\end_inset
+
+ è così definita:
+\end_layout
+
+\begin_layout Itemize
+Se
+\begin_inset Formula $\alpha,\beta$
+\end_inset
+
+ appartengono a cluster diversi allora 
+\begin_inset Formula $(\alpha,\beta)\in R'$
+\end_inset
+
+se e solo se 
+\begin_inset Formula $(\alpha,\beta)\in R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Se 
+\begin_inset Formula $\alpha,\beta$
+\end_inset
+
+ appartengono all'ultimo cluster 
+\begin_inset Formula $(\alpha,\beta)\in R'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Se 
+\begin_inset Formula $\alpha,\beta$
+\end_inset
+
+ appartengono allo stesso cluster, e non è l'ultimo, detti 
+\begin_inset Formula $\gamma_{1},\gamma_{2},\dots,\gamma_{n}$
+\end_inset
+
+, si pone 
+\begin_inset Formula $\gamma_{i}R'\gamma_{j}$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $i<j$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $(\alpha,\alpha)\notin R'$
+\end_inset
+
+ (tolgo gli autoanelli)
+\end_layout
+
+\begin_layout Standard
+A questo punto abbiamo un palloncino
+\begin_inset Formula $P$
+\end_inset
+
+ costruito su 
+\begin_inset Formula $S$
+\end_inset
+
+,
+\begin_inset Formula $R'$
+\end_inset
+
+, 
+\begin_inset Formula $V$
+\end_inset
+
+, ed è lecito chidersi se 
+\begin_inset Formula $\vera{M_{3}}a$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $\vera Pa$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Questo è ovviamente vero se 
+\begin_inset Formula $a$
+\end_inset
+
+ non presenta connettivi modali.
+\end_layout
+
+\begin_layout Standard
+Supponiamo allora che 
+\begin_inset Formula $a$
+\end_inset
+
+ sia del tipo 
+\begin_inset Formula $\boxx d$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Dato che
+\begin_inset Formula $R'\subseteq R$
+\end_inset
+
+,
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\backslash
+draw [black] (11,-13.3) circle (3); 
+\backslash
+draw (11,-13.3) node {$1$}; 
+\backslash
+draw [black] (19.6,-5.6) circle (3); 
+\backslash
+draw (19.6,-5.6) node {$2$}; 
+\backslash
+draw [black] (27.2,-13.3) circle (3); 
+\backslash
+draw (27.2,-13.3) node {$3$}; 
+\backslash
+draw [black] (19.6,-21.2) circle (3); 
+\backslash
+draw (19.6,-21.2) node {$4$}; 
+\backslash
+draw [black] (38.7,-13.4) circle (3); 
+\backslash
+draw (38.7,-13.4) node {$1$}; 
+\backslash
+draw [black] (49.3,-13.4) circle (3); 
+\backslash
+draw (49.3,-13.4) node {$2$}; 
+\backslash
+draw [black] (58.9,-13.4) circle (3); 
+\backslash
+draw (58.9,-13.4) node {$3$}; 
+\backslash
+draw [black] (69.4,-13.4) circle (3); 
+\backslash
+draw (69.4,-13.4) node {$4$}; 
+\backslash
+draw [black] (13.24,-11.3) -- (17.36,-7.6); 
+\backslash
+fill [black] (17.36,-7.6) -- (16.44,-7.76) -- (17.1,-8.51); 
+\backslash
+draw [black] (17.36,-7.6) -- (13.24,-11.3); 
+\backslash
+fill [black] (13.24,-11.3) -- (14.16,-11.14) -- (13.5,-10.39); 
+\backslash
+draw (14.14,-8.96) node [above] {$R$}; 
+\backslash
+draw [black] (25.09,-11.16) -- (21.71,-7.74); 
+\backslash
+fill [black] (21.71,-7.74) -- (21.91,-8.66) -- (22.63,-7.95); 
+\backslash
+draw (23.93,-7.98) node [right] {$R$}; 
+\backslash
+draw [black] (17.39,-19.17) -- (13.21,-15.33); 
+\backslash
+fill [black] (13.21,-15.33) -- (13.46,-16.24) -- (14.14,-15.5); 
+\backslash
+draw (14.14,-17.74) node [below] {$R$}; 
+\backslash
+draw [black] (13.21,-15.33) -- (17.39,-19.17); 
+\backslash
+fill [black] (17.39,-19.17) -- (17.14,-18.26) -- (16.46,-19); 
+\backslash
+draw [black] (21.68,-19.04) -- (25.12,-15.46); 
+\backslash
+fill [black] (25.12,-15.46) -- (24.21,-15.69) -- (24.93,-16.39); 
+\backslash
+draw (23.93,-18.72) node [right] {$R$}; 
+\backslash
+draw [black] (25.12,-15.46) -- (21.68,-19.04); 
+\backslash
+fill [black] (21.68,-19.04) -- (22.59,-18.81) -- (21.87,-18.11); 
+\backslash
+draw [black] (19.6,-8.6) -- (19.6,-18.2); 
+\backslash
+fill [black] (19.6,-18.2) -- (20.1,-17.4) -- (19.1,-17.4); 
+\backslash
+draw [black] (19.6,-18.2) -- (19.6,-8.6); 
+\backslash
+fill [black] (19.6,-8.6) -- (19.1,-9.4) -- (20.1,-9.4); 
+\backslash
+draw [black] (24.2,-13.3) -- (14,-13.3); 
+\backslash
+fill [black] (14,-13.3) -- (14.8,-13.8) -- (14.8,-12.8); 
+\backslash
+draw [black] (14,-13.3) -- (24.2,-13.3); 
+\backslash
+fill [black] (24.2,-13.3) -- (23.4,-12.8) -- (23.4,-13.8); 
+\backslash
+draw [black] (41.7,-13.4) -- (46.3,-13.4); 
+\backslash
+fill [black] (46.3,-13.4) -- (45.5,-12.9) -- (45.5,-13.9); 
+\backslash
+draw (44,-13.9) node [below] {$R'$}; 
+\backslash
+draw [black] (52.3,-13.4) -- (55.9,-13.4); 
+\backslash
+fill [black] (55.9,-13.4) -- (55.1,-12.9) -- (55.1,-13.9); 
+\backslash
+draw (54.1,-13.9) node [below] {$R'$}; 
+\backslash
+draw [black] (61.9,-13.4) -- (66.4,-13.4); 
+\backslash
+fill [black] (66.4,-13.4) -- (65.6,-12.9) -- (65.6,-13.9); 
+\backslash
+draw (64.15,-13.9) node [below] {$R'$}; 
+\backslash
+end{tikzpicture} 
+\backslash
+end{center} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+se 
+\begin_inset Formula $\boxx d$
+\end_inset
+
+ è vera in un mondo 
+\begin_inset Formula $\beta$
+\end_inset
+
+ di 
+\begin_inset Formula $M_{3}$
+\end_inset
+
+, 
+\begin_inset Formula $\boxx d$
+\end_inset
+
+ è vera anche nel mondo 
+\begin_inset Formula $\beta$
+\end_inset
+
+ di 
+\begin_inset Formula $M’$
+\end_inset
+
+ (
+\begin_inset Formula $R'$
+\end_inset
+
+ ha meno archi quindi è più facile per 
+\begin_inset Formula $\boxx x$
+\end_inset
+
+ essere soddisfatta)
+\end_layout
+
+\begin_layout Standard
+Sia allora 
+\begin_inset Formula $\boxx d$
+\end_inset
+
+ vera in un mondo 
+\begin_inset Formula $\beta$
+\end_inset
+
+ di 
+\begin_inset Formula $M’$
+\end_inset
+
+ e supponiamo che 
+\begin_inset Formula $\boxx d$
+\end_inset
+
+ non sia vera nel mondo 
+\begin_inset Formula $\beta$
+\end_inset
+
+ di 
+\begin_inset Formula $M_{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Se è così, 
+\begin_inset Formula $d$
+\end_inset
+
+ dovrà allora risultare falsa in un mondo 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ tale che 
+\begin_inset Formula $(\beta,\gamma)\in R$
+\end_inset
+
+ mentre 
+\begin_inset Formula $(\beta,\gamma)\notin R’$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\backslash
+draw [black] (11.1,-17.4) circle (3); 
+\backslash
+draw (11.1,-17.4) node {$1$}; 
+\backslash
+draw [black] (19.2,-9.3) circle (3); 
+\backslash
+draw (19.2,-9.3) node {$2$}; 
+\backslash
+draw [black] (27.2,-17.4) circle (3); 
+\backslash
+draw (27.2,-17.4) node {$3$}; 
+\backslash
+draw [black] (19.2,-25.6) circle (3); 
+\backslash
+draw (19.2,-25.6) node {$4$}; 
+\backslash
+draw [black] (38.7,-13.4) circle (3); 
+\backslash
+draw (38.7,-13.4) node {$1$}; 
+\backslash
+draw [black] (49.3,-13.4) circle (3); 
+\backslash
+draw (49.3,-13.4) node {$2$}; 
+\backslash
+draw [black] (58.9,-13.4) circle (3); 
+\backslash
+draw (58.9,-13.4) node {$3$}; 
+\backslash
+draw [black] (69.4,-13.4) circle (3); 
+\backslash
+draw (69.4,-13.4) node {$4$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (27.2,-12.5) node {$
+\backslash
+neg
+\backslash
+boxx d$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (19.2,-4.5) node {$
+\backslash
+neg d$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (9.7,-12.5) node {$
+\backslash
+neg d$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (19,-30.1) node {$d$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (58.9,-7.8) node {$
+\backslash
+boxx d$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (69.4,-7.8) node {$d$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (13.22,-15.28) -- (17.08,-11.42); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (17.08,-11.42) -- (16.16,-11.63) -- (16.87,-12.34); 
+\backslash
+draw [black] (17.08,-11.42) -- (13.22,-15.28); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (13.22,-15.28) -- (14.14,-15.07) -- (13.43,-14.36); 
+\backslash
+draw (13.98,-12.87) node [above] {$R$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (25.09,-15.27) -- (21.31,-11.43); 
+\backslash
+fill [black] (21.31,-11.43) -- (21.51,-12.35) -- (22.23,-11.65);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (17.09,-23.47) -- (13.21,-19.53); 
+\backslash
+fill [black] (13.21,-19.53) -- (13.41,-20.45) -- (14.13,-19.75); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (14.63,-22.97) node [left] {$R$}; 
+\backslash
+draw [black] (13.21,-19.53) -- (17.09,-23.47); 
+\backslash
+fill [black] (17.09,-23.47) -- (16.89,-22.55) -- (16.17,-23.25); 
+\backslash
+draw [black] (21.29,-23.45) -- (25.11,-19.55); 
+\backslash
+fill [black] (25.11,-19.55) -- (24.19,-19.77) -- (24.9,-20.47); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (23.73,-22.97) node [right] {$R$}; 
+\backslash
+draw [black] (25.11,-19.55) -- (21.29,-23.45); 
+\backslash
+fill [black] (21.29,-23.45) -- (22.21,-23.23) -- (21.5,-22.53); 
+\backslash
+draw [black] (19.2,-12.3) -- (19.2,-22.6); 
+\backslash
+fill [black] (19.2,-22.6) -- (19.7,-21.8) -- (18.7,-21.8); 
+\backslash
+draw [black] (19.2,-22.6) -- (19.2,-12.3); 
+\backslash
+fill [black] (19.2,-12.3) -- (18.7,-13.1) -- (19.7,-13.1); 
+\backslash
+draw [black] (24.2,-17.4) -- (14.1,-17.4); 
+\backslash
+fill [black] (14.1,-17.4) -- (14.9,-17.9) -- (14.9,-16.9); 
+\backslash
+draw [black] (14.1,-17.4) -- (24.2,-17.4); 
+\backslash
+fill [black] (24.2,-17.4) -- (23.4,-16.9) -- (23.4,-17.9); 
+\backslash
+draw [black] (41.7,-13.4) -- (46.3,-13.4); 
+\backslash
+fill [black] (46.3,-13.4) -- (45.5,-12.9) -- (45.5,-13.9); 
+\backslash
+draw (44,-13.9) node [below] {$R'$}; 
+\backslash
+draw [black] (52.3,-13.4) -- (55.9,-13.4); 
+\backslash
+fill [black] (55.9,-13.4) -- (55.1,-12.9) -- (55.1,-13.9); 
+\backslash
+draw (54.1,-13.9) node [below] {$R'$}; 
+\backslash
+draw [black] (61.9,-13.4) -- (66.4,-13.4); 
+\backslash
+fill [black] (66.4,-13.4) -- (65.6,-12.9) -- (65.6,-13.9); 
+\backslash
+draw (64.15,-13.9) node [below] {$R'$}; 
+\backslash
+draw [black] (21.31,-11.43) -- (25.09,-15.27); 
+\backslash
+fill [black] (25.09,-15.27) -- (24.89,-14.35) -- (24.17,-15.05); 
+\backslash
+end{tikzpicture} 
+\backslash
+end{center} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ovviamente se 
+\begin_inset Formula $(\beta,\gamma)\in R$
+\end_inset
+
+ ma 
+\begin_inset Formula $(\beta,\gamma)\notin R’$
+\end_inset
+
+, i mondi 
+\begin_inset Formula $\beta,\gamma$
+\end_inset
+
+ devono appartenere ad uno stesso R- cluster che non è l’ultimo.
+ (infatti se 
+\begin_inset Formula $(\beta,\gamma)\in R$
+\end_inset
+
+ allora sono nello stesso cluster, che viene 
+\begin_inset Quotes eld
+\end_inset
+
+sciolto
+\begin_inset Quotes erd
+\end_inset
+
+ in R')
+\end_layout
+
+\begin_layout Standard
+Si può ora far uso dello Z-lemma che garantisce l’esistenza di un mondo
+ 
+\begin_inset Formula $\delta$
+\end_inset
+
+ in un R- cluster 
+\begin_inset Formula $C_{\delta}$
+\end_inset
+
+ tale che 
+\begin_inset Formula $C_{\beta}<C_{\delta}$
+\end_inset
+
+ in cui 
+\begin_inset Formula $d$
+\end_inset
+
+ non è vera (lo Z-lemma sarà enunciato e dimostrato nel seguito).
+\end_layout
+
+\begin_layout Standard
+Ma 
+\begin_inset Formula $C_{\beta}<C_{\delta}$
+\end_inset
+
+ implica 
+\begin_inset Formula $(\beta,\delta)\in R’$
+\end_inset
+
+ e dunque 
+\begin_inset Formula $\boxx d$
+\end_inset
+
+ non sarebbe vera nel mondo 
+\begin_inset Formula $\beta$
+\end_inset
+
+ del modello M’, contro la nostra supposizione.
+\end_layout
+
+\begin_layout Standard
+Dunque avendo dimostrato nel passo 3 che 
+\begin_inset Formula $a$
+\end_inset
+
+ non è vera nel mondo 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ del modello 
+\begin_inset Formula $M_{3}$
+\end_inset
+
+, abbiamo che 
+\begin_inset Formula $a$
+\end_inset
+
+ non è vera nel mondo 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ del modello 
+\begin_inset Formula $M’$
+\end_inset
+
+, costruito su un palloncino e quindi 
+\begin_inset Formula $a$
+\end_inset
+
+ non è valida su ogni palloncino.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+5) 
+\series default
+Esiste un p-morfismo suriettivo da 
+\begin_inset Formula $(\omega,<)$
+\end_inset
+
+ a un palloncino P.
+\end_layout
+
+\begin_layout Standard
+Sia P : 
+\begin_inset Formula $(T,\rho)$
+\end_inset
+
+ dove 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T=\{\alpha_{1},\alpha_{2},...,\alpha_{n},\alpha_{n+1},...,\alpha_{n+m}\}$
+\end_inset
+
+ e 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $i.j\in\rho\ \iff\ i<j\ oppure\ i,j\geq n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+L'idea è di fare un p-morfismo la cui funzione f : manda i primi 
+\begin_inset Formula $n$
+\end_inset
+
+ mondi di 
+\begin_inset Formula $\omega$
+\end_inset
+
+ nel 
+\begin_inset Quotes eld
+\end_inset
+
+gambo
+\begin_inset Quotes erd
+\end_inset
+
+ e i mondi da 
+\begin_inset Formula $n+1$
+\end_inset
+
+ in poi nella parte 
+\begin_inset Quotes eld
+\end_inset
+
+tonda
+\begin_inset Quotes erd
+\end_inset
+
+ del palloncino contando modulo 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Pertando definiamo 
+\begin_inset Formula $f\ :\ \omega\rightarrow T$
+\end_inset
+
+ (ricordando che i mondi sono numerati, sia in 
+\begin_inset Formula $\omega$
+\end_inset
+
+ che in 
+\begin_inset Formula $T$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(i)=i\ se$
+\end_inset
+
+
+\begin_inset Formula $i\leq m+n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(n+m+j)=n+((m+j)\ mod\ 4)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ è suriettiva (tutto il codominio 
+\begin_inset Formula $T$
+\end_inset
+
+ è raggiunto)
+\end_layout
+
+\begin_layout Standard
+Infatti ogni elemento 
+\begin_inset Formula $i\in T$
+\end_inset
+
+ ha almeno controimmagine 
+\begin_inset Formula $i\in\omega$
+\end_inset
+
+ (gli elementi nella parte 
+\begin_inset Quotes eld
+\end_inset
+
+tonda
+\begin_inset Quotes erd
+\end_inset
+
+ del palloncino ne avranno altre)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+Proprietà di un p-morfismo
+\end_layout
+
+\begin_layout Plain Layout
+1) 
+\begin_inset Formula $(\alpha,\,\beta)\in R_{1}\implies(f(\alpha),\, f(\beta))\in R_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+2) 
+\begin_inset Formula $(f(\alpha),\,\eta)\in R_{2}\implies\exists\beta\in S_{1}\,:\, f(\beta)=\eta\,\wedge\,(\alpha,\,\beta)\in R_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1) Se 
+\begin_inset Formula $\alpha,\beta<n$
+\end_inset
+
+ si ha banalmente 
+\begin_inset Formula $f(\alpha),f(\beta)$
+\end_inset
+
+ per come è definita 
+\begin_inset Formula $f$
+\end_inset
+
+ ;
+\end_layout
+
+\begin_layout Standard
+Se
+\begin_inset Formula $f(\alpha),f(\beta)$
+\end_inset
+
+ sono nella parte 
+\begin_inset Quotes eld
+\end_inset
+
+tonda
+\begin_inset Quotes erd
+\end_inset
+
+ la 1) vale perché 
+\begin_inset Formula $f(\alpha),f(\beta)$
+\end_inset
+
+ in relazione di equivalenza
+\end_layout
+
+\begin_layout Standard
+Se 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ nel gambo e 
+\begin_inset Formula $\beta$
+\end_inset
+
+ nella parte 
+\begin_inset Quotes eld
+\end_inset
+
+tonda
+\begin_inset Quotes erd
+\end_inset
+
+, comunque vale la 1) ricordando la transitività di 
+\begin_inset Formula $\rho$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2) Se 
+\begin_inset Formula $f(\alpha)<\eta$
+\end_inset
+
+ basta prendere come 
+\begin_inset Formula $\beta$
+\end_inset
+
+ proprio
+\begin_inset Formula $\eta$
+\end_inset
+
+ da 
+\begin_inset Formula $\omega$
+\end_inset
+
+ e quindi avere 
+\begin_inset Formula $\alpha<\eta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se 
+\begin_inset Formula $f(\alpha)>\eta$
+\end_inset
+
+ posso comunque trovare 
+\series bold
+
+\begin_inset Formula $\beta$
+\end_inset
+
+ 
+\series default
+opportuno sfruttando l'aritmetica modulare.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+Quindi se 
+\begin_inset Formula $a$
+\end_inset
+
+ non è valida su ogni palloncino non è valida su 
+\begin_inset Formula $(\omega,<)$
+\end_inset
+
+, contro l’ipotesi, pertanto 
+\begin_inset Formula $a$
+\end_inset
+
+ deve essere un teorema di 
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 Z-Lemma
 \end_layout
@@ -2430,7 +3397,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\nonveraw{\mu}{\beta}b$
+\begin_inset Formula $\nonveraw\mu\beta b$
 \end_inset
 
  per tutti i 
@@ -2449,7 +3416,7 @@ Per assurdo, supponiamo:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\beta}b$
+\begin_inset Formula $\veraw\mu\beta b$
 \end_inset
 
  per ogni 
@@ -2468,7 +3435,7 @@ allora deve valere
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\delta}b$
+\begin_inset Formula $\nonveraw\mu\delta b$
 \end_inset
 
  in qualche mondo 
@@ -2641,7 +3608,7 @@ allora, poichè la trelazione è transitiva e connessa, abbiamo che
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\gamma}{\boxx b}$
+\begin_inset Formula $\nonveraw\mu\gamma{\boxx b}$
 \end_inset
 
 
@@ -2652,7 +3619,7 @@ e quindi, per questo possiamo dire che vale:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\gamma}{\boxx b\implies b}$
+\begin_inset Formula $\veraw\mu\gamma{\boxx b\implies b}$
 \end_inset
 
 
@@ -2676,7 +3643,7 @@ ma poichè in tutti i mondi successivi è vera b, allora in tutti i mondi
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\vera{\mu}{\boxx{(\boxx{b\implies b)}}}$
+\begin_inset Formula $\vera\mu{\boxx{(\boxx{b\implies b)}}}$
 \end_inset
 
 
@@ -2688,7 +3655,7 @@ Però applicando a questo punto il modus ponens all'assioma Z e alla precedente
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\vera{\mu}{\diam{\boxx b}\implies\boxx b}$
+\begin_inset Formula $\vera\mu{\diam{\boxx b}\implies\boxx b}$
 \end_inset
 
 
@@ -2715,7 +3682,7 @@ Ma allora in
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\diam{\boxx b}}$
+\begin_inset Formula $\veraw\mu\alpha{\diam{\boxx b}}$
 \end_inset
 
  
@@ -2734,7 +3701,7 @@ ma allora per Modus Ponens, è vale anche:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx b}$
+\begin_inset Formula $\veraw\mu\alpha{\boxx b}$
 \end_inset
 
 
@@ -2778,7 +3745,7 @@ Dove all'assioma Z vengono sostituiti rispettivamente:
 
 \begin_layout Itemize
 Dum: 
-\begin_inset Formula $\boxx{(\boa\implies a)\implies(\diam{\boa}\implies\boa)}$
+\begin_inset Formula $\boxx{(\boa\implies a)\implies(\diam\boa\implies\boa)}$
 \end_inset
 
 
@@ -2786,7 +3753,7 @@ Dum:
 
 \begin_layout Itemize
 X: 
-\begin_inset Formula $\boxx{\boa}\implies\boa$
+\begin_inset Formula $\boxx\boa\implies\boa$
 \end_inset
 
 

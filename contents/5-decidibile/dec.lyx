@@ -2856,6 +2856,7 @@ Se una logica contiene l'assioma T devo aggiungere alle regole del Tableau
 Regole di necessitazione
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 \begin_inset Formula $\dfrac{\sigma\,\boa}{\sigma_{n}\, a}$
 \end_inset
@@ -2879,6 +2880,7 @@ nodo prefisso del nodo corrente
  (es 11 è prefisso di 111)
 \end_layout
 
+\end_deeper
 \begin_layout Standard
 es.
  Si provi che la formula 
