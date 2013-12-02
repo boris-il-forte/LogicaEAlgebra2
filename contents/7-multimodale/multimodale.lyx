@@ -153,7 +153,7 @@ La semantica di una logica multimodale è la stessa della logica proposizionale
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\neci ia}\iff\veraw{\mu}{\beta}a\,\forall\beta\,:\,(\alpha,\,\beta)\in R_{i}$
+\begin_inset Formula $\veraw\mu\alpha{\neci ia}\iff\veraw\mu\beta a\,\forall\beta\,:\,(\alpha,\,\beta)\in R_{i}$
 \end_inset
 
 
@@ -314,7 +314,7 @@ Dimostrazione
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\veraw{\mu}{\alpha}a$
+\begin_inset Formula $\veraw\mu\alpha a$
 \end_inset
 
  e 
@@ -326,7 +326,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\veraw{\mu}{\alpha}{\necp{\posf a}}$
+\begin_inset Formula $\veraw\mu\alpha{\necp{\posf a}}$
 \end_inset
 
 
@@ -349,7 +349,7 @@ Ogni mondo
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\beta}{\posf a}$
+\begin_inset Formula $\veraw\mu\beta{\posf a}$
 \end_inset
 
 
@@ -360,7 +360,7 @@ allora, usando la regola di necessitazione nel passato, possiamo scrivere:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\necp{\posf a}}$
+\begin_inset Formula $\veraw\mu\alpha{\necp{\posf a}}$
 \end_inset
 
 
@@ -375,7 +375,7 @@ ma poichè per ipotesi in
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\necp{\posf a}}$
+\begin_inset Formula $\veraw\mu\alpha{\necp{\posf a}}$
 \end_inset
 
 
@@ -391,7 +391,7 @@ poichè abbiamo preso un
 \end_inset
 
 Ip) 
-\begin_inset Formula $\veraw{\mu}{\alpha}{\necp{\posf a}}$
+\begin_inset Formula $\veraw\mu\alpha{\necp{\posf a}}$
 \end_inset
 
 
@@ -453,7 +453,7 @@ allora in
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\beta}{\posf A}$
+\begin_inset Formula $\nonveraw\mu\beta{\posf A}$
 \end_inset
 
 
@@ -476,7 +476,7 @@ ma poichè
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necp{\posf A}}$
+\begin_inset Formula $\nonveraw\mu\alpha{\necp{\posf A}}$
 \end_inset
 
 
@@ -491,7 +491,7 @@ Ma allora, poichè in
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\alpha}{A\implies\necp{\posf A}}$
+\begin_inset Formula $\nonveraw\mu\alpha{A\implies\necp{\posf A}}$
 \end_inset
 
 
@@ -916,7 +916,7 @@ F1)
 
 \begin_layout Standard
 F2) 
-\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necf b\in\Gamma\,\veraw{\mu}{\alpha}{\necf b}\implies\veraw{\mu}{\beta}b)$
+\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necf b\in\Gamma\,\veraw\mu\alpha{\necf b}\implies\veraw\mu\beta b)$
 \end_inset
 
 
@@ -924,7 +924,7 @@ F2)
 
 \begin_layout Standard
 F3) 
-\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necp b\in\Gamma\,\veraw{\mu}{\beta}{\necp b}\implies\veraw{\mu}{\alpha}b)$
+\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necp b\in\Gamma\,\veraw\mu\beta{\necp b}\implies\veraw\mu\alpha b)$
 \end_inset
 
 
@@ -1024,14 +1024,14 @@ Preso
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\necp A}$
+\begin_inset Formula $\veraw\mu\alpha{\necp A}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necf A}$
+\begin_inset Formula $\nonveraw\mu\alpha{\necf A}$
 \end_inset
 
 
@@ -1046,7 +1046,7 @@ e quindi possiamo scrivere
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necp A\implies\necf A}$
+\begin_inset Formula $\nonveraw\mu\alpha{\necp A\implies\necf A}$
 \end_inset
 
 
@@ -1107,9 +1107,176 @@ e la tesi è dimostrata.
 \end_inset
 
 
-\begin_inset Newline newline
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+  
+\backslash
+definecolor{cc60000}{RGB}{198,0,0} 
+\backslash
+definecolor{c800000}{RGB}{128,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[y=0.80pt,x=0.80pt,yscale=-1, 
+\end_layout
+
+\begin_layout Plain Layout
+
+inner sep=0pt, outer sep=0pt] 
+\backslash
+begin{scope}[shift={(0,-752.36216)}] 
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+path[shift={(0,752.36216)},draw=black,line join=miter,line 
+\end_layout
+
+\begin_layout Plain Layout
+
+cap=butt,line     width=0.800pt] (30.0000,55.0000) -- (578.6159,55.0000);
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+path[draw=cc60000,fill=c800000,line join=miter,line cap=butt,line    
+\end_layout
+
+\begin_layout Plain Layout
+
+width=1.176pt] (318.0000,789.0651) ..
+ controls (317.7036,818.9733)
+\end_layout
+
+\begin_layout Plain Layout
+
+and     (318.0000,817.6504) ..
+ (318.0000,817.6504);  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+path[shift={(0,752.36216)},fill=black] (344.70734,136.11012) node[above right]
+  
+\end_layout
+
+\begin_layout Plain Layout
+
+  (text3993) {};  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+path[fill=black] (305.92676,776.86609) 
+\end_layout
+
+\begin_layout Plain Layout
+
+node[above right] (text4078) {$
+\backslash
+sqrt{2}$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+path[shift={(0,752.36216)},fill=black] 
+\end_layout
+
+\begin_layout Plain Layout
+
+(489.36133,76.863548) node[above right]     (text4105) {};  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+path[draw=black,line join=miter,line cap=butt,line width=0.710pt]  
+\end_layout
+
+\begin_layout Plain Layout
+
+  (254.0000,817.9182) -- (254.0000,788.8061);   
+\backslash
+path[fill=black]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(235.91389,777.67352) node[above right] (text4228) {$
+\backslash
+alpha$};  
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+path[cm={{0.09011,0.0,0.0,0.12041,(552.7687,781.39932)}},draw=black,fill=black]
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+ (354.7100,211.5149) -- (302.2148,240.5337) -- (250.8362,271.4865) -- 
+\end_layout
+
+\begin_layout Plain Layout
+
+   (251.9528,211.5149) -- (250.8362,151.5433) -- (302.2148,182.4960) -- cycle;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture} 
+\end_layout
+
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 Ip) 
 \begin_inset Formula $\delta=\max\limits _{\eta\in\mathbb{R}}(\veraw{\mu}{\eta}{A\,\eta<\delta)}$
 \end_inset
@@ -1213,9 +1380,189 @@ allora avremo che in
 \end_inset
 
 
-\begin_inset Newline newline
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[y=0.80pt,x=0.80pt,yscale=-1, inner sep=0pt, outer sep=0pt]
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{scope}[shift={(0,-752.36216)}]  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+path[shift={(0,752.36216)},draw=black,line join=miter,line cap=butt,line
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+ width=0.800pt] (30.0000,55.0000) -- (578.6159,55.0000);  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+path[shift={(0,752.36216)},fill=black] (344.70734,136.11012) node[above right]
+     (text3993) {};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+path[fill=black] (360.87012,839.06793) node[above right] (text4078) {$
+\backslash
+gamma$};  
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+path[shift={(0,752.36216)},fill=black] (489.36133,76.863548) node[above right]
+    (text4105) {}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+path[draw=black,line join=miter,line cap=butt,line width=0.777pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+(276.0850,827.9182) -- (276.0850,799.3622);  
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+path[fill=black] (210.22182,794.57617) node[above right] (text4228) {$
+\backslash
+alpha$};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+path[cm={{0.09011,0.0,0.0,0.12041,(552.7687,781.39932)}},draw=black,fill=black]
+  
+\end_layout
+
+\begin_layout Plain Layout
+
+  (354.7100,211.5149) -- (302.2148,240.5337) -- (250.8362,271.4865) --    
+\end_layout
+
+\begin_layout Plain Layout
+
+(251.9528,211.5149) -- (250.8362,151.5433) -- (302.2148,182.4960) -- cycle; 
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+path[shift={(0,752.36216)},draw=black,line join=miter,line cap=butt,line
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+   width=0.800pt] (230.0000,54.5911) -- (230.0000,90.0000) -- (30.0000,90.0000);
+  
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+path[fill=black] (263.79507,789.35651) node[above right] (text4725) {[p]a};
+  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+path[fill=black] (262.00568,840.79724) node[above right] (text4729) {$
+\backslash
+delta$};  
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+path[shift={(0,752.36216)},draw=black,line join=miter,line cap=butt,line
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+width=0.800pt] (359.6890,47.0000) -- (359.6890,75.7800); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{scope}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 Questo significa che esiste una differente potenza espressiva tra la logica
  unimodale e la logica multimodale.
 \end_layout
