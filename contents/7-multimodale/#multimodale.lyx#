@@ -314,7 +314,7 @@ Dimostrazione
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\veraw{\mu}{\alpha}a$
+\begin_inset Formula $\veraw\mu\alpha a$
 \end_inset
 
  e 
@@ -326,7 +326,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\veraw{\mu}{\alpha}{\necp{\posf a}}$
+\begin_inset Formula $\veraw\mu\alpha{\necp{\posf a}}$
 \end_inset
 
 
@@ -349,7 +349,7 @@ Ogni mondo
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\beta}{\posf a}$
+\begin_inset Formula $\veraw\mu\beta{\posf a}$
 \end_inset
 
 
@@ -360,7 +360,7 @@ allora, usando la regola di necessitazione nel passato, possiamo scrivere:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\necp{\posf a}}$
+\begin_inset Formula $\veraw\mu\alpha{\necp{\posf a}}$
 \end_inset
 
 
@@ -375,7 +375,7 @@ ma poichè per ipotesi in
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\necp{\posf a}}$
+\begin_inset Formula $\veraw\mu\alpha{\necp{\posf a}}$
 \end_inset
 
 
@@ -391,7 +391,7 @@ poichè abbiamo preso un
 \end_inset
 
 Ip) 
-\begin_inset Formula $\veraw{\mu}{\alpha}{\necp{\posf a}}$
+\begin_inset Formula $\veraw\mu\alpha{\necp{\posf a}}$
 \end_inset
 
 
@@ -453,7 +453,7 @@ allora in
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\beta}{\posf A}$
+\begin_inset Formula $\nonveraw\mu\beta{\posf A}$
 \end_inset
 
 
@@ -476,7 +476,7 @@ ma poichè
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necp{\posf A}}$
+\begin_inset Formula $\nonveraw\mu\alpha{\necp{\posf A}}$
 \end_inset
 
 
@@ -491,7 +491,7 @@ Ma allora, poichè in
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\alpha}{A\implies\necp{\posf A}}$
+\begin_inset Formula $\nonveraw\mu\alpha{A\implies\necp{\posf A}}$
 \end_inset
 
 
@@ -841,6 +841,80 @@ dove gli assiomi che esprimono la transitività sono:
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula $B_{PF}:$
+\end_inset
+
+ 
+\begin_inset Formula $a\implies\necp{\posf a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B_{FP}:$
+\end_inset
+
+ 
+\begin_inset Formula $a\implies\necf{\posp a}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una logica temporale è una logica normale multimodale nei connettivi modali
+ [F] e [P]
+\end_layout
+
+\begin_layout Standard
+che contiene gli schemi 
+\begin_inset Formula $B_{FP}$
+\end_inset
+
+ 
+\begin_inset Formula $B\mbox{\ensuremath{_{PF}}}$
+\end_inset
+
+
+\begin_inset Formula $4_{P}$
+\end_inset
+
+ 
+\begin_inset Formula $4_{F}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Si dice logica lineare temporale ogni logica normale che contiene la minima
+\end_layout
+
+\begin_layout Standard
+logica normale temporale 
+\begin_inset Formula $Kt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Kt$
+\end_inset
+
+ si assiomatizza con 
+\begin_inset Formula $A1,\ A2,\ A3,\ MP,\ K_{P},\ K_{F},\ B_{PF},\ B_{FP},\ 4_{P},\ 4_{F},\ RN_{P},\ RN_{F}$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Correttezza, completezza e decidibilità nelle logiche multimodali
 \end_layout
@@ -916,7 +990,7 @@ F1)
 
 \begin_layout Standard
 F2) 
-\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necf b\in\Gamma\,\veraw{\mu}{\alpha}{\necf b}\implies\veraw{\mu}{\beta}b)$
+\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necf b\in\Gamma\,\veraw\mu\alpha{\necf b}\implies\veraw\mu\beta b)$
 \end_inset
 
 
@@ -924,7 +998,7 @@ F2)
 
 \begin_layout Standard
 F3) 
-\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necp b\in\Gamma\,\veraw{\mu}{\beta}{\necp b}\implies\veraw{\mu}{\alpha}b)$
+\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necp b\in\Gamma\,\veraw\mu\beta{\necp b}\implies\veraw\mu\alpha b)$
 \end_inset
 
 
@@ -1024,14 +1098,14 @@ Preso
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\necp A}$
+\begin_inset Formula $\veraw\mu\alpha{\necp A}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necf A}$
+\begin_inset Formula $\nonveraw\mu\alpha{\necf A}$
 \end_inset
 
 
@@ -1046,7 +1120,7 @@ e quindi possiamo scrivere
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necp A\implies\necf A}$
+\begin_inset Formula $\nonveraw\mu\alpha{\necp A\implies\necf A}$
 \end_inset
 
 
@@ -1061,7 +1135,7 @@ Tuttavia l'antecedente di Cont è vero, infatti
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\posf{\necp A}}$
+\begin_inset Formula $\veraw\mu\alpha{\posf{\necp A}}$
 \end_inset
 
  
@@ -1080,7 +1154,7 @@ mentre
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necp A}$
+\begin_inset Formula $\nonveraw\mu\alpha{\necp A}$
 \end_inset
 
 
@@ -1278,7 +1352,7 @@ end{tikzpicture}
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\delta=\max\limits _{\eta\in\mathbb{R}}(\veraw{\mu}{\eta}{A\,\eta<\delta)}$
+\begin_inset Formula $\delta=\max\limits _{\eta\in\mathbb{R}}(\veraw\mu\eta{A\,\eta<\delta)}$
 \end_inset
 
 
@@ -1300,14 +1374,14 @@ Ts)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\necp A}$
+\begin_inset Formula $\veraw\mu\alpha{\necp A}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necf A}$
+\begin_inset Formula $\nonveraw\mu\alpha{\necf A}$
 \end_inset
 
 
@@ -1318,7 +1392,7 @@ Tuttavia l'antecedente di Cont è falso, infatti:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\delta}{\necp A}$
+\begin_inset Formula $\veraw\mu\delta{\necp A}$
 \end_inset
 
 
@@ -1337,7 +1411,7 @@ ma poichè non può esistere nessun mondo
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\delta}{\posf{\necp A}}$
+\begin_inset Formula $\nonveraw\mu\delta{\posf{\necp A}}$
 \end_inset
 
 
@@ -1348,7 +1422,7 @@ e quindi non potrà che essere che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\delta}{\necp a\implies\posf{\necp a}}$
+\begin_inset Formula $\veraw\mu\delta{\necp a\implies\posf{\necp a}}$
 \end_inset
 
 
@@ -1363,7 +1437,7 @@ Poichè
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx{(\necp a\implies\posf{\necp a})}}$
+\begin_inset Formula $\veraw\mu\alpha{\boxx{(\necp a\implies\posf{\necp a})}}$
 \end_inset
 
 
@@ -1568,72 +1642,24 @@ Questo significa che esiste una differente potenza espressiva tra la logica
 \end_layout
 
 \begin_layout Section
-Logica lineare temporale
+Logica della concorrenza
 \end_layout
 
 \begin_layout Standard
-Si dice logica lineare temporale ogni logica normale che contiene la minima
- logica normale temporale 
-\begin_inset Formula $Kt$
+Una logica che si presta bene a descrivere la concorrenza, cioè un insieme
+ di n diversi processi che agiscono in parallelo, condividendo la memoria,
+ in modo che ogni processo può alterare i valori di variabili usate anche
+ dagli altri, è la logica nota sotto il nome di LTL (linear temporal logic)
+ o di logica delle concorrenza.
+\begin_inset Newline newline
 \end_inset
 
- e gli schemi 
-\begin_inset Formula $\boxx a\implies[P]<F>a$
+Si introducono l'operatore unario
+\begin_inset Formula $\circ$
 \end_inset
 
- e 
-\begin_inset Formula $\boxx a\implies\text{\ensuremath{[F]<P>\ensuremath{a}}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $Kt$
-\end_inset
-
- si assiomatizza con A1, A2, A3, MP, Kp, Kf, Bpf, Bfp, 4p, 4f, RNp, RNf
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $B_{PF}:$
-\end_inset
-
- 
-\begin_inset Formula $a\implies\necp{\posf a}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $B_{FP}:$
-\end_inset
-
- 
-\begin_inset Formula $a\implies\necf{\posp a}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $4_{P}$
-\end_inset
-
-: 
-\begin_inset Formula $\necf a\implies\necf{\necf a}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $4_{F}$
-\end_inset
-
-: 
-\begin_inset Formula $\necp a\implies\necp{\necp a}$
+ e l'operatore binario 
+\begin_inset Formula $U$
 \end_inset
 
 
@@ -1644,7 +1670,195 @@ Si dice logica lineare temporale ogni logica normale che contiene la minima
 \end_layout
 
 \begin_layout Standard
-La logica della concorrenza, abbreviata con LTL 			
+\begin_inset Formula $\veraw Mj{\circ}a$
+\end_inset
+
+, se e solo se 
+\begin_inset Formula $\veraw M{j+1}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw Mj{\boa}$
+\end_inset
+
+, se e solo se 
+\begin_inset Formula $\veraw Mka$
+\end_inset
+
+ per ogni 
+\begin_inset Formula $k\geq j$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw Mj{aUb}$
+\end_inset
+
+, se e solo se 
+\begin_inset Formula $\veraw Mkb$
+\end_inset
+
+ per qualche 
+\begin_inset Formula $k\geq j$
+\end_inset
+
+ e 
+\begin_inset Formula $\veraw Mia$
+\end_inset
+
+ per ogni i con
+\begin_inset Formula $j\leq i<k$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Questa logica si può assiomatizzare con i seguenti:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $K:\ \boxx{(\implica a{b)\implies(\boa\implies\boxx{b)}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K_{\circ}:\ \circ(\implica a{b)\implies(\circ a\implies\circ b)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Fun:\ \circ\neg a\iff\neg\circ a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Mix:\ \boxx{a\implies a\wedge\circ\boa}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Ind:\ \boxx{(a\implies\circ a)\implies(a\implies\boa)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U1:\ a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+.
+\end_layout
+
+\begin_layout Standard
+.
+\end_layout
+
+\begin_layout Standard
+.
+\end_layout
+
+\begin_layout Standard
+.
+\end_layout
+
+\begin_layout Standard
+.
+\end_layout
+
+\begin_layout Standard
+.
+\end_layout
+
+\begin_layout Standard
+.
+\end_layout
+
+\begin_layout Standard
+.
+\end_layout
+
+\begin_layout Standard
+.
+\end_layout
+
+\begin_layout Standard
+.
+\end_layout
+
+\begin_layout Standard
+.
+\end_layout
+
+\begin_layout Standard
+.
+\end_layout
+
+\begin_layout Standard
+.
+\end_layout
+
+\begin_layout Standard
+.
+\end_layout
+
+\begin_layout Standard
+.
+\end_layout
+
+\begin_layout Standard
+.
+\end_layout
+
+\begin_layout Standard
+.
+\end_layout
+
+\begin_layout Standard
+La logica della concorrenza, abbreviata con LTL 		
+\end_layout
+
+\begin_layout Standard
+Si definiscono nuovi operatori come circle e [
+\begin_inset Formula $\mbox{\forall}F]$
+\end_inset
+
+ e [
+\begin_inset Formula $\exists F$
+\end_inset
+
+] ..
+\end_layout
+
+\begin_layout Standard
+	
 \end_layout
 
 \end_body
