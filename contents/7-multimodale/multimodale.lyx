@@ -114,8 +114,8 @@ Logiche multimodali
 \end_layout
 
 \begin_layout Standard
-una logica multimodale è una logica che definisce oltre ai norali operatori
- della logica proposizionali gli operatori:
+una logica multimodale è una logica che definisce oltre ai normali operatori
+ della logica proposizionale gli operatori:
 \end_layout
 
 \begin_layout Standard
@@ -314,7 +314,7 @@ Dimostrazione
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\veraw\mu\alpha a$
+\begin_inset Formula $\veraw{\mu}{\alpha}a$
 \end_inset
 
  e 
@@ -326,7 +326,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\veraw\mu\alpha{\necp{\posf a}}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\necp{\posf a}}$
 \end_inset
 
 
@@ -349,7 +349,7 @@ Ogni mondo
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\beta{\posf a}$
+\begin_inset Formula $\veraw{\mu}{\beta}{\posf a}$
 \end_inset
 
 
@@ -360,7 +360,7 @@ allora, usando la regola di necessitazione nel passato, possiamo scrivere:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\alpha{\necp{\posf a}}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\necp{\posf a}}$
 \end_inset
 
 
@@ -375,7 +375,7 @@ ma poichè per ipotesi in
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\alpha{\necp{\posf a}}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\necp{\posf a}}$
 \end_inset
 
 
@@ -391,7 +391,7 @@ poichè abbiamo preso un
 \end_inset
 
 Ip) 
-\begin_inset Formula $\veraw\mu\alpha{\necp{\posf a}}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\necp{\posf a}}$
 \end_inset
 
 
@@ -453,7 +453,7 @@ allora in
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw\mu\beta{\posf A}$
+\begin_inset Formula $\nonveraw{\mu}{\beta}{\posf A}$
 \end_inset
 
 
@@ -476,7 +476,7 @@ ma poichè
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw\mu\alpha{\necp{\posf A}}$
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necp{\posf A}}$
 \end_inset
 
 
@@ -491,7 +491,7 @@ Ma allora, poichè in
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw\mu\alpha{A\implies\necp{\posf A}}$
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{A\implies\necp{\posf A}}$
 \end_inset
 
 
@@ -916,7 +916,7 @@ F1)
 
 \begin_layout Standard
 F2) 
-\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necf b\in\Gamma\,\veraw\mu\alpha{\necf b}\implies\veraw\mu\beta b)$
+\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necf b\in\Gamma\,\veraw{\mu}{\alpha}{\necf b}\implies\veraw{\mu}{\beta}b)$
 \end_inset
 
 
@@ -924,7 +924,7 @@ F2)
 
 \begin_layout Standard
 F3) 
-\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necp b\in\Gamma\,\veraw\mu\beta{\necp b}\implies\veraw\mu\alpha b)$
+\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necp b\in\Gamma\,\veraw{\mu}{\beta}{\necp b}\implies\veraw{\mu}{\alpha}b)$
 \end_inset
 
 
@@ -1024,14 +1024,14 @@ Preso
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\alpha{\necp A}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\necp A}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw\mu\alpha{\necf A}$
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necf A}$
 \end_inset
 
 
@@ -1046,7 +1046,7 @@ e quindi possiamo scrivere
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw\mu\alpha{\necp A\implies\necf A}$
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necp A\implies\necf A}$
 \end_inset
 
 
@@ -1569,6 +1569,82 @@ Questo significa che esiste una differente potenza espressiva tra la logica
 
 \begin_layout Section
 Logica lineare temporale
+\end_layout
+
+\begin_layout Standard
+Si dice logica lineare temporale ogni logica normale che contiene la minima
+ logica normale temporale 
+\begin_inset Formula $Kt$
+\end_inset
+
+ e gli schemi 
+\begin_inset Formula $\boxx a\implies[P]<F>a$
+\end_inset
+
+ e 
+\begin_inset Formula $\boxx a\implies\text{\ensuremath{[F]<P>\ensuremath{a}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Kt$
+\end_inset
+
+ si assiomatizza con A1, A2, A3, MP, Kp, Kf, Bpf, Bfp, 4p, 4f, RNp, RNf
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B_{PF}:$
+\end_inset
+
+ 
+\begin_inset Formula $a\implies\necp{\posf a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B_{FP}:$
+\end_inset
+
+ 
+\begin_inset Formula $a\implies\necf{\posp a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $4_{P}$
+\end_inset
+
+: 
+\begin_inset Formula $\necf a\implies\necf{\necf a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $4_{F}$
+\end_inset
+
+: 
+\begin_inset Formula $\necp a\implies\necp{\necp a}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La logica della concorrenza, abbreviata con LTL 			
 \end_layout
 
 \end_body

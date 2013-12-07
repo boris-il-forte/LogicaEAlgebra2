@@ -95,53 +95,6 @@ Lasciate il formaggio fuori dall'aula.
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tikzpicture}[y=0.80pt,x=0.80pt,yscale=-1, inner sep=0pt, outer sep=0pt]
-   
-\backslash
-path[shift={(174.28572,-45.71428)},draw=cf6f6ef,fill=c043084,line     join=miter,l
-ine cap=butt,line width=0.800pt] (185.7143,392.3622) ..
- controls     (194.7392,383.9103) and (201.5599,400.3577) ..
- (199.7619,407.3622) ..
- controls     (194.8895,426.3439) and (170.2973,428.6146) ..
- (155.7143,420.4574) ..
- controls     (129.6286,405.8660) and (127.6882,370.1327) ..
- (143.5714,347.3622) ..
- controls     (166.8807,313.9455) and (215.0433,312.3510) ..
- (245.7143,336.1717) ..
- controls     (286.5940,367.9211) and (287.8015,428.8930) ..
- (255.9523,467.3622) ..
- controls     (215.8734,515.7718) and (141.9327,516.5726) ..
- (95.7142,476.6479) ..
- controls     (39.7375,428.2937) and (39.3535,341.3023) ..
- (87.3810,287.3621) ..
- controls     (143.9797,223.7955) and (244.0697,223.8338) ..
- (305.7143,279.9813) ..
- controls     (376.8855,344.8058) and (376.4217,458.0245) ..
- (312.1428,527.3622) ..
- controls     (239.1050,606.1481) and (112.7369,605.2566) ..
- (35.7142,532.8383) ..
- controls     (-50.6935,451.5959) and (-49.3730,312.0638) ..
- (31.1905,227.3621) ..
- controls     (120.6313,133.3272) and (273.3380,135.0777) ..
- (365.7143,223.7908);
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tikzpicture}
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
