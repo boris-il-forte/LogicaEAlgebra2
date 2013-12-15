@@ -110,7 +110,7 @@ Logica Multimodale Classica
 \end_layout
 
 \begin_layout Section
-Yet another model
+Critiche al vecchio regime
 \end_layout
 
 \begin_layout Standard
@@ -120,7 +120,7 @@ Nella logica modale, come l'abbiamo descritta nei precedenti capitoli, sono
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\boxx{\top}$
+\begin_inset Formula $\boxx\top$
 \end_inset
 
 
@@ -163,7 +163,11 @@ Ma diventa già discutibile se
 \begin_inset Formula $\boxx{(a\wedge b)\implies\boa\wedge\boxx b}$
 \end_inset
 
- (schema M)
+ (schema 
+\series bold
+M
+\series default
+)
 \end_layout
 
 \begin_layout Standard
@@ -184,8 +188,398 @@ non so
 
 \begin_layout Standard
 es.
- io non so se tizio z.
- sia omosessuale e un astronauta però so per certo che è omo
+ io non so se tizio z sia omosessuale E un astronauta però so che z è omosessual
+e e quindi il conseguente in questo caso non è vero.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\boa\wedge\boxx b\implies\boxx{(a\wedge b)}$
+\end_inset
+
+ (schema 
+\series bold
+C
+\series default
+)
+\end_layout
+
+\begin_layout Standard
+Analogo al precedente con 
+\begin_inset Quotes eld
+\end_inset
+
+vedo
+\begin_inset Quotes erd
+\end_inset
+
+ come 
+\begin_inset Formula $\square$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Yet another Model
+\end_layout
+
+\begin_layout Standard
+A questo proposito si definisce diversamente il concetto di frame:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F=(S,N)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S$
+\end_inset
+
+ sia un insieme di stati 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N:S\rightarrow\mathcal{P}(\mathcal{P}(S))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e in modo naturale il modello 
+\begin_inset Formula $M=(S,N.V)$
+\end_inset
+
+ che fissa una funzione di verità
+\end_layout
+
+\begin_layout Standard
+Si definisce insieme di verità di 
+\begin_inset Formula $a$
+\end_inset
+
+ il seguente: 
+\begin_inset Formula $\verins a=\{\alpha:\ \veraw M\alpha{a\}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Inoltre diciamo che 
+\begin_inset Formula $\veraw M\alpha{\boxx a}$
+\end_inset
+
+ se e solo se: 
+\begin_inset Formula $\verins a\in N(\alpha)$
+\end_inset
+
+	
+\end_layout
+
+\begin_layout Subsection
+Negazione di Box Top
+\end_layout
+
+\begin_layout Standard
+Ts) 
+\begin_inset Formula $\nonvera F{\boxx T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consideriamo un frame con due stati
+\begin_inset Formula $F(\{\alpha,\beta\},N)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N(\alpha)=\{\{\beta\}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N(\beta)=\{\{\alpha\},\{\beta\},\{\alpha,\beta\}\}$
+\end_inset
+
+ (solo un esempio, qualunque 
+\begin_inset Formula $N(\beta)$
+\end_inset
+
+ va bene per la dimostrazione)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\verins T=\{\alpha,\beta\}$
+\end_inset
+
+ infatti 
+\begin_inset Formula $T$
+\end_inset
+
+ è vero in ogni mondo, ma 
+\begin_inset Formula $\nonveraw M\alpha{\boxx T}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+infatti 
+\begin_inset Formula $\verins T\notin N(\alpha)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Negazione di M
+\end_layout
+
+\begin_layout Standard
+Ts) 
+\begin_inset Formula $\nonvera F{\boxx{(a\wedge b)\implies\boa\wedge\boxx b}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Considero un frame in cui vale l'antecedente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S=\{\alpha,\beta\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N(\alpha)=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N(\beta)=\{\{\alpha,\beta\}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V(A)=\alpha$
+\end_inset
+
+, 
+\begin_inset Formula $V(B)=\beta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con queste ipotesi si ha: 
+\begin_inset Formula $\veraw M{\alpha}{\boxx{(A\wedge B)}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+infatti 
+\begin_inset Formula $\verins{A\wedge B}=\{\gamma:\ \mbox{\veraw M{\gamma}{A\wedge B}\}}$
+\end_inset
+
+ = 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+ perché in nessuno mondo è vera sia A che B
+\end_layout
+
+\begin_layout Standard
+e quindi:	
+\begin_inset Formula $\verins{A\wedge B}\in N(\alpha)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Ora mostro che non vale il conseguente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\verins A=\{\alpha\}$
+\end_inset
+
+ e palesemente 
+\begin_inset Formula $\{\alpha\}\notin N(\alpha)=\emptyset$
+\end_inset
+
+ da cui 
+\begin_inset Formula $\nonveraw M{\alpha}{\boxx A}$
+\end_inset
+
+ da qui quindi neppure:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonveraw M{\alpha}{\boxx{A\wedge\boxx B}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Condizione perché valga M
+\end_layout
+
+\begin_layout Standard
+Ip)
+\begin_inset Formula $\vera F{\boxx{(a\wedge b)\implies\boa\wedge\boxx b}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Ts)
+\begin_inset Formula $\forall X,Y\ Se\ X\cap Y\in N(\alpha)\ allora\ X\in N(\alpha),\ Y\in N(\beta)$
+\end_inset
+
+			
+\end_layout
+
+\begin_layout Standard
+Considero un frame generico F che abbia 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ come stato
+\end_layout
+
+\begin_layout Standard
+Siano 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ due insiemi di stati tali che
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X\cap Y\in N(\alpha)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V(A)=\{s\ |\ s\in X\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V(B)=\{s\ |\ s\in Y\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dato che 
+\begin_inset Formula $X\cap Y\in N(\alpha)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+si ha che
+\begin_inset Formula $\verins{A\wedge B}\in N(\alpha)$
+\end_inset
+
+, infatti 
+\begin_inset Formula $\verins{A\wedge B}=\{\gamma\ :\ \veraw M{\gamma}{A\wedge B\}}=\{s\ :\ s\in X\ e\ s\in Y\}=\{s\ :\ s\in X\cap Y\}=X\cap Y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+cioè gli stati in cui è vera 
+\begin_inset Formula $A\wedge B$
+\end_inset
+
+ sono gli stati in cui vale sia 
+\begin_inset Formula $A$
+\end_inset
+
+ che 
+\begin_inset Formula $B$
+\end_inset
+
+ cioè quelli che appartengono sia a 
+\begin_inset Formula $X$
+\end_inset
+
+ che a 
+\begin_inset Formula $Y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si ha quindi
+\begin_inset Formula $\veraw M{\alpha}{\boxx{(A\wedge B)}}$
+\end_inset
+
+ da cui per ipotesi:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw M{\alpha}{\boa\wedge\boxx b}$
+\end_inset
+
+ e cioè: 
+\begin_inset Formula $\veraw M{\alpha}{\boa}$
+\end_inset
+
+ e 
+\begin_inset Formula $\veraw M{\alpha}{\boxx b}$
+\end_inset
+
+ da cui:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\verins A=\{\alpha:\ \veraw M{\alpha}A\}=X\in N(\alpha)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\verins B=\{\alpha:\ \veraw M{\alpha}B\}=Y\in N(\alpha)$
+\end_inset
+
+	
 \end_layout
 
 \end_body
