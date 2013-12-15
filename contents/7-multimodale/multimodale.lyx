@@ -153,7 +153,7 @@ La semantica di una logica multimodale è la stessa della logica proposizionale
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\alpha{\neci ia}\iff\veraw\mu\beta a\,\forall\beta\,:\,(\alpha,\,\beta)\in R_{i}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\neci ia}\iff\veraw{\mu}{\beta}a\,\forall\beta\,:\,(\alpha,\,\beta)\in R_{i}$
 \end_inset
 
 
@@ -1888,11 +1888,16 @@ Per ottenere un risultato di decibilità bisogna cambiare le nozioni di alcuni
 \end_layout
 
 \begin_layout Standard
+	
+\end_layout
 
+\begin_layout Subsection
+CTL
 \end_layout
 
 \begin_layout Standard
-	
+In questa logica si cerca di modellizzare l'esecuzione di più programmi
+ lanciati in parallelo
 \end_layout
 
 \end_body

@@ -1,0 +1,349 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass report
+\begin_preamble
+
+
+\title{Logica e Algebra 2}
+
+\usepackage[english]{babel}
+\usepackage{tikz}
+
+\usepackage{settings/usefulMacros} 
+
+\usepackage{booktabs}\usepackage{listings}\lstset{columns=fullflexible}
+
+\usepackage{wasysym}
+
+\usepackage{amsthm}\newtheoremstyle{note} % name
+{\topsep} 	% Space above
+{\topsep} 	% Space below
+{\small}		% Body font
+{}		% Indent amount
+{\small\bfseries}% Theorem head font
+{:}		% Punctuation after theorem head
+{.5em}	% Space after theorem head
+{}		% Theorem head spec (can be left empty, meaning ‘normal’)
+
+\usepackage{fancyhdr}%% Cambia il carattere delle didascalie delle figure %%
+\usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption}
+
+\usepackage{comment}
+
+%per le tabelle lunghe e particolari
+\usepackage{lscape}
+
+
+
+\usepackage{babel}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language italian
+\language_package default
+\inputencoding utf8
+\fontencoding T1
+\font_roman default
+\font_sans default
+\font_typewriter mathpazo
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Logica Multimodale Classica	
+\end_layout
+
+\begin_layout Section
+Critiche al vecchio regime
+\end_layout
+
+\begin_layout Standard
+Nella logica modale, come l'abbiamo descritta nei precedenti capitoli, sono
+ possibili interpretazioni talvolte sgradite quando si danno significati
+ particolari agli operatori modali.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\boxx{\top}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sembra inappuntabile se 
+\begin_inset Formula $\square$
+\end_inset
+
+ si legge come 
+\begin_inset Quotes eld
+\end_inset
+
+è possibile
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Ma diventa già discutibile se 
+\begin_inset Formula $\square$
+\end_inset
+
+ si legge come 
+\begin_inset Quotes eld
+\end_inset
+
+è dimostrabile
+\begin_inset Quotes erd
+\end_inset
+
+, infatti il teorema di goedel asserisce che non tutto ciò che è vero è
+ dimostrabile
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\boxx{(a\wedge b)\implies\boa\wedge\boxx b}$
+\end_inset
+
+ (schema 
+\series bold
+M
+\series default
+)
+\end_layout
+
+\begin_layout Standard
+Se diamo a 
+\begin_inset Formula $\square$
+\end_inset
+
+il significato di 
+\begin_inset Quotes eld
+\end_inset
+
+non so
+\begin_inset Quotes erd
+\end_inset
+
+ notiamo che questa formula non è necessariamente significativa 
+\end_layout
+
+\begin_layout Standard
+es.
+ io non so se tizio z sia omosessuale E un astronauta però so che z è omosessual
+e e quindi il conseguente in questo caso non è vero.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\boa\wedge\boxx b\implies\boxx{(a\wedge b)}$
+\end_inset
+
+ (schema 
+\series bold
+C
+\series default
+)
+\end_layout
+
+\begin_layout Standard
+Analogo al precedente con 
+\begin_inset Quotes eld
+\end_inset
+
+vedo
+\begin_inset Quotes erd
+\end_inset
+
+ come 
+\begin_inset Formula $\square$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Yet another Model
+\end_layout
+
+\begin_layout Standard
+A questo proposito si definisce diversamente il concetto di frame:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F=(S,N)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S$
+\end_inset
+
+ sia un insieme di stati 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N:S\rightarrow\mathcal{P}(\mathcal{P}(S))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si definisce insieme di verità di 
+\begin_inset Formula $a$
+\end_inset
+
+ il seguente: 
+\begin_inset Formula $\verins a=\{\alpha:\ \veraw M{\alpha}{a\}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Inoltre diciamo che 
+\begin_inset Formula $\veraw M{\alpha}{\boxx a}$
+\end_inset
+
+ se e solo se: 
+\begin_inset Formula $\verins a\in N(\alpha)$
+\end_inset
+
+	
+\end_layout
+
+\begin_layout Subsection
+Negazione di Box Top
+\end_layout
+
+\begin_layout Standard
+Ts) 
+\begin_inset Formula $\nonvera F{\boxx T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consideriamo 
+\begin_inset Formula $F(\{\alpha,\beta\},N)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N(\alpha)=\{\{\beta\}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N(\beta)=\{\{\alpha\},\{\beta\},\{\alpha,\beta\}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\verins T=\{\alpha,\beta\}$
+\end_inset
+
+ infatti 
+\begin_inset Formula $T$
+\end_inset
+
+ è vero in ogni mondo, ma 
+\begin_inset Formula $\nonveraw M{\alpha}{\boxx T}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+infatti 
+\begin_inset Formula $\verins T\notin N(\alpha)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Negazione di M
+\end_layout
+
+\begin_layout Standard
+Ts) 
+\begin_inset Formula $\nonvera F{\boxx{(a\wedge b)\implies\boa\wedge\boxx b}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+	
+\end_layout
+
+\end_body
+\end_document
