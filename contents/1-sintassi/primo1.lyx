@@ -121,21 +121,20 @@ Formule Valide in ogni frame
 
 \begin_layout Standard
 Le seguenti formule sono valide in ogni frame F
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
-
+\begin_layout Standard
 \begin_inset Formula $\boxx{\top}$
 \end_inset
 
  con 
-\begin_inset Formula $\top\equiv a\vee\neg a\not\not$
+\begin_inset Formula $\top\equiv a\vee\neg a$
 \end_inset
 
  
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
+\begin_layout Standard
 infatti 
 \begin_inset Formula $\top$
 \end_inset
@@ -145,29 +144,32 @@ infatti
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
+\begin_layout Standard
+Vale inoltre il seguente assioma, detto assioma K:
+\end_layout
 
+\begin_layout Standard
 \begin_inset Formula $\boxx{(a}\implies b)\implies(\boa\implies\boxx b)$
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
+\begin_layout Standard
 infatti:
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
+\begin_layout Standard
 Se 
 \begin_inset Formula $\nonveraw M{\alpha}{\boxx{(a\implies b)}}$
 \end_inset
 
  la formula è vera
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
+\begin_layout Standard
 Se 
 \begin_inset Formula $\entail M{_{\alpha}\boxx{(a\implies b)}}$
 \end_inset
