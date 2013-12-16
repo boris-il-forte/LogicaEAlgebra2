@@ -1250,14 +1250,14 @@ Ts) Vale la regola RM
 \begin_inset Formula $\teorema{\boa\wedge\boa\implies\boxx b}$
 \end_inset
 
- -- per
+ -- per RR
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $\teorema{\boa\implies\boxx b}$
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1270,6 +1270,407 @@ Ip) Vale RM
 
 \begin_layout Standard
 Ts) Vale RE
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{a\iff b}$
+\end_inset
+
+ -- per ipotesi
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{a\implies b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{b\implies a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{\boa\implies\boxx b}$
+\end_inset
+
+ -- per RM
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{\boxx b\implies\boa}$
+\end_inset
+
+ -- per RM
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{\boa\iff\boxx b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Poichè vale RE, ogni logica monotona è classica
+\end_layout
+
+\begin_layout Subsection
+Minima logica monotona
+\end_layout
+
+\begin_layout Standard
+La minima logica monotona è EM, ossia la logica E con l'aggiunta dell'assioma
+ M
+\end_layout
+
+\begin_layout Standard
+Ip) valgono RE e M
+\end_layout
+
+\begin_layout Standard
+Ts) vale RM
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{a\implies b}$
+\end_inset
+
+ -- per ipotesi
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{(a\implies b)\implies(a\iff(a\wedge b))}$
+\end_inset
+
+ -- per tautologia
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{a\iff(a\wedge b)}$
+\end_inset
+
+ -- per MP 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{\boa\iff\boxx{(a\wedge b)}}$
+\end_inset
+
+ -- per RE
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{\boxx{(a\wedge b)\implies\boa\wedge\boxx b}}$
+\end_inset
+
+ -- schema M
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{\boa\implies\boa\wedge\boxx b}$
+\end_inset
+
+ -- per MP
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{\boa\implies\boxx b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+E il teorema è dimostrato
+\end_layout
+
+\begin_layout Standard
+Ip) vale RM
+\end_layout
+
+\begin_layout Standard
+Ts) Vale M
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{a\wedge b\implies a}$
+\end_inset
+
+ -- per tautologia
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{a\wedge b\implies b}$
+\end_inset
+
+ -- per tautologia
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{\boxx{(a\wedge b)\implies\boa}}$
+\end_inset
+
+ -- per RM
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{\boxx{(a\wedge b)}\implies\boxx b}$
+\end_inset
+
+ -- per RM
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{\boxx{(a\wedge b)\implies\boa\wedge\boxx b}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Che è lo schema M, e la tesi è dimostrata
+\end_layout
+
+\begin_layout Subsection
+Minima logica regolare
+\end_layout
+
+\begin_layout Standard
+La minima logica regolare è EMC, ossia la logica E con l'aggiunta degli
+ assiomi M e C
+\end_layout
+
+\begin_layout Standard
+Ip) valgono RE, M e C
+\end_layout
+
+\begin_layout Standard
+Ts) vale RR
+\end_layout
+
+\begin_layout Standard
+Sappiamo già che da RE e M ottengo RM.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{a\wedge b\implies c}$
+\end_inset
+
+ -- per ipotesi
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{\boxx{(a\wedge b)}\implies\boxx c}$
+\end_inset
+
+ -- per RM
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{\boa\wedge\boxx b\implies\boxx{(a\wedge b)}}$
+\end_inset
+
+ -- schema C
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{\boa\wedge\boxx b\implies\boxx c}$
+\end_inset
+
+ -- per MP
+\end_layout
+
+\begin_layout Standard
+Poichè vale RR, la tesi è dimostrata.
+\end_layout
+
+\begin_layout Standard
+Ip) vale RR
+\end_layout
+
+\begin_layout Standard
+Ts) valgono M e C
+\end_layout
+
+\begin_layout Standard
+Poichè abbiamo RR, sappiamo che vale RM, ma allora sappiamo già che vale
+ RE e l'assioma M.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{a\wedge b\implies a\wedge c}$
+\end_inset
+
+ -- per tautologia
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{\boa\wedge\boxx b\implies\boxx{a\wedge c}}$
+\end_inset
+
+ -- per RR
+\end_layout
+
+\begin_layout Standard
+Abbiamo trovalo lo schema C, quindi la tesi è dimostrata.
+\end_layout
+
+\begin_layout Subsection
+Minima logica normale
+\end_layout
+
+\begin_layout Standard
+La minima logica normale è EMCN, ossia la logica E con l'aggiunta dei tre
+ assiomi M, C e N.
+\end_layout
+
+\begin_layout Standard
+Questa logica è equivalente alle logiche normali, ossia i tre assiomi insieme
+ sono equivalenti alla logica K.
+\end_layout
+
+\begin_layout Standard
+Ip) valgono RE, M, C, N
+\end_layout
+
+\begin_layout Standard
+Ts) vale la logica K
+\end_layout
+
+\begin_layout Standard
+Possiamo notare che, per definizione della logica K, devono valere:
+\end_layout
+
+\begin_layout Itemize
+N 
+\end_layout
+
+\begin_layout Itemize
+C
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $(a\implies b)\implies(\boa\implies\boxx b)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Resta soltanto l'ultima affermazione da dimostrare.
+\end_layout
+
+\begin_layout Standard
+Sappiamo già che con RE e M otteniamo RM, e quindi:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{a\implies b}$
+\end_inset
+
+ -- per ipotesi
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{\boa\implies\boxx b}$
+\end_inset
+
+ -- per RM
+\end_layout
+
+\begin_layout Standard
+Ip) vale K
+\end_layout
+
+\begin_layout Standard
+Ts) vale RE, M, C e N.
+\end_layout
+
+\begin_layout Standard
+Poichè siamo in una logica normale vale RR e quindi valgono RE, M e C.
+\end_layout
+
+\begin_layout Standard
+N vale per punto 1 della definizione di logica normale.
+\end_layout
+
+\begin_layout Standard
+La tesi è quindi dimostrata.
+\end_layout
+
+\begin_layout Section
+Relazione Tra Frame Minimali E Standard
+\end_layout
+
+\begin_layout Standard
+Poichè le logiche classiche contengono le logiche normali, è possibile delineare
+ la relazione tra i frame minimali e i frame standard.
+\end_layout
+
+\begin_layout Subsection
+Frame Aumentato
+\end_layout
+
+\begin_layout Standard
+Si dice frame aumentato, un frame F supplementato tale che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall\alpha\, Z\equiv\underset{Y\in N(\alpha)}{\bigcap}Y\, Z\in N(\alpha)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un frame aumentato è un filtro:
+\end_layout
+
+\begin_layout Enumerate
+è supplementato
+\end_layout
+
+\begin_layout Enumerate
+è chiuso rispetto all'intersezione
+\end_layout
+
+\begin_layout Enumerate
+non è vuoto (c'è sempre almeno il vuoto)
+\end_layout
+
+\begin_layout Subsection
+Teorema
+\end_layout
+
+\begin_layout Standard
+Per ogni modello minimale aumentato 
+\begin_inset Formula $\mu^{\alpha}=(S,\, N,\, V)$
+\end_inset
+
+ esiste un modello standard 
+\begin_inset Formula $^{s}=(S,\, R,\, V)$
+\end_inset
+
+ tale che, 
+\begin_inset Formula $\forall\alpha\in S$
+\end_inset
+
+ e 
+\begin_inset Formula $\forall a\in f.b.f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu^{\alpha}}{}{}$
+\end_inset
+
+
 \end_layout
 
 \end_body
