@@ -120,10 +120,10 @@ Nella logica modale, come l'abbiamo descritta nei precedenti capitoli, sono
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\boxx\top$
+\begin_inset Formula $\boxx{\top}$
 \end_inset
 
-
+ (schema N)
 \end_layout
 
 \begin_layout Standard
@@ -262,15 +262,18 @@ Si definisce insieme di verità di
 \end_inset
 
  il seguente: 
-\begin_inset Formula $\verins a=\{\alpha:\ \veraw M\alpha{a\}}$
+\begin_inset Formula $\verins a=\{\alpha:\ \veraw M{\alpha}{a\}}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Inoltre diciamo che 
-\begin_inset Formula $\veraw M\alpha{\boxx a}$
+Inoltre diciamo che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw M{\alpha}{\boxx a}$
 \end_inset
 
  se e solo se: 
@@ -280,8 +283,19 @@ Inoltre diciamo che
 	
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula $\veraw M{\alpha}{\dia}$
+\end_inset
+
+ se e solo se: 
+\begin_inset Formula $(S-\verins a)\notin N(\alpha)$
+\end_inset
+
+	
+\end_layout
+
 \begin_layout Subsection
-Negazione di Box Top
+Negazione di N
 \end_layout
 
 \begin_layout Standard
@@ -327,7 +341,7 @@ Consideriamo un frame con due stati
 \end_inset
 
  è vero in ogni mondo, ma 
-\begin_inset Formula $\nonveraw M\alpha{\boxx T}$
+\begin_inset Formula $\nonveraw M{\alpha}{\boxx T}$
 \end_inset
 
  
@@ -339,6 +353,25 @@ infatti
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Validità di N
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera F{\boxx{\top}}$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $S\in N(\alpha)\,\forall\alpha\in S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un frame in cui vale l'assioma N si dice frame con unità.
 \end_layout
 
 \begin_layout Subsection
@@ -444,7 +477,7 @@ Ora mostro che non vale il conseguente:
 \end_layout
 
 \begin_layout Subsection
-Condizione perché valga M
+Validità di M
 \end_layout
 
 \begin_layout Standard
@@ -580,6 +613,663 @@ Si ha quindi
 \end_inset
 
 	
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Ip)
+\begin_inset Formula $\forall X,Y\ Se\ X\cap Y\in N(\alpha)\ allora\ X\in N(\alpha),\ Y\in N(\beta)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ts)
+\begin_inset Formula $\vera F{\boxx{(a\wedge b)\implies\boa\wedge\boxx b}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Supponiamo valga 
+\begin_inset Formula $\veraw M{\alpha}{\boxx{(a\wedge b)}}$
+\end_inset
+
+ allora: 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\verins{a\wedge b}\in N(\alpha)$
+\end_inset
+
+ (per definizione di 
+\begin_inset Formula $\square)$
+\end_inset
+
+, da cui:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\verins a\cap\verins b\in N(\alpha)$
+\end_inset
+
+, se chiamo 
+\begin_inset Formula $X$
+\end_inset
+
+ e 
+\begin_inset Formula $Y$
+\end_inset
+
+ questi insiemi di verità allora ho per ipotesi
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\verins a\in N(\alpha)$
+\end_inset
+
+ e 
+\begin_inset Formula $\verins b\in N(\alpha)$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+dalla prima, per definizione di 
+\begin_inset Formula $\square$
+\end_inset
+
+ ottengo 
+\begin_inset Formula $\veraw M{\alpha}{\boa}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+dalla seconda ottengo 
+\begin_inset Formula $\veraw M{\alpha}{\boxx b}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+quindi complessivamente 
+\begin_inset Formula $\veraw M{\alpha}{\boa\wedge\boxx b}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un frame in cui valga l'assioma M si dice frame supplementato.
+\end_layout
+
+\begin_layout Subsection
+Negazione di C
+\end_layout
+
+\begin_layout Standard
+Ts) 
+\begin_inset Formula $\vera FC$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consideriamo un frame con due stati 
+\begin_inset Formula $F(\{\alpha,\beta\},N)$
+\end_inset
+
+ e la seguente valutazione:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N(\alpha)=\{\{\beta\},\,\{\alpha\}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V(A)=\{\beta\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V(B)=\{\alpha\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+avremo dunque che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boa}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ma non vale:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{\boxx{}(A\wedge B)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+infatti:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\emptyset\nsubseteq N(\alpha)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Validità di C
+\end_layout
+
+\begin_layout Standard
+Ip) 
+\begin_inset Formula $\vera FC$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Ts) 
+\begin_inset Formula $\forall\alpha\in S,\,\forall X,\, Y\subseteq S\,:\, X\cap Y\in N(\alpha)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Poichè vale l'assioma C possiamo scrivere:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera F{\boxx A\wedge\boxx B}\implies\boxx{(A\wedge B)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+supponiamo valga l'antecedente, allora supponendo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V(A)=\{s\,|\, s\in X\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V(B)=\{s\,|\, s\in Y\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Avremo che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\verins A=X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\verins B=Y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ma per modus ponens vale il conseguente, e quindi:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx{(A\wedge B)}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e quindi l'insieme di verità:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\verins{A\wedge B}\in N(\alpha)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+da cui segue:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(X\cap Y)\in N(\alpha)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e la tesi è dimostrata.
+\end_layout
+
+\begin_layout Standard
+Ip) 
+\begin_inset Formula $\forall\alpha\in S,\,\forall X,\, Y\subseteq S\,:\, X\cap Y\in N(\alpha)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ts) 
+\begin_inset Formula $\vera FC$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Se l'antecedente è falso, C è vero, pr cui consideriamo il caso in cui valga
+ la formula:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boa\wedge\boxx b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+avremo quindi che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\verins A\in N(\alpha)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\verins B\in N(\alpha)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+allora possiamo scrivere:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\verins A\cap\verins B\equiv\verins{A\wedge B}\in N(\alpha)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un frame in cui valga l'assioma C si dice chiuso rispetto all'intersezione.
+\end_layout
+
+\begin_layout Subsection
+Proprietà dei frame
+\end_layout
+
+\begin_layout Standard
+Un frame si quasi filtro se:
+\end_layout
+
+\begin_layout Enumerate
+E' supplementato
+\end_layout
+
+\begin_layout Enumerate
+E' chiuso rispetto all'intersezione
+\end_layout
+
+\begin_layout Standard
+Un frame si dice filtro se:
+\end_layout
+
+\begin_layout Enumerate
+E' un quasi filtro
+\end_layout
+
+\begin_layout Enumerate
+E' un frame con unità
+\end_layout
+
+\begin_layout Section
+Logiche Classiche
+\end_layout
+
+\begin_layout Standard
+Le logiche classiche sono tutte le logiche valide sui frame minimali.
+ La minima logica classica è la Logica E.
+\end_layout
+
+\begin_layout Standard
+La logica è è definita come la logica che:
+\end_layout
+
+\begin_layout Itemize
+Contiene tutte le tautologie
+\end_layout
+
+\begin_layout Itemize
+E' chiusa rispetto al Modus Ponens
+\end_layout
+
+\begin_layout Itemize
+E' chiusa rispetto alla regola RE
+\end_layout
+
+\begin_layout Standard
+RE: 
+\begin_inset Formula $\dfrac{a\iff b}{\boa\iff\boxx b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Le logiche Monotone sono logiche classiche in cui vale anche la regola RM:
+\end_layout
+
+\begin_layout Standard
+RM: 
+\begin_inset Formula $\dfrac{a\implies b}{\boa\implies\boxx b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Le logiche Regolari sono logiche classiche in cui vale la regola RR:
+\end_layout
+
+\begin_layout Standard
+RR: 
+\begin_inset Formula $\dfrac{a\wedge b\implies c}{\boa\wedge\boxx b\implies\boxx b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Reticolo delle logiche classiche
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\backslash
+draw [black] (37.1,-46.6) circle (3); 
+\backslash
+draw (37.1,-46.6) node {$E$}; 
+\backslash
+draw [black] (24.6,-36.8) circle (3); 
+\backslash
+draw (24.6,-36.8) node {$EN$}; 
+\backslash
+draw [black] (37.1,-36.8) circle (3); 
+\backslash
+draw (37.1,-36.8) node {$EM$}; 
+\backslash
+draw [black] (49.2,-36.8) circle (3); 
+\backslash
+draw (49.2,-36.8) node {$EC$}; 
+\backslash
+draw [black] (18.3,-24.2) circle (3); 
+\backslash
+draw (18.3,-24.2) node {$ENM$}; 
+\backslash
+draw [black] (37.1,-24.2) circle (3); 
+\backslash
+draw (37.1,-24.2) node {$ENC$}; 
+\backslash
+draw [black] (56,-25.1) circle (3); 
+\backslash
+draw (56,-25.1) node {$EMC$}; 
+\backslash
+draw [black] (37.1,-11.3) circle (3); 
+\backslash
+draw (37.1,-11.3) node {$EMNC$}; 
+\backslash
+draw [black] (37.1,-43.6) -- (37.1,-39.8); 
+\backslash
+fill [black] (37.1,-39.8) -- (36.6,-40.6) -- (37.6,-40.6); 
+\backslash
+draw [black] (34.74,-44.75) -- (26.96,-38.65); 
+\backslash
+fill [black] (26.96,-38.65) -- (27.28,-39.54) -- (27.9,-38.75); 
+\backslash
+draw [black] (39.43,-44.71) -- (46.87,-38.69); 
+\backslash
+fill [black] (46.87,-38.69) -- (45.93,-38.8) -- (46.56,-39.58); 
+\backslash
+draw [black] (34.61,-35.13) -- (20.79,-25.87); 
+\backslash
+fill [black] (20.79,-25.87) -- (21.18,-26.73) -- (21.73,-25.9); 
+\backslash
+draw [black] (23.26,-34.12) -- (19.64,-26.88); 
+\backslash
+fill [black] (19.64,-26.88) -- (19.55,-27.82) -- (20.45,-27.38); 
+\backslash
+draw [black] (39.65,-35.22) -- (53.45,-26.68); 
+\backslash
+fill [black] (53.45,-26.68) -- (52.51,-26.68) -- (53.03,-27.53); 
+\backslash
+draw [black] (50.71,-34.21) -- (54.49,-27.69); 
+\backslash
+fill [black] (54.49,-27.69) -- (53.66,-28.13) -- (54.52,-28.64); 
+\backslash
+draw [black] (26.71,-34.67) -- (34.99,-26.33); 
+\backslash
+fill [black] (34.99,-26.33) -- (34.07,-26.55) -- (34.78,-27.25); 
+\backslash
+draw [black] (47.12,-34.64) -- (39.18,-26.36); 
+\backslash
+fill [black] (39.18,-26.36) -- (39.37,-27.29) -- (40.09,-26.59); 
+\backslash
+draw [black] (20.77,-22.5) -- (34.63,-13); 
+\backslash
+fill [black] (34.63,-13) -- (33.68,-13.04) -- (34.25,-13.86); 
+\backslash
+draw [black] (37.1,-21.2) -- (37.1,-14.3); 
+\backslash
+fill [black] (37.1,-14.3) -- (36.6,-15.1) -- (37.6,-15.1); 
+\backslash
+draw [black] (53.58,-23.33) -- (39.52,-13.07); 
+\backslash
+fill [black] (39.52,-13.07) -- (39.87,-13.94) -- (40.46,-13.14); 
+\backslash
+end{tikzpicture} 
+\backslash
+end{center} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+EM è la minima logica monotona
+\end_layout
+
+\begin_layout Standard
+EMC è la minima logica regolare
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $EMNC\equiv K$
+\end_inset
+
+ è la minima logica normale
+\end_layout
+
+\begin_layout Subsection*
+Teorema
+\end_layout
+
+\begin_layout Standard
+Le logiche normali sono regolari, le logiche regolari sono monotone, le
+ logiche monotone sono classiche.
+\end_layout
+
+\begin_layout Standard
+Ip) Vale K
+\end_layout
+
+\begin_layout Standard
+Ts) la logica è regolare
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teoremaDi Ka\wedge b\implies c$
+\end_inset
+
+ -- per ipotesi
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teoremaDi K\boxx{(a\wedge b)}\implies\boxx c$
+\end_inset
+
+ -- boh!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teoremaDi K\boa\wedge\boxx b\implies\boxx{(a\wedge b)}$
+\end_inset
+
+ -- perchè è una logica nomale (definizione 3.b)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teoremaDi K\boa\wedge\boxx b\implies\boxx c$
+\end_inset
+
+ -- per modus ponens
+\end_layout
+
+\begin_layout Standard
+Poichè vale RR, ogni logica normale è regolare
+\end_layout
+
+\begin_layout Standard
+Ip) Vale la regola RR
+\end_layout
+
+\begin_layout Standard
+Ts) Vale la regola RM
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{a\implies b}$
+\end_inset
+
+ -- per ipotesi
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{a\wedge a\implies b}$
+\end_inset
+
+ -- tautologia
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{\boa\wedge\boa\implies\boxx b}$
+\end_inset
+
+ -- per
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{\boa\implies\boxx b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Poichè vale RM, ogni locica regolare è monotona
+\end_layout
+
+\begin_layout Standard
+Ip) Vale RM
+\end_layout
+
+\begin_layout Standard
+Ts) Vale RE
 \end_layout
 
 \end_body
