@@ -116,6 +116,143 @@ se
 \end_layout
 
 \begin_layout Section
+Formule Valide in ogni frame
+\end_layout
+
+\begin_layout Standard
+Le seguenti formule sono valide in ogni frame F
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\boxx{\top}$
+\end_inset
+
+ con 
+\begin_inset Formula $\top\equiv a\vee\neg a\not\not$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+infatti 
+\begin_inset Formula $\top$
+\end_inset
+
+è valida in ogni modello di ogni frame F, banalmente è valida 
+\begin_inset Formula $\boxx{\top}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\boxx{(a}\implies b)\implies(\boa\implies\boxx b)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+infatti:
+\begin_inset Newline newline
+\end_inset
+
+Se 
+\begin_inset Formula $\nonveraw M{\alpha}{\boxx{(a\implies b)}}$
+\end_inset
+
+ la formula è vera
+\begin_inset Newline newline
+\end_inset
+
+Se 
+\begin_inset Formula $\entail M{_{\alpha}\boxx{(a\implies b)}}$
+\end_inset
+
+ allora:
+\end_layout
+
+\begin_layout Itemize
+Se 
+\begin_inset Formula $\nonveraw M{\alpha}{\boa}$
+\end_inset
+
+ allora 
+\begin_inset Formula $\veraw M{\alpha}{\boa}\implies\boxx b$
+\end_inset
+
+ è vera e la formula iniziale è vera
+\end_layout
+
+\begin_layout Itemize
+se 
+\begin_inset Formula $\veraw M{\alpha}{\boa}$
+\end_inset
+
+ allora 
+\begin_inset Formula $\forall\beta:(\alpha,\beta)\in R$
+\end_inset
+
+ 
+\begin_inset Formula $\veraw M{\beta}a\implies b$
+\end_inset
+
+, 
+\begin_inset Formula $\veraw M{\beta}a$
+\end_inset
+
+, 
+\begin_inset Formula $\veraw M{\beta}b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esistono relazioni che non solo valide in ogni frame:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\boa\implies\dia$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Non è valida in ogni frame, infatti 
+\begin_inset Formula $\boa$
+\end_inset
+
+ implica che in tutti gli stati raggiungibili (ma potrebbero anche non esserci
+ stati) da 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, a è vera.
+ Mentre 
+\begin_inset Formula $\dia$
+\end_inset
+
+ implica che esiste almeno uno stato raggiungibile da 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ in cui a è vero.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Tutte le tautologie sono valide in ogni frame
+\end_layout
+
+\begin_layout Section
 Relazione seriale
 \end_layout
 
@@ -340,7 +477,7 @@ status collapsed
 \end_inset
 
 , e suppongo che la relazione R del frame NON sia seriale cioè 
-\begin_inset Formula $\sim\exists\beta:(\alpha R\beta)$
+\begin_inset Formula $\not\,\exists\beta:(\alpha R\beta)$
 \end_inset
 
 , se è così vale sicuramente 
