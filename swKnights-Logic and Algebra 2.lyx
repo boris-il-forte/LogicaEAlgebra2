@@ -23,6 +23,7 @@
 
  
 \usepackage{tikz}
+\usepackage{stmaryrd}
 
 \usepackage{color}   %May be necessary if you want to color links
 \usepackage{hyperref}
@@ -255,6 +256,16 @@ filename "contents/9-descrittiva/descrittiva.lyx"
 \begin_inset CommandInset include
 LatexCommand include
 filename "contents/10-ModalePrimOrdine/modaleprimo.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "contents/11-Bisimulazione/bisimulazione.lyx"
 
 \end_inset
 

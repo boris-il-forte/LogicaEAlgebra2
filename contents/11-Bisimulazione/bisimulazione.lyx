@@ -1,0 +1,242 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass report
+\begin_preamble
+
+
+\title{Logica e Algebra 2}
+
+\usepackage[english]{babel}
+\usepackage{tikz}
+
+\usepackage{settings/usefulMacros} 
+
+\usepackage{booktabs}\usepackage{listings}\lstset{columns=fullflexible}
+
+\usepackage{wasysym}
+
+\usepackage{amsthm}\newtheoremstyle{note} % name
+{\topsep} 	% Space above
+{\topsep} 	% Space below
+{\small}		% Body font
+{}		% Indent amount
+{\small\bfseries}% Theorem head font
+{:}		% Punctuation after theorem head
+{.5em}	% Space after theorem head
+{}		% Theorem head spec (can be left empty, meaning ‘normal’)
+
+\usepackage{fancyhdr}%% Cambia il carattere delle didascalie delle figure %%
+\usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption}
+
+\usepackage{comment}
+
+%per le tabelle lunghe e particolari
+\usepackage{lscape}
+
+
+
+\usepackage{babel}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language italian
+\language_package default
+\inputencoding utf8
+\fontencoding T1
+\font_roman default
+\font_sans default
+\font_typewriter mathpazo
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Bisimulazione
+\end_layout
+
+\begin_layout Section
+Definizione di bisimulazione
+\end_layout
+
+\begin_layout Standard
+Siano 
+\begin_inset Formula $\mu=(S,\, R,\, V)$
+\end_inset
+
+ e 
+\begin_inset Formula $\mu'=(S',\, R',\, V')$
+\end_inset
+
+ due modelli e siano 
+\begin_inset Formula $s\in S$
+\end_inset
+
+, e 
+\begin_inset Formula $t\in S'$
+\end_inset
+
+ due stati
+\end_layout
+
+\begin_layout Standard
+Si dice che le coppie 
+\begin_inset Formula $(\mu,\, s)$
+\end_inset
+
+ e 
+\begin_inset Formula $(\mu',\, s)$
+\end_inset
+
+ sono in bisimulazione tra loro, ossia:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\mu,\, s)\leftrightarroweq(\mu',\, s)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se esiste una relazione 
+\begin_inset Formula $E:S\times S$
+\end_inset
+
+ tale che
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(s,\, t)\in E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+se 
+\begin_inset Formula $(x,\, y)\in E$
+\end_inset
+
+ allora:
+\begin_inset Newline newline
+\end_inset
+
+a)
+\begin_inset Formula $\forall P\in\phi\, x\in V(P)\iff y\in V'(P)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+b1)
+\begin_inset Formula $(x,\, z)\in R\implies\exists u\in S'\,:\,(y,\, u)\in R'\,\wedge\,(z,\, u)\in E$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+b2)
+\begin_inset Formula $(y,\, u)\in R\implies\exists z\in S\,:\,(x,\, z)\in R\,\wedge\,(z,\, u)\in E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Due frame sono in bisimulazione se soddisfano le condizioni 1, b1 e b2.
+\end_layout
+
+\begin_layout Subsection
+Teorema
+\end_layout
+
+\begin_layout Standard
+se 
+\begin_inset Formula $(\mu,\, s)\leftrightarroweq(\mu',\, s)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+allora: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall\varphi\in\phi\,\veraw{\mu}s{\varphi}\iff\veraw{\mu'}t{\varphi}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Esempi di bisimulazione
+\end_layout
+
+\begin_layout Subsection
+Alberi binari e Retta
+\end_layout
+
+\begin_layout Subsection
+Infiniti cammini vs Cammino infiniti
+\end_layout
+
+\end_body
+\end_document
