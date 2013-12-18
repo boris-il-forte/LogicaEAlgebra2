@@ -1,0 +1,418 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass report
+\begin_preamble
+
+
+\title{Logica e Algebra 2}
+
+\usepackage[english]{babel}
+\usepackage{tikz}
+
+\usepackage{settings/usefulMacros} 
+
+\usepackage{booktabs}\usepackage{listings}\lstset{columns=fullflexible}
+
+\usepackage{wasysym}
+
+\usepackage{amsthm}\newtheoremstyle{note} % name
+{\topsep} 	% Space above
+{\topsep} 	% Space below
+{\small}		% Body font
+{}		% Indent amount
+{\small\bfseries}% Theorem head font
+{:}		% Punctuation after theorem head
+{.5em}	% Space after theorem head
+{}		% Theorem head spec (can be left empty, meaning ‘normal’)
+
+\usepackage{fancyhdr}%% Cambia il carattere delle didascalie delle figure %%
+\usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption}
+
+\usepackage{comment}
+
+%per le tabelle lunghe e particolari
+\usepackage{lscape}
+
+
+
+\usepackage{babel}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8
+\fontencoding T1
+\font_roman default
+\font_sans default
+\font_typewriter mathpazo
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Logica Modale Del Prim'Ordine
+\end_layout
+
+\begin_layout Section
+La Sintassi delle Logiche Modali del Prim'Ordine
+\end_layout
+
+\begin_layout Standard
+Una logica modale del prim'ordine è definita sul seguente alfabeto:
+\end_layout
+
+\begin_layout Itemize
+costanti 
+\begin_inset Formula $(k_{1},...,k_{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+variabili 
+\begin_inset Formula $(x_{1},...,x_{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+lettere predicative 
+\begin_inset Formula $A_{i}^{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+connettivi logici: 
+\begin_inset Formula $\neg,\,\wedge,\,\vee,\,\implies,\,\iff$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+quantificatori universali ed esistenziali: 
+\begin_inset Formula $\forall x_{i},\,\exists x_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+connettivi modali 
+\begin_inset Formula $\square,\,\diamond$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+parentesi ), (
+\end_layout
+
+\begin_layout Standard
+si chiamano termini le costanti e le lettere predicative, gli indichiamo
+ come 
+\begin_inset Formula $t_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+si chiamano formule atomiche, le formule del tipo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{i}^{n}(t_{1},...,\, t_{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Le formule ben formate sono definite come al solito:
+\end_layout
+
+\begin_layout Itemize
+Le formule atomiche sono formule ben formate
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $a,\,\neg a,\,(\forall x)a,\,(\exists x)a,\,\boa,\,\dia$
+\end_inset
+
+ sono furmule ben formate
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $a,\, b,\,(a\wedge b),\,(a\vee b),\,(a\implies b),\,(a\iff b)$
+\end_inset
+
+ sono formule ben formate
+\end_layout
+
+\begin_layout Itemize
+null'altro è una formula ben formata.
+\end_layout
+
+\begin_layout Section
+Semantica della Logica Modale del Prim'Ordine
+\end_layout
+
+\begin_layout Section
+Assiomatizzazzione della Logica Modale del Prim'Ordine
+\end_layout
+
+\begin_layout Subsection
+Gli Assiomi della logica del prim'ordine
+\end_layout
+
+\begin_layout Standard
+Gli assiomi della logica del prim'ordine sono:
+\end_layout
+
+\begin_layout Itemize
+A1: 
+\begin_inset Formula $a\implies(b\implies a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+A2: 
+\begin_inset Formula $(a\implies(b\implies c))\implies((a\implies b)\implies(a\implies c))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+A3: 
+\begin_inset Formula $(\neg a\implies\neg b)\implies((\neg a\implies b)\implies a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+A4: 
+\begin_inset Formula $(\forall x)a(x)\implies a[t/x]$
+\end_inset
+
+, dove t è un termine libero per x in A(x)
+\end_layout
+
+\begin_layout Itemize
+A5: 
+\begin_inset Formula $(\forall x)(a\implies b)\implies(a\implies(\forall x)b)$
+\end_inset
+
+, purchè non ci siano occorrenze libere di x in A
+\end_layout
+
+\begin_layout Standard
+Inoltre valgono le due regole di inferenza:
+\end_layout
+
+\begin_layout Itemize
+MP: 
+\begin_inset Formula $\dfrac{a,\, a\implies b}{b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Gen: 
+\begin_inset Formula $\dfrac{a}{(\forall x)a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Formula di Barcan
+\end_layout
+
+\begin_layout Standard
+Si chiama formula di barcan la seguente formula:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\forall x)\boa\implies\boxx{(\forall x)a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+o equivalentemente la sua duale:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\diam{(\exists x)a\implies(\exists x)\dia}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si chiama formula di barcan inversa la formula:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\boxx{(\forall x)a}\implies(\forall x)\boa$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+o equivalentemente la sua duale:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\exists x)\dia\implies\diam{(\exists x)a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La formula di barcan vale se e solo se il modello è antimonotono, la formula
+ di barcan inversa vale se e solo se il modello è monotono.
+\end_layout
+
+\begin_layout Standard
+Quindi in un modello a designatori costanti vale la formula di barcan inversa.
+\end_layout
+
+\begin_layout Subsection
+Minima logica modale del prim'ordine
+\end_layout
+
+\begin_layout Standard
+Se consideriamo la logica che usa tutti gli assiomi della logica modale
+ e quella del prim'ordine, ossia una logica che usa i seguenti assiomi:
+\end_layout
+
+\begin_layout Itemize
+A1, A2, A3
+\end_layout
+
+\begin_layout Itemize
+A4, A5
+\end_layout
+
+\begin_layout Itemize
+K
+\end_layout
+
+\begin_layout Standard
+E le seguenti regole di inferenza:
+\end_layout
+
+\begin_layout Itemize
+MP
+\end_layout
+
+\begin_layout Itemize
+Gen
+\end_layout
+
+\begin_layout Itemize
+RN
+\end_layout
+
+\begin_layout Standard
+Otteniamo la minima logica modale del prim'ordine.
+\end_layout
+
+\begin_layout Standard
+Si può dimostrare che in questa logica vale la formula di Barcan inversa:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{(\forall x)a\implies a}$
+\end_inset
+
+ -- per A4, t = x
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{\boxx{((\forall x)a\implies a)}}$
+\end_inset
+
+ -- per RN
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{\boxx{((\forall x)a\implies a)\implies}}$
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document
