@@ -1,0 +1,692 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass report
+\begin_preamble
+
+
+\title{Logica e Algebra 2}
+
+\usepackage[english]{babel}
+\usepackage{tikz}
+
+\usepackage{settings/usefulMacros} 
+
+\usepackage{booktabs}\usepackage{listings}\lstset{columns=fullflexible}
+
+\usepackage{wasysym}
+
+\usepackage{amsthm}\newtheoremstyle{note} % name
+{\topsep} 	% Space above
+{\topsep} 	% Space below
+{\small}		% Body font
+{}		% Indent amount
+{\small\bfseries}% Theorem head font
+{:}		% Punctuation after theorem head
+{.5em}	% Space after theorem head
+{}		% Theorem head spec (can be left empty, meaning ‘normal’)
+
+\usepackage{fancyhdr}%% Cambia il carattere delle didascalie delle figure %%
+\usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption}
+
+\usepackage{comment}
+
+%per le tabelle lunghe e particolari
+\usepackage{lscape}
+
+
+
+\usepackage{babel}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language italian
+\language_package default
+\inputencoding utf8
+\fontencoding T1
+\font_roman default
+\font_sans default
+\font_typewriter mathpazo
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Logiche Descrittive	
+\end_layout
+
+\begin_layout Section
+Introduzione - Logica AL
+\end_layout
+
+\begin_layout Standard
+Le DL sono una famiglia di logiche per la rappresentazione della conoscenza
+ che possono essere utilizzate per rappresentare conoscenza terminologica,
+ dando ad essa una semantica formale ben definita.
+\end_layout
+
+\begin_layout Standard
+Un sistema di rappresentazione della conoscenza (KR) fornisce i mezzi per
+ definire, gestire, manipolare e ragionare su basi di conoscenza (KB).
+\end_layout
+
+\begin_layout Standard
+In una KB ci sono TBox e ABox
+\end_layout
+
+\begin_layout Standard
+I TBox descrivono la terminologia della KB (concetti, ruoli atomici e concetti
+ composti), gli ABox sono asserzioni su individui della KB
+\end_layout
+
+\begin_layout Standard
+TBox es.
+ 
+\begin_inset Formula $Madre\equiv Donna\sqcap Genitore$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ABox es.
+ 
+\begin_inset Formula $Donna(Paola)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La famiglia di logiche descrittive più utilizzata è la famiglia AL (Attributive
+ Language).
+\end_layout
+
+\begin_layout Standard
+Nella logica AL (logica descrittiva tra le più semplici) ci sono:
+\end_layout
+
+\begin_layout Description
+A,B,C concetti
+\end_layout
+
+\begin_layout Description
+R ruoli
+\end_layout
+
+\begin_layout Description
+		
+\begin_inset Formula $\neg$
+\end_inset
+
+ negazione (solo di concetti atomici)
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\sqcap$
+\end_inset
+
+ di concetti
+\end_layout
+
+\begin_layout Description
+
+\series medium
+I concetti sono:
+\end_layout
+
+\begin_layout Itemize
+Concetti atomici A,B
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\top$
+\end_inset
+
+, 
+\begin_inset Formula $\bot$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+negazione di concetti atomici: 
+\begin_inset Formula $\neg A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+and di concetti: 
+\begin_inset Formula $C\sqcap D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+quantificazioni: 
+\begin_inset Formula $\forall R.C$
+\end_inset
+
+, 
+\begin_inset Formula $\exists R.\top$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un'interpretazione I di una base di conoscenza ́e una coppia 
+\begin_inset Formula $I=<\Delta^{i},·^{I}>$
+\end_inset
+
+ composta da un dominio di interpretazione 
+\begin_inset Formula $\Delta$
+\end_inset
+
+I, detto dominio di I e da una funzione di interpretazione 
+\begin_inset Formula $	·^{I}$
+\end_inset
+
+ che associa:
+\end_layout
+
+\begin_layout Standard
+ad ogni 
+\series bold
+nome
+\series default
+ di individuo un elemento: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a^{I}\in\Delta^{I}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ad ogni 
+\series bold
+concetto
+\series default
+ C un sottoinsieme di 
+\begin_inset Formula $\Delta^{I}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I:\ C\rightarrow C^{I}\subseteq\Delta^{I}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e ad ogni 
+\series bold
+ruolo
+\series default
+ un sottoinsieme di 
+\begin_inset Formula $\Delta$
+\end_inset
+
+I × 
+\begin_inset Formula $\Delta$
+\end_inset
+
+I :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R:\ R^{I}\subseteq\Delta^{I}\times\Delta^{I}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I rouli sono quindi relazioni binarie, una volta interpretati
+\end_layout
+
+\begin_layout Standard
+es.
+ 
+\begin_inset Formula $(Peter,\ Chris)^{I}\in HaFiglio^{I}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+		
+\end_layout
+
+\begin_layout Standard
+Inoltre:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\bot^{I}=\emptyset$
+\end_inset
+
+, 
+\begin_inset Formula $\top^{I}=\Delta^{I}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(C\sqcap D)^{I}=C^{I}\cap D^{I}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\forall R.C)^{I}=\{a^{I}\in\Delta^{I}:\ (a^{I},b^{I})\in R^{I}\implies b^{I}\in C^{I}$
+\end_inset
+
+} 
+\end_layout
+
+\begin_layout Standard
+es.
+ 
+\begin_inset Formula $\forall Possiede.Cosa$
+\end_inset
+
+ cioè se a possiede un oggetto del dominio quello deve essere una cosa (slavery
+ is bad)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\exists R.C)^{I}=\{a^{I}\in\Delta^{I}:\ \exists b\in\Delta^{I}:\ (a^{I},b^{I})\in R^{I}\wedge b^{I}\in C^{I}\}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+es.
+ 
+\begin_inset Formula $\exists HaFiglio.Femmina$
+\end_inset
+
+ cioè l'insieme dei genitori con una figlia femmina (grow up well kid)
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Varianti di AL
+\end_layout
+
+\begin_layout Standard
+Indebolendo la logica AL si ottengono le logiche poco descrittive della
+ famiglia FL:
+\end_layout
+
+\begin_layout Itemize
+F L- è ottenuta da AL eliminando la negazione atomica •
+\end_layout
+
+\begin_layout Itemize
+FL0 è ottenuta da FL- eliminando anche la quantificazione esistenziale
+\end_layout
+
+\begin_layout Standard
+La logica AL può essere estesa aggiungendo alcuni costruttori: 
+\end_layout
+
+\begin_layout Itemize
+costrutto 
+\begin_inset Formula $\mathcal{U}$
+\end_inset
+
+ disgiunzione dei concetti 
+\begin_inset Formula $C\sqcup D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+costrutto 
+\begin_inset Formula $\mathcal{E}$
+\end_inset
+
+ quantificazione esistenziale qualificata 
+\begin_inset Formula $\exists R.C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+costrutto 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+ complemento di concetti complessi 
+\begin_inset Formula $\neg C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+costrutto 
+\begin_inset Formula $\mathcal{N}$
+\end_inset
+
+ cardinalità di un ruolo 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\leq nR)^{I}=\{a^{I}:\ 		\cardinal{\{b^{I}:\ (a^{I},b^{I})\in R^{I}\}}<n\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+es.
+ 
+\begin_inset Formula $(\leq2HaFiglio)^{I}$
+\end_inset
+
+ è l'insieme delle persone un numero di figli minore o uguale a 2.
+\end_layout
+
+\begin_layout Section
+Confronti fra logiche 
+\end_layout
+
+\begin_layout Standard
+In modo analogo a quanto si era fatto con le logiche derivate da K, denotiamo
+ con ALX la logica AL a cui si aggiunge il costrutto X
+\end_layout
+
+\begin_layout Subsection
+Equivalenza 
+\begin_inset Formula $\alue$
+\end_inset
+
+ed 
+\begin_inset Formula $\alc$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dimostriamo che 
+\begin_inset Formula $AL\mathcal{UE}\equiv AL\mathcal{C}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+IP) 
+\begin_inset Formula $\mathcal{UE}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ts)
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si vuole mostrate che a partire in
+\begin_inset Formula $AL\mathcal{UE}$
+\end_inset
+
+ posso fare tutto ciò che faccio in 
+\begin_inset Formula $AL\mathcal{C}$
+\end_inset
+
+, il che si riduce a mostrare che in 
+\begin_inset Formula $\alue$
+\end_inset
+
+posso fare negazioni di concetti qualsiasi.
+\end_layout
+
+\begin_layout Standard
+Questo è immediato per i concetti atomici la cui negazione è per definizione
+ in 
+\begin_inset Formula $AL$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\neg\top\equiv\bot$
+\end_inset
+
+, 
+\begin_inset Formula $\neg\bot\equiv\top$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Per negare l'and di due concetti:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\neg(D\sqcap E)\equiv\neg D\sqcup\neg E$
+\end_inset
+
+ che sono concetti più semplici di cui ricorsivamente posso costruire la
+ negazione
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\neg\forall R.C\equiv\exists R.\neg C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con queste semplici trasformazioni posso rendere ricorsivamente più semplice
+ una qualsiasi formula di 
+\begin_inset Formula $\alc$
+\end_inset
+
+ fino a portarla in una formula di 
+\begin_inset Formula $\alue$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+IP) 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ts)
+\begin_inset Formula $\mathcal{UE}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sfruttando De Morgan possiamo scrivere:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D\sqcup E\equiv\neg(\neg D\sqcap\neg E)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\exists R.C\equiv\neg(\forall R.\neg C)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Confronto con logica del prim ordine
+\end_layout
+
+\begin_layout Standard
+È possibile vedere le logiche AL, ALC, ALN, (deve essere con identità nel
+ caso di N)
+\end_layout
+
+\begin_layout Itemize
+A è un concetto: 
+\begin_inset Formula $a(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+R è un ruolo: 
+\begin_inset Formula $R(x,y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $a\ $
+\end_inset
+
+è un individuo: 
+\begin_inset Formula $a$
+\end_inset
+
+ è una costante
+\end_layout
+
+\begin_layout Standard
+Notiamo che ci sono due sole variabili libere e il dominio è fissato (controllar
+e) la logica del prim ordine è decibile.
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\neg C$
+\end_inset
+
+: 
+\begin_inset Formula $\neg C(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $C\sqcap D:\ C(x)\vee D(x)$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

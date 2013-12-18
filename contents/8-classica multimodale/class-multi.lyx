@@ -1203,7 +1203,7 @@ Ts) la logica è regolare
 \begin_inset Formula $\teoremaDi K\boxx{(a\wedge b)}\implies\boxx c$
 \end_inset
 
- -- boh!
+ --definizione 3.c di logica normale
 \end_layout
 
 \begin_layout Standard
@@ -1217,7 +1217,7 @@ Ts) la logica è regolare
 \begin_inset Formula $\teoremaDi K\boa\wedge\boxx b\implies\boxx c$
 \end_inset
 
- -- per modus ponens
+ -- per catena di implicazioni fra le due precedenti
 \end_layout
 
 \begin_layout Standard
@@ -1623,7 +1623,7 @@ Si dice frame aumentato, un frame F supplementato tale che:
 \begin_inset Formula $\forall\alpha\, Z\equiv\underset{Y\in N(\alpha)}{\bigcap}Y\, Z\in N(\alpha)$
 \end_inset
 
-
+	
 \end_layout
 
 \begin_layout Standard

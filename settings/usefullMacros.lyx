@@ -388,5 +388,29 @@
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\cardinal}[1]{\Vert#1\Vert}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\alue}{AL\mbox{\mathcal{UE}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\alc}{AL\mbox{\mathcal{\mathcal{C}}}}
+\end_inset
+
+	
+\end_layout
+
 \end_body
 \end_document

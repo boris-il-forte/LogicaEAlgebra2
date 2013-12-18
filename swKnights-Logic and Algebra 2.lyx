@@ -242,6 +242,16 @@ filename "contents/8-classica multimodale/class-multi.lyx"
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "contents/9-descrittiva/descrittiva.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 	
 \end_layout
 
