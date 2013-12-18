@@ -744,13 +744,13 @@ e) la logica del prim ordine è decibile.
 \end_layout
 
 \begin_layout Description
-\begin_inset Formula $\exists x_{1},\ x_{2},...,\ x_{n+1}(R(x,x_{1})\wedge R(x,x_{2})\wedge\dots R(x,x_{n})\implies E(x_{1},x_{2})\vee E(x_{1},x_{2})\vee\dots..\underset{1\leq i\leq j\leq n+1}{\bigvee}E(x_{i},x_{j})$
+\begin_inset Formula $\exists x_{1},\ x_{2},...,\ x_{n+1}(R(x,x_{1})\wedge R(x,x_{2})\wedge\dots R(x,x_{n})$
 \end_inset
 
+ 
+\begin_inset Formula $\implies E(x_{1},x_{2})\vee E(x_{1},x_{2})\vee\dots..\underset{1\leq i\leq j\leq n+1}{\bigvee}E(x_{i},x_{j})$
+\end_inset
 
-\end_layout
-
-\begin_layout Description
 
 \end_layout
 
