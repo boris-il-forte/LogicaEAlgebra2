@@ -1648,7 +1648,7 @@ Teorema
 
 \begin_layout Standard
 Per ogni modello minimale aumentato 
-\begin_inset Formula $\mu^{\alpha}=(S,\, N,\, V)$
+\begin_inset Formula $\mu^{a}=(S,\, N,\, V)$
 \end_inset
 
  esiste un modello standard 
@@ -1667,10 +1667,296 @@ Per ogni modello minimale aumentato
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{\alpha}}{\alpha}a\iff\veraw{\mu^{s}}{\alpha}a$
+\begin_inset Formula $\veraw{\mu^{a}}{\alpha}a\iff\veraw{\mu^{s}}{\alpha}a$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Questo teorema è banalmente vero per le formule che non utilizzano i connettivi
+ modali, poichè S e V sono identiche.
+ Dobbiamo dimostrarlo solo nel caso di utilizzo dei connettivi modali, e
+ poi per induzione sulla complessità della formula, si può verificare che
+ il teorema è valido in generale.
+\end_layout
+
+\begin_layout Standard
+Ip) 
+\begin_inset Formula $\veraw{\mu^{a}}{\alpha}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ts) 
+\begin_inset Formula $\exists\mu^{s}\,:\,\veraw{\mu^{s}}{\alpha}a\iff\veraw{\mu^{a}}{\alpha}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+supponiamo di scegliere R tale che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\alpha,\,\beta)\in R\iff\beta\in\underset{Y\in N(\alpha)}{\bigcap}Y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+abbiamo che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu^{a}}{\alpha}{\boxx b\iff\verins b\in N(\alpha)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ma:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\verins b\supseteq\underset{Y\in N(\alpha)}{\bigcap}Y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+allora possiamo affermare che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall\beta\,:\,(\alpha,\,\beta)\in R,\,\veraw{\mu^{s}}{\beta}b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e quindi vale:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu^{s}}{\alpha}{\boxx{\beta}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+viceversa, se è vero:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu^{s}}{\alpha}{\boxx b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+allora avremo che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu^{s}}{\beta}b$
+\end_inset
+
+, 
+\begin_inset Formula $\forall\beta\,:\,(\alpha,\,\beta)\in R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ma per definizione:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\{\beta\,|\,(\alpha,\,\beta)\in R\}=\underset{Y\in N(\alpha)}{\bigcap}Y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e allora:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\verinsx bs=\verinsx ba\supseteq\underset{Y\in N(\alpha)}{\bigcap}Y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e dunque:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu^{a}}{\alpha}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ip) 
+\begin_inset Formula $\veraw{\mu^{s}}{\alpha}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ts) 
+\begin_inset Formula $\exists\mu^{a}\,:\,\veraw{\mu^{a}}{\alpha}a\iff\veraw{\mu^{s}}{\alpha}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+supponiamo di scegliere N tale che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X\in N(\alpha)\iff X\supseteq\{\beta\,|\,(\alpha,\,\beta)\in R\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+supponiamo che valga:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu^{s}}{\alpha}{\boxx b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e quindi:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu^{s}}{\beta}b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ma allora abbiamo che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\verinsx bs\supseteq\{\beta\,|\,(\alpha,\,\beta)\in R\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ma allora abbiamo, per come abbiamo definito N:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\verinsx ba\in N(\alpha)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e quindi:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu^{a}}{\alpha}{\boxx b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+viceversa, supponiamo di avere:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu^{a}}{\alpha}{\boxx b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+allora per definizione avremo che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\verinsx ba\in N(\alpha)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ma per come abbiamo definito N, si ha che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\verinsx ba\supseteq\{\beta\,|\,(\alpha,\,\beta)\in R\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ma allora abbiamo che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\verinsx ba=\verinsx bs$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+da cui si ricavano banalmente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu^{s}}{\beta}b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu^{s}}{\alpha}{\boxx b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e la tesi è dimostrata.
 \end_layout
 
 \end_body
