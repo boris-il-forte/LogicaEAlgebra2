@@ -2492,10 +2492,110 @@ Allora è necessario ridefinire il prodotto tra relazioni:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $(S,\, T)\in R_{\alpha}\circ\, R_{\beta}\iff\exists U\subseteq\mathcal{P}(S)\,\wedge\,(S,\, U)\in R_{\alpha}\,\wedge\,\forall u\in U\exists T_{u}\,:\,(u,\, T_{u})\in R_{\beta}\,\wedge\, T=\underset{u\in U}{\bigcup T_{u}}$
+\begin_inset Formula $(s,\, T)\in R_{\alpha}\circ\, R_{\beta}\iff\exists U\subseteq\mathcal{P}(S)\,\wedge\,(s,\, U)\in R_{\alpha}\,\wedge\,\forall u\in U\exists T_{u}\,:\,(u,\, T_{u})\in R_{\beta}\,\wedge\, T=\underset{u\in U}{\bigcup T_{u}}$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Il prodotto di relazioni è quindi cambiato, passando dal seguente grafo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\backslash
+draw [black] (21.4,-15.1) circle (3); 
+\backslash
+draw (21.4,-15.1) node {$s$}; 
+\backslash
+draw [black] (37.5,-15.1) circle (3); 
+\backslash
+draw (37.5,-15.1) node {$u$}; 
+\backslash
+draw [black] (53.8,-15.1) circle (3); 
+\backslash
+draw (53.8,-15.1) node {$t$}; 
+\backslash
+draw [black] (23.492,-12.966) arc (126.89872:53.10128:9.923); 
+\backslash
+fill [black] (35.41,-12.97) -- (35.07,-12.09) -- (34.47,-12.89); 
+\backslash
+draw (29.45,-10.48) node [above] {$R_
+\backslash
+alpha$}; 
+\backslash
+draw [black] (39.613,-12.986) arc (126.52967:53.47033:10.141); 
+\backslash
+fill [black] (51.69,-12.99) -- (51.34,-12.11) -- (50.75,-12.91); 
+\backslash
+draw (45.65,-10.49) node [above] {$R_
+\backslash
+beta$}; 
+\backslash
+end{tikzpicture} 
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Al seguente grafo:
+\end_layout
+
+\begin_layout Standard
+<<<MANCA>>>
+\end_layout
+
+\begin_layout Standard
+Bisogna cambiare anche la Relazione di iterazione nel seguente modo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R_{\alpha^{*}}\equiv\underset{n\geq0}{\bigcup}R_{\alpha}^{n}$
+\end_inset
+
+ con 
+\begin_inset Formula $R_{\alpha}^{0}=\{(s,\,\{s\})\,|\, s\in S\}$
+\end_inset
+
+ e 
+\begin_inset Formula $R_{\alpha}^{n}=R_{\alpha}\circ\, R_{\alpha}^{n-1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Inoltre si introduce la relazione di combinazione, ossia quella che traduce
+ il parallelismo (l'operatore intersezione):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(s,\, T)\in R_{\alpha}\otimes R_{\beta}\iff T=U\cup V\,\wedge\,(s,U)\in R_{\alpha}\,\wedge\,(s,V)\in R_{\beta}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tutto il resto è definito allo stesso modo di prima, a meno di stare attenti
+ agli insiemi di stati, anzichè agli stati.
 \end_layout
 
 \end_body
