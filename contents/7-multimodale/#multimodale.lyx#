@@ -153,7 +153,7 @@ La semantica di una logica multimodale è la stessa della logica proposizionale
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\alpha{\neci ia}\iff\veraw\mu\beta a\,\forall\beta\,:\,(\alpha,\,\beta)\in R_{i}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\neci ia}\iff\veraw{\mu}{\beta}a\,\forall\beta\,:\,(\alpha,\,\beta)\in R_{i}$
 \end_inset
 
 
@@ -314,7 +314,7 @@ Dimostrazione
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\veraw\mu\alpha a$
+\begin_inset Formula $\veraw{\mu}{\alpha}a$
 \end_inset
 
  e 
@@ -326,7 +326,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\veraw\mu\alpha{\necp{\posf a}}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\necp{\posf a}}$
 \end_inset
 
 
@@ -349,7 +349,7 @@ Ogni mondo
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\beta{\posf a}$
+\begin_inset Formula $\veraw{\mu}{\beta}{\posf a}$
 \end_inset
 
 
@@ -360,7 +360,7 @@ allora, usando la regola di necessitazione nel passato, possiamo scrivere:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\alpha{\necp{\posf a}}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\necp{\posf a}}$
 \end_inset
 
 
@@ -375,7 +375,7 @@ ma poichè per ipotesi in
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\alpha{\necp{\posf a}}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\necp{\posf a}}$
 \end_inset
 
 
@@ -391,7 +391,7 @@ poichè abbiamo preso un
 \end_inset
 
 Ip) 
-\begin_inset Formula $\veraw\mu\alpha{\necp{\posf a}}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\necp{\posf a}}$
 \end_inset
 
 
@@ -453,7 +453,7 @@ allora in
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw\mu\beta{\posf A}$
+\begin_inset Formula $\nonveraw{\mu}{\beta}{\posf A}$
 \end_inset
 
 
@@ -476,7 +476,7 @@ ma poichè
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw\mu\alpha{\necp{\posf A}}$
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necp{\posf A}}$
 \end_inset
 
 
@@ -491,7 +491,7 @@ Ma allora, poichè in
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw\mu\alpha{A\implies\necp{\posf A}}$
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{A\implies\necp{\posf A}}$
 \end_inset
 
 
@@ -990,7 +990,7 @@ F1)
 
 \begin_layout Standard
 F2) 
-\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necf b\in\Gamma\,\veraw\mu\alpha{\necf b}\implies\veraw\mu\beta b)$
+\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necf b\in\Gamma\,\veraw{\mu}{\alpha}{\necf b}\implies\veraw{\mu}{\beta}b)$
 \end_inset
 
 
@@ -998,7 +998,7 @@ F2)
 
 \begin_layout Standard
 F3) 
-\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necp b\in\Gamma\,\veraw\mu\beta{\necp b}\implies\veraw\mu\alpha b)$
+\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necp b\in\Gamma\,\veraw{\mu}{\beta}{\necp b}\implies\veraw{\mu}{\alpha}b)$
 \end_inset
 
 
@@ -1098,14 +1098,14 @@ Preso
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\alpha{\necp A}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\necp A}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw\mu\alpha{\necf A}$
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necf A}$
 \end_inset
 
 
@@ -1120,7 +1120,7 @@ e quindi possiamo scrivere
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw\mu\alpha{\necp A\implies\necf A}$
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necp A\implies\necf A}$
 \end_inset
 
 
@@ -1135,7 +1135,7 @@ Tuttavia l'antecedente di Cont è vero, infatti
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\alpha{\posf{\necp A}}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\posf{\necp A}}$
 \end_inset
 
  
@@ -1154,7 +1154,7 @@ mentre
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw\mu\alpha{\necp A}$
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necp A}$
 \end_inset
 
 
@@ -1352,7 +1352,7 @@ end{tikzpicture}
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\delta=\max\limits _{\eta\in\mathbb{R}}(\veraw\mu\eta{A\,\eta<\delta)}$
+\begin_inset Formula $\delta=\max\limits _{\eta\in\mathbb{R}}(\veraw{\mu}{\eta}{A\,\eta<\delta)}$
 \end_inset
 
 
@@ -1374,14 +1374,14 @@ Ts)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\alpha{\necp A}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\necp A}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw\mu\alpha{\necf A}$
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necf A}$
 \end_inset
 
 
@@ -1392,7 +1392,7 @@ Tuttavia l'antecedente di Cont è falso, infatti:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\delta{\necp A}$
+\begin_inset Formula $\veraw{\mu}{\delta}{\necp A}$
 \end_inset
 
 
@@ -1411,7 +1411,7 @@ ma poichè non può esistere nessun mondo
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw\mu\delta{\posf{\necp A}}$
+\begin_inset Formula $\nonveraw{\mu}{\delta}{\posf{\necp A}}$
 \end_inset
 
 
@@ -1422,7 +1422,7 @@ e quindi non potrà che essere che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\delta{\necp a\implies\posf{\necp a}}$
+\begin_inset Formula $\veraw{\mu}{\delta}{\necp a\implies\posf{\necp a}}$
 \end_inset
 
 
@@ -1437,7 +1437,7 @@ Poichè
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\alpha{\boxx{(\necp a\implies\posf{\necp a})}}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx{(\necp a\implies\posf{\necp a})}}$
 \end_inset
 
 
@@ -1666,7 +1666,28 @@ Si introducono l'operatore unario
 \begin_inset Newline newline
 \end_inset
 
+La semantica di questa logica è espressa tramite il frame detto 
+\series bold
+sequenza di stati
+\series default
+ che è costituito da una coppia (S,
+\begin_inset Formula $\sigma$
+\end_inset
 
+) dove S è al solito un insieme di stati e 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ è una funzione suriettiva da 
+\begin_inset Formula $\omega$
+\end_inset
+
+ ad S e enumera gli stati di S disponendoli in sequenza (con eventuali elementi
+ ripetuti)
+\end_layout
+
+\begin_layout Standard
+La funzione di valutazione V si da in modo consueto, tranne che per i seguenti:
 \end_layout
 
 \begin_layout Standard
@@ -1732,7 +1753,7 @@ Questa logica si può assiomatizzare con i seguenti:
 \end_inset
 
 
-\begin_inset Formula $K:\ \boxx{(\implica a{b)\implies(\boa\implies\boxx{b)}}}$
+\begin_inset Formula $K_{\square}:\ \boxx{(\implica a{b)\implies(\boa\implies\boxx{b)}}}$
 \end_inset
 
 
@@ -1767,98 +1788,814 @@ Questa logica si può assiomatizzare con i seguenti:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $U1:\ a$
+\begin_inset Formula $U1:\ aUb\implies\diam b$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-.
-\end_layout
-
-\begin_layout Standard
-.
-\end_layout
-
-\begin_layout Standard
-.
-\end_layout
-
-\begin_layout Standard
-.
-\end_layout
-
-\begin_layout Standard
-.
-\end_layout
-
-\begin_layout Standard
-.
-\end_layout
-
-\begin_layout Standard
-.
-\end_layout
-
-\begin_layout Standard
-.
-\end_layout
-
-\begin_layout Standard
-.
-\end_layout
-
-\begin_layout Standard
-.
-\end_layout
-
-\begin_layout Standard
-.
-\end_layout
-
-\begin_layout Standard
-.
-\end_layout
-
-\begin_layout Standard
-.
-\end_layout
-
-\begin_layout Standard
-.
-\end_layout
-
-\begin_layout Standard
-.
-\end_layout
-
-\begin_layout Standard
-.
-\end_layout
-
-\begin_layout Standard
-.
-\end_layout
-
-\begin_layout Standard
-La logica della concorrenza, abbreviata con LTL 		
-\end_layout
-
-\begin_layout Standard
-Si definiscono nuovi operatori come circle e [
-\begin_inset Formula $\mbox{\forall}F]$
+\begin_inset Formula $U2:\ aUb\iff b\vee(a\wedge\circ(aUb))$
 \end_inset
 
- e [
-\begin_inset Formula $\exists F$
+
+\begin_inset Newline newline
 \end_inset
 
-] ..
+
 \end_layout
 
 \begin_layout Standard
-	
+Si dimostra che LTL è determinata dai frame sequenza di stati.
+\end_layout
+
+\begin_layout Subsection
+Correttezza di LTL
+\end_layout
+
+\begin_layout Standard
+Gli assiomi A1, A2, A3, 
+\begin_inset Formula $K_{\circ}$
+\end_inset
+
+, 
+\begin_inset Formula $K_{\square}$
+\end_inset
+
+ sono validi su tutti i frame, e quindi portano formule vere a formule vere.
+\end_layout
+
+\begin_layout Standard
+L'assioma Fun vale solo se la relazione di raggiungibilità a un passo è
+ una funzione: infatti se non ho stati raggiungibili da uno stato, abbiamo
+ che non vale 
+\begin_inset Formula $\circ a$
+\end_inset
+
+, e quindi vale 
+\begin_inset Formula $\neg\circ a$
+\end_inset
+
+, ma 
+\begin_inset Formula $\circ\neg a$
+\end_inset
+
+ non può valere perchè non ci sono stati raggiungibili.
+ Mentre se abbiamo più di uno stato raggiungibile 
+\begin_inset Formula $\circ a$
+\end_inset
+
+ è falso anche se solo in uno degli stati vale 
+\begin_inset Formula $\neg a$
+\end_inset
+
+, e quindi 
+\begin_inset Formula $\circ\neg a$
+\end_inset
+
+ non può essere vero, perchè 
+\begin_inset Formula $\neg a$
+\end_inset
+
+ è vero solo in un successore.
+ Ma per definizione la raggiungibilità a un passo è una funzione.
+\end_layout
+
+\begin_layout Standard
+Mix implica immediatamente lo schema T e quindi la riflessività.
+\end_layout
+
+\begin_layout Standard
+4: 
+\begin_inset Formula $\boa\implies\boxx{\boa}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Per provare la presenza di 4, notiamo che se vale 
+\end_layout
+
+\begin_layout Standard
+Mix, vale anche: 
+\begin_inset Formula $\boa\implies\circ\boa$
+\end_inset
+
+ (se vale l'and vale anche uno solo delle due parti)
+\end_layout
+
+\begin_layout Standard
+Per 
+\begin_inset Formula $RN_{\square}:\boxx{(\boa\implies\circ\boa)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Scrivendo Ind (con 
+\begin_inset Formula $\boa$
+\end_inset
+
+ come 
+\begin_inset Formula $a$
+\end_inset
+
+): 
+\begin_inset Formula $\boxx{(\boxx{a\implies\circ\boxx a)\implies(\boxx{a\implies\boxx{\boa)}}}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Per MP dalle due precedenti: 
+\begin_inset Formula $\boa\implies\boxx{\boa}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si può inoltre dimostrare che sono validi gli assiomi:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L1:\,\boxx{(\boa\implies b)\vee\boxx{(\boxx b\implies a)}}$
+\end_inset
+
+ di cui L è una banale estensione, che indica la debole connessione del
+ frame.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Dum:\,(\boa\implies a)\implies(\diam{\boa\implies\boa)}$
+\end_inset
+
+ che svolge lo stesso ruolo di Z per la relazione 
+\begin_inset Formula $\leq$
+\end_inset
+
+sul frame 
+\begin_inset Formula $\omega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+CTL
+\end_layout
+
+\begin_layout Standard
+In questa logica si cerca di modellizzare l'esecuzione di più programmi
+ lanciati in parallelo, e quindi di fatto descrive un frame in cui ogni
+ nodo ha al massimo n figli.
+\end_layout
+
+\begin_layout Standard
+CTL usa i seguenti operatori modali:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $[\forall F]a$
+\end_inset
+
+: In tutte le esecuzioni c'è uno stato in cui vale a, a è inevitabile
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $[\exists F]a$
+\end_inset
+
+: a un certo punto vale a
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $[\forall G]a$
+\end_inset
+
+: a vale in tutti gli stati dell'albero
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $[\exists G]a$
+\end_inset
+
+: esiste una sequenza di stati successivi all'attuale tale che a è vero
+ in ogni stato di tale sequenza
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $[\forall X]a$
+\end_inset
+
+: in tutte le esecuzioni, nello stato successivo vale a
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $[\exists X]a$
+\end_inset
+
+: c'è uno stato successivo in cui vale a
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall(a\mathcal{U}b)$
+\end_inset
+
+: in tutti i rami vale 
+\begin_inset Formula $a\mathcal{U}b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\exists(a\mathcal{U}b)$
+\end_inset
+
+: in almeno un ramo vale 
+\begin_inset Formula $a\mathcal{U}b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tuttavia sono necessari solo tre operatori, mentre tutti gli altri si possono
+ ricavare, quelli indispensabili sono:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $[\forall X]a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall(a\mathcal{U}b)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\exists(a\mathcal{U}b)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+E infatti si domostra facilmente che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $[\forall F]a\equiv\forall(\top\mathcal{U}a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $[\exists F]a\equiv\exists(\top\mathcal{U}a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $[\forall F]a\equiv\neg\exists(\top\mathcal{U\neg}a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $[\exists F]a\equiv\neg\forall(\top\mathcal{U\neg}a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $[\exists xX]a\equiv\neg[\forall X]\neg a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si può ora assiomatizzare ctl usando solo gli operatori normali nel seguente
+ modo:
+\end_layout
+
+\begin_layout Standard
+A1, A2, A3, MP
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K_{\forall x}:\,[\forall X](a\implies b)\implies([\forall X]a\implies[\forall X]b)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D_{\forall x}:\,[\exists X]\top$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\exists U:\,\exists(a\mathcal{U}b)\iff b\vee(a\wedge[\exists X]\exists(a\mathcal{U}b))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall U:\,\forall(a\mathcal{U}b)\iff b\vee(a\wedge[\forall X]\forall(a\mathcal{U}b))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $RN_{\forall x}:\,\dfrac{a}{[\forall x]a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\exists-Ind:\,\dfrac{b\vee(a\wedge[\exists x]c)\implies c}{\exists(a\mathcal{U}b)\implies c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall-Ind:\,\dfrac{b\vee(a\wedge[\forall x]c)\implies c}{\forall(a\mathcal{U}b)\implies c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Logica Dinamica
+\end_layout
+
+\begin_layout Subsection
+Definizione della logica dinamica
+\end_layout
+
+\begin_layout Standard
+La logica dinamica è una logica che si occupa di descrivere le proprietà
+ di un programma.
+\end_layout
+
+\begin_layout Standard
+L'idea è di associare a ogni istruzione 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ del programma un operatore modale 
+\begin_inset Formula $[\alpha]a$
+\end_inset
+
+ con il significato 
+\begin_inset Quotes eld
+\end_inset
+
+dopo ogni esecuzione di 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ a è vera
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+L'operatore duale 
+\begin_inset Formula $<\alpha>a$
+\end_inset
+
+ significa invece 
+\begin_inset Quotes eld
+\end_inset
+
+esiste una esecuzione di 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, dopo la quale a è vera
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+quindi vale come al solito:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $<\alpha>\equiv\neg[\alpha]\neg$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Le logiche dinamiche si definiscono sul particolare modello:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mu=(S,\,\{R_{\alpha}\,|\,\alpha\in Programmi\},\, V)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Definiamo gli insiemi:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phi$
+\end_inset
+
+: insieme delle formule atomiche
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\pi$
+\end_inset
+
+: insieme dei programmi elementari
+\end_layout
+
+\begin_layout Standard
+Le formule ben formate sono definite come al solito:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $a\in\phi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\neg a,\,[\alpha]a,\,<\alpha>a$
+\end_inset
+
+ con 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ programma
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $a\wedge b,\, a\vee b,\, a\implies b,\, a\iff b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+null'altro è una formula ben formata.
+\end_layout
+
+\begin_layout Standard
+I programmi sono definiti come:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\alpha\in\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\alpha;\beta$
+\end_inset
+
+ ossia la concatenazione di due programmi
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\alpha\cup\beta$
+\end_inset
+
+ ossia nondeterministicamente 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ oppure 
+\begin_inset Formula $\beta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\alpha^{*}$
+\end_inset
+
+ossia la ripetizione di 
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $a?$
+\end_inset
+
+ ossia il test di 
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Le relazioni che descrivono il comportamento dei programmi composti sono
+ espressi dalle seguenti equivalenze:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R_{\alpha;\beta}\equiv R_{\alpha}\circ\, R_{\beta}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R_{\alpha\cup\beta}\equiv R_{\alpha}\cup\, R_{\beta}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R_{\alpha^{*}}\equiv\underset{n\geq0}{\bigcup}R_{\alpha}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R_{a?}\equiv\{(s,\, s)\,|\,\veraw{\mu}sa\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Assiomatizzazzione della logica dinamica
+\end_layout
+
+\begin_layout Standard
+La logica dinamica modale può essere assiomatizzata aggiungendo agli schemi
+ della logica multimodale normale, ossia gli assiomi A1, A2, A3, 
+\begin_inset Formula $K_{[\alpha]}$
+\end_inset
+
+ i seguenti assiomi:
+\end_layout
+
+\begin_layout Standard
+Comp: 
+\begin_inset Formula $[\alpha;\beta]a\iff[\alpha][\beta]a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Union: 
+\begin_inset Formula $[\alpha\cup\beta]a\iff[\alpha]\wedge[\beta]a$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Mix: 
+\begin_inset Formula $[\alpha^{*}]a\iff a\wedge[\alpha][\alpha^{*}]a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ind: 
+\begin_inset Formula $[\alpha^{*}](a\implies[\alpha]a)\implies(a\implies[\alpha^{*}]a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Test: 
+\begin_inset Formula $[a?]b\iff(a\implies b)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Logica dinamica concorrente proposizionale
+\end_layout
+
+\begin_layout Standard
+Si può estendere la logica dinamica, normalmente utilizzata per programmi
+ sequenziali, ai programmi concorrenti, aggiungendo l'operatore 
+\begin_inset Formula $[\alpha\cap\beta]a$
+\end_inset
+
+ che significa 
+\begin_inset Quotes eld
+\end_inset
+
+dopo aver eseguito parallelamente 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ e 
+\begin_inset Formula $\beta$
+\end_inset
+
+ è vera a
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Per farlo tuttavia, dobbiamo modificare le relazioni del modello, per poter
+ gestire i casi con la concorrenza, e quindi abbiamo che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R_{\alpha}\subseteq S\times\mathcal{P}(S)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+E' quindi necessario cambiare pure la semantica della logica:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}S{[\alpha]a}\iff\forall T\subseteq S\,:\,(\alpha,\, T)\in R_{\alpha}\,\wedge\,\forall t\in T\,\veraw{\mu}ta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}S{<\alpha>a}\iff\exists T\subseteq S\,:\,(\alpha,\, T)\in R_{\alpha}\,\wedge\,\forall t\in T\,\veraw{\mu}ta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si nota quindi che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $[\alpha]\not\equiv\neg<\alpha>\neg$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Allora è necessario ridefinire il prodotto tra relazioni:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(s,\, T)\in R_{\alpha}\circ\, R_{\beta}\iff\exists U\subseteq\mathcal{P}(S)\,\wedge\,(s,\, U)\in R_{\alpha}\,\wedge\,\forall u\in U\exists T_{u}\,:\,(u,\, T_{u})\in R_{\beta}\,\wedge\, T=\underset{u\in U}{\bigcup T_{u}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Il prodotto di relazioni è quindi cambiato, passando dal seguente grafo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\backslash
+draw [black] (21.4,-15.1) circle (3); 
+\backslash
+draw (21.4,-15.1) node {$s$}; 
+\backslash
+draw [black] (37.5,-15.1) circle (3); 
+\backslash
+draw (37.5,-15.1) node {$u$}; 
+\backslash
+draw [black] (53.8,-15.1) circle (3); 
+\backslash
+draw (53.8,-15.1) node {$t$}; 
+\backslash
+draw [black] (23.492,-12.966) arc (126.89872:53.10128:9.923); 
+\backslash
+fill [black] (35.41,-12.97) -- (35.07,-12.09) -- (34.47,-12.89); 
+\backslash
+draw (29.45,-10.48) node [above] {$R_
+\backslash
+alpha$}; 
+\backslash
+draw [black] (39.613,-12.986) arc (126.52967:53.47033:10.141); 
+\backslash
+fill [black] (51.69,-12.99) -- (51.34,-12.11) -- (50.75,-12.91); 
+\backslash
+draw (45.65,-10.49) node [above] {$R_
+\backslash
+beta$}; 
+\backslash
+end{tikzpicture} 
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Al seguente grafo:
+\end_layout
+
+\begin_layout Standard
+<<<MANCA>>>
+\end_layout
+
+\begin_layout Standard
+Bisogna cambiare anche la Relazione di iterazione nel seguente modo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R_{\alpha^{*}}\equiv\underset{n\geq0}{\bigcup}R_{\alpha}^{n}$
+\end_inset
+
+ con 
+\begin_inset Formula $R_{\alpha}^{0}=\{(s,\,\{s\})\,|\, s\in S\}$
+\end_inset
+
+ e 
+\begin_inset Formula $R_{\alpha}^{n}=R_{\alpha}\circ\, R_{\alpha}^{n-1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Inoltre si introduce la relazione di combinazione, ossia quella che traduce
+ il parallelismo (l'operatore intersezione):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(s,\, T)\in R_{\alpha}\otimes R_{\beta}\iff T=U\cup V\,\wedge\,(s,U)\in R_{\alpha}\,\wedge\,(s,V)\in R_{\beta}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tutto il resto è definito allo stesso modo di prima, a meno di stare attenti
+ agli insiemi di stati, anzichè agli stati.
 \end_layout
 
 \end_body

@@ -210,7 +210,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\veraw\mu\beta a\iff\veraw{\mu^{\beta}}\beta a$
+\begin_inset Formula $\veraw{\mu}{\beta}a\iff\veraw{\mu^{\beta}}{\beta}a$
 \end_inset
 
 
@@ -275,7 +275,7 @@ i primi due casi sono banali, come negli altri casi.
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\veraw{\mu^{\alpha}}\beta{\boxx b}$
+\begin_inset Formula $\veraw{\mu^{\alpha}}{\beta}{\boxx b}$
 \end_inset
 
  
@@ -283,14 +283,14 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\veraw\mu\beta{\boxx b}$
+\begin_inset Formula $\veraw{\mu}{\beta}{\boxx b}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{\alpha}}\beta{\boxx b\iff\veraw{\mu^{\alpha}}\gamma b}$
+\begin_inset Formula $\veraw{\mu^{\alpha}}{\beta}{\boxx b\iff\veraw{\mu^{\alpha}}{\gamma}b}$
 \end_inset
 
 , per ogni 
@@ -309,7 +309,7 @@ ma per ipotesi di induzione:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{\alpha}}\gamma b\iff\veraw\mu\gamma b\iff\veraw\mu\beta{\boxx b}$
+\begin_inset Formula $\veraw{\mu^{\alpha}}{\gamma}b\iff\veraw{\mu}{\gamma}b\iff\veraw{\mu}{\beta}{\boxx b}$
 \end_inset
 
 
@@ -317,7 +317,7 @@ ma per ipotesi di induzione:
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\veraw\mu\beta{\boxx b}$
+\begin_inset Formula $\veraw{\mu}{\beta}{\boxx b}$
 \end_inset
 
 
@@ -325,7 +325,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\veraw{\mu^{\alpha}}\beta{\boxx b}$
+\begin_inset Formula $\veraw{\mu^{\alpha}}{\beta}{\boxx b}$
 \end_inset
 
 
@@ -381,7 +381,7 @@ Dall'ipotesi
 \noun off
 \color none
 
-\begin_inset Formula $\veraw\mu\beta{\boxx b}$
+\begin_inset Formula $\veraw{\mu}{\beta}{\boxx b}$
 \end_inset
 
 , sappiamo che 
@@ -397,7 +397,7 @@ Dall'ipotesi
 \end_inset
 
  cioè 
-\begin_inset Formula $\vera\mu{_{\gamma}b}$
+\begin_inset Formula $\vera{\mu}{_{\gamma}b}$
 \end_inset
 
 , ma per ipotesi induttiva si ha anche 
@@ -420,14 +420,14 @@ Valgono le seguenti:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\vera\mu a\implies\vera{\mu^{\alpha}}a$
+\begin_inset Formula $\vera{\mu}a\implies\vera{\mu^{\alpha}}a$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\vera\mu a\iff\vera{\mu^{\alpha}}a\,\forall\alpha\in S$
+\begin_inset Formula $\vera{\mu}a\iff\vera{\mu^{\alpha}}a\,\forall\alpha\in S$
 \end_inset
 
 
@@ -533,7 +533,7 @@ Siano
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu_{1}}\alpha a\iff\veraw{\mu_{2}}{f(\alpha)}a$
+\begin_inset Formula $\veraw{\mu_{1}}{\alpha}a\iff\veraw{\mu_{2}}{f(\alpha)}a$
 \end_inset
 
 
@@ -567,11 +567,19 @@ su
 \end_layout
 
 \begin_layout Section
-Frame (w, <)
+Frame (
+\begin_inset Formula $\omega$
+\end_inset
+
+, <)
 \end_layout
 
 \begin_layout Standard
-Il frame (w, <) è il frame che rappresenta la retta dei numeri naturali.
+Il frame (
+\begin_inset Formula $\omega$
+\end_inset
+
+, <) è il frame che rappresenta la retta dei numeri naturali.
 \end_layout
 
 \begin_layout Standard
@@ -580,7 +588,11 @@ E' adatto a rappresentare il tempo discreto continuocon un istante iniziale.
 
 \begin_layout Standard
 La logica che rappresenta questo frame è la logica K4DLZ, che è corretta
- e completa rispetto a (w, <)
+ e completa rispetto a (
+\begin_inset Formula $\omega$
+\end_inset
+
+, <)
 \end_layout
 
 \begin_layout Standard
@@ -673,7 +685,7 @@ la logica K4DLZ, detta anche logica
 
 \begin_layout Itemize
 4: 
-\begin_inset Formula $\boa\implies\boxx\boa$
+\begin_inset Formula $\boa\implies\boxx{\boa}$
 \end_inset
 
  --> transitività
@@ -697,7 +709,7 @@ L:
 
 \begin_layout Itemize
 Z: 
-\begin_inset Formula $\boxx{(\boa\implies a)\implies(\diam\boa\implies\boa)}$
+\begin_inset Formula $\boxx{(\boa\implies a)\implies(\diam{\boa}\implies\boa)}$
 \end_inset
 
 
@@ -715,7 +727,7 @@ Correttezza di K4DLZ
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\teolm\Omega a$
+\begin_inset Formula $\teolm{\Omega}a$
 \end_inset
 
 
@@ -723,7 +735,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\vera{(w,<)}a$
+\begin_inset Formula $\vera{(\omega,<)}a$
 \end_inset
 
 
@@ -751,23 +763,36 @@ Gli assiomi siano formule valide:
 \end_layout
 
 \begin_layout Itemize
-A1, A2, A3, K sono validi su ogni frame, e quindi sono validi anche su (w,
- <)
+A1, A2, A3, K sono validi su ogni frame, e quindi sono validi anche su (
+\begin_inset Formula $\omega$
+\end_inset
+
+, <)
 \end_layout
 
 \begin_layout Itemize
-4 è valido su ogni frame transitivo, e quindi è valido anche su (w, <) essendo
- transitivo
+4 è valido su ogni frame transitivo, e quindi è valido anche su (
+\begin_inset Formula $\omega$
+\end_inset
+
+, <) essendo transitivo
 \end_layout
 
 \begin_layout Itemize
-D è valido su ogni frame seriale, e quindi è valido anche su (w, <) essendo
- seriale.
+D è valido su ogni frame seriale, e quindi è valido anche su (
+\begin_inset Formula $\omega$
+\end_inset
+
+, <) essendo seriale.
 \end_layout
 
 \begin_layout Itemize
 L è valido su ogni frame debolmente connesso, e quindi è valido anche su
- (w, <) essendo debolmente connesso.
+ (
+\begin_inset Formula $\omega$
+\end_inset
+
+, <) essendo debolmente connesso.
 \begin_inset Newline newline
 \end_inset
 
@@ -780,7 +805,7 @@ Dobiamo quindi dimostrare solo la validità di Z.
 
 \begin_layout Standard
 Z è l'assioma 
-\begin_inset Formula $\boxx{(\boa\implies a)\implies(\diam\boa\implies\boa)}$
+\begin_inset Formula $\boxx{(\boa\implies a)\implies(\diam{\boa}\implies\boa)}$
 \end_inset
 
 , per dimostrare che è valido basta considerare il caso in cui gli antecedenti
@@ -804,7 +829,7 @@ supponiamo dunque che esistano due mondi
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{(w,\,<)}\alpha{\boxx{(\boa\implies a)}}$
+\begin_inset Formula $\veraw{(\omega,\,<)}{\alpha}{\boxx{(\boa\implies a)}}$
 \end_inset
 
 
@@ -823,14 +848,14 @@ supponiamo dunque che esistano due mondi
 \uwave off
 \noun off
 \color none
-\begin_inset Formula $\veraw{(w,\,<)}\alpha{\diam\boa}$
+\begin_inset Formula $\veraw{(\omega,\,<)}{\alpha}{\diam{\boa}}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{(w,\,<)}\beta\boa$
+\begin_inset Formula $\veraw{(\omega,\,<)}{\beta}{\boa}$
 \end_inset
 
 
@@ -845,7 +870,7 @@ allora da quest'ultima, viste le altre proprietà del frame,
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{(w,\,<)}\eta a$
+\begin_inset Formula $\veraw{(\omega,\,<)}{\eta}a$
 \end_inset
 
 
@@ -856,7 +881,7 @@ dalla prima invece abbiamo:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{(w,\,<)}\beta{\boa\implies a}$
+\begin_inset Formula $\veraw{(\omega,\,<)}{\beta}{\boa\implies a}$
 \end_inset
 
 
@@ -867,7 +892,7 @@ e allora, applicando il modus ponens
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{(w,\,<)}\beta a$
+\begin_inset Formula $\veraw{(\omega,\,<)}{\beta}a$
 \end_inset
 
 
@@ -882,7 +907,7 @@ Ma, allora possiamo applicare lo stesso ragionamento per
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{(w,\,<)}{\beta-1}\boa$
+\begin_inset Formula $\veraw{(\omega,\,<)}{\beta-1}{\boa}$
 \end_inset
 
 
@@ -1173,7 +1198,7 @@ Ma, siccome esiste un numero finito di mondi tra
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{(w,\,<)}{\alpha+1}a$
+\begin_inset Formula $\veraw{(\omega,\,<)}{\alpha+1}a$
 \end_inset
 
 
@@ -1184,7 +1209,7 @@ e quindi:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{(w,\,<)}\alpha\boa$
+\begin_inset Formula $\veraw{(\omega,\,<)}{\alpha}{\boa}$
 \end_inset
 
 
@@ -1306,7 +1331,7 @@ Completezza di K4DLZ
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\vera{(w,<)}a$
+\begin_inset Formula $\vera{(\omega,<)}a$
 \end_inset
 
 
@@ -1314,7 +1339,7 @@ Ip)
 
 \begin_layout Standard
 Ts)
-\begin_inset Formula $\teolm\Omega a$
+\begin_inset Formula $\teolm{\Omega}a$
 \end_inset
 
  
@@ -1336,7 +1361,7 @@ Per assurdo supponiamo che non valga la tesi, cioè che
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonTeor\Omega a$
+\begin_inset Formula $\nonTeor{\Omega}a$
 \end_inset
 
 , per il lemma di verità si ha anche 
@@ -1368,7 +1393,7 @@ Dato che
 \end_inset
 
  in cui 
-\begin_inset Formula $\nonveraw{M_{1}}\alpha a$
+\begin_inset Formula $\nonveraw{M_{1}}{\alpha}a$
 \end_inset
 
 
@@ -3397,7 +3422,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\nonveraw\mu\beta b$
+\begin_inset Formula $\nonveraw{\mu}{\beta}b$
 \end_inset
 
  per tutti i 
@@ -3416,7 +3441,7 @@ Per assurdo, supponiamo:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\beta b$
+\begin_inset Formula $\veraw{\mu}{\beta}b$
 \end_inset
 
  per ogni 
@@ -3435,7 +3460,7 @@ allora deve valere
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw\mu\delta b$
+\begin_inset Formula $\nonveraw{\mu}{\delta}b$
 \end_inset
 
  in qualche mondo 
@@ -3608,7 +3633,7 @@ allora, poichè la trelazione è transitiva e connessa, abbiamo che
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw\mu\gamma{\boxx b}$
+\begin_inset Formula $\nonveraw{\mu}{\gamma}{\boxx b}$
 \end_inset
 
 
@@ -3619,7 +3644,7 @@ e quindi, per questo possiamo dire che vale:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\gamma{\boxx b\implies b}$
+\begin_inset Formula $\veraw{\mu}{\gamma}{\boxx b\implies b}$
 \end_inset
 
 
@@ -3643,7 +3668,7 @@ ma poichè in tutti i mondi successivi è vera b, allora in tutti i mondi
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\vera\mu{\boxx{(\boxx{b\implies b)}}}$
+\begin_inset Formula $\vera{\mu}{\boxx{(\boxx{b\implies b)}}}$
 \end_inset
 
 
@@ -3655,7 +3680,7 @@ Però applicando a questo punto il modus ponens all'assioma Z e alla precedente
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\vera\mu{\diam{\boxx b}\implies\boxx b}$
+\begin_inset Formula $\vera{\mu}{\diam{\boxx b}\implies\boxx b}$
 \end_inset
 
 
@@ -3682,7 +3707,7 @@ Ma allora in
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\alpha{\diam{\boxx b}}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\diam{\boxx b}}$
 \end_inset
 
  
@@ -3701,7 +3726,7 @@ ma allora per Modus Ponens, è vale anche:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\alpha{\boxx b}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx b}$
 \end_inset
 
 
@@ -3720,7 +3745,11 @@ Ci sono altre due logiche temporali interessanti:
 \end_layout
 
 \begin_layout Enumerate
-K4DLDum, corretta e completa sul frame (w, 
+K4DLDum, corretta e completa sul frame (
+\begin_inset Formula $\omega$
+\end_inset
+
+, 
 \begin_inset Formula $\leq$
 \end_inset
 
@@ -3745,7 +3774,7 @@ Dove all'assioma Z vengono sostituiti rispettivamente:
 
 \begin_layout Itemize
 Dum: 
-\begin_inset Formula $\boxx{(\boa\implies a)\implies(\diam\boa\implies\boa)}$
+\begin_inset Formula $\boxx{(\boa\implies a)\implies(\diam{\boa}\implies\boa)}$
 \end_inset
 
 
@@ -3753,7 +3782,7 @@ Dum:
 
 \begin_layout Itemize
 X: 
-\begin_inset Formula $\boxx\boa\implies\boa$
+\begin_inset Formula $\boxx{\boa}\implies\boa$
 \end_inset
 
 
