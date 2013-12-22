@@ -1008,7 +1008,507 @@ Model Checking operazionale
 \end_layout
 
 \begin_layout Standard
+Il model checking operazionale si basa sulla manipolazione di particolari
+ automi, detti automi di Büchi.
+\end_layout
 
+\begin_layout Standard
+L'algoritmo alla base è il seguente:
+\end_layout
+
+\begin_layout Enumerate
+Rappresento il modello 
+\begin_inset Formula $\mu$
+\end_inset
+
+ con un automa di Büchi 
+\begin_inset Formula $A_{\mu}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+per verificare la proprietà 
+\begin_inset Formula $\varphi$
+\end_inset
+
+, traduco la sua negazione in un automa di Büchi 
+\begin_inset Formula $A_{\neg\varphi}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Costruisco l'automa prodotto che riconosce il linguaggio intersezione tra
+ 
+\begin_inset Formula $L(A_{\mu})$
+\end_inset
+
+ e 
+\begin_inset Formula $L(A_{\neg\varphi})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Controllo se 
+\begin_inset Formula $L(A_{\mu}\times\, A_{\neg\varphi})=\emptyset$
+\end_inset
+
+, in caso affermativo la proprietà è verificata.
+\end_layout
+
+\begin_layout Subsection
+Automi di Büchi
+\end_layout
+
+\begin_layout Standard
+Gli automi di Büchi sono automi a stati finiti nondeterministici, che riconoscon
+o linguaggi infiniti, e dove gli stati 
+\begin_inset Quotes eld
+\end_inset
+
+finali
+\begin_inset Quotes erd
+\end_inset
+
+ sono stati di ripetizione, ovvero stati che vengono raggiunti infinite
+ volte durante il riconoscimento della stringa appartenente al linguaggio.
+\end_layout
+
+\begin_layout Standard
+Gli automi di Büchi godono delle seguenti propietà:
+\end_layout
+
+\begin_layout Standard
+Siano A, B automi di Büchi, allora esiste un automa che riconosce:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L(A)\cup L(B)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L(A)\cap L(B)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L(A)^{c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L(A)L(B)$
+\end_inset
+
+ se A è un automa a stati finiti classico
+\end_layout
+
+\begin_layout Subsection
+Da formule di LTL ad automi di Büchi
+\end_layout
+
+\begin_layout Standard
+Esiste un algoritmo per tradurre una formula di LTL in un automa di Büchi.
+ Lo stesso algoritmo si può estendere, con le dovute accortezze e prestando
+ attenzione ai sottocasi, alle formule di CTL e CTL*.
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ la formula e siano 
+\begin_inset Formula $P_{1},\,...,\, P_{n}$
+\end_inset
+
+ le lettere predicative di 
+\begin_inset Formula $\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si può trovare un automa di Büchi 
+\begin_inset Formula $A_{\varphi}=(S,\, I,\,\tau,\, L,\, F)$
+\end_inset
+
+ con 
+\begin_inset Formula $L:\, S\longrightarrow2^{\{P_{1},\,...,\, P_{n}\}}$
+\end_inset
+
+tale che, se 
+\begin_inset Formula $\pi$
+\end_inset
+
+ è un path che corrisponde ad una parola 
+\begin_inset Formula $\omega\in L(A_{\varphi})$
+\end_inset
+
+, allora 
+\begin_inset Formula $\vera{(S,\,\tau,\, L),\,\pi}{\varphi}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+l'algoritmo è il seguente:
+\end_layout
+
+\begin_layout Enumerate
+Porto la formula 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ in forma negata normale
+\end_layout
+
+\begin_layout Enumerate
+elimino i globally (
+\begin_inset Formula $\mathcal{G}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Costruisco l'automa locale 
+\begin_inset Formula $A_{L}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+altro che non abbiamo fatto
+\end_layout
+
+\begin_layout Subsubsection
+Forma negata normale 
+\end_layout
+
+\begin_layout Standard
+Portare una formula in forma negata normale, consiste nel rendere una formula
+ più 
+\begin_inset Quotes eld
+\end_inset
+
+semplice
+\begin_inset Quotes erd
+\end_inset
+
+, cioè in modo che contenga 
+\begin_inset Quotes eld
+\end_inset
+
+pochi
+\begin_inset Quotes erd
+\end_inset
+
+ connettivi e operatori modali diversi, avendo cura di portare le negazioni
+ davanti alle lettere proposizionali.
+\end_layout
+
+\begin_layout Standard
+Per farlo utilizzo le seguenti regole:
+\end_layout
+
+\begin_layout Standard
+I) Le relazioni tra gli operatori modali 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\neg\globally{a\equiv\eventually{\neg a}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\neg\eventually a\equiv\globally{\neg a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\neg(\until a{b)}\equiv(\release{\neg a}{\neg b})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\neg(\release ab)\equiv(\until{\neg a}{\neg b})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+II) Le formule di De Morgan
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\neg(a\wedge b)\equiv(\neg a)\vee(\neg b)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\neg(a\vee b)\equiv(\neg a)\wedge(\neg b)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La formula così trovata si dice in forma negata normale.
+\end_layout
+
+\begin_layout Standard
+Si può a questo punto eliminare anche l'operatore globally, ricordando la
+ seguante relazione:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\globally a\equiv\release{\bot}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Costruzione dell'automa locale
+\end_layout
+
+\begin_layout Standard
+L'automa locale è un automa che riconosce sequenze di esecuzione che verificano
+ la proprietà 
+\begin_inset Formula $\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+l'algoritmo si articola in due passi:
+\end_layout
+
+\begin_layout Enumerate
+Chiusura della formila 
+\begin_inset Formula $\varphi$
+\end_inset
+
+: 
+\begin_inset Formula $cl(\varphi)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\varphi\in cl(\varphi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\psi\in cl(\varphi)\implies\neg\psi\in cl(\varphi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\psi\wedge\theta\in cl(\varphi)\implies\psi,\theta\in cl(\varphi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\psi\vee\theta\in cl(\varphi)\implies\psi,\theta\in cl(\varphi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\next{\psi}\in cl(\varphi)\implies\neg\psi\in cl(\varphi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\eventually{\psi}\in cl(\varphi)\implies\neg\psi\in cl(\varphi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\until{\psi}{\theta}\in cl(\varphi)\implies\psi,\theta\in cl(\varphi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\release{\psi}{\theta}\in cl(\varphi)\implies\psi,\theta\in cl(\varphi)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Automa locale 
+\begin_inset Formula $A_{L}=(\Sigma,\, S_{L},\, I_{L},\,\tau_{L},\, F_{L})$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\Sigma=2^{cl(\varphi)}$
+\end_inset
+
+ ovvero 
+\begin_inset Formula $\Sigma\subseteq\mathcal{P}(cl(\varphi))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S_{L}$
+\end_inset
+
+ formato da tutti gli elementi di 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ consistenti ovvero 
+\begin_inset Formula $\psi\in S_{L}\iff\neg\psi\notin S_{L}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $I_{L}=\{s\in S_{L}\,|\,\varphi\in s\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F_{L}=S_{L}$
+\end_inset
+
+ (ossia tutti gli stati sono finali)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tau_{L}$
+\end_inset
+
+ tale che: siano 
+\begin_inset Formula $s,s'\in S_{L}$
+\end_inset
+
+, 
+\begin_inset Formula $a\in\Sigma$
+\end_inset
+
+ allora 
+\begin_inset Formula $(s,\, a,\, s')\in\tau_{L}$
+\end_inset
+
+ se e solo se:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a=s$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\next{\psi\in s\iff\psi\in s'}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\eventually{\psi\in s\iff\psi\in s'\,\vee\,\eventually{\psi\in s'}}$
+\end_inset
+
+ (infatti vale 
+\begin_inset Formula $\eventually{\psi}\equiv\next{\psi}\vee\next{\eventually{\psi}}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\until{\psi}{\theta}\in s\iff\theta\in s'\,\vee\,(\psi\in s\,\wedge\,\until{\psi}{\theta\in s')}$
+\end_inset
+
+ (infatti vale 
+\begin_inset Formula $\until{\psi}{\theta}\equiv\next{\theta\vee(\psi\wedge\next{(\until{\psi}{\theta}}))}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\release{\psi}{\theta}\in s\iff\psi\wedge\theta\in s\,\vee\,(\theta\in s\,\wedge\,\release{\psi}{\theta\in s')}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+Una volta costruito l'automa in queosto modo, si deve minimizzare.
+ L'automa minimo è l'automa locale di 
+\begin_inset Formula $\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Esempio
+\end_layout
+
+\begin_layout Standard
+<<MANCA>>
 \end_layout
 
 \end_body
