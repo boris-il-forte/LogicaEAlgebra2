@@ -200,9 +200,6 @@ filename "contents/4-determinata/det2.lyx"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
 filename "contents/5-decidibile/dec.lyx"

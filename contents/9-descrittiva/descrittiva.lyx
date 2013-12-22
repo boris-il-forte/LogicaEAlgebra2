@@ -246,7 +246,7 @@ Un'interpretazione I di una base di conoscenza ́e una coppia
 \end_inset
 
 I, detto dominio di I e da una funzione di interpretazione 
-\begin_inset Formula $	·^{I}$
+\begin_inset Formula $·^{I}$
 \end_inset
 
  che associa:
@@ -455,7 +455,7 @@ costrutto
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $(\leq nR)^{I}=\{a^{I}:\ 		\cardinal{\{b^{I}:\ (a^{I},b^{I})\in R^{I}\}}<n\}$
+\begin_inset Formula $(\leq nR)^{I}=\{a^{I}:\ \cardinal{\{b^{I}:\ (a^{I},b^{I})\in R^{I}\}}<n\}$
 \end_inset
 
 
@@ -752,6 +752,763 @@ e) la logica del prim ordine è decibile.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Confronto con logica multimodale
+\end_layout
+
+\begin_layout Standard
+\noindent
+L'espressività di ALC è la stessa di 
+\begin_inset Formula $K_{n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+Infatti ogni ruolo 
+\begin_inset Formula $R_{i}$
+\end_inset
+
+ si può mettere in corrispondenza con 
+\begin_inset Formula $[R_{i}]c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Terminologia
+\end_layout
+
+\begin_layout Itemize
+Definizione: 
+\end_layout
+
+\begin_layout Standard
+Una definizione associa a un concetto atomico un concetto complesso (non
+ atomico) es.
+ 
+\begin_inset Formula $Parent\equiv Father\sqcup Mather$
+\end_inset
+
+, il concetto atomico viene detto anche simbolo nominale
+\end_layout
+
+\begin_layout Itemize
+Simbolo di base (o nominale):
+\end_layout
+
+\begin_layout Standard
+I ruoli e i concetti che appaiono solo nelle parti destre delle definizioni
+\end_layout
+
+\begin_layout Itemize
+Interpretazione di base:
+\end_layout
+
+\begin_layout Standard
+Un'interpretazione di una T-Box che interpreta solo i simboli di base
+\end_layout
+
+\begin_layout Itemize
+Aciclico:
+\end_layout
+
+\begin_layout Standard
+Nessun simbolo nominale usa sé stesso
+\end_layout
+
+\begin_layout Itemize
+T-Box definitorio:
+\end_layout
+
+\begin_layout Standard
+La sua interpretazione si estende in modo unico a una interpreatazione di
+ tutto il t-box (estesa)
+\end_layout
+
+\begin_layout Standard
+Un T-Box è definitorio se è possibile costruirne uno equivalente ma aciclico
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Non sono definitorie alcune T cicliche es.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Human\equiv Animal\sqcap\forall hasParent.Human$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ma alcune T cicliche sono definitorie es.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\equiv B\sqcap\exists R.(A\sqcap\neg A)$
+\end_inset
+
+ che è equivalente a:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\equiv B\sqcap\exists R.(\bot)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+Terminologia generalizzata
+\end_layout
+
+\begin_layout Standard
+A volte è possibile aggiungere nuovi operatori qua descritti.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Inclusione
+\end_layout
+
+\begin_layout Standard
+Si possono usare T-Box del tipo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\sqsubseteq B$
+\end_inset
+
+ che vale se e solo se 
+\begin_inset Formula $A^{I}\subseteq B^{I}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una terminologia T generalizzata (cioè che contiene assiomi di inclusione)
+ può essere tradotta in una forma T normalizzata sostituendo le forme del
+ tipo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Woman\sqsubseteq Person$
+\end_inset
+
+ con 
+\begin_inset Formula $Woman\mbox{\equiv}\underline{Woman}\sqcap Person$
+\end_inset
+
+ dove 
+\begin_inset Formula $\underline{Woman}$
+\end_inset
+
+ è un nuovo simbolo base (che denota qualità specifiche)
+\end_layout
+
+\begin_layout Standard
+In termini di espressività, le due forme sono equivalenti
+\end_layout
+
+\begin_layout Standard
+Ogni modello di 
+\begin_inset Formula $T$
+\end_inset
+
+ è anche modello di 
+\begin_inset Formula $\underline{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Qualsiasi interpretazione base di un modello di 
+\begin_inset Formula $T$
+\end_inset
+
+ è anche interpretazione base di un modello di 
+\begin_inset Formula $\underline{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Così facendo si ha che: 
+\begin_inset Formula $Woman^{I}\subseteq Person^{I}$
+\end_inset
+
+ e quindi 
+\begin_inset Formula $Woman^{I}\equiv Person\cap(\underline{Woman})^{I}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Set
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Set{a_{1},a_{2},\dots,a_{n}}^{I}=\{a_{1}^{I},a_{2}^{I},\dots,a_{n}^{I}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Fills
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Fills\ r\ c$
+\end_inset
+
+ sono gli individui che sono in relazione tramite 
+\begin_inset Formula $r$
+\end_inset
+
+ agli individui identificati da 
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+es.
+ 
+\begin_inset Formula $FILLS\ :\ Child\ Chris$
+\end_inset
+
+ sono tutti gli individui con figlio 
+\begin_inset Quotes eld
+\end_inset
+
+Chris
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(Fills\ R:a)^{I}=\{b\in\Delta^{I}\;:\ (a^{I},b^{I})\in R^{I}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Note
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\exists R.C$
+\end_inset
+
+ si può sostituire con 
+\begin_inset Formula $\exists R.Set(a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Posso pensare i T-Box come composti solo di definizioni
+\end_layout
+
+\begin_layout Standard
+Il T-Box può essere tolto del tutto specificando completamente le definizioni
+ nell'A-Box
+\end_layout
+
+\begin_layout Standard
+Normalmente nelle Logiche Descrittive si fa l'UNA: l'unicity name assunction
+ cioè si assume che se si usano due nomi come a, b, allora 
+\begin_inset Formula $a^{I}\neq b^{I}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Servizi di Reasoning
+\end_layout
+
+\begin_layout Standard
+I servizi di reasoning si propongono di risolvono quattro tipi di problemi
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Soddifisfacibilità: 
+\series default
+Un concetto C si dice soddisfacibile rispetto al T-Box T se esiste un modello
+ di T tale che 
+\begin_inset Formula $C^{I}$
+\end_inset
+
+ non è vuoto
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Sussunzione: 
+\series default
+Un concetto C è sussunto da un concetto D, in T se 
+\begin_inset Formula $C^{I}\subseteq D^{I}$
+\end_inset
+
+ per ogni modello di T
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Equivalenze: 
+\series default
+Due concetti C e D si dicono equivalenti rispetto a T se 
+\begin_inset Formula $C^{I}=D^{I}$
+\end_inset
+
+per ogni modello di T
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Disgiunzione: 
+\series default
+Due concetti C e D sono disgiunti tispetto a T se 
+\begin_inset Formula $C^{I}\cap D^{I}=\emptyset$
+\end_inset
+
+ per ogni modello di T
+\end_layout
+
+\begin_layout Standard
+Mostriamo che una KB che fornisce il servizio di sussunzione risolve anche
+ gli altri tre problemi, infatti:
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C$
+\end_inset
+
+ è insoddisfacibile se e solo se 
+\begin_inset Formula $\bot\sqsubseteq C$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C,D$
+\end_inset
+
+sono equivalenti se 
+\begin_inset Formula $C\sqsubseteq D$
+\end_inset
+
+ e 
+\begin_inset Formula $D\sqsubseteq C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C,D$
+\end_inset
+
+sono disgiunti se 
+\begin_inset Formula $C\sqcap D\sqsubseteq\bot$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Feauture Logic
+\end_layout
+
+\begin_layout Standard
+Le logiche descrittive più semplici appartengono alla famiglia della features
+ logics (FL in breve) e sono ottenute indebolendo la più ́famosa logica
+ AL inibendo i costruttori di concetto più complessi.
+\end_layout
+
+\begin_layout Standard
+La più semplice di queste è 
+\begin_inset Formula $FL_{0}$
+\end_inset
+
+ che si ottiene da AL togliendo 
+\begin_inset Formula $\bot$
+\end_inset
+
+ e 
+\begin_inset Formula $\exists$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un concetto in 
+\series bold
+forma normale 
+\series default
+è del tipo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{1}\sqcap A_{2}\sqcap\dot{\dots A_{n}\forall R_{1}.C_{1}\sqcap\forall R_{2}.C_{2}\dots\sqcap\forall R_{m}.C_{m}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+dove 
+\begin_inset Formula $C_{j}$
+\end_inset
+
+ sono concetti in forma normale e 
+\begin_inset Formula $R_{j}$
+\end_inset
+
+ sono ruoli atomici
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Posso scrivere qualsiasi concetto in questo modo con l'accortezza di:
+\end_layout
+
+\begin_layout Standard
+togliere i duplicati: 
+\begin_inset Formula $A_{i}\neq A_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes eld
+\end_inset
+
+sciogliere
+\begin_inset Quotes erd
+\end_inset
+
+ i ruoli con intersezioni: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall R.(C\sqcap D)\equiv\forall R.C\sqcap\forall R.D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+	
+\end_layout
+
+\begin_layout Standard
+Siano C e D due concetti 
+\begin_inset Formula $FL_{0}$
+\end_inset
+
+ in forma normale: 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C\equiv A_{1}\sqcap\dots\sqcap A_{m}\sqcap\forall R1.C1\sqcap\forall Rn.Cn$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D\equiv B1\sqcap\dots\sqcap Bk\sqcap\forall S1.D1\sqcap\forall Sl.Dl$
+\end_inset
+
+	
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+allora 
+\begin_inset Formula $C\sqsubseteq D$
+\end_inset
+
+ se e solo se 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1.
+ per ogni i, 
+\begin_inset Formula $1\leq i\leq k$
+\end_inset
+
+ esiste un j, 
+\begin_inset Formula $1\leq j\leq m$
+\end_inset
+
+ per il quale 
+\begin_inset Formula $Bi=Aj$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+2.
+ per ogni i, 
+\begin_inset Formula $1\leq i\leq l$
+\end_inset
+
+ esiste un j, 
+\begin_inset Formula $1\leq j\leq n$
+\end_inset
+
+ per il quale 
+\begin_inset Formula $Si=Rj$
+\end_inset
+
+ e
+\begin_inset Formula $Cj\sqsubseteq Di$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Varianti
+\end_layout
+
+\begin_layout Standard
+Ad 
+\begin_inset Formula $AL_{0}$
+\end_inset
+
+può essere aggiunto il concetto 
+\begin_inset Formula $\bot$
+\end_inset
+
+, ottenendo 
+\begin_inset Formula $AL_{\bot}$
+\end_inset
+
+e la forma normale viene a essere la stessa di prima a cui si aggiunge l'opportu
+nità per un concetto di essere o
+\begin_inset Formula $\bot$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notiamo che 
+\begin_inset Formula $\bot\sqsubseteq C$
+\end_inset
+
+, per ogni 
+\begin_inset Formula $C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ad 
+\begin_inset Formula $AL_{0}$
+\end_inset
+
+ si può aggiungere la negazione di concetti atomici ottenendo 
+\begin_inset Formula $AL_{\neg}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notiamo che 
+\begin_inset Formula $\bot\equiv A\wedge\neg A$
+\end_inset
+
+, quindi 
+\begin_inset Formula $AL_{\neg}$
+\end_inset
+
+contiene strettamente
+\begin_inset Formula $AL_{0}$
+\end_inset
+
+	
+\end_layout
+
+\begin_layout Standard
+In 
+\begin_inset Formula $ALC$
+\end_inset
+
+ per verificare se 
+\begin_inset Formula $C\sqsubseteq D$
+\end_inset
+
+ possiamo controllare che 
+\begin_inset Formula $C\sqcap\neg D$
+\end_inset
+
+ si insoddisfacibile
+\end_layout
+
+\begin_layout Standard
+Per controllare 
+\begin_inset Formula $C\equiv D$
+\end_inset
+
+ possiamo quindi testare 
+\begin_inset Formula $C\sqcap\neg D$
+\end_inset
+
+ e 
+\begin_inset Formula $D\sqcap\neg C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+A-Box Reasoning
+\end_layout
+
+\begin_layout Standard
+	I servizi di reasoning di A-Box sono:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Consistenza
+\series default
+: Un A-Box è consistente in un modello T-Box T se c'è un'interpreatzione
+ che sia modello sia di T che di A
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Instance Checking
+\series default
+: Un individuo è istanza di un concetto C rispetto a un A-Box A se è membro
+ dell'insieme C.
+ 
+\begin_inset Formula $\vera A{C(a)}$
+\end_inset
+
+ il che vale se e solo se 
+\begin_inset Formula $A\cup\{\neg C(a)\}$
+\end_inset
+
+ è insoddisfacibile
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Instance Retrivial
+\series default
+: Trova tutti gli individui che sono istanze di una data descrizione
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Problema di Realizzazione
+\series default
+: Trova il concetto più specifico a cui un individuo appartiene
+\end_layout
+
+\begin_layout Subsection
+Variante
+\end_layout
+
+\begin_layout Standard
+T-Box ed A-Box si possono arricchire con 
+\begin_inset Formula $C\implies D$
+\end_inset
+
+ cioè: per ogni individuo 
+\begin_inset Formula $a$
+\end_inset
+
+ cui è noto 
+\begin_inset Formula $C(a)$
+\end_inset
+
+ si ha anche 
+\begin_inset Formula $D(a)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Notiamo che NON vale 
+\begin_inset Formula $\neg D\implies\neg C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+		
 \end_layout
 
 \end_body
