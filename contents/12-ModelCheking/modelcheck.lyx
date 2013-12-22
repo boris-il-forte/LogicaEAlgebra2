@@ -508,14 +508,14 @@ Per dimostrarlo, uso la bisimulazione:
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $(\mu,\, n)\leftrighteq(\mu,\, n+3)$
+\begin_inset Formula $(\mu,\, n)\leftrightarroweq(\mu,\, n+3)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $(\mu,\,1)\leftrighteq(\mu,\,2)$
+\begin_inset Formula $(\mu,\,1)\leftrightarroweq(\mu,\,2)$
 \end_inset
 
 

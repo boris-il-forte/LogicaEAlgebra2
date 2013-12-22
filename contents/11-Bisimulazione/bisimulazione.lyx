@@ -1221,7 +1221,7 @@ Sia
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $(Z,\, V_{Z},\,0)\leftrighteq(F,\, V_{F},\, a)$
+\begin_inset Formula $(Z,\, V_{Z},\,0)\leftrightarroweq(F,\, V_{F},\, a)$
 \end_inset
 
 
