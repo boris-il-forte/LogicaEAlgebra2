@@ -1,0 +1,1015 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass report
+\begin_preamble
+
+
+\title{Logica e Algebra 2}
+
+\usepackage[english]{babel}
+\usepackage{tikz}
+
+\usepackage{settings/usefulMacros} 
+
+\usepackage{booktabs}\usepackage{listings}\lstset{columns=fullflexible}
+
+\usepackage{wasysym}
+
+\usepackage{amsthm}\newtheoremstyle{note} % name
+{\topsep} 	% Space above
+{\topsep} 	% Space below
+{\small}		% Body font
+{}		% Indent amount
+{\small\bfseries}% Theorem head font
+{:}		% Punctuation after theorem head
+{.5em}	% Space after theorem head
+{}		% Theorem head spec (can be left empty, meaning ‘normal’)
+
+\usepackage{fancyhdr}%% Cambia il carattere delle didascalie delle figure %%
+\usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption}
+
+\usepackage{comment}
+
+%per le tabelle lunghe e particolari
+\usepackage{lscape}
+
+
+
+\usepackage{babel}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language italian
+\language_package default
+\inputencoding utf8
+\fontencoding T1
+\font_roman default
+\font_sans default
+\font_typewriter mathpazo
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Model Checking
+\end_layout
+
+\begin_layout Section
+Frame Temporale
+\end_layout
+
+\begin_layout Standard
+chiamiamo frame temporale un generico frame
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau=(T,\,<)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+dove < è una relazione irriflessiva e transitiva.
+\end_layout
+
+\begin_layout Standard
+Posto V una funzione di valutazione, un modello su un frame temporale è:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mu=(\tau,\, V)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Le logiche basate sui frame temporali si chiamano logiche (modali) temporali.
+\end_layout
+
+\begin_layout Standard
+Il frame temporale può avere alcune proprietà, infatti si dice:
+\end_layout
+
+\begin_layout Itemize
+Lineare a destra: 
+\begin_inset Formula $\forall x,y,z((x<y\,\wedge\, x<z)\implies(y<z\,\vee\, z<y\,\vee\, y=z))$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Lineare a sinistra: 
+\begin_inset Formula $\forall x,y,z((x>y\,\wedge\, x>z)\implies(y>z\,\vee\, z>y\,\vee\, y=z))$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Ramificato a destra: se non è lineare a destra
+\end_layout
+
+\begin_layout Itemize
+Ramificato a sinistra: se non è lineare a sinistra
+\end_layout
+
+\begin_layout Itemize
+Discreto: 
+\begin_inset Formula $\forall x,y(x<y\implies\exists z(x<z\,\wedge\,\neg\exists u(x<u\,\wedge\, u<z)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Denso: 
+\begin_inset Formula $\forall x,y(x<y\implies\exists z(x<z<y))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Logica LTL
+\end_layout
+
+\begin_layout Subsection
+Notazione modena
+\end_layout
+
+\begin_layout Standard
+La logica LTL ha una notazione più nuova rispetto a quella inizialmente
+ formulata con gli operatori 
+\begin_inset Formula $\square,\,\diamond,\,\circ$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathcal{G}\equiv[F]$
+\end_inset
+
+ chiamato 
+\begin_inset Quotes eld
+\end_inset
+
+globally
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathcal{F}\equiv<F>$
+\end_inset
+
+ chiamato 
+\begin_inset Quotes eld
+\end_inset
+
+eventaully
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathcal{X}\equiv\circ$
+\end_inset
+
+ chiamato next
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathcal{U}$
+\end_inset
+
+ chiamato until
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathcal{R}$
+\end_inset
+
+chiamato release
+\end_layout
+
+\begin_layout Subsection
+Operatori modali ed espressività della logica
+\end_layout
+
+\begin_layout Standard
+Dimostriamo Ora alcune proprietà degli operatori di LTL:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathcal{X}$
+\end_inset
+
+ può essere espresso da 
+\begin_inset Formula $\mathcal{U}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathcal{G}$
+\end_inset
+
+ può essere espresso tramite il solo operatore  
+\begin_inset Formula $\mathcal{U}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ può essere espresso tramite il solo operatore 
+\begin_inset Formula $\mathcal{U}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathcal{X}$
+\end_inset
+
+ non può essere espresso con 
+\begin_inset Formula $\mathcal{G}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Si dimostra abbastanza facilmente:
+\end_layout
+
+\begin_layout Standard
+1) ricordando che next ha il significato seguente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}s{\next a}\iff\veraw{\mu}{s+1}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+consideriamo la seguente formula:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}n{\until{\bot}a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+è vera se e solo se vale la seguente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\exists m>n(\veraw{\mu}ma\,\wedge\,\forall k(n<k<m\implies\veraw{\mu}k{\bot}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+poichè 
+\begin_inset Formula $\veraw{\mu}k{\bot}$
+\end_inset
+
+ è falsa in ogni mondo, deve essere falso l'antecedente dell'implicazione,
+ quindi non deve esistere nessun k tale che 
+\begin_inset Formula $n<k<m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Allora avremo che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $m=n+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e quindi
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}n{\until{\bot}a}\iff\veraw{\mu}n{\next a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2 e 3) Possiamo esprimere l'eventually (e quindi il globally) facilmente
+ come:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\eventually a\equiv\until{\top}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e quindi:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\neg\globally{\neg a}\equiv\until{\top}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\globally a\equiv\neg(\until{\top}{\neg a)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+infatti:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}s{\until{\top}a}\iff\exists t(s<t\,\wedge\,\veraw{\mu}ta\,\wedge\,\forall k(s<k<t\implies\veraw{\mu}k{\top})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ma poichè 
+\begin_inset Formula $\forall k(s<k<t\implies\veraw{\mu}k{\top})$
+\end_inset
+
+ è sempre vera, perchè il conseguente è sempre vero, allora abbiamo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\exists t(s<t\,\wedge\,\veraw{\mu}ta)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+che è la definizione di eventually.
+\end_layout
+
+\begin_layout Standard
+4) Supponiamo per assurdo che si possa esprimere l'operatore next in funzione
+ di globally e eventually.
+\end_layout
+
+\begin_layout Standard
+allora prendiamo il frame:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N=(\mathbb{N},\,<)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e usiamo la seguente valutazione:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V(P)=\{3n\,|\, n\in\mathbb{N}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+quindi il modello sarà:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mu=(N,\, V)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+allora, per ogni formula ben formata si ha che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}na\iff\veraw{\mu}{n+3}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}1a\iff\veraw{\mu}2a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Per dimostrarlo, uso la bisimulazione:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $(\mu,\, n)\leftrighteq(\mu,\, n+3)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $(\mu,\,1)\leftrighteq(\mu,\,2)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nel primo caso, costruisco E tale che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(n,\, m)\in E\iff m=n+3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+<<MANCA! non ci ho capito molto, pessimi appunti...>>
+\end_layout
+
+\begin_layout Section
+Logiche per il model checking
+\end_layout
+
+\begin_layout Subsection
+Logiche per il model checking e semantica
+\end_layout
+
+\begin_layout Standard
+le principali logiche usate nel Model Checking sono 3:
+\end_layout
+
+\begin_layout Itemize
+LTL, linear temporal logic (proposta da Pnueli nel 1977)
+\end_layout
+
+\begin_layout Itemize
+CTL, computational tree logic (proposta da clarkee emerson nel 1981)
+\end_layout
+
+\begin_layout Itemize
+CTL* (proposta da Emerson e Holpem nel 1986)
+\end_layout
+
+\begin_layout Standard
+Le re logiche sono in relazione tra loro nel modo seguente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\backslash
+draw [black] (35.8,-16.1) circle (3); 
+\backslash
+draw (35.8,-16.1) node {$CTL*$}; 
+\backslash
+draw [black] (23.2,-32.2) circle (3); 
+\backslash
+draw (23.2,-32.2) node {$LTL$}; 
+\backslash
+draw [black] (48.6,-32.2) circle (3); 
+\backslash
+draw (48.6,-32.2) node {$CTL$}; 
+\backslash
+draw [black] (25.05,-29.84) -- (33.95,-18.46); 
+\backslash
+fill [black] (33.95,-18.46) -- (33.06,-18.78) -- (33.85,-19.4); 
+\backslash
+draw [black] (46.73,-29.85) -- (37.67,-18.45); 
+\backslash
+fill [black] (37.67,-18.45) -- (37.77,-19.39) -- (38.56,-18.76); 
+\backslash
+end{tikzpicture} 
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La semantica di queste logiche è basata sulle strutture di Kripke, ossia
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mu=(S,\, I,\,\tau\subseteq S\times S,\, L:\, S\longrightarrow2^{\phi},\, F)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+dove:
+\end_layout
+
+\begin_layout Itemize
+S è l'insieme degli stati
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $I\subseteq S$
+\end_inset
+
+ è l'insieme degli stati iniziali
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tau$
+\end_inset
+
+ è una relazione tra gli stati totale a sinistra, ossia: 
+\begin_inset Formula $\forall s\in S\,\exists s'\in S\,:\,(s,\, s')\in\tau$
+\end_inset
+
+ che significa che esistono sempre percorsi di lunghezza infinita.
+\end_layout
+
+\begin_layout Itemize
+L è la funzione di labelling, che associa ad ogni stato un insieme di lettere
+ proposizionali, quelle vere nello stato
+\end_layout
+
+\begin_layout Itemize
+F è l'insieme di stati finali, ovvero l'insieme di stati per cui una sequenza
+ accettata passa infinitamente spesso
+\end_layout
+
+\begin_layout Subsection
+Grammatica di LTL
+\end_layout
+
+\begin_layout Standard
+La sintassi di LTL è la più semplice:
+\end_layout
+
+\begin_layout Standard
+una formula ben formata è generata dalla seguente grammatica:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi\rightarrow P|\neg\varphi|\varphi\wedge\varphi|\varphi\vee\varphi|\varphi\implies\varphi|\varphi\iff\varphi|\next{\varphi}|\eventually{\varphi}|\globally{\varphi}|\until{\varphi}{\varphi}|\release{\varphi}{\varphi}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Grammatica di CTL
+\end_layout
+
+\begin_layout Standard
+la grammatica di CTL è più complessa, e contiene anche i quantificatori
+ di cammino, che sono degli operatori che esprimono la verità di una formula
+ su almeno uno o tutti i cammini, e sono l'operatore E e A rispettivamente.
+\end_layout
+
+\begin_layout Standard
+i quantificatori di cammino sono vincolati a delle sottoformule specifiche
+ e non possono essere usati liberamente.
+\end_layout
+
+\begin_layout Standard
+una formula ben formata è generata dalla seguente grammatica:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi\rightarrow P|\neg\varphi|\varphi\wedge\varphi|\varphi\vee\varphi|\varphi\implies\varphi|\varphi\iff\varphi|A\next{\varphi}|E\next{\varphi}|A\eventually{\varphi}|E\eventually{\varphi}|A\globally{\varphi}|E\globally{\varphi}|A(\until{\varphi}{\varphi})|E(\until{\varphi}{\varphi})|A(\release{\varphi}{\varphi})|E(\release{\varphi}{\varphi})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Grammatica di CTL*
+\end_layout
+
+\begin_layout Standard
+La logica CTL* è la logica più complessa e espressiva delle tre.
+ La sua grammatica è quindi molto più complessa, e si descrive separando
+ le formule di stato da quelle di cammino:
+\end_layout
+
+\begin_layout Standard
+Sono formule di stato:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phi\rightarrow P|\neg\phi|\phi\wedge\phi|\phi\vee\phi|\phi\implies\phi|\phi\iff\phi|A\phi|E\phi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sono formule di cammino:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi\rightarrow\phi|\neg\varphi|\varphi\wedge\varphi|\varphi\vee\varphi|\varphi\implies\varphi|\varphi\iff\varphi|\next{\varphi}|\eventually{\varphi}|\globally{\varphi}|\until{\varphi}{\varphi}|\release{\varphi}{\varphi}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Le formule di cammino sono formule ben formate (e quindi, anche quelle di
+ stato).
+\end_layout
+
+\begin_layout Subsection
+Semantica di CTL*
+\end_layout
+
+\begin_layout Standard
+Per descrivere la semantica di CTL* fissiamo una notazione:
+\end_layout
+
+\begin_layout Standard
+sia 
+\begin_inset Formula $\pi$
+\end_inset
+
+ un cammino 
+\begin_inset Formula $\pi=s_{0},\, s_{1},\, s_{2},\,...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+mentre sia 
+\begin_inset Formula $\pi^{i}$
+\end_inset
+
+ il suffisso 
+\begin_inset Formula $s_{i},\, s_{i+1},\,...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\pi\in s^{\omega}$
+\end_inset
+
+, ossia appartiene all'insieme delle stringhe infinite.
+ Si ricordi che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $s^{\infty}=S^{*}\cup\, S^{\omega}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La semantica delle formule di stato è definita come:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera{\mu,\pi^{i}}P\iff P\in L(s_{i})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera{\mu,\pi^{i}}{\neg\phi}\iff\nonvera{\mu,\,\pi^{i}}{\phi}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera{\mu,\pi^{i}}{\phi\wedge\psi}\iff\vera{\mu,\pi^{i}}{\phi}\,\wedge\,\vera{\mu,\pi^{i}}{\psi}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera{\mu,\pi^{i}}{\phi\vee\psi}\iff\vera{\mu,\pi^{i}}{\phi}\,\vee\,\vera{\mu,\pi^{i}}{\psi}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera{\mu,\pi^{i}}{\phi\implies\psi}\iff\nonvera{\mu,\,\pi^{i}}{\phi}\,\vee\,\vera{\mu,\pi^{i}}{\psi}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera{\mu,\pi^{i}}{(\phi\iff\psi)}\iff(\vera{\mu,\pi^{i}}{\phi}\,\vee\,\vera{\mu,\pi^{i}}{\psi})\vee(\nonvera{\mu,\,\pi^{i}}{\phi}\wedge\nonvera{\mu,\,\pi^{i}}{\psi})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera{\mu,\pi^{i}}{A\phi}\iff\forall\overline{\pi}\,((\overline{\pi}=s_{i},\,...)\implies(\vera{\mu,\,\overline{\pi}}{\phi))}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera{\mu,\pi^{i}}{A\phi}\iff\exists\overline{\pi}\,((\overline{\pi}=s_{i},\,...)\implies(\vera{\mu,\,\overline{\pi}}{\phi))}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La semantica delle formule di cammino è la seguente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera{\mu,\pi^{i}}{\next{\varphi}}\iff\vera{\mu,\pi^{i+1}}{\varphi}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera{\mu,\pi^{i}}{\eventually{\varphi}}\iff\exists j\geq i\,:\,\vera{\mu,\pi^{j}}{\varphi}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera{\mu,\pi^{i}}{\globally{\varphi}}\iff\forall j\geq i\,:\,\vera{\mu,\pi^{j}}{\varphi}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera{\mu,\pi^{i}}{\until{\varphi}{\psi}}\iff\exists j\geq i\,:\,\vera{\mu,\pi^{j}}{\varphi\,\wedge\,\forall k\,:\, i<k<j}\,\vera{\mu,\,\pi^{k}}{\psi}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera{\mu,\pi^{i}}{\until{\varphi}{\psi}}\iff\exists j\geq i\,:\,\vera{\mu,\pi^{j}}{\varphi\,\wedge\,\forall k\,:\, i<k<j}\,\vera{\mu,\,\pi^{k}}{\psi}$
+\end_inset
+
+ <<sbagliati gli ultimi due, controllare>>
+\end_layout
+
+\begin_layout Section
+Model Checking
+\end_layout
+
+\begin_layout Subsection
+Definizione
+\end_layout
+
+\begin_layout Standard
+Il model checking si occupa di risolvere il seguente problema: 
+\end_layout
+
+\begin_layout Standard
+Data una formula 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ e una struttura di Kripke 
+\begin_inset Formula $\mu$
+\end_inset
+
+, dire se 
+\begin_inset Formula $\vera{\mu}{\phi}$
+\end_inset
+
+ per ogni cammino su 
+\begin_inset Formula $\mu$
+\end_inset
+
+, ossia:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera{\mu,\,\pi^{0}}{A\varphi}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In caso contrario esibire un cammino 
+\begin_inset Formula $\pi$
+\end_inset
+
+ tale che 
+\begin_inset Formula $\nonvera{\mu,\,\pi}{\phi}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Solitamente si verificano 3 tipi di proprietà:
+\end_layout
+
+\begin_layout Itemize
+Safety: 
+\begin_inset Quotes eld
+\end_inset
+
+non succede mai nulla di grave
+\begin_inset Quotes erd
+\end_inset
+
+ (
+\begin_inset Formula $\globally{\neg\varphi}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Liveness: 
+\begin_inset Quotes eld
+\end_inset
+
+prima o poi avviene un evento desiderato
+\begin_inset Quotes erd
+\end_inset
+
+ (
+\begin_inset Formula $\eventually{\varphi}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Fairness: 
+\begin_inset Quotes eld
+\end_inset
+
+un evento desiderato avviene infinitamente spesso
+\begin_inset Quotes erd
+\end_inset
+
+ (
+\begin_inset Formula $\globally{\eventually{\varphi}}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Esistono sostanzialmente due tipologie di tecniche di model checking:
+\end_layout
+
+\begin_layout Itemize
+Simboliche: basate su tableaux, deduzione formale e SMT solver
+\end_layout
+
+\begin_layout Itemize
+Operazionali: Basate sulla manipolazione di automi a stati finiti
+\end_layout
+
+\begin_layout Subsection
+Model Checking operazionale
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

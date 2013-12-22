@@ -273,7 +273,13 @@ filename "contents/11-Bisimulazione/bisimulazione.lyx"
 \end_layout
 
 \begin_layout Standard
-	
+\begin_inset CommandInset include
+LatexCommand include
+filename "contents/12-ModelCheking/modelcheck.lyx"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
