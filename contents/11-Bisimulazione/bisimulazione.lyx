@@ -1173,5 +1173,124 @@ ma non può essere perchè i due frame sono in bisimulazione, assurdo!
 quindi non può esistere una bisimulazione tra i due frame.
 \end_layout
 
+\begin_layout Subsection
+Irriflessività e logica modale e temporale
+\end_layout
+
+\begin_layout Standard
+Non esiste alcuna formula modale temporale per esprimere l'irriflessività,
+ infatti siano:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Z=(\mathbb{Z},<)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F=(W,\, R)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+con 
+\begin_inset Formula $R=\{(a,a)\}$
+\end_inset
+
+ e 
+\begin_inset Formula $W=\{a\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $V_{F}$
+\end_inset
+
+ una generica valutazione su F, esiste sempre una 
+\begin_inset Formula $V_{Z}$
+\end_inset
+
+ su Z tale che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(Z,\, V_{Z},\,0)\leftrighteq(F,\, V_{F},\, a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Infatti 
+\begin_inset Formula $\forall P\in\phi$
+\end_inset
+
+ e 
+\begin_inset Formula $\forall n\in\mathbb{Z}$
+\end_inset
+
+ sia:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V_{Z}(P,\, N)=V_{F}(P,\, a)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+o meglio:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V_{F}(P)=\{a\}\implies V_{Z}(P)=\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+E' facile provare che i due modelli sono in bisimulazione:
+\end_layout
+
+\begin_layout Standard
+1) 
+\begin_inset Formula $E\subseteq\mathbb{Z}\times W,\,\forall n\in\mathbb{Z}\,(n,\, a)\in E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+b1) 
+\begin_inset Formula $n<m\implies(m,\, a)\in E\,\wedge\,(a,\, a)\in R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+b2) 
+\begin_inset Formula $(a,\, a)\in R\implies(n+1,\, a)\in E\,\wedge\, n<n+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ma, poichè il frame Z è irriflessivo, se esistesse una formula che esprime
+ l'irriflessività, allora non sarebbe valida su F, ma ciò è impossibile,
+ perchè è in bisimulazione con Z, e quindi tutte le formule vere su F sono
+ vere su Z e viceversa.
+\end_layout
+
 \end_body
 \end_document
