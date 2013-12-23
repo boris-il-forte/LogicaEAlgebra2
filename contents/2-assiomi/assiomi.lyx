@@ -61,11 +61,11 @@
 \begin_body
 
 \begin_layout Chapter
-Semantica
+Assiomatizzazzione delle logiche Modali
 \end_layout
 
 \begin_layout Section
-Simboli secessari
+Formule equivalenti
 \end_layout
 
 \begin_layout Standard
@@ -101,10 +101,40 @@ si può anche dire che due formule sono semanticamente equivalenti se:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\vera ab\,\vee\,\vera b{}$
+\begin_inset Formula $\vera ab\,\vee\,\vera ba$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Oppure infine se è valida in ogni frame:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\valida{a\iff b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Insieme di connettivi minimi
+\end_layout
+
+\begin_layout Standard
+Per ogni formula possiamo scriverne una equivalente che usa solo tre connettivi:
+ 
+\begin_inset Formula $\neg,\,\implies,\,\square$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Infatti come è ben noto tutti i connettivi proposizionali si possono esprimere
+ in funzione della negazione e dell'implicazione, mentre per quanto riguarda
+ il connettivo diamond:
 \end_layout
 
 \begin_layout Standard
@@ -112,10 +142,6 @@ si può anche dire che due formule sono semanticamente equivalenti se:
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Vale da sinistra a destra,
 \end_layout
 
 \begin_layout Standard
@@ -187,19 +213,10 @@ allora in
 
  cioè la tesi.
  
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
-Vale anche da destra a sinistra, dimostrazione simile.
- 
-\begin_inset Newline newline
-\end_inset
-
-
+Similmente si dimostra l'altro verso dell'equivalenza.
 \end_layout
 
 \begin_layout Section

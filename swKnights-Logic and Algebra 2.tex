@@ -8,6 +8,7 @@
 \geometry{verbose}
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
+\usepackage{babel}
 \usepackage{fancybox}
 \usepackage{calc}
 \usepackage{textcomp}
@@ -15,6 +16,13 @@
 \usepackage{amssymb}
 \PassOptionsToPackage{normalem}{ulem}
 \usepackage{ulem}
+\usepackage[unicode=true,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=false,pdfborder={0 0 0},backref=false,colorlinks=false]
+ {hyperref}
+\hypersetup{pdftitle={Logica 2},
+ pdfauthor={Edoardo Pasi, Davide Tateo}}
+\usepackage{breakurl}
 
 \makeatletter
 
@@ -48,12 +56,6 @@
 \usepackage{stmaryrd}
 
 \usepackage{color}   %May be necessary if you want to color links
-\usepackage{hyperref}
-\hypersetup{
-    colorlinks=true, %set true if you want colored links
-    linktoc=all,     %set to all if you want both sections and subsections linked
-    linkcolor=black,  %choose some color if you want links to stand out
-}
 
 \usepackage{booktabs}
 \usepackage{listings}
@@ -84,7 +86,6 @@
 
 \makeatother
 
-\usepackage{babel}
 \begin{document}
 \titlep
 
@@ -96,7 +97,7 @@
 
 \include{contents/1-sintassi/primo1}
 
-\include{contents/2-semanticaA/semA}
+\include{contents/2-assiomi/assiomi}
 
 \include{contents/3-determinata/det1}
 
