@@ -1,5 +1,7 @@
 
-\chapter{Introduzione}
+\chapter*{Introduzione}
+
+\addcontentsline{toc}{chapter}{Introduzione}
 
 \label{cap:introduction}
 
@@ -18,5 +20,153 @@ e $0.\overline{8}*10\neq8.\overline{8}$, e perderete inutilmente
 ore della vostra vita a dimostrare l'ipotesi del continuo con gli
 assiomi di Zermelo - Fraenkel.
 
-Lasciate il formaggio fuori dall'aula. \\
+Lasciate il formaggio fuori dall'aula. 
 
+
+\chapter{La Logica Modale}
+
+
+\section{Perchè usare la la logica modale}
+
+La logica proposizionale è una logica corretta, completa e decidibile,
+ma è poco espressiva, tutte le formule sono formate da concetti atomici
+che possono essere o veri o falsi, e da connettivi logici (di cui
+solo due, in realtà, sono necessari).
+
+La logica del prim'ordine invece è estremamente espressiva, non ci
+limitiamo solo a concetti atomici ma a predicati che possono essere
+veri o falsi rispetto a delle variabili che possiamo quantificare
+esistenzialmente e universalmente. Tuttavia la logica del prim'ordine
+non è decidibile, e quindi non può essere usata per molte applicazioni
+pratiche, che richiedono una risposta certa riguardo la validità di
+una determinata formula.
+
+Tra le logiche proposizionali e quelle del prim'ordine, si trovano
+le logiche modali, che sono logiche più espressive delle logiche proposizionali,
+ma restano decidibile.
+
+Per avere maggiore espressività basta aggiungere due nuovi simboli:
+\begin{itemize}
+\item l'operatore box ``$\square$'' che verrà letto d'ora in poi come
+necessariamente
+\item l'operatore diamond ``$\diamond$'' che verrà letto d'ora in poi
+come possibilmente
+\end{itemize}
+
+\section{Sintassi delle logiche modali}
+
+
+\subsubsection*{Alfabeto}
+
+Le logiche modali sono definite sul seguente alfabeto:
+\begin{itemize}
+\item A, B lettere proposizionali , chiamiamo l'insieme delle letetre proposizionali
+$\phi$
+\item $\neg,\,\wedge,\,\vee,\,\implies,\,\iff$
+\item $\square,\,\diamond$
+\item ), (
+\end{itemize}
+L'unica differenza rispetto alla logica modale sono i due connettivi
+modali box e diamond.
+
+
+\subsubsection*{Formule ben formate}
+
+Le formule ben formate sono:
+\begin{itemize}
+\item Le lettere enunciative 
+\item se a è una formula ben formata lo sono anche $\neg a,\,\boa,\,\dia$
+\item se a e b sono formule ben formate lo sono anche $a\vee b,\, a\wedge b,\, a\implies b,\, a\iff b$
+\item nient'altro è una formula ben formata
+\end{itemize}
+
+\subsubsection*{Priorità dei connettivi}
+
+i connettivi hanno la seguente priorità:
+\begin{enumerate}
+\item $\neg,\,\square,\,\diamond$
+\item $\wedge$
+\item $\vee$
+\item $\implies$
+\item $\iff$
+\end{enumerate}
+Dove 1 è la priorità maggiore (viene applicato prima) e 5 è la priorità
+minore. I connettivi con stessa priorità vengono applicati nell'ordine
+in cui si trovano.
+
+Le parentesi possono essere usate per cambiare le priorità.
+
+
+\subsubsection*{Sottoformule}
+
+Sia a una formula qualsiasi
+
+sottoformule(a) è l'insieme così definito:
+\begin{itemize}
+\item Se $a\in\phi$ allora $sottoformule(a)\equiv\{a\}$
+\item Se a è una formula del tipo $\neg b,\,\boxx b,\,\diam b$ allora $sottoformule(a)\equiv\{a\}\,\cup\, sottoformule(b)$
+\item Se ha è una formula del tipo $a\vee b,\, a\wedge b,\, a\implies b,\, a\iff b$
+allora $sottoformule(a)\equiv\{a\}\,\cup\, sottoformule(b)\,\cup\, sottoformule(c)$
+\end{itemize}
+Si può costruire un albero con radice la formula a e come rami le
+sue sottoformule dirette. questo albero si chiama albero di struttura
+della formula.
+
+
+\section{Semantica di Kripke}
+
+
+\subsection{La semantica dei mondi possibili}
+
+Lan semantica di Kripke, detta anche dei mondi possibili, considera
+che le lettere proprosizionali possono essere vere o false a seconda
+del mondo in cui vengono valutate. Questi mondi sono poi collegati
+l'un l'altro con una relazione di raggiungibilità.
+
+abbiamo quindi:
+\begin{itemize}
+\item S insieme dei mondi possibili, detti anche stati
+\item $R\subseteq S\times S$ relazione di raggiungibilità tra gli stati
+\item $F=(S,\, R)$ frame, un grafo orientati che ha come nodi i mondi e
+come archi le possibili transizioni tra un mondo e l'altro, ossia
+tra due mondi c'è un arco se e solo se il secondo mondo è raggiungibile
+dal primo.
+\item $V:\,\phi\longrightarrow\mathcal{P}(S)$ funzione di valutazione,
+che ad ogni lettera proposizionale, associa gli stati in cui è vera
+\item $\mu=(S,\, R,\, V)$ modello, ossia un frame con una funzione di valutazione
+per le lettere proposizionali.
+\end{itemize}
+
+\subsection{Semantica delle logiche modali:}
+
+Diciamo che $a$ è vera nel mondo $\alpha$ del modello $\mu$, e
+scriviamo $\mu\models_{\alpha}a$, se:
+\begin{itemize}
+\item $\mu\models_{\alpha}A\,\implies\verita{\alpha}A$ con $A\in\phi$ 
+\item $\veraw{\mu}{\alpha}{b\vee c}\iff\veraw{\mu}{\alpha}b\,\vee\,\veraw{\mu}{\alpha}c$
+\item $\veraw{\mu}{\alpha}{b\wedge c}\iff\veraw{\mu}{\alpha}b\,\wedge\,\veraw{\mu}{\alpha}c$
+\item $\veraw{\mu}{\alpha}{(b\implies c)}\iff\nonveraw{\mu}{\alpha}b\,\vee\,\veraw{\mu}{\alpha}c$
+\item $\veraw{\mu}{\alpha}{(b\iff c)}\iff(\nonveraw{\mu}{\alpha}b\,\wedge\,\nonveraw{\mu}{\alpha}c)\,\vee\,(\veraw{\mu}{\alpha}c\,\wedge\,\veraw{\mu}{\alpha}c)$
+\item $\veraw{\mu}{\alpha}{\boxx b\iff\forall\beta\in S\,:\,(\alpha,\,\beta)\in R\,\veraw{\mu}{\beta}b}$
+\item $\veraw{\mu}{\alpha}{\diam b\iff\exists\beta\in S\,:\,(\alpha,\,\beta)\in R\,\veraw{\mu}{\beta}b}$
+\end{itemize}
+Diciamo che a è vera nel modello $\mu$ se a è vera in ogni mondo
+del modello $\mu$, e scriviamo:
+
+$\vera{\mu}a$ 
+
+Diciamo che a è valida su un frame F se è vera in tutti i modelli
+costruibili sul frame F, e scriviamo:
+
+$\vera Fa$
+
+Chiamiamo fuynzione di valutazione associata al mondo $V_{\alpha}(A)$
+che è definita così:
+
+$V_{\alpha}(A)=0\iff\alpha\notin V(A)$
+
+Tutte le formule che cominciano coi connettivi modali sono dette formule
+semi atomiche.
+
+Le tautologie nella logica modale sono quelle formule che sono vere
+per tutte le interpretazioni delle formule atomiche e semi atomiche.

@@ -2,15 +2,34 @@
 \chapter{Semantica}
 
 
-\section{Simboli secessari}
+\section{Formule equivalenti}
 
-$\semGen ab$ cioè a è conseguenza semantica di b, se in ogni Frame,
-Modello e Mondo in cui $\vera{\mu}b$ si ha anche $\vera{\mu}a$\\
+$a\equiv b$ cioè a è semanticamente equivalente a b, se:
+\begin{itemize}
+\item $\forall F\,\vera Fb\iff\vera Fa$
+\item $\forall\mu\,\vera{\mu}b\iff\vera{\mu}a$
+\item $\forall s\in S\,\veraw{\mu}sa\iff\veraw{\mu}sb$
+\end{itemize}
+si può anche dire che due formule sono semanticamente equivalenti
+se:
 
+$\vera ab\,\vee\,\vera ba$
+
+Oppure infine se è valida in ogni frame:
+
+$\valida{a\iff b}$
+
+
+\section{Connettivi minimi}
+
+Per ogni formula possiamo scriverne una equivalente che usa solo tre
+connettivi: $\neg,\,\implies,\,\square$.
+
+Infatti come è ben noto tutti i connettivi proposizionali si possono
+esprimere in funzione della negazione e dell'implicazione, mentre
+per quanto riguarda il connettivo diamond:
 
 $\dia\equiv\neg\boxx{\neg a}$
-
-Vale da sinistra a destra,
 
 Infatti:
 
@@ -24,14 +43,15 @@ per questo in $\alpha$ non vale $\boxx{\neg a}$ (perché non vale
 $\neg a$ in $\beta$)
 
 allora in $\alpha$ vale $\neg\boxx{\neg a}$ cioè $\veraw{\mu}{\alpha}{\neg\boxx{\neg a}}$
-cioè la tesi. \\
+cioè la tesi. 
 
-
-Vale anche da destra a sinistra, dimostrazione simile. \\
-
+Similmente si dimostra l'altro verso dell'equivalenza.
 
 
 \section{Logiche}
+
+
+\subsection{Logica $\Lambda$}
 
 Una logica $\Lambda$ su L è un insieme di fbf su L che: 
 \begin{itemize}
@@ -58,10 +78,44 @@ Es. $\Lambda_{C}=\{a\,|\,\vera F{a\: per}\ ogni\ F\in C\}$ NON è
 uniforme infatti se considero $V(A)=S$, dove S sono tutti gli stati
 possibili (mondi), vale anche $\veraw{\mu}{\alpha}A$, e cioè A è
 una tautologia, se al posto di A sostituisco $B\wedge\neg B$ (falsa
-in ogni modello e mondo) non ottengo una tautologia.\\
- 
+in ogni modello e mondo) non ottengo una tautologia.
 
-\textbf{\emph{\large{{{{{{Teorema}}}}}}}}{\large \par}
+
+\subsection{Logiche modali normali}
+
+Le logiche normali sono logiche che contengono lo schema K
+
+$K:\,\boxx{(a\implies b)}\implies(\boa\implies\boxx b)$
+
+Ed sono chiuse rispetto alla regola di necessitazione:
+
+$RN:\,\dfrac{a}{\boa}$
+
+La logica normale ha i seguenti assiomi:
+
+$A1:\, a\implies(b\implies a)$
+
+$A2:\,(a\implies(b\implies c))\implies((a\implies b)\implies(a\implies c))$
+
+$A3:\,(\neg a\implies\neg b)\implies((\neg a\implies b)\implies a)$
+
+$K:\,\boxx{(a\implies b)}\implies(\boa\implies\boxx b)$
+
+$MP:\,\dfrac{a,\, a\implies b}{b}$
+
+$RN:\,\dfrac{a}{\boa}$
+
+L'intersezione di tutte le logiche normali, è una logica normale (ed
+è la minima ) che non ha altri assiomi.
+
+I teoremi sono le ultime formule della dimostrazione, ossia le formule
+che ottengo dopo un numero finito di applicazione degli assiomi oppure
+utilizzando la regola di necessiazione o il modus ponens.
+
+La minima logica normale viene chiamata logica K.
+
+
+\subsection{Teorema}
 
 Sono equivalenti: 
 \begin{enumerate}
@@ -179,3 +233,25 @@ dimostrato precedentemente
 $\teolm{\Lambda}{\boxx{(a\implies b)}\implies(\boa\implies\boxx{b)}}$
 
 e così è dimostrato che K è implicato da 3. Il teorema dunque è dimostrato.
+
+
+\section{Deducibilità di una formula}
+
+Una formula a si dice deducibile da un insieme di formule $\Gamma$
+in una logica $\Lambda$ e si scrive:
+
+$\sintattica{\Gamma}{\Lambda}a$
+
+se e solo se:
+
+$\teorema{a_{1}\wedge\,...\,\wedge a_{n}\implies a}$
+
+con $a_{1},\,...\,,\, a_{n}\in\Gamma$
+
+Cioè, una formula a si dice deducibile da un insieme di formule $\Gamma$
+se e solo se la congiunzione di formule che formano $\Gamma$ implica
+la formula a
+
+si noti che:
+
+$\sintattica{\Gamma}{\Lambda}a\implies\sintattica{\{\boxx b\,|b\in\Gamma\}}{\Lambda}{\boa}$

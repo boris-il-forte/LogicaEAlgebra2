@@ -5,6 +5,9 @@
 \global\long\def\vera#1#2{#1\models#2}
 
 
+\global\long\def\valida#1{\models#1}
+
+
 \global\long\def\nonvera#1#2{#1\nvDash#2}
 
 
@@ -17,7 +20,7 @@
 \global\long\def\nonTeor#1#2{\nvdash_{#1}#2}
 
 
-\global\long\def\nonSemW#1#2#3{#1\nvdash_{#2}#3}
+\global\long\def\nonSinW#1#2#3{#1\nvdash_{#2}#3}
 
 
 \global\long\def\verita#1#2{#1\in V(#2)}
@@ -26,13 +29,13 @@
 \global\long\def\entail#1#2{#1\models#2}
 
 
-\global\long\def\semantica#1#2#3{#1\vdash_{#2}#3}
+\global\long\def\sintattica#1#2#3{#1\vdash_{#2}#3}
 
 
 \global\long\def\teolm#1#2{\vdash_{#1}#2}
 
 
-\global\long\def\semGen#1#2{#1\vdash#2}
+\global\long\def\sinGen#1#2{#1\vdash#2}
 
 
 \global\long\def\boxx#1{\square#1}
@@ -74,13 +77,13 @@
 \global\long\def\consMax{\Lambda-consistente\: massimale}
 
 
-\global\long\def\veraCanAlfa#1{\vera{M^{\Lambda}}{_{\alpha}}#1}
+\global\long\def\veraCanAlfa#1{\vera{}{#1}}
 
 
-\global\long\def\veraCA{\vera{M^{\Lambda}}{_{\alpha}}a}
+\global\long\def\veraCA{\vera{}a}
 
 
-\global\long\def\veraCan#1#2{\vera{M^{\Lambda}}{_{#1}}#2}
+\global\long\def\veraCan#1#2{\vera{}{#2}}
 
 
 \global\long\def\nonveraCan#1#2{\nonveraw{M^{\Lambda}}{#1}{#2}}

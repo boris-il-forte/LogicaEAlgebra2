@@ -78,6 +78,14 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
+\newcommand{\valida}[1]{\models#1}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
 \newcommand{\nonvera}[2]{#1\nvDash#2}
 \end_inset
 
@@ -110,7 +118,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\nonSemW}[3]{#1\nvdash_{#2}#3}
+\newcommand{\nonSinW}[3]{#1\nvdash_{#2}#3}
 \end_inset
 
 
@@ -134,7 +142,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\semantica}[3]{#1\vdash_{#2}#3}
+\newcommand{\sintattica}[3]{#1\vdash_{#2}#3}
 \end_inset
 
 
@@ -150,7 +158,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\semGen}[2]{#1\vdash#2}
+\newcommand{\sinGen}[2]{#1\vdash#2}
 \end_inset
 
 
@@ -262,7 +270,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\veraCanAlfa}[1]{\vera{M^{\Lambda}}{_{\alpha}}#1}
+\newcommand{\veraCanAlfa}[1]{\vera{}#1}
 \end_inset
 
 
@@ -270,7 +278,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\veraCA}{\vera{M^{\Lambda}}{_{\alpha}}a}
+\newcommand{\veraCA}{\vera{}a}
 \end_inset
 
 
@@ -278,7 +286,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\veraCan}[2]{\vera{M^{\Lambda}}{_{#1}}#2}
+\newcommand{\veraCan}[2]{\vera{}#2}
 \end_inset
 
 
@@ -318,7 +326,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\andoria}[1]{a_{1}\wedge...\wedge a#1}
+\newcommand{\andoria}[1]{a_{1}\wedge...\wedge a#1}
 \end_inset
 
 
@@ -326,7 +334,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\andbox}[1]{\boa_{1}\wedge\dots\wedge\boxx a#1}
+\newcommand{\andbox}[1]{\boa_{1}\wedge\dots\wedge\boxx a#1}
 \end_inset
 
 
@@ -334,7 +342,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\neci}[2]{[#1]#2}
+\newcommand{\neci}[2]{[#1]#2}
 \end_inset
 
 
@@ -342,7 +350,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\posi}[2]{<#1>#2}
+\newcommand{\posi}[2]{<#1>#2}
 \end_inset
 
 
@@ -350,7 +358,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\necf}[1]{[F]#1}
+\newcommand{\necf}[1]{[F]#1}
 \end_inset
 
 
@@ -358,7 +366,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\posf}[1]{<F>#1}
+\newcommand{\posf}[1]{<F>#1}
 \end_inset
 
 
@@ -366,7 +374,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\necp}[1]{[P]#1}
+\newcommand{\necp}[1]{[P]#1}
 \end_inset
 
 
@@ -374,7 +382,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\posp}[1]{<P>#1}
+\newcommand{\posp}[1]{<P>#1}
 \end_inset
 
 
@@ -382,7 +390,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\verins}[1]{\Vert#1\Vert^{\mu}}
+\newcommand{\verins}[1]{\Vert#1\Vert^{\mu}}
 \end_inset
 
 
@@ -390,7 +398,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\verinsx}[2]{\Vert#1\Vert^{\mu^{#2}}}
+\newcommand{\verinsx}[2]{\Vert#1\Vert^{\mu^{#2}}}
 \end_inset
 
 
@@ -398,7 +406,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\cardinal}[1]{\Vert#1\Vert}
+\newcommand{\cardinal}[1]{\Vert#1\Vert}
 \end_inset
 
 
@@ -406,7 +414,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\alue}{AL\mbox{\mathcal{UE}}}
+\newcommand{\alue}{AL\mbox{\mathcal{UE}}}
 \end_inset
 
 
@@ -414,7 +422,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\alc}{AL\mbox{\mathcal{\mathcal{C}}}}
+\newcommand{\alc}{AL\mbox{\mathcal{\mathcal{C}}}}
 \end_inset
 
 	
@@ -422,7 +430,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\globally}[1]{\mathcal{G}#1}
+\newcommand{\globally}[1]{\mathcal{G}#1}
 \end_inset
 
 
@@ -430,7 +438,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\eventually}[1]{\mathcal{F}#1}
+\newcommand{\eventually}[1]{\mathcal{F}#1}
 \end_inset
 
 
@@ -438,7 +446,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\renewcommand{\next}[1]{\mathcal{X}#1}
+\newcommand{\next}[1]{\mathcal{X}#1}
 \end_inset
 
 

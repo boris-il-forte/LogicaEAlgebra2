@@ -65,27 +65,76 @@ Semantica
 \end_layout
 
 \begin_layout Section
-Simboli secessari
+Formule equivalenti
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\semGen ab$
+\begin_inset Formula $a\equiv b$
 \end_inset
 
- cioè a è conseguenza semantica di b, se in ogni Frame, Modello e Mondo
- in cui 
-\begin_inset Formula $\vera{\mu}b$
-\end_inset
+ cioè a è semanticamente equivalente a b, se:
+\end_layout
 
- si ha anche 
-\begin_inset Formula $\vera{\mu}a$
-\end_inset
-
-
-\begin_inset Newline newline
+\begin_layout Itemize
+\begin_inset Formula $\forall F\,\vera Fb\iff\vera Fa$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\forall\mu\,\vera{\mu}b\iff\vera{\mu}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\forall s\in S\,\veraw{\mu}sa\iff\veraw{\mu}sb$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+si può anche dire che due formule sono semanticamente equivalenti se:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera ab\,\vee\,\vera ba$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Oppure infine se è valida in ogni frame:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\valida{a\iff b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Connettivi minimi
+\end_layout
+
+\begin_layout Standard
+Per ogni formula possiamo scriverne una equivalente che usa solo tre connettivi:
+ 
+\begin_inset Formula $\neg,\,\implies,\,\square$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Infatti come è ben noto tutti i connettivi proposizionali si possono esprimere
+ in funzione della negazione e dell'implicazione, mentre per quanto riguarda
+ il connettivo diamond:
 \end_layout
 
 \begin_layout Standard
@@ -93,10 +142,6 @@ Simboli secessari
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Vale da sinistra a destra,
 \end_layout
 
 \begin_layout Standard
@@ -168,19 +213,10 @@ allora in
 
  cioè la tesi.
  
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
-Vale anche da destra a sinistra, dimostrazione simile.
- 
-\begin_inset Newline newline
-\end_inset
-
-
+Similmente si dimostra l'altro verso dell'equivalenza.
 \end_layout
 
 \begin_layout Section
@@ -741,6 +777,71 @@ abbiamo così dimostrato la chiusura secondo la necessitazione.
 \begin_layout Standard
 e così è dimostrato che K è implicato da 3.
  Il teorema dunque è dimostrato.
+\end_layout
+
+\begin_layout Section
+Deducibilità di una formula
+\end_layout
+
+\begin_layout Standard
+Una formula a si dice deducibile da un insieme di formule 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ in una logica 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ e si scrive:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sintattica{\Gamma}{\Lambda}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+se e solo se:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{a_{1}\wedge\,...\,\wedge a_{n}\implies a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+con 
+\begin_inset Formula $a_{1},\,...\,,\, a_{n}\in\Gamma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cioè, una formula a si dice deducibile da un insieme di formule 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ se e solo se la congiunzione di formule che formano 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ implica la formula a
+\end_layout
+
+\begin_layout Standard
+si noti che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sintattica{\Gamma}{\Lambda}a\implies\sintattica{\{\boxx b\,|b\in\Gamma\}}{\Lambda}{\boa}$
+\end_inset
+
+
 \end_layout
 
 \end_body

@@ -7,7 +7,7 @@
 Sia $\Lambda$ una logica (cioè ha tutte le tautologie ed è chiusa
 rispetto al Modus Ponens)
 
-$\Gamma$ si dice $\Lambda$-consistente se: $\nonSemW{\Gamma}{\Lambda}{\bot}$,
+$\Gamma$ si dice $\Lambda$-consistente se: $\nonSinW{\Gamma}{\Lambda}{\bot}$,
 dove $\bot=A\wedge\neg A$
 
 $\Delta$ si dice $\Lambda$-consistente massimale se per ogni fbf
@@ -85,12 +85,20 @@ $\implica ab$, allora deduco anche $b$)
 
 \section{Insieme $\Lambda$ consistente massimale}
 
-\emph{\large{{{{Lemma di Lindelman - Esistenza dell'insieme $\consMax$}}}}}{\large{{{
-}}}}\emph{\large{{{{in una logica $\Lambda$}}}}}{\large{{{
-}}}}\emph{\large{{{{consistente}}}}}{\large{{{}}}}\\
- {\large{{{ }}}}\\
- {\large{{{ Considero tutte le formule $b1,\ b2,\ b3,\dots$ della
-logica $\Lambda$ (posso farlo perché sono un'infinità numerabile)}}}}{\large \par}
+
+\subsection{Lemma di Lindenbaum}
+
+Una logica consistente ammette sempre un insieme $\Lambda$- consistente
+massimale. Infatti il lemma di Lindenbaum afferma:
+
+$(\Gamma\,\Lambda-consistente)\implies\,\exists\Delta\supseteq\Gamma\,\wedge\,(\Delta\,\Lambda-consistente\, massimale)$
+
+Ip) $\Gamma\,\grave{e}\,\Lambda-consistente$
+
+Ts) $\exists\Delta\supseteq\Gamma$ e $\Delta\,\grave{e}\,\Lambda-consistente\, massimale$
+
+Considero tutte le formule b1, b2, b3 della logica $\Lambda$ (posso
+farlo perchè sono una infinità numerabile)
 
 Chiamo $\Gamma_{0}$ un insieme che contiene una sola formula (ad
 esempio una tautologia)
@@ -120,7 +128,7 @@ il falso,\\
 esiste un $\Gamma_{i}$ non consistente, assurdo perché lo sono tutti
 per costruzione \lightning 
 \end{enumerate}
-\emph{\large{{{Nota:}}}}{\large \par}
+\emph{\large{Nota:}}{\large \par}
 \begin{itemize}
 \item Non sappiamo costruire $\Delta$ perché nasce da unione infinita 
 \item Non è unico, infatti se considero formule in ordine diverse potrei

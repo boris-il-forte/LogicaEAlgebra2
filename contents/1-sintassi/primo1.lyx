@@ -64,57 +64,6 @@
 Formule di Logica modale e significato
 \end_layout
 
-\begin_layout Standard
-\begin_inset Formula $a$
-\end_inset
-
- è vera nel mondo 
-\begin_inset Formula $\alpha$
-\end_inset
-
-, e scriviamo 
-\begin_inset Formula $\mu\models_{\alpha}a$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-se 
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $a$
-\end_inset
-
- è una lettera enunciativa allora deve valere 
-\begin_inset Formula $\verita a{\alpha}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $a$
-\end_inset
-
- è del tipo: 
-\begin_inset Formula $a\lor b$
-\end_inset
-
- ....
- allora....
- 
-\begin_inset Formula $\mu\models_{\alpha}a$
-\end_inset
-
- oppure 
-\begin_inset Formula $\mu\models_{\alpha}b$
-\end_inset
-
- 
-\end_layout
-
 \begin_layout Section
 Formule Valide in ogni frame
 \end_layout

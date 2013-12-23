@@ -69,20 +69,39 @@ Simboli secessari
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\semGen ab$
+\begin_inset Formula $a\equiv b$
 \end_inset
 
- cioè a è conseguenza semantica di b, se in ogni Frame, Modello e Mondo
- in cui 
-\begin_inset Formula $\vera{\mu}b$
+ cioè a è semanticamente equivalente a b, se:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\forall F\,\vera Fb\iff\vera Fa$
 \end_inset
 
- si ha anche 
-\begin_inset Formula $\vera{\mu}a$
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\forall\mu\,\vera{\mu}b\iff\vera{\mu}a$
 \end_inset
 
 
-\begin_inset Newline newline
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\forall s\in S\,\veraw{\mu}sa\iff\veraw{\mu}sb$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+si può anche dire che due formule sono semanticamente equivalenti se:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera ab\,\vee\,\vera b{}$
 \end_inset
 
 
@@ -342,6 +361,42 @@ La logica normale ha i seguenti assiomi:
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K:\,\boxx{(a\implies b)}\implies(\boa\implies\boxx b)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $MP:\,\dfrac{a,\, a\implies b}{b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $RN:\,\dfrac{a}{\boa}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+L'intersezione di tutte le logiche normali, è una logica normale (ed è la
+ minima ) che non ha altri assiomi.
+\end_layout
+
+\begin_layout Standard
+I teoremi sono le ultime formule della dimostrazione, ossia le formule che
+ ottengo dopo un numero finito di applicazione degli assiomi oppure utilizzando
+ la regola di necessiazione o il modus ponens.
+\end_layout
+
+\begin_layout Standard
+La minima logica normale viene chiamata logica K.
 \end_layout
 
 \begin_layout Subsection
@@ -705,6 +760,71 @@ abbiamo così dimostrato la chiusura secondo la necessitazione.
 \begin_layout Standard
 e così è dimostrato che K è implicato da 3.
  Il teorema dunque è dimostrato.
+\end_layout
+
+\begin_layout Section
+Deducibilità di una formula
+\end_layout
+
+\begin_layout Standard
+Una formula a si dice deducibile da un insieme di formule 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ in una logica 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ e si scrive:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sintattica{\Gamma}{\Lambda}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+se e solo se:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\teorema{a_{1}\wedge\,...\,\wedge a_{n}\implies a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+con 
+\begin_inset Formula $a_{1},\,...\,,\, a_{n}\in\Gamma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cioè, una formula a si dice deducibile da un insieme di formule 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ se e solo se la congiunzione di formule che formano 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ implica la formula a
+\end_layout
+
+\begin_layout Standard
+si noti che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sintattica{\Gamma}{\Lambda}a\implies\sintattica{\{\boxx b\,|b\in\Gamma\}}{\Lambda}{\boa}$
+\end_inset
+
+
 \end_layout
 
 \end_body
