@@ -41,7 +41,7 @@
 \end_preamble
 \use_default_options false
 \maintain_unincluded_children false
-\language english
+\language italian
 \language_package default
 \inputencoding utf8
 \fontencoding T1
@@ -1707,8 +1707,6 @@ Abbiamo visto K essere la logica modale minima, a partire da questa logica
 
 \begin_layout Itemize
 D : 
-\lang italian
-
 \begin_inset Formula $\boa\implies\dia$
 \end_inset
 
@@ -1716,8 +1714,6 @@ D :
 \end_layout
 
 \begin_layout Itemize
-
-\lang italian
 T: 
 \begin_inset Formula $\boa\implies a$
 \end_inset
@@ -1726,8 +1722,6 @@ T:
 \end_layout
 
 \begin_layout Itemize
-
-\lang italian
 B: 
 \begin_inset Formula $a\implies\boxx{\dia}$
 \end_inset
@@ -1736,8 +1730,6 @@ B:
 \end_layout
 
 \begin_layout Itemize
-
-\lang italian
 4:
 \begin_inset Formula $\boa\implies\boxx{\boa}$
 \end_inset
@@ -1746,8 +1738,6 @@ B:
 \end_layout
 
 \begin_layout Itemize
-
-\lang italian
 5: 
 \begin_inset Formula $\diam a\implies\boxx{\diam a}$
 \end_inset
@@ -2038,13 +2028,9 @@ Se vale T:
 \end_layout
 
 \begin_layout Standard
-
-\lang italian
 \begin_inset Formula $\boa\implies a$
 \end_inset
 
-
-\lang english
  (riflessiva)
 \end_layout
 
