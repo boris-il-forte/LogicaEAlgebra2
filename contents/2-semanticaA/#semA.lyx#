@@ -344,42 +344,6 @@ La logica normale ha i seguenti assiomi:
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Formula $K:\,\boxx{(a\implies b)}\implies(\boa\implies\boxx b)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $MP:\,\dfrac{a,\, a\implies b}{b}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $RN:\,\dfrac{a}{\boa}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-L'intersezione di tutte le logiche normali, è una logica normale (ed è la
- minima ) che non ha altri assiomi.
-\end_layout
-
-\begin_layout Standard
-I teoremi sono le ultime formule della dimostrazione, ossia le formule che
- ottengo dopo un numero finito di applicazione degli assiomi oppure utilizzando
- la regola di necessiazione o il modus ponens.
-\end_layout
-
-\begin_layout Standard
-La minima logica normale viene chiamata logica K.
-\end_layout
-
 \begin_layout Subsection
 Teorema
 \end_layout

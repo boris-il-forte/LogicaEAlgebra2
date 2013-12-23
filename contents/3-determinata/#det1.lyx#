@@ -751,38 +751,24 @@ Una logica consistente ammette sempre un insieme
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $(\Gamma\,\Lambda-consistente)\implies\,\exists\Delta\supseteq\Gamma\,\wedge\,(\Delta\,\Lambda-consistente\, massimale)$
+\begin_inset Formula $(\Gamma\,\Lambda-consistente)\implies\,\exists\Delta\supseteq\Gamma\,\wedge\,(\Delta\,\Lambda-consistente\, massimale$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Ip) 
-\begin_inset Formula $\Gamma\,è\,\Lambda-consistente$
-\end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Ts) 
-\begin_inset Formula $\exists\Delta\supseteq\Gamma$
-\end_inset
-
- e 
-\begin_inset Formula $\Delta\,è\,\Lambda-consistente\, massimale$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Considero tutte le formule b1, b2, b3 della logica 
-\begin_inset Formula $\Lambda$
-\end_inset
-
- (posso farlo perchè sono una infinità numerabile)
+\size large
+Considero tutte le formule b1,
+\backslash
+ b2,
+\backslash
+ b3,
+\backslash
+dots della logica 
+\backslash
+Lambda (posso farlo perché sono un'infinità numerabile)
 \end_layout
 
 \begin_layout Standard
