@@ -10,6 +10,7 @@
 \setcounter{tocdepth}{3}
 \usepackage{fancybox}
 \usepackage{calc}
+\usepackage{textcomp}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \PassOptionsToPackage{normalem}{ulem}
@@ -18,6 +19,9 @@
 \makeatletter
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\newcommand{\lyxmathsym}[1]{\ifmmode\begingroup\def\b@ld{bold}
+  \text{\ifx\math@version\b@ld\bfseries\fi#1}\endgroup\else#1\fi}
+
 %% Because html converters don't know tabularnewline
 \providecommand{\tabularnewline}{\\}
 
@@ -30,10 +34,10 @@
 
 \providecommand{\coursename}{Logica e Algebra 2}
 \providecommand{\documentsubtitle}{Appunti}
-\providecommand{\annoacc}{2011-2012}
+\providecommand{\annoacc}{2013-2014}
 \providecommand{\principaladviser}{Prof. Alessandra Cherubini}
 \providecommand{\firstauthor}{Edoardo Pasi}
-\providecommand{\firstauthorid}{whocarez}
+\providecommand{\firstauthorid}{805753}
 \providecommand{\secondauthor}{Davide Tateo}
 \providecommand{\secondauthorid}{799311}
 \title{Logica e Algebra 2}
@@ -41,6 +45,7 @@
 
  
 \usepackage{tikz}
+\usepackage{stmaryrd}
 
 \usepackage{color}   %May be necessary if you want to color links
 \usepackage{hyperref}
@@ -74,7 +79,7 @@
 
 %per le tabelle lunghe e particolari
 \usepackage{lscape}
-%include il comando per creare la pagina dei titoli
+%per includere il comando che genera la pagina del titolo...
 \usepackage{settings/frontesp}
 
 \makeatother
@@ -95,7 +100,19 @@
 
 \include{contents/3-determinata/det1}
 
-\include{contents/4-determinata/det2}
+\include{contents/4-determinata/det2}\include{contents/5-decidibile/dec}
 
-\include{contents/5-decidibile/dec}
+\include{contents/6-temporale/temporale}
+
+\include{contents/7-multimodale/multimodale}
+
+\include{\string"contents/8-classica multimodale/class-multi\string"}
+
+\include{contents/9-descrittiva/descrittiva}
+
+\include{contents/10-ModalePrimOrdine/modaleprimo}
+
+\include{contents/11-Bisimulazione/bisimulazione}
+
+\include{contents/12-ModelCheking/modelcheck}
 \end{document}

@@ -1,0 +1,403 @@
+
+\chapter{Logiche Descrittive	}
+
+
+\section{Introduzione - Logica AL}
+
+Le DL sono una famiglia di logiche per la rappresentazione della conoscenza
+che possono essere utilizzate per rappresentare conoscenza terminologica,
+dando ad essa una semantica formale ben definita.
+
+Un sistema di rappresentazione della conoscenza (KR) fornisce i mezzi
+per definire, gestire, manipolare e ragionare su basi di conoscenza
+(KB).
+
+In una KB ci sono TBox e ABox
+
+I TBox descrivono la terminologia della KB (concetti, ruoli atomici
+e concetti composti), gli ABox sono asserzioni su individui della
+KB
+
+TBox es. $Madre\equiv Donna\sqcap Genitore$
+
+ABox es. $Donna(Paola)$\\
+
+
+La famiglia di logiche descrittive più utilizzata è la famiglia AL
+(Attributive Language).
+
+Nella logica AL (logica descrittiva tra le più semplici) ci sono:
+\begin{description}
+\item [{A,B,C}] concetti
+\item [{R}] ruoli
+\item [{		$\neg$}] negazione (solo di concetti atomici)
+\item [{$\sqcap$}] di concetti
+\item [{\textmd{I}}] concetti sono:\end{description}
+\begin{itemize}
+\item Concetti atomici A,B
+\item $\top$, $\bot$
+\item negazione di concetti atomici: $\neg A$
+\item and di concetti: $C\sqcap D$
+\item quantificazioni: $\forall R.C$, $\exists R.\top$
+\end{itemize}
+Un'interpretazione I di una base di conoscenza\'{ }e una coppia $I=<\Delta^{i},\cdot^{I}>$
+composta da un dominio di interpretazione $\Delta$I, detto dominio
+di I e da una funzione di interpretazione $\cdot^{I}$ che associa:
+
+ad ogni \textbf{nome} di individuo un elemento: 
+
+$a^{I}\in\Delta^{I}$
+
+ad ogni \textbf{concetto} C un sottoinsieme di $\Delta^{I}$
+
+$I:\ C\rightarrow C^{I}\subseteq\Delta^{I}$
+
+e ad ogni \textbf{ruolo} un sottoinsieme di $\Delta$I \texttimes{}
+$\Delta$I :
+
+$R:\ R^{I}\subseteq\Delta^{I}\times\Delta^{I}$
+
+I rouli sono quindi relazioni binarie, una volta interpretati
+
+es. $(Peter,\ Chris)^{I}\in HaFiglio^{I}$
+
+		
+
+Inoltre:
+
+$\bot^{I}=\emptyset$, $\top^{I}=\Delta^{I}$
+
+$(C\sqcap D)^{I}=C^{I}\cap D^{I}$
+
+$(\forall R.C)^{I}=\{a^{I}\in\Delta^{I}:\ (a^{I},b^{I})\in R^{I}\implies b^{I}\in C^{I}$\} 
+
+es. $\forall Possiede.Cosa$ cioè se a possiede un oggetto del dominio
+quello deve essere una cosa (slavery is bad)
+
+$(\exists R.C)^{I}=\{a^{I}\in\Delta^{I}:\ \exists b\in\Delta^{I}:\ (a^{I},b^{I})\in R^{I}\wedge b^{I}\in C^{I}\}$\\
+
+
+es. $\exists HaFiglio.Femmina$ cioè l'insieme dei genitori con una
+figlia femmina (grow up well kid)\\
+
+
+
+\subsection{Varianti di AL}
+
+Indebolendo la logica AL si ottengono le logiche poco descrittive
+della famiglia FL:
+\begin{itemize}
+\item F L- è ottenuta da AL eliminando la negazione atomica •
+\item FL0 è ottenuta da FL- eliminando anche la quantificazione esistenziale
+\end{itemize}
+La logica AL può essere estesa aggiungendo alcuni costruttori: 
+\begin{itemize}
+\item costrutto $\mathcal{U}$ disgiunzione dei concetti $C\sqcup D$
+\item costrutto $\mathcal{E}$ quantificazione esistenziale qualificata
+$\exists R.C$
+\item costrutto $\mathcal{C}$ complemento di concetti complessi $\neg C$
+\item costrutto $\mathcal{N}$ cardinalità di un ruolo 
+\end{itemize}
+$(\leq nR)^{I}=\{a^{I}:\ \cardinal{\{b^{I}:\ (a^{I},b^{I})\in R^{I}\}}<n\}$
+
+es. $(\leq2HaFiglio)^{I}$ è l'insieme delle persone un numero di
+figli minore o uguale a 2.
+
+
+\section{Confronti fra logiche }
+
+In modo analogo a quanto si era fatto con le logiche derivate da K,
+denotiamo con ALX la logica AL a cui si aggiunge il costrutto X
+
+
+\subsection{Equivalenza $\alue$ed $\alc$}
+
+Dimostriamo che $AL\mathcal{UE}\equiv AL\mathcal{C}$\\
+
+
+IP) $\mathcal{UE}$
+
+Ts)$\mathcal{C}$\\
+
+
+Si vuole mostrate che a partire in$AL\mathcal{UE}$ posso fare tutto
+ciò che faccio in $AL\mathcal{C}$, il che si riduce a mostrare che
+in $\alue$posso fare negazioni di concetti qualsiasi.
+
+Questo è immediato per i concetti atomici la cui negazione è per definizione
+in $AL$
+
+$\neg\top\equiv\bot$, $\neg\bot\equiv\top$
+
+Per negare l'and di due concetti:
+
+$\neg(D\sqcap E)\equiv\neg D\sqcup\neg E$ che sono concetti più semplici
+di cui ricorsivamente posso costruire la negazione
+
+$\neg\forall R.C\equiv\exists R.\neg C$
+
+Con queste semplici trasformazioni posso rendere ricorsivamente più
+semplice una qualsiasi formula di $\alc$ fino a portarla in una formula
+di $\alue$\\
+\\
+IP) $\mathcal{C}$
+
+Ts)$\mathcal{UE}$\\
+
+
+Sfruttando De Morgan possiamo scrivere:
+
+$D\sqcup E\equiv\neg(\neg D\sqcap\neg E)$
+
+$\exists R.C\equiv\neg(\forall R.\neg C)$
+
+
+\subsection{Confronto con logica del prim ordine}
+
+È possibile vedere le logiche AL, ALC, ALN, (deve essere con identità
+nel caso di N)
+\begin{itemize}
+\item A è un concetto: $a(x)$
+\item R è un ruolo: $R(x,y)$
+\item $a\ $è un individuo: $a$ è una costante
+\end{itemize}
+Notiamo che ci sono due sole variabili libere e il dominio è fissato
+(controllare) la logica del prim ordine è decibile.
+\begin{description}
+\item [{$\neg C$:}] $\neg C(x)$
+\item [{$C\sqcap D\mathbf{:}$}] \foreignlanguage{english}{$C(x)\vee D(x)$}
+\item [{$\forall R.C$:}] $\forall y:(R(x,y)\implies C(y)$)
+\item [{$\exists R.C:$}] $\exists y:(R(x,y)\implies C(y))$
+\item [{$\leq nR$$,$}] la logica deve essere con unità cioè avere un
+predicato di uguaglianza E
+\item [{$\exists x_{1},\ x_{2},...,\ x_{n+1}(R(x,x_{1})\wedge R(x,x_{2})\wedge\dots R(x,x_{n})$}] $\implies E(x_{1},x_{2})\vee E(x_{1},x_{2})\vee\dots..\underset{1\leq i\leq j\leq n+1}{\bigvee}E(x_{i},x_{j})$
+\end{description}
+
+\subsection{Confronto con logica multimodale}
+
+\noindent L'espressività di ALC è la stessa di $K_{n}$ 
+
+\noindent Infatti ogni ruolo $R_{i}$ si può mettere in corrispondenza
+con $[R_{i}]c$
+
+
+\section{Terminologia}
+\begin{itemize}
+\item Definizione: 
+\end{itemize}
+Una definizione associa a un concetto atomico un concetto complesso
+(non atomico) es. $Parent\equiv Father\sqcup Mather$, il concetto
+atomico viene detto anche simbolo nominale
+\begin{itemize}
+\item Simbolo di base (o nominale):
+\end{itemize}
+I ruoli e i concetti che appaiono solo nelle parti destre delle definizioni
+\begin{itemize}
+\item Interpretazione di base:
+\end{itemize}
+Un'interpretazione di una T-Box che interpreta solo i simboli di base
+\begin{itemize}
+\item Aciclico:
+\end{itemize}
+Nessun simbolo nominale usa sé stesso
+\begin{itemize}
+\item T-Box definitorio:
+\end{itemize}
+La sua interpretazione si estende in modo unico a una interpreatazione
+di tutto il t-box (estesa)
+
+Un T-Box è definitorio se è possibile costruirne uno equivalente ma
+aciclico\\
+
+
+Non sono definitorie alcune T cicliche es.
+
+$Human\equiv Animal\sqcap\forall hasParent.Human$\\
+
+
+Ma alcune T cicliche sono definitorie es.
+
+$A\equiv B\sqcap\exists R.(A\sqcap\neg A)$ che è equivalente a:
+
+$A\equiv B\sqcap\exists R.(\bot)$ 
+
+
+\section{Terminologia generalizzata}
+
+A volte è possibile aggiungere nuovi operatori qua descritti.
+
+\textbf{Inclusione}
+
+Si possono usare T-Box del tipo:
+
+$A\sqsubseteq B$ che vale se e solo se $A^{I}\subseteq B^{I}$
+
+Una terminologia T generalizzata (cioè che contiene assiomi di inclusione)
+può essere tradotta in una forma T normalizzata sostituendo le forme
+del tipo:
+
+$Woman\sqsubseteq Person$ con $Woman\mbox{\ensuremath{\equiv}}\underline{Woman}\sqcap Person$
+dove $\underline{Woman}$ è un nuovo simbolo base (che denota qualità
+specifiche)
+
+In termini di espressività, le due forme sono equivalenti
+
+Ogni modello di $T$ è anche modello di $\underline{T}$
+
+Qualsiasi interpretazione base di un modello di $T$ è anche interpretazione
+base di un modello di $\underline{T}$
+
+Così facendo si ha che: $Woman^{I}\subseteq Person^{I}$ e quindi
+$Woman^{I}\equiv Person\cap(\underline{Woman})^{I}$
+
+\textbf{Set}
+
+$Set{a_{1},a_{2},\dots,a_{n}}^{I}=\{a_{1}^{I},a_{2}^{I},\dots,a_{n}^{I}\}$
+
+\textbf{Fills}
+
+$Fills\ r\ c$ sono gli individui che sono in relazione tramite $r$
+agli individui identificati da $c$
+
+es. $FILLS\ :\ Child\ Chris$ sono tutti gli individui con figlio
+``Chris''
+
+$(Fills\ R:a)^{I}=\{b\in\Delta^{I}\;:\ (a^{I},b^{I})\in R^{I}\}$
+
+
+\subsection{Note}
+
+$\exists R.C$ si può sostituire con $\exists R.Set(a)$
+
+Posso pensare i T-Box come composti solo di definizioni
+
+Il T-Box può essere tolto del tutto specificando completamente le
+definizioni nell'A-Box
+
+Normalmente nelle Logiche Descrittive si fa l'UNA: l'unicity name
+assunction cioè si assume che se si usano due nomi come a, b, allora
+$a^{I}\neq b^{I}$
+
+
+\section{Servizi di Reasoning}
+
+I servizi di reasoning si propongono di risolvono quattro tipi di
+problemi
+
+\textbf{Soddifisfacibilità: }Un concetto C si dice soddisfacibile
+rispetto al T-Box T se esiste un modello di T tale che $C^{I}$ non
+è vuoto
+
+\textbf{Sussunzione: }Un concetto C è sussunto da un concetto D, in
+T se $C^{I}\subseteq D^{I}$ per ogni modello di T
+
+\textbf{Equivalenze: }Due concetti C e D si dicono equivalenti rispetto
+a T se $C^{I}=D^{I}$per ogni modello di T
+
+\textbf{Disgiunzione: }Due concetti C e D sono disgiunti tispetto
+a T se $C^{I}\cap D^{I}=\emptyset$ per ogni modello di T
+
+Mostriamo che una KB che fornisce il servizio di sussunzione risolve
+anche gli altri tre problemi, infatti:\\
+
+
+$C$ è insoddisfacibile se e solo se $\bot\sqsubseteq C$ 
+
+$C,D$sono equivalenti se $C\sqsubseteq D$ e $D\sqsubseteq C$
+
+$C,D$sono disgiunti se $C\sqcap D\sqsubseteq\bot$
+
+
+\section{Feauture Logic}
+
+Le logiche descrittive più semplici appartengono alla famiglia della
+features logics (FL in breve) e sono ottenute indebolendo la più\'{ }famosa
+logica AL inibendo i costruttori di concetto più complessi.
+
+La più semplice di queste è $FL_{0}$ che si ottiene da AL togliendo
+$\bot$ e $\exists$
+
+Un concetto in \textbf{forma normale }è del tipo:
+
+$A_{1}\sqcap A_{2}\sqcap\dot{\dots A_{n}\forall R_{1}.C_{1}\sqcap\forall R_{2}.C_{2}\dots\sqcap\forall R_{m}.C_{m}}$
+
+dove $C_{j}$ sono concetti in forma normale e $R_{j}$ sono ruoli
+atomici\\
+
+
+Posso scrivere qualsiasi concetto in questo modo con l'accortezza
+di:
+
+togliere i duplicati: $A_{i}\neq A_{j}$
+
+``sciogliere'' i ruoli con intersezioni: 
+
+$\forall R.(C\sqcap D)\equiv\forall R.C\sqcap\forall R.D$
+
+	
+
+Siano C e D due concetti $FL_{0}$ in forma normale: \\
+
+
+$C\equiv A_{1}\sqcap\dots\sqcap A_{m}\sqcap\forall R1.C1\sqcap\forall Rn.Cn$
+
+$D\equiv B1\sqcap\dots\sqcap Bk\sqcap\forall S1.D1\sqcap\forall Sl.Dl$	\\
+
+
+allora $C\sqsubseteq D$ se e solo se \\
+
+
+1. per ogni i, $1\leq i\leq k$ esiste un j, $1\leq j\leq m$ per
+il quale $Bi=Aj$.
+
+2. per ogni i, $1\leq i\leq l$ esiste un j, $1\leq j\leq n$ per
+il quale $Si=Rj$ e$Cj\sqsubseteq Di$.
+
+
+\subsection{Varianti}
+
+Ad $AL_{0}$può essere aggiunto il concetto $\bot$, ottenendo $AL_{\bot}$e
+la forma normale viene a essere la stessa di prima a cui si aggiunge
+l'opportunità per un concetto di essere o$\bot$
+
+Notiamo che $\bot\sqsubseteq C$, per ogni $C$
+
+Ad $AL_{0}$ si può aggiungere la negazione di concetti atomici ottenendo
+$AL_{\neg}$
+
+Notiamo che $\bot\equiv A\wedge\neg A$, quindi $AL_{\neg}$contiene
+strettamente$AL_{0}$	
+
+In $ALC$ per verificare se $C\sqsubseteq D$ possiamo controllare
+che $C\sqcap\neg D$ si insoddisfacibile
+
+Per controllare $C\equiv D$ possiamo quindi testare $C\sqcap\neg D$
+e $D\sqcap\neg C$.
+
+
+\section{A-Box Reasoning}
+
+	I servizi di reasoning di A-Box sono:
+
+\textbf{Consistenza}: Un A-Box è consistente in un modello T-Box T
+se c'è un'interpreatzione che sia modello sia di T che di A
+
+\textbf{Instance Checking}: Un individuo è istanza di un concetto
+C rispetto a un A-Box A se è membro dell'insieme C. $\vera A{C(a)}$
+il che vale se e solo se $A\cup\{\neg C(a)\}$ è insoddisfacibile
+
+\textbf{Instance Retrivial}: Trova tutti gli individui che sono istanze
+di una data descrizione
+
+\textbf{Problema di Realizzazione}: Trova il concetto più specifico
+a cui un individuo appartiene
+
+
+\subsection{Variante}
+
+T-Box ed A-Box si possono arricchire con $C\implies D$ cioè: per
+ogni individuo $a$ cui è noto $C(a)$ si ha anche $D(a)$.
+
+Notiamo che NON vale $\neg D\implies\neg C$
+
+		

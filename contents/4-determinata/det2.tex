@@ -19,7 +19,7 @@ Con questa chiave di lettura diamo alcune dimostrazioni di determinatezza.%
 }}
 
 
-\section{Determinatezza di KD rispetto ai Frame Seriali}
+\section{Serialità del frame canonico di KD}
 
 $R^{KD}$ è seriale se: $\forall\alpha\in S^{KD}\exists\beta:(\alpha,\beta)\in R^{KD}$
 
@@ -72,12 +72,12 @@ Per MP fra \textbf{({*}) }e\textbf{ ({*}{*}) }si ha $\dia_{n}\in\alpha$
 Da cui $\alpha$ non consistente, assurdo. \lightning
 
 
-\section{Determinatezza rispetto ai Frame Debolmente Densi}
+\section{Debole densità del frame canonico di K$X\diamond$}
 
 $R$ è debolmente densa se: $\forhten{\alpha,\beta}{:\:(\alpha R\beta)}{\exists\gamma:\,(\alpha R\gamma\wedge\gamma R\beta)}$
 
-Chiamiamo $\Lambda$ una costruita a partire dalla logica $K$ aggiungendo
-lo schema: $\dia\implies\diam{\diam a}$ 
+Chiamiamo K$X\diamond$ una logica costruita a partire dalla logica
+$K$ aggiungendo lo schema $X\diamond$: $\dia\implies\diam{\diam a}$ 
 
 La partenza del ragionamento è simile a quello del precedente in cui
 come insieme considero:
@@ -87,22 +87,22 @@ $\gamma_{0}=\{a\ |\ a\in\alpha\}\cup\{\diamond b\ |\ b\in\beta\}$\\
 
 Per assurdo:
 
-$\teoremaDi{\Lambda}\andoria{_{n}\wedge\diam{b_{1}\wedge...\wedge\diam{b_{n}}}}\implies\bot$
+$\teoremaDi{KX\diamond}\andoria{_{n}\wedge\diam{b_{1}\wedge...\wedge\diam{b_{n}}}}\implies\bot$
 
 dove $a_{1},...,a_{n}$ sono formule di $\alpha$, e $b_{1},...,b_{n}$
 sono formule di $\beta$
 
-$\teoremaDi{\Lambda}\andoria{_{n}}\implies\neg(\diamond b_{1}\wedge...\wedge\diamond b_{n})$
+$\teoremaDi{KX\diamond}\andoria{_{n}}\implies\neg(\diamond b_{1}\wedge...\wedge\diamond b_{n})$
 
 pongo $b=b_{1}\wedge...\wedge b_{n}$\\
 
 
 \textbf{Teorema al volo:}
 
-$\teorema{\neg(\diamond c\wedge\diamond d)\implies\neg\diamond(c\wedge d)}$,
+$\teoremaDi{KX\diamond}\neg(\diamond c\wedge\diamond d)\implies\neg\diamond(c\wedge d)$,
 cioè:
 
-\textbf{$\teorema{\diamond(c\wedge d)\implies\diamond c\wedge\diamond d}$}\\
+\textbf{$\teoremaDi{KX\diamond}\diamond(c\wedge d)\implies\diamond c\wedge\diamond d$}\\
 infatti, sono tautologie della logica proposizionale: $\neg c\implies\neg c\vee\neg d$
 
 e $\neg d\implies\neg c\vee\neg d$,
@@ -131,17 +131,17 @@ Uso il teorema ottenendo (in un certo senso ``portiamo fuori'' il
 $\diamond$)
 
 \selectlanguage{english}%
-$\teoremaDi{\Lambda}\andoria{_{n}}\implies\neg\diamond(b_{1}\wedge...\wedge\diamond b_{n})$\foreignlanguage{italian}{
+$\teoremaDi{KX\diamond}\andoria{_{n}}\implies\neg\diamond(b_{1}\wedge...\wedge\diamond b_{n})$\foreignlanguage{italian}{
 cioè (per come ho posto b)}
 
 \selectlanguage{italian}%
-$\teoremaDi{\Lambda}\andoria{_{n}}\implies\neg\diamond b$ 
+$\teoremaDi{KX\diamond}\andoria{_{n}}\implies\neg\diamond b$ 
 
 Uso la definizione 2. di logica normale e riscrivo:
 
-$\teoremaDi{\Lambda}\andbox{_{n}}\implies\boxx{\neg\diamond b}$
+$\teoremaDi{KX\diamond}\andbox{_{n}}\implies\boxx{\neg\diamond b}$
 
-$\teoremaDi{\Lambda}\andbox{_{n}}\implies\neg\diamond\diamond b$
+$\teoremaDi{KX\diamond}\andbox{_{n}}\implies\neg\diamond\diamond b$
 
 dato che $\andbox{_{n}}\implies\neg\diamond\diamond b\in\alpha$ 
 
@@ -156,7 +156,7 @@ il che ci porterebbe alla non massimalità di $\alpha$ contro l'ipotesi.
 \lightning
 
 
-\section{Determinatezza di KT rispetto ai Frame Riflessivi}
+\section{Riflessività del frame canonico di KT}
 
 $R^{KT}$ è riflessiva se: $\forall\alpha,\,\alpha R^{KT}\alpha$
 
@@ -176,7 +176,7 @@ in $\alpha$
 Da cui segue la tesi.
 
 
-\section{Determinatezza di KB rispetto ai frame Simmetrici}
+\section{Simmetria del frame canonico di KB}
 
 $R^{KB}$è simmetrica se $\forhten{\alpha,\beta}{\,\alpha R^{KB}\beta}{\beta R^{KB}\alpha}$
 

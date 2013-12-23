@@ -1,13 +1,12 @@
-\selectlanguage{english}%
 
 \chapter{Decidibilità Delle Logiche Modali}
 
 
 \section{Filtrazione}
 
-Dato una logica $\Lambda$ e una formula a, si può garantire cheesiste
-un modello $\mu$, con un numerodi mondi limitato da f(n), con n numero
-di sottoformule di a tale che:
+Dato una logica $\Lambda$ e una formula a, si può garantire che esiste
+un modello $\mu$, con un numero di mondi limitato da f(n), con n
+numero di sottoformule di a tale che:
 
 $\teoremaDi{\Lambda}a\iff\vera{\mu}a$
 
@@ -303,5 +302,397 @@ Sia $([\alpha],[\beta])\in R^{\tau}$, $([\beta],[\gamma])\in R^{\tau}$
 ora la prima implica che per ogni fbf $b$, da $\boxx{b\in\Gamma}$
 e $\veraw M{\alpha}{\boxx b}$ segua $\vera M{_{\beta}\boxx{b\wedge b}}$,
 e da questa essendo $([\alpha],[\beta])\in R^{\tau}$, segue anche
-$\vera M{_{\gamma}\boxx{b\wedge b}}$, cioè $([\beta],[\gamma])\in R^{\tau}$\selectlanguage{italian}%
+$\vera M{_{\gamma}\boxx{b\wedge b}}$, cioè $([\beta],[\gamma])\in R^{\tau}$
+
+
+\section{Tableaux}
+
+I Tableaux sono un metodo efficiente per dimostrare la verità, falsità
+e soddisfacibilità di una formula
+
+Il metodo consiste nel partire dalla formula che si vuole considerare,
+negandola.
+
+Dopodichè si procede passo passo alla costruzione di un albero seguendo
+delle regole di espansione che aggiungono uno o più nodi o rami all'albero.
+
+Le regole con la virgola aggiungono un nodo allo stesso ramo, mentre
+le regole con il pipe sdoppiano il ramo.
+
+Se espando una formula, devo aggiungere coerentemente l'espansione
+a tutti i sottorami, e non posso più espanderla.
+
+Se un cammino contiene sia una formula che la sua negazione il cammino
+si chiude.
+
+Se esiste almeno un cammino chiuso, la formula di partenza è soddisfacibile,
+se tutti i cammini sono chiusi, la formula è logicamente valita, altrimenti
+la formula è falsa.
+
+
+\subsection{Tableaux per la logica proposizionale}
+
+Le regole Per applicare l'algoritmo dei tableaux nella logica proposizionale
+sono le seguenti:
+\begin{itemize}
+\item Radice dell'albero\\
+$\neg a$
+\item Regola del $\neg$\\
+$\dfrac{\neg\neg a}{a}$
+\item Regole di tipo $\alpha$\\
+$\dfrac{a\wedge b}{a,\, b}$ $\dfrac{\neg(a\vee b)}{\neg a,\,\neg b}$
+$\dfrac{\neg(a\implies b)}{a,\,\neg b}$
+\item Regole di tipo $\beta$\\
+$\dfrac{a\vee b}{a|b}$ $\dfrac{\neg(a\wedge b)}{\neg a|\neg b}$
+$\dfrac{a\implies b}{\neg a|b}$
+\item Regole di tipo $\iff$\\
+$\dfrac{a\iff b}{a,\, b|\neg a,\,\neg b}$ $\dfrac{\neg(a\iff b)}{a,\,\neg b|\neg a,\, b}$
+\end{itemize}
+
+\subsection{Tableaux per le logiche modali}
+
+Per le logiche modali, si può modificare l'algoritmo già usato per
+le logiche proposizionali, aggiungendo le regole per la necessitazione
+e considerando che ogni regola deve essere vera in un mondo.
+
+Per fare ciò devo aggiungere l'indice del mondo a tutte le regole,
+e si potrà chiudere un ramo solo se si trova la regola e il suo negato
+nello stesso mondo.
+
+Le regole dei tableaux per le logiche modali saranno:
+\begin{itemize}
+\item Radice dell'albero\\
+$1.\neg a$
+\item Regola del $\neg$\\
+$\dfrac{\delta\,\neg\neg a}{\delta a}$
+\item Regole di tipo $\alpha$\\
+$\dfrac{\delta\, a\wedge b}{\delta\, a,\,\delta\, b}$ $\dfrac{\delta\,\neg(a\vee b)}{\delta\,\neg a,\,\delta\,\neg b}$
+$\dfrac{\delta\,\neg(a\implies b)}{\delta\, a,\,\delta\,\neg b}$
+\item Regole di tipo $\beta$\\
+$\dfrac{\delta\, a\vee b}{\delta\, a|\delta\, b}$ $\dfrac{\delta\,\neg(a\wedge b)}{\delta\,\neg a|\delta\,\neg b}$
+$\dfrac{\delta\, a\implies b}{\delta\,\neg a|\delta\, b}$
+\item Regole di tipo $\iff$\\
+$\dfrac{\delta\, a\iff b}{\delta\, a,\,\delta\, b|\delta\,\neg a,\,\delta\,\neg b}$
+$\dfrac{\delta\,\neg(a\iff b)}{\delta\, a,\,\delta\,\neg b|\delta\,\neg a,\,\delta\, b}$
+\item Regole di necessitazione\\
+$\dfrac{\sigma\,\boa}{\sigma_{n}\, a}$ $\dfrac{\sigma\,\neg\dia}{\sigma_{n}\,\neg a}$
+-- con $\sigma_{n}$ già presente nei nodi precedenti\\
+$\dfrac{\sigma\,\neg\boa}{\sigma_{n}\,\neg a}$ $\dfrac{\sigma\,\dia}{\sigma_{n}\, a}$
+-- con $\sigma_{n}$ non presente nei nodi precedenti
+\end{itemize}
+Tuttavia queste regole non sono sufficienti se vogliamo usare una
+regola modale differente da K.
+
+Per lavorare su regole con proprietà dei frame particolari, devo necessariamente
+cambiare le regole di necessitazione aggiungendo dei vincoli alla
+generazione di nuovi mondi in modo tale che rispettino le proprietà
+del frame.
+
+
+\section{Logiche notevoli}
+
+Abbiamo visto K essere la logica modale minima, a partire da questa
+logica ne possiamo ottenere altre aggiungendo ad essa alcuni schemi
+di assiomi:
+\begin{itemize}
+\item D : $\boa\implies\dia$ (seriale)
+\item T: $\boa\implies a$ (riflessiva)
+\item B: $a\implies\boxx{\dia}$ (simmetrica)
+\item 4:$\boa\implies\boxx{\boa}$ (transitiva)
+\item 5: $\diam a\implies\boxx{\diam a}$ (euclidea)
+\end{itemize}
+Per ognuno di questi schemi di assiomi (X) ne esiste il cosiddetto
+duale (X$\diamond$), cioè lo schema che si ottine invertendo antecedente
+e conseguente e negando $\boxx a$ con $\dia$
+
+
+\subsection{Teorema: validità del duale }
+
+M sia una sequenza di connettivi $\square$, $\diamond$ ed M' il
+suo duale.
+
+Idem per N ed N'.\\
+
+
+Ip) $Ma\implies Nb$
+
+Ts) $N'b\implies M'a$\\
+
+
+Se vale lo schema d'assiomi $Ma$ deve valere anche $M\neg a$ dato
+che appunto è uno schema.
+
+Riscrivo l'ipotesi come:
+
+$M\neg a\implies N\neg b$
+
+Considero la tautologia della PL: $(C\implies D)\implies(\neg D\implies\neg C)$
+
+la applico all'ipotesi ottenendo:
+
+$(M\neg a\implies N\neg b)\implies(\neg(N\neg b)\implies\neg(M\neg a))$
+
+Da cui per MP con l'ipotesi (riscritta) ottengo:
+
+$\neg(N\neg b)\implies\neg(M\neg a)$
+
+Usando ripetutamente le equivalenze tra$\square$ e $\diamond$ ottengo:
+
+$N'\neg\neg b\implies M'\neg\neg a$ semplificando:
+
+$N'b\implies M'a$
+
+La dimostrazione nell'altro senso è del tutto simmetrica dato che
+le operazioni effettuate sono valide in entrambe le direzioni
+
+
+\subsection{Esempio validità del duale: schema 5}
+
+Ip) $\diam a\implies\boxx{\diam a}$
+
+Ts)$\diamond\boxx a\implies\boxx a$\\
+
+
+Riscrivo l'ipotesi come:
+
+$\diam{\neg a}\implies\boxx{\diam{\neg a}}$
+
+Considero la tautologia della PL: $(C\implies D)\implies(\neg D\implies\neg C)$
+
+$(\diam{\neg a}\implies\boxx{\diam{\neg a}})\implies(\neg\boxx{\diam{\neg a}}\implies\neg\diam{\neg a})$
+
+Semplifico il conseguente :$\neg\boxx{\diam{\neg a}}\implies\neg\diam{\neg a}$
+diventa
+
+$\diam{\square\neg\neg a\implies\square\neg\neg a}$ , semplificando
+i $\neg$:
+
+$\diam{\square a\implies\square a}$
+
+Cioè la tesi.\\
+
+
+Vogliamo ora mostrare come alcune notazione della forma KX denotino
+la stessa logica.
+
+Ricordiamo che con KX intendiamo la logica K a cui abbiamo aggiunto
+il generico assioma X
+
+KB4 = K + assioma B + assioma 4
+
+
+\subsection{Inclusione di KD in KT}
+
+Pare ovvio che una logica riflessiva sia anche seriale (se parlo da
+solo parlo con qualcuno), ma dimostriamolo comunque. \\
+
+
+Ip) KT
+
+Ts) KD\\
+Se vale T: 
+
+$\boa\implies a$ (riflessiva)
+
+allora vale anche il suo duale $T\diamond$:
+
+$a\implies\dia$
+
+Per la catena di implicazioni $(\implica ab,\ \implica bc,\ \mbox{\ensuremath{\implica ac}})$
+abbiamo:
+
+$\boa\implies\dia$
+
+Cioè lo schema D\\
+
+
+\textbf{Lemma implica in KB:}
+
+IP)$\teoremaDi{KB}\diamond C\implies D$
+
+TS) $\teoremaDi{KB}\implica C{\boxx D}$\\
+
+
+Per Ip) $\diamond C\implies D$ e quindi, dato che è un teorema della
+logica KB, (che è una logica normale)
+
+posso usare la definizione 3 equivalente di logica normale ottenendo:
+
+$\square\diamond C\implies\square D$ 
+
+Inoltre vale lo schema B
+
+$C\implies\boxx{\diam C}$
+
+Leggendo i due schemi appena scritti dal secondo al primo riconosciamo
+la catena di implicazioni $(\implica ab,\ \implica bc,\ \mbox{\ensuremath{\implica ac}})$ 
+
+Da cui: $C\implies\boxx D$
+
+
+\subsection{Equivalenza KB4, KB5}
+
+\textbf{Da KB4 a KB5}
+
+Valendo 4 vale anche 4$\diamond$:
+
+$\diamond(\dia)\implies(\diamond a)$, e tenendo conto del precedente
+lemma 
+
+(dove $C$ è $\diamond a$ e $B$ è $\diamond a$), 
+
+abbiamo $\diamond a\implies\boxx{\dia}$ cioè lo schema5. \\
+
+
+\textbf{Da KB5 a KB4}
+
+Da 5 infatti deduciamo 5$\diamond$: $\diam{(\square a)\implies(\boa)}$
+
+Tenuto conto della prima osservazione (con$C$ e$B$ uguali ad $a$)
+
+abbiamo $\boa\implies\boxx{\boa}$.\\
+
+
+
+\subsection{Equivalenza KDB4. KDB5, KDB45, KTB4, KT5}
+
+\textbf{KDB4 = KDB5 = KD45}, infatti aggiungendo l'assioma D a due
+logiche equivalenti (KB4, KB5) continuano a rimanere equivalenti;
+
+aggiungere 4 a KDB5 non produce alcun effetto perché lo contiene già.\\
+
+
+Inoltre notiamo che: \textbf{KDB4$\subseteq$KTB4} in quanto KT contiene
+KD
+
+e \textbf{KT5$\subseteq$KTB4} in quando KT4B contiene KT4 che coincide
+con KT5.\\
+
+
+Mostriamo che \textbf{KTB4$\mbox{\ensuremath{\subseteq}}$KDB4 }così
+da arrivare a KTB4 = KDB4
+
+Cioe' mostriamo che nella logica K, dall'assioma T, con B e 4 posso
+dedurre l'assioma D
+
+Dall'assioma T deduciamo l'assioma T$\diamond$ cioe' $a\implies\diamond a$
+
+Dato che vale 5: $\diam a\implies\boxx{\diam a}$, sfruttando la catena
+di implicazioni delle due precedenti abbiamo:
+
+$a\implies\boxx{\dia}$ cioè B.\\
+
+
+
+\subsection{Reticolo delle logiche}
+
+\begin{center} \begin{tikzpicture}[scale=0.2] \tikzstyle{every node}+=[inner sep=0pt] \draw [black] (39.9,-53.7) circle (3); \draw (39.9,-53.7) node {$K$}; \draw [black] (18,-42.8) circle (3); \draw (18,-42.8) node {$KD$}; \draw [black] (33,-42.8) circle (3); \draw (33,-42.8) node {$K4$}; \draw [black] (65.5,-41.5) circle (3); \draw (65.5,-41.5) node {$KB$}; \draw [black] (46.8,-42.8) circle (3); \draw (46.8,-42.8) node {$K5$}; \draw [black] (12.1,-28.5) circle (3); \draw (12.1,-28.5) node {$KT$}; \draw [black] (26.6,-27.7) circle (3); \draw (26.6,-27.7) node {$KD4$}; \draw [black] (53.4,-27.7) circle (3); \draw (53.4,-27.7) node {$KD5$}; \draw [black] (67.6,-27.7) circle (3); \draw (67.6,-27.7) node {$K45$}; \draw [black] (23.2,-16.4) circle (3); \draw (23.2,-16.4) node {$KT4$}; \draw [black] (39.9,-15.4) circle (3); \draw (39.9,-15.4) node {$KTB$}; \draw [black] (55.7,-16.4) circle (3); \draw (55.7,-16.4) node {$KB4$}; \draw [black] (39.9,-4.2) circle (3); \draw (39.9,-4.2) node {$KT5$}; \draw [black] (41,-27.7) circle (3); \draw (41,-27.7) node {$KDB$}; \draw [black] (37.21,-52.36) -- (20.69,-44.14); \fill [black] (20.69,-44.14) -- (21.18,-44.94) -- (21.62,-44.05); \draw [black] (38.3,-51.17) -- (34.6,-45.33); \fill [black] (34.6,-45.33) -- (34.61,-46.28) -- (35.45,-45.74); \draw [black] (42.61,-52.41) -- (62.79,-42.79); \fill [black] (62.79,-42.79) -- (61.85,-42.68) -- (62.28,-43.59); \draw [black] (41.5,-51.17) -- (45.2,-45.33); \fill [black] (45.2,-45.33) -- (44.35,-45.74) -- (45.19,-46.28); \draw [black] (16.86,-40.03) -- (13.24,-31.27); \fill [black] (13.24,-31.27) -- (13.09,-32.2) -- (14.01,-31.82); \draw [black] (14.13,-26.29) -- (21.17,-18.61); \fill [black] (21.17,-18.61) -- (20.26,-18.86) -- (21,-19.54); \draw [black] (25.74,-24.83) -- (24.06,-19.27); \fill [black] (24.06,-19.27) -- (23.82,-20.18) -- (24.77,-19.89); \draw [black] (31.83,-40.04) -- (27.77,-30.46); \fill [black] (27.77,-30.46) -- (27.62,-31.39) -- (28.54,-31); \draw [black] (19.48,-40.19) -- (25.12,-30.31); \fill [black] (25.12,-30.31) -- (24.28,-30.75) -- (25.15,-31.25); \draw [black] (20.76,-41.62) -- (50.64,-28.88); \fill [black] (50.64,-28.88) -- (49.71,-28.73) -- (50.1,-29.65); \draw [black] (35.75,-41.6) -- (64.85,-28.9); \fill [black] (64.85,-28.9) -- (63.92,-28.76) -- (64.32,-29.68); \draw [black] (49.23,-41.04) -- (65.17,-29.46); \fill [black] (65.17,-29.46) -- (64.23,-29.53) -- (64.82,-30.34); \draw [black] (64.41,-38.71) -- (56.79,-19.19); \fill [black] (56.79,-19.19) -- (56.62,-20.12) -- (57.55,-19.76); \draw [black] (62.89,-40.03) -- (43.61,-29.17); \fill [black] (43.61,-29.17) -- (44.07,-30) -- (44.56,-29.13); \draw [black] (20.51,-41.15) -- (38.49,-29.35); \fill [black] (38.49,-29.35) -- (37.55,-29.37) -- (38.1,-30.2); \draw [black] (14.81,-27.22) -- (37.19,-16.68); \fill [black] (37.19,-16.68) -- (36.25,-16.57) -- (36.68,-17.47); \draw [black] (40.73,-24.71) -- (40.17,-18.39); \fill [black] (40.17,-18.39) -- (39.74,-19.23) -- (40.74,-19.14); \draw [black] (25.62,-14.63) -- (37.48,-5.97); \fill [black] (37.48,-5.97) -- (36.54,-6.04) -- (37.13,-6.85); \draw [black] (39.9,-12.4) -- (39.9,-7.2); \fill [black] (39.9,-7.2) -- (39.4,-8) -- (40.4,-8); \draw [black] (53.33,-14.57) -- (42.27,-6.03); \fill [black] (42.27,-6.03) -- (42.6,-6.92) -- (43.21,-6.13); \end{tikzpicture} \end{center}
+
+\textbf{\large{Somma diretta di Frame}}\textbf{}\\
+
+
+S5 è determinata dalla classe dei frame d’ equivalenza (cioè frame
+in cui la relazione di accessibilità è una relazione di equivalenza),
+S5 = KT5 = KTB4 (riflessiva, simmetrica, transitiva)
+
+S5 è determinata dalla classe dei frame universali (cioè frame in
+cui la relazione di accessibilità è la relazione universale).
+
+Mostriamo (almeno argomentiamo) la seconda affermazione.\\
+
+
+Data una collezione di frame con insiemi di mondi a due a due disgiunti,
+si dice somma diretta di questi frame il frame che ha come insieme
+dei mondi l’unione dell’insieme dei mondi dei frame della collezione
+e come relazione la unione delle relazioni dei frame della collezione.
+
+$F=(S,R)$
+
+$F1=(S1,R1)$, $F2=(S2,R2)$
+
+$F=F1\oplus F2$ se e solo se $F=(S1\cup S2,\ R1\cup R2)$
+
+Si dimostra che $\vera Fa$ se e solo se $\vera{F1}a$ e $\vera{F2}a$
+
+Dato che una relazione di equivalenza forma una partizione sull'insieme
+su cui è definita, e che in ogni classe di equivalenza è una relazione
+universale, possiamo vedere una relazione di equivalenza come somma
+di relazioni universali e il suo insieme come somma disgiunta di insiemi;
+la somma diretta pertanto ci mostra quindi che S5 è determinata dai
+frame universali.
+
+
+\subsection{Tableau rivisitato per KT, KB}
+
+Se una logica contiene l'assioma B devo aggiungere alle regole del
+Tableau
+\begin{itemize}
+\item Regole di necessitazione\\
+$\dfrac{\sigma\,\boa}{\sigma_{n}\, a}$ $\dfrac{\sigma\,\neg\dia}{\sigma_{n}\,\neg a}$
+-- con $\sigma_{n}$ già presente nei nodi precedenti, oppure $\sigma_{n}$
+\textbf{nodo corrente}
+\end{itemize}
+es. Si provi che la formula: $(\boa\implies a)$ è un teorema in KB
+
+1: $\neg(\boa\implies a)$
+
+1: $\boa$
+
+1: $\neg a$
+
+\textbf{1}: $a$ 
+
+\begin{center}
+\begin{tikzpicture}[scale=0.2] 
+\tikzstyle{every node}+=[inner sep=0pt] 
+\draw [black] (26.8,-10.8) circle (3);
+\draw (26.8,-10.8) node {1}; 
+
+ 
+\draw (26.8,-6.6) node {$\boa$}; 
+
+\draw (26.8,-15.1) node {$\neg{a}$};
+
+\draw (26.7,-18.1) node {$a$}; 
+
+
+\end{tikzpicture}
+\end{center} 
+
+Dove nell'ultimo passaggio ho usato proprio la regola appena introdotta,
+avendo ottenuto $a$ e $\neg a$ nello stesso stato (mondo) deduco
+che negare $a$ mi porta a un assurdo e quindi deve per forza essere
+un teorema.\\
+Se una logica contiene l'assioma T devo aggiungere alle regole del
+Tableau
+\begin{itemize}
+\item Regole di necessitazione
+
+\begin{itemize}
+\item $\dfrac{\sigma\,\boa}{\sigma_{n}\, a}$ $\dfrac{\sigma\,\neg\dia}{\sigma_{n}\,\neg a}$
+-- con $\sigma_{n}$ già presente nei nodi precedenti, oppure $\sigma_{n}$
+\textbf{nodo prefisso del nodo corrente} (es 11 è prefisso di 111)
+\end{itemize}
+\end{itemize}
+es. Si provi che la formula $(a\implies\boxx{\diamond a})$ è un teorema
+in KT
+
+1:$\neg(a\implies\boxx{\diamond a})$
+
+1:$a$
+
+1:$\neg(\boxx{\dia})$
+
+1: $\diamond\boxx{\neg a}$
+
+11: $\boxx{\neg a}$
+
+\textbf{1: $\neg a$}
+
+\begin{center} \begin{tikzpicture}[scale=0.2] \tikzstyle{every node}+=[inner sep=0pt] \draw [black] (26.7,-10.8) circle (3); \draw (26.7,-10.8) node {$1$};
+\draw (26.7,-14.9) node {$\neg(\boxx{\dia})=\diamond\boxx{\neg a}$};
+\draw (26.7,-18.3) node {$\neg a$}; \draw [black] (39.8,-10.8) circle (3); \draw (39.8,-10.8) node {$2$};
+\draw (26.7,-6.3) node {$a$};
+\draw (39.8,-6.1) node {$\neg\diamond a$};
+\draw (39.8,-16.1) node {$\square\neg a$}; \draw [black] (29.7,-10.8) -- (36.8,-10.8); \fill [black] (36.8,-10.8) -- (36,-10.3) -- (36,-11.3); \draw [black] (36.8,-10.8) -- (29.7,-10.8); \fill [black] (29.7,-10.8) -- (30.5,-11.3) -- (30.5,-10.3); \end{tikzpicture} \end{center}
 

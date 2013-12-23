@@ -1,0 +1,241 @@
+
+\chapter{Logica Modale Del Prim'Ordine}
+
+
+\section{La Sintassi delle Logiche Modali del Prim'Ordine}
+
+Una logica modale del prim'ordine è definita sul seguente alfabeto:
+\begin{itemize}
+\item costanti $(k_{1},...,k_{n})$
+\item variabili $(x_{1},...,x_{n})$
+\item lettere predicative $A_{i}^{j}$
+\item connettivi logici: $\neg,\,\wedge,\,\vee,\,\implies,\,\iff$
+\item quantificatori universali ed esistenziali: $\forall x_{i},\,\exists x_{i}$
+\item connettivi modali $\square,\,\diamond$
+\item parentesi ), (
+\end{itemize}
+si chiamano termini le costanti e le lettere predicative, gli indichiamo
+come $t_{i}$
+
+si chiamano formule atomiche, le formule del tipo:
+
+$A_{i}^{n}(t_{1},...,\, t_{n})$
+
+Le formule ben formate sono definite come al solito:
+\begin{itemize}
+\item Le formule atomiche sono formule ben formate
+\item $a,\,\neg a,\,(\forall x)a,\,(\exists x)a,\,\boa,\,\dia$ sono furmule
+ben formate
+\item $a,\, b,\,(a\wedge b),\,(a\vee b),\,(a\implies b),\,(a\iff b)$ sono
+formule ben formate
+\item null'altro è una formula ben formata.
+\end{itemize}
+
+\section{Semantica della Logica Modale del Prim'Ordine}
+
+
+\subsection{Frame e modello}
+
+Definiamo un frame della logica modale del prim'ordine il seguente:
+
+F = (S, R, D)
+
+in cui:
+\begin{itemize}
+\item S è insieme dei possibili stati
+\item R è la relazione di raggiungibilità tra gli stati
+\item D è la funzione che associa a ogni stato il suo dominio.
+\end{itemize}
+Chiamiamo modello il seguente:
+
+$\mu=(S,\, R,\, D,\, I)$
+
+dove I è la funzione di interpretazione, che può essere vista come
+l'unione di due funzioni separate:
+\begin{itemize}
+\item $I_{c}$ è la funzione di interpretazione delle costanti, ossia che
+in ogni stato associa al valore di una costante un valore del dominio
+in quello stato
+\item $I_{P}$ è la funzione di interpretazione dei predicati, che associa
+a un predicato una relazione n-aria tra gli elementi del dominio
+\end{itemize}
+
+\subsection{Tipi di dominio}
+
+I domini nella logica modale del pr'imordine possono essere visti
+in verie maniere differenti, a seconda che gli stati abbiano domini
+uguali o diversi tra loro.
+
+In generale, infatti ogni stato potrebbe avere domini a piacere differenti.
+
+Si dicono domini costanti quei domini per cui vale:
+
+$\forall\alpha,\beta\in S\, D_{\alpha}=D_{\beta}$
+
+Si dicono domini variabili monotoni i domini per cui vale:
+
+$\forall\alpha,\beta\in S\, D_{\alpha}\subseteq D_{\beta}$
+
+Si dicono domini variabili antimonotoni i domini per cui vale:
+
+$\forall\alpha,\beta\in S\, D_{\alpha}\supseteq D_{\beta}$
+
+I domini monotoni sono i domini in cui ``nulla si crea'', mentre
+i domini antimonotoni sono quelli in cui ``nulla si distrugge''.
+Un dominio costante è sia monotono che antimonotono, per cui gli elementi
+dell'insieme rimangono immutabili.
+
+Se chiamiamo P l'insieme dei predicati, C l'insieme delle costanti,
+e $R_{D}$ l'insieme di tutte le possibili relazioni sui domini D,
+possiamo definire l'interpretazione I come:
+
+$I_{c}:\, C\times S\longrightarrow D$
+
+$I_{P}:\, P\times S\longrightarrow R_{D}$
+
+In questo caso si parla di logica a designatori non rigidi.
+
+Se invece consideriamo una logica a designatori non rigidi abbiamo
+I definita come:
+
+$I_{c}:\, C\longrightarrow D$
+
+$I_{P}:\, P\longrightarrow R_{D}$
+
+
+\subsection{Semantica}
+
+Chiamiamo s la funzione di assegnamento, posto V l'insieme delle variabili
+ossia la funzione, è la seguente:
+
+$s:\, V\times S\longrightarrow D$
+
+è possibile estendere s ad s{*}, e se chiamiamo T l'insieme di tutti
+i possibili termini, abbiamo che:
+
+$s*:\, T\times S\longrightarrow D$
+
+che è così definita:
+
+$s*(x_{i})=s(x_{i})$
+
+$s*(k_{i})=I(k_{i})$
+
+Indichiamo che una formula è vera in un modello $\mu$, rispetto all'assegnamento
+s, in un mondo $\alpha$ nel seguente modo:
+
+$\veraw{\mu,s}{\alpha}a$
+
+La verità di una formula è definita per induzione sui connettivi minimi:
+\begin{itemize}
+\item $\veraw{\mu,s}{\alpha}{A_{i}^{n}(t_{1},...,t_{n})\iff(s*(t_{1}),...,s*(t_{n}))\in I_{P}(A_{i}^{n},\alpha)}$
+\item $\veraw{\mu,s}{\alpha}{\neg b}\iff\nonveraw{\mu,s}{\alpha}b$
+\item $\veraw{\mu,s}{\alpha}{b\implies c}\iff\veraw{\mu,s}{\alpha}{c\,\vee\,\nonveraw{\mu,s}{\alpha}b}$
+\item $\veraw{\mu,s}{\alpha}{(\forall x)b}\iff(\forall s'\,:\, s'(x)\not=s(x)\,\wedge\, s'(x_{i})=s(x_{i}))\,\veraw{\mu,s}{\alpha}{(\forall x)b}$
+\item $\veraw{\mu,s}{\alpha}{\boxx b}\iff\forall\beta\,:\,(\alpha,\,\beta)\in R\,\veraw{\mu,s}{\beta}b$
+\end{itemize}
+Una formula M è vera in un mondo se ogni assegnamento la soddisfa,
+insoddisfacibile se nessuno la sofddisfa e sodisfacibile se è vera
+per alcuni assegnamenti.
+
+Una formula si dice vera in un modello se è vera in tutti i mondi
+del modello
+
+Una formula si dice valida in un frame se è vera in tutti i modelli
+costruiti su quel frame.
+
+
+\section{Assiomatizzazzione della Logica Modale del Prim'Ordine}
+
+
+\subsection{Gli Assiomi della logica del prim'ordine}
+
+Gli assiomi della logica del prim'ordine sono:
+\begin{itemize}
+\item A1: $a\implies(b\implies a)$
+\item A2: $(a\implies(b\implies c))\implies((a\implies b)\implies(a\implies c))$
+\item A3: $(\neg a\implies\neg b)\implies((\neg a\implies b)\implies a)$
+\item A4: $(\forall x)a(x)\implies a[t/x]$, dove t è un termine libero
+per x in A(x)
+\item A5: $(\forall x)(a\implies b)\implies(a\implies(\forall x)b)$, purchè
+non ci siano occorrenze libere di x in A
+\end{itemize}
+Inoltre valgono le due regole di inferenza:
+\begin{itemize}
+\item MP: $\dfrac{a,\, a\implies b}{b}$
+\item Gen: $\dfrac{a}{(\forall x)a}$
+\end{itemize}
+
+\subsection{Formula di Barcan}
+
+Si chiama formula di barcan la seguente formula:
+
+$(\forall x)\boa\implies\boxx{(\forall x)a}$
+
+o equivalentemente la sua duale:
+
+$\diam{(\exists x)a\implies(\exists x)\dia}$
+
+Si chiama formula di barcan inversa la formula:
+
+$\boxx{(\forall x)a}\implies(\forall x)\boa$
+
+o equivalentemente la sua duale:
+
+$(\exists x)\dia\implies\diam{(\exists x)a}$
+
+La formula di barcan vale se e solo se il modello è antimonotono,
+la formula di barcan inversa vale se e solo se il modello è monotono.
+
+Quindi in un modello a designatori costanti vale la formula di barcan
+inversa.
+
+
+\subsection{Minima logica modale del prim'ordine}
+
+Se consideriamo la logica che usa tutti gli assiomi della logica modale
+e quella del prim'ordine, ossia una logica che usa i seguenti assiomi:
+\begin{itemize}
+\item A1, A2, A3
+\item A4, A5
+\item K
+\end{itemize}
+E le seguenti regole di inferenza:
+\begin{itemize}
+\item MP
+\item Gen
+\item RN
+\end{itemize}
+Otteniamo la minima logica modale del prim'ordine.
+
+Si può dimostrare che in questa logica vale la formula di Barcan inversa:
+
+$\teorema{(\forall x)a\implies a}$ -- per A4, t = x
+
+$\teorema{\boxx{((\forall x)a\implies a)}}$ -- per RN
+
+$\teorema{\boxx{((\forall x)a\implies a)\implies(\boxx{(\forall x)a}\implies\boa)}}$
+-- per K
+
+$\teorema{\boxx{(\forall x)a}\implies\boa}$ -- per MP
+
+$\teorema{(\forall x)(\boxx{(\forall x)a}\implies\boa)}$ -- per Gen
+
+$\teorema{(\forall x)(\boxx{(\forall x)a}\implies\boa)}\implies(\boxx{(\forall x)a}\implies(\forall x)\boa)$
+-- per A5 
+
+$\teorema{\boxx{(\forall x)a}\implies(\forall x)\boa}$ -- per MP
+
+che è la formula di barcan inversa.
+
+Allo stesso modo si può dimostrare che aggiungendo lo schema:
+
+B: $a\implies\boxx{\dia}$
+
+Dalla minima logica modale del prim'ordine si ricava anche la formula
+di Barcan. Questo è vero intuitivamente perchè se ho una relazione
+simmetrica monotona, allora deve anche essere antimonotona, e questo
+può essere vero solo se ci troviamo nel caso a domini costanti.
+
+Si può usare, anzichè la logica normale, una logica classica, e si
+possono ricavare logiche in cui le due formule di Barcan non valgano.

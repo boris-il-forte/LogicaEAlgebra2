@@ -252,7 +252,7 @@ eventaully
 \begin_inset Formula $\mathcal{R}$
 \end_inset
 
-chiamato release
+ chiamato release
 \end_layout
 
 \begin_layout Subsection
@@ -695,7 +695,14 @@ una formula ben formata è generata dalla seguente grammatica:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\varphi\rightarrow P|\neg\varphi|\varphi\wedge\varphi|\varphi\vee\varphi|\varphi\implies\varphi|\varphi\iff\varphi|A\next{\varphi}|E\next{\varphi}|A\eventually{\varphi}|E\eventually{\varphi}|A\globally{\varphi}|E\globally{\varphi}|A(\until{\varphi}{\varphi})|E(\until{\varphi}{\varphi})|A(\release{\varphi}{\varphi})|E(\release{\varphi}{\varphi})$
+\begin_inset Formula $\varphi\rightarrow P|\neg\varphi|\varphi\wedge\varphi|\varphi\vee\varphi|\varphi\implies\varphi|\varphi\iff\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi\rightarrow A\next{\varphi}|E\next{\varphi}|A\eventually{\varphi}|E\eventually{\varphi}|A\globally{\varphi}|E\globally{\varphi}|A(\until{\varphi}{\varphi})|E(\until{\varphi}{\varphi})|A(\release{\varphi}{\varphi})|E(\release{\varphi}{\varphi})$
 \end_inset
 
 
@@ -779,7 +786,7 @@ mentre sia
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $s^{\infty}=S^{*}\cup\, S^{\omega}$
+\begin_inset Formula $s^{\infty}=s^{*}\cup\, s^{\omega}$
 \end_inset
 
 

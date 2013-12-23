@@ -10,6 +10,42 @@ se
 oppure $\mu\models_{\alpha}b$ 
 \end{itemize}
 
+\section{Formule Valide in ogni frame}
+
+Le seguenti formule sono valide in ogni frame F
+
+$\boxx{\top}$ con $\top\equiv a\vee\neg a$ 
+
+infatti $\top$è valida in ogni modello di ogni frame F, banalmente
+è valida $\boxx{\top}$
+
+Vale inoltre il seguente assioma, detto assioma K:
+
+$\boxx{(a}\implies b)\implies(\boa\implies\boxx b)$
+
+infatti:
+
+Se $\nonveraw M{\alpha}{\boxx{(a\implies b)}}$ la formula è vera
+
+Se $\entail M{_{\alpha}\boxx{(a\implies b)}}$ allora:
+\begin{itemize}
+\item Se $\nonveraw M{\alpha}{\boa}$ allora $\veraw M{\alpha}{\boa}\implies\boxx b$
+è vera e la formula iniziale è vera
+\item se $\veraw M{\alpha}{\boa}$ allora $\forall\beta:(\alpha,\beta)\in R$
+$\veraw M{\beta}a\implies b$, $\veraw M{\beta}a$, $\veraw M{\beta}b$
+\end{itemize}
+Esistono relazioni che non solo valide in ogni frame:
+
+$\boa\implies\dia$
+
+Non è valida in ogni frame, infatti $\boa$ implica che in tutti gli
+stati raggiungibili (ma potrebbero anche non esserci stati) da $\alpha$,
+a è vera. Mentre $\dia$ implica che esiste almeno uno stato raggiungibile
+da $\alpha$ in cui a è vero.\\
+\\
+Tutte le tautologie sono valide in ogni frame
+
+
 \section{Relazione seriale}
 
 Ip) Frame F con relazione R seriale
@@ -54,7 +90,7 @@ Per assurdo:
 
 Suppongo di trovarmi in un mondo come quello in figura (wow) in cui
 \mbox{$\veraw{\mu}{\alpha}{\boa}$ }, e suppongo che la relazione
-R del frame NON sia seriale cioè $\sim\exists\beta:(\alpha R\beta)$,
+R del frame NON sia seriale cioè $\not\,\exists\beta:(\alpha R\beta)$,
 se è così vale sicuramente $\veraw{\mu}a{\boa}$ (dato che $\alpha$
 non ha successori) , d'altra parte per come è il mondo considerato,
 cioè si nega la tesi, assurdo\sout{.}
@@ -605,11 +641,14 @@ che è assurdo, perchè contraddice la tesi. La tesi è allora valida.
 
 \section{Relazione Debolmente Connessa}
 
-\begin{tabular}{|c|c|c|}
+\begin{tabular}{|c|c|}
 \hline 
-$\boxx{(a\wedge\boa\implies b)}\vee\boxx{(b\wedge\boxx b\implies a)}$  & relazione debolmente connessa  & $\forhten{\alpha,\beta}{:\:(\alpha R\beta\wedge\alpha R\gamma)}{(\beta R\gamma\vee\beta=\gamma\vee\gamma R\beta)}$\tabularnewline
+$\boxx{(a\wedge\boa\implies b)}\vee\boxx{(b\wedge\boxx b\implies a)}$  & relazione debolmente connessa \tabularnewline
 \hline 
 \end{tabular}
+
+$\forhten{\alpha,\beta}{:\:(\alpha R\beta\wedge\alpha R\gamma)}{(\beta R\gamma\vee\beta=\gamma\vee\gamma R\beta)}$\\
+
 
 Ip) R debolmente connessa
 
