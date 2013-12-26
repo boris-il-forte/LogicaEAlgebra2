@@ -1515,7 +1515,603 @@ Esempio
 \end_layout
 
 \begin_layout Standard
-<<MANCA>>
+Costruiamo l'automa locale della formula:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi\equiv\eventually P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Prima di tutto costruiamo la chiusura di 
+\begin_inset Formula $\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $cl(\eventually P)=\{\eventually P,\, P,\,\neg P,\,\neg\eventually P\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ora l'automa locale costruito sarà:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (26.5,-19.1) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (26.5,-19.1) node {$
+\backslash
+eventually{P}, P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (26.5,-19.1) circle (2.4); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (51.5,-19.1) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (51.5,-19.1) node {$
+\backslash
+eventually{P}, P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (51.5,-19.1) circle (2.4); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (26.5,-34.8) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (26.5,-34.8) node {$
+\backslash
+neg
+\backslash
+eventually{P}, P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (26.5,-34.8) circle (2.4); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (52.6,-34.8) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (52.6,-34.8) node {$
+\backslash
+neg
+\backslash
+eventually{P}, 
+\backslash
+neg P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (52.6,-34.8) circle (2.4); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (17.2,-19.1) -- (23.5,-19.1); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (23.5,-19.1) -- (22.7,-18.6) -- (22.7,-19.6); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (25.177,-16.42) arc (234:-54:2.25); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (27.82,-16.42) -- (28.7,-16.07) -- (27.89,-15.48); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (50.177,-16.42) arc (234:-54:2.25); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (52.82,-16.42) -- (53.7,-16.07) -- (52.89,-15.48); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (53.923,-37.48) arc (54:-234:2.25); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (51.28,-37.48) -- (50.4,-37.83) -- (51.21,-38.42); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (29.065,-17.549) arc (117.20405:62.79595:21.732); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (29.07,-17.55) -- (30.01,-17.63) -- (29.55,-16.74); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (48.728,-20.244) arc (-70.51953:-109.48047:29.171);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (48.73,-20.24) -- (47.81,-20.04) -- (48.14,-20.98); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (48.96,-20.7) -- (29.04,-33.2);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (29.04,-33.2) -- (29.98,-33.2) -- (29.45,-32.36); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (29.07,-20.65) -- (50.03,-33.25);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (50.03,-33.25) -- (49.6,-32.41) -- (49.09,-33.27); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (26.5,-22.1) -- (26.5,-31.8); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (26.5,-31.8) -- (27,-31) -- (26,-31); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (49.6,-34.8) -- (29.5,-34.8); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (29.5,-34.8) -- (30.3,-35.3) -- (30.3,-34.3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Posso ora minimizzare l'automa locale, cancellando lo stato pozzo, ottenendo
+ l'automa locale:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (26.5,-19.1) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (26.5,-19.1) node {$0$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (26.5,-19.1) circle (2.4); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (40.3,-33.8) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (40.3,-33.8) node {$2$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (40.3,-33.8) circle (2.4); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (51.5,-19.1) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (51.5,-19.1) node {$1$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (51.5,-19.1) circle (2.4); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (17.2,-19.1) -- (23.5,-19.1); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (23.5,-19.1) -- (22.7,-18.6) -- (22.7,-19.6); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (25.177,-16.42) arc (234:-54:2.25); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (26.5,-11.85) node [above] {$P, 
+\backslash
+eventually{P}$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (27.82,-16.42) -- (28.7,-16.07) -- (27.89,-15.48); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (41.623,-36.48) arc (54:-234:2.25); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (40.3,-41.05) node [below] {$
+\backslash
+neg P, 
+\backslash
+neg
+\backslash
+eventually{P}$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (38.98,-36.48) -- (38.1,-36.83) -- (38.91,-37.42); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (28.55,-21.29) -- (38.25,-31.61); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (38.25,-31.61) -- (38.06,-30.69) -- (37.33,-31.37); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (32.87,-27.92) node [left] {$P, 
+\backslash
+eventually{P}$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (29.073,-17.563) arc (116.93433:63.06567:21.915);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (48.93,-17.56) -- (48.44,-16.75) -- (47.99,-17.65); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (39,-14.69) node [above] {$P, 
+\backslash
+eventually{P}$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (48.733,-20.255) arc (-70.31148:-109.68852:28.889); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (29.27,-20.26) -- (29.85,-21) -- (30.19,-20.05); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (39,-22.44) node [below] {$
+\backslash
+neg P, 
+\backslash
+eventually{P}$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (54.18,-17.777) arc (144:-144:2.25); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (58.75,-19.1) node [right] {$
+\backslash
+neg P, 
+\backslash
+eventually{P}$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (54.18,-20.42) -- (54.53,-21.3) -- (55.12,-20.49); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si può notare chel'automa locale riconosce anche sequenze di esecuzione
+ che non soddisfano 
+\begin_inset Formula $\varphi$
+\end_inset
+
+, ad esempio:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\neg P)^{\omega}\in L(A_{L})$
+\end_inset
+
+
 \end_layout
 
 \end_body

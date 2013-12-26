@@ -252,7 +252,7 @@ eventaully
 \begin_inset Formula $\mathcal{R}$
 \end_inset
 
-chiamato release
+ chiamato release
 \end_layout
 
 \begin_layout Subsection
@@ -508,14 +508,14 @@ Per dimostrarlo, uso la bisimulazione:
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $(\mu,\, n)\leftrighteq(\mu,\, n+3)$
+\begin_inset Formula $(\mu,\, n)\leftrightarroweq(\mu,\, n+3)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $(\mu,\,1)\leftrighteq(\mu,\,2)$
+\begin_inset Formula $(\mu,\,1)\leftrightarroweq(\mu,\,2)$
 \end_inset
 
 
@@ -695,7 +695,14 @@ una formula ben formata è generata dalla seguente grammatica:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\varphi\rightarrow P|\neg\varphi|\varphi\wedge\varphi|\varphi\vee\varphi|\varphi\implies\varphi|\varphi\iff\varphi|A\next{\varphi}|E\next{\varphi}|A\eventually{\varphi}|E\eventually{\varphi}|A\globally{\varphi}|E\globally{\varphi}|A(\until{\varphi}{\varphi})|E(\until{\varphi}{\varphi})|A(\release{\varphi}{\varphi})|E(\release{\varphi}{\varphi})$
+\begin_inset Formula $\varphi\rightarrow P|\neg\varphi|\varphi\wedge\varphi|\varphi\vee\varphi|\varphi\implies\varphi|\varphi\iff\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi\rightarrow A\next{\varphi}|E\next{\varphi}|A\eventually{\varphi}|E\eventually{\varphi}|A\globally{\varphi}|E\globally{\varphi}|A(\until{\varphi}{\varphi})|E(\until{\varphi}{\varphi})|A(\release{\varphi}{\varphi})|E(\release{\varphi}{\varphi})$
 \end_inset
 
 
@@ -779,7 +786,7 @@ mentre sia
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $s^{\infty}=S^{*}\cup\, S^{\omega}$
+\begin_inset Formula $s^{\infty}=s^{*}\cup\, s^{\omega}$
 \end_inset
 
 
@@ -1486,7 +1493,7 @@ Automa locale
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $\\rel$
+\begin_inset Formula $\release{\psi}{\theta}\in s\iff\psi\wedge\theta\in s\,\vee\,(\theta\in s\,\wedge\,\release{\psi}{\theta\in s')}$
 \end_inset
 
 
@@ -1494,5 +1501,338 @@ Automa locale
 
 \end_deeper
 \end_deeper
+\begin_layout Standard
+Una volta costruito l'automa in queosto modo, si deve minimizzare.
+ L'automa minimo è l'automa locale di 
+\begin_inset Formula $\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Esempio
+\end_layout
+
+\begin_layout Standard
+Costruiamo l'automa locale della formula:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi\equiv\eventually P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Prima di tutto costruiamo la chiusura di 
+\begin_inset Formula $\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $cl(\eventually P)=\{\eventually P,\, P,\,\neg P,\,\neg\eventually P\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ora l'automa locale costruito sarà:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (26.5,-19.1) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (26.5,-19.1) node {$
+\backslash
+eventually{P}, P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (26.5,-19.1) circle (2.4); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (51.5,-19.1) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (51.5,-19.1) node {$
+\backslash
+eventually{P}, P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (51.5,-19.1) circle (2.4); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (26.5,-34.8) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (26.5,-34.8) node {$
+\backslash
+neg
+\backslash
+eventually{P}, P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (26.5,-34.8) circle (2.4); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (52.6,-34.8) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (52.6,-34.8) node {$
+\backslash
+neg
+\backslash
+eventually{P}, 
+\backslash
+neg P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (52.6,-34.8) circle (2.4); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (17.2,-19.1) -- (23.5,-19.1); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (23.5,-19.1) -- (22.7,-18.6) -- (22.7,-19.6); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (25.177,-16.42) arc (234:-54:2.25); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (27.82,-16.42) -- (28.7,-16.07) -- (27.89,-15.48); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (50.177,-16.42) arc (234:-54:2.25); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (52.82,-16.42) -- (53.7,-16.07) -- (52.89,-15.48); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (53.923,-37.48) arc (54:-234:2.25); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (51.28,-37.48) -- (50.4,-37.83) -- (51.21,-38.42); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (29.065,-17.549) arc (117.20405:62.79595:21.732); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (29.07,-17.55) -- (30.01,-17.63) -- (29.55,-16.74); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (48.728,-20.244) arc (-70.51953:-109.48047:29.171);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (48.73,-20.24) -- (47.81,-20.04) -- (48.14,-20.98); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (48.96,-20.7) -- (29.04,-33.2);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (29.04,-33.2) -- (29.98,-33.2) -- (29.45,-32.36); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (29.07,-20.65) -- (50.03,-33.25);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (50.03,-33.25) -- (49.6,-32.41) -- (49.09,-33.27); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (26.5,-22.1) -- (26.5,-31.8); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (26.5,-31.8) -- (27,-31) -- (26,-31); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (49.6,-34.8) -- (29.5,-34.8); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (29.5,-34.8) -- (30.3,-35.3) -- (30.3,-34.3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Posso ora minimizzare l'automa locale, cancellando lo stato pozzo
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
