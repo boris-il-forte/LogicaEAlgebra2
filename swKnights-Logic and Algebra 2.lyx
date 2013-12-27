@@ -33,6 +33,16 @@
 
 \usepackage{wasysym}
 
+\usepackage[times]{quotchap} % Chapter package
+
+\makeatletter
+\renewcommand*{\sectfont}{\bfseries}
+\renewcommand*{\chapnumfont}{%
+  \usefont{T1}{\@defaultcnfont}{b}{n}\fontsize{120}{150}\selectfont% Default: 100/130
+  \color{chaptergrey}%
+}
+
+
 \usepackage{amsthm}
 \newtheoremstyle{note} % name
 {\topsep} 	% Space above
