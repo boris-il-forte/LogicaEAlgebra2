@@ -26,7 +26,18 @@
 \index_command default
 \paperfontsize 11
 \spacing single
-\use_hyperref false
+\use_hyperref true
+\pdf_title "Logica 2"
+\pdf_author "Edoardo Pasi, Davide Tateo"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
 \papersize a4paper
 \use_geometry true
 \use_amsmath 2
@@ -39,15 +50,15 @@
 \paperorientation portrait
 \suppress_date false
 \use_refstyle 0
-\index Index
+\index Indice
 \shortcut idx
 \color #008000
 \end_index
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation indent
-\paragraph_indentation default
-\quotes_language english
+\paragraph_separation skip
+\defskip medskip
+\quotes_language french
 \papercolumns 1
 \papersides 2
 \paperpagestyle default
@@ -61,7 +72,7 @@
 \begin_body
 
 \begin_layout Chapter
-Assiomatizzazzione delle logiche Modali
+Assiomatizzazione delle logiche Modali
 \end_layout
 
 \begin_layout Section
@@ -72,32 +83,32 @@ Formule equivalenti
 \begin_inset Formula $a\equiv b$
 \end_inset
 
- cioè a è semanticamente equivalente a b, se:
+ cioè a è semanticamente equivalente a b, se: 
 \end_layout
 
 \begin_layout Itemize
 \begin_inset Formula $\forall F\,\vera Fb\iff\vera Fa$
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Itemize
 \begin_inset Formula $\forall\mu\,\vera{\mu}b\iff\vera{\mu}a$
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Itemize
 \begin_inset Formula $\forall s\in S\,\veraw{\mu}sa\iff\veraw{\mu}sb$
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Standard
-si può anche dire che due formule sono semanticamente equivalenti se:
+Si può anche dire che due formule sono semanticamente equivalenti se:
 \end_layout
 
 \begin_layout Standard
@@ -212,7 +223,6 @@ allora in
 \end_inset
 
  cioè la tesi.
- 
 \end_layout
 
 \begin_layout Standard
@@ -248,7 +258,7 @@ contiene tutte le tautologie
 \end_layout
 
 \begin_layout Standard
-Ad esempio; 
+Ad esempio 
 \begin_inset Formula $PL(\phi)$
 \end_inset
 
@@ -345,7 +355,7 @@ Le logiche normali sono logiche che contengono lo schema K
 \end_layout
 
 \begin_layout Standard
-Ed sono chiuse rispetto alla regola di necessitazione:
+E sono chiuse rispetto alla regola di necessitazione:
 \end_layout
 
 \begin_layout Standard
@@ -409,7 +419,7 @@ L'intersezione di tutte le logiche normali, è una logica normale (ed è la
 \begin_layout Standard
 I teoremi sono le ultime formule della dimostrazione, ossia le formule che
  ottengo dopo un numero finito di applicazione degli assiomi oppure utilizzando
- la regola di necessiazione o il modus ponens.
+ la regola di necessitazione o il modus ponens.
 \end_layout
 
 \begin_layout Standard
@@ -534,7 +544,7 @@ si può dimostrare quindi nel seguente modo:
 \begin_inset Formula $\teolm{\Lambda}{a_{1}\wedge a_{2}\wedge...\wedge a_{n-1}\implies(a_{n}\implies a)}$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
@@ -555,7 +565,7 @@ si può dimostrare quindi nel seguente modo:
 \begin_inset Formula $\teolm{\Lambda}{\boxx{a_{1}}\wedge\boxx{a_{2}}\wedge...\wedge\boxx{a_{n-1}\wedge\boxx{a_{n}}}\implies\boa}$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
@@ -841,7 +851,7 @@ si noti che:
 \begin_inset Formula $\sintattica{\Gamma}{\Lambda}a\implies\sintattica{\{\boxx b\,|b\in\Gamma\}}{\Lambda}{\boa}$
 \end_inset
 
-
+ 
 \end_layout
 
 \end_body

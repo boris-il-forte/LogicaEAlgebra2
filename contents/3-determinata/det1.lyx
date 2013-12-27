@@ -1,10 +1,9 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
+#LyX file created by tex2lyx 2.0.6
 \lyxformat 413
 \begin_document
 \begin_header
 \textclass report
 \use_default_options false
-\maintain_unincluded_children false
 \language italian
 \language_package default
 \inputencoding utf8
@@ -18,15 +17,23 @@
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
-\bibtex_command default
-\index_command default
 \paperfontsize 11
 \spacing single
-\use_hyperref false
+\use_hyperref 1
+\pdf_title "Logica 2"
+\pdf_author "Edoardo Pasi, Davide Tateo"
+\pdf_bookmarks 1
+\pdf_bookmarksnumbered 0
+\pdf_bookmarksopen 0
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks 0
+\pdf_pdfborder 1
+\pdf_colorlinks 0
+\pdf_backref false
+\pdf_pdfusetitle 1
 \papersize a4paper
 \use_geometry true
 \use_amsmath 2
@@ -39,15 +46,11 @@
 \paperorientation portrait
 \suppress_date false
 \use_refstyle 0
-\index Index
-\shortcut idx
-\color #008000
-\end_index
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation indent
-\paragraph_indentation default
-\quotes_language english
+\paragraph_separation skip
+\defskip medskip
+\quotes_language french
 \papercolumns 1
 \papersides 2
 \paperpagestyle default
@@ -61,10 +64,16 @@
 \begin_body
 
 \begin_layout Chapter
+
+\lang italian
+
 Verso la decidibilità - Logica determinata
 \end_layout
 
 \begin_layout Section
+
+\lang italian
+
 Insieme 
 \begin_inset Formula $\Lambda$
 \end_inset
@@ -73,6 +82,9 @@ Insieme
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Sia 
 \begin_inset Formula $\Lambda$
 \end_inset
@@ -81,6 +93,10 @@ Sia
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\Gamma$
 \end_inset
 
@@ -100,6 +116,10 @@ Sia
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\Delta$
 \end_inset
 
@@ -132,6 +152,9 @@ Sia
 
 \begin_layout Standard
 
+\lang italian
+
+
 \series bold
 Proprietà:
 \series default
@@ -143,6 +166,9 @@ Proprietà:
 \end_layout
 
 \begin_layout Enumerate
+
+\lang italian
+
 Se 
 \begin_inset Formula $\teoa$
 \end_inset
@@ -155,12 +181,13 @@ Se
 \begin_inset Formula $\Delta\teorema a$
 \end_inset
 
-.
- Ovvero se alcune premesse non mi servono posso comunque metterle per dedurre
- una formula 
+. Ovvero se alcune premesse non mi servono posso comunque metterle per dedurre una formula 
 \end_layout
 
 \begin_layout Enumerate
+
+\lang italian
+
 Se 
 \begin_inset Formula $\teorGamma a$
 \end_inset
@@ -173,13 +200,13 @@ Se
 \begin_inset Formula $\Gamma\vdash_{\Lambda'}a$
 \end_inset
 
-.
- Ovvero quello che posso dedurre in una logica più scarna (es.
- PL) lo posso dedurre anche in una più ricca che la contien (es.
- Modale) 
+. Ovvero quello che posso dedurre in una logica più scarna (es. PL) lo posso dedurre anche in una più ricca che la contien (es. Modale) 
 \end_layout
 
 \begin_layout Enumerate
+
+\lang italian
+
 se 
 \begin_inset Formula $a\in\Gamma$
 \end_inset
@@ -188,8 +215,7 @@ se
 \begin_inset Formula $\teoa$
 \end_inset
 
- .
- 
+ . 
 \begin_inset Newline newline
 \end_inset
 
@@ -205,6 +231,10 @@ se
 \end_layout
 
 \begin_layout Enumerate
+
+\lang italian
+
+
 \begin_inset Formula $\{a|\teoa\}$
 \end_inset
 
@@ -212,8 +242,7 @@ se
 \begin_inset Formula $\Gamma\cup\Lambda$
 \end_inset
 
-.
- Infatti posso dedurre tutte le tautologie da 
+. Infatti posso dedurre tutte le tautologie da 
 \begin_inset Formula $\Gamma$
 \end_inset
 
@@ -233,6 +262,9 @@ se
 \end_layout
 
 \begin_layout Enumerate
+
+\lang italian
+
 Se 
 \begin_inset Formula $\teoa$
 \end_inset
@@ -265,8 +297,7 @@ Se
 \begin_inset Formula $\Lambda$
 \end_inset
 
-.
- Per arrivare in 
+. Per arrivare in 
 \begin_inset Formula $b$
 \end_inset
 
@@ -286,8 +317,7 @@ Se
 \begin_inset Formula $\Gamma$
 \end_inset
 
-, regole di inf.
- e assiomi di 
+, regole di inf. e assiomi di 
 \begin_inset Formula $\Lambda$
 \end_inset
 
@@ -295,6 +325,9 @@ Se
 \end_layout
 
 \begin_layout Enumerate
+
+\lang italian
+
 Se 
 \begin_inset Formula $\teoa$
 \end_inset
@@ -315,6 +348,10 @@ Se
 \end_layout
 
 \begin_layout Enumerate
+
+\lang italian
+
+
 \begin_inset Formula $\Gamma\cup\{a\}\teorema b$
 \end_inset
 
@@ -362,11 +399,14 @@ Ritorno
 \begin_inset Formula $ $
 \end_inset
 
-and.
- 
+and. 
 \end_layout
 
 \begin_layout Enumerate
+
+\lang italian
+
+
 \begin_inset Formula $\teoa$
 \end_inset
 
@@ -430,8 +470,7 @@ Ritorno
 \begin_inset Formula $\Gamma\cup\{\neg a\}\teorema{\bot}$
 \end_inset
 
- da cui per 7.
- 
+ da cui per 7. 
 \begin_inset Newline newline
 \end_inset
 
@@ -463,6 +502,10 @@ Ritorno
 \end_layout
 
 \begin_layout Enumerate
+
+\lang italian
+
+
 \begin_inset Formula $\Gamma$
 \end_inset
 
@@ -518,6 +561,10 @@ Ritorno
 \end_layout
 
 \begin_layout Enumerate
+
+\lang italian
+
+
 \begin_inset Formula $\Gamma$
 \end_inset
 
@@ -601,6 +648,10 @@ Ritorno
 \end_layout
 
 \begin_layout Enumerate
+
+\lang italian
+
+
 \begin_inset Formula $\bot$
 \end_inset
 
@@ -620,6 +671,9 @@ Ritorno
 \end_layout
 
 \begin_layout Enumerate
+
+\lang italian
+
 Se 
 \begin_inset Formula $\Delta$
 \end_inset
@@ -684,6 +738,9 @@ Se
 \end_layout
 
 \begin_layout Enumerate
+
+\lang italian
+
 Se 
 \begin_inset Formula $\Delta$
 \end_inset
@@ -700,8 +757,7 @@ Se
 \begin_inset Formula $a\in\Delta$
 \end_inset
 
-.
- 
+. 
 \begin_inset Formula $\implica ab\in\Delta$
 \end_inset
 
@@ -709,8 +765,7 @@ Se
 \begin_inset Formula $b\in\Delta$
 \end_inset
 
-.
- 
+. 
 \begin_inset Newline newline
 \end_inset
 
@@ -730,6 +785,9 @@ Se
 \end_layout
 
 \begin_layout Section
+
+\lang italian
+
 Insieme 
 \begin_inset Formula $\Lambda$
 \end_inset
@@ -738,19 +796,28 @@ Insieme
 \end_layout
 
 \begin_layout Subsection
+
+\lang italian
+
 Lemma di Lindenbaum
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Una logica consistente ammette sempre un insieme 
 \begin_inset Formula $\Lambda$
 \end_inset
 
-- consistente massimale.
- Infatti il lemma di Lindenbaum afferma:
+- consistente massimale. Infatti il lemma di Lindenbaum afferma:
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $(\Gamma\,\Lambda-consistente)\implies\,\exists\Delta\supseteq\Gamma\,\wedge\,(\Delta\,\Lambda-consistente\, massimale)$
 \end_inset
 
@@ -758,26 +825,35 @@ Una logica consistente ammette sempre un insieme
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Ip) 
-\begin_inset Formula $\Gamma\,è\,\Lambda-consistente$
+\begin_inset Formula $\Gamma\,\grave{e}\,\Lambda-consistente$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Ts) 
 \begin_inset Formula $\exists\Delta\supseteq\Gamma$
 \end_inset
 
  e 
-\begin_inset Formula $\Delta\,è\,\Lambda-consistente\, massimale$
+\begin_inset Formula $\Delta\,\grave{e}\,\Lambda-consistente\, massimale$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Considero tutte le formule b1, b2, b3 della logica 
 \begin_inset Formula $\Lambda$
 \end_inset
@@ -786,6 +862,9 @@ Considero tutte le formule b1, b2, b3 della logica
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Chiamo 
 \begin_inset Formula $\Gamma_{0}$
 \end_inset
@@ -794,6 +873,9 @@ Chiamo
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Dopodichè iterativamente, per ogni formula mi chiedo
 \begin_inset Newline newline
 \end_inset
@@ -802,6 +884,10 @@ Dopodichè iterativamente, per ogni formula mi chiedo
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\Gamma_{0}$
 \end_inset
 
@@ -824,6 +910,10 @@ no: & \Gamma_{1}=\Gamma_{0}\cup\neg b1
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\Gamma_{1}$
 \end_inset
 
@@ -842,6 +932,10 @@ no: & \Gamma_{2}=\Gamma_{1}\cup\neg b2
 \end_layout
 
 \begin_layout Description
+
+\lang italian
+
+
 \begin_inset Formula $\Delta=\bigcup_{n\geq0}\Gamma_{i}$
 \end_inset
 
@@ -849,6 +943,10 @@ no: & \Gamma_{2}=\Gamma_{1}\cup\neg b2
 \end_layout
 
 \begin_layout Description
+
+\lang italian
+
+
 \begin_inset Formula $\Delta$
 \end_inset
 
@@ -856,6 +954,9 @@ no: & \Gamma_{2}=\Gamma_{1}\cup\neg b2
 \end_layout
 
 \begin_layout Enumerate
+
+\lang italian
+
 Massimale in quanto contiene 
 \begin_inset Formula $a$
 \end_inset
@@ -868,8 +969,10 @@ Massimale in quanto contiene
 \end_layout
 
 \begin_layout Enumerate
-Consistente.
- Per assurdo se non lo fosse avrei: 
+
+\lang italian
+
+Consistente. Per assurdo se non lo fosse avrei: 
 \begin_inset Formula $\Delta\teorema{\bot}$
 \end_inset
 
@@ -897,7 +1000,7 @@ Consistente.
 \begin_inset ERT
 status collapsed
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 
 \backslash
@@ -911,12 +1014,52 @@ lightning
 
 \begin_layout Standard
 
-\size large
+\lang italian
+
+
 \emph on
+
+\size large
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
 Nota:
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+
+\emph default
+
+\size large
+
+\end_layout
+
+\begin_layout Standard
+
+\lang italian
+
+ 
 \end_layout
 
 \begin_layout Itemize
+
+\lang italian
+
 Non sappiamo costruire 
 \begin_inset Formula $\Delta$
 \end_inset
@@ -925,6 +1068,9 @@ Non sappiamo costruire
 \end_layout
 
 \begin_layout Itemize
+
+\lang italian
+
 Non è unico, infatti se considero formule in ordine diverse potrei 
 \begin_inset Quotes eld
 \end_inset
@@ -937,8 +1083,7 @@ dire
 \begin_inset Newline newline
 \end_inset
 
- es.
- 
+ es. 
 \begin_inset Formula $a,\ \implica ab,\ b$
 \end_inset
 
@@ -954,8 +1099,7 @@ dire
 \begin_inset Newline newline
 \end_inset
 
- es.
- 
+ es. 
 \begin_inset Formula $b,\ c$
 \end_inset
 
@@ -971,10 +1115,17 @@ dire
 \end_layout
 
 \begin_layout Subsection
+
+\lang italian
+
 Teorema
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\teoa$
 \end_inset
 
@@ -1003,11 +1154,20 @@ Teorema
 
 \begin_layout Standard
 
+\lang italian
+
+
 \series bold
 Andata:
+\series default
+
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\teoa$
 \end_inset
 
@@ -1020,11 +1180,19 @@ Andata:
 
 \begin_layout Standard
 
+\lang italian
+
+
 \series bold
 Ritorno:
+\series default
+
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Per assurdo, se 
 \begin_inset Formula $\nonSem{\Gamma}{_{\Lambda}a}$
 \end_inset
@@ -1041,6 +1209,9 @@ Per assurdo, se
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 da cui per Lindellman esiste 
 \begin_inset Formula $\Delta'$
 \end_inset
@@ -1053,6 +1224,9 @@ da cui per Lindellman esiste
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 data la consistenza 
 \begin_inset Formula $\Delta'$
 \end_inset
@@ -1063,9 +1237,9 @@ data la consistenza
 
 , il che è contro l'ipotesi 
 \begin_inset ERT
-status open
+status collapsed
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 
 \backslash
@@ -1074,14 +1248,20 @@ lightning
 
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Section
+
+\lang italian
+
 Lemma di Verità
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Sia 
 \begin_inset Formula $M^{\Lambda}(S^{\Lambda},R^{\Lambda},V^{\Lambda})$
 \end_inset
@@ -1094,6 +1274,10 @@ Sia
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\veraCanAlfa a$
 \end_inset
 
@@ -1109,14 +1293,20 @@ Sia
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Ip) 
 \begin_inset Formula $\veraCanAlfa a$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 TS) 
 \begin_inset Formula $a\in\alpha$
 \end_inset
@@ -1129,6 +1319,9 @@ TS)
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Dimostrazione per 
 \series bold
 induzione
@@ -1141,20 +1334,28 @@ induzione
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Box ovalbox
-position "t"
+position "c"
 hor_pos "c"
 has_inner_box 0
-inner_pos "t"
+inner_pos "c"
 use_parbox 0
 use_makebox 0
-width "10col%"
+width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status collapsed
+status open
 
-\begin_layout Plain Layout
+
+\begin_layout Standard
+
+\lang italian
+
 n=0
 \end_layout
 
@@ -1184,20 +1385,28 @@ n=0
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Box ovalbox
-position "t"
+position "c"
 hor_pos "c"
 has_inner_box 0
-inner_pos "t"
+inner_pos "c"
 use_parbox 0
 use_makebox 0
-width "25text%"
+width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status collapsed
+status open
 
-\begin_layout Plain Layout
+
+\begin_layout Standard
+
+\lang italian
+
 Ipotesi di Induzione
 \end_layout
 
@@ -1207,31 +1416,46 @@ Ipotesi di Induzione
 \begin_inset Formula $a$
 \end_inset
 
- con n connettivi, può essere dei seguenti tipi:
+ con n connettivi, può essere dei seguenti tipi: 
 \end_layout
 
 \begin_layout Enumerate
+
+\lang italian
+
+
 \begin_inset Formula $\neg b$
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Enumerate
+
+\lang italian
+
+
 \begin_inset Formula $\implica bc$
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Enumerate
+
+\lang italian
+
+
 \begin_inset Formula $\boxx b$
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 
 \series bold
 Caso 1:
@@ -1256,6 +1480,10 @@ Caso 1:
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $b$
 \end_inset
 
@@ -1275,6 +1503,10 @@ Caso 1:
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $b\notin\alpha$
 \end_inset
 
@@ -1295,7 +1527,11 @@ Caso 1:
 
 \begin_layout Standard
 
+\lang italian
+
+
 \series bold
+
 \begin_inset Formula $b\notin\alpha$
 \end_inset
 
@@ -1317,13 +1553,20 @@ se e solo se
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $a\in\alpha$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 
 \series bold
 Caso
@@ -1340,14 +1583,20 @@ Caso
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Caso 21: 
 \begin_inset Formula $\nonveraCan{\alpha}b$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Caso 22: 
 \begin_inset Formula $\veraCan{\alpha}c$
 \end_inset
@@ -1360,6 +1609,9 @@ Caso 22:
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 
 \series bold
 Caso 21
@@ -1376,6 +1628,9 @@ Caso 21
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Il numero di connettivi di 
 \begin_inset Formula $b$
 \end_inset
@@ -1392,6 +1647,9 @@ Il numero di connettivi di
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 quindi per ipotesi induttiva 
 \begin_inset Formula $\nonveraCan{\alpha}b$
 \end_inset
@@ -1400,10 +1658,13 @@ quindi per ipotesi induttiva
 \begin_inset Formula $b\notin\alpha$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 se e solo se 
 \begin_inset Formula $\neg b\in\alpha$
 \end_inset
@@ -1415,9 +1676,14 @@ se e solo se
 ) 
 \series bold
 (*)
+\series default
+
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 D'altra parte 
 \begin_inset Formula $\neg b\implies(b\implies c)$
 \end_inset
@@ -1430,6 +1696,9 @@ D'altra parte
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 e quindi 
 \begin_inset Formula $\neg b\implies(b\implies c)$
 \end_inset
@@ -1441,9 +1710,14 @@ e quindi
  
 \series bold
 (**)
+\series default
+
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 da cui per MP con 
 \series bold
 (*)
@@ -1464,11 +1738,11 @@ da cui per MP con
 \begin_inset Newline newline
 \end_inset
 
-
+ 
 \begin_inset Newline newline
 \end_inset
 
-
+ 
 \series bold
 Caso 22
 \series default
@@ -1484,10 +1758,16 @@ Caso 22
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Vale l'ipotesi di induzione da cui:
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 quindi per ipotesi induttiva 
 \begin_inset Formula $\veraCan{\alpha}c$
 \end_inset
@@ -1499,9 +1779,14 @@ quindi per ipotesi induttiva
  
 \series bold
 (*)
+\series default
+
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 D'altra parte 
 \begin_inset Formula $c\implies(b\implies c)$
 \end_inset
@@ -1514,6 +1799,9 @@ D'altra parte
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 e quindi 
 \begin_inset Formula $c\implies(b\implies c)$
 \end_inset
@@ -1525,9 +1813,14 @@ e quindi
  
 \series bold
 (**)
+\series default
+
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 MP 
 \series bold
 (*) 
@@ -1548,11 +1841,11 @@ ci dà
 \begin_inset Newline newline
 \end_inset
 
-
+ 
 \begin_inset Newline newline
 \end_inset
 
-
+ 
 \series bold
 Caso 3
 \series default
@@ -1568,6 +1861,9 @@ Caso 3
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Ip)
 \begin_inset Formula $\veraCan{\alpha}{\boxx b}$
 \end_inset
@@ -1576,6 +1872,9 @@ Ip)
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Ts)
 \begin_inset Formula $\boxx b\in\alpha$
 \end_inset
@@ -1588,6 +1887,9 @@ Ts)
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Dall'ipotesi segue che 
 \begin_inset Formula $\forall\beta:(\alpha,\beta)\in R^{\Lambda}$
 \end_inset
@@ -1604,6 +1906,10 @@ Dall'ipotesi segue che
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $b$
 \end_inset
 
@@ -1611,10 +1917,14 @@ Dall'ipotesi segue che
 \begin_inset Formula $n-1$
 \end_inset
 
- connettivi quindi vale per lei l'ipotesi di induzione: 
+ connettivi quindi vale per lei l'ipotesi di induzione:
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $b\in\beta$
 \end_inset
 
@@ -1622,6 +1932,10 @@ Dall'ipotesi segue che
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Box ovalbox
 position "t"
 hor_pos "c"
@@ -1633,9 +1947,12 @@ width "90text%"
 special "none"
 height "1in"
 height_special "totalheight"
-status collapsed
+status open
+
 
 \begin_layout Plain Layout
+
+
 \begin_inset Formula $(\alpha,\beta)\in R^{\Lambda}$
 \end_inset
 
@@ -1647,6 +1964,8 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
+
+
 \begin_inset Formula $\alpha\in V^{\Lambda}(A)$
 \end_inset
 
@@ -1667,6 +1986,9 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Ognuno dei 
 \begin_inset Formula $\beta$
 \end_inset
@@ -1683,10 +2005,14 @@ Ognuno dei
 \begin_inset Formula $\{a\ |\ \boa\in\alpha\}$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\Gamma\teorema a$
 \end_inset
 
@@ -1710,6 +2036,10 @@ Ognuno dei
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\beta\teorema b$
 \end_inset
 
@@ -1733,6 +2063,10 @@ Ognuno dei
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\{a\ |\ \boa\in\alpha\}$
 \end_inset
 
@@ -1740,6 +2074,10 @@ Ognuno dei
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\{a\ |\ \boa\in\alpha\}$
 \end_inset
 
@@ -1747,8 +2085,7 @@ Ognuno dei
 \begin_inset Formula $\teorema b$
 \end_inset
 
-, per la 2.
- definizione equivalente di Logica Normale 
+, per la 2. definizione equivalente di Logica Normale 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1764,6 +2101,10 @@ aggiungo
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\{\boa\ |\ \boa\in\alpha\}$
 \end_inset
 
@@ -1775,6 +2116,9 @@ aggiungo
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Ma 
 \begin_inset Formula $\{\boa\ |\ \boa\in\alpha\}$
 \end_inset
@@ -1795,6 +2139,10 @@ Ma
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\alpha\teorema b$
 \end_inset
 
@@ -1802,7 +2150,7 @@ Ma
 \begin_inset Newline newline
 \end_inset
 
-Ip) 
+ Ip) 
 \begin_inset Formula $\boxx b\in\alpha$
 \end_inset
 
@@ -1810,6 +2158,9 @@ Ip)
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 TS) 
 \begin_inset Formula $\veraCanAlfa{\boxx b}$
 \end_inset
@@ -1818,7 +2169,7 @@ TS)
 \begin_inset Newline newline
 \end_inset
 
-Se 
+ Se 
 \begin_inset Formula $\boxx b\in\alpha$
 \end_inset
 
@@ -1842,6 +2193,9 @@ Se
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Notiamo che 
 \begin_inset Formula $b$
 \end_inset
@@ -1854,6 +2208,10 @@ Notiamo che
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $ $
 \end_inset
 
@@ -1869,6 +2227,9 @@ Notiamo che
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Dato che questo vale 
 \begin_inset Formula $ $
 \end_inset
@@ -1889,23 +2250,34 @@ per ogni
 \end_layout
 
 \begin_layout Section
+
+\lang italian
+
 Correttezza e completezza della logica K rispetto a tutti i Frame
 \end_layout
 
 \begin_layout Standard
-Dimostriamo che la logica K (minima logica modale normale) è corretta e
- completa
+
+\lang italian
+
+Dimostriamo che la logica K (minima logica modale normale) è corretta e completa
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Ip) 
 \begin_inset Formula $\teolm Ka$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Ts)
 \begin_inset Formula $\vera Fa$
 \end_inset
@@ -1918,31 +2290,36 @@ Ts)
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 A1, A2, A3 sono tautologie e quindi valide su tutti i frame
 \end_layout
 
 \begin_layout Standard
-MP, sia la regola di necessitazione (RN) fanno passare da formule valide
- su un frame a formule valide su quello stesso frame.
- 
+
+\lang italian
+
+MP, sia la regola di necessitazione (RN) fanno passare da formule valide su un frame a formule valide su quello stesso frame.
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Essendo 
 \begin_inset Formula $a$
 \end_inset
 
- l’ultima formula di una sequenza finita di fbf che o sono istanze degli
- assiomi A1, A2, A3, K o sono ottenute da fbf precedenti tramite MP o RN,
- è una fbf valida su ogni frame.
+ l’ultima formula di una sequenza finita di fbf che o sono istanze degli assiomi A1, A2, A3, K o sono ottenute da fbf precedenti tramite MP o RN, è una fbf valida su ogni frame.
 \begin_inset Newline newline
 \end_inset
 
-
+ 
 \begin_inset Newline newline
 \end_inset
 
-Ip) 
+ Ip) 
 \begin_inset Formula $\vera Fa$
 \end_inset
 
@@ -1950,6 +2327,9 @@ Ip)
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Ts)
 \begin_inset Formula $\teolm Ka$
 \end_inset
@@ -1958,11 +2338,11 @@ Ts)
 \begin_inset Newline newline
 \end_inset
 
-
+ 
 \begin_inset Newline newline
 \end_inset
 
-Supponiamo 
+ Supponiamo 
 \begin_inset Formula $\nonTeor Ka$
 \end_inset
 
@@ -1974,6 +2354,10 @@ Supponiamo
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Box ovalbox
 position "t"
 hor_pos "c"
@@ -1987,7 +2371,9 @@ height "1in"
 height_special "totalheight"
 status open
 
+
 \begin_layout Plain Layout
+
 Per ogni formula 
 \begin_inset Formula $a$
 \end_inset
@@ -2021,6 +2407,9 @@ Per ogni formula
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Si avrebbe: 
 \begin_inset Formula $\nonvera{M^{K}}a$
 \end_inset
@@ -2029,6 +2418,10 @@ Si avrebbe:
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\nonvera{F^{K}}a$
 \end_inset
 
@@ -2044,6 +2437,10 @@ Si avrebbe:
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\nonvera Fa$
 \end_inset
 
@@ -2057,9 +2454,9 @@ Si avrebbe:
 
 ) il che però è contro l'ipotesi 
 \begin_inset ERT
-status open
+status collapsed
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 
 \backslash
@@ -2072,12 +2469,17 @@ lightning
 \end_layout
 
 \begin_layout Section
+
+\lang italian
+
 Correttezza e completezza della logica K4 rispetto ai Frame transitivi
 \end_layout
 
 \begin_layout Standard
-Nota: K4 è costruita a partire dalla logica K a cui si aggiunge l'assioma
- della transitività 
+
+\lang italian
+
+Nota: K4 è costruita a partire dalla logica K a cui si aggiunge l'assioma della transitività 
 \begin_inset Formula $\boa\implies\boxx{\boa}$
 \end_inset
 
@@ -2085,14 +2487,17 @@ Nota: K4 è costruita a partire dalla logica K a cui si aggiunge l'assioma
 \begin_inset Newline newline
 \end_inset
 
-Ip)
+ Ip)
 \begin_inset Formula $\teolm{K4}a$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Ts) 
 \begin_inset Formula $\entail Fa$
 \end_inset
@@ -2101,12 +2506,11 @@ Ts)
 \begin_inset Newline newline
 \end_inset
 
-
+ 
 \begin_inset Newline newline
 \end_inset
 
-Simile al caso precedente in cui anche 4 è valido in quando il frame è transitiv
-o
+ Simile al caso precedente in cui anche 4 è valido in quando il frame è transitivo
 \begin_inset Newline newline
 \end_inset
 
@@ -2114,6 +2518,9 @@ o
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Ip) 
 \begin_inset Formula $\entail Fa$
 \end_inset
@@ -2122,6 +2529,9 @@ Ip)
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Ts)
 \begin_inset Formula $\teolm{K4}a$
 \end_inset
@@ -2130,12 +2540,11 @@ Ts)
 \begin_inset Newline newline
 \end_inset
 
-
+ 
 \begin_inset Newline newline
 \end_inset
 
-Per procedere con una dimostrazione sulla falsa riga della precedente abbiamo
- bisogno di dimostrare la transitività di 
+ Per procedere con una dimostrazione sulla falsa riga della precedente abbiamo bisogno di dimostrare la transitività di 
 \begin_inset Formula $R^{K4}$
 \end_inset
 
@@ -2143,6 +2552,9 @@ Per procedere con una dimostrazione sulla falsa riga della precedente abbiamo
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 cioè della relazione 
 \begin_inset Formula $R^{K4}$
 \end_inset
@@ -2160,15 +2572,23 @@ cioè della relazione
 
 \begin_layout Standard
 
+\lang italian
+
+
 \series bold
 Transitività di 
 \begin_inset Formula $R^{K4}$
 \end_inset
 
  
+\series default
+
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 se 
 \begin_inset Formula $(\alpha,\beta)\in R^{K4}$
 \end_inset
@@ -2185,6 +2605,9 @@ se
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 cioè deve avvenire che: 
 \begin_inset Formula $\{a\ |\ \boa\in\alpha\}\subseteq\gamma$
 \end_inset
@@ -2197,6 +2620,9 @@ cioè deve avvenire che:
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 se 
 \begin_inset Formula $\boa\in\alpha$
 \end_inset
@@ -2205,6 +2631,10 @@ se
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\alpha$
 \end_inset
 
@@ -2216,15 +2646,24 @@ se
 \end_layout
 
 \begin_layout Standard
-4 è un teorema della logica 
+
+\lang italian
+
+4 è un teorema della logica
 \end_layout
 
 \begin_layout Standard
-i teoremi di na logica appartengono a tutti gli insiemi consistenti massimali
- rispetto a quella logica quindi
+
+\lang italian
+
+i teoremi di na logica appartengono a tutti gli insiemi consistenti massimali rispetto a quella logica quindi
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\alpha$
 \end_inset
 
@@ -2241,51 +2680,24 @@ i teoremi di na logica appartengono a tutti gli insiemi consistenti massimali
 
 \begin_layout Standard
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\lang italian
+
+
 \lang english
+
 \begin_inset Formula $\boxx{\boa}\in\alpha$
 \end_inset
 
 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
 \lang italian
 .
+\lang english
+
 \end_layout
 
 \begin_layout Standard
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
+
 \begin_inset Formula $\{a\ |\ \boa\in$
 \end_inset
 
@@ -2294,26 +2706,20 @@ i teoremi di na logica appartengono a tutti gli insiemi consistenti massimali
 \end_inset
 
 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
 \lang italian
  (per ipotesi 
 \begin_inset Formula $\alpha R^{K4}\beta$
 \end_inset
 
 )
+\lang english
+
 \end_layout
 
 \begin_layout Standard
+
+
+\lang italian
 ma per ogni formula 
 \begin_inset Formula $\boa\in\alpha$
 \end_inset
@@ -2335,18 +2741,11 @@ ma per ogni formula
 
 \begin_layout Standard
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\lang italian
+
+
 \lang english
+
 \begin_inset Formula $\{a\ |\ \boa\in$
 \end_inset
 
@@ -2355,17 +2754,6 @@ ma per ogni formula
 \end_inset
 
 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
 \lang italian
  (per ipotesi 
 \begin_inset Formula $\beta R^{K4}\gamma$
@@ -2384,22 +2772,13 @@ ma per ogni formula
 \end_inset
 
 , quindi si ha anche:
+\lang english
+
 \end_layout
 
 \begin_layout Standard
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
+
 \begin_inset Formula $\{a\ |\ \boa\in$
 \end_inset
 
@@ -2408,35 +2787,36 @@ ma per ogni formula
 \end_inset
 
 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
 \lang italian
  cioè 
 \begin_inset Formula $(\alpha,\gamma)\in R^{K4}$
 \end_inset
 
  
-\begin_inset Newline newline
-\end_inset
-
+\lang english
 
 \begin_inset Newline newline
 \end_inset
 
-A questo punto possiamo usare in modo profiquo il corollario del lemma di
- verità.
+ 
+\lang italian
+
+\lang english
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\lang italian
+A questo punto possiamo usare in modo profiquo il corollario del lemma di verità.
+\lang english
+
 \end_layout
 
 \begin_layout Standard
+
+
+\lang italian
 Dimostriamo la tesi per assurdo: supponiamo che 
 \begin_inset Formula $\nonTeor{K4}a$
 \end_inset
@@ -2445,14 +2825,20 @@ Dimostriamo la tesi per assurdo: supponiamo che
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 allora per il corollario del teorema di verità si avrebbe anche 
 \begin_inset Formula $\nonvera{M{}^{K4}}a$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 e in particolare si avrebbe 
 \begin_inset Formula $\nonvera{F^{K4}}a$
 \end_inset
@@ -2469,6 +2855,9 @@ e in particolare si avrebbe
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 ma ciò contraddice l'ipotesi 
 \begin_inset Formula $\entail Fa$
 \end_inset
@@ -2479,9 +2868,9 @@ ma ciò contraddice l'ipotesi
 
  transitivo) 
 \begin_inset ERT
-status open
+status collapsed
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 
 \backslash
@@ -2498,10 +2887,17 @@ lightning
 \end_layout
 
 \begin_layout Section
+
+\lang italian
+
 Teorema di Raggiungibilità
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $(\alpha,\beta)\in R^{\Lambda}$
 \end_inset
 
@@ -2510,40 +2906,18 @@ Teorema di Raggiungibilità
 \end_inset
 
  se e solo se 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
 
 \begin_inset Formula $\relazCAD{\alpha}{\beta}$
 \end_inset
 
 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
 \lang italian
  
 \begin_inset Newline newline
 \end_inset
 
-Ip)
+ Ip)
 \begin_inset Formula $\relazCAB{\alpha}{\beta}$
 \end_inset
 
@@ -2551,6 +2925,9 @@ Ip)
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Ts)
 \begin_inset Formula $\relazCAD{\alpha}{\beta}$
 \end_inset
@@ -2563,10 +2940,17 @@ Ts)
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Per assurdo supponiamo che
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $b\in\beta$
 \end_inset
 
@@ -2574,38 +2958,20 @@ Per assurdo supponiamo che
 \begin_inset Formula $\diamond b\notin\alpha$
 \end_inset
 
-, 
+,
 \end_layout
 
 \begin_layout Standard
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\lang italian
+
+
 \lang english
+
 \begin_inset Formula $\neg\diamond b\in\alpha$
 \end_inset
 
 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
 \lang italian
  (dato che 
 \begin_inset Formula $\alpha$
@@ -2616,9 +2982,15 @@ Per assurdo supponiamo che
 \end_inset
 
 
+\lang english
+
 \end_layout
 
 \begin_layout Standard
+
+
+\lang italian
+
 \begin_inset Formula $\boxx{\neg b\in\alpha}$
 \end_inset
 
@@ -2638,6 +3010,10 @@ Per assurdo supponiamo che
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\neg b\in\beta$
 \end_inset
 
@@ -2653,6 +3029,9 @@ Per assurdo supponiamo che
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 il che è assurdo perché 
 \begin_inset Formula $b\in\beta$
 \end_inset
@@ -2667,9 +3046,9 @@ il che è assurdo perché
 
 
 \begin_inset ERT
-status open
+status collapsed
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 
 \backslash
@@ -2686,6 +3065,9 @@ lightning
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Ip)
 \begin_inset Formula $\relazCAD{\alpha}{\beta}$
 \end_inset
@@ -2694,6 +3076,9 @@ Ip)
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Ts)
 \begin_inset Formula $\relazCAB{\alpha}{\beta}$
 \end_inset
@@ -2702,10 +3087,14 @@ Ts)
 \begin_inset Newline newline
 \end_inset
 
-Per assurdo supponiamo cioè che
+ Per assurdo supponiamo cioè che
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\boa\in\alpha$
 \end_inset
 
@@ -2717,6 +3106,10 @@ Per assurdo supponiamo cioè che
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\neg a\in\beta$
 \end_inset
 
@@ -2732,6 +3125,10 @@ Per assurdo supponiamo cioè che
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\diamond\neg a\in\alpha$
 \end_inset
 
@@ -2759,6 +3156,10 @@ Per assurdo supponiamo cioè che
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\neg\boxx{a\in\alpha}$
 \end_inset
 
@@ -2768,9 +3169,9 @@ Per assurdo supponiamo cioè che
 
 
 \begin_inset ERT
-status open
+status collapsed
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 
 \backslash
@@ -2783,10 +3184,6 @@ lightning
 \begin_inset Newline newline
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 
 \end_layout
 

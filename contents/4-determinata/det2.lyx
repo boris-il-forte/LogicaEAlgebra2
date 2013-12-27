@@ -1,10 +1,9 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
+#LyX file created by tex2lyx 2.0.6
 \lyxformat 413
 \begin_document
 \begin_header
 \textclass report
 \use_default_options false
-\maintain_unincluded_children false
 \language italian
 \language_package default
 \inputencoding utf8
@@ -18,15 +17,23 @@
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
-\bibtex_command default
-\index_command default
 \paperfontsize 11
 \spacing single
-\use_hyperref false
+\use_hyperref 1
+\pdf_title "Logica 2"
+\pdf_author "Edoardo Pasi, Davide Tateo"
+\pdf_bookmarks 1
+\pdf_bookmarksnumbered 0
+\pdf_bookmarksopen 0
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks 0
+\pdf_pdfborder 1
+\pdf_colorlinks 0
+\pdf_backref false
+\pdf_pdfusetitle 1
 \papersize a4paper
 \use_geometry true
 \use_amsmath 2
@@ -39,15 +46,11 @@
 \paperorientation portrait
 \suppress_date false
 \use_refstyle 0
-\index Index
-\shortcut idx
-\color #008000
-\end_index
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation indent
-\paragraph_indentation default
-\quotes_language english
+\paragraph_separation skip
+\defskip medskip
+\quotes_language french
 \papercolumns 1
 \papersides 2
 \paperpagestyle default
@@ -61,10 +64,16 @@
 \begin_body
 
 \begin_layout Chapter
+
+\lang italian
+
 Logiche modali particolari e Determinatezza
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Per il teorema dicorrettezza e completezza abbiamo che 
 \begin_inset Formula $\teorema a$
 \end_inset
@@ -77,6 +86,9 @@ Per il teorema dicorrettezza e completezza abbiamo che
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Il problema di 
 \begin_inset Formula $\vera{M^{\Lambda}}a$
 \end_inset
@@ -93,6 +105,9 @@ pratico
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Provo quindi a vedere se 
 \begin_inset Formula $\teorema a$
 \end_inset
@@ -105,6 +120,10 @@ Provo quindi a vedere se
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Box Shadowbox
 position "c"
 hor_pos "c"
@@ -118,17 +137,18 @@ height "1in"
 height_special "totalheight"
 status open
 
+
 \begin_layout Plain Layout
+
 
 \series bold
 Nota: 
 \series default
-Per dimostrare la determinatezza di una logica rispetto a una classe di
- frame con una proprietà si può mostrare che la relazione del Frame canonico
- costruito da quella logica gode della stessa proprietà.
+Per dimostrare la determinatezza di una logica rispetto a una classe di frame con una proprietà si può mostrare che la relazione del Frame canonico costruito da quella logica gode della stessa proprietà.
 \end_layout
 
 \begin_layout Plain Layout
+
 Con questa chiave di lettura diamo alcune dimostrazioni di determinatezza.
 \end_layout
 
@@ -138,10 +158,17 @@ Con questa chiave di lettura diamo alcune dimostrazioni di determinatezza.
 \end_layout
 
 \begin_layout Section
+
+\lang italian
+
 Serialità del frame canonico di KD
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $R^{KD}$
 \end_inset
 
@@ -153,6 +180,9 @@ Serialità del frame canonico di KD
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 TS) 
 \begin_inset Formula $\teoremaDi{KD}a$
 \end_inset
@@ -166,9 +196,9 @@ TS)
 
 \begin_layout Standard
 
-\end_layout
+\lang italian
 
-\begin_layout Standard
+
 \begin_inset Formula $\relazCAB{\alpha}{\beta}$
 \end_inset
 
@@ -184,6 +214,9 @@ TS)
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Vogliamo quindi provare che per ogni insieme 
 \begin_inset Formula $\{a\ |\ \boa\in\alpha\}$
 \end_inset
@@ -200,12 +233,14 @@ Vogliamo quindi provare che per ogni insieme
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 per farlo mi basta mostrare che esiste un insieme 
 \begin_inset Formula $\beta_{0}$
 \end_inset
 
- consistente che lo contiene, poi per il teorema di Lindelmann saprò anche
- che ne esiste uno consistente massimale.
+ consistente che lo contiene, poi per il teorema di Lindelmann saprò anche che ne esiste uno consistente massimale.
 \begin_inset Newline newline
 \end_inset
 
@@ -213,6 +248,10 @@ per farlo mi basta mostrare che esiste un insieme
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\beta_{0}=\{a\ |\ \boa\in\alpha\}$
 \end_inset
 
@@ -224,10 +263,17 @@ per farlo mi basta mostrare che esiste un insieme
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Se per assurdo non lo fosse
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\teoremaDi{KD}\andoria{_{n}\implies\bot}$
 \end_inset
 
@@ -243,6 +289,9 @@ Se per assurdo non lo fosse
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 (da cui spostando 
 \begin_inset Formula $a_{n}$
 \end_inset
@@ -251,21 +300,32 @@ Se per assurdo non lo fosse
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\teoremaDi{KD}\andoria{_{n-1}\implies\neg a_{n}}$
 \end_inset
 
- (uso la definizione 2.
- di logica normale)
+ (uso la definizione 2. di logica normale)
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\teoremaDi{KD}\andbox{_{n}}\implies\boxx{\neg a_{n}}$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\andbox{_{n}}\implies\boxx{\neg a_{n}}\in\alpha$
 \end_inset
 
@@ -285,6 +345,10 @@ Se per assurdo non lo fosse
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\andbox{_{n}}\in\alpha$
 \end_inset
 
@@ -312,6 +376,10 @@ Se per assurdo non lo fosse
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\boxx{\neg a_{n}}\in\alpha$
 \end_inset
 
@@ -319,6 +387,10 @@ Se per assurdo non lo fosse
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\neg\dia_{n}\in\alpha$
 \end_inset
 
@@ -326,24 +398,39 @@ Se per assurdo non lo fosse
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\boa_{n}\in\alpha$
 \end_inset
 
  
 \series bold
 (*)
+\series default
+
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\boa_{n}\implies\dia_{n}$
 \end_inset
 
  (schema seriale) 
 \series bold
 (**)
+\series default
+
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Per MP fra 
 \series bold
 (*) 
@@ -356,20 +443,22 @@ si ha
 \begin_inset Formula $\dia_{n}\in\alpha$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Da cui 
 \begin_inset Formula $\alpha$
 \end_inset
 
- non consistente, assurdo.
- 
+ non consistente, assurdo. 
 \begin_inset ERT
-status open
+status collapsed
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 
 \backslash
@@ -382,6 +471,9 @@ lightning
 \end_layout
 
 \begin_layout Section
+
+\lang italian
+
 Debole densità del frame canonico di K
 \begin_inset Formula $X\diamond$
 \end_inset
@@ -390,6 +482,10 @@ Debole densità del frame canonico di K
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $R$
 \end_inset
 
@@ -401,6 +497,9 @@ Debole densità del frame canonico di K
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Chiamiamo K
 \begin_inset Formula $X\diamond$
 \end_inset
@@ -417,15 +516,21 @@ Chiamiamo K
 \begin_inset Formula $\dia\implies\diam{\diam a}$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
-La partenza del ragionamento è simile a quello del precedente in cui come
- insieme considero:
+
+\lang italian
+
+La partenza del ragionamento è simile a quello del precedente in cui come insieme considero:
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\gamma_{0}=\{a\ |\ a\in\alpha\}\cup\{\diamond b\ |\ b\in\beta\}$
 \end_inset
 
@@ -437,10 +542,17 @@ La partenza del ragionamento è simile a quello del precedente in cui come
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Per assurdo:
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\teoremaDi{KX\diamond}\andoria{_{n}\wedge\diam{b_{1}\wedge...\wedge\diam{b_{n}}}}\implies\bot$
 \end_inset
 
@@ -448,6 +560,9 @@ Per assurdo:
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 dove 
 \begin_inset Formula $a_{1},...,a_{n}$
 \end_inset
@@ -468,6 +583,10 @@ dove
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\teoremaDi{KX\diamond}\andoria{_{n}}\implies\neg(\diamond b_{1}\wedge...\wedge\diamond b_{n})$
 \end_inset
 
@@ -475,6 +594,9 @@ dove
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 pongo 
 \begin_inset Formula $b=b_{1}\wedge...\wedge b_{n}$
 \end_inset
@@ -488,11 +610,20 @@ pongo
 
 \begin_layout Standard
 
+\lang italian
+
+
 \series bold
 Teorema al volo:
+\series default
+
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\teoremaDi{KX\diamond}\neg(\diamond c\wedge\diamond d)\implies\neg\diamond(c\wedge d)$
 \end_inset
 
@@ -501,17 +632,21 @@ Teorema al volo:
 
 \begin_layout Standard
 
+\lang italian
+
+
 \series bold
+
 \begin_inset Formula $\teoremaDi{KX\diamond}\diamond(c\wedge d)\implies\diamond c\wedge\diamond d$
 \end_inset
 
 
+\series default
+
 \begin_inset Newline newline
 \end_inset
 
-
-\series default
-infatti, sono tautologie della logica proposizionale: 
+ infatti, sono tautologie della logica proposizionale: 
 \begin_inset Formula $\neg c\implies\neg c\vee\neg d$
 \end_inset
 
@@ -519,6 +654,9 @@ infatti, sono tautologie della logica proposizionale:
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 e 
 \begin_inset Formula $\neg d\implies\neg c\vee\neg d$
 \end_inset
@@ -527,6 +665,9 @@ e
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 queste sono anche teoremi di 
 \begin_inset Formula $\Lambda$
 \end_inset
@@ -535,44 +676,28 @@ queste sono anche teoremi di
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 dato che 
 \begin_inset Formula $\Lambda$
 \end_inset
 
  è normale si ha 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \lang english
 
 \begin_inset Formula $\boxx{\neg c}\implies\boxx{\neg c\vee\neg d}$
 \end_inset
 
 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
 \lang italian
  (definizione 3.3 di logica normale)
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 e lo stesso vale per la seconda 
 \begin_inset Formula $\boxx{\neg d}\implies\boxx{\neg c\vee\neg d}$
 \end_inset
@@ -581,43 +706,34 @@ e lo stesso vale per la seconda
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 dato che il conseguente si ha per due antecedenti diversi allora:
 \end_layout
 
 \begin_layout Standard
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\lang italian
+
+
 \lang english
+
 \begin_inset Formula $\boxx{\neg c}\vee\boxx{\neg d\implies}\boxx{\neg c\vee\neg d}$
 \end_inset
 
 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
 \lang italian
  da cui negando e scambiando antecedente e conseguente:
+\lang english
+
 \end_layout
 
 \begin_layout Standard
+
+
+\lang italian
+
 \begin_inset Formula $\neg(\boxx{\neg c\vee\neg d})\implies\neg(\boxx{\neg c}\vee\boxx{\neg d)}$
 \end_inset
 
@@ -629,6 +745,10 @@ dato che il conseguente si ha per due antecedenti diversi allora:
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\diamond(c\wedge d)\implies\diamond c\wedge\diamond d$
 \end_inset
 
@@ -640,6 +760,9 @@ dato che il conseguente si ha per due antecedenti diversi allora:
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Uso il teorema ottenendo (in un certo senso 
 \begin_inset Quotes eld
 \end_inset
@@ -657,50 +780,44 @@ portiamo fuori
 
 \begin_layout Standard
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\lang italian
+
+
 \lang english
+
 \begin_inset Formula $\teoremaDi{KX\diamond}\andoria{_{n}}\implies\neg\diamond(b_{1}\wedge...\wedge\diamond b_{n})$
 \end_inset
 
 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
 \lang italian
  cioè (per come ho posto b)
+\lang english
+
 \end_layout
 
 \begin_layout Standard
+
+
+\lang italian
+
 \begin_inset Formula $\teoremaDi{KX\diamond}\andoria{_{n}}\implies\neg\diamond b$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
-Uso la definizione 2.
- di logica normale e riscrivo:
+
+\lang italian
+
+Uso la definizione 2. di logica normale e riscrivo:
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\teoremaDi{KX\diamond}\andbox{_{n}}\implies\boxx{\neg\diamond b}$
 \end_inset
 
@@ -708,6 +825,10 @@ Uso la definizione 2.
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\teoremaDi{KX\diamond}\andbox{_{n}}\implies\neg\diamond\diamond b$
 \end_inset
 
@@ -715,14 +836,20 @@ Uso la definizione 2.
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 dato che 
 \begin_inset Formula $\andbox{_{n}}\implies\neg\diamond\diamond b\in\alpha$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 e che: 
 \begin_inset Formula $\andbox{_{n}\in\alpha}$
 \end_inset
@@ -731,6 +858,9 @@ e che:
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 anche 
 \begin_inset Formula $\neg\diamond\diamond b\in\alpha$
 \end_inset
@@ -739,6 +869,9 @@ anche
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 dato che 
 \begin_inset Formula $\diamond b\in\alpha$
 \end_inset
@@ -751,16 +884,18 @@ dato che
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 il che ci porterebbe alla non massimalità di 
 \begin_inset Formula $\alpha$
 \end_inset
 
- contro l'ipotesi.
- 
+ contro l'ipotesi. 
 \begin_inset ERT
-status open
+status collapsed
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 
 \backslash
@@ -773,10 +908,17 @@ lightning
 \end_layout
 
 \begin_layout Section
+
+\lang italian
+
 Riflessività del frame canonico di KT
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $R^{KT}$
 \end_inset
 
@@ -788,6 +930,9 @@ Riflessività del frame canonico di KT
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Vogliamo dimostrare che l'insime 
 \begin_inset Formula $\{a\,|\,\boa\in\alpha\}$
 \end_inset
@@ -800,6 +945,9 @@ Vogliamo dimostrare che l'insime
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Se 
 \begin_inset Formula $\boxx a\in\alpha$
 \end_inset
@@ -812,6 +960,10 @@ Se
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\teoremaDi{KT}x$
 \end_inset
 
@@ -827,6 +979,10 @@ Se
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $a\in\alpha$
 \end_inset
 
@@ -834,6 +990,9 @@ Se
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Per questi motivi 
 \begin_inset Formula $\{a\,|\,\boa\in\alpha\}$
 \end_inset
@@ -846,14 +1005,24 @@ Per questi motivi
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Da cui segue la tesi.
 \end_layout
 
 \begin_layout Section
+
+\lang italian
+
 Simmetria del frame canonico di KB
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $R^{KB}$
 \end_inset
 
@@ -865,6 +1034,9 @@ Simmetria del frame canonico di KB
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Se 
 \begin_inset Formula $\beta R^{K4}\alpha$
 \end_inset
@@ -873,6 +1045,10 @@ Se
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\{\diam b\,|\, b\in\alpha\}\subseteq\beta$
 \end_inset
 
@@ -880,10 +1056,16 @@ Se
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 per definizione di R del modello canonico.
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Dal momento che vale l'assioma B: 
 \begin_inset Formula $a\implies\boxx{\dia}$
 \end_inset
@@ -892,6 +1074,9 @@ Dal momento che vale l'assioma B:
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 per ogni formula 
 \begin_inset Formula $b\in\alpha$
 \end_inset
@@ -900,6 +1085,10 @@ per ogni formula
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\boxx{\diam b\in\alpha}$
 \end_inset
 
@@ -907,6 +1096,9 @@ per ogni formula
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 D'altra parte ogni volta che 
 \begin_inset Formula $b\in\alpha$
 \end_inset
@@ -923,6 +1115,10 @@ D'altra parte ogni volta che
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\relazCAB{\alpha}{\beta}$
 \end_inset
 
@@ -934,18 +1130,30 @@ D'altra parte ogni volta che
 \end_layout
 
 \begin_layout Section
+
+\lang italian
+
 Correttezza e completezza di KD
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 La logica KD è corretta e completa rispetto alla classe dei Frame seriali
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Dimostrazione
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Ts) 
 \begin_inset Formula $\teoremaDi{KD}a$
 \end_inset
@@ -954,6 +1162,9 @@ Ts)
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Ip) 
 \begin_inset Formula $\vera Fa$
 \end_inset
@@ -962,16 +1173,24 @@ Ip)
 \end_layout
 
 \begin_layout Standard
-se a è un teorema di KD, è ricavato da una serie di formule che possono
- essere applicazioni degli schemi A1, A2, A3, K, D oppure applicazioni del
- modus ponens o della regola di necessitazione.
+
+\lang italian
+
+se a è un teorema di KD, è ricavato da una serie di formule che possono essere applicazioni degli schemi A1, A2, A3, K, D oppure applicazioni del modus ponens o della regola di necessitazione.
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 Supponiamo per assurdo che:
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\nonTeor{KD}a$
 \end_inset
 
@@ -979,10 +1198,17 @@ Supponiamo per assurdo che:
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 allora avremo che:
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\nonvera{\mu^{KD}}a$
 \end_inset
 
@@ -990,10 +1216,17 @@ allora avremo che:
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
 e quindi:
 \end_layout
 
 \begin_layout Standard
+
+\lang italian
+
+
 \begin_inset Formula $\nonvera{F^{KD}}a$
 \end_inset
 
@@ -1001,13 +1234,10 @@ e quindi:
 \end_layout
 
 \begin_layout Standard
-Poichè a non è vera nel frame canonico, non può essere vera in alcun frame
- seriale, ma questo va contro l'ipotesi, assurdo.
- Allora la tesi deve essere valida.
-\end_layout
 
-\begin_layout Standard
+\lang italian
 
+Poichè a non è vera nel frame canonico, non può essere vera in alcun frame seriale, ma questo va contro l'ipotesi, assurdo. Allora la tesi deve essere valida.
 \end_layout
 
 \end_body
