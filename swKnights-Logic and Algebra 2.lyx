@@ -170,7 +170,7 @@ filename "contents/0-intro/introduction.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "contents/1-sintassi/primo1.lyx"
+filename "contents/1-sintassi/primo1-orig.lyx"
 
 \end_inset
 
