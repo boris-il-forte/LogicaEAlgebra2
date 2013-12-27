@@ -191,7 +191,7 @@ Si può notare che
 \begin_inset Formula $\sim_{\Gamma}$
 \end_inset
 
- è una relazuione di equivalenza, Infatti:
+ è una relazione di equivalenza, Infatti:
 \end_layout
 
 \begin_layout Enumerate
@@ -242,8 +242,7 @@ Posso allora considerare l'insieme quoziente:
 \end_layout
 
 \begin_layout Standard
-Si può dimostrare con il teorema di fattorizzazzione delle applicazioni
- che:
+Si può dimostrare con il teorema di fattorizzazione delle applicazioni che:
 \end_layout
 
 \begin_layout Standard
@@ -676,7 +675,7 @@ Caso 1:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\alpha{\neg b}\iff\nonveraw\mu\alpha b\iff\nonveraw{\mu^{\Gamma}}{[\alpha]}b\iff\veraw{\mu^{\Gamma}}{[\alpha]}{\neg b}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\neg b}\iff\nonveraw{\mu}{\alpha}b\iff\nonveraw{\mu^{\Gamma}}{[\alpha]}b\iff\veraw{\mu^{\Gamma}}{[\alpha]}{\neg b}$
 \end_inset
 
 
@@ -687,7 +686,7 @@ Caso 2:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\alpha{b\implies c}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{b\implies c}$
 \end_inset
 
  se e solo se 
@@ -703,11 +702,11 @@ Caso 2:
 \noun off
 \color none
 
-\begin_inset Formula $\nonveraw\mu\alpha b$
+\begin_inset Formula $\nonveraw{\mu}{\alpha}b$
 \end_inset
 
  oppure 
-\begin_inset Formula $\veraw\mu\alpha c$
+\begin_inset Formula $\veraw{\mu}{\alpha}c$
 \end_inset
 
 
@@ -730,7 +729,7 @@ quindi si può affermare
 \uwave off
 \noun off
 \color none
-\begin_inset Formula $\nonveraw\mu\alpha b\iff\nonveraw{\mu^{\Gamma}}{[\alpha]}b$
+\begin_inset Formula $\nonveraw{\mu}{\alpha}b\iff\nonveraw{\mu^{\Gamma}}{[\alpha]}b$
 \end_inset
 
 
@@ -749,7 +748,7 @@ quindi si può affermare
 \uwave off
 \noun off
 \color none
-\begin_inset Formula $\veraw\mu\alpha c\iff\veraw{\mu^{\Gamma}}{[\alpha]}c$
+\begin_inset Formula $\veraw{\mu}{\alpha}c\iff\veraw{\mu^{\Gamma}}{[\alpha]}c$
 \end_inset
 
 
@@ -772,7 +771,7 @@ Caso 3:
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\veraw\mu\alpha{\boxx b}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx b}$
 \end_inset
 
 
@@ -1031,7 +1030,7 @@ Determinatezza di KD dai Frame seriali finiti
 \end_layout
 
 \begin_layout Standard
-Per seguire lo stesso ragionamente della dimostrazione appena fatta, dobbiamo
+Per seguire lo stesso ragionamento della dimostrazione appena fatta, dobbiamo
  solo mostrare che se 
 \begin_inset Formula $R$
 \end_inset
@@ -1379,7 +1378,7 @@ Il metodo consiste nel partire dalla formula che si vuole considerare, negandola
 \end_layout
 
 \begin_layout Standard
-Dopodichè si procede passo passo alla costruzione di un albero seguendo
+Dopodiché si procede passo passo alla costruzione di un albero seguendo
  delle regole di espansione che aggiungono uno o più nodi o rami all'albero.
 \end_layout
 
@@ -1390,7 +1389,7 @@ Le regole con la virgola aggiungono un nodo allo stesso ramo, mentre le
 
 \begin_layout Standard
 Se espando una formula, devo aggiungere coerentemente l'espansione a tutti
- i sottorami, e non posso più espanderla.
+ i sotto-rami, e non posso più espanderla.
 \end_layout
 
 \begin_layout Standard
@@ -1400,7 +1399,7 @@ Se un cammino contiene sia una formula che la sua negazione il cammino si
 
 \begin_layout Standard
 Se esiste almeno un cammino chiuso, la formula di partenza è soddisfacibile,
- se tutti i cammini sono chiusi, la formula è logicamente valita, altrimenti
+ se tutti i cammini sono chiusi, la formula è logicamente valida, altrimenti
  la formula è falsa.
 \end_layout
 
@@ -1751,8 +1750,8 @@ Per ognuno di questi schemi di assiomi (X) ne esiste il cosiddetto duale
 \begin_inset Formula $\diamond$
 \end_inset
 
-), cioè lo schema che si ottine invertendo antecedente e conseguente e negando
- 
+), cioè lo schema che si ottiene invertendo antecedente e conseguente e
+ negando 
 \begin_inset Formula $\boxx a$
 \end_inset
 
@@ -2338,7 +2337,7 @@ così da arrivare a KTB4 = KDB4
 \end_layout
 
 \begin_layout Standard
-Cioe' mostriamo che nella logica K, dall'assioma T, con B e 4 posso dedurre
+Cioè mostriamo che nella logica K, dall'assioma T, con B e 4 posso dedurre
  l'assioma D
 \end_layout
 
@@ -2347,7 +2346,7 @@ Dall'assioma T deduciamo l'assioma T
 \begin_inset Formula $\diamond$
 \end_inset
 
- cioe' 
+ cioè 
 \begin_inset Formula $a\implies\diamond a$
 \end_inset
 
@@ -2631,11 +2630,11 @@ Dato che una relazione di equivalenza forma una partizione sull'insieme
 \end_layout
 
 \begin_layout Subsection
-Tableau rivisitato per KT, KB
+Tableaux rivisitato per KT, KB
 \end_layout
 
 \begin_layout Standard
-Se una logica contiene l'assioma B devo aggiungere alle regole del Tableau
+Se una logica contiene l'assioma B devo aggiungere alle regole del Tableaux
 \end_layout
 
 \begin_layout Itemize
@@ -2835,7 +2834,7 @@ Dove nell'ultimo passaggio ho usato proprio la regola appena introdotta,
 \begin_inset Newline newline
 \end_inset
 
-Se una logica contiene l'assioma T devo aggiungere alle regole del Tableau
+Se una logica contiene l'assioma T devo aggiungere alle regole del Tableaux
 \end_layout
 
 \begin_layout Itemize
