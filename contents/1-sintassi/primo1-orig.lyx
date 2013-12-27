@@ -204,7 +204,7 @@ Tutte le tautologie sono valide in ogni frame
 \end_layout
 
 \begin_layout Section
-Relazione seriale
+Relazione Seriale
 \end_layout
 
 \begin_layout Standard
@@ -214,6 +214,10 @@ Ip) Frame F con relazione R seriale
 \begin_layout Standard
 Ts) 
 \begin_inset Formula $\boa\implies\dia$
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
@@ -228,11 +232,11 @@ Se non vale:
 \begin_inset Formula $\veraw{\mu}{\alpha}{\boa}$
 \end_inset
 
- allora immediatemente si ha la tesi in quanto l'antecedente è falso.
+ allora immediatamente si ha la tesi in quanto l'antecedente è falso.
 \end_layout
 
 \begin_layout Standard
-Se invce: 
+Se invece: 
 \begin_inset Formula $\veraw{\mu}{\alpha}{\boa}$
 \end_inset
 
@@ -399,7 +403,7 @@ Per assurdo:
 \end_layout
 
 \begin_layout Standard
-Suppongo di trovarmi in un mondo come quello in figura (wow) in cui 
+Suppongo di trovarmi in un mondo come quello in figura in cui 
 \begin_inset ERT
 status open
 
@@ -446,7 +450,7 @@ status collapsed
 \end_layout
 
 \begin_layout Section
-Relazione riflessiva
+Relazione Riflessiva
 \end_layout
 
 \begin_layout Standard
@@ -456,6 +460,10 @@ Ip) R riflessiva
 \begin_layout Standard
 Ts) 
 \begin_inset Formula $\boa\implies a$
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
@@ -474,7 +482,7 @@ se l'antecedente è falso il teorema è dimostrato, consideriamo il caso in
 \end_layout
 
 \begin_layout Standard
-poichè il frame è riflessivo, abbiamo 
+poiché il frame è riflessivo, abbiamo 
 \begin_inset Formula $\alpha R\alpha$
 \end_inset
 
@@ -587,6 +595,10 @@ Ip)
 
 \begin_layout Standard
 Ts) R è riflessiva
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -611,7 +623,7 @@ Supponiamo per assurdo che R non sia riflessiva, allora prendiamo uno stato
 \end_layout
 
 \begin_layout Standard
-che è assurdo perchè contraddice la tesi.
+che è assurdo perché contraddice la tesi.
  La tesi allora è valida.
 \end_layout
 
@@ -694,7 +706,7 @@ end{center}
 \end_layout
 
 \begin_layout Section
-Relazione simmetrica
+Relazione Simmetrica
 \end_layout
 
 \begin_layout Standard
@@ -704,6 +716,10 @@ Ip) R simmetrica
 \begin_layout Standard
 Ts) 
 \begin_inset Formula $a\implies\boxx{\dia}$
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
@@ -1055,6 +1071,10 @@ Ip)
 
 \begin_layout Standard
 Ts) R simmetrica
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1199,6 +1219,10 @@ Ip) R relazione transitiva
 \begin_layout Standard
 Ts) 
 \begin_inset Formula $\boa\implies\boxx{\boa}$
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
@@ -1475,6 +1499,10 @@ Ip)
 
 \begin_layout Standard
 Ts) R relazione transitiva
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1690,7 +1718,7 @@ end{center}
 \end_layout
 
 \begin_layout Section
-Funzione parziale
+Funzione Parziale
 \end_layout
 
 \begin_layout Standard
@@ -1760,6 +1788,10 @@ Ts)
 \end_inset
 
  
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1814,6 +1846,10 @@ Ip)
 
 \begin_layout Standard
 Ts) funzione parziale
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1858,7 +1894,7 @@ Per assurdo: suppongo non che la funzione non sia parziale.
 \end_layout
 
 \begin_layout Section
-Funzione totale
+Funzione Totale
 \end_layout
 
 \begin_layout Standard
@@ -1948,14 +1984,13 @@ quindi dato che l'implica prevede un and di implica da una parte e dall'altra
 \end_layout
 
 \begin_layout Section
-Relazione euclidea
+Relazione Euclidea
 \end_layout
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="1" columns="3">
+<lyxtabular version="3" rows="1" columns="2">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <row>
@@ -1980,10 +2015,15 @@ relazione euclidea
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
+</row>
+</lyxtabular>
 
-\begin_layout Plain Layout
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $\forhten{\alpha,\beta,\gamma}{:\:(\alpha R\beta,\:\alpha R\gamma)}{\beta}R\gamma$
 \end_inset
 
@@ -2008,16 +2048,6 @@ R
 \end_inset
 
 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
 \begin_inset Newline newline
 \end_inset
 
@@ -2035,6 +2065,10 @@ Ip) relazione euclidea
 \begin_layout Standard
 Ts) 
 \begin_inset Formula $\diam a\implies\boxx{\diam a}$
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
@@ -2204,10 +2238,14 @@ Ip)
 
 \begin_layout Standard
 Ts) relazione euclidea
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Per assurdo, suppondo valga ip) ma non la tesi
+Per assurdo, suppongo valga ip) ma non la tesi
 \end_layout
 
 \begin_layout Standard
@@ -2347,6 +2385,10 @@ Ts)
 \end_inset
 
  
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2373,7 +2415,7 @@ allora segue che:
 \end_layout
 
 \begin_layout Standard
-ma poichè la relazione è debolmente densa, si avrà che:
+ma poiché la relazione è debolmente densa, si avrà che:
 \end_layout
 
 \begin_layout Standard
@@ -2384,7 +2426,7 @@ ma poichè la relazione è debolmente densa, si avrà che:
 \end_layout
 
 \begin_layout Standard
-poichè in 
+poiché in 
 \begin_inset Formula $\beta$
 \end_inset
 
@@ -2593,6 +2635,10 @@ Ip)
 
 \begin_layout Standard
 Ts) R debolmente densa
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2645,7 +2691,7 @@ e allora otteniamo:
 \end_layout
 
 \begin_layout Standard
-che è assurdo perchè contraddice l'ipotesi, e quindi la tesi è dimostrata.
+che è assurdo perché contraddice l'ipotesi, e quindi la tesi è dimostrata.
 \end_layout
 
 \begin_layout Standard
@@ -2841,6 +2887,10 @@ Ts)
 \end_inset
 
  
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2897,7 +2947,7 @@ prendiamo ora un qualsiasi mondo
 \begin_inset Formula $\alpha R\gamma$
 \end_inset
 
-, poichè la relazione è diretta si avrà 
+, poiché la relazione è diretta si avrà 
 \begin_inset Formula $\gamma R\delta$
 \end_inset
 
@@ -3156,6 +3206,10 @@ Ip)
 
 \begin_layout Standard
 Ts) R è diretta
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3237,7 +3291,7 @@ allora avremo che:
 \end_layout
 
 \begin_layout Standard
-che è assurdo, perchè contraddice la tesi.
+che è assurdo, perché contraddice la tesi.
  La tesi è allora valida.
 \end_layout
 
@@ -3498,6 +3552,10 @@ Ts)
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3556,7 +3614,7 @@ se da
 \begin_inset Formula $\alpha$
 \end_inset
 
- non esco in altri stati, poichè è falsa b, allora:
+ non esco in altri stati, poiché è falsa b, allora:
 \end_layout
 
 \begin_layout Standard
@@ -4016,7 +4074,7 @@ Se da
 \end_layout
 
 \begin_layout Standard
-e quindi, poichè è falso l'antecedente, dovrà essere:
+e quindi, poiché è falso l'antecedente, dovrà essere:
 \end_layout
 
 \begin_layout Standard
@@ -4239,6 +4297,10 @@ Ip)
 
 \begin_layout Standard
 Ts) R debolmente connessa
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4299,7 +4361,7 @@ avremo allora:
 \end_layout
 
 \begin_layout Standard
-ma, poichè l'antecedente è vero e il conseguente no, avremo anche:
+ma, poiché l'antecedente è vero e il conseguente no, avremo anche:
 \end_layout
 
 \begin_layout Standard
@@ -4328,7 +4390,7 @@ allora:
 \end_layout
 
 \begin_layout Standard
-che è assurdo, perchè va contro l'ipotesi.
+che è assurdo, perché va contro l'ipotesi.
  La tesi allora deve essere valida.
 \end_layout
 
