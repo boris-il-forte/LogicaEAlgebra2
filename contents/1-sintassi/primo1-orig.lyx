@@ -60,6 +60,67 @@
 
 \begin_body
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{savequote}[80mm]
+\end_layout
+
+\begin_layout Plain Layout
+
+---Ma io non voglio andare fra i matti---, osservò Alice.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+---Bè, non hai altra scelta---, disse il Gatto ---Qui siamo tutti matti.
+ Io sono matto.
+ Tu sei matta.--- 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+---Come lo sai che sono matta?--- Disse Alice.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+---Per forza,--- disse il Gatto: ---altrimenti non saresti venuta qui.---
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+qauthor{Lewis Carroll} 
+\backslash
+end{savequote} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Formule di Logica modale e significato
 \end_layout

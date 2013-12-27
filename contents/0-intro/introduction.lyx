@@ -118,6 +118,50 @@ Se voi signorine finirete questo corso, e se sopravviverete, sarete dispensatori
 \begin_layout Standard
 Lasciate il formaggio fuori dall'aula.
  
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{savequote}[55mm]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+textbf{Leprotto Bisestile:} Comincia dal principio! 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+textbf{Cappellaio Matto:} Sì! E quando arrivi alla fine, fermati!
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+qauthor{Lewis Carroll} 
+\backslash
+end{savequote} 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter

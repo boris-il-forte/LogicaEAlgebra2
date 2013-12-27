@@ -105,6 +105,37 @@
 
 \begin_body
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{savequote}[80mm]
+\end_layout
+
+\begin_layout Plain Layout
+
+No, Impassabile.
+ Nulla è impossibile.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+qauthor{Lewis Carroll} 
+\backslash
+end{savequote}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Decidibilità Delle Logiche Modali
 \end_layout

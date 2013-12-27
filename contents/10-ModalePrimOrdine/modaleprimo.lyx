@@ -105,6 +105,54 @@
 
 \begin_body
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{savequote}[50mm]
+\end_layout
+
+\begin_layout Plain Layout
+
+---Bu-burro, certo, ci vuole un po' di burro! Buuuurro!--- 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+---Bu-bu-burro? Eccolo!--- 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+---Oh, grazie! Burro! Benissimo!---
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+qauthor{Lewis Carroll} 
+\backslash
+end{savequote}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Logica Modale Del Prim'Ordine
 \end_layout

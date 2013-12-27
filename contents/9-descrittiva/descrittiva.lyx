@@ -105,6 +105,36 @@
 
 \begin_body
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{savequote}[50mm]
+\end_layout
+
+\begin_layout Plain Layout
+
+---Non so spiegarlo chiaramente, perchè non è chiaro neanche a me---
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+qauthor{Alice} 
+\backslash
+end{savequote}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Logiche Descrittive	
 \end_layout

@@ -71,6 +71,47 @@
 
 \begin_body
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{savequote}[60mm]
+\end_layout
+
+\begin_layout Plain Layout
+
+Senza dubbio questo era un piano eccellente, semplice e davvero ben congegnato.
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+C'era solo una difficoltà: che Alice non aveva la più piccola idea di come
+ realizzarlo.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+qauthor{Lewis Carroll} 
+\backslash
+end{savequote}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Verso la decidibilità - Logica determinata
 \end_layout
@@ -100,7 +141,7 @@ Sia
 \end_inset
 
 -consistente se: 
-\begin_inset Formula $\nonSinW\Gamma\Lambda\bot$
+\begin_inset Formula $\nonSinW{\Gamma}{\Lambda}{\bot}$
 \end_inset
 
 , dove 
