@@ -287,6 +287,10 @@ Ts)
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -326,6 +330,10 @@ Ip)
 \begin_layout Standard
 Ts) 
 \begin_inset Formula $\veraw{\mu^{\alpha}}{\beta}{\boxx b}$
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
@@ -583,7 +591,7 @@ Il frame (
 \end_layout
 
 \begin_layout Standard
-E' adatto a rappresentare il tempo discreto continuocon un istante iniziale.
+E' adatto a rappresentare il tempo discreto con un istante iniziale.
 \end_layout
 
 \begin_layout Standard
@@ -680,7 +688,7 @@ la logica K4DLZ, detta anche logica
 \begin_inset Formula $\Omega$
 \end_inset
 
- è la logicha che ha, oltre all'assioma K, i seguenti assiomi:
+ è la logica che ha, oltre all'assioma K, i seguenti assiomi:
 \end_layout
 
 \begin_layout Itemize
@@ -716,8 +724,8 @@ Z:
 \end_layout
 
 \begin_layout Standard
-L'azssioma Z, non ha alcuna interpretazione preso a se stante, ma in combinazion
-e con gli altri implica che tra due mondi connessi c'è solo un numero finito
+L'assioma Z, non ha alcuna interpretazione preso a se stante, ma in combinazione
+ con gli altri implica che tra due mondi connessi c'è solo un numero finito
  di mondi, a due a due connessi.
 \end_layout
 
@@ -739,12 +747,16 @@ Ts)
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 Per dimostrare questo teorema dobbiamo dimostrare che ogni teorema di K4DLZ
  è una formula valida.
- Poichè ogni teorema di 
+ Poiché ogni teorema di 
 \begin_inset Formula $\Omega$
 \end_inset
 
@@ -800,7 +812,7 @@ L è valido su ogni frame debolmente connesso, e quindi è valido anche su
 \end_layout
 
 \begin_layout Standard
-Dobiamo quindi dimostrare solo la validità di Z.
+Dobbiamo quindi dimostrare solo la validità di Z.
 \end_layout
 
 \begin_layout Standard
@@ -903,7 +915,7 @@ Ma, allora possiamo applicare lo stesso ragionamento per
 \begin_inset Formula $\beta-1$
 \end_inset
 
-, poichè:
+, poiché:
 \end_layout
 
 \begin_layout Standard
@@ -1343,6 +1355,10 @@ Ts)
 \end_inset
 
  
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1413,7 +1429,7 @@ Dato che
 \begin_inset Formula $M_{1}^{\alpha}$
 \end_inset
 
- è il sottomodello genereato da 
+ è il sottomodello generato da 
 \begin_inset Formula $\alpha$
 \end_inset
 
@@ -2505,7 +2521,7 @@ A questo punto abbiamo un palloncino
 \begin_inset Formula $V$
 \end_inset
 
-, ed è lecito chidersi se 
+, ed è lecito chiedersi se 
 \begin_inset Formula $\vera{M_{3}}a$
 \end_inset
 
@@ -3143,7 +3159,7 @@ tonda
 \end_layout
 
 \begin_layout Standard
-Pertando definiamo 
+Pertanto definiamo 
 \begin_inset Formula $f\ :\ \omega\rightarrow T$
 \end_inset
 
@@ -3434,6 +3450,10 @@ Ts)
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3629,7 +3649,7 @@ end{center}
 \end_layout
 
 \begin_layout Standard
-allora, poichè la trelazione è transitiva e connessa, abbiamo che
+allora, poiché la relazione è transitiva e connessa, abbiamo che
 \end_layout
 
 \begin_layout Standard
@@ -3663,7 +3683,7 @@ stesso, essendo falso il suo antecedente.
 \end_layout
 
 \begin_layout Standard
-ma poichè in tutti i mondi successivi è vera b, allora in tutti i mondi
+ma poiché in tutti i mondi successivi è vera b, allora in tutti i mondi
  del modello è vera:
 \end_layout
 
@@ -3687,7 +3707,7 @@ Però applicando a questo punto il modus ponens all'assioma Z e alla precedente
 \end_layout
 
 \begin_layout Standard
-Poichè per tutti i mondi dopo 
+Poiché per tutti i mondi dopo 
 \begin_inset Formula $C_{\alpha}$
 \end_inset
 
@@ -3714,7 +3734,7 @@ Ma allora in
 \end_layout
 
 \begin_layout Standard
-poichè esistono dei mondi raggiungibili in cui è vera 
+poiché esistono dei mondi raggiungibili in cui è vera 
 \begin_inset Formula $\boxx b$
 \end_inset
 

@@ -263,7 +263,7 @@ ricordiamo che:
 \end_layout
 
 \begin_layout Standard
-Perchè le due relazioni rappresentino il tempo che scorre una deve essere
+Perché le due relazioni rappresentino il tempo che scorre una deve essere
  l'opposta dell'altra, in modo che la prima relazione rappresenti il futuro,
  la seconda il passato:
 \end_layout
@@ -330,6 +330,10 @@ Ts)
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -367,7 +371,7 @@ allora, usando la regola di necessitazione nel passato, possiamo scrivere:
 \end_layout
 
 \begin_layout Standard
-ma poichè per ipotesi in 
+ma poiché per ipotesi in 
 \begin_inset Formula $\alpha$
 \end_inset
 
@@ -382,7 +386,7 @@ ma poichè per ipotesi in
 \end_layout
 
 \begin_layout Standard
-poichè abbiamo preso un 
+poiché abbiamo preso un 
 \begin_inset Formula $\alpha$
 \end_inset
 
@@ -400,6 +404,10 @@ Ip)
 \begin_layout Standard
 Ts) 
 \begin_inset Formula $R_{F}=R_{P}$
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
@@ -441,7 +449,7 @@ allora in
 \begin_inset Formula $\beta$
 \end_inset
 
- poichè non si raggiunge tramite 
+ poiché non si raggiunge tramite 
 \begin_inset Formula $R_{P}$
 \end_inset
 
@@ -460,7 +468,7 @@ allora in
 \end_layout
 
 \begin_layout Standard
-ma poichè 
+ma poiché 
 \begin_inset Formula $\beta$
 \end_inset
 
@@ -483,7 +491,7 @@ ma poichè
 \end_layout
 
 \begin_layout Standard
-Ma allora, poichè in 
+Ma allora, poiché in 
 \begin_inset Formula $\alpha$
 \end_inset
 
@@ -1087,6 +1095,10 @@ Ts)
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1165,7 +1177,7 @@ e quindi l'antecedente di Cont è ancora vero.
 \end_layout
 
 \begin_layout Standard
-Poichè l'antecedente di Cont è sempre vero, mentre la conseguenza no, allora:
+Poiché l'antecedente di Cont è sempre vero, mentre la conseguenza no, allora:
 \end_layout
 
 \begin_layout Standard
@@ -1364,6 +1376,10 @@ Ts)
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1399,7 +1415,7 @@ Tuttavia l'antecedente di Cont è falso, infatti:
 \end_layout
 
 \begin_layout Standard
-ma poichè non può esistere nessun mondo 
+ma poiché non può esistere nessun mondo 
 \begin_inset Formula $\xi>\delta$
 \end_inset
 
@@ -1429,7 +1445,7 @@ e quindi non potrà che essere che:
 \end_layout
 
 \begin_layout Standard
-Poichè 
+Poiché 
 \begin_inset Formula $\delta$
 \end_inset
 
@@ -1840,7 +1856,7 @@ L'assioma Fun vale solo se la relazione di raggiungibilità a un passo è
 \begin_inset Formula $\circ\neg a$
 \end_inset
 
- non può valere perchè non ci sono stati raggiungibili.
+ non può valere perché non ci sono stati raggiungibili.
  Mentre se abbiamo più di uno stato raggiungibile 
 \begin_inset Formula $\circ a$
 \end_inset
@@ -1853,7 +1869,7 @@ L'assioma Fun vale solo se la relazione di raggiungibilità a un passo è
 \begin_inset Formula $\circ\neg a$
 \end_inset
 
- non può essere vero, perchè 
+ non può essere vero, perché 
 \begin_inset Formula $\neg a$
 \end_inset
 
@@ -2050,7 +2066,7 @@ Tuttavia sono necessari solo tre operatori, mentre tutti gli altri si possono
 \end_layout
 
 \begin_layout Standard
-E infatti si domostra facilmente che:
+E infatti si dimostra facilmente che:
 \end_layout
 
 \begin_layout Standard
@@ -2298,7 +2314,7 @@ I programmi sono definiti come:
 \begin_inset Formula $\alpha\cup\beta$
 \end_inset
 
- ossia nondeterministicamente 
+ ossia non-deterministicamente 
 \begin_inset Formula $\alpha$
 \end_inset
 
@@ -2365,7 +2381,7 @@ Le relazioni che descrivono il comportamento dei programmi composti sono
 \end_layout
 
 \begin_layout Subsection
-Assiomatizzazzione della logica dinamica
+Assiomatizzazione della logica dinamica
 \end_layout
 
 \begin_layout Standard
@@ -2744,7 +2760,7 @@ Inoltre si introduce la relazione di combinazione, ossia quella che traduce
 
 \begin_layout Standard
 Tutto il resto è definito allo stesso modo di prima, a meno di stare attenti
- agli insiemi di stati, anzichè agli stati.
+ agli insiemi di stati, anziché agli stati.
 \end_layout
 
 \end_body

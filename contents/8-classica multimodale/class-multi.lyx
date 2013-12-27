@@ -115,7 +115,7 @@ Critiche al vecchio regime
 
 \begin_layout Standard
 Nella logica modale, come l'abbiamo descritta nei precedenti capitoli, sono
- possibili interpretazioni talvolte sgradite quando si danno significati
+ possibili interpretazioni talvolta sgradite quando si danno significati
  particolari agli operatori modali.
 \end_layout
 
@@ -304,6 +304,10 @@ Ts)
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -381,6 +385,10 @@ Negazione di M
 \begin_layout Standard
 Ts) 
 \begin_inset Formula $\nonvera F{\boxx{(a\wedge b)\implies\boa\wedge\boxx b}}$
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
@@ -493,7 +501,11 @@ Ts)
 \begin_inset Formula $\forall X,Y\ Se\ X\cap Y\in N(\alpha)\ allora\ X\in N(\alpha),\ Y\in N(\beta)$
 \end_inset
 
-			
+	
+\begin_inset Newline newline
+\end_inset
+
+		
 \end_layout
 
 \begin_layout Standard
@@ -633,6 +645,10 @@ Ts)
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -727,6 +743,10 @@ Ts)
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -816,10 +836,14 @@ Ts)
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Poichè vale l'assioma C possiamo scrivere:
+Poiché vale l'assioma C possiamo scrivere:
 \end_layout
 
 \begin_layout Standard
@@ -916,11 +940,15 @@ Ts)
 \end_inset
 
  
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Se l'antecedente è falso, C è vero, pr cui consideriamo il caso in cui valga
- la formula:
+Se l'antecedente è falso, C è vero, per cui consideriamo il caso in cui
+ valga la formula:
 \end_layout
 
 \begin_layout Standard
@@ -976,11 +1004,11 @@ Un frame si quasi filtro se:
 \end_layout
 
 \begin_layout Enumerate
-E' supplementato
+È supplementato
 \end_layout
 
 \begin_layout Enumerate
-E' chiuso rispetto all'intersezione
+Èchiuso rispetto all'intersezione
 \end_layout
 
 \begin_layout Standard
@@ -988,11 +1016,11 @@ Un frame si dice filtro se:
 \end_layout
 
 \begin_layout Enumerate
-E' un quasi filtro
+È un quasi filtro
 \end_layout
 
 \begin_layout Enumerate
-E' un frame con unità
+È un frame con unità
 \end_layout
 
 \begin_layout Section
@@ -1190,6 +1218,10 @@ Ip) Vale K
 
 \begin_layout Standard
 Ts) la logica è regolare
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1210,7 +1242,7 @@ Ts) la logica è regolare
 \begin_inset Formula $\teoremaDi K\boa\wedge\boxx b\implies\boxx{(a\wedge b)}$
 \end_inset
 
- -- perchè è una logica nomale (definizione 3.b)
+ -- perché è una logica nomale (definizione 3.b)
 \end_layout
 
 \begin_layout Standard
@@ -1221,7 +1253,7 @@ Ts) la logica è regolare
 \end_layout
 
 \begin_layout Standard
-Poichè vale RR, ogni logica normale è regolare
+Poiché vale RR, ogni logica normale è regolare
 \end_layout
 
 \begin_layout Standard
@@ -1230,6 +1262,10 @@ Ip) Vale la regola RR
 
 \begin_layout Standard
 Ts) Vale la regola RM
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1261,7 +1297,7 @@ Ts) Vale la regola RM
 \end_layout
 
 \begin_layout Standard
-Poichè vale RM, ogni locica regolare è monotona
+Poiché vale RM, ogni logica regolare è monotona
 \end_layout
 
 \begin_layout Standard
@@ -1270,6 +1306,10 @@ Ip) Vale RM
 
 \begin_layout Standard
 Ts) Vale RE
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1315,7 +1355,7 @@ Ts) Vale RE
 \end_layout
 
 \begin_layout Standard
-Poichè vale RE, ogni logica monotona è classica
+Poiché vale RE, ogni logica monotona è classica
 \end_layout
 
 \begin_layout Subsection
@@ -1333,6 +1373,10 @@ Ip) valgono RE e M
 
 \begin_layout Standard
 Ts) vale RM
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1394,6 +1438,10 @@ Ip) vale RM
 
 \begin_layout Standard
 Ts) Vale M
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1450,6 +1498,10 @@ Ip) valgono RE, M e C
 
 \begin_layout Standard
 Ts) vale RR
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1485,7 +1537,7 @@ Sappiamo già che da RE e M ottengo RM.
 \end_layout
 
 \begin_layout Standard
-Poichè vale RR, la tesi è dimostrata.
+Poiché vale RR, la tesi è dimostrata.
 \end_layout
 
 \begin_layout Standard
@@ -1494,10 +1546,14 @@ Ip) vale RR
 
 \begin_layout Standard
 Ts) valgono M e C
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Poichè abbiamo RR, sappiamo che vale RM, ma allora sappiamo già che vale
+Poiché abbiamo RR, sappiamo che vale RM, ma allora sappiamo già che vale
  RE e l'assioma M.
 \end_layout
 
@@ -1539,6 +1595,10 @@ Ip) valgono RE, M, C, N
 
 \begin_layout Standard
 Ts) vale la logica K
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1588,10 +1648,14 @@ Ip) vale K
 
 \begin_layout Standard
 Ts) vale RE, M, C e N.
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Poichè siamo in una logica normale vale RR e quindi valgono RE, M e C.
+Poiché siamo in una logica normale vale RR e quindi valgono RE, M e C.
 \end_layout
 
 \begin_layout Standard
@@ -1607,7 +1671,7 @@ Relazione Tra Frame Minimali E Standard
 \end_layout
 
 \begin_layout Standard
-Poichè le logiche classiche contengono le logiche normali, è possibile delineare
+Poiché le logiche classiche contengono le logiche normali, è possibile delineare
  la relazione tra i frame minimali e i frame standard.
 \end_layout
 
@@ -1675,7 +1739,7 @@ Per ogni modello minimale aumentato
 
 \begin_layout Standard
 Questo teorema è banalmente vero per le formule che non utilizzano i connettivi
- modali, poichè S e V sono identiche.
+ modali, poiché S e V sono identiche.
  Dobbiamo dimostrarlo solo nel caso di utilizzo dei connettivi modali, e
  poi per induzione sulla complessità della formula, si può verificare che
  il teorema è valido in generale.
@@ -1695,10 +1759,14 @@ Ts)
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-supponiamo di scegliere R tale che:
+Supponiamo di scegliere R tale che:
 \end_layout
 
 \begin_layout Standard
@@ -1825,10 +1893,14 @@ Ts)
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-supponiamo di scegliere N tale che:
+Supponiamo di scegliere N tale che:
 \end_layout
 
 \begin_layout Standard

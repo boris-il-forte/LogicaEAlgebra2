@@ -246,7 +246,7 @@ Consideriamo il frame rappresentante la lettera dei numeri naturali:
 \end_layout
 
 \begin_layout Standard
-E il farme che rappresenta un albero binario a dimensione infinita:
+E il frame che rappresenta un albero binario a dimensione infinita:
 \end_layout
 
 \begin_layout Standard
@@ -395,7 +395,7 @@ e quindi si deduce facilmente che:
 \end_layout
 
 \begin_layout Standard
-e quindi la valutazione non può che essere la sola V', perchè è qualla che
+e quindi la valutazione non può che essere la sola V', perché è quella che
  si ricava imponendo la condizione di bisimulazione, e che rispetta anche
  la condizione 2.
 \end_layout
@@ -559,7 +559,7 @@ Alberi binari e frame finito
 \end_layout
 
 \begin_layout Standard
-Supponiamo di prendere su un frame binario B la seguante funzione di valutazione
+Supponiamo di prendere su un frame binario B la seguente funzione di valutazione
 :
 \end_layout
 
@@ -578,8 +578,8 @@ Supponiamo di prendere su un frame binario B la seguante funzione di valutazione
 \end_layout
 
 \begin_layout Standard
-In questo frame Q è vera su tutto il sottoalbero destro, mentre P sul sottoalber
-o sinistro.
+In questo frame Q è vera su tutto il sotto-albero destro, mentre P sul scotolass
+ero sinistro.
 \end_layout
 
 \begin_layout Standard
@@ -587,9 +587,9 @@ o sinistro.
 \begin_inset Formula $(B,\, V,\,0)\leftrightarroweq(N,\, V',\,\epsilon)$
 \end_inset
 
-, erchè dovrebbero esistere due insiemi di stati non in relazione tra loro
+, perché dovrebbero esistere due insiemi di stati non in relazione tra loro
  per cui in uno valga P e nell'altro Q.
- Ma questo non è possibile, poichè il frame N è una retta di elementi connessi
+ Ma questo non è possibile, poiché il frame N è una retta di elementi connessi
  a uno a uno.
  Tuttavia esiste un frame molto più semplice e finito che bisimula l'albero,
  di soli 3 stati, uno per lo stato 
@@ -601,7 +601,7 @@ o sinistro.
 \begin_inset Quotes eld
 \end_inset
 
-etichettatta
+etichettata
 \begin_inset Quotes erd
 \end_inset
 
@@ -1125,7 +1125,7 @@ supponiamo inoltre w accessibile da
 \end_layout
 
 \begin_layout Standard
-Poichè sono in condizione di bisimulazione vale la condizone b2:
+Poiché sono in condizione di bisimulazione vale la condizione b2:
 \end_layout
 
 \begin_layout Standard
@@ -1136,7 +1136,7 @@ Poichè sono in condizione di bisimulazione vale la condizone b2:
 \end_layout
 
 \begin_layout Standard
-Ma poichè 
+Ma poiché 
 \begin_inset Formula $\beta$
 \end_inset
 
@@ -1166,7 +1166,7 @@ Tuttavia abbiamo anche che:
 \end_layout
 
 \begin_layout Standard
-ma non può essere perchè i due frame sono in bisimulazione, assurdo!
+ma non può essere perché i due frame sono in bisimulazione, assurdo!
 \end_layout
 
 \begin_layout Standard
@@ -1286,9 +1286,9 @@ b2)
 \end_layout
 
 \begin_layout Standard
-Ma, poichè il frame Z è irriflessivo, se esistesse una formula che esprime
+Ma, poiché il frame Z è irriflessivo, se esistesse una formula che esprime
  l'irriflessività, allora non sarebbe valida su F, ma ciò è impossibile,
- perchè è in bisimulazione con Z, e quindi tutte le formule vere su F sono
+ perché è in bisimulazione con Z, e quindi tutte le formule vere su F sono
  vere su Z e viceversa.
 \end_layout
 

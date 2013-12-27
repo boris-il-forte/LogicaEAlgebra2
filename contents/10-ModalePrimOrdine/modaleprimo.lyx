@@ -118,7 +118,7 @@ Una logica modale del prim'ordine è definita sul seguente alfabeto:
 \end_layout
 
 \begin_layout Itemize
-costanti 
+Costanti 
 \begin_inset Formula $(k_{1},...,k_{n})$
 \end_inset
 
@@ -126,7 +126,7 @@ costanti
 \end_layout
 
 \begin_layout Itemize
-variabili 
+Variabili 
 \begin_inset Formula $(x_{1},...,x_{n})$
 \end_inset
 
@@ -134,7 +134,7 @@ variabili
 \end_layout
 
 \begin_layout Itemize
-lettere predicative 
+Lettere predicative 
 \begin_inset Formula $A_{i}^{j}$
 \end_inset
 
@@ -142,7 +142,7 @@ lettere predicative
 \end_layout
 
 \begin_layout Itemize
-connettivi logici: 
+Connettivi logici: 
 \begin_inset Formula $\neg,\,\wedge,\,\vee,\,\implies,\,\iff$
 \end_inset
 
@@ -150,7 +150,7 @@ connettivi logici:
 \end_layout
 
 \begin_layout Itemize
-quantificatori universali ed esistenziali: 
+Quantificatori universali ed esistenziali: 
 \begin_inset Formula $\forall x_{i},\,\exists x_{i}$
 \end_inset
 
@@ -158,7 +158,7 @@ quantificatori universali ed esistenziali:
 \end_layout
 
 \begin_layout Itemize
-connettivi modali 
+Connettivi modali 
 \begin_inset Formula $\square,\,\diamond$
 \end_inset
 
@@ -166,11 +166,11 @@ connettivi modali
 \end_layout
 
 \begin_layout Itemize
-parentesi ), (
+Parentesi ), (
 \end_layout
 
 \begin_layout Standard
-si chiamano termini le costanti e le lettere predicative, gli indichiamo
+Si chiamano termini le costanti e le lettere predicative, gli indichiamo
  come 
 \begin_inset Formula $t_{i}$
 \end_inset
@@ -179,7 +179,7 @@ si chiamano termini le costanti e le lettere predicative, gli indichiamo
 \end_layout
 
 \begin_layout Standard
-si chiamano formule atomiche, le formule del tipo:
+Si chiamano formule atomiche, le formule del tipo:
 \end_layout
 
 \begin_layout Standard
@@ -212,7 +212,7 @@ Le formule atomiche sono formule ben formate
 \end_layout
 
 \begin_layout Itemize
-null'altro è una formula ben formata.
+Null'altro è una formula ben formata.
 \end_layout
 
 \begin_layout Section
