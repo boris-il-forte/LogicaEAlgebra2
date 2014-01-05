@@ -158,7 +158,7 @@ Dato una logica
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\teoremaDi{\Lambda}a\iff\vera{\mu}a$
+\begin_inset Formula $\teoremaDi\Lambda a\iff\vera\mu a$
 \end_inset
 
 
@@ -178,7 +178,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\exists\mu:\,\teoremaDi{\Lambda}a\iff\vera{\mu}a$
+\begin_inset Formula $\exists\mu:\,\teoremaDi\Lambda a\iff\vera\mu a$
 \end_inset
 
 
@@ -348,7 +348,11 @@ Per dimostrarlo basta prendere:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $f:\,\alpha\rightarrow\mathcal{P}(\Gamma)$
+\begin_inset Formula $f:\, S\rightarrow\mathcal{P}(\Gamma)$
+\end_inset
+
+ che associa 
+\begin_inset Formula $f(\alpha)=\Gamma_{\alpha}$
 \end_inset
 
 
@@ -362,7 +366,7 @@ risulta banale verificare che:
 \begin_inset Formula $ker\, f\equiv\sim_{\Gamma}$
 \end_inset
 
-
+ (due elementi appar
 \end_layout
 
 \begin_layout Standard
@@ -520,7 +524,7 @@ Ip)
 \end_inset
 
 , 
-\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx b}$
+\begin_inset Formula $\veraw\mu\alpha{\boxx b}$
 \end_inset
 
 
@@ -550,14 +554,14 @@ avremo che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\delta}{\boxx b}$
+\begin_inset Formula $\veraw\mu\delta{\boxx b}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\eta}b$
+\begin_inset Formula $\veraw\mu\eta b$
 \end_inset
 
 
@@ -568,7 +572,7 @@ e quindi:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\beta}b$
+\begin_inset Formula $\veraw\mu\beta b$
 \end_inset
 
 
@@ -595,7 +599,7 @@ dato un insieme
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{a\iff}\veraw{\mu^{\Gamma}}{\alpha}a$
+\begin_inset Formula $\veraw\mu\alpha{a\iff}\veraw{\mu^{\Gamma}}\alpha a$
 \end_inset
 
 
@@ -623,7 +627,7 @@ Dimostrazione:
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\veraw{\mu}{\alpha}{a\iff}\veraw{\mu^{\Gamma}}{[\alpha]}a$
+\begin_inset Formula $\veraw\mu\alpha{a\iff}\veraw{\mu^{\Gamma}}{[\alpha]}a$
 \end_inset
 
 
@@ -662,7 +666,7 @@ a non ha connettivi, allora
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}A\iff\alpha\in V(A)\iff\alpha\in V^{\Gamma}(A)\iff\veraw{\mu^{\Gamma}}{[\alpha]}a$
+\begin_inset Formula $\veraw\mu\alpha A\iff\alpha\in V(A)\iff\alpha\in V^{\Gamma}(A)\iff\veraw{\mu^{\Gamma}}{[\alpha]}a$
 \end_inset
 
 
@@ -706,7 +710,7 @@ Caso 1:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\neg b}\iff\nonveraw{\mu}{\alpha}b\iff\nonveraw{\mu^{\Gamma}}{[\alpha]}b\iff\veraw{\mu^{\Gamma}}{[\alpha]}{\neg b}$
+\begin_inset Formula $\veraw\mu\alpha{\neg b}\iff\nonveraw\mu\alpha b\iff\nonveraw{\mu^{\Gamma}}{[\alpha]}b\iff\veraw{\mu^{\Gamma}}{[\alpha]}{\neg b}$
 \end_inset
 
 
@@ -717,7 +721,7 @@ Caso 2:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{b\implies c}$
+\begin_inset Formula $\veraw\mu\alpha{b\implies c}$
 \end_inset
 
  se e solo se 
@@ -733,11 +737,11 @@ Caso 2:
 \noun off
 \color none
 
-\begin_inset Formula $\nonveraw{\mu}{\alpha}b$
+\begin_inset Formula $\nonveraw\mu\alpha b$
 \end_inset
 
  oppure 
-\begin_inset Formula $\veraw{\mu}{\alpha}c$
+\begin_inset Formula $\veraw\mu\alpha c$
 \end_inset
 
 
@@ -760,7 +764,7 @@ quindi si può affermare
 \uwave off
 \noun off
 \color none
-\begin_inset Formula $\nonveraw{\mu}{\alpha}b\iff\nonveraw{\mu^{\Gamma}}{[\alpha]}b$
+\begin_inset Formula $\nonveraw\mu\alpha b\iff\nonveraw{\mu^{\Gamma}}{[\alpha]}b$
 \end_inset
 
 
@@ -779,7 +783,7 @@ quindi si può affermare
 \uwave off
 \noun off
 \color none
-\begin_inset Formula $\veraw{\mu}{\alpha}c\iff\veraw{\mu^{\Gamma}}{[\alpha]}c$
+\begin_inset Formula $\veraw\mu\alpha c\iff\veraw{\mu^{\Gamma}}{[\alpha]}c$
 \end_inset
 
 
@@ -802,7 +806,7 @@ Caso 3:
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx b}$
+\begin_inset Formula $\veraw\mu\alpha{\boxx b}$
 \end_inset
 
 
@@ -832,7 +836,7 @@ allora si può affermare che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\beta}b\implies\veraw{\mu^{\Gamma}}{[\beta]}b\implies\veraw{\mu^{\Gamma}}{[\alpha]}{\boxx b}$
+\begin_inset Formula $\veraw\mu\beta b\implies\veraw{\mu^{\Gamma}}{[\beta]}b\implies\veraw{\mu^{\Gamma}}{[\alpha]}{\boxx b}$
 \end_inset
 
 
@@ -848,7 +852,7 @@ Ip)
 
 \begin_layout Standard
 Ts)
-\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx b}$
+\begin_inset Formula $\veraw\mu\alpha{\boxx b}$
 \end_inset
 
 
@@ -878,7 +882,7 @@ allora si può affermare che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\veraw{\mu^{\Gamma}}{[\beta]}b\implies\mu}{\beta}b\implies\veraw{\mu}{\alpha}{\boxx b}$
+\begin_inset Formula $\veraw{\veraw{\mu^{\Gamma}}{[\beta]}b\implies\mu}\beta b\implies\veraw\mu\alpha{\boxx b}$
 \end_inset
 
 
@@ -1308,7 +1312,7 @@ per ogni
 \end_inset
 
  allora anche (schema 4) 
-\begin_inset Formula $\veraw M{\alpha}{\boxx{\boxx b}}$
+\begin_inset Formula $\veraw M\alpha{\boxx{\boxx b}}$
 \end_inset
 
  
@@ -1323,18 +1327,18 @@ dato che
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw M{\beta}b$
+\begin_inset Formula $\veraw M\beta b$
 \end_inset
 
  e 
-\begin_inset Formula $\veraw M{\beta}{\boxx b}$
+\begin_inset Formula $\veraw M\beta{\boxx b}$
 \end_inset
 
  e quindi:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw M{\beta}{b\wedge\boxx b}$
+\begin_inset Formula $\veraw M\beta{b\wedge\boxx b}$
 \end_inset
 
 
@@ -1373,7 +1377,7 @@ Sia
 \end_inset
 
  e 
-\begin_inset Formula $\veraw M{\alpha}{\boxx b}$
+\begin_inset Formula $\veraw M\alpha{\boxx b}$
 \end_inset
 
  segua 
@@ -1753,7 +1757,7 @@ T:
 
 \begin_layout Itemize
 B: 
-\begin_inset Formula $a\implies\boxx{\dia}$
+\begin_inset Formula $a\implies\boxx\dia$
 \end_inset
 
  (simmetrica)
@@ -1761,7 +1765,7 @@ B:
 
 \begin_layout Itemize
 4:
-\begin_inset Formula $\boa\implies\boxx{\boa}$
+\begin_inset Formula $\boa\implies\boxx\boa$
 \end_inset
 
  (transitiva)
@@ -2246,7 +2250,7 @@ Valendo 4 vale anche 4
 
 \begin_layout Standard
 abbiamo 
-\begin_inset Formula $\diamond a\implies\boxx{\dia}$
+\begin_inset Formula $\diamond a\implies\boxx\dia$
 \end_inset
 
  cioè lo schema5.
@@ -2293,7 +2297,7 @@ Tenuto conto della prima osservazione (con
 
 \begin_layout Standard
 abbiamo 
-\begin_inset Formula $\boa\implies\boxx{\boa}$
+\begin_inset Formula $\boa\implies\boxx\boa$
 \end_inset
 
 .
@@ -2393,7 +2397,7 @@ Dato che vale 5:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $a\implies\boxx{\dia}$
+\begin_inset Formula $a\implies\boxx\dia$
 \end_inset
 
  cioè B.
@@ -2924,7 +2928,7 @@ es.
 
 \begin_layout Standard
 1:
-\begin_inset Formula $\neg(\boxx{\dia})$
+\begin_inset Formula $\neg(\boxx\dia)$
 \end_inset
 
 
