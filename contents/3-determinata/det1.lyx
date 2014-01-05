@@ -129,7 +129,7 @@ Sia
 \begin_inset Formula $\Lambda$
 \end_inset
 
- una logica (cioè ha tutte le tautologie ed è chiusa rispetto al Modus Ponens)
+ una logica (cioè ha tutte le tautologie ed è chiusa rispetto al Modus Ponens)	
 \end_layout
 
 \begin_layout Standard
@@ -141,7 +141,7 @@ Sia
 \end_inset
 
 -consistente se: 
-\begin_inset Formula $\nonSinW{\Gamma}{\Lambda}{\bot}$
+\begin_inset Formula $\nonSinW\Gamma\Lambda\bot$
 \end_inset
 
 , dove 
@@ -1175,7 +1175,7 @@ Sia
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraCanAlfa a$
+\begin_inset Formula $M^{\Lambda}\veraCanAlfa{_{\alpha}a}$
 \end_inset
 
  se e solo se 
@@ -1191,7 +1191,7 @@ Sia
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\veraCanAlfa a$
+\begin_inset Formula $M^{\Lambda}\veraCanAlfa{_{\alpha}a}$
 \end_inset
 
 
@@ -1250,7 +1250,7 @@ n=0
 \end_inset
 
  (lettera enunciativa) da cui 
-\begin_inset Formula $\veraCA$
+\begin_inset Formula $M^{\Lambda}\veraCanAlfa{_{\alpha}a}$
 \end_inset
 
  se e solo se 
@@ -1318,11 +1318,11 @@ Ipotesi di Induzione
 Caso 1:
 \series default
  
-\begin_inset Formula $\veraCA$
+\begin_inset Formula $M^{\Lambda}\veraCanAlfa{_{\alpha}a}$
 \end_inset
 
  se e solo se 
-\begin_inset Formula $\veraCanAlfa{\neg b}$
+\begin_inset Formula $M^{\Lambda}\veraCanAlfa{_{\alpha}\neg b}$
 \end_inset
 
  se e solo se 
@@ -1414,7 +1414,7 @@ Caso
 \end_inset
 
  
-\begin_inset Formula $\veraCA$
+\begin_inset Formula $M^{\Lambda}\veraCanAlfa{_{\alpha}a}$
 \end_inset
 
  se e solo se
@@ -1554,7 +1554,7 @@ da cui per MP con
 Caso 22
 \series default
 : 
-\begin_inset Formula $\veraCan{\alpha}c$
+\begin_inset Formula $M^{\Lambda}\veraCanAlfa{_{\alpha}c}$
 \end_inset
 
 
@@ -1654,7 +1654,7 @@ Caso 3
 
 \begin_layout Standard
 Ip)
-\begin_inset Formula $\veraCan{\alpha}{\boxx b}$
+\begin_inset Formula $M^{\Lambda}\veraCanAlfa{_{\alpha}\boxx b}$
 \end_inset
 
 
@@ -1678,11 +1678,11 @@ Dall'ipotesi segue che
 \end_inset
 
  si ha: 
-\begin_inset Formula $\veraCan{\beta}b$
+\begin_inset Formula $M^{\Lambda}\veraCanAlfa{_{\beta}b}$
 \end_inset
 
  (questo per la definizione di 
-\begin_inset Formula $\boa$
+\begin_inset Formula $\boxx x$
 \end_inset
 
 )
@@ -1764,11 +1764,16 @@ Ognuno dei
 \begin_inset Formula $\consMax$
 \end_inset
 
- e ognuno contiene l'insieme 
+ (per come sono definiti gli stati del modello canonico) e ognuno contiene
+ l'insieme 
 \begin_inset Formula $\{a\ |\ \boa\in\alpha\}$
 \end_inset
 
+ (per come è definita la relazione 
+\begin_inset Formula $R^{\Lambda}$
+\end_inset
 
+)
 \end_layout
 
 \begin_layout Standard
@@ -1821,7 +1826,19 @@ Ognuno dei
 \begin_inset Formula $\{a\ |\ \boa\in\alpha\}$
 \end_inset
 
- è consistente massimale (davvero??) e quindi
+ è consistente massimale ed è contenuto in 
+\begin_inset Formula $\beta$
+\end_inset
+
+ e quindi
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $b\in\{a\ |\ \boa\in\alpha\}$
+\end_inset
+
+ da cui per la proprietà 3.
+ di insieme consistente si ha anche
 \end_layout
 
 \begin_layout Standard
@@ -1832,7 +1849,7 @@ Ognuno dei
 \begin_inset Formula $\teorema b$
 \end_inset
 
-, per la 2.
+, inoltre, per la 2.
  definizione equivalente di Logica Normale 
 \begin_inset Quotes eld
 \end_inset
@@ -1853,41 +1870,35 @@ aggiungo
 \end_inset
 
  
-\begin_inset Formula $\teorema b$
+\begin_inset Formula $\teorema{\boxx b}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Ma 
+, dato che 
 \begin_inset Formula $\{\boa\ |\ \boa\in\alpha\}$
 \end_inset
 
- è un sottoinsieme di formule di 
-\begin_inset Formula $\alpha$
-\end_inset
-
- quindi a maggior ragione ricavo 
-\begin_inset Formula $b$
-\end_inset
-
- da tutto 
-\begin_inset Formula $\alpha$
-\end_inset
-
- da cui:
+ è consistente massimale.
+ per la 12.
+ delle proprietà di consistenza si ha anche
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\alpha\teorema b$
+\begin_inset Formula $\boxx b\in\{a\ |\ \boa\in\alpha\}$
+\end_inset
+
+ da cui, a maggior ragione 
+\begin_inset Formula $\boxx b\in\alpha$
 \end_inset
 
 
 \begin_inset Newline newline
 \end_inset
 
- Ip) 
+
+\end_layout
+
+\begin_layout Standard
+Ip) 
 \begin_inset Formula $\boxx b\in\alpha$
 \end_inset
 
@@ -1896,7 +1907,11 @@ Ma
 
 \begin_layout Standard
 TS) 
-\begin_inset Formula $\veraCanAlfa{\boxx b}$
+\begin_inset Formula $M^{\Lambda}\veraCanAlfa{_{\alpha}\boxx b}$
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
@@ -1947,7 +1962,7 @@ Notiamo che
 \end_inset
 
  se e solo se 
-\begin_inset Formula $\veraCan{\beta}b$
+\begin_inset Formula $M^{\Lambda}\veraCanAlfa{_{\beta}b}$
 \end_inset
 
 
@@ -1967,7 +1982,7 @@ per ogni
 \end_inset
 
 , si ha: 
-\begin_inset Formula $\veraCanAlfa{\boxx b}$
+\begin_inset Formula $M^{\Lambda}\veraCanAlfa{\beta\boxx b}$
 \end_inset
 
 
