@@ -435,7 +435,7 @@ F1)
 
 \begin_layout Standard
 F2) 
-\begin_inset Formula $([\alpha],[\beta])\in R'\implies\forall\boxx b\in\Gamma,\,\veraw{\mu}{\alpha}{\boxx b}\implies\veraw{\mu}{\beta}b$
+\begin_inset Formula $([\alpha],[\beta])\in R'\implies\forall\boxx b\in\Gamma,\,\veraw\mu\alpha{\boxx b}\implies\veraw\mu\beta b$
 \end_inset
 
 
@@ -462,7 +462,7 @@ Una relazione che gode delle proprietà F1 e F2 si chiama
 \end_layout
 
 \begin_layout Standard
-prendiamo infine:
+Prendiamo infine:
 \end_layout
 
 \begin_layout Standard
@@ -559,10 +559,14 @@ Ts)
 \end_inset
 
 gode della proprietà F2
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-supponiamo che:
+Supponiamo che:
 \end_layout
 
 \begin_layout Standard
@@ -610,11 +614,15 @@ Lemma di Filtrazione
 \end_layout
 
 \begin_layout Standard
-dato un insieme
+Dato un insieme 
 \begin_inset Formula $\Gamma$
 \end_inset
 
- chiuso rispetto alle sottoformule di a, con 
+ chiuso rispetto alle sottoformule di 
+\begin_inset Formula $a$
+\end_inset
+
+, con 
 \begin_inset Formula $a\in\Gamma$
 \end_inset
 
@@ -649,14 +657,6 @@ Dimostrazione:
 \end_layout
 
 \begin_layout Standard
-Ts) 
-\begin_inset Formula $\veraw\mu\alpha{a\iff}\veraw{\mu^{\Gamma}}{[\alpha]}a$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Ip) 
 \begin_inset Formula $\mu^{\Gamma}$
 \end_inset
@@ -673,15 +673,34 @@ Ip)
 \end_layout
 
 \begin_layout Standard
+Ts) 
+\begin_inset Formula $\veraw\mu\alpha{a\iff}\veraw{\mu^{\Gamma}}{[\alpha]}a$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Per induzione sul numero di connettivi di a
 \end_layout
 
 \begin_layout Standard
-Caso Base, n=0:
+Caso Base, 
+\begin_inset Formula $n=0$
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
-a non ha connettivi, allora 
+\begin_inset Formula $a$
+\end_inset
+
+ non ha connettivi, allora 
 \begin_inset Formula $a\equiv A$
 \end_inset
 
@@ -729,6 +748,8 @@ a può essere:
 \end_layout
 
 \begin_layout Standard
+
+\series bold
 Caso 1:
 \end_layout
 
@@ -737,14 +758,20 @@ Caso 1:
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
+
+\series bold
 Caso 2:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\alpha{b\implies c}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{b\implies c}$
 \end_inset
 
  se e solo se 
@@ -760,11 +787,11 @@ Caso 2:
 \noun off
 \color none
 
-\begin_inset Formula $\nonveraw\mu\alpha b$
+\begin_inset Formula $\nonveraw{\mu}{\alpha}b$
 \end_inset
 
  oppure 
-\begin_inset Formula $\veraw\mu\alpha c$
+\begin_inset Formula $\veraw{\mu}{\alpha}c$
 \end_inset
 
 
@@ -787,7 +814,7 @@ quindi si può affermare
 \uwave off
 \noun off
 \color none
-\begin_inset Formula $\nonveraw\mu\alpha b\iff\nonveraw{\mu^{\Gamma}}{[\alpha]}b$
+\begin_inset Formula $\nonveraw{\mu}{\alpha}b\iff\nonveraw{\mu^{\Gamma}}{[\alpha]}b$
 \end_inset
 
 
@@ -806,7 +833,7 @@ quindi si può affermare
 \uwave off
 \noun off
 \color none
-\begin_inset Formula $\veraw\mu\alpha c\iff\veraw{\mu^{\Gamma}}{[\alpha]}c$
+\begin_inset Formula $\veraw{\mu}{\alpha}c\iff\veraw{\mu^{\Gamma}}{[\alpha]}c$
 \end_inset
 
 
@@ -821,15 +848,21 @@ ma vale almeno una delle due se e solo se
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
+
+\series bold
 Caso 3:
 \end_layout
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\veraw\mu\alpha{\boxx b}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx b}$
 \end_inset
 
 
@@ -841,6 +874,10 @@ Ts)
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -848,10 +885,18 @@ Consideriamo la reazione R' avente le proprietà F1 e F2
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\forall[\beta]\,:\,([\alpha],\,[\beta])\in R'\implies\veraw{\mu^{\Gamma}}{[\beta]}b$
+\begin_inset Formula $\forall[\beta]\,:\,([\alpha],\,[\beta])\in R'\implies\veraw{\mu}{\beta}b$
 \end_inset
 
  -- per F2
+\end_layout
+
+\begin_layout Standard
+e per ipotesi induttiva anche: 
+\begin_inset Formula $\vera{\mu^{\Gamma}}{_{[\beta]}b}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -859,7 +904,11 @@ allora si può affermare che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\beta b\implies\veraw{\mu^{\Gamma}}{[\beta]}b\implies\veraw{\mu^{\Gamma}}{[\alpha]}{\boxx b}$
+\begin_inset Formula $\veraw{\mu}{\beta}b\implies\veraw{\mu^{\Gamma}}{[\beta]}b\implies\veraw{\mu^{\Gamma}}{[\alpha]}{\boxx b}$
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
@@ -875,7 +924,11 @@ Ip)
 
 \begin_layout Standard
 Ts)
-\begin_inset Formula $\veraw\mu\alpha{\boxx b}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx b}$
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
@@ -905,7 +958,7 @@ allora si può affermare che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\veraw{\mu^{\Gamma}}{[\beta]}b\implies\mu}\beta b\implies\veraw\mu\alpha{\boxx b}$
+\begin_inset Formula $\veraw{\veraw{\mu^{\Gamma}}{[\beta]}b\implies\mu}{\beta}b\implies\veraw{\mu}{\alpha}{\boxx b}$
 \end_inset
 
 
@@ -1015,7 +1068,7 @@ Ts)
 \begin_inset Newline newline
 \end_inset
 
-Suppongo per assurdo che
+Suppongo per assurdo che 
 \begin_inset Formula $\nonTeor Ka$
 \end_inset
 
@@ -1171,7 +1224,7 @@ Se
 \end_layout
 
 \begin_layout Standard
-In particolare esiste
+In particolare esiste 
 \begin_inset Formula $\delta$
 \end_inset
 
@@ -1187,7 +1240,7 @@ In particolare esiste
 \end_layout
 
 \begin_layout Standard
-Dalla serialità abbiamo che esiste
+Dalla serialità abbiamo che esiste 
 \begin_inset Formula $\eta$
 \end_inset
 
