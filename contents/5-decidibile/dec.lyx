@@ -3255,7 +3255,7 @@ Tableaux rivisitato per KT, KB
 \end_layout
 
 \begin_layout Standard
-Se una logica contiene l'assioma B devo aggiungere alle regole del Tableaux
+Se una logica contiene l'assioma T devo aggiungere alle regole del Tableaux
 \end_layout
 
 \begin_layout Itemize
@@ -3364,7 +3364,7 @@ es.
 \begin_inset Formula $(\boa\implies a)$
 \end_inset
 
- è un teorema in KB
+ è un teorema in KT
 \end_layout
 
 \begin_layout Standard
@@ -3529,7 +3529,7 @@ Dove nell'ultimo passaggio ho usato proprio la regola appena introdotta,
 \begin_inset Newline newline
 \end_inset
 
-Se una logica contiene l'assioma T devo aggiungere alle regole del Tableaux
+Se una logica contiene l'assioma B devo aggiungere alle regole del Tableaux
 \end_layout
 
 \begin_layout Itemize
@@ -3674,7 +3674,7 @@ es.
 \begin_inset Formula $(a\implies\boxx{\diamond a})$
 \end_inset
 
- è un teorema in KT
+ è un teorema in KB
 \end_layout
 
 \begin_layout Standard
