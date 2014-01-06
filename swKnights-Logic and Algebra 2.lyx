@@ -32,6 +32,7 @@
 \lstset{columns=fullflexible}
 
 \usepackage{wasysym}
+\usepackage{array}   % http://ctan.org/pkg/array
 
 \usepackage[times]{quotchap} % Chapter package
 

@@ -158,7 +158,7 @@ Dato una logica
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\teoremaDi\Lambda a\iff\vera\mu a$
+\begin_inset Formula $\teoremaDi{\Lambda}a\iff\vera{\mu}a$
 \end_inset
 
 
@@ -178,7 +178,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\exists\mu:\,\teoremaDi\Lambda a\iff\vera\mu a$
+\begin_inset Formula $\exists\mu:\,\teoremaDi{\Lambda}a\iff\vera{\mu}a$
 \end_inset
 
 
@@ -204,7 +204,7 @@ che gode della seguente proprietà:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\Gamma_{\alpha}=\{a\in\Gamma\,|\,\veraw\mu\alpha a\}$
+\begin_inset Formula $\Gamma_{\alpha}=\{a\in\Gamma\,|\,\veraw{\mu}{\alpha}a\}$
 \end_inset
 
 
@@ -1403,18 +1403,18 @@ dato che
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw M\beta b$
+\begin_inset Formula $\veraw M{\beta}b$
 \end_inset
 
  e 
-\begin_inset Formula $\veraw M\beta{\boxx b}$
+\begin_inset Formula $\veraw M{\beta}{\boxx b}$
 \end_inset
 
  e quindi:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw M\beta{b\wedge\boxx b}$
+\begin_inset Formula $\veraw M{\beta}{b\wedge\boxx b}$
 \end_inset
 
 
@@ -1453,7 +1453,7 @@ Sia
 \end_inset
 
  e 
-\begin_inset Formula $\veraw M\alpha{\boxx b}$
+\begin_inset Formula $\veraw M{\alpha}{\boxx b}$
 \end_inset
 
  segua 
@@ -1529,7 +1529,44 @@ Radice dell'albero
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+arraystretch{2} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tabcolsep=10.8mm  
+\backslash
+begin{tabular}{{c}} 
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $\neg a$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
 \end_inset
 
 
@@ -1557,7 +1594,47 @@ Regola del
 \noun off
 \color none
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tabcolsep=10.8mm  
+\backslash
+begin{tabular}{{c}} 
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $\dfrac{\neg\neg a}{a}$
+\end_inset
+
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
 \end_inset
 
 
@@ -1573,15 +1650,65 @@ Regole di tipo
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tabcolsep=10.8mm  
+\backslash
+begin{tabular}{*3{c}} 
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $\dfrac{a\wedge b}{a,\, b}$
 \end_inset
 
- 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $\dfrac{\neg(a\vee b)}{\neg a,\,\neg b}$
 \end_inset
 
- 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $\dfrac{\neg(a\implies b)}{a,\,\neg b}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
 \end_inset
 
 
@@ -1597,15 +1724,67 @@ Regole di tipo
 \end_inset
 
 
-\begin_inset Formula $\dfrac{a\vee b}{a|b}$
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+  
+\backslash
+begin{tabular}{*3{c}} 
+\end_layout
+
 \end_inset
 
- 
-\begin_inset Formula $\dfrac{\neg(a\wedge b)}{\neg a|\neg b}$
+
+\begin_inset Formula $\dfrac{a\vee b}{a\ |\ b}$
 \end_inset
 
- 
-\begin_inset Formula $\dfrac{a\implies b}{\neg a|b}$
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\dfrac{\neg(a\wedge b)}{\neg a\ |\ \neg b}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\dfrac{a\implies b}{\neg a\ |\ b}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
@@ -1621,11 +1800,48 @@ Regole di tipo
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+begin{tabular}{*2{c}} 
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $\dfrac{a\iff b}{a,\, b|\neg a,\,\neg b}$
 \end_inset
 
- 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $\dfrac{\neg(a\iff b)}{a,\,\neg b|\neg a,\, b}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
 \end_inset
 
 
@@ -1657,7 +1873,44 @@ Radice dell'albero
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+arraystretch{3} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tabcolsep=10.8mm  
+\backslash
+begin{tabular}{{c}} 
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $1.\neg a$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
 \end_inset
 
 
@@ -1685,7 +1938,47 @@ Regola del
 \noun off
 \color none
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tabcolsep=10.8mm  
+\backslash
+begin{tabular}{{c}}  
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $\dfrac{\delta\,\neg\neg a}{\delta a}$
+\end_inset
+
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
 \end_inset
 
 
@@ -1701,7 +1994,33 @@ Regole di tipo
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tabcolsep=10.8mm  
+\backslash
+begin{tabular}{*3{c}} 
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $\dfrac{\delta\, a\wedge b}{\delta\, a,\,\delta\, b}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
 \end_inset
 
  
@@ -1709,7 +2028,31 @@ Regole di tipo
 \end_inset
 
  
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\end_inset
+
+ 
 \begin_inset Formula $\dfrac{\delta\,\neg(a\implies b)}{\delta\, a,\,\delta\,\neg b}$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
 \end_inset
 
 
@@ -1725,15 +2068,65 @@ Regole di tipo
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tabcolsep=10.8mm  
+\backslash
+begin{tabular}{*3{c}} 
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $\dfrac{\delta\, a\vee b}{\delta\, a|\delta\, b}$
 \end_inset
 
  
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $\dfrac{\delta\,\neg(a\wedge b)}{\delta\,\neg a|\delta\,\neg b}$
 \end_inset
 
  
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $\dfrac{\delta\, a\implies b}{\delta\,\neg a|\delta\, b}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
 \end_inset
 
 
@@ -1749,11 +2142,50 @@ Regole di tipo
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tabcolsep=10.8mm  
+\backslash
+begin{tabular}{*2{c}} 
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $\dfrac{\delta\, a\iff b}{\delta\, a,\,\delta\, b|\delta\,\neg a,\,\delta\,\neg b}$
 \end_inset
 
  
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $\dfrac{\delta\,\neg(a\iff b)}{\delta\, a,\,\delta\,\neg b|\delta\,\neg a,\,\delta\, b}$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
 \end_inset
 
 
@@ -1765,7 +2197,33 @@ Regole di necessitazione
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tabcolsep=10.8mm  
+\backslash
+begin{tabular}{*2{c}} 
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $\dfrac{\sigma\,\boa}{\sigma_{n}\, a}$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
 \end_inset
 
  
@@ -1776,8 +2234,36 @@ Regole di necessitazione
 \begin_inset Formula $\sigma_{n}$
 \end_inset
 
- già presente nei nodi precedenti
+ già presente nei nodi precedenti 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tabcolsep=10.8mm  
+\backslash
+begin{tabular}{*2{c}} 
+\end_layout
+
 \end_inset
 
 
@@ -1785,6 +2271,17 @@ Regole di necessitazione
 \end_inset
 
  
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $\dfrac{\sigma\,\dia}{\sigma_{n}\, a}$
 \end_inset
 
@@ -1793,6 +2290,19 @@ Regole di necessitazione
 \end_inset
 
  non presente nei nodi precedenti
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1833,7 +2343,7 @@ T:
 
 \begin_layout Itemize
 B: 
-\begin_inset Formula $a\implies\boxx\dia$
+\begin_inset Formula $a\implies\boxx{\dia}$
 \end_inset
 
  (simmetrica)
@@ -1841,7 +2351,7 @@ B:
 
 \begin_layout Itemize
 4:
-\begin_inset Formula $\boa\implies\boxx\boa$
+\begin_inset Formula $\boa\implies\boxx{\boa}$
 \end_inset
 
  (transitiva)
@@ -2326,7 +2836,7 @@ Valendo 4 vale anche 4
 
 \begin_layout Standard
 abbiamo 
-\begin_inset Formula $\diamond a\implies\boxx\dia$
+\begin_inset Formula $\diamond a\implies\boxx{\dia}$
 \end_inset
 
  cioè lo schema5.
@@ -2373,7 +2883,7 @@ Tenuto conto della prima osservazione (con
 
 \begin_layout Standard
 abbiamo 
-\begin_inset Formula $\boa\implies\boxx\boa$
+\begin_inset Formula $\boa\implies\boxx{\boa}$
 \end_inset
 
 .
@@ -2473,7 +2983,7 @@ Dato che vale 5:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $a\implies\boxx\dia$
+\begin_inset Formula $a\implies\boxx{\dia}$
 \end_inset
 
  cioè B.
@@ -2754,7 +3264,66 @@ Regole di necessitazione
 \end_inset
 
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+arraystretch{3} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tabcolsep=10.8mm  
+\backslash
+begin{tabular}{*2{c}}  
+\end_layout
+
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ 
 \begin_inset Formula $\dfrac{\sigma\,\boa}{\sigma_{n}\, a}$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
 \end_inset
 
  
@@ -2772,6 +3341,21 @@ Regole di necessitazione
  
 \series bold
 nodo corrente
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2952,16 +3536,96 @@ Se una logica contiene l'assioma T devo aggiungere alle regole del Tableaux
 Regole di necessitazione
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+arraystretch{2} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tabcolsep=10.8mm  
+\backslash
+begin{tabular}{{c}}  
+\end_layout
+
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
 \begin_inset Formula $\dfrac{\sigma\,\boa}{\sigma_{n}\, a}$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
 \end_inset
 
  
 \begin_inset Formula $\dfrac{\sigma\,\neg\dia}{\sigma_{n}\,\neg a}$
 \end_inset
 
- -- con 
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+ con 
 \begin_inset Formula $\sigma_{n}$
 \end_inset
 
@@ -2973,10 +3637,37 @@ Regole di necessitazione
 \series bold
 nodo prefisso del nodo corrente
 \series default
- (es 11 è prefisso di 111)
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
 \end_layout
 
-\end_deeper
+\end_inset
+
+(es 11 è prefisso di 111) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 es.
  Si provi che la formula 
@@ -3004,7 +3695,7 @@ es.
 
 \begin_layout Standard
 1:
-\begin_inset Formula $\neg(\boxx\dia)$
+\begin_inset Formula $\neg(\boxx{\dia})$
 \end_inset
 
 
