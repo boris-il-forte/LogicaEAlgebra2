@@ -62,6 +62,17 @@
 \lstset{columns=fullflexible}
 
 \usepackage{wasysym}
+\usepackage{array}   % http://ctan.org/pkg/array
+
+\usepackage[times]{quotchap} % Chapter package
+
+\makeatletter
+\renewcommand*{\sectfont}{\bfseries}
+\renewcommand*{\chapnumfont}{%
+  \usefont{T1}{\@defaultcnfont}{b}{n}\fontsize{120}{150}\selectfont% Default: 100/130
+  \color{chaptergrey}%
+}
+
 
 \usepackage{amsthm}
 \newtheoremstyle{note} % name
@@ -95,7 +106,7 @@
 
 \include{contents/0-intro/introduction}
 
-\include{contents/1-sintassi/primo1}
+\include{contents/1-sintassi/primo1-orig}
 
 \include{contents/2-assiomi/assiomi}
 

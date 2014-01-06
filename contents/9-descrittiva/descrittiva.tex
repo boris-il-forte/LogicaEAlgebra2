@@ -1,3 +1,7 @@
+\begin{savequote}[50mm]
+---Non so spiegarlo chiaramente, perchè non è chiaro neanche a me---
+\qauthor{Alice} \end{savequote}
+
 
 \chapter{Logiche Descrittive	}
 
@@ -12,7 +16,7 @@ Un sistema di rappresentazione della conoscenza (KR) fornisce i mezzi
 per definire, gestire, manipolare e ragionare su basi di conoscenza
 (KB).
 
-In una KB ci sono TBox e ABox
+In una KB ci sono T-Box e A-Box
 
 I TBox descrivono la terminologia della KB (concetti, ruoli atomici
 e concetti composti), gli ABox sono asserzioni su individui della
@@ -78,7 +82,7 @@ $(\exists R.C)^{I}=\{a^{I}\in\Delta^{I}:\ \exists b\in\Delta^{I}:\ (a^{I},b^{I})
 
 
 es. $\exists HaFiglio.Femmina$ cioè l'insieme dei genitori con una
-figlia femmina (grow up well kid)\\
+figlia femmina\\
 
 
 
@@ -152,7 +156,7 @@ $D\sqcup E\equiv\neg(\neg D\sqcap\neg E)$
 $\exists R.C\equiv\neg(\forall R.\neg C)$
 
 
-\subsection{Confronto con logica del prim ordine}
+\subsection{Confronto con logica del prim'ordine}
 
 È possibile vedere le logiche AL, ALC, ALN, (deve essere con identità
 nel caso di N)
@@ -162,7 +166,7 @@ nel caso di N)
 \item $a\ $è un individuo: $a$ è una costante
 \end{itemize}
 Notiamo che ci sono due sole variabili libere e il dominio è fissato
-(controllare) la logica del prim ordine è decibile.
+(controllare) la logica del prim'ordine è decidibile.
 \begin{description}
 \item [{$\neg C$:}] $\neg C(x)$
 \item [{$C\sqcap D\mathbf{:}$}] \foreignlanguage{english}{$C(x)\vee D(x)$}
@@ -203,7 +207,7 @@ Nessun simbolo nominale usa sé stesso
 \begin{itemize}
 \item T-Box definitorio:
 \end{itemize}
-La sua interpretazione si estende in modo unico a una interpreatazione
+La sua interpretazione si estende in modo unico a una interpretazione
 di tutto il t-box (estesa)
 
 Un T-Box è definitorio se è possibile costruirne uno equivalente ma
@@ -294,7 +298,7 @@ T se $C^{I}\subseteq D^{I}$ per ogni modello di T
 \textbf{Equivalenze: }Due concetti C e D si dicono equivalenti rispetto
 a T se $C^{I}=D^{I}$per ogni modello di T
 
-\textbf{Disgiunzione: }Due concetti C e D sono disgiunti tispetto
+\textbf{Disgiunzione: }Due concetti C e D sono disgiunti rispetto
 a T se $C^{I}\cap D^{I}=\emptyset$ per ogni modello di T
 
 Mostriamo che una KB che fornisce il servizio di sussunzione risolve

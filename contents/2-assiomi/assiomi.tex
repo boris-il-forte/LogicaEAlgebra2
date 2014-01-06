@@ -4,11 +4,11 @@
 
 \section{Formule equivalenti}
 
-$a\equiv b$ cioè a è semanticamente equivalente a b, se:
+$a\equiv b$ cioè a è semanticamente equivalente a b, se: 
 \begin{itemize}
-\item $\forall F\,\vera Fb\iff\vera Fa$
-\item $\forall\mu\,\vera{\mu}b\iff\vera{\mu}a$
-\item $\forall s\in S\,\veraw{\mu}sa\iff\veraw{\mu}sb$
+\item $\forall F\,\vera Fb\iff\vera Fa$ 
+\item $\forall\mu\,\vera{\mu}b\iff\vera{\mu}a$ 
+\item $\forall s\in S\,\veraw{\mu}sa\iff\veraw{\mu}sb$ 
 \end{itemize}
 Si può anche dire che due formule sono semanticamente equivalenti
 se:
@@ -43,7 +43,7 @@ per questo in $\alpha$ non vale $\boxx{\neg a}$ (perché non vale
 $\neg a$ in $\beta$)
 
 allora in $\alpha$ vale $\neg\boxx{\neg a}$ cioè $\veraw{\mu}{\alpha}{\neg\boxx{\neg a}}$
-cioè la tesi. 
+cioè la tesi.
 
 Similmente si dimostra l'altro verso dell'equivalenza.
 
@@ -149,7 +149,7 @@ si può dimostrare quindi nel seguente modo:
 
 $\teolm{\Lambda}{a_{1}\wedge a_{2}\wedge...\wedge a_{n}n\implies a}$
 
-$\teolm{\Lambda}{a_{1}\wedge a_{2}\wedge...\wedge a_{n-1}\implies(a_{n}\implies a)}$ 
+$\teolm{\Lambda}{a_{1}\wedge a_{2}\wedge...\wedge a_{n-1}\implies(a_{n}\implies a)}$
 
 $\teolm{\Lambda}{\boxx{a_{1}}\wedge\boxx{a_{2}}\wedge...\wedge\boxx{a_{n-1}}\implies\boxx{(a_{n}\implies a)}}$
 -- per ipotesi di induzione
@@ -157,7 +157,7 @@ $\teolm{\Lambda}{\boxx{a_{1}}\wedge\boxx{a_{2}}\wedge...\wedge\boxx{a_{n-1}}\imp
 $\teolm{\Lambda}{\boxx{a_{1}}\wedge\boxx{a_{2}}\wedge...\wedge\boxx{a_{n-1}}\implies(\boxx{a_{n}\implies\boa}})$
 -- per K
 
-$\teolm{\Lambda}{\boxx{a_{1}}\wedge\boxx{a_{2}}\wedge...\wedge\boxx{a_{n-1}\wedge\boxx{a_{n}}}\implies\boa}$ 
+$\teolm{\Lambda}{\boxx{a_{1}}\wedge\boxx{a_{2}}\wedge...\wedge\boxx{a_{n-1}\wedge\boxx{a_{n}}}\implies\boa}$
 
 E la tesi è dimostrata.
 
@@ -235,7 +235,7 @@ $\teolm{\Lambda}{\boxx{(a\implies b)}\implies(\boa\implies\boxx{b)}}$
 e così è dimostrato che K è implicato da 3. Il teorema dunque è dimostrato.
 
 
-\section{Deducibili di una formula}
+\section{Decidibilità di una formula}
 
 Una formula a si dice deducibile da un insieme di formule $\Gamma$
 in una logica $\Lambda$ e si scrive:
@@ -254,4 +254,4 @@ la formula a
 
 si noti che:
 
-$\sintattica{\Gamma}{\Lambda}a\implies\sintattica{\{\boxx b\,|b\in\Gamma\}}{\Lambda}{\boa}$
+$\sintattica{\Gamma}{\Lambda}a\implies\sintattica{\{\boxx b\,|b\in\Gamma\}}{\Lambda}{\boa}$ 

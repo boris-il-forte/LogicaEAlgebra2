@@ -1,3 +1,9 @@
+\begin{savequote}[50mm]
+---Marty, non stai pensando quadridimensionalmente!---
+\qauthor{Emmett Brown} 
+---Sono in ritardo! In arciritardissimo!---
+\qauthor{Bianconiglio} \end{savequote}
+
 
 \chapter{Logica Multimodale - Back To The Future}
 
@@ -51,7 +57,7 @@ $<P>\equiv\neg[P]\neg$
 
 $<F>\equiv\neg[F]\neg$
 
-Perchè le due relazioni rappresentino il tempo che scorre una deve
+Perché le due relazioni rappresentino il tempo che scorre una deve
 essere l'opposta dell'altra, in modo che la prima relazione rappresenti
 il futuro, la seconda il passato:
 
@@ -70,7 +76,8 @@ $B_{FP}:$ $a\implies\necf{\posp a}$
 
 Ip) $\veraw{\mu}{\alpha}a$ e $\forall\beta\,:\,(\alpha,\,\beta)\in R_{P}\iff(\beta,\,\alpha)\in R_{F}$
 
-Ts) $\veraw{\mu}{\alpha}{\necp{\posf a}}$
+Ts) $\veraw{\mu}{\alpha}{\necp{\posf a}}$\\
+
 
 Ogni mondo $\beta$ raggiunge $\alpha$ tramite $R_{F}$, e quindi:
 
@@ -80,14 +87,15 @@ allora, usando la regola di necessitazione nel passato, possiamo scrivere:
 
 $\veraw{\mu}{\alpha}{\necp{\posf a}}$
 
-ma poichè per ipotesi in $\alpha$ è vera a:
+ma poiché per ipotesi in $\alpha$ è vera a:
 
 $\veraw{\mu}{\alpha}{\necp{\posf a}}$
 
-poichè abbiamo preso un $\alpha$ generico, la tesi è dimostrata.\\
+poiché abbiamo preso un $\alpha$ generico, la tesi è dimostrata.\\
 Ip) $\veraw{\mu}{\alpha}{\necp{\posf a}}$
 
-Ts) $R_{F}=R_{P}$
+Ts) $R_{F}=R_{P}$\\
+
 
 per assurdo $R_{F}\neq R_{p}$
 
@@ -96,16 +104,16 @@ l'arco inverso nella relazione $R_{F}$
 
 $V(A)=\{\alpha\}$
 
-allora in $\beta$ poichè non si raggiunge tramite $R_{P}$ il mondo
+allora in $\beta$ poiché non si raggiunge tramite $R_{P}$ il mondo
 $\alpha$ vale:
 
 $\nonveraw{\mu}{\beta}{\posf A}$
 
-ma poichè $\beta$ è raggiungibile da $\alpha$ tramite $R_{P}$ abbiamo:
+ma poiché $\beta$ è raggiungibile da $\alpha$ tramite $R_{P}$ abbiamo:
 
 $\nonveraw{\mu}{\alpha}{\necp{\posf A}}$
 
-Ma allora, poichè in $\alpha$ è vera A:
+Ma allora, poiché in $\alpha$ è vera A:
 
 $\nonveraw{\mu}{\alpha}{A\implies\necp{\posf A}}$
 
@@ -238,7 +246,8 @@ $\vera{(\mathbb{R},<)}{Cont}$\\
 \\
 Ip) $V(A)=\{q\in\mathbb{Q}\,|\, q<\sqrt{2}\}$
 
-Ts) $\nonvera{(\mathbb{Q},<)}{Cont}$
+Ts) $\nonvera{(\mathbb{Q},<)}{Cont}$\\
+
 
 Preso $\alpha<\sqrt{2}$, varranno:
 
@@ -262,7 +271,7 @@ $\nonveraw{\mu}{\alpha}{\necp A}$
 
 e quindi l'antecedente di Cont è ancora vero.
 
-Poichè l'antecedente di Cont è sempre vero, mentre la conseguenza
+Poiché l'antecedente di Cont è sempre vero, mentre la conseguenza
 no, allora:
 
 $\nonvera{(\mathbb{Q},<)}{Cont}$
@@ -298,7 +307,8 @@ node[above right] (text4078) {$\sqrt{2}$};
 
 Ip) $\delta=\max\limits _{\eta\in\mathbb{R}}(\veraw{\mu}{\eta}{A\,\eta<\delta)}$
 
-Ts) $\vera{(\mathbb{R},<)}{Cont}$
+Ts) $\vera{(\mathbb{R},<)}{Cont}$\\
+
 
 $\forall\alpha<\delta$ possiamo scrivere:
 
@@ -310,7 +320,7 @@ Tuttavia l'antecedente di Cont è falso, infatti:
 
 $\veraw{\mu}{\delta}{\necp A}$
 
-ma poichè non può esistere nessun mondo $\xi>\delta$ in cui sia vera
+ma poiché non può esistere nessun mondo $\xi>\delta$ in cui sia vera
 A, essendo $\delta$ massimo, avremo che:
 
 $\nonveraw{\mu}{\delta}{\posf{\necp A}}$
@@ -319,7 +329,7 @@ e quindi non potrà che essere che:
 
 $\veraw{\mu}{\delta}{\necp a\implies\posf{\necp a}}$
 
-Poichè $\delta$ è raggiungibile da a avremo che:
+Poiché $\delta$ è raggiungibile da a avremo che:
 
 $\veraw{\mu}{\alpha}{\boxx{(\necp a\implies\posf{\necp a})}}$
 
@@ -409,10 +419,10 @@ tutti i frame, e quindi portano formule vere a formule vere.
 L'assioma Fun vale solo se la relazione di raggiungibilità a un passo
 è una funzione: infatti se non ho stati raggiungibili da uno stato,
 abbiamo che non vale $\circ a$, e quindi vale $\neg\circ a$, ma
-$\circ\neg a$ non può valere perchè non ci sono stati raggiungibili.
+$\circ\neg a$ non può valere perché non ci sono stati raggiungibili.
 Mentre se abbiamo più di uno stato raggiungibile $\circ a$ è falso
 anche se solo in uno degli stati vale $\neg a$, e quindi $\circ\neg a$
-non può essere vero, perchè $\neg a$ è vero solo in un successore.
+non può essere vero, perché $\neg a$ è vero solo in un successore.
 Ma per definizione la raggiungibilità a un passo è una funzione.
 
 Mix implica immediatamente lo schema T e quindi la riflessività.
@@ -475,7 +485,7 @@ $\forall(a\mathcal{U}b)$
 
 $\exists(a\mathcal{U}b)$
 
-E infatti si domostra facilmente che:
+E infatti si dimostra facilmente che:
 
 $[\forall F]a\equiv\forall(\top\mathcal{U}a)$
 
@@ -547,7 +557,8 @@ I programmi sono definiti come:
 \begin{itemize}
 \item $\alpha\in\pi$
 \item $\alpha;\beta$ ossia la concatenazione di due programmi
-\item $\alpha\cup\beta$ ossia nondeterministicamente $\alpha$ oppure $\beta$
+\item $\alpha\cup\beta$ ossia non-deterministicamente $\alpha$ oppure
+$\beta$
 \item $\alpha^{*}$ossia la ripetizione di $\alpha$
 \item $a?$ ossia il test di $\alpha$
 \end{itemize}
@@ -563,7 +574,7 @@ $R_{\alpha^{*}}\equiv\underset{n\geq0}{\bigcup}R_{\alpha}^{n}$
 $R_{a?}\equiv\{(s,\, s)\,|\,\veraw{\mu}sa\}$
 
 
-\subsection{Assiomatizzazzione della logica dinamica}
+\subsection{Assiomatizzazione della logica dinamica}
 
 La logica dinamica modale può essere assiomatizzata aggiungendo agli
 schemi della logica multimodale normale, ossia gli assiomi A1, A2,
@@ -629,4 +640,4 @@ traduce il parallelismo (l'operatore intersezione):
 $(s,\, T)\in R_{\alpha}\otimes R_{\beta}\iff T=U\cup V\,\wedge\,(s,U)\in R_{\alpha}\,\wedge\,(s,V)\in R_{\beta}$
 
 Tutto il resto è definito allo stesso modo di prima, a meno di stare
-attenti agli insiemi di stati, anzichè agli stati.
+attenti agli insiemi di stati, anziché agli stati.

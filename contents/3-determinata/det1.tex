@@ -1,3 +1,8 @@
+\begin{savequote}[60mm]
+Senza dubbio questo era un piano eccellente, semplice e davvero ben congegnato. \\
+C'era solo una difficoltà: che Alice non aveva la più piccola idea di come realizzarlo.
+\qauthor{Lewis Carroll} \end{savequote}
+
 
 \chapter{Verso la decidibilità - Logica determinata}
 
@@ -5,7 +10,7 @@
 \section{Insieme $\Lambda$ consistente e sue proprietà}
 
 Sia $\Lambda$ una logica (cioè ha tutte le tautologie ed è chiusa
-rispetto al Modus Ponens)
+rispetto al Modus Ponens)	
 
 $\Gamma$ si dice $\Lambda$-consistente se: $\nonSinW{\Gamma}{\Lambda}{\bot}$,
 dove $\bot=A\wedge\neg A$
@@ -21,7 +26,7 @@ Ovvero se alcune premesse non mi servono posso comunque metterle per
 dedurre una formula 
 \item Se $\teorGamma a$ e $\Lambda\subseteq\Lambda'$ allora $\Gamma\vdash_{\Lambda'}a$.
 Ovvero quello che posso dedurre in una logica più scarna (es. PL)
-lo posso dedurre anche in una più ricca che la contien (es. Modale) 
+lo posso dedurre anche in una più ricca che la contiene (es. Modale) 
 \item se $a\in\Gamma$ allora $\teoa$ . \\
  Infatti $\teorema{a\implies a}$ è un teorema dato che $a\implies a$
 è una tautologia 
@@ -46,13 +51,13 @@ basta portare $a$ tra le $ $and.
 \item $\teoa$ se e solo se $\Gamma\cup\{\neg a\}$ non è $\Lambda$-consistente
 \\
  \\
- \textbf{Andata}: $\teoa$, $\Gamma\teorema{\neg a}$, posso dedure
+ \textbf{Andata}: $\teoa$, $\Gamma\teorema{\neg a}$, posso dedurre
 $\bot$ che è contro la definizione di $\Lambda$-consistenza\\
  \textbf{Ritorno}: Se$ $$\Gamma\cup\{\neg a\}$ non è $\Lambda$-consistente,
 allora $\Gamma\cup\{\neg a\}\teorema{\bot}$ da cui per 7. \\
  $\Gamma\teorema{\neg a\implies\bot}$ (sposto $\neg a$ a destra
 e metto l'implica), \\
- Dato che $(\neg a\implies\bot)\implies a$ è una tatutologica, per
+ Dato che $(\neg a\implies\bot)\implies a$ è una tautologia, per
 MP ottengo\\
  $a$ 
 \item $\Gamma$ è $ $$\consist$ se e solo se $\exists\beta:\nonSem{\Gamma}{_{\Lambda}\beta}$
@@ -95,15 +100,16 @@ $(\Gamma\,\Lambda-consistente)\implies\,\exists\Delta\supseteq\Gamma\,\wedge\,(\
 
 Ip) $\Gamma\,\grave{e}\,\Lambda-consistente$
 
-Ts) $\exists\Delta\supseteq\Gamma$ e $\Delta\,\grave{e}\,\Lambda-consistente\, massimale$
+Ts) $\exists\Delta\supseteq\Gamma$ e $\Delta\,\grave{e}\,\Lambda-consistente\, massimale$\\
+
 
 Considero tutte le formule b1, b2, b3 della logica $\Lambda$ (posso
-farlo perchè sono una infinità numerabile)
+farlo perché sono una infinità numerabile)
 
 Chiamo $\Gamma_{0}$ un insieme che contiene una sola formula (ad
 esempio una tautologia)
 
-Dopodichè iterativamente, per ogni formula mi chiedo\\
+Dopodiché iterativamente, per ogni formula mi chiedo\\
 
 
 $\Gamma_{0}$$\teorema{b1}$ ? $\begin{cases}
@@ -117,7 +123,8 @@ si: & \Gamma_{2}=\Gamma_{1}\cup b2\\
 no: & \Gamma_{2}=\Gamma_{1}\cup\neg b2
 \end{cases}$ 
 \begin{description}
-\item [{$\Delta=\bigcup_{n\geq0}\Gamma_{i}$}] (nota, questa unione è infinita) 
+\item [{$\Delta=\underset{n\geq0}{\bigcup}\Gamma$}] (nota, questa unione
+è infinita) 
 \item [{$\Delta$}] è consistente massimale infatti:\end{description}
 \begin{enumerate}
 \item Massimale in quanto contiene $a$ oppure $\neg a$ per costruzione 
@@ -128,7 +135,9 @@ il falso,\\
 esiste un $\Gamma_{i}$ non consistente, assurdo perché lo sono tutti
 per costruzione \lightning 
 \end{enumerate}
-\emph{\large{Nota:}}{\large \par}
+\emph{\large{{Nota:}}}{\large \par}
+
+ 
 \begin{itemize}
 \item Non sappiamo costruire $\Delta$ perché nasce da unione infinita 
 \item Non è unico, infatti se considero formule in ordine diverse potrei
@@ -156,7 +165,7 @@ da cui per Lindellman esiste $\Delta'$ che contiene $\Gamma\cup\{\neg a\}$
 consistente massimale
 
 data la consistenza $\Delta'$ non contiene $a$, il che è contro
-l'ipotesi \lightning 
+l'ipotesi \lightning
 
 
 \section{Lemma di Verità}
@@ -164,10 +173,10 @@ l'ipotesi \lightning
 Sia $M^{\Lambda}(S^{\Lambda},R^{\Lambda},V^{\Lambda})$ il modello
 canonico di $\Lambda$
 
-$\veraCanAlfa a$ se e solo se $a\in\alpha$\\
+$M^{\Lambda}\veraCanAlfa{_{\alpha}a}$ se e solo se $a\in\alpha$\\
 
 
-Ip) $\veraCanAlfa a$ 
+Ip) $M^{\Lambda}\veraCanAlfa{_{\alpha}a}$
 
 TS) $a\in\alpha$\\
 
@@ -176,18 +185,18 @@ Dimostrazione per \textbf{induzione} sul numero n dei connettivi della
 formula $a$
 
 \ovalbox{n=0} cioè $a$ è del tipo $A$ (lettera enunciativa) da
-cui $\veraCA$ se e solo se $\alpha\in V^{\Lambda}(A)$ se e solo
-se $A\in\alpha$
+cui $M^{\Lambda}\veraCanAlfa{_{\alpha}a}$ se e solo se $\alpha\in V^{\Lambda}(A)$
+se e solo se $A\in\alpha$
 
 \ovalbox{Ipotesi di Induzione} $a$ con n connettivi, può essere
-dei seguenti tipi:
+dei seguenti tipi: 
 \begin{enumerate}
-\item $\neg b$
-\item $\implica bc$
-\item $\boxx b$
+\item $\neg b$ 
+\item $\implica bc$ 
+\item $\boxx b$ 
 \end{enumerate}
-\textbf{Caso 1:} $\veraCA$ se e solo se $\veraCanAlfa{\neg b}$ se
-e solo se $\nonveraCan{\alpha}b$\\
+\textbf{Caso 1:} $M^{\Lambda}\veraCanAlfa{_{\alpha}a}$ se e solo
+se $M^{\Lambda}\veraCanAlfa{_{\alpha}\neg b}$ se e solo se $\nonveraCan{\alpha}b$\\
 
 
 $b$ ha $n-1$ connettivi (dato che $b$) ne ha $n$, quindi vale
@@ -199,11 +208,12 @@ $b\notin\alpha$, d'altra parte $\alpha$ è $\consMax$ (per come
 \textbf{$b\notin\alpha$ }se e solo se \textbf{$ $}$\neg b\in\alpha$
 cioè se:
 
-$a\in\alpha$ 
+$a\in\alpha$
 
-\textbf{Caso} 2:$ $ $\veraCA$ se e solo se
+\textbf{Caso} 2:$ $ $M^{\Lambda}\veraCanAlfa{_{\alpha}a}$ se e solo
+se
 
-Caso 21: $\nonveraCan{\alpha}b$ 
+Caso 21: $\nonveraCan{\alpha}b$
 
 Caso 22: $\veraCan{\alpha}c$\\
 
@@ -214,12 +224,12 @@ Caso 22: $\veraCan{\alpha}c$\\
 Il numero di connettivi di $b$ e di $c$ sommati dà $n-1$
 
 quindi per ipotesi induttiva $\nonveraCan{\alpha}b$ se e solo se
-$b\notin\alpha$ 
+$b\notin\alpha$
 
 se e solo se $\neg b\in\alpha$ (per la compattezza max di $\Lambda$)
 \textbf{({*})}
 
-D'altra parte $\neg b\implies(b\implies c)$ è una tautologi della
+D'altra parte $\neg b\implies(b\implies c)$ è una tautologia della
 PL e quindi è un teorema di $\Lambda$ (perché un logica contiene
 tutte le tautologie)
 
@@ -227,8 +237,8 @@ e quindi $\neg b\implies(b\implies c)$ $\in\alpha$ \textbf{({*}{*})}
 
 da cui per MP con \textbf{({*})} e \textbf{({*}{*})} si ha che $b\implies c$
 appartiene ad $\alpha$\\
-\\
-\textbf{Caso 22}: $\veraCan{\alpha}c$\\
+ \\
+ \textbf{Caso 22}: $M^{\Lambda}\veraCanAlfa{_{\alpha}c}$\\
 
 
 Vale l'ipotesi di induzione da cui:
@@ -236,26 +246,28 @@ Vale l'ipotesi di induzione da cui:
 quindi per ipotesi induttiva $\veraCan{\alpha}c$ se e solo se $c\in\alpha$
 \textbf{({*})}
 
-D'altra parte $c\implies(b\implies c)$ è una tautologi della PL e
-quindi è un teorema di $\Lambda$ (perché un logica contiene tutte
+D'altra parte $c\implies(b\implies c)$ è una tautologia della PL
+e quindi è un teorema di $\Lambda$ (perché un logica contiene tutte
 le tautologie)
 
 e quindi $c\implies(b\implies c)$ $\in\alpha$ \textbf{({*}{*})}
 
 MP \textbf{({*}) }e \textbf{({*}{*}) }ci dà $b\implies c$ appartiene
 ad $\alpha$\\
-\\
-\textbf{Caso 3}: $a$ è del tipo $\boxx b$
+ \\
+ \textbf{Caso 3}: $a$ è del tipo $\boxx b$\\
 
-Ip)$\veraCan{\alpha}{\boxx b}$
+
+Ip)$M^{\Lambda}\veraCanAlfa{_{\alpha}\boxx b}$
 
 Ts)$\boxx b\in\alpha$\\
 
 
 Dall'ipotesi segue che $\forall\beta:(\alpha,\beta)\in R^{\Lambda}$
-si ha: $\veraCan{\beta}b$ (questo per la definizione di $\boa$)
+si ha: $M^{\Lambda}\veraCanAlfa{_{\beta}b}$ (questo per la definizione
+di $\boxx x$)
 
-$b$ ha $n-1$ connettivi quindi vale per lei l'ipotesi di induzione: 
+$b$ ha $n-1$ connettivi quindi vale per lei l'ipotesi di induzione:
 
 $b\in\beta$
 
@@ -267,7 +279,9 @@ $\alpha\in V^{\Lambda}(A)$ se e solo se: $A\in\alpha$%
 
 
 Ognuno dei $\beta$ con cui $\alpha$ è in relazione è $\consMax$
-e ognuno contiene l'insieme $\{a\ |\ \boa\in\alpha\}$ 
+(per come sono definiti gli stati del modello canonico) e ognuno contiene
+l'insieme $\{a\ |\ \boa\in\alpha\}$ (per come è definita la relazione
+$R^{\Lambda}$)
 
 $\Gamma\teorema a$ se e solo se $a$ appartiene a tutti i $\Delta_{i}$
 $\consMax$ con $\Gamma\subseteq\Delta_{i}$
@@ -275,31 +289,37 @@ $\consMax$ con $\Gamma\subseteq\Delta_{i}$
 $\beta\teorema b$ se e solo se $b$ appartiene a tutti i $\Delta_{i}$
 $\consMax$ con $\beta\subseteq\Delta_{i}$
 
-$\{a\ |\ \boa\in\alpha\}$ è consistente massimale (davvero??) e quindi
+$\{a\ |\ \boa\in\alpha\}$ è consistente massimale ed è contenuto
+in $\beta$ e quindi
 
-$\{a\ |\ \boa\in\alpha\}$ $\teorema b$, per la 2. definizione equivalente
-di Logica Normale ``aggiungo $\square$ ad entrambi i lati'' da
-cui:
+$b\in\{a\ |\ \boa\in\alpha\}$ da cui per la proprietà 3. di insieme
+consistente si ha anche
 
-$\{\boa\ |\ \boa\in\alpha\}$ $\teorema b$
+$\{a\ |\ \boa\in\alpha\}$ $\teorema b$, inoltre, per la 2. definizione
+equivalente di Logica Normale ``aggiungo $\square$ ad entrambi i
+lati'' da cui:
 
-Ma $\{\boa\ |\ \boa\in\alpha\}$ è un sottoinsieme di formule di $\alpha$
-quindi a maggior ragione ricavo $b$ da tutto $\alpha$ da cui:
+$\{\boa\ |\ \boa\in\alpha\}$ $\teorema{\boxx b}$, dato che $\{\boa\ |\ \boa\in\alpha\}$
+è consistente massimale. per la 12. delle proprietà di consistenza
+si ha anche
 
-$\alpha\teorema b$\\
+$\boxx b\in\{a\ |\ \boa\in\alpha\}$ da cui, a maggior ragione $\boxx b\in\alpha$\\
+
+
 Ip) $\boxx b\in\alpha$
 
-TS) $\veraCanAlfa{\boxx b}$\\
-Se $\boxx b\in\alpha$ per definizione di $R^{\Lambda}$ per ogni
+TS) $M^{\Lambda}\veraCanAlfa{_{\alpha}\boxx b}$\\
+\\
+ Se $\boxx b\in\alpha$ per definizione di $R^{\Lambda}$ per ogni
 mondo $\beta$ con $(\alpha,\beta)\in R^{\Lambda}$ si ha $b\in\beta$
 
 Notiamo che $b$ ha $n-1$ connettivi, quindi vale l'ipotesi di induzione
 e quindi:
 
-$ $$b\in\beta$ se e solo se $\veraCan{\beta}b$
+$ $$b\in\beta$ se e solo se $M^{\Lambda}\veraCanAlfa{_{\beta}b}$
 
 Dato che questo vale $ $per ogni $\beta$ in relazione con $\alpha$,
-si ha: $\veraCanAlfa{\boxx b}$
+si ha: $M^{\Lambda}\veraCanAlfa{\beta\boxx b}$
 
 
 \section{Correttezza e completezza della logica K rispetto a tutti i Frame}
@@ -307,7 +327,7 @@ si ha: $\veraCanAlfa{\boxx b}$
 Dimostriamo che la logica K (minima logica modale normale) è corretta
 e completa
 
-Ip) $\teolm Ka$ 
+Ip) $\teolm Ka$
 
 Ts)$\vera Fa$\\
 
@@ -315,17 +335,18 @@ Ts)$\vera Fa$\\
 A1, A2, A3 sono tautologie e quindi valide su tutti i frame
 
 MP, sia la regola di necessitazione (RN) fanno passare da formule
-valide su un frame a formule valide su quello stesso frame. 
+valide su un frame a formule valide su quello stesso frame.
 
 Essendo $a$ l’ultima formula di una sequenza finita di fbf che o
 sono istanze degli assiomi A1, A2, A3, K o sono ottenute da fbf precedenti
 tramite MP o RN, è una fbf valida su ogni frame.\\
-\\
-Ip) $\vera Fa$
+ \\
+ Ip) $\vera Fa$
 
 Ts)$\teolm Ka$ \\
-\\
-Supponiamo $\nonTeor Ka$, allora per il corollario del lemma di verità\\
+ \\
+ Supponiamo $\nonTeor Ka$, allora per il corollario del lemma di
+verità\\
 
 
 \ovalbox{\parbox[t][1\totalheight][c]{0.9\textwidth}{%
@@ -347,11 +368,11 @@ $\nonvera Fa$ (infatti esiste almeno un frame, $F^{K},$ in cui non
 
 Nota: K4 è costruita a partire dalla logica K a cui si aggiunge l'assioma
 della transitività $\boa\implies\boxx{\boa}$ \\
-Ip)$\teolm{K4}a$ 
+ Ip)$\teolm{K4}a$
 
 Ts) $\entail Fa$ con F frame transitivo\\
-\\
-Simile al caso precedente in cui anche 4 è valido in quando il frame
+ \\
+ Simile al caso precedente in cui anche 4 è valido in quando il frame
 è transitivo\\
 
 
@@ -359,8 +380,8 @@ Ip) $\entail Fa$ con F frame transitivo (cioè la cui relazione è
 transitiva)
 
 Ts)$\teolm{K4}a$\\
-\\
-Per procedere con una dimostrazione sulla falsa riga della precedente
+ \\
+ Per procedere con una dimostrazione sulla falsa riga della precedente
 abbiamo bisogno di dimostrare la transitività di $R^{K4}$
 
 cioè della relazione $R^{K4}$ del modello canonico $M^{K4}=(S^{K4},R^{K4},V^{K4})$,
@@ -380,9 +401,9 @@ se $\boa\in\alpha$ , ricordando che:
 
 $\alpha$ è un insieme $K4-consistente\ massimale$,
 
-4 è un teorema della logica 
+4 è un teorema della logica
 
-i teoremi di na logica appartengono a tutti gli insiemi consistenti
+i teoremi di una logica appartengono a tutti gli insiemi consistenti
 massimali rispetto a quella logica quindi
 
 $\alpha$, così come ogni insieme $K4-consistente\ massimale$, contiene
@@ -391,10 +412,9 @@ anche $\boa\implies\boxx{\boa}$ (4) da cui
 \selectlanguage{english}%
 $\boxx{\boa}\in\alpha$\foreignlanguage{italian}{.}
 
-$\{a\ |\ \boa\in$$\alpha\}\subseteq\beta$\foreignlanguage{italian}{
-(per ipotesi $\alpha R^{K4}\beta$)}
-
 \selectlanguage{italian}%
+$\{a\ |\ \boa\in$$\alpha\}\subseteq\beta$ (per ipotesi $\alpha R^{K4}\beta$)
+
 ma per ogni formula $\boa\in\alpha$ si ha che $\boxx{\boxx a}\in\alpha$
 e quindi: $\{\boa\ |\ \boxx{\boxx a}\in\alpha\}\subseteq\beta$ da
 cui $\{\boa\ |\ \boxx a\in\alpha\}\subseteq\beta$
@@ -405,19 +425,19 @@ $\{a\ |\ \boa\in$$\beta\}\subseteq\gamma$\foreignlanguage{italian}{
 contenute in $\beta$ sono le stesse contenute in $\alpha$, quindi
 si ha anche:}
 
-$\{a\ |\ \boa\in$$\alpha\}\subseteq\gamma$\foreignlanguage{italian}{
-cioè $(\alpha,\gamma)\in R^{K4}$ }\\
-\foreignlanguage{italian}{}\\
-\foreignlanguage{italian}{A questo punto possiamo usare in modo profiquo
-il corollario del lemma di verità.}
-
 \selectlanguage{italian}%
+$\{a\ |\ \boa\in$$\alpha\}\subseteq\gamma$ cioè $(\alpha,\gamma)\in R^{K4}$
+\foreignlanguage{english}{}\\
+\foreignlanguage{english}{ }\\
+\foreignlanguage{english}{ }A questo punto possiamo usare in modo
+proficuo il corollario del lemma di verità.
+
 Dimostriamo la tesi per assurdo: supponiamo che $\nonTeor{K4}a$
 
-allora per il corollario del teorema di verità si avrebbe anche $\nonvera{M{}^{K4}}a$ 
+allora per il corollario del teorema di verità si avrebbe anche $\nonvera{M{}^{K4}}a$
 
 e in particolare si avrebbe $\nonvera{F^{K4}}a$, cioè si avrebbe
-un Frame transtivo (infatti $R^{K4}$ è transitiva) nel quale non
+un Frame transitivo (infatti $R^{K4}$ è transitiva) nel quale non
 è valida $a$
 
 ma ciò contraddice l'ipotesi $\entail Fa$ (con $F$ transitivo) \lightning\\
@@ -429,14 +449,14 @@ ma ciò contraddice l'ipotesi $\entail Fa$ (con $F$ transitivo) \lightning\\
 $(\alpha,\beta)\in R^{\Lambda}$ se e solo se $\relazCAB{\alpha}{\beta}$
 se e solo se \foreignlanguage{english}{$\relazCAD{\alpha}{\beta}$}
 \\
-Ip)$\relazCAB{\alpha}{\beta}$
+ Ip)$\relazCAB{\alpha}{\beta}$
 
 Ts)$\relazCAD{\alpha}{\beta}$\\
 
-
-Per assurdo supponiamo che
-
-$b\in\beta$ e che $\diamond b\notin\alpha$, 
+\begin{description}
+\item [{Per}] assurdo supponiamo che
+\end{description}
+$b\in\beta$ e che $\diamond b\notin\alpha$,
 
 \selectlanguage{english}%
 $\neg\diamond b\in\alpha$\foreignlanguage{italian}{ (dato che $\alpha$)
@@ -454,7 +474,7 @@ il che è assurdo perché $b\in\beta$, e $\beta$ è $\consMax$\lightning\\
 Ip)$\relazCAD{\alpha}{\beta}$
 
 Ts)$\relazCAB{\alpha}{\beta}$\\
-Per assurdo supponiamo cioè che
+ Per assurdo supponiamo cioè che
 
 $\boa\in\alpha$ e $a\notin\beta$
 
@@ -466,6 +486,4 @@ quale $\neg a$ è vera)
 
 $\neg\boxx{a\in\alpha}$ contro l'ipotesi della consistenza e massimalità
 di $\alpha$\lightning\\
-
-
 

@@ -42,7 +42,7 @@ Consideriamo il frame rappresentante la lettera dei numeri naturali:
 
 $N=(\mathbb{N},\, successivo)$
 
-E il farme che rappresenta un albero binario a dimensione infinita:
+E il frame che rappresenta un albero binario a dimensione infinita:
 
 $B=(w=\{0,\,1\}*,\,\rho)$
 
@@ -89,7 +89,7 @@ e quindi si deduce facilmente che:
 
 $|w|=|ua|=n+1$
 
-e quindi la valutazione non può che essere la sola V', perchè è qualla
+e quindi la valutazione non può che essere la sola V', perché è quella
 che si ricava imponendo la condizione di bisimulazione, e che rispetta
 anche la condizione 2.
 
@@ -98,24 +98,24 @@ anche la condizione 2.
 
 \subsection{Alberi binari e frame finito}
 
-Supponiamo di prendere su un frame binario B la seguante funzione
+Supponiamo di prendere su un frame binario B la seguente funzione
 di valutazione:
 
 $V(P)=\{0w\,|\, w\in\{0,1\}*\}$
 
 $V(Q)=\{1w\,|\, w\in\{0,1\}*\}$
 
-In questo frame Q è vera su tutto il sottoalbero destro, mentre P
-sul sottoalbero sinistro.
+In questo frame Q è vera su tutto il sotto-albero destro, mentre P
+sul scotolassero sinistro.
 
 è evidente che non può esistere alcuna V' su N tale che $(B,\, V,\,0)\leftrightarroweq(N,\, V',\,\epsilon)$,
-erchè dovrebbero esistere due insiemi di stati non in relazione tra
+perché dovrebbero esistere due insiemi di stati non in relazione tra
 loro per cui in uno valga P e nell'altro Q. Ma questo non è possibile,
-poichè il frame N è una retta di elementi connessi a uno a uno. Tuttavia
+poiché il frame N è una retta di elementi connessi a uno a uno. Tuttavia
 esiste un frame molto più semplice e finito che bisimula l'albero,
 di soli 3 stati, uno per lo stato $\epsilon$, uno per lo stato in
 qui vale P, e uno per lo stato in cui vale Q. Si può vedere come l'automa
-che riconosce se la stringa è ``etichettatta'' P o Q.
+che riconosce se la stringa è ``etichettata'' P o Q.
 
 \begin{center} \begin{tikzpicture}[scale=0.2] \tikzstyle{every node}+=[inner sep=0pt] \draw [black] (39.2,-9.7) circle (3); \draw [black] (25.5,-25.3) circle (3); \draw (25.5,-25.3) node {$P$}; \draw [black] (53,-25.3) circle (3); \draw (53,-25.3) node {$Q$}; \draw [black] (37.22,-11.95) -- (27.48,-23.05); \fill [black] (27.48,-23.05) -- (28.38,-22.77) -- (27.63,-22.11); \draw [black] (24.182,-27.982) arc (1.56859:-286.43141:2.25); \fill [black] (22.57,-25.89) -- (21.76,-25.41) -- (21.78,-26.41); \draw [black] (55.83,-26.26) arc (99:-189:2.25); \fill [black] (53.96,-28.13) -- (53.59,-29) -- (54.58,-28.84); \draw [black] (41.19,-11.95) -- (51.01,-23.05); \fill [black] (51.01,-23.05) -- (50.86,-22.12) -- (50.11,-22.79); \end{tikzpicture} \end{center} 
 
@@ -196,11 +196,11 @@ $(F,\,\alpha)\leftrightarroweq(F',\,\alpha')$
 
 supponiamo inoltre w accessibile da $\alpha'$ sul ramo infinito.
 
-Poichè sono in condizione di bisimulazione vale la condizone b2:
+Poiché sono in condizione di bisimulazione vale la condizione b2:
 
 $(\alpha',\, u)\in R'\implies\exists\beta\in F\,:\,(\alpha,\,\beta)\in R\,\wedge\,(\beta,\, w)\in E$
 
-Ma poichè $\beta$ appartiene al primo frame, esso sta su un ramo
+Ma poiché $\beta$ appartiene al primo frame, esso sta su un ramo
 di lunghezza finita n.
 
 Ma allora si ha che:
@@ -211,7 +211,7 @@ Tuttavia abbiamo anche che:
 
 $\veraw{\forall n\in\mathbb{N},\, F'}{\beta}{\diam{^{n}\top}}$
 
-ma non può essere perchè i due frame sono in bisimulazione, assurdo!
+ma non può essere perché i due frame sono in bisimulazione, assurdo!
 
 quindi non può esistere una bisimulazione tra i due frame.
 
@@ -248,7 +248,7 @@ b1) $n<m\implies(m,\, a)\in E\,\wedge\,(a,\, a)\in R$
 
 b2) $(a,\, a)\in R\implies(n+1,\, a)\in E\,\wedge\, n<n+1$
 
-Ma, poichè il frame Z è irriflessivo, se esistesse una formula che
+Ma, poiché il frame Z è irriflessivo, se esistesse una formula che
 esprime l'irriflessività, allora non sarebbe valida su F, ma ciò è
-impossibile, perchè è in bisimulazione con Z, e quindi tutte le formule
+impossibile, perché è in bisimulazione con Z, e quindi tutte le formule
 vere su F sono vere su Z e viceversa.

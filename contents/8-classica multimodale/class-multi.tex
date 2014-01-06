@@ -1,3 +1,11 @@
+\begin{savequote}[80mm]
+---Allora dovresti dire quello a cui credi---, riprese la Lepre Marzolina. \\
+---È quello che faccio---, rispose subito Alice; \\
+---almeno credo a quello che dico, che poi è la stessa cosa.--- \\
+---Non è affatto la stessa cosa!--- disse il Cappellaio. \\
+---Scusa, è come se tu dicessi che vedo quello che mangio è la stessa cosa di mangio quello che vedo!---
+\qauthor{Lewis Carroll} \end{savequote}
+
 
 \chapter{Logica Multimodale Classica	}
 
@@ -5,7 +13,7 @@
 \section{Critiche al vecchio regime}
 
 Nella logica modale, come l'abbiamo descritta nei precedenti capitoli,
-sono possibili interpretazioni talvolte sgradite quando si danno significati
+sono possibili interpretazioni talvolta sgradite quando si danno significati
 particolari agli operatori modali.
 \begin{itemize}
 \item $\boxx{\top}$ (schema N)
@@ -53,7 +61,8 @@ $\veraw M{\alpha}{\dia}$ se e solo se: $(S-\verins a)\notin N(\alpha)$
 
 \subsection{Negazione di N}
 
-Ts) $\nonvera F{\boxx T}$
+Ts) $\nonvera F{\boxx T}$\\
+
 
 Consideriamo un frame con due stati$F(\{\alpha,\beta\},N)$
 
@@ -77,7 +86,8 @@ Un frame in cui vale l'assioma N si dice frame con unità.
 
 \subsection{Negazione di M}
 
-Ts) $\nonvera F{\boxx{(a\wedge b)\implies\boa\wedge\boxx b}}$
+Ts) $\nonvera F{\boxx{(a\wedge b)\implies\boa\wedge\boxx b}}$\\
+
 
 Considero un frame in cui vale l'antecedente:
 
@@ -108,7 +118,8 @@ $\nonveraw M{\alpha}{\boxx{A\wedge\boxx B}}$
 
 Ip)$\vera F{\boxx{(a\wedge b)\implies\boa\wedge\boxx b}}$ 
 
-Ts)$\forall X,Y\ Se\ X\cap Y\in N(\alpha)\ allora\ X\in N(\alpha),\ Y\in N(\beta)$			
+Ts)$\forall X,Y\ Se\ X\cap Y\in N(\alpha)\ allora\ X\in N(\alpha),\ Y\in N(\beta)$	\\
+		
 
 Considero un frame generico F che abbia $\alpha$ come stato
 
@@ -138,7 +149,8 @@ $\verins B=\{\alpha:\ \veraw M{\alpha}B\}=Y\in N(\alpha)$	\\
 \\
 Ip)$\forall X,Y\ Se\ X\cap Y\in N(\alpha)\ allora\ X\in N(\alpha),\ Y\in N(\beta)$
 
-Ts)$\vera F{\boxx{(a\wedge b)\implies\boa\wedge\boxx b}}$
+Ts)$\vera F{\boxx{(a\wedge b)\implies\boa\wedge\boxx b}}$\\
+
 
 Supponiamo valga $\veraw M{\alpha}{\boxx{(a\wedge b)}}$ allora: \\
 $\verins{a\wedge b}\in N(\alpha)$ (per definizione di $\square)$,
@@ -161,7 +173,8 @@ Un frame in cui valga l'assioma M si dice frame supplementato.
 
 \subsection{Negazione di C}
 
-Ts) $\vera FC$
+Ts) $\vera FC$\\
+
 
 Consideriamo un frame con due stati $F(\{\alpha,\beta\},N)$ e la
 seguente valutazione:
@@ -191,9 +204,10 @@ $\emptyset\nsubseteq N(\alpha)$
 
 Ip) $\vera FC$ 
 
-Ts) $\forall\alpha\in S,\,\forall X,\, Y\subseteq S\,:\, X\cap Y\in N(\alpha)$
+Ts) $\forall\alpha\in S,\,\forall X,\, Y\subseteq S\,:\, X\cap Y\in N(\alpha)$\\
 
-Poichè vale l'assioma C possiamo scrivere:
+
+Poiché vale l'assioma C possiamo scrivere:
 
 $\vera F{\boxx A\wedge\boxx B}\implies\boxx{(A\wedge B)}$
 
@@ -225,9 +239,10 @@ e la tesi è dimostrata.
 
 Ip) $\forall\alpha\in S,\,\forall X,\, Y\subseteq S\,:\, X\cap Y\in N(\alpha)$
 
-Ts) $\vera FC$ 
+Ts) $\vera FC$ \\
 
-Se l'antecedente è falso, C è vero, pr cui consideriamo il caso in
+
+Se l'antecedente è falso, C è vero, per cui consideriamo il caso in
 cui valga la formula:
 
 $\veraw{\mu}{\alpha}{\boa\wedge\boxx b}$
@@ -250,13 +265,13 @@ Un frame in cui valga l'assioma C si dice chiuso rispetto all'intersezione.
 
 Un frame si quasi filtro se:
 \begin{enumerate}
-\item E' supplementato
-\item E' chiuso rispetto all'intersezione
+\item È supplementato
+\item Èchiuso rispetto all'intersezione
 \end{enumerate}
 Un frame si dice filtro se:
 \begin{enumerate}
-\item E' un quasi filtro
-\item E' un frame con unità
+\item È un quasi filtro
+\item È un frame con unità
 \end{enumerate}
 
 \section{Logiche Classiche}
@@ -300,24 +315,26 @@ le logiche monotone sono classiche.
 
 Ip) Vale K
 
-Ts) la logica è regolare
+Ts) la logica è regolare\\
+
 
 $\teoremaDi Ka\wedge b\implies c$ -- per ipotesi
 
 $\teoremaDi K\boxx{(a\wedge b)}\implies\boxx c$ --definizione 3.c
 di logica normale
 
-$\teoremaDi K\boa\wedge\boxx b\implies\boxx{(a\wedge b)}$ -- perchè
+$\teoremaDi K\boa\wedge\boxx b\implies\boxx{(a\wedge b)}$ -- perché
 è una logica nomale (definizione 3.b)
 
 $\teoremaDi K\boa\wedge\boxx b\implies\boxx c$ -- per catena di implicazioni
 fra le due precedenti
 
-Poichè vale RR, ogni logica normale è regolare
+Poiché vale RR, ogni logica normale è regolare
 
 Ip) Vale la regola RR
 
-Ts) Vale la regola RM
+Ts) Vale la regola RM\\
+
 
 $\teorema{a\implies b}$ -- per ipotesi
 
@@ -327,11 +344,12 @@ $\teorema{\boa\wedge\boa\implies\boxx b}$ -- per RR
 
 $\teorema{\boa\implies\boxx b}$ 
 
-Poichè vale RM, ogni locica regolare è monotona
+Poiché vale RM, ogni logica regolare è monotona
 
 Ip) Vale RM
 
-Ts) Vale RE
+Ts) Vale RE\\
+
 
 $\teorema{a\iff b}$ -- per ipotesi
 
@@ -345,7 +363,7 @@ $\teorema{\boxx b\implies\boa}$ -- per RM
 
 $\teorema{\boa\iff\boxx b}$
 
-Poichè vale RE, ogni logica monotona è classica
+Poiché vale RE, ogni logica monotona è classica
 
 
 \subsection{Minima logica monotona}
@@ -355,7 +373,8 @@ M
 
 Ip) valgono RE e M
 
-Ts) vale RM
+Ts) vale RM\\
+
 
 $\teorema{a\implies b}$ -- per ipotesi
 
@@ -376,7 +395,8 @@ E il teorema è dimostrato
 
 Ip) vale RM
 
-Ts) Vale M
+Ts) Vale M\\
+
 
 $\teorema{a\wedge b\implies a}$ -- per tautologia
 
@@ -398,7 +418,8 @@ degli assiomi M e C
 
 Ip) valgono RE, M e C
 
-Ts) vale RR
+Ts) vale RR\\
+
 
 Sappiamo già che da RE e M ottengo RM.
 
@@ -411,13 +432,14 @@ C
 
 $\teorema{\boa\wedge\boxx b\implies\boxx c}$ -- per MP
 
-Poichè vale RR, la tesi è dimostrata.
+Poiché vale RR, la tesi è dimostrata.
 
 Ip) vale RR
 
-Ts) valgono M e C
+Ts) valgono M e C\\
 
-Poichè abbiamo RR, sappiamo che vale RM, ma allora sappiamo già che
+
+Poiché abbiamo RR, sappiamo che vale RM, ma allora sappiamo già che
 vale RE e l'assioma M.
 
 $\teorema{a\wedge b\implies a\wedge c}$ -- per tautologia
@@ -437,7 +459,8 @@ insieme sono equivalenti alla logica K.
 
 Ip) valgono RE, M, C, N
 
-Ts) vale la logica K
+Ts) vale la logica K\\
+
 
 Possiamo notare che, per definizione della logica K, devono valere:
 \begin{itemize}
@@ -455,9 +478,10 @@ $\teorema{\boa\implies\boxx b}$ -- per RM
 
 Ip) vale K
 
-Ts) vale RE, M, C e N.
+Ts) vale RE, M, C e N.\\
 
-Poichè siamo in una logica normale vale RR e quindi valgono RE, M
+
+Poiché siamo in una logica normale vale RR e quindi valgono RE, M
 e C.
 
 N vale per punto 1 della definizione di logica normale.
@@ -467,7 +491,7 @@ La tesi è quindi dimostrata.
 
 \section{Relazione Tra Frame Minimali E Standard}
 
-Poichè le logiche classiche contengono le logiche normali, è possibile
+Poiché le logiche classiche contengono le logiche normali, è possibile
 delineare la relazione tra i frame minimali e i frame standard.
 
 
@@ -493,16 +517,17 @@ e $\forall a\in f.b.f$
 $\veraw{\mu^{a}}{\alpha}a\iff\veraw{\mu^{s}}{\alpha}a$
 
 Questo teorema è banalmente vero per le formule che non utilizzano
-i connettivi modali, poichè S e V sono identiche. Dobbiamo dimostrarlo
+i connettivi modali, poiché S e V sono identiche. Dobbiamo dimostrarlo
 solo nel caso di utilizzo dei connettivi modali, e poi per induzione
 sulla complessità della formula, si può verificare che il teorema
 è valido in generale.
 
 Ip) $\veraw{\mu^{a}}{\alpha}a$
 
-Ts) $\exists\mu^{s}\,:\,\veraw{\mu^{s}}{\alpha}a\iff\veraw{\mu^{a}}{\alpha}a$
+Ts) $\exists\mu^{s}\,:\,\veraw{\mu^{s}}{\alpha}a\iff\veraw{\mu^{a}}{\alpha}a$\\
 
-supponiamo di scegliere R tale che:
+
+Supponiamo di scegliere R tale che:
 
 $(\alpha,\,\beta)\in R\iff\beta\in\underset{Y\in N(\alpha)}{\bigcap}Y$
 
@@ -544,9 +569,10 @@ $\veraw{\mu^{a}}{\alpha}a$
 
 Ip) $\veraw{\mu^{s}}{\alpha}a$
 
-Ts) $\exists\mu^{a}\,:\,\veraw{\mu^{a}}{\alpha}a\iff\veraw{\mu^{s}}{\alpha}a$
+Ts) $\exists\mu^{a}\,:\,\veraw{\mu^{a}}{\alpha}a\iff\veraw{\mu^{s}}{\alpha}a$\\
 
-supponiamo di scegliere N tale che:
+
+Supponiamo di scegliere N tale che:
 
 $X\in N(\alpha)\iff X\supseteq\{\beta\,|\,(\alpha,\,\beta)\in R\}$
 

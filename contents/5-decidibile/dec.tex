@@ -1,3 +1,7 @@
+\begin{savequote}[80mm]
+No, Impassabile. Nulla è impossibile.
+\qauthor{Lewis Carroll} \end{savequote}
+
 
 \chapter{Decidibilità Delle Logiche Modali}
 
@@ -26,7 +30,7 @@ $\Gamma_{\alpha}=\{a\in\Gamma\,|\,\veraw{\mu}{\alpha}a\}$
 
 $\alpha\sim_{\Gamma}\beta\iff\Gamma_{\alpha}=\Gamma_{\beta}$
 
-Si può notare che $\sim_{\Gamma}$ è una relazuione di equivalenza,
+Si può notare che $\sim_{\Gamma}$ è una relazione di equivalenza,
 Infatti:
 \begin{enumerate}
 \item è simmetrica\\
@@ -40,7 +44,7 @@ Posso allora considerare l'insieme quoziente:
 
 $S_{\Gamma}=S/\sim_{\Gamma}$
 
-Si può dimostrare con il teorema di fattorizzazzione delle applicazioni
+Si può dimostrare con il teorema di fattorizzazione delle applicazioni
 che:
 
 $|S_{\Gamma}|\leq2^{|\Gamma|}$
@@ -49,15 +53,19 @@ $|S_{\Gamma}|\leq2^{|\Gamma|}$
 
 Per dimostrarlo basta prendere:
 
-$f:\,\alpha\rightarrow\mathcal{P}(\Gamma)$
+$f:\, S\rightarrow\mathcal{P}(\Gamma)$ che associa $f(\alpha)=\Gamma_{\alpha}$
 
 risulta banale verificare che:
 
-$ker\, f\equiv\sim_{\Gamma}$
+$ker\, f\equiv\sim_{\Gamma}$ (due stati $\alpha,\ \beta$ appartengono
+al kernel se hanno la stessa immagine cioè se $f(\alpha)=\Gamma_{\alpha}=\Gamma_{\beta}=f(\beta)$,
+se ciò avviene sono anche in relazione tramite $\sim_{\Gamma}$)
 
-e quindi, ricordando che g è iniettiva, risulta banale che:
+e quindi, ricordando che $g$ è iniettiva, risulta banale che:
 
-$|S/\sim_{\Gamma}|\leq\Gamma(\alpha)$
+$|S/\sim_{\Gamma}|\leq|\mathcal{P}(\Gamma)|$
+
+$|\mathcal{P}(\Gamma)|=2^{|\Gamma|}$		
 
 Allora possiamo prendere il modello:
 
@@ -74,7 +82,7 @@ F2) $([\alpha],[\beta])\in R'\implies\forall\boxx b\in\Gamma,\,\veraw{\mu}{\alph
 Una relazione che gode delle proprietà F1 e F2 si chiama $\Gamma$-filtrazione
 della relazione R.
 
-prendiamo infine:
+Prendiamo infine:
 
 $V^{\Gamma}:\,\Phi\cap\Gamma\rightarrow\mathcal{P}(S^{\Gamma})$
 
@@ -101,9 +109,10 @@ Dimostriamo F2
 
 Ip) $([\alpha],[\beta])\in R^{\sigma}$, $\boxx{b\in\Gamma}$, $\veraw{\mu}{\alpha}{\boxx b}$
 
-Ts) $R^{\delta}$gode della proprietà F2
+Ts) $R^{\delta}$gode della proprietà F2\\
 
-supponiamo che:
+
+Supponiamo che:
 
 $\exists\delta,\eta\,:\,\delta R\eta\wedge\delta\in[\alpha]\wedge\eta\in[\beta]$
 
@@ -121,8 +130,8 @@ $\veraw{\mu}{\beta}b$\\
 
 \section{Lemma di Filtrazione}
 
-dato un insieme$\Gamma$ chiuso rispetto alle sottoformule di a, con
-$a\in\Gamma$
+Dato un insieme $\Gamma$ chiuso rispetto alle sottoformule di $a$,
+con $a\in\Gamma$
 
 $\veraw{\mu}{\alpha}{a\iff}\veraw{\mu^{\Gamma}}{\alpha}a$
 
@@ -130,15 +139,16 @@ per ogni $\mu^{\Gamma}$$\Gamma$-filtrazione di $\mu$
 
 Dimostrazione:
 
-Ts) $\veraw{\mu}{\alpha}{a\iff}\veraw{\mu^{\Gamma}}{[\alpha]}a$
-
 Ip) $\mu^{\Gamma}$$\Gamma$-filtrazione di $\mu$
+
+Ts) $\veraw{\mu}{\alpha}{a\iff}\veraw{\mu^{\Gamma}}{[\alpha]}a$\\
+
 
 Per induzione sul numero di connettivi di a
 
-Caso Base, n=0:
+Caso Base, $n=0$:
 
-a non ha connettivi, allora $a\equiv A$
+$a$ non ha connettivi, allora $a\equiv A$
 
 $\veraw{\mu}{\alpha}A\iff\alpha\in V(A)\iff\alpha\in V^{\Gamma}(A)\iff\veraw{\mu^{\Gamma}}{[\alpha]}a$
 
@@ -151,11 +161,12 @@ a può essere:
 \item $b\implies c$
 \item $\boxx b$
 \end{enumerate}
-Caso 1:
+\textbf{Caso 1:}
 
-$\veraw{\mu}{\alpha}{\neg b}\iff\nonveraw{\mu}{\alpha}b\iff\nonveraw{\mu^{\Gamma}}{[\alpha]}b\iff\veraw{\mu^{\Gamma}}{[\alpha]}{\neg b}$
+$\veraw{\mu}{\alpha}{\neg b}\iff\nonveraw{\mu}{\alpha}b\iff\nonveraw{\mu^{\Gamma}}{[\alpha]}b\iff\veraw{\mu^{\Gamma}}{[\alpha]}{\neg b}$\\
 
-Caso 2:
+
+\textbf{Caso 2:}
 
 $\veraw{\mu}{\alpha}{b\implies c}$ se e solo se $\nonveraw{\mu}{\alpha}b$
 oppure $\veraw{\mu}{\alpha}c$
@@ -168,26 +179,32 @@ $\veraw{\mu}{\alpha}c\iff\veraw{\mu^{\Gamma}}{[\alpha]}c$
 
 ma vale almeno una delle due se e solo se
 
-$\veraw{\mu^{\Gamma}}{[\alpha]}{b\implies c}$
+$\veraw{\mu^{\Gamma}}{[\alpha]}{b\implies c}$\\
 
-Caso 3:
+
+\textbf{Caso 3:}
 
 Ip) $\veraw{\mu}{\alpha}{\boxx b}$
 
-Ts) $\veraw{\mu^{\Gamma}}{[\alpha]}{\boxx b}$
+Ts) $\veraw{\mu^{\Gamma}}{[\alpha]}{\boxx b}$\\
+
 
 Consideriamo la reazione R' avente le proprietà F1 e F2
 
-$\forall[\beta]\,:\,([\alpha],\,[\beta])\in R'\implies\veraw{\mu^{\Gamma}}{[\beta]}b$
+$\forall[\beta]\,:\,([\alpha],\,[\beta])\in R'\implies\veraw{\mu}{\beta}b$
 -- per F2
+
+e per ipotesi induttiva anche: $\vera{\mu^{\Gamma}}{_{[\beta]}b}$
 
 allora si può affermare che:
 
-$\veraw{\mu}{\beta}b\implies\veraw{\mu^{\Gamma}}{[\beta]}b\implies\veraw{\mu^{\Gamma}}{[\alpha]}{\boxx b}$
+$\veraw{\mu}{\beta}b\implies\veraw{\mu^{\Gamma}}{[\beta]}b\implies\veraw{\mu^{\Gamma}}{[\alpha]}{\boxx b}$\\
+
 
 Ip)$\veraw{\mu^{\Gamma}}{[\alpha]}{\boxx b}$
 
-Ts)$\veraw{\mu}{\alpha}{\boxx b}$
+Ts)$\veraw{\mu}{\alpha}{\boxx b}$\\
+
 
 $\forall[\beta]\,:\,(\alpha,\,\beta)\in R,\,([\alpha],\,[\beta])\in R'$
 --per F1
@@ -223,7 +240,7 @@ Ip)$\vera Fa$
 
 Ts)$\teoremaDi Ka$\\
 \\
-Suppongo per assurdo che$\nonTeor Ka$ se e solo se $\nonvera{M^{K}}a$
+Suppongo per assurdo che $\nonTeor Ka$ se e solo se $\nonvera{M^{K}}a$
 se e solo se (per il lemma di filtrazione) $\nonvera{(M^{K})^{\Gamma}}a$
 il che implica che
 
@@ -236,7 +253,7 @@ Si noti che $(M^{K})^{\Gamma}$ ha al più $2^{n}$ mondi.
 
 \section{Determinatezza di KD dai Frame seriali finiti}
 
-Per seguire lo stesso ragionamente della dimostrazione appena fatta,
+Per seguire lo stesso ragionamento della dimostrazione appena fatta,
 dobbiamo solo mostrare che se $R$ è seriale allora $R^{\sigma}$
 lo è.\\
 
@@ -253,12 +270,12 @@ Sia $[\alpha]\in S^{\Gamma}$
 
 Se $R^{KD}$ è seriale allora $\forall\delta\in S^{KD}\exists\eta\in S^{KD}:\ (\delta,\eta)\in R^{KD}$
 
-In particolare esiste$\delta$ appartiene alla classe di equivalenza
+In particolare esiste $\delta$ appartiene alla classe di equivalenza
 $[\alpha]$ (di cui al limite potrebbe essere l'unico elemento con
 $\alpha=\delta$)
 
-Dalla serialità abbiamo che esiste$\eta$ appartiene alla classe di
-equivalenza $[\beta]$
+Dalla serialità abbiamo che esiste $\eta$ appartiene alla classe
+di equivalenza $[\beta]$
 
 Da cui $([\alpha],[\beta])\in R^{\sigma}$
 
@@ -313,20 +330,20 @@ e soddisfacibilità di una formula
 Il metodo consiste nel partire dalla formula che si vuole considerare,
 negandola.
 
-Dopodichè si procede passo passo alla costruzione di un albero seguendo
+Dopodiché si procede passo passo alla costruzione di un albero seguendo
 delle regole di espansione che aggiungono uno o più nodi o rami all'albero.
 
 Le regole con la virgola aggiungono un nodo allo stesso ramo, mentre
 le regole con il pipe sdoppiano il ramo.
 
 Se espando una formula, devo aggiungere coerentemente l'espansione
-a tutti i sottorami, e non posso più espanderla.
+a tutti i sotto-rami, e non posso più espanderla.
 
 Se un cammino contiene sia una formula che la sua negazione il cammino
 si chiude.
 
 Se esiste almeno un cammino chiuso, la formula di partenza è soddisfacibile,
-se tutti i cammini sono chiusi, la formula è logicamente valita, altrimenti
+se tutti i cammini sono chiusi, la formula è logicamente valida, altrimenti
 la formula è falsa.
 
 
@@ -336,17 +353,18 @@ Le regole Per applicare l'algoritmo dei tableaux nella logica proposizionale
 sono le seguenti:
 \begin{itemize}
 \item Radice dell'albero\\
-$\neg a$
+\def\arraystretch{2} 
+\tabcolsep=10.8mm  \begin{tabular}{{c}} $\neg a$ \end{tabular}
 \item Regola del $\neg$\\
-$\dfrac{\neg\neg a}{a}$
+\tabcolsep=10.8mm  \begin{tabular}{{c}} $\dfrac{\neg\neg a}{a}$
+\end{tabular}
 \item Regole di tipo $\alpha$\\
-$\dfrac{a\wedge b}{a,\, b}$ $\dfrac{\neg(a\vee b)}{\neg a,\,\neg b}$
-$\dfrac{\neg(a\implies b)}{a,\,\neg b}$
+\tabcolsep=10.8mm  \begin{tabular}{*3{c}} $\dfrac{a\wedge b}{a,\, b}$&$\dfrac{\neg(a\vee b)}{\neg a,\,\neg b}$&$\dfrac{\neg(a\implies b)}{a,\,\neg b}$\end{tabular}
 \item Regole di tipo $\beta$\\
-$\dfrac{a\vee b}{a|b}$ $\dfrac{\neg(a\wedge b)}{\neg a|\neg b}$
-$\dfrac{a\implies b}{\neg a|b}$
+  \begin{tabular}{*3{c}} $\dfrac{a\vee b}{a\ |\ b}$&$\dfrac{\neg(a\wedge b)}{\neg a\ |\ \neg b}$&$\dfrac{a\implies b}{\neg a\ |\ b}$\end{tabular}\\
+
 \item Regole di tipo $\iff$\\
-$\dfrac{a\iff b}{a,\, b|\neg a,\,\neg b}$ $\dfrac{\neg(a\iff b)}{a,\,\neg b|\neg a,\, b}$
+ \begin{tabular}{*2{c}} $\dfrac{a\iff b}{a,\, b|\neg a,\,\neg b}$&$\dfrac{\neg(a\iff b)}{a,\,\neg b|\neg a,\, b}$\end{tabular}
 \end{itemize}
 
 \subsection{Tableaux per le logiche modali}
@@ -362,23 +380,31 @@ nello stesso mondo.
 Le regole dei tableaux per le logiche modali saranno:
 \begin{itemize}
 \item Radice dell'albero\\
-$1.\neg a$
+\def\arraystretch{3} 
+\tabcolsep=10.8mm  \begin{tabular}{{c}} $1.\neg a$\end{tabular}
 \item Regola del $\neg$\\
-$\dfrac{\delta\,\neg\neg a}{\delta a}$
+\tabcolsep=10.8mm  \begin{tabular}{{c}}  $\dfrac{\delta\,\neg\neg a}{\delta a}$
+\end{tabular}
 \item Regole di tipo $\alpha$\\
-$\dfrac{\delta\, a\wedge b}{\delta\, a,\,\delta\, b}$ $\dfrac{\delta\,\neg(a\vee b)}{\delta\,\neg a,\,\delta\,\neg b}$
-$\dfrac{\delta\,\neg(a\implies b)}{\delta\, a,\,\delta\,\neg b}$
+\tabcolsep=10.8mm  \begin{tabular}{*3{c}} $\dfrac{\delta\, a\wedge b}{\delta\, a,\,\delta\, b}$&
+$\dfrac{\delta\,\neg(a\vee b)}{\delta\,\neg a,\,\delta\,\neg b}$
+& $\dfrac{\delta\,\neg(a\implies b)}{\delta\, a,\,\delta\,\neg b}$
+\end{tabular}
 \item Regole di tipo $\beta$\\
-$\dfrac{\delta\, a\vee b}{\delta\, a|\delta\, b}$ $\dfrac{\delta\,\neg(a\wedge b)}{\delta\,\neg a|\delta\,\neg b}$
-$\dfrac{\delta\, a\implies b}{\delta\,\neg a|\delta\, b}$
+\tabcolsep=10.8mm  \begin{tabular}{*3{c}} $\dfrac{\delta\, a\vee b}{\delta\, a|\delta\, b}$
+&$\dfrac{\delta\,\neg(a\wedge b)}{\delta\,\neg a|\delta\,\neg b}$
+&$\dfrac{\delta\, a\implies b}{\delta\,\neg a|\delta\, b}$\end{tabular}
 \item Regole di tipo $\iff$\\
-$\dfrac{\delta\, a\iff b}{\delta\, a,\,\delta\, b|\delta\,\neg a,\,\delta\,\neg b}$
-$\dfrac{\delta\,\neg(a\iff b)}{\delta\, a,\,\delta\,\neg b|\delta\,\neg a,\,\delta\, b}$
+\tabcolsep=10.8mm  \begin{tabular}{*2{c}} $\dfrac{\delta\, a\iff b}{\delta\, a,\,\delta\, b|\delta\,\neg a,\,\delta\,\neg b}$
+&$\dfrac{\delta\,\neg(a\iff b)}{\delta\, a,\,\delta\,\neg b|\delta\,\neg a,\,\delta\, b}$
+\end{tabular}
 \item Regole di necessitazione\\
-$\dfrac{\sigma\,\boa}{\sigma_{n}\, a}$ $\dfrac{\sigma\,\neg\dia}{\sigma_{n}\,\neg a}$
--- con $\sigma_{n}$ già presente nei nodi precedenti\\
-$\dfrac{\sigma\,\neg\boa}{\sigma_{n}\,\neg a}$ $\dfrac{\sigma\,\dia}{\sigma_{n}\, a}$
--- con $\sigma_{n}$ non presente nei nodi precedenti
+\tabcolsep=10.8mm  \begin{tabular}{*2{c}} $\dfrac{\sigma\,\boa}{\sigma_{n}\, a}$
+& $\dfrac{\sigma\,\neg\dia}{\sigma_{n}\,\neg a}$ -- con $\sigma_{n}$
+già presente nei nodi precedenti \end{tabular}\\
+\tabcolsep=10.8mm  \begin{tabular}{*2{c}} $\dfrac{\sigma\,\neg\boa}{\sigma_{n}\,\neg a}$
+&$\dfrac{\sigma\,\dia}{\sigma_{n}\, a}$ -- con $\sigma_{n}$ non
+presente nei nodi precedenti\end{tabular}
 \end{itemize}
 Tuttavia queste regole non sono sufficienti se vogliamo usare una
 regola modale differente da K.
@@ -402,7 +428,7 @@ di assiomi:
 \item 5: $\diam a\implies\boxx{\diam a}$ (euclidea)
 \end{itemize}
 Per ognuno di questi schemi di assiomi (X) ne esiste il cosiddetto
-duale (X$\diamond$), cioè lo schema che si ottine invertendo antecedente
+duale (X$\diamond$), cioè lo schema che si ottiene invertendo antecedente
 e conseguente e negando $\boxx a$ con $\dia$
 
 
@@ -572,10 +598,10 @@ con KT5.\\
 Mostriamo che \textbf{KTB4$\mbox{\ensuremath{\subseteq}}$KDB4 }così
 da arrivare a KTB4 = KDB4
 
-Cioe' mostriamo che nella logica K, dall'assioma T, con B e 4 posso
+Cioè mostriamo che nella logica K, dall'assioma T, con B e 4 posso
 dedurre l'assioma D
 
-Dall'assioma T deduciamo l'assioma T$\diamond$ cioe' $a\implies\diamond a$
+Dall'assioma T deduciamo l'assioma T$\diamond$ cioè $a\implies\diamond a$
 
 Dato che vale 5: $\diam a\implies\boxx{\diam a}$, sfruttando la catena
 di implicazioni delle due precedenti abbiamo:
@@ -622,17 +648,18 @@ la somma diretta pertanto ci mostra quindi che S5 è determinata dai
 frame universali.
 
 
-\subsection{Tableau rivisitato per KT, KB}
+\subsection{Tableaux rivisitato per KT, KB}
 
-Se una logica contiene l'assioma B devo aggiungere alle regole del
-Tableau
+Se una logica contiene l'assioma T devo aggiungere alle regole del
+Tableaux
 \begin{itemize}
 \item Regole di necessitazione\\
-$\dfrac{\sigma\,\boa}{\sigma_{n}\, a}$ $\dfrac{\sigma\,\neg\dia}{\sigma_{n}\,\neg a}$
+\def\arraystretch{3} 
+\tabcolsep=10.8mm  \begin{tabular}{*2{c}}   $\dfrac{\sigma\,\boa}{\sigma_{n}\, a}$ & $\dfrac{\sigma\,\neg\dia}{\sigma_{n}\,\neg a}$
 -- con $\sigma_{n}$ già presente nei nodi precedenti, oppure $\sigma_{n}$
-\textbf{nodo corrente}
+\textbf{nodo corrente}\end{tabular}
 \end{itemize}
-es. Si provi che la formula: $(\boa\implies a)$ è un teorema in KB
+es. Si provi che la formula: $(\boa\implies a)$ è un teorema in KT
 
 1: $\neg(\boa\implies a)$
 
@@ -663,19 +690,20 @@ Dove nell'ultimo passaggio ho usato proprio la regola appena introdotta,
 avendo ottenuto $a$ e $\neg a$ nello stesso stato (mondo) deduco
 che negare $a$ mi porta a un assurdo e quindi deve per forza essere
 un teorema.\\
-Se una logica contiene l'assioma T devo aggiungere alle regole del
-Tableau
+Se una logica contiene l'assioma B devo aggiungere alle regole del
+Tableaux
 \begin{itemize}
 \item Regole di necessitazione
+\end{itemize}
+\def\arraystretch{2} 
+\tabcolsep=10.8mm  \begin{tabular}{{c}}  $\dfrac{\sigma\,\boa}{\sigma_{n}\, a}$ \\ $\dfrac{\sigma\,\neg\dia}{\sigma_{n}\,\neg a}$ 
 
-\begin{itemize}
-\item $\dfrac{\sigma\,\boa}{\sigma_{n}\, a}$ $\dfrac{\sigma\,\neg\dia}{\sigma_{n}\,\neg a}$
--- con $\sigma_{n}$ già presente nei nodi precedenti, oppure $\sigma_{n}$
-\textbf{nodo prefisso del nodo corrente} (es 11 è prefisso di 111)
-\end{itemize}
-\end{itemize}
+\\ con $\sigma_{n}$ già presente nei nodi precedenti, oppure $\sigma_{n}$
+\textbf{nodo prefisso del nodo corrente} \\(es 11 è prefisso di 111)
+\end{tabular}
+
 es. Si provi che la formula $(a\implies\boxx{\diamond a})$ è un teorema
-in KT
+in KB
 
 1:$\neg(a\implies\boxx{\diamond a})$
 

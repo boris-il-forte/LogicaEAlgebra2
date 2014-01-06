@@ -1,14 +1,19 @@
+\begin{savequote}[60mm]
+Se io avessi un mondo come piace a me, là tutto sarebbe assurdo: niente sarebbe com'è, perché tutto sarebbe come non è, e viceversa! Ciò che è, non sarebbe e ciò che non è, sarebbe! 
+\qauthor{Lewis Carroll} \end{savequote}
+
 
 \chapter{Logiche modali particolari e Determinatezza}
 
-Per il teorema dicorrettezza e completezza abbiamo che $\teorema a$
+Per il teorema di correttezza e completezza abbiamo che $\teorema a$
 se e solo se $\vera{M^{\Lambda}}a$
 
 Il problema di $\vera{M^{\Lambda}}a$ è che non so costruire a livello
 ``pratico'' il modello canonico dato che i suoi mondi sono infiniti.
 
 Provo quindi a vedere se $\teorema a$ se e solo se $\vera{F^{\Lambda}}a$
-possa valere almeno per particolari classi di frame.
+possa valere almeno per particolari classi di frame.\\
+
 
 \shadowbox{\parbox[c]{1\textwidth}{%
 \textbf{Nota: }Per dimostrare la determinatezza di una logica rispetto
@@ -24,8 +29,6 @@ Con questa chiave di lettura diamo alcune dimostrazioni di determinatezza.%
 $R^{KD}$ è seriale se: $\forall\alpha\in S^{KD}\exists\beta:(\alpha,\beta)\in R^{KD}$
 
 TS) $\teoremaDi{KD}a$ se e solo se $R^{KD}$ è seriale
-
-
 
 $\relazCAB{\alpha}{\beta}$ se e solo se $\alpha$ e $\beta$ sono
 in relazione.
@@ -51,7 +54,7 @@ sono formule di $\beta_{0}$
 $\teoremaDi{KD}\andoria{_{n-1}\implies\neg a_{n}}$ (uso la definizione
 2. di logica normale)
 
-$\teoremaDi{KD}\andbox{_{n}}\implies\boxx{\neg a_{n}}$ 
+$\teoremaDi{KD}\andbox{_{n}}\implies\boxx{\neg a_{n}}$
 
 $\andbox{_{n}}\implies\boxx{\neg a_{n}}\in\alpha$ (dato che $\alpha$
 è $\consMaxLog{KD}$ contiene tutti i teoremi di $KD$)
@@ -67,17 +70,21 @@ $\boa_{n}\in\alpha$ \textbf{({*})}
 
 $\boa_{n}\implies\dia_{n}$ (schema seriale) \textbf{({*}{*})}
 
-Per MP fra \textbf{({*}) }e\textbf{ ({*}{*}) }si ha $\dia_{n}\in\alpha$ 
+Per MP fra \textbf{({*}) }e\textbf{ ({*}{*}) }si ha $\dia_{n}\in\alpha$
 
+\noindent \begin{flushleft}
 Da cui $\alpha$ non consistente, assurdo. \lightning
+\par\end{flushleft}
 
 
-\section{Debole densità del frame canonico di K$X\diamond$}
+\section{\noindent Debole densità del frame canonico di K$X\diamond$}
 
+\noindent \begin{flushleft}
 $R$ è debolmente densa se: $\forhten{\alpha,\beta}{:\:(\alpha R\beta)}{\exists\gamma:\,(\alpha R\gamma\wedge\gamma R\beta)}$
+\par\end{flushleft}
 
 Chiamiamo K$X\diamond$ una logica costruita a partire dalla logica
-$K$ aggiungendo lo schema $X\diamond$: $\dia\implies\diam{\diam a}$ 
+$K$ aggiungendo lo schema $X\diamond$: $\dia\implies\diam{\diam a}$
 
 La partenza del ragionamento è simile a quello del precedente in cui
 come insieme considero:
@@ -103,7 +110,7 @@ $\teoremaDi{KX\diamond}\neg(\diamond c\wedge\diamond d)\implies\neg\diamond(c\we
 cioè:
 
 \textbf{$\teoremaDi{KX\diamond}\diamond(c\wedge d)\implies\diamond c\wedge\diamond d$}\\
-infatti, sono tautologie della logica proposizionale: $\neg c\implies\neg c\vee\neg d$
+ infatti, sono tautologie della logica proposizionale: $\neg c\implies\neg c\vee\neg d$
 
 e $\neg d\implies\neg c\vee\neg d$,
 
@@ -135,7 +142,7 @@ $\teoremaDi{KX\diamond}\andoria{_{n}}\implies\neg\diamond(b_{1}\wedge...\wedge\d
 cioè (per come ho posto b)}
 
 \selectlanguage{italian}%
-$\teoremaDi{KX\diamond}\andoria{_{n}}\implies\neg\diamond b$ 
+$\teoremaDi{KX\diamond}\andoria{_{n}}\implies\neg\diamond b$
 
 Uso la definizione 2. di logica normale e riscrivo:
 
@@ -143,7 +150,7 @@ $\teoremaDi{KX\diamond}\andbox{_{n}}\implies\boxx{\neg\diamond b}$
 
 $\teoremaDi{KX\diamond}\andbox{_{n}}\implies\neg\diamond\diamond b$
 
-dato che $\andbox{_{n}}\implies\neg\diamond\diamond b\in\alpha$ 
+dato che $\andbox{_{n}}\implies\neg\diamond\diamond b\in\alpha$
 
 e che: $\andbox{_{n}\in\alpha}$
 
@@ -160,7 +167,7 @@ il che ci porterebbe alla non massimalità di $\alpha$ contro l'ipotesi.
 
 $R^{KT}$ è riflessiva se: $\forall\alpha,\,\alpha R^{KT}\alpha$
 
-Vogliamo dimostrare che l'insime $\{a\,|\,\boa\in\alpha\}$ di formule
+Vogliamo dimostrare che l'insieme $\{a\,|\,\boa\in\alpha\}$ di formule
 è contenuto in $\alpha$
 
 Se $\boxx a\in\alpha$ cioè se $\teoremaDi{KT}\boxx a$ allora
@@ -205,11 +212,12 @@ seriali
 
 Dimostrazione
 
-Ts) $\teoremaDi{KD}a$
-
 Ip) $\vera Fa$ con F seriale
 
-se a è un teorema di KD, è ricavato da una serie di formule che possono
+Ts) $\teoremaDi{KD}a$\\
+
+
+Se a è un teorema di KD, è ricavato da una serie di formule che possono
 essere applicazioni degli schemi A1, A2, A3, K, D oppure applicazioni
 del modus ponens o della regola di necessitazione.
 
@@ -225,8 +233,6 @@ e quindi:
 
 $\nonvera{F^{KD}}a$
 
-Poichè a non è vera nel frame canonico, non può essere vera in alcun
+Poiché a non è vera nel frame canonico, non può essere vera in alcun
 frame seriale, ma questo va contro l'ipotesi, assurdo. Allora la tesi
 deve essere valida.
-
-

@@ -1,3 +1,8 @@
+\begin{savequote}[50mm]
+Be'! Naturale che tu sia in ritardo! \\
+Questo cipollone è esattamente due giorni indietro! 
+\qauthor{Lewis Carroll} \end{savequote}
+
 
 \chapter{	Logica temporale}
 
@@ -51,7 +56,8 @@ i primi due casi sono banali, come negli altri casi. Dimostriamo l'ultimo.
 
 Ip) $\veraw{\mu^{\alpha}}{\beta}{\boxx b}$ 
 
-Ts) $\veraw{\mu}{\beta}{\boxx b}$
+Ts) $\veraw{\mu}{\beta}{\boxx b}$\\
+
 
 $\veraw{\mu^{\alpha}}{\beta}{\boxx b\iff\veraw{\mu^{\alpha}}{\gamma}b}$,
 per ogni $\gamma$ tale che $\beta R^{\alpha}\gamma$
@@ -62,7 +68,8 @@ $\veraw{\mu^{\alpha}}{\gamma}b\iff\veraw{\mu}{\gamma}b\iff\veraw{\mu}{\beta}{\bo
 
 Ip) $\veraw{\mu}{\beta}{\boxx b}$
 
-Ts) $\veraw{\mu^{\alpha}}{\beta}{\boxx b}$
+Ts) $\veraw{\mu^{\alpha}}{\beta}{\boxx b}$\\
+
 
 Per ogni $\delta$ tale che $\beta R^{\alpha}\delta$
 
@@ -125,8 +132,7 @@ $\vera{F_{1}}a\implies\vera{F_{2}}a$
 Il frame ($\omega$, <) è il frame che rappresenta la retta dei numeri
 naturali.
 
-E' adatto a rappresentare il tempo discreto continuocon un istante
-iniziale.
+E' adatto a rappresentare il tempo discreto con un istante iniziale.
 
 La logica che rappresenta questo frame è la logica K4DLZ, che è corretta
 e completa rispetto a ($\omega$, <)
@@ -136,7 +142,7 @@ e completa rispetto a ($\omega$, <)
 
 \section{La logica K4DLZ}
 
-la logica K4DLZ, detta anche logica $\Omega$ è la logicha che ha,
+la logica K4DLZ, detta anche logica $\Omega$ è la logica che ha,
 oltre all'assioma K, i seguenti assiomi:
 \begin{itemize}
 \item 4: $\boa\implies\boxx{\boa}$ --> transitività
@@ -145,8 +151,8 @@ oltre all'assioma K, i seguenti assiomi:
 --> debole connessione
 \item Z: $\boxx{(\boa\implies a)\implies(\diam{\boa}\implies\boa)}$
 \end{itemize}
-L'azssioma Z, non ha alcuna interpretazione preso a se stante, ma
-in combinazione con gli altri implica che tra due mondi connessi c'è
+L'assioma Z, non ha alcuna interpretazione preso a se stante, ma in
+combinazione con gli altri implica che tra due mondi connessi c'è
 solo un numero finito di mondi, a due a due connessi.
 
 
@@ -154,10 +160,11 @@ solo un numero finito di mondi, a due a due connessi.
 
 Ip) $\teolm{\Omega}a$
 
-Ts) $\vera{(\omega,<)}a$
+Ts) $\vera{(\omega,<)}a$\\
+
 
 Per dimostrare questo teorema dobbiamo dimostrare che ogni teorema
-di K4DLZ è una formula valida. Poichè ogni teorema di $\Omega$ è
+di K4DLZ è una formula valida. Poiché ogni teorema di $\Omega$ è
 una serie di applicazioni degli assiomi o delle regole di inferenza,
 dobbiamo assicurare che:
 \begin{enumerate}
@@ -176,7 +183,7 @@ su ($\omega$, <)
 su ($\omega$, <) essendo debolmente connesso.\\
 
 \end{itemize}
-Dobiamo quindi dimostrare solo la validità di Z.
+Dobbiamo quindi dimostrare solo la validità di Z.
 
 Z è l'assioma $\boxx{(\boa\implies a)\implies(\diam{\boa}\implies\boa)}$,
 per dimostrare che è valido basta considerare il caso in cui gli antecedenti
@@ -205,7 +212,7 @@ e allora, applicando il modus ponens
 $\veraw{(\omega,\,<)}{\beta}a$
 
 Ma, allora possiamo applicare lo stesso ragionamento per $\beta-1$,
-poichè:
+poiché:
 
 $\veraw{(\omega,\,<)}{\beta-1}{\boa}$
 
@@ -273,7 +280,8 @@ e la tesi è dimostrata.
 
 Ip) $\vera{(\omega,<)}a$
 
-Ts)$\teolm{\Omega}a$ 
+Ts)$\teolm{\Omega}a$ \\
+
 
 Questa dimostrazione è così lunga da essere suddivisa per convenienza
 in punti
@@ -294,7 +302,7 @@ $\alpha$ in cui $\nonveraw{M_{1}}{\alpha}a$
 \textbf{2)}
 
 $M_{2}=M_{1}^{\alpha}$, dove $M_{1}^{\alpha}$ è il sottomodello
-genereato da $\alpha$.
+generato da $\alpha$.
 
 $M_{2}$ è seriale, transitivo e connesso. La serialità e la transitività
 vengono direttamente da $M_{1}$, esaminiamo la connessione.
@@ -417,7 +425,7 @@ se e solo se $i<j$.
 \item $(\alpha,\alpha)\notin R'$ (tolgo gli autoanelli)
 \end{itemize}
 A questo punto abbiamo un palloncino$P$ costruito su $S$,$R'$,
-$V$, ed è lecito chidersi se $\vera{M_{3}}a$ se e solo se $\vera Pa$.
+$V$, ed è lecito chiedersi se $\vera{M_{3}}a$ se e solo se $\vera Pa$.
 
 Questo è ovviamente vero se $a$ non presenta connettivi modali.
 
@@ -484,7 +492,7 @@ L'idea è di fare un p-morfismo la cui funzione f : manda i primi $n$
 mondi di $\omega$ nel ``gambo'' e i mondi da $n+1$ in poi nella
 parte ``tonda'' del palloncino contando modulo $m$.
 
-Pertando definiamo $f\ :\ \omega\rightarrow T$ (ricordando che i
+Pertanto definiamo $f\ :\ \omega\rightarrow T$ (ricordando che i
 mondi sono numerati, sia in $\omega$ che in $T$)
 
 $f(i)=i\ se$$i\leq m+n$
@@ -536,7 +544,8 @@ Ip) $\mu$ finito, seriale, transitivo, connesso e vale Z. In un cluster
 $C_{\alpha}$ esiste un mondo $\alpha$ in cui non vale $\boxx b$
 
 Ts) $\nonveraw{\mu}{\beta}b$ per tutti i $\beta$ appartenenti a
-r-cluster successivi a $C_{\alpha}$
+r-cluster successivi a $C_{\alpha}$\\
+
 
 Per assurdo, supponiamo:
 
@@ -549,7 +558,7 @@ $\nonveraw{\mu}{\delta}b$ in qualche mondo $\delta$ tale che $C_{\alpha}=C_{\del
 
 \begin{center}  \begin{tikzpicture}[scale=0.2]  \tikzstyle{every node}+=[inner sep=0pt]  \draw [black] (6.9,-25) circle (3);  \draw (6.9,-25) node {$...$};  \draw [black] (19.4,-25) circle (3);  \draw (19.4,-25) node {$...$};  \draw [black] (30.3,-25) circle (3);  \draw (30.3,-25) node {$...$};  \draw [black] (41.4,-17.7) circle (3);  \draw (41.4,-17.7) node {$\alpha$};  \draw [black] (41.5,-31.3) circle (3);  \draw (41.5,-31.3) node {$...$};  \draw [black] (54.5,-17.7) circle (3); \draw (54.5,-17.7) node {$...$}; \draw [black] (54.5,-31.3) circle (3);  \draw (54.5,-31.3) node {$\delta$};  \draw [black] (64.4,-24.4) circle (3);  \draw (64.4,-24.4) node {$...$};  \draw [black] (74.7,-24.4) circle (3);  \draw (74.7,-24.4) node {$...$};  \draw (74.7,-20.1) node {$b$};  \draw (64.4,-20.1) node {$b$};  \draw (54.5,-35.8) node {\sout{$b$}};  \draw (41.5,-13.3) node {\sout{$\boxx{b}$}};  \draw [black] (9.9,-25) -- (16.4,-25);  \fill [black] (16.4,-25) -- (15.6,-24.5) -- (15.6,-25.5);  \draw [black] (22.4,-25) -- (27.3,-25);  \fill [black] (27.3,-25) -- (26.5,-24.5) -- (26.5,-25.5);  \draw [black] (32.81,-23.35) -- (38.89,-19.35);  \fill [black] (38.89,-19.35) -- (37.95,-19.37) -- (38.5,-20.21);  \draw [black] (32.91,-26.47) -- (38.89,-29.83);  \fill [black] (38.89,-29.83) -- (38.43,-29) -- (37.94,-29.87);  \draw [black] (41.48,-28.3) -- (41.42,-20.7);  \fill [black] (41.42,-20.7) -- (40.93,-21.5) -- (41.93,-21.5);  \draw [black] (41.42,-20.7) -- (41.48,-28.3);  \fill [black] (41.48,-28.3) -- (41.97,-27.5) -- (40.97,-27.5);  \draw [black] (51.5,-31.3) -- (44.5,-31.3);  \fill [black] (44.5,-31.3) -- (45.3,-31.8) -- (45.3,-30.8);  \draw [black] (44.5,-31.3) -- (51.5,-31.3);  \fill [black] (51.5,-31.3) -- (50.7,-30.8) -- (50.7,-31.8);  \draw [black] (54.5,-28.3) -- (54.5,-20.7); \fill [black] (54.5,-20.7) -- (54,-21.5) -- (55,-21.5); \draw [black] (54.5,-20.7) -- (54.5,-28.3); \fill [black] (54.5,-28.3) -- (55,-27.5) -- (54,-27.5);  \draw [black] (51.5,-17.7) -- (44.4,-17.7); \fill [black] (44.4,-17.7) -- (45.2,-18.2) -- (45.2,-17.2); \draw [black] (44.4,-17.7) -- (51.5,-17.7); \fill [black] (51.5,-17.7) -- (50.7,-17.2) -- (50.7,-18.2); \draw [black] (52.43,-19.87) -- (43.57,-29.13); \fill [black] (43.57,-29.13) -- (44.49,-28.9) -- (43.76,-28.21); \draw [black] (43.57,-29.13) -- (52.43,-19.87); \fill [black] (52.43,-19.87) -- (51.51,-20.1) -- (52.24,-20.79); \draw [black] (43.48,-19.86) -- (52.42,-29.14);  \fill [black] (52.42,-29.14) -- (52.22,-28.22) -- (51.5,-28.91);  \draw [black] (52.42,-29.14) -- (43.48,-19.86); \fill [black] (43.48,-19.86) -- (43.68,-20.78) -- (44.4,-20.09);  \draw [black] (56.96,-29.58) -- (61.94,-26.12);  \fill [black] (61.94,-26.12) -- (61,-26.16) -- (61.57,-26.98);  \draw [black] (56.98,-19.38) -- (61.92,-22.72); \fill [black] (61.92,-22.72) -- (61.53,-21.86) -- (60.97,-22.68); \draw [black] (67.4,-24.4) -- (71.7,-24.4);  \fill [black] (71.7,-24.4) -- (70.9,-23.9) -- (70.9,-24.9);  \end{tikzpicture}  \end{center}
 
-allora, poichè la trelazione è transitiva e connessa, abbiamo che
+allora, poiché la relazione è transitiva e connessa, abbiamo che
 
 $\nonveraw{\mu}{\gamma}{\boxx b}$
 
@@ -560,7 +569,7 @@ $\veraw{\mu}{\gamma}{\boxx b\implies b}$
 per ogni cluster precedente a $C_{\alpha}$ e a $C_{\alpha}$stesso,
 essendo falso il suo antecedente.
 
-ma poichè in tutti i mondi successivi è vera b, allora in tutti i
+ma poiché in tutti i mondi successivi è vera b, allora in tutti i
 mondi del modello è vera:
 
 $\vera{\mu}{\boxx{(\boxx{b\implies b)}}}$
@@ -570,14 +579,14 @@ precedente abbiamo che vale:
 
 $\vera{\mu}{\diam{\boxx b}\implies\boxx b}$
 
-Poichè per tutti i mondi dopo $C_{\alpha}$ è vera b, allora è vera
+Poiché per tutti i mondi dopo $C_{\alpha}$ è vera b, allora è vera
 anche $\boxx b$
 
 Ma allora in $\alpha$ vale:
 
 $\veraw{\mu}{\alpha}{\diam{\boxx b}}$ 
 
-poichè esistono dei mondi raggiungibili in cui è vera $\boxx b$
+poiché esistono dei mondi raggiungibili in cui è vera $\boxx b$
 
 ma allora per Modus Ponens, è vale anche:
 
