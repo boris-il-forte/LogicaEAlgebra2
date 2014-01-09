@@ -157,7 +157,7 @@ Sottomodello generato da
 \end_layout
 
 \begin_layout Standard
-presa una logica 
+Presa una logica 
 \begin_inset Formula $\Lambda$
 \end_inset
 
@@ -192,10 +192,14 @@ con:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $S^{\alpha}=\{\beta\,|\,\alpha R*\beta\}$
+\begin_inset Formula $S^{\alpha}=\{\beta\,|\,\alpha R^{*}\beta\}$
 \end_inset
 
- dove R* è la chiusura riflessiva e transitiva di R
+ dove 
+\begin_inset Formula $R^{*}$
+\end_inset
+
+ è la chiusura riflessiva e transitiva di R
 \end_layout
 
 \begin_layout Standard
@@ -249,7 +253,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\veraw{\mu}{\beta}a\iff\veraw{\mu^{\beta}}{\beta}a$
+\begin_inset Formula $\veraw{\mu}{\beta}a\iff\veraw{\mu^{\alpha}}{\beta}a$
 \end_inset
 
 
@@ -308,7 +312,7 @@ Bisogna dimostrare 3 casi:
 \end_layout
 
 \begin_layout Standard
-i primi due casi sono banali, come negli altri casi.
+I primi due casi sono banali, come negli altri casi.
  Dimostriamo l'ultimo.
 \end_layout
 
@@ -492,7 +496,7 @@ p-Morfismo
 \end_layout
 
 \begin_layout Standard
-siano 
+Siano 
 \begin_inset Formula $F_{1}(S_{1},\, R_{1}),\, F_{2}(S_{2},\, R_{2})$
 \end_inset
 
@@ -500,7 +504,7 @@ siano
 \end_layout
 
 \begin_layout Standard
-c'è un p-morfismo (pseudo-morfismo) tra 
+C'è un p-morfismo (pseudo-morfismo) tra 
 \begin_inset Formula $F_{1}$
 \end_inset
 
@@ -723,7 +727,7 @@ La logica K4DLZ
 \end_layout
 
 \begin_layout Standard
-la logica K4DLZ, detta anche logica 
+La logica K4DLZ, detta anche logica 
 \begin_inset Formula $\Omega$
 \end_inset
 
@@ -1525,10 +1529,14 @@ Dal momento che
 \end_inset
 
  è debolmente connessa, 
-\begin_inset Formula $R_{1}$
+\begin_inset Formula $R_{1}^{*}$
 \end_inset
 
-, avendo anche la riflessività è connessa.
+, avendo anche la riflessività è connessa e lo stesso vale quindi per 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2106,7 +2114,7 @@ Per questi motivi
 \begin_inset Formula $\approx$
 \end_inset
 
-è una relazione d'equivalenza, e come tale partiziona l'insieme 
+ è una relazione d'equivalenza, e come tale partiziona l'insieme 
 \begin_inset Formula $S$
 \end_inset
 
@@ -2118,7 +2126,7 @@ Per questi motivi
 \end_layout
 
 \begin_layout Standard
-Chiamiamo R-cluster la classe di equivalenza
+Chiamiamo R-cluster la classe di equivalenza 
 \begin_inset Formula $C_{\alpha}$
 \end_inset
 
@@ -2427,7 +2435,7 @@ inoltre
 \begin_inset Formula $C=$
 \end_inset
 
-
+ 
 \begin_inset Formula $C_{\alpha}\leq C\alpha$
 \end_inset
 
@@ -2489,7 +2497,7 @@ Per ricondurmi a un palloncino, a partire da
 \end_layout
 
 \begin_layout Itemize
-Se
+Se 
 \begin_inset Formula $\alpha,\beta$
 \end_inset
 
@@ -2497,7 +2505,7 @@ Se
 \begin_inset Formula $(\alpha,\beta)\in R'$
 \end_inset
 
-se e solo se 
+ se e solo se 
 \begin_inset Formula $(\alpha,\beta)\in R$
 \end_inset
 
@@ -2544,7 +2552,7 @@ Se
 \end_layout
 
 \begin_layout Standard
-A questo punto abbiamo un palloncino
+A questo punto abbiamo un palloncino 
 \begin_inset Formula $P$
 \end_inset
 
@@ -3060,7 +3068,7 @@ Si può ora far uso dello Z-lemma che garantisce l’esistenza di un mondo
 \begin_inset Formula $\delta$
 \end_inset
 
- in un R- cluster 
+ in un R-cluster 
 \begin_inset Formula $C_{\delta}$
 \end_inset
 
@@ -3214,18 +3222,18 @@ Pertanto definiamo
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $f(i)=i\ se$
+\begin_inset Formula $f(i)=i\ se\ $
 \end_inset
 
 
-\begin_inset Formula $i\leq m+n$
+\begin_inset Formula $i\leq n$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $f(n+m+j)=n+((m+j)\ mod\ 4)$
+\begin_inset Formula $f(i)=n+((i-n)\ mod\ m)\ se\ i>n$
 \end_inset
 
 
@@ -3370,7 +3378,7 @@ tonda
 \begin_inset Formula $\beta$
 \end_inset
 
- proprio
+ proprio 
 \begin_inset Formula $\eta$
 \end_inset
 
@@ -3430,7 +3438,7 @@ Z-Lemma
 \end_layout
 
 \begin_layout Standard
-preso un modello 
+Preso un modello 
 \begin_inset Formula $\mu$
 \end_inset
 
@@ -3443,15 +3451,15 @@ preso un modello
 \begin_inset Formula $\alpha$
 \end_inset
 
- che non appartenga all'ultimo R-cluster allora esiste in 
+ che non appartenga all'ultimo R-cluster allora esiste 
 \begin_inset Formula $\beta$
 \end_inset
 
- in un cluster successivo 
-\begin_inset Formula $c_{\alpha}$
+ in un cluster successivo a 
+\begin_inset Formula $C_{\alpha}$
 \end_inset
 
- in cui b è falso.
+ in cui b è falsa.
 \end_layout
 
 \begin_layout Standard
@@ -3459,7 +3467,7 @@ Ip)
 \begin_inset Formula $\mu$
 \end_inset
 
- finito, seriale, transitivo, connesso e vale Z.
+ finito, seriale, transitivo, connesso e in cui vale Z.
  In un cluster 
 \begin_inset Formula $C_{\alpha}$
 \end_inset
@@ -3476,19 +3484,23 @@ Ip)
 \end_layout
 
 \begin_layout Standard
-Ts) 
-\begin_inset Formula $\nonveraw{\mu}{\beta}b$
-\end_inset
-
- per tutti i 
+Ts) Esiste un mondo 
 \begin_inset Formula $\beta$
 \end_inset
 
- appartenenti a r-cluster successivi a 
-\begin_inset Formula $C_{\alpha}$
+ appartenente ad un R-cluster 
+\begin_inset Formula $C_{\beta}$
 \end_inset
 
+ tale che 
+\begin_inset Formula $C_{\alpha}<C_{\beta}$
+\end_inset
 
+ nel quale 
+\begin_inset Formula $b$
+\end_inset
+
+ è falsa 
 \begin_inset Newline newline
 \end_inset
 
@@ -3500,7 +3512,7 @@ Per assurdo, supponiamo:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\beta}b$
+\begin_inset Formula $\veraw\mu\beta b$
 \end_inset
 
  per ogni 
@@ -3519,7 +3531,7 @@ allora deve valere
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\delta}b$
+\begin_inset Formula $\nonveraw\mu\delta b$
 \end_inset
 
  in qualche mondo 
@@ -3688,22 +3700,30 @@ end{center}
 \end_layout
 
 \begin_layout Standard
-allora, poiché la relazione è transitiva e connessa, abbiamo che
+allora, poiché la relazione è transitiva e connessa, abbiamo che 
+\begin_inset Formula $\forall\gamma:\ \gamma R\delta$
+\end_inset
+
+ (cioè i mondi in 
+\begin_inset Formula $C_{\alpha}$
+\end_inset
+
+ e nei cluster precedenti) si ha
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\gamma}{\boxx b}$
+\begin_inset Formula $\nonveraw\mu\gamma{\boxx b}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-e quindi, per questo possiamo dire che vale:
+e per questo possiamo dire che vale:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\gamma}{\boxx b\implies b}$
+\begin_inset Formula $\veraw\mu\gamma{\boxx b\implies b}$
 \end_inset
 
 
@@ -3714,20 +3734,23 @@ per ogni cluster precedente a
 \begin_inset Formula $C_{\alpha}$
 \end_inset
 
- e a 
+ e in 
 \begin_inset Formula $C_{\alpha}$
 \end_inset
 
-stesso, essendo falso il suo antecedente.
+stesso, essendo falso l'antecedente.
 \end_layout
 
 \begin_layout Standard
-ma poiché in tutti i mondi successivi è vera b, allora in tutti i mondi
- del modello è vera:
+Poiché in tutti i mondi successivi è vera 
+\begin_inset Formula $b$
+\end_inset
+
+, allora in tutti i mondi del modello è vera:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\vera{\mu}{\boxx{(\boxx{b\implies b)}}}$
+\begin_inset Formula $\vera\mu{\boxx{(\boxx{b\implies b)}}}$
 \end_inset
 
 
@@ -3739,7 +3762,7 @@ Però applicando a questo punto il modus ponens all'assioma Z e alla precedente
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\vera{\mu}{\diam{\boxx b}\implies\boxx b}$
+\begin_inset Formula $\vera\mu{\diam{\boxx b}\implies\boxx b}$
 \end_inset
 
 
@@ -3750,7 +3773,11 @@ Poiché per tutti i mondi dopo
 \begin_inset Formula $C_{\alpha}$
 \end_inset
 
- è vera b, allora è vera anche 
+ è vera 
+\begin_inset Formula $b$
+\end_inset
+
+, allora è vera anche 
 \begin_inset Formula $\boxx b$
 \end_inset
 
@@ -3766,7 +3793,7 @@ Ma allora in
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\diam{\boxx b}}$
+\begin_inset Formula $\veraw\mu\alpha{\diam{\boxx b}}$
 \end_inset
 
  
@@ -3785,7 +3812,7 @@ ma allora per Modus Ponens, è vale anche:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx b}$
+\begin_inset Formula $\veraw\mu\alpha{\boxx b}$
 \end_inset
 
 
@@ -3833,7 +3860,7 @@ Dove all'assioma Z vengono sostituiti rispettivamente:
 
 \begin_layout Itemize
 Dum: 
-\begin_inset Formula $\boxx{(\boa\implies a)\implies(\diam{\boa}\implies\boa)}$
+\begin_inset Formula $\boxx{(\boa\implies a)\implies(\diam\boa\implies\boa)}$
 \end_inset
 
 
@@ -3841,7 +3868,7 @@ Dum:
 
 \begin_layout Itemize
 X: 
-\begin_inset Formula $\boxx{\boa}\implies\boa$
+\begin_inset Formula $\boxx\boa\implies\boa$
 \end_inset
 
 

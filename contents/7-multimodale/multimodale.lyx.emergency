@@ -1406,7 +1406,7 @@ end{tikzpicture}
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\delta=\max\limits _{\eta\in\mathbb{R}}(\veraw{\mu}{\eta}{A\,\eta<\delta)}$
+\begin_inset Formula $\delta=\max\limits _{\eta\in\mathbb{R}}(\veraw\mu\eta{A\,\eta<\delta)}$
 \end_inset
 
 
@@ -1429,15 +1429,15 @@ Ts)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonvera{\mu}{[P]A}$
+\begin_inset Formula $\nonvera\mu{[P]A}$
 \end_inset
 
  da cui 
-\begin_inset Formula $\vera{\mu}{\text{[P]A\implies[F]A}}$
+\begin_inset Formula $\vera\mu\text{[P]A\implies[F]A}$
 \end_inset
 
  da cui 
-\begin_inset Formula $\vera{\mu}{Cont}$
+\begin_inset Formula $\vera\mu{Cont}$
 \end_inset
 
  dato che il conseguente è vero e quindi non devo controllare l'antecedente.
@@ -1451,14 +1451,14 @@ Ts)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\necp A}$
+\begin_inset Formula $\veraw\mu\alpha{\necp A}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necf A}$
+\begin_inset Formula $\nonveraw\mu\alpha{\necf A}$
 \end_inset
 
 
@@ -1469,7 +1469,7 @@ Tuttavia l'antecedente di Cont è falso, infatti:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\delta}{\necp A}$
+\begin_inset Formula $\veraw\mu\delta{\necp A}$
 \end_inset
 
 
@@ -1488,7 +1488,7 @@ ma poiché non può esistere nessun mondo
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\delta}{\posf{\necp A}}$
+\begin_inset Formula $\nonveraw\mu\delta{\posf{\necp A}}$
 \end_inset
 
 
@@ -1499,7 +1499,7 @@ e quindi non potrà che essere che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonvera{\mu}{_{\delta}\necp A\implies\posf{\necp A}}$
+\begin_inset Formula $\nonvera\mu{_{\delta}\necp A\implies\posf{\necp A}}$
 \end_inset
 
 
@@ -1518,7 +1518,31 @@ Poiché
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonvera{\mu}{_{\alpha}\boxx{(\necp A\implies\posf{\necp A})}}$
+\begin_inset Formula $\nonvera\mu{_{\alpha}\boxx{(\necp A\implies\posf{\necp A})}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e quindi 
+\begin_inset Formula $\veraw\mu\alpha{Cont}$
+\end_inset
+
+, inoltre 
+\begin_inset Formula $Cont$
+\end_inset
+
+ è vero in 
+\begin_inset Formula $\delta$
+\end_inset
+
+ dato che l'antecedente è falso perché se 
+\begin_inset Formula $\nonvera\mu{_{\delta}\necp A\implies\posf{\necp A}}$
+\end_inset
+
+, allora anche 
+\begin_inset Formula $\nonvera\mu{_{\delta}\boxx{}\necp A\implies\posf{\necp A}}$
 \end_inset
 
 

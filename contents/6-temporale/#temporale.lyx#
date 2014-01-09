@@ -105,6 +105,45 @@
 
 \begin_body
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{savequote}[50mm]
+\end_layout
+
+\begin_layout Plain Layout
+
+Be'! Naturale che tu sia in ritardo! 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Questo cipollone è esattamente due giorni indietro! 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+qauthor{Lewis Carroll} 
+\backslash
+end{savequote}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 	Logica temporale
 \end_layout
@@ -118,7 +157,7 @@ Sottomodello generato da
 \end_layout
 
 \begin_layout Standard
-presa una logica 
+Presa una logica 
 \begin_inset Formula $\Lambda$
 \end_inset
 
@@ -153,10 +192,14 @@ con:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $S^{\alpha}=\{\beta\,|\,\alpha R*\beta\}$
+\begin_inset Formula $S^{\alpha}=\{\beta\,|\,\alpha R^{*}\beta\}$
 \end_inset
 
- dove R* è la chiusura riflessiva e transitiva di R
+ dove 
+\begin_inset Formula $R^{*}$
+\end_inset
+
+ è la chiusura riflessiva e transitiva di R
 \end_layout
 
 \begin_layout Standard
@@ -210,7 +253,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\veraw\mu\beta a\iff\veraw{\mu^{\beta}}\beta a$
+\begin_inset Formula $\veraw{\mu}{\beta}a\iff\veraw{\mu^{\alpha}}{\beta}a$
 \end_inset
 
 
@@ -269,13 +312,13 @@ Bisogna dimostrare 3 casi:
 \end_layout
 
 \begin_layout Standard
-i primi due casi sono banali, come negli altri casi.
+I primi due casi sono banali, come negli altri casi.
  Dimostriamo l'ultimo.
 \end_layout
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\veraw{\mu^{\alpha}}\beta{\boxx b}$
+\begin_inset Formula $\veraw{\mu^{\alpha}}{\beta}{\boxx b}$
 \end_inset
 
  
@@ -283,14 +326,18 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\veraw\mu\beta{\boxx b}$
+\begin_inset Formula $\veraw{\mu}{\beta}{\boxx b}$
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{\alpha}}\beta{\boxx b\iff\veraw{\mu^{\alpha}}\gamma b}$
+\begin_inset Formula $\veraw{\mu^{\alpha}}{\beta}{\boxx b\iff\veraw{\mu^{\alpha}}{\gamma}b}$
 \end_inset
 
 , per ogni 
@@ -309,7 +356,7 @@ ma per ipotesi di induzione:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{\alpha}}\gamma b\iff\veraw\mu\gamma b\iff\veraw\mu\beta{\boxx b}$
+\begin_inset Formula $\veraw{\mu^{\alpha}}{\gamma}b\iff\veraw{\mu}{\gamma}b\iff\veraw{\mu}{\beta}{\boxx b}$
 \end_inset
 
 
@@ -317,7 +364,7 @@ ma per ipotesi di induzione:
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\veraw\mu\beta{\boxx b}$
+\begin_inset Formula $\veraw{\mu}{\beta}{\boxx b}$
 \end_inset
 
 
@@ -325,7 +372,11 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\veraw{\mu^{\alpha}}\beta{\boxx b}$
+\begin_inset Formula $\veraw{\mu^{\alpha}}{\beta}{\boxx b}$
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
@@ -381,7 +432,7 @@ Dall'ipotesi
 \noun off
 \color none
 
-\begin_inset Formula $\veraw\mu\beta{\boxx b}$
+\begin_inset Formula $\veraw{\mu}{\beta}{\boxx b}$
 \end_inset
 
 , sappiamo che 
@@ -397,7 +448,7 @@ Dall'ipotesi
 \end_inset
 
  cioè 
-\begin_inset Formula $\vera\mu{_{\gamma}b}$
+\begin_inset Formula $\vera{\mu}{_{\gamma}b}$
 \end_inset
 
 , ma per ipotesi induttiva si ha anche 
@@ -420,14 +471,14 @@ Valgono le seguenti:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\vera\mu a\implies\vera{\mu^{\alpha}}a$
+\begin_inset Formula $\vera{\mu}a\implies\vera{\mu^{\alpha}}a$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\vera\mu a\iff\vera{\mu^{\alpha}}a\,\forall\alpha\in S$
+\begin_inset Formula $\vera{\mu}a\iff\vera{\mu^{\alpha}}a\,\forall\alpha\in S$
 \end_inset
 
 
@@ -445,7 +496,7 @@ p-Morfismo
 \end_layout
 
 \begin_layout Standard
-siano 
+Siano 
 \begin_inset Formula $F_{1}(S_{1},\, R_{1}),\, F_{2}(S_{2},\, R_{2})$
 \end_inset
 
@@ -453,7 +504,7 @@ siano
 \end_layout
 
 \begin_layout Standard
-c'è un p-morfismo (pseudo-morfismo) tra 
+C'è un p-morfismo (pseudo-morfismo) tra 
 \begin_inset Formula $F_{1}$
 \end_inset
 
@@ -533,7 +584,7 @@ Siano
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu_{1}}\alpha a\iff\veraw{\mu_{2}}{f(\alpha)}a$
+\begin_inset Formula $\veraw{\mu_{1}}{\alpha}a\iff\veraw{\mu_{2}}{f(\alpha)}a$
 \end_inset
 
 
@@ -567,20 +618,32 @@ su
 \end_layout
 
 \begin_layout Section
-Frame (w, <)
+Frame (
+\begin_inset Formula $\omega$
+\end_inset
+
+, <)
 \end_layout
 
 \begin_layout Standard
-Il frame (w, <) è il frame che rappresenta la retta dei numeri naturali.
+Il frame (
+\begin_inset Formula $\omega$
+\end_inset
+
+, <) è il frame che rappresenta la retta dei numeri naturali.
 \end_layout
 
 \begin_layout Standard
-E' adatto a rappresentare il tempo discreto continuocon un istante iniziale.
+E' adatto a rappresentare il tempo discreto con un istante iniziale.
 \end_layout
 
 \begin_layout Standard
 La logica che rappresenta questo frame è la logica K4DLZ, che è corretta
- e completa rispetto a (w, <)
+ e completa rispetto a (
+\begin_inset Formula $\omega$
+\end_inset
+
+, <)
 \end_layout
 
 \begin_layout Standard
@@ -664,16 +727,16 @@ La logica K4DLZ
 \end_layout
 
 \begin_layout Standard
-la logica K4DLZ, detta anche logica 
+La logica K4DLZ, detta anche logica 
 \begin_inset Formula $\Omega$
 \end_inset
 
- è la logicha che ha, oltre all'assioma K, i seguenti assiomi:
+ è la logica che ha, oltre all'assioma K, i seguenti assiomi:
 \end_layout
 
 \begin_layout Itemize
 4: 
-\begin_inset Formula $\boa\implies\boxx\boa$
+\begin_inset Formula $\boa\implies\boxx{\boa}$
 \end_inset
 
  --> transitività
@@ -697,15 +760,15 @@ L:
 
 \begin_layout Itemize
 Z: 
-\begin_inset Formula $\boxx{(\boa\implies a)\implies(\diam\boa\implies\boa)}$
+\begin_inset Formula $\boxx{(\boa\implies a)\implies(\diam{\boa}\implies\boa)}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-L'azssioma Z, non ha alcuna interpretazione preso a se stante, ma in combinazion
-e con gli altri implica che tra due mondi connessi c'è solo un numero finito
+L'assioma Z, non ha alcuna interpretazione preso a se stante, ma in combinazione
+ con gli altri implica che tra due mondi connessi c'è solo un numero finito
  di mondi, a due a due connessi.
 \end_layout
 
@@ -715,7 +778,7 @@ Correttezza di K4DLZ
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\teolm\Omega a$
+\begin_inset Formula $\teolm{\Omega}a$
 \end_inset
 
 
@@ -723,7 +786,11 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\vera{(w,<)}a$
+\begin_inset Formula $\vera{(\omega,<)}a$
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
@@ -732,7 +799,7 @@ Ts)
 \begin_layout Standard
 Per dimostrare questo teorema dobbiamo dimostrare che ogni teorema di K4DLZ
  è una formula valida.
- Poichè ogni teorema di 
+ Poiché ogni teorema di 
 \begin_inset Formula $\Omega$
 \end_inset
 
@@ -751,23 +818,36 @@ Gli assiomi siano formule valide:
 \end_layout
 
 \begin_layout Itemize
-A1, A2, A3, K sono validi su ogni frame, e quindi sono validi anche su (w,
- <)
+A1, A2, A3, K sono validi su ogni frame, e quindi sono validi anche su (
+\begin_inset Formula $\omega$
+\end_inset
+
+, <)
 \end_layout
 
 \begin_layout Itemize
-4 è valido su ogni frame transitivo, e quindi è valido anche su (w, <) essendo
- transitivo
+4 è valido su ogni frame transitivo, e quindi è valido anche su (
+\begin_inset Formula $\omega$
+\end_inset
+
+, <) essendo transitivo
 \end_layout
 
 \begin_layout Itemize
-D è valido su ogni frame seriale, e quindi è valido anche su (w, <) essendo
- seriale.
+D è valido su ogni frame seriale, e quindi è valido anche su (
+\begin_inset Formula $\omega$
+\end_inset
+
+, <) essendo seriale.
 \end_layout
 
 \begin_layout Itemize
 L è valido su ogni frame debolmente connesso, e quindi è valido anche su
- (w, <) essendo debolmente connesso.
+ (
+\begin_inset Formula $\omega$
+\end_inset
+
+, <) essendo debolmente connesso.
 \begin_inset Newline newline
 \end_inset
 
@@ -775,12 +855,12 @@ L è valido su ogni frame debolmente connesso, e quindi è valido anche su
 \end_layout
 
 \begin_layout Standard
-Dobiamo quindi dimostrare solo la validità di Z.
+Dobbiamo quindi dimostrare solo la validità di Z.
 \end_layout
 
 \begin_layout Standard
 Z è l'assioma 
-\begin_inset Formula $\boxx{(\boa\implies a)\implies(\diam\boa\implies\boa)}$
+\begin_inset Formula $\boxx{(\boa\implies a)\implies(\diam{\boa}\implies\boa)}$
 \end_inset
 
 , per dimostrare che è valido basta considerare il caso in cui gli antecedenti
@@ -804,7 +884,7 @@ supponiamo dunque che esistano due mondi
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{(w,\,<)}\alpha{\boxx{(\boa\implies a)}}$
+\begin_inset Formula $\veraw{(\omega,\,<)}{\alpha}{\boxx{(\boa\implies a)}}$
 \end_inset
 
 
@@ -823,14 +903,14 @@ supponiamo dunque che esistano due mondi
 \uwave off
 \noun off
 \color none
-\begin_inset Formula $\veraw{(w,\,<)}\alpha{\diam\boa}$
+\begin_inset Formula $\veraw{(\omega,\,<)}{\alpha}{\diam{\boa}}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{(w,\,<)}\beta\boa$
+\begin_inset Formula $\veraw{(\omega,\,<)}{\beta}{\boa}$
 \end_inset
 
 
@@ -845,7 +925,7 @@ allora da quest'ultima, viste le altre proprietà del frame,
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{(w,\,<)}\eta a$
+\begin_inset Formula $\veraw{(\omega,\,<)}{\eta}a$
 \end_inset
 
 
@@ -856,7 +936,7 @@ dalla prima invece abbiamo:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{(w,\,<)}\beta{\boa\implies a}$
+\begin_inset Formula $\veraw{(\omega,\,<)}{\beta}{\boa\implies a}$
 \end_inset
 
 
@@ -867,7 +947,7 @@ e allora, applicando il modus ponens
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{(w,\,<)}\beta a$
+\begin_inset Formula $\veraw{(\omega,\,<)}{\beta}a$
 \end_inset
 
 
@@ -878,11 +958,11 @@ Ma, allora possiamo applicare lo stesso ragionamento per
 \begin_inset Formula $\beta-1$
 \end_inset
 
-, poichè:
+, poiché:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{(w,\,<)}{\beta-1}\boa$
+\begin_inset Formula $\veraw{(\omega,\,<)}{\beta-1}{\boa}$
 \end_inset
 
 
@@ -1173,7 +1253,7 @@ Ma, siccome esiste un numero finito di mondi tra
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{(w,\,<)}{\alpha+1}a$
+\begin_inset Formula $\veraw{(\omega,\,<)}{\alpha+1}a$
 \end_inset
 
 
@@ -1184,7 +1264,7 @@ e quindi:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{(w,\,<)}\alpha\boa$
+\begin_inset Formula $\veraw{(\omega,\,<)}{\alpha}{\boa}$
 \end_inset
 
 
@@ -1306,7 +1386,7 @@ Completezza di K4DLZ
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\vera{(w,<)}a$
+\begin_inset Formula $\vera{(\omega,<)}a$
 \end_inset
 
 
@@ -1314,10 +1394,14 @@ Ip)
 
 \begin_layout Standard
 Ts)
-\begin_inset Formula $\teolm\Omega a$
+\begin_inset Formula $\teolm{\Omega}a$
 \end_inset
 
  
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1336,7 +1420,7 @@ Per assurdo supponiamo che non valga la tesi, cioè che
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonTeor\Omega a$
+\begin_inset Formula $\nonTeor{\Omega}a$
 \end_inset
 
 , per il lemma di verità si ha anche 
@@ -1368,7 +1452,7 @@ Dato che
 \end_inset
 
  in cui 
-\begin_inset Formula $\nonveraw{M_{1}}\alpha a$
+\begin_inset Formula $\nonveraw{M_{1}}{\alpha}a$
 \end_inset
 
 
@@ -1388,7 +1472,7 @@ Dato che
 \begin_inset Formula $M_{1}^{\alpha}$
 \end_inset
 
- è il sottomodello genereato da 
+ è il sottomodello generato da 
 \begin_inset Formula $\alpha$
 \end_inset
 
@@ -1445,10 +1529,14 @@ Dal momento che
 \end_inset
 
  è debolmente connessa, 
-\begin_inset Formula $R_{1}$
+\begin_inset Formula $R_{1}^{*}$
 \end_inset
 
-, avendo anche la riflessività è connessa.
+, avendo anche la riflessività è connessa e lo stesso vale quindi per 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2026,7 +2114,7 @@ Per questi motivi
 \begin_inset Formula $\approx$
 \end_inset
 
-è una relazione d'equivalenza, e come tale partiziona l'insieme 
+ è una relazione d'equivalenza, e come tale partiziona l'insieme 
 \begin_inset Formula $S$
 \end_inset
 
@@ -2038,7 +2126,7 @@ Per questi motivi
 \end_layout
 
 \begin_layout Standard
-Chiamiamo R-cluster la classe di equivalenza
+Chiamiamo R-cluster la classe di equivalenza 
 \begin_inset Formula $C_{\alpha}$
 \end_inset
 
@@ -2347,7 +2435,7 @@ inoltre
 \begin_inset Formula $C=$
 \end_inset
 
-
+ 
 \begin_inset Formula $C_{\alpha}\leq C\alpha$
 \end_inset
 
@@ -2409,7 +2497,7 @@ Per ricondurmi a un palloncino, a partire da
 \end_layout
 
 \begin_layout Itemize
-Se
+Se 
 \begin_inset Formula $\alpha,\beta$
 \end_inset
 
@@ -2417,7 +2505,7 @@ Se
 \begin_inset Formula $(\alpha,\beta)\in R'$
 \end_inset
 
-se e solo se 
+ se e solo se 
 \begin_inset Formula $(\alpha,\beta)\in R$
 \end_inset
 
@@ -2464,7 +2552,7 @@ Se
 \end_layout
 
 \begin_layout Standard
-A questo punto abbiamo un palloncino
+A questo punto abbiamo un palloncino 
 \begin_inset Formula $P$
 \end_inset
 
@@ -2480,7 +2568,7 @@ A questo punto abbiamo un palloncino
 \begin_inset Formula $V$
 \end_inset
 
-, ed è lecito chidersi se 
+, ed è lecito chiedersi se 
 \begin_inset Formula $\vera{M_{3}}a$
 \end_inset
 
@@ -2781,60 +2869,100 @@ draw (69.4,-13.4) node {$4$};
 
 
 \backslash
-draw (27.2,-12.5) node {$!boxD$};
+draw (27.2,-12.5) node {$
+\backslash
+neg
+\backslash
+boxx d$};
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-draw (19.2,-4.5) node {$!D$};
+draw (19.2,-4.5) node {$
+\backslash
+neg d$};
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-draw (9.7,-12.5) node {$!D$};
+draw (9.7,-12.5) node {$
+\backslash
+neg d$};
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-draw (19,-30.1) node {$D$};
+draw (19,-30.1) node {$d$};
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-draw (58.9,-7.8) node {$boxD$};
+draw (58.9,-7.8) node {$
+\backslash
+boxx d$};
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-draw (69.4,-7.8) node {$D$}; 
+draw (69.4,-7.8) node {$d$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
 draw [black] (13.22,-15.28) -- (17.08,-11.42); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
 fill [black] (17.08,-11.42) -- (16.16,-11.63) -- (16.87,-12.34); 
 \backslash
 draw [black] (17.08,-11.42) -- (13.22,-15.28); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
 fill [black] (13.22,-15.28) -- (14.14,-15.07) -- (13.43,-14.36); 
 \backslash
 draw (13.98,-12.87) node [above] {$R$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
 draw [black] (25.09,-15.27) -- (21.31,-11.43); 
 \backslash
-fill [black] (21.31,-11.43) -- (21.51,-12.35) -- (22.23,-11.65); 
+fill [black] (21.31,-11.43) -- (21.51,-12.35) -- (22.23,-11.65);
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
 draw [black] (17.09,-23.47) -- (13.21,-19.53); 
 \backslash
 fill [black] (13.21,-19.53) -- (13.41,-20.45) -- (14.13,-19.75); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
 draw (14.63,-22.97) node [left] {$R$}; 
 \backslash
@@ -2845,6 +2973,11 @@ fill [black] (17.09,-23.47) -- (16.89,-22.55) -- (16.17,-23.25);
 draw [black] (21.29,-23.45) -- (25.11,-19.55); 
 \backslash
 fill [black] (25.11,-19.55) -- (24.19,-19.77) -- (24.9,-20.47); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
 draw (23.73,-22.97) node [right] {$R$}; 
 \backslash
@@ -2935,7 +3068,7 @@ Si può ora far uso dello Z-lemma che garantisce l’esistenza di un mondo
 \begin_inset Formula $\delta$
 \end_inset
 
- in un R- cluster 
+ in un R-cluster 
 \begin_inset Formula $C_{\delta}$
 \end_inset
 
@@ -3073,7 +3206,7 @@ tonda
 \end_layout
 
 \begin_layout Standard
-Pertando definiamo 
+Pertanto definiamo 
 \begin_inset Formula $f\ :\ \omega\rightarrow T$
 \end_inset
 
@@ -3089,11 +3222,11 @@ Pertando definiamo
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $f(i)=i\ se$
+\begin_inset Formula $f(i)=i\ se\ $
 \end_inset
 
 
-\begin_inset Formula $i\leq m+n$
+\begin_inset Formula $i\leq n$
 \end_inset
 
 
@@ -3106,12 +3239,206 @@ Pertando definiamo
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ è suriettiva (tutto il codominio 
+\begin_inset Formula $T$
+\end_inset
+
+ è raggiunto)
+\end_layout
+
+\begin_layout Standard
+Infatti ogni elemento 
+\begin_inset Formula $i\in T$
+\end_inset
+
+ ha almeno controimmagine 
+\begin_inset Formula $i\in\omega$
+\end_inset
+
+ (gli elementi nella parte 
+\begin_inset Quotes eld
+\end_inset
+
+tonda
+\begin_inset Quotes erd
+\end_inset
+
+ del palloncino ne avranno altre)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+Proprietà di un p-morfismo
+\end_layout
+
+\begin_layout Plain Layout
+1) 
+\begin_inset Formula $(\alpha,\,\beta)\in R_{1}\implies(f(\alpha),\, f(\beta))\in R_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+2) 
+\begin_inset Formula $(f(\alpha),\,\eta)\in R_{2}\implies\exists\beta\in S_{1}\,:\, f(\beta)=\eta\,\wedge\,(\alpha,\,\beta)\in R_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1) Se 
+\begin_inset Formula $\alpha,\beta<n$
+\end_inset
+
+ si ha banalmente 
+\begin_inset Formula $f(\alpha),f(\beta)$
+\end_inset
+
+ per come è definita 
+\begin_inset Formula $f$
+\end_inset
+
+ ;
+\end_layout
+
+\begin_layout Standard
+Se
+\begin_inset Formula $f(\alpha),f(\beta)$
+\end_inset
+
+ sono nella parte 
+\begin_inset Quotes eld
+\end_inset
+
+tonda
+\begin_inset Quotes erd
+\end_inset
+
+ la 1) vale perché 
+\begin_inset Formula $f(\alpha),f(\beta)$
+\end_inset
+
+ in relazione di equivalenza
+\end_layout
+
+\begin_layout Standard
+Se 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ nel gambo e 
+\begin_inset Formula $\beta$
+\end_inset
+
+ nella parte 
+\begin_inset Quotes eld
+\end_inset
+
+tonda
+\begin_inset Quotes erd
+\end_inset
+
+, comunque vale la 1) ricordando la transitività di 
+\begin_inset Formula $\rho$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2) Se 
+\begin_inset Formula $f(\alpha)<\eta$
+\end_inset
+
+ basta prendere come 
+\begin_inset Formula $\beta$
+\end_inset
+
+ proprio 
+\begin_inset Formula $\eta$
+\end_inset
+
+ da 
+\begin_inset Formula $\omega$
+\end_inset
+
+ e quindi avere 
+\begin_inset Formula $\alpha<\eta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se 
+\begin_inset Formula $f(\alpha)>\eta$
+\end_inset
+
+ posso comunque trovare 
+\series bold
+
+\begin_inset Formula $\beta$
+\end_inset
+
+ 
+\series default
+opportuno sfruttando l'aritmetica modulare.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+Quindi se 
+\begin_inset Formula $a$
+\end_inset
+
+ non è valida su ogni palloncino non è valida su 
+\begin_inset Formula $(\omega,<)$
+\end_inset
+
+, contro l’ipotesi, pertanto 
+\begin_inset Formula $a$
+\end_inset
+
+ deve essere un teorema di 
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 Z-Lemma
 \end_layout
 
 \begin_layout Standard
-preso un modello 
+Preso un modello 
 \begin_inset Formula $\mu$
 \end_inset
 
@@ -3124,15 +3451,15 @@ preso un modello
 \begin_inset Formula $\alpha$
 \end_inset
 
- che non appartenga all'ultimo R-cluster allora esiste in 
+ che non appartenga all'ultimo R-cluster allora esiste 
 \begin_inset Formula $\beta$
 \end_inset
 
- in un cluster successivo 
-\begin_inset Formula $c_{\alpha}$
+ in un cluster successivo a 
+\begin_inset Formula $C_{\alpha}$
 \end_inset
 
- in cui b è falso.
+ in cui b è falsa.
 \end_layout
 
 \begin_layout Standard
@@ -3140,7 +3467,7 @@ Ip)
 \begin_inset Formula $\mu$
 \end_inset
 
- finito, seriale, transitivo, connesso e vale Z.
+ finito, seriale, transitivo, connesso e in cui vale Z.
  In un cluster 
 \begin_inset Formula $C_{\alpha}$
 \end_inset
@@ -3157,16 +3484,24 @@ Ip)
 \end_layout
 
 \begin_layout Standard
-Ts) 
-\begin_inset Formula $\nonveraw{\mu}{\beta}b$
-\end_inset
-
- per tutti i 
+Ts) Esiste un mondo 
 \begin_inset Formula $\beta$
 \end_inset
 
- appartenenti a r-cluster successivi a 
-\begin_inset Formula $C_{\alpha}$
+ appartenente ad un R-cluster 
+\begin_inset Formula $C_{\beta}$
+\end_inset
+
+ tale che 
+\begin_inset Formula $C_{\alpha}<C_{\beta}$
+\end_inset
+
+ nel quale 
+\begin_inset Formula $b$
+\end_inset
+
+ è falsa 
+\begin_inset Newline newline
 \end_inset
 
 
@@ -3177,7 +3512,7 @@ Per assurdo, supponiamo:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\beta}b$
+\begin_inset Formula $\veraw\mu\beta b$
 \end_inset
 
  per ogni 
@@ -3196,7 +3531,7 @@ allora deve valere
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\delta}b$
+\begin_inset Formula $\nonveraw\mu\delta b$
 \end_inset
 
  in qualche mondo 
@@ -3365,7 +3700,15 @@ end{center}
 \end_layout
 
 \begin_layout Standard
-allora, poichè la trelazione è transitiva e connessa, abbiamo che
+allora, poiché la relazione è transitiva e connessa, abbiamo che 
+\begin_inset Formula $\forall\gamma:\ \gamma R\delta$
+\end_inset
+
+ (cioè i mondi in 
+\begin_inset Formula $C_{\alpha}$
+\end_inset
+
+ e nei cluster precedenti) si ha
 \end_layout
 
 \begin_layout Standard
@@ -3376,7 +3719,7 @@ allora, poichè la trelazione è transitiva e connessa, abbiamo che
 \end_layout
 
 \begin_layout Standard
-e quindi, per questo possiamo dire che vale:
+e per questo possiamo dire che vale:
 \end_layout
 
 \begin_layout Standard
@@ -3391,16 +3734,19 @@ per ogni cluster precedente a
 \begin_inset Formula $C_{\alpha}$
 \end_inset
 
- e a 
+ e in 
 \begin_inset Formula $C_{\alpha}$
 \end_inset
 
-stesso, essendo falso il suo antecedente.
+stesso, essendo falso l'antecedente.
 \end_layout
 
 \begin_layout Standard
-ma poichè in tutti i mondi successivi è vera b, allora in tutti i mondi
- del modello è vera:
+Poiché in tutti i mondi successivi è vera 
+\begin_inset Formula $b$
+\end_inset
+
+, allora in tutti i mondi del modello è vera:
 \end_layout
 
 \begin_layout Standard
@@ -3423,11 +3769,15 @@ Però applicando a questo punto il modus ponens all'assioma Z e alla precedente
 \end_layout
 
 \begin_layout Standard
-Poichè per tutti i mondi dopo 
+Poiché per tutti i mondi dopo 
 \begin_inset Formula $C_{\alpha}$
 \end_inset
 
- è vera b, allora è vera anche 
+ è vera 
+\begin_inset Formula $b$
+\end_inset
+
+, allora è vera anche 
 \begin_inset Formula $\boxx b$
 \end_inset
 
@@ -3450,7 +3800,7 @@ Ma allora in
 \end_layout
 
 \begin_layout Standard
-poichè esistono dei mondi raggiungibili in cui è vera 
+poiché esistono dei mondi raggiungibili in cui è vera 
 \begin_inset Formula $\boxx b$
 \end_inset
 
@@ -3481,7 +3831,11 @@ Ci sono altre due logiche temporali interessanti:
 \end_layout
 
 \begin_layout Enumerate
-K4DLDum, corretta e completa sul frame (w, 
+K4DLDum, corretta e completa sul frame (
+\begin_inset Formula $\omega$
+\end_inset
+
+, 
 \begin_inset Formula $\leq$
 \end_inset
 
