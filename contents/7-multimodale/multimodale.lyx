@@ -1406,7 +1406,7 @@ end{tikzpicture}
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\delta=\max\limits _{\eta\in\mathbb{R}}(\veraw{\mu}{\eta}{A\,\eta<\delta)}$
+\begin_inset Formula $\delta=\max\limits _{\eta\in\mathbb{R}}(\veraw\mu\eta{A\,\eta<\delta)}$
 \end_inset
 
 
@@ -1429,15 +1429,15 @@ Ts)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonvera{\mu}{[P]A}$
+\begin_inset Formula $\nonvera\mu{[P]A}$
 \end_inset
 
  da cui 
-\begin_inset Formula $\vera{\mu}{\text{[P]A\implies[F]A}}$
+\begin_inset Formula $\vera\mu\text{[P]A\implies[F]A}$
 \end_inset
 
  da cui 
-\begin_inset Formula $\vera{\mu}{Cont}$
+\begin_inset Formula $\vera\mu{Cont}$
 \end_inset
 
  dato che il conseguente è vero e quindi non devo controllare l'antecedente.
@@ -1451,14 +1451,14 @@ Ts)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\necp A}$
+\begin_inset Formula $\veraw\mu\alpha{\necp A}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necf A}$
+\begin_inset Formula $\nonveraw\mu\alpha{\necf A}$
 \end_inset
 
 
@@ -1469,7 +1469,7 @@ Tuttavia l'antecedente di Cont è falso, infatti:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\delta}{\necp A}$
+\begin_inset Formula $\veraw\mu\delta{\necp A}$
 \end_inset
 
 
@@ -1488,7 +1488,7 @@ ma poiché non può esistere nessun mondo
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\delta}{\posf{\necp A}}$
+\begin_inset Formula $\nonveraw\mu\delta{\posf{\necp A}}$
 \end_inset
 
 
@@ -1499,7 +1499,7 @@ e quindi non potrà che essere che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonvera{\mu}{_{\delta}\necp A\implies\posf{\necp A}}$
+\begin_inset Formula $\nonvera\mu{_{\delta}\necp A\implies\posf{\necp A}}$
 \end_inset
 
 
@@ -1518,7 +1518,31 @@ Poiché
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonvera{\mu}{_{\alpha}\boxx{(\necp A\implies\posf{\necp A})}}$
+\begin_inset Formula $\nonvera\mu{_{\alpha}\boxx{(\necp A\implies\posf{\necp A})}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e quindi 
+\begin_inset Formula $\veraw\mu\alpha{Cont}$
+\end_inset
+
+, inoltre 
+\begin_inset Formula $Cont$
+\end_inset
+
+ è vero in 
+\begin_inset Formula $\delta$
+\end_inset
+
+ dato che l'antecedente è falso perché se 
+\begin_inset Formula $\nonvera\mu{_{\delta}\necp A\implies\posf{\necp A}}$
+\end_inset
+
+, allora anche 
+\begin_inset Formula $\nonvera\mu{_{\delta}\boxx{}\necp A\implies\posf{\necp A}}$
 \end_inset
 
 
@@ -1735,7 +1759,7 @@ Una logica che si presta bene a descrivere la concorrenza, cioè un insieme
 \begin_inset Newline newline
 \end_inset
 
-Si introducono l'operatore unario
+Si introducono l'operatore unario 
 \begin_inset Formula $\circ$
 \end_inset
 
@@ -1948,7 +1972,7 @@ Mix implica immediatamente lo schema T e quindi la riflessività.
 
 \begin_layout Standard
 4: 
-\begin_inset Formula $\boa\implies\boxx\boa$
+\begin_inset Formula $\boa\implies\boxx{\boa}$
 \end_inset
 
 
@@ -1992,7 +2016,7 @@ Scrivendo Ind (con
 
 \begin_layout Standard
 Per MP dalle due precedenti: 
-\begin_inset Formula $\boa\implies\boxx\boa$
+\begin_inset Formula $\boa\implies\boxx{\boa}$
 \end_inset
 
 
@@ -2040,17 +2064,87 @@ CTL usa i seguenti operatori modali:
 \end_layout
 
 \begin_layout Standard
+in cui 
+\begin_inset Formula $F$
+\end_inset
+
+ sta per 
+\begin_inset Quotes eld
+\end_inset
+
+finally
+\begin_inset Quotes erd
+\end_inset
+
+ cioè 
+\begin_inset Quotes eld
+\end_inset
+
+prima o poi
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Formula $G$
+\end_inset
+
+ sta per 
+\begin_inset Quotes eld
+\end_inset
+
+generally
+\begin_inset Quotes erd
+\end_inset
+
+ cioè 
+\begin_inset Quotes eld
+\end_inset
+
+sempre
+\begin_inset Quotes erd
+\end_inset
+
+ e 
+\begin_inset Formula $X$
+\end_inset
+
+ sta per 
+\begin_inset Quotes eld
+\end_inset
+
+next
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ cioè nello stato successivo
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $[\forall F]a$
 \end_inset
 
-: In tutte le esecuzioni c'è uno stato in cui vale a, a è inevitabile
+: su ogni possibile sequenza di stati successivi all’attuale ce n'è uno
+ in cui 
+\begin_inset Formula $a$
+\end_inset
+
+ è vera,
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $[\exists F]a$
 \end_inset
 
-: a un certo punto vale a
+: esiste almeno uno stato in una sequenza di stati successivi all’attuale
+ in cui 
+\begin_inset Formula $a$
+\end_inset
+
+ è vera,
 \end_layout
 
 \begin_layout Standard
@@ -2064,8 +2158,11 @@ CTL usa i seguenti operatori modali:
 \begin_inset Formula $[\exists G]a$
 \end_inset
 
-: esiste una sequenza di stati successivi all'attuale tale che a è vero
- in ogni stato di tale sequenza
+: esiste una sequenza di stati successivi all'attuale tale che 
+\begin_inset Formula $a$
+\end_inset
+
+ è vero in ogni stato di tale sequenza
 \end_layout
 
 \begin_layout Standard
@@ -2086,7 +2183,7 @@ CTL usa i seguenti operatori modali:
 \begin_inset Formula $\forall(a\mathcal{U}b)$
 \end_inset
 
-: in tutti i rami vale 
+: in tutte le sequenze di stati successive all'attuale vale 
 \begin_inset Formula $a\mathcal{U}b$
 \end_inset
 
@@ -2097,7 +2194,7 @@ CTL usa i seguenti operatori modali:
 \begin_inset Formula $\exists(a\mathcal{U}b)$
 \end_inset
 
-: in almeno un ramo vale 
+: in almeno una sequenza di stati successiva all'attuale in cui vale 
 \begin_inset Formula $a\mathcal{U}b$
 \end_inset
 

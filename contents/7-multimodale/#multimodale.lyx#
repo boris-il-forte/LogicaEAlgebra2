@@ -105,6 +105,48 @@
 
 \begin_body
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{savequote}[50mm]
+\end_layout
+
+\begin_layout Plain Layout
+
+---Marty, non stai pensando quadridimensionalmente!---
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+qauthor{Emmett Brown} 
+\end_layout
+
+\begin_layout Plain Layout
+
+---Sono in ritardo! In arciritardissimo!---
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+qauthor{Bianconiglio} 
+\backslash
+end{savequote}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Logica Multimodale - Back To The Future
 \end_layout
@@ -153,7 +195,7 @@ La semantica di una logica multimodale è la stessa della logica proposizionale
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\neci ia}\iff\veraw{\mu}{\beta}a\,\forall\beta\,:\,(\alpha,\,\beta)\in R_{i}$
+\begin_inset Formula $\veraw\mu\alpha{\neci ia}\iff\veraw\mu\beta a\,\forall\beta\,:\,(\alpha,\,\beta)\in R_{i}$
 \end_inset
 
 
@@ -223,7 +265,7 @@ Possiamo applicare le logiche multimodali al concetto di tempo, per farlo
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $F=(S,\,\{R_{P},\, R_{e}\})$
+\begin_inset Formula $F=(S,\,\{R_{P},\, R_{F}\})$
 \end_inset
 
 
@@ -263,7 +305,7 @@ ricordiamo che:
 \end_layout
 
 \begin_layout Standard
-Perchè le due relazioni rappresentino il tempo che scorre una deve essere
+Perché le due relazioni rappresentino il tempo che scorre una deve essere
  l'opposta dell'altra, in modo che la prima relazione rappresenti il futuro,
  la seconda il passato:
 \end_layout
@@ -314,7 +356,7 @@ Dimostrazione
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\veraw{\mu}{\alpha}a$
+\begin_inset Formula $\veraw\mu\alpha a$
 \end_inset
 
  e 
@@ -326,7 +368,11 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\veraw{\mu}{\alpha}{\necp{\posf a}}$
+\begin_inset Formula $\veraw\mu\alpha{a\implies\necp{\posf a}}$
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
@@ -349,7 +395,7 @@ Ogni mondo
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\beta}{\posf a}$
+\begin_inset Formula $\veraw\mu\beta{\posf a}$
 \end_inset
 
 
@@ -360,14 +406,14 @@ allora, usando la regola di necessitazione nel passato, possiamo scrivere:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\necp{\posf a}}$
+\begin_inset Formula $\veraw\mu\alpha{\necp{\posf a}}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-ma poichè per ipotesi in 
+ma poiché per ipotesi in 
 \begin_inset Formula $\alpha$
 \end_inset
 
@@ -375,14 +421,14 @@ ma poichè per ipotesi in
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\necp{\posf a}}$
+\begin_inset Formula $\veraw\mu\alpha{\necp{\posf a}}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-poichè abbiamo preso un 
+poiché abbiamo preso un 
 \begin_inset Formula $\alpha$
 \end_inset
 
@@ -391,7 +437,7 @@ poichè abbiamo preso un
 \end_inset
 
 Ip) 
-\begin_inset Formula $\veraw{\mu}{\alpha}{\necp{\posf a}}$
+\begin_inset Formula $\veraw\mu\alpha{a\implies\necp{\posf a}}$
 \end_inset
 
 
@@ -399,7 +445,11 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $R_{F}=R_{P}$
+\begin_inset Formula $R_{F}=R_{P}^{-1}$
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
@@ -407,7 +457,7 @@ Ts)
 
 \begin_layout Standard
 per assurdo 
-\begin_inset Formula $R_{F}\neq R_{p}$
+\begin_inset Formula $R_{F}\neq R_{p}^{-1}$
 \end_inset
 
 
@@ -441,7 +491,7 @@ allora in
 \begin_inset Formula $\beta$
 \end_inset
 
- poichè non si raggiunge tramite 
+ poiché non si raggiunge tramite 
 \begin_inset Formula $R_{P}$
 \end_inset
 
@@ -453,14 +503,14 @@ allora in
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\beta}{\posf A}$
+\begin_inset Formula $\nonveraw\mu\beta{\posf A}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-ma poichè 
+ma poiché 
 \begin_inset Formula $\beta$
 \end_inset
 
@@ -476,14 +526,14 @@ ma poichè
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necp{\posf A}}$
+\begin_inset Formula $\nonveraw\mu\alpha{\necp{\posf A}}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Ma allora, poichè in 
+Ma allora, poiché in 
 \begin_inset Formula $\alpha$
 \end_inset
 
@@ -491,7 +541,7 @@ Ma allora, poichè in
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\alpha}{A\implies\necp{\posf A}}$
+\begin_inset Formula $\nonveraw\mu\alpha{A\implies\necp{\posf A}}$
 \end_inset
 
 
@@ -1087,6 +1137,10 @@ Ts)
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1165,7 +1219,7 @@ e quindi l'antecedente di Cont è ancora vero.
 \end_layout
 
 \begin_layout Standard
-Poichè l'antecedente di Cont è sempre vero, mentre la conseguenza no, allora:
+Poiché l'antecedente di Cont è sempre vero, mentre la conseguenza no, allora:
 \end_layout
 
 \begin_layout Standard
@@ -1364,6 +1418,29 @@ Ts)
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall\alpha>\delta$
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonvera{\mu}{[P]A}$
+\end_inset
+
+ da cui 
+\begin_inset Formula $\vera{\mu}{\text{[P]A\implies[F]A}}$
+\end_inset
+
+ da cui 
+\begin_inset Formula $\vera{\mu}{Cont}$
+\end_inset
+
+ dato che il conseguente è vero e quindi non devo controllare l'antecedente.
 \end_layout
 
 \begin_layout Standard
@@ -1399,7 +1476,7 @@ Tuttavia l'antecedente di Cont è falso, infatti:
 \end_layout
 
 \begin_layout Standard
-ma poichè non può esistere nessun mondo 
+ma poiché non può esistere nessun mondo 
 \begin_inset Formula $\xi>\delta$
 \end_inset
 
@@ -1422,22 +1499,50 @@ e quindi non potrà che essere che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\delta}{\necp a\implies\posf{\necp a}}$
+\begin_inset Formula $\nonvera{\mu}{_{\delta}\necp A\implies\posf{\necp A}}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Poichè 
+Poiché 
 \begin_inset Formula $\delta$
 \end_inset
 
- è raggiungibile da a avremo che:
+ è raggiungibile da 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ avremo che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx{(\necp a\implies\posf{\necp a})}}$
+\begin_inset Formula $\nonvera{\mu}{_{\alpha}\boxx{(\necp A\implies\posf{\necp A})}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e quindi 
+\begin_inset Formula $\veraw{\mu}{\alpha}{Cont}$
+\end_inset
+
+, inoltre 
+\begin_inset Formula $Cont$
+\end_inset
+
+ è vero in 
+\begin_inset Formula $\delta$
+\end_inset
+
+ dato che l'antecedente è falso perché se 
+\begin_inset Formula $\nonvera{\mu}{_{\delta}\necp A\implies\posf{\necp A}}$
+\end_inset
+
+, allora anche 
+\begin_inset Formula $\nonvera{\mu}{_{\delta}\boxx{}\necp A\implies\posf{\necp A}}$
 \end_inset
 
 
@@ -1654,7 +1759,7 @@ Una logica che si presta bene a descrivere la concorrenza, cioè un insieme
 \begin_inset Newline newline
 \end_inset
 
-Si introducono l'operatore unario
+Si introducono l'operatore unario 
 \begin_inset Formula $\circ$
 \end_inset
 
@@ -1840,7 +1945,7 @@ L'assioma Fun vale solo se la relazione di raggiungibilità a un passo è
 \begin_inset Formula $\circ\neg a$
 \end_inset
 
- non può valere perchè non ci sono stati raggiungibili.
+ non può valere perché non ci sono stati raggiungibili.
  Mentre se abbiamo più di uno stato raggiungibile 
 \begin_inset Formula $\circ a$
 \end_inset
@@ -1853,7 +1958,7 @@ L'assioma Fun vale solo se la relazione di raggiungibilità a un passo è
 \begin_inset Formula $\circ\neg a$
 \end_inset
 
- non può essere vero, perchè 
+ non può essere vero, perché 
 \begin_inset Formula $\neg a$
 \end_inset
 
@@ -1962,14 +2067,24 @@ CTL usa i seguenti operatori modali:
 \begin_inset Formula $[\forall F]a$
 \end_inset
 
-: In tutte le esecuzioni c'è uno stato in cui vale a, a è inevitabile
+: su ogni possibile sequenza di stati successivi all’attuale ce n'è uno
+ in cui 
+\begin_inset Formula $a$
+\end_inset
+
+ è vera,
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $[\exists F]a$
 \end_inset
 
-: a un certo punto vale a
+: esiste almeno uno stato in una sequenza di stati successivi all’attuale
+ in cui 
+\begin_inset Formula $a$
+\end_inset
+
+ è vera,
 \end_layout
 
 \begin_layout Standard
@@ -1983,8 +2098,11 @@ CTL usa i seguenti operatori modali:
 \begin_inset Formula $[\exists G]a$
 \end_inset
 
-: esiste una sequenza di stati successivi all'attuale tale che a è vero
- in ogni stato di tale sequenza
+: esiste una sequenza di stati successivi all'attuale tale che 
+\begin_inset Formula $a$
+\end_inset
+
+ è vero in ogni stato di tale sequenza
 \end_layout
 
 \begin_layout Standard
@@ -2050,7 +2168,7 @@ Tuttavia sono necessari solo tre operatori, mentre tutti gli altri si possono
 \end_layout
 
 \begin_layout Standard
-E infatti si domostra facilmente che:
+E infatti si dimostra facilmente che:
 \end_layout
 
 \begin_layout Standard
@@ -2298,7 +2416,7 @@ I programmi sono definiti come:
 \begin_inset Formula $\alpha\cup\beta$
 \end_inset
 
- ossia nondeterministicamente 
+ ossia non-deterministicamente 
 \begin_inset Formula $\alpha$
 \end_inset
 
@@ -2365,7 +2483,7 @@ Le relazioni che descrivono il comportamento dei programmi composti sono
 \end_layout
 
 \begin_layout Subsection
-Assiomatizzazzione della logica dinamica
+Assiomatizzazione della logica dinamica
 \end_layout
 
 \begin_layout Standard
@@ -2559,7 +2677,156 @@ Al seguente grafo:
 \end_layout
 
 \begin_layout Standard
-<<<MANCA>>>
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{cffffff}{RGB}{255,255,255}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[y=0.80pt,x=0.80pt,yscale=-1, inner sep=0pt, outer sep=0pt]
+   
+\backslash
+path[cm={{0.58805,0.0,0.0,0.68269,(24.31388,102.98422)}},draw=black,fill=cffffff]
+     (156.7931,87.4161)arc(0.000:180.000:50.387171 and     44.750)arc(-180.000:0.000:50.3
+87171 and 44.750) -- cycle;   
+\backslash
+path[fill=black] (82.20771,167.96637) node[above right] (text3755) {s};  
+ 
+\backslash
+path[cm={{0.74795,0.0,0.0,0.85608,(68.60394,12.42678)}},draw=black,fill=cffffff]
+     (265.1861,106.6421)arc(0.000:180.000:73.920640 and     42.098)arc(-180.000:0.000:73.
+920640 and 42.098) -- cycle;   
+\backslash
+path[fill=black] (180.73416,65.26226) node[above right] (text3763) {U};  
+ 
+\backslash
+path[draw=black,line join=miter,line cap=butt,line width=0.800pt]     (110.0523,14
+5.4256) -- (164.8679,122.9266);   
+\backslash
+path[cm={{0.71337,0.0,0.0,0.47229,(79.07095,130.99431)}},draw=black,fill=cffffff]
+     (265.1861,106.6421)arc(0.000:180.000:73.920640 and     42.098)arc(-180.000:0.000:73.
+920640 and 42.098) -- cycle;   
+\backslash
+path[draw=black,line join=miter,line cap=butt,line width=0.800pt]     (113.3671,17
+4.5960) -- (163.5672,177.9203);   
+\backslash
+path[shift={(-12.0,0)},draw=black,fill=cffffff]     (236.0157,85.7587)arc(-0.038:180.
+038:13.922)arc(-180.038:0.038:13.922) --     cycle;   
+\backslash
+path[cm={{0.92174,0.0,0.0,0.92174,(-3.13845,9.35718)}},draw=black,fill=cffffff]
+     (245.2972,119.5699)arc(-0.021:180.021:14.916721 and     12.596)arc(-180.021:0.021:1
+4.916721 and 12.596) -- cycle;   
+\backslash
+path[fill=black] (200,89.362183) node[above right] (text3817) {u1};   
+\backslash
+path[fill=black] (200.91348,124.35682) node[above right] (text3817-5) {u2};
+   
+\backslash
+path[fill=black] (124.37474,126.52254) node[above right] (text3842) {$R_
+\backslash
+alpha$};   
+\backslash
+path[fill=black] (127.6106,171.96516) node[above right] (text3846) {$R_
+\backslash
+alpha$};   
+\backslash
+path[cm={{0.8212,0.0,0.0,0.49268,(188.32152,21.20068)}},draw=black,fill=cffffff]
+     (265.1861,106.6421)arc(0.000:180.000:73.920640 and     42.098)arc(-180.000:0.000:73.
+920640 and 42.098) -- cycle;   
+\backslash
+path[cm={{0.8212,0.0,0.0,0.42066,(180.68016,98.39161)}},draw=black,fill=cffffff]
+     (265.1861,106.6421)arc(0.000:180.000:73.920640 and     42.098)arc(-180.000:0.000:73.
+920640 and 42.098) -- cycle;   
+\backslash
+path[draw=black,line join=miter,line cap=butt,line width=0.800pt]     (222.6493,12
+2.0455) -- (286.4164,133.7944);   
+\backslash
+path[draw=black,line join=miter,line cap=butt,line width=0.723pt]     (221.3768,77.
+3255) -- (285.5725,77.2936);   
+\backslash
+path[shift={(99.17758,-11.35244)},draw=black,fill=cffffff]     (236.0157,85.7587)arc
+(-0.038:180.038:13.922)arc(-180.038:0.038:13.922) --     cycle;   
+\backslash
+path[cm={{0.92174,0.0,0.0,0.92174,(102.03913,32.00475)}},draw=black,fill=cffffff]
+     (245.2972,119.5699)arc(-0.021:180.021:14.916721 and     12.596)arc(-180.021:0.021:1
+4.916721 and 12.596) -- cycle;   
+\backslash
+path[fill=black] (315.17758,78.00975) node[above right] (text3817-0) {t1};
+   
+\backslash
+path[fill=black] (306.09106,147.00439) node[above right] (text3817-5-7) {t3};
+   
+\backslash
+path[shift={(139.67676,-10.5883)},draw=black,fill=cffffff]     (236.0157,85.7587)arc
+(-0.038:180.038:13.922)arc(-180.038:0.038:13.922) --     cycle;   
+\backslash
+path[cm={{0.92174,0.0,0.0,0.92174,(142.53831,32.76888)}},draw=black,fill=cffffff]
+     (245.2972,119.5699)arc(-0.021:180.021:14.916721 and     12.596)arc(-180.021:0.021:1
+4.916721 and 12.596) -- cycle;   
+\backslash
+path[fill=black] (353.67676,78.773872) node[above right] (text3817-6) {t2};
+   
+\backslash
+path[fill=black] (346.59024,147.76852) node[above right] (text3817-5-6) {t4};
+   
+\backslash
+path[fill=black] (326.2858,46.646969) node[above right] (text3942) {T1}; 
+  
+\backslash
+path[fill=black] (324.32019,122.09327) node[above right] (text3942-3) {T2};
+   
+\backslash
+path[fill=black] (248.34399,146.86179) node[above right] (text3990) {$R_
+\backslash
+beta$};   
+\backslash
+path[fill=black] (253.16176,74.356461) node[above right] (text3990-7) {$R_
+\backslash
+beta$};   
+\backslash
+path[fill=black,line join=miter,line cap=butt,line width=0.800pt] (0,0) 
+    node[above right] (flowRoot4015) {};   
+\backslash
+path[draw=black,line join=miter,line cap=butt,line width=0.800pt]     (401.1048,36.
+8263) ..
+ controls (409.7612,32.3735) and (435.8124,31.6775) ..
+     (440.0757,44.4676) ..
+ controls (444.4570,57.6116) and (438.5475,69.8092) ..
+     (438.5475,84.2027) ..
+ controls (438.5475,89.4537) and (452.1943,92.7158) ..
+     (448.4812,96.4288) ..
+ controls (445.2189,99.6911) and (435.7460,104.0714) ..
+     (438.5475,112.4757) ..
+ controls (442.6528,124.7916) and (450.2611,160.1129) ..
+     (443.8964,172.8424) ..
+ controls (440.9921,178.6510) and (417.3816,176.6631) ..
+     (411.0386,176.6631);   
+\backslash
+path[fill=black] (462.52805,101.66471) node[above right] (text4174) {T};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2595,7 +2862,7 @@ Inoltre si introduce la relazione di combinazione, ossia quella che traduce
 
 \begin_layout Standard
 Tutto il resto è definito allo stesso modo di prima, a meno di stare attenti
- agli insiemi di stati, anzichè agli stati.
+ agli insiemi di stati, anziché agli stati.
 \end_layout
 
 \end_body
