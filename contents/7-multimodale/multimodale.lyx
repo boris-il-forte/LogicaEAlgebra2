@@ -2246,21 +2246,21 @@ E infatti si dimostra facilmente che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $[\forall F]a\equiv\neg\exists(\top\mathcal{U\neg}a)$
+\begin_inset Formula $[\forall G]a\equiv\neg\exists(\top\mathcal{U\neg}a)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $[\exists F]a\equiv\neg\forall(\top\mathcal{U\neg}a)$
+\begin_inset Formula $[\exists G]a\equiv\neg\forall(\top\mathcal{U\neg}a)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $[\exists xX]a\equiv\neg[\forall X]\neg a$
+\begin_inset Formula $[\exists X]a\equiv\neg[\forall X]\neg a$
 \end_inset
 
 
@@ -2641,14 +2641,14 @@ E' quindi necessario cambiare pure la semantica della logica:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu S{[\alpha]a}\iff\forall T\subseteq S\,:\,(\alpha,\, T)\in R_{\alpha}\,\wedge\,\forall t\in T\,\veraw\mu ta$
+\begin_inset Formula $\veraw{\mu}s{[\alpha]a}\iff\forall T\subseteq S\,:\,(s,\, T)\in R_{\alpha}\,\wedge\,\forall t\in T\,\veraw{\mu}ta$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu S{<\alpha>a}\iff\exists T\subseteq S\,:\,(\alpha,\, T)\in R_{\alpha}\,\wedge\,\forall t\in T\,\veraw\mu ta$
+\begin_inset Formula $\veraw{\mu}s{<\alpha>a}\iff\exists T\subseteq S\,:\,(s,\, T)\in R_{\alpha}\,\wedge\,\forall t\in T\,\veraw{\mu}ta$
 \end_inset
 
 
