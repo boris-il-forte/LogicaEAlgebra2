@@ -189,7 +189,7 @@ Nella logica modale, come l'abbiamo descritta nei precedenti capitoli, sono
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\boxx{\top}$
+\begin_inset Formula $\boxx\top$
 \end_inset
 
  (schema 
@@ -293,7 +293,7 @@ vedo
 \end_layout
 
 \begin_layout Section
-Yet another Model
+Frame Minimali
 \end_layout
 
 \begin_layout Standard
@@ -335,10 +335,14 @@ Si definisce insieme di verità di
 \end_inset
 
  il seguente: 
-\begin_inset Formula $\verins a=\{\alpha:\ \veraw M{\alpha}{a\}}$
+\begin_inset Formula $\verins a=\{\alpha:\ \veraw M\alpha{a\}}$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Frame e modelli di questo tipo si definiscono minimali
 \end_layout
 
 \begin_layout Standard
@@ -346,7 +350,7 @@ Inoltre diciamo che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw M{\alpha}{\boxx a}$
+\begin_inset Formula $\veraw M\alpha{\boxx a}$
 \end_inset
 
  se e solo se: 
@@ -357,7 +361,7 @@ Inoltre diciamo che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw M{\alpha}{\dia}$
+\begin_inset Formula $\veraw M\alpha\dia$
 \end_inset
 
  se e solo se: 
@@ -418,7 +422,7 @@ Consideriamo un frame con due stati
 \end_inset
 
  è vero in ogni mondo, ma 
-\begin_inset Formula $\nonveraw M{\alpha}{\boxx T}$
+\begin_inset Formula $\nonveraw M\alpha{\boxx T}$
 \end_inset
 
  
@@ -437,7 +441,7 @@ Validità di N
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\vera F{\boxx{\top}}$
+\begin_inset Formula $\vera F{\boxx\top}$
 \end_inset
 
  se e solo se 
@@ -505,7 +509,7 @@ Considero un frame in cui vale l'antecedente:
 
 \begin_layout Standard
 Con queste ipotesi si ha: 
-\begin_inset Formula $\veraw M{\alpha}{\boxx{(A\wedge B)}}$
+\begin_inset Formula $\veraw M\alpha{\boxx{(A\wedge B)}}$
 \end_inset
 
 
@@ -812,7 +816,7 @@ Negazione di C
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\vera FC$
+\begin_inset Formula $\vera F{\boa\wedge\boxx b\implies\boxx{(a\wedge b)}}$
 \end_inset
 
 
@@ -897,7 +901,7 @@ Validità di C
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\vera FC$
+\begin_inset Formula $\vera F{\boa\wedge\boxx b\implies\boxx{(a\wedge b)}}$
 \end_inset
 
  
@@ -905,7 +909,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\forall\alpha\in S,\,\forall X,\, Y\subseteq S\,:\, X\cap Y\in N(\alpha)$
+\begin_inset Formula $\forall\alpha\in S,\,\forall X,\, Y\subseteq S\,:\,\ se\ X\in N(\alpha)\ e\ Y\in N(\alpha)\ allora\ X\cap Y\in N(\alpha)$
 \end_inset
 
 
@@ -1081,7 +1085,7 @@ Un frame si quasi filtro se:
 \end_layout
 
 \begin_layout Enumerate
-Èchiuso rispetto all'intersezione
+È chiuso rispetto all'intersezione
 \end_layout
 
 \begin_layout Standard
@@ -1106,7 +1110,7 @@ Le logiche classiche sono tutte le logiche valide sui frame minimali.
 \end_layout
 
 \begin_layout Standard
-La logica è è definita come la logica che:
+La logica E è definita come la logica che:
 \end_layout
 
 \begin_layout Itemize
@@ -1114,16 +1118,24 @@ Contiene tutte le tautologie
 \end_layout
 
 \begin_layout Itemize
-E' chiusa rispetto al Modus Ponens
+È chiusa rispetto al Modus Ponens
 \end_layout
 
 \begin_layout Itemize
-E' chiusa rispetto alla regola RE
+È chiusa rispetto alla regola RE
 \end_layout
 
 \begin_layout Standard
-RE: 
+
+\series bold
+RE
+\series default
+: 
 \begin_inset Formula $\dfrac{a\iff b}{\boa\iff\boxx b}$
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
@@ -1134,8 +1146,16 @@ Le logiche Monotone sono logiche classiche in cui vale anche la regola RM:
 \end_layout
 
 \begin_layout Standard
-RM: 
+
+\series bold
+RM
+\series default
+: 
 \begin_inset Formula $\dfrac{a\implies b}{\boa\implies\boxx b}$
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
@@ -1146,11 +1166,15 @@ Le logiche Regolari sono logiche classiche in cui vale la regola RR:
 \end_layout
 
 \begin_layout Standard
-RR: 
-\begin_inset Formula $\dfrac{a\wedge b\implies c}{\boa\wedge\boxx b\implies\boxx b}$
+
+\series bold
+RR
+\series default
+: 
+\begin_inset Formula $\dfrac{a\wedge b\implies c}{\boa\wedge\boxx b\implies\boxx c}$
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -1491,11 +1515,19 @@ Ts) vale RM
 \begin_inset Formula $\teorema{\boa\implies\boa\wedge\boxx b}$
 \end_inset
 
- -- per MP
+ -- per catena implicazioni dalle due precedenti 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $\teorema{\boa\implies\boxx b}$
+\end_inset
+
+ -- perché se 
+\begin_inset Formula $\implica x{y\wedge z}$
+\end_inset
+
+ vale anche 
+\begin_inset Formula $\implica xy$
 \end_inset
 
 
@@ -1606,7 +1638,7 @@ Sappiamo già che da RE e M ottengo RM.
 \begin_inset Formula $\teorema{\boa\wedge\boxx b\implies\boxx c}$
 \end_inset
 
- -- per MP
+ -- per catena di implicazioni dalle due precedenti
 \end_layout
 
 \begin_layout Standard
@@ -1804,7 +1836,7 @@ Per ogni modello minimale aumentato
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{a}}{\alpha}a\iff\veraw{\mu^{s}}{\alpha}a$
+\begin_inset Formula $\veraw{\mu^{a}}\alpha a\iff\veraw{\mu^{s}}\alpha a$
 \end_inset
 
 
@@ -1820,7 +1852,7 @@ Questo teorema è banalmente vero per le formule che non utilizzano i connettivi
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\veraw{\mu^{a}}{\alpha}a$
+\begin_inset Formula $\veraw{\mu^{a}}\alpha a$
 \end_inset
 
 
@@ -1828,7 +1860,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\exists\mu^{s}\,:\,\veraw{\mu^{s}}{\alpha}a\iff\veraw{\mu^{a}}{\alpha}a$
+\begin_inset Formula $\exists\mu^{s}\,:\,\veraw{\mu^{s}}\alpha a\iff\veraw{\mu^{a}}\alpha a$
 \end_inset
 
 
@@ -1854,7 +1886,7 @@ abbiamo che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{a}}{\alpha}{\boxx b\iff\verins b\in N(\alpha)}$
+\begin_inset Formula $\veraw{\mu^{a}}\alpha{\boxx b\iff\verins b\in N(\alpha)}$
 \end_inset
 
 
@@ -1876,7 +1908,7 @@ allora possiamo affermare che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\forall\beta\,:\,(\alpha,\,\beta)\in R,\,\veraw{\mu^{s}}{\beta}b$
+\begin_inset Formula $\forall\beta\,:\,(\alpha,\,\beta)\in R,\,\veraw{\mu^{s}}\beta b$
 \end_inset
 
 
@@ -1887,7 +1919,7 @@ e quindi vale:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{s}}{\alpha}{\boxx{\beta}}$
+\begin_inset Formula $\veraw{\mu^{s}}\alpha{\boxx\beta}$
 \end_inset
 
 
@@ -1898,7 +1930,7 @@ viceversa, se è vero:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{s}}{\alpha}{\boxx b}$
+\begin_inset Formula $\veraw{\mu^{s}}\alpha{\boxx b}$
 \end_inset
 
 
