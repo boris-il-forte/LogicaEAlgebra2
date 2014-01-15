@@ -179,7 +179,7 @@ Logica Multimodale Classica
 \end_layout
 
 \begin_layout Section
-Critiche al vecchio regime
+Necessità di una interpretazione differente
 \end_layout
 
 \begin_layout Standard
@@ -192,7 +192,11 @@ Nella logica modale, come l'abbiamo descritta nei precedenti capitoli, sono
 \begin_inset Formula $\boxx{\top}$
 \end_inset
 
- (schema N)
+ (schema 
+\series bold
+N
+\series default
+)
 \end_layout
 
 \begin_layout Standard
