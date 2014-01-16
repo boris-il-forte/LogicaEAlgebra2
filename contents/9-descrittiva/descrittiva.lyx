@@ -140,7 +140,11 @@ Logiche Descrittive
 \end_layout
 
 \begin_layout Section
-Introduzione - Logica AL
+Introduzione - Logica 
+\begin_inset Formula $\mathcal{AL}$
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Standard
@@ -186,12 +190,19 @@ ABox es.
 \end_layout
 
 \begin_layout Standard
-La famiglia di logiche descrittive più utilizzata è la famiglia AL (Attributive
- Language).
+La famiglia di logiche descrittive più utilizzata è la famiglia 
+\begin_inset Formula $\mathcal{AL}$
+\end_inset
+
+ (Attributive Language).
 \end_layout
 
 \begin_layout Standard
-Nella logica AL (logica descrittiva tra le più semplici) ci sono:
+Nella logica 
+\begin_inset Formula $\mathcal{AL}$
+\end_inset
+
+ (logica descrittiva tra le più semplici) ci sono:
 \end_layout
 
 \begin_layout Description
@@ -268,7 +279,7 @@ quantificazioni:
 
 \begin_layout Standard
 Un'interpretazione I di una base di conoscenza ́e una coppia 
-\begin_inset Formula $I=<\Delta^{i},·^{I}>$
+\begin_inset Formula $I=<\Delta^{I},\ ·^{I}>$
 \end_inset
 
  composta da un dominio di interpretazione 
@@ -420,24 +431,53 @@ es.
 \end_layout
 
 \begin_layout Subsection
-Varianti di AL
+Varianti di 
+\begin_inset Formula $\mathcal{AL}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Indebolendo la logica AL si ottengono le logiche poco descrittive della
- famiglia FL:
+Indebolendo la logica 
+\begin_inset Formula $\mathcal{AL}$
+\end_inset
+
+ si ottengono le logiche poco descrittive della famiglia 
+\begin_inset Formula $\mathcal{FL}$
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Itemize
-F L- è ottenuta da AL eliminando la negazione atomica •
+\begin_inset Formula $\mathcal{FL}$
+\end_inset
+
+- è ottenuta da 
+\begin_inset Formula $\mathcal{AL}$
+\end_inset
+
+ eliminando la negazione atomica 
 \end_layout
 
 \begin_layout Itemize
-FL0 è ottenuta da FL- eliminando anche la quantificazione esistenziale
+\begin_inset Formula $\mathcal{FL}_{0}$
+\end_inset
+
+ è ottenuta da 
+\begin_inset Formula $\mathcal{FL}$
+\end_inset
+
+- eliminando anche la quantificazione esistenziale
 \end_layout
 
 \begin_layout Standard
-La logica AL può essere estesa aggiungendo alcuni costruttori: 
+La logica 
+\begin_inset Formula $\mathcal{AL}$
+\end_inset
+
+ può essere estesa aggiungendo alcuni costruttori: 
 \end_layout
 
 \begin_layout Itemize
@@ -515,7 +555,7 @@ Equivalenza
 \end_inset
 
 ed 
-\begin_inset Formula $\alc$
+\begin_inset Formula $\mathcal{ALC}$
 \end_inset
 
 
@@ -523,7 +563,7 @@ ed
 
 \begin_layout Standard
 Dimostriamo che 
-\begin_inset Formula $AL\mathcal{UE}\equiv AL\mathcal{C}$
+\begin_inset Formula $\mathcal{AL}\mathcal{UE}\equiv\mathcal{AL}\mathcal{C}$
 \end_inset
 
 
@@ -555,11 +595,11 @@ Ts)
 
 \begin_layout Standard
 Si vuole mostrate che a partire in
-\begin_inset Formula $AL\mathcal{UE}$
+\begin_inset Formula $\mathcal{AL}\mathcal{UE}$
 \end_inset
 
  posso fare tutto ciò che faccio in 
-\begin_inset Formula $AL\mathcal{C}$
+\begin_inset Formula $\mathcal{AL}\mathcal{C}$
 \end_inset
 
 , il che si riduce a mostrare che in 
@@ -572,7 +612,7 @@ posso fare negazioni di concetti qualsiasi.
 \begin_layout Standard
 Questo è immediato per i concetti atomici la cui negazione è per definizione
  in 
-\begin_inset Formula $AL$
+\begin_inset Formula $\mathcal{AL}$
 \end_inset
 
 
@@ -668,8 +708,15 @@ Confronto con logica del prim'ordine
 \end_layout
 
 \begin_layout Standard
-È possibile vedere le logiche AL, ALC, ALN, (deve essere con identità nel
- caso di N)
+È possibile vedere le logiche 
+\begin_inset Formula $\mathcal{AL\mbox{,}ALC\mbox{,}ALN}$
+\end_inset
+
+, (deve essere con identità nel caso di 
+\begin_inset Formula $\mathcal{N}$
+\end_inset
+
+)
 \end_layout
 
 \begin_layout Itemize
@@ -778,6 +825,9 @@ e) la logica del prim'ordine è decidibile.
 \end_inset
 
  
+\end_layout
+
+\begin_layout Description
 \begin_inset Formula $\implies E(x_{1},x_{2})\vee E(x_{1},x_{2})\vee\dots..\underset{1\leq i\leq j\leq n+1}{\bigvee}E(x_{i},x_{j})$
 \end_inset
 
@@ -1192,16 +1242,27 @@ Feauture Logic
 
 \begin_layout Standard
 Le logiche descrittive più semplici appartengono alla famiglia della features
- logics (FL in breve) e sono ottenute indebolendo la più ́famosa logica
- AL inibendo i costruttori di concetto più complessi.
+ logics (
+\begin_inset Formula $\mathcal{FL}$
+\end_inset
+
+ in breve) e sono ottenute indebolendo la più ́famosa logica 
+\begin_inset Formula $\mathcal{AL}$
+\end_inset
+
+ inibendo i costruttori di concetto più complessi.
 \end_layout
 
 \begin_layout Standard
 La più semplice di queste è 
-\begin_inset Formula $FL_{0}$
+\begin_inset Formula $\mathcal{FL_{\mbox{0}}}$
 \end_inset
 
- che si ottiene da AL togliendo 
+ che si ottiene da 
+\begin_inset Formula $\mathcal{AL}$
+\end_inset
+
+ togliendo 
 \begin_inset Formula $\bot$
 \end_inset
 
@@ -1363,7 +1424,7 @@ Varianti
 
 \begin_layout Standard
 Ad 
-\begin_inset Formula $AL_{0}$
+\begin_inset Formula $\mathcal{AL}_{0}$
 \end_inset
 
 può essere aggiunto il concetto 
@@ -1371,7 +1432,7 @@ può essere aggiunto il concetto
 \end_inset
 
 , ottenendo 
-\begin_inset Formula $AL_{\bot}$
+\begin_inset Formula $\mathcal{AL_{\bot}}$
 \end_inset
 
 e la forma normale viene a essere la stessa di prima a cui si aggiunge l'opportu
@@ -1400,7 +1461,7 @@ Ad
 \end_inset
 
  si può aggiungere la negazione di concetti atomici ottenendo 
-\begin_inset Formula $AL_{\neg}$
+\begin_inset Formula $\mathcal{AL}_{\neg}$
 \end_inset
 
 
@@ -1412,11 +1473,11 @@ Notiamo che
 \end_inset
 
 , quindi 
-\begin_inset Formula $AL_{\neg}$
+\begin_inset Formula $\mathcal{AL_{\neg}}$
 \end_inset
 
 contiene strettamente
-\begin_inset Formula $AL_{0}$
+\begin_inset Formula $\mathcal{AL_{\mbox{0}}}$
 \end_inset
 
 	
@@ -1455,7 +1516,7 @@ Per controllare
 \end_layout
 
 \begin_layout Section
-A-Box Reasoning
+A-Box Reasoning			
 \end_layout
 
 \begin_layout Standard

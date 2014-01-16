@@ -517,7 +517,7 @@ Con queste ipotesi si ha:
 
 \begin_layout Standard
 infatti 
-\begin_inset Formula $\verins{A\wedge B}=\{\gamma:\ \mbox{\veraw M{\gamma}{A\wedge B}\}}$
+\begin_inset Formula $\verins{A\wedge B}=\{\gamma:\ \mbox{\veraw M\gamma{A\wedge B}\}}$
 \end_inset
 
  = 
@@ -548,14 +548,14 @@ Ora mostro che non vale il conseguente:
 \end_inset
 
  da cui 
-\begin_inset Formula $\nonveraw M{\alpha}{\boxx A}$
+\begin_inset Formula $\nonveraw M\alpha{\boxx A}$
 \end_inset
 
  da qui quindi neppure:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw M{\alpha}{\boxx{A\wedge\boxx B}}$
+\begin_inset Formula $\nonveraw M\alpha{\boxx{A\wedge\boxx B}}$
 \end_inset
 
 
@@ -637,7 +637,7 @@ si ha che
 \end_inset
 
 , infatti 
-\begin_inset Formula $\verins{A\wedge B}=\{\gamma\ :\ \veraw M{\gamma}{A\wedge B\}}=\{s\ :\ s\in X\ e\ s\in Y\}=\{s\ :\ s\in X\cap Y\}=X\cap Y$
+\begin_inset Formula $\verins{A\wedge B}=\{\gamma\ :\ \veraw M\gamma{A\wedge B\}}=\{s\ :\ s\in X\ e\ s\in Y\}=\{s\ :\ s\in X\cap Y\}=X\cap Y$
 \end_inset
 
 
@@ -669,36 +669,36 @@ cioè gli stati in cui è vera
 
 \begin_layout Standard
 Si ha quindi 
-\begin_inset Formula $\veraw M{\alpha}{\boxx{(A\wedge B)}}$
+\begin_inset Formula $\veraw M\alpha{\boxx{(A\wedge B)}}$
 \end_inset
 
  da cui per ipotesi:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw M{\alpha}{\boa\wedge\boxx b}$
+\begin_inset Formula $\veraw M\alpha{\boa\wedge\boxx b}$
 \end_inset
 
  e cioè: 
-\begin_inset Formula $\veraw M{\alpha}{\boa}$
+\begin_inset Formula $\veraw M\alpha\boa$
 \end_inset
 
  e 
-\begin_inset Formula $\veraw M{\alpha}{\boxx b}$
+\begin_inset Formula $\veraw M\alpha{\boxx b}$
 \end_inset
 
  da cui:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\verins A=\{\alpha:\ \veraw M{\alpha}A\}=X\in N(\alpha)$
+\begin_inset Formula $\verins A=\{\alpha:\ \veraw M\alpha A\}=X\in N(\alpha)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\verins B=\{\alpha:\ \veraw M{\alpha}B\}=Y\in N(\alpha)$
+\begin_inset Formula $\verins B=\{\alpha:\ \veraw M\alpha B\}=Y\in N(\alpha)$
 \end_inset
 
 	
@@ -730,7 +730,7 @@ Ts)
 
 \begin_layout Standard
 Supponiamo valga 
-\begin_inset Formula $\veraw M{\alpha}{\boxx{(a\wedge b)}}$
+\begin_inset Formula $\veraw M\alpha{\boxx{(a\wedge b)}}$
 \end_inset
 
  allora: 
@@ -780,7 +780,7 @@ dalla prima, per definizione di
 \end_inset
 
  ottengo 
-\begin_inset Formula $\veraw M{\alpha}{\boa}$
+\begin_inset Formula $\veraw M\alpha\boa$
 \end_inset
 
 
@@ -788,7 +788,7 @@ dalla prima, per definizione di
 
 \begin_layout Standard
 dalla seconda ottengo 
-\begin_inset Formula $\veraw M{\alpha}{\boxx b}$
+\begin_inset Formula $\veraw M\alpha{\boxx b}$
 \end_inset
 
  
@@ -796,7 +796,7 @@ dalla seconda ottengo
 
 \begin_layout Standard
 quindi complessivamente 
-\begin_inset Formula $\veraw M{\alpha}{\boa\wedge\boxx b}$
+\begin_inset Formula $\veraw M\alpha{\boa\wedge\boxx b}$
 \end_inset
 
 
@@ -860,14 +860,14 @@ avremo dunque che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\boa}$
+\begin_inset Formula $\veraw\mu\alpha\boa$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx b}$
+\begin_inset Formula $\veraw\mu\alpha{\boxx b}$
 \end_inset
 
 
@@ -878,7 +878,7 @@ ma non vale:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\alpha}{\boxx{}(A\wedge B)}$
+\begin_inset Formula $\nonveraw\mu\alpha{\boxx{}(A\wedge B)}$
 \end_inset
 
 
@@ -971,7 +971,7 @@ Ma per modus ponens vale il conseguente, e quindi:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx{(A\wedge B)}}$
+\begin_inset Formula $\veraw\mu\alpha{\boxx{(A\wedge B)}}$
 \end_inset
 
 
@@ -1029,7 +1029,7 @@ Se l'antecedente è falso, C è vero, per cui consideriamo il caso in cui
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\boa\wedge\boxx b}$
+\begin_inset Formula $\veraw\mu\alpha{\boa\wedge\boxx b}$
 \end_inset
 
 
@@ -1789,7 +1789,7 @@ Si dice frame aumentato, un frame F supplementato tale che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\forall\alpha\, Z\equiv\underset{Y\in N(\alpha)}{\bigcap}Y\, Z\in N(\alpha)$
+\begin_inset Formula $\forall\alpha\in S\, sia\ Z\equiv\underset{Y\in N(\alpha)}{\bigcap}Y\ allora\ Z\in N(\alpha)$
 \end_inset
 
 	
@@ -1836,7 +1836,7 @@ Per ogni modello minimale aumentato
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{a}}\alpha a\iff\veraw{\mu^{s}}\alpha a$
+\begin_inset Formula $\veraw{\mu^{a}}{\alpha}a\iff\veraw{\mu^{s}}{\alpha}a$
 \end_inset
 
 
@@ -1852,7 +1852,7 @@ Questo teorema è banalmente vero per le formule che non utilizzano i connettivi
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\veraw{\mu^{a}}\alpha a$
+\begin_inset Formula $\veraw{\mu^{a}}{\alpha}a$
 \end_inset
 
 
@@ -1860,7 +1860,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\exists\mu^{s}\,:\,\veraw{\mu^{s}}\alpha a\iff\veraw{\mu^{a}}\alpha a$
+\begin_inset Formula $\exists\mu^{s}\,:\,\veraw{\mu^{s}}{\alpha}a\iff\veraw{\mu^{a}}{\alpha}a$
 \end_inset
 
 
@@ -1886,7 +1886,7 @@ abbiamo che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{a}}\alpha{\boxx b\iff\verins b\in N(\alpha)}$
+\begin_inset Formula $\veraw{\mu^{a}}{\alpha}{\boxx b\iff\verins b\in N(\alpha)}$
 \end_inset
 
 
@@ -1908,7 +1908,7 @@ allora possiamo affermare che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\forall\beta\,:\,(\alpha,\,\beta)\in R,\,\veraw{\mu^{s}}\beta b$
+\begin_inset Formula $\forall\beta\,:\,(\alpha,\,\beta)\in R,\,\veraw{\mu^{s}}{\beta}b$
 \end_inset
 
 
@@ -1941,7 +1941,7 @@ allora avremo che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{s}}{\beta}b$
+\begin_inset Formula $\veraw{\mu^{s}}\beta b$
 \end_inset
 
 , 
@@ -1978,7 +1978,7 @@ e dunque:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{a}}{\alpha}a$
+\begin_inset Formula $\veraw{\mu^{a}}\alpha a$
 \end_inset
 
 
@@ -1986,7 +1986,7 @@ e dunque:
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\veraw{\mu^{s}}{\alpha}a$
+\begin_inset Formula $\veraw{\mu^{s}}\alpha a$
 \end_inset
 
 
@@ -1994,7 +1994,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\exists\mu^{a}\,:\,\veraw{\mu^{a}}{\alpha}a\iff\veraw{\mu^{s}}{\alpha}a$
+\begin_inset Formula $\exists\mu^{a}\,:\,\veraw{\mu^{a}}\alpha a\iff\veraw{\mu^{s}}\alpha a$
 \end_inset
 
 
@@ -2020,7 +2020,7 @@ supponiamo che valga:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{s}}{\alpha}{\boxx b}$
+\begin_inset Formula $\veraw{\mu^{s}}\alpha{\boxx b}$
 \end_inset
 
 
@@ -2031,7 +2031,7 @@ e quindi:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{s}}{\beta}b$
+\begin_inset Formula $\veraw{\mu^{s}}\beta b$
 \end_inset
 
 
@@ -2064,7 +2064,7 @@ e quindi:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{a}}{\alpha}{\boxx b}$
+\begin_inset Formula $\veraw{\mu^{a}}\alpha{\boxx b}$
 \end_inset
 
 
@@ -2075,7 +2075,7 @@ viceversa, supponiamo di avere:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{a}}{\alpha}{\boxx b}$
+\begin_inset Formula $\veraw{\mu^{a}}\alpha{\boxx b}$
 \end_inset
 
 
@@ -2119,14 +2119,14 @@ da cui si ricavano banalmente:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{s}}{\beta}b$
+\begin_inset Formula $\veraw{\mu^{s}}\beta b$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{s}}{\alpha}{\boxx b}$
+\begin_inset Formula $\veraw{\mu^{s}}\alpha{\boxx b}$
 \end_inset
 
 
