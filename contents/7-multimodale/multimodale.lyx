@@ -195,7 +195,7 @@ La semantica di una logica multimodale è la stessa della logica proposizionale
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\neci ia}\iff\veraw{\mu}{\beta}a\,\forall\beta\,:\,(\alpha,\,\beta)\in R_{i}$
+\begin_inset Formula $\veraw\mu\alpha{\neci ia}\iff\veraw\mu\beta a\,\forall\beta\,:\,(\alpha,\,\beta)\in R_{i}$
 \end_inset
 
 
@@ -265,7 +265,7 @@ Possiamo applicare le logiche multimodali al concetto di tempo, per farlo
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $F=(S,\,\{R_{P},\, R_{e}\})$
+\begin_inset Formula $F=(S,\,\{R_{P},\, R_{F}\})$
 \end_inset
 
 
@@ -356,7 +356,7 @@ Dimostrazione
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\veraw{\mu}{\alpha}a$
+\begin_inset Formula $\veraw\mu\alpha a$
 \end_inset
 
  e 
@@ -368,7 +368,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\veraw{\mu}{\alpha}{\necp{\posf a}}$
+\begin_inset Formula $\veraw\mu\alpha{a\implies\necp{\posf a}}$
 \end_inset
 
 
@@ -395,7 +395,7 @@ Ogni mondo
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\beta}{\posf a}$
+\begin_inset Formula $\veraw\mu\beta{\posf a}$
 \end_inset
 
 
@@ -406,7 +406,7 @@ allora, usando la regola di necessitazione nel passato, possiamo scrivere:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\necp{\posf a}}$
+\begin_inset Formula $\veraw\mu\alpha{\necp{\posf a}}$
 \end_inset
 
 
@@ -421,7 +421,7 @@ ma poiché per ipotesi in
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\necp{\posf a}}$
+\begin_inset Formula $\veraw\mu\alpha{\necp{\posf a}}$
 \end_inset
 
 
@@ -437,7 +437,7 @@ poiché abbiamo preso un
 \end_inset
 
 Ip) 
-\begin_inset Formula $\veraw{\mu}{\alpha}{\necp{\posf a}}$
+\begin_inset Formula $\veraw\mu\alpha{a\implies\necp{\posf a}}$
 \end_inset
 
 
@@ -445,7 +445,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $R_{F}=R_{P}$
+\begin_inset Formula $R_{F}=R_{P}^{-1}$
 \end_inset
 
 
@@ -457,7 +457,7 @@ Ts)
 
 \begin_layout Standard
 per assurdo 
-\begin_inset Formula $R_{F}\neq R_{p}$
+\begin_inset Formula $R_{F}\neq R_{p}^{-1}$
 \end_inset
 
 
@@ -503,7 +503,7 @@ allora in
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\beta}{\posf A}$
+\begin_inset Formula $\nonveraw\mu\beta{\posf A}$
 \end_inset
 
 
@@ -526,7 +526,7 @@ ma poiché
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necp{\posf A}}$
+\begin_inset Formula $\nonveraw\mu\alpha{\necp{\posf A}}$
 \end_inset
 
 
@@ -541,7 +541,7 @@ Ma allora, poiché in
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\alpha}{A\implies\necp{\posf A}}$
+\begin_inset Formula $\nonveraw\mu\alpha{A\implies\necp{\posf A}}$
 \end_inset
 
 
@@ -1040,7 +1040,7 @@ F1)
 
 \begin_layout Standard
 F2) 
-\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necf b\in\Gamma\,\veraw{\mu}{\alpha}{\necf b}\implies\veraw{\mu}{\beta}b)$
+\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necf b\in\Gamma\,\veraw\mu\alpha{\necf b}\implies\veraw\mu\beta b)$
 \end_inset
 
 
@@ -1048,7 +1048,7 @@ F2)
 
 \begin_layout Standard
 F3) 
-\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necp b\in\Gamma\,\veraw{\mu}{\beta}{\necp b}\implies\veraw{\mu}{\alpha}b)$
+\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necp b\in\Gamma\,\veraw\mu\beta{\necp b}\implies\veraw\mu\alpha b)$
 \end_inset
 
 
@@ -1152,14 +1152,14 @@ Preso
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\necp A}$
+\begin_inset Formula $\veraw\mu\alpha{\necp A}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necf A}$
+\begin_inset Formula $\nonveraw\mu\alpha{\necf A}$
 \end_inset
 
 
@@ -1174,7 +1174,7 @@ e quindi possiamo scrivere
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necp A\implies\necf A}$
+\begin_inset Formula $\nonveraw\mu\alpha{\necp A\implies\necf A}$
 \end_inset
 
 
@@ -1189,7 +1189,7 @@ Tuttavia l'antecedente di Cont è vero, infatti
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\posf{\necp A}}$
+\begin_inset Formula $\veraw\mu\alpha{\posf{\necp A}}$
 \end_inset
 
  
@@ -1208,7 +1208,7 @@ mentre
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necp A}$
+\begin_inset Formula $\nonveraw\mu\alpha{\necp A}$
 \end_inset
 
 
@@ -1406,7 +1406,7 @@ end{tikzpicture}
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\delta=\max\limits _{\eta\in\mathbb{R}}(\veraw{\mu}{\eta}{A\,\eta<\delta)}$
+\begin_inset Formula $\delta=\max\limits _{\eta\in\mathbb{R}}(\veraw\mu\eta{A\,\eta<\delta)}$
 \end_inset
 
 
@@ -1422,6 +1422,25 @@ Ts)
 \end_inset
 
 
+\begin_inset Formula $\forall\alpha>\delta$
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonvera\mu{[P]A}$
+\end_inset
+
+ da cui 
+\begin_inset Formula $\vera\mu\text{[P]A\implies[F]A}$
+\end_inset
+
+ da cui 
+\begin_inset Formula $\vera\mu{Cont}$
+\end_inset
+
+ dato che il conseguente è vero e quindi non devo controllare l'antecedente.
 \end_layout
 
 \begin_layout Standard
@@ -1432,14 +1451,14 @@ Ts)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\necp A}$
+\begin_inset Formula $\veraw\mu\alpha{\necp A}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necf A}$
+\begin_inset Formula $\nonveraw\mu\alpha{\necf A}$
 \end_inset
 
 
@@ -1450,7 +1469,7 @@ Tuttavia l'antecedente di Cont è falso, infatti:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\delta}{\necp A}$
+\begin_inset Formula $\veraw\mu\delta{\necp A}$
 \end_inset
 
 
@@ -1469,7 +1488,7 @@ ma poiché non può esistere nessun mondo
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw{\mu}{\delta}{\posf{\necp A}}$
+\begin_inset Formula $\nonveraw\mu\delta{\posf{\necp A}}$
 \end_inset
 
 
@@ -1480,7 +1499,7 @@ e quindi non potrà che essere che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\delta}{\necp a\implies\posf{\necp a}}$
+\begin_inset Formula $\nonvera\mu{_{\delta}\necp A\implies\posf{\necp A}}$
 \end_inset
 
 
@@ -1491,11 +1510,39 @@ Poiché
 \begin_inset Formula $\delta$
 \end_inset
 
- è raggiungibile da a avremo che:
+ è raggiungibile da 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ avremo che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx{(\necp a\implies\posf{\necp a})}}$
+\begin_inset Formula $\nonvera\mu{_{\alpha}\boxx{(\necp A\implies\posf{\necp A})}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e quindi 
+\begin_inset Formula $\veraw\mu\alpha{Cont}$
+\end_inset
+
+, inoltre 
+\begin_inset Formula $Cont$
+\end_inset
+
+ è vero in 
+\begin_inset Formula $\delta$
+\end_inset
+
+ dato che l'antecedente è falso perché se 
+\begin_inset Formula $\nonvera\mu{_{\delta}\necp A\implies\posf{\necp A}}$
+\end_inset
+
+, allora anche 
+\begin_inset Formula $\nonvera\mu{_{\delta}\boxx{}\necp A\implies\posf{\necp A}}$
 \end_inset
 
 
@@ -1712,7 +1759,7 @@ Una logica che si presta bene a descrivere la concorrenza, cioè un insieme
 \begin_inset Newline newline
 \end_inset
 
-Si introducono l'operatore unario
+Si introducono l'operatore unario 
 \begin_inset Formula $\circ$
 \end_inset
 
@@ -1749,7 +1796,7 @@ La funzione di valutazione V si da in modo consueto, tranne che per i seguenti:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw Mj{\circ}a$
+\begin_inset Formula $\veraw Mj\circ a$
 \end_inset
 
 , se e solo se 
@@ -1760,7 +1807,7 @@ La funzione di valutazione V si da in modo consueto, tranne che per i seguenti:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw Mj{\boa}$
+\begin_inset Formula $\veraw Mj\boa$
 \end_inset
 
 , se e solo se 
@@ -2017,17 +2064,87 @@ CTL usa i seguenti operatori modali:
 \end_layout
 
 \begin_layout Standard
+in cui 
+\begin_inset Formula $F$
+\end_inset
+
+ sta per 
+\begin_inset Quotes eld
+\end_inset
+
+finally
+\begin_inset Quotes erd
+\end_inset
+
+ cioè 
+\begin_inset Quotes eld
+\end_inset
+
+prima o poi
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Formula $G$
+\end_inset
+
+ sta per 
+\begin_inset Quotes eld
+\end_inset
+
+generally
+\begin_inset Quotes erd
+\end_inset
+
+ cioè 
+\begin_inset Quotes eld
+\end_inset
+
+sempre
+\begin_inset Quotes erd
+\end_inset
+
+ e 
+\begin_inset Formula $X$
+\end_inset
+
+ sta per 
+\begin_inset Quotes eld
+\end_inset
+
+next
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ cioè nello stato successivo
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $[\forall F]a$
 \end_inset
 
-: In tutte le esecuzioni c'è uno stato in cui vale a, a è inevitabile
+: su ogni possibile sequenza di stati successivi all’attuale ce n'è uno
+ in cui 
+\begin_inset Formula $a$
+\end_inset
+
+ è vera,
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $[\exists F]a$
 \end_inset
 
-: a un certo punto vale a
+: esiste almeno uno stato in una sequenza di stati successivi all’attuale
+ in cui 
+\begin_inset Formula $a$
+\end_inset
+
+ è vera,
 \end_layout
 
 \begin_layout Standard
@@ -2041,8 +2158,11 @@ CTL usa i seguenti operatori modali:
 \begin_inset Formula $[\exists G]a$
 \end_inset
 
-: esiste una sequenza di stati successivi all'attuale tale che a è vero
- in ogni stato di tale sequenza
+: esiste una sequenza di stati successivi all'attuale tale che 
+\begin_inset Formula $a$
+\end_inset
+
+ è vero in ogni stato di tale sequenza
 \end_layout
 
 \begin_layout Standard
@@ -2063,7 +2183,7 @@ CTL usa i seguenti operatori modali:
 \begin_inset Formula $\forall(a\mathcal{U}b)$
 \end_inset
 
-: in tutti i rami vale 
+: in tutte le sequenze di stati successive all'attuale vale 
 \begin_inset Formula $a\mathcal{U}b$
 \end_inset
 
@@ -2074,7 +2194,7 @@ CTL usa i seguenti operatori modali:
 \begin_inset Formula $\exists(a\mathcal{U}b)$
 \end_inset
 
-: in almeno un ramo vale 
+: in almeno una sequenza di stati successiva all'attuale in cui vale 
 \begin_inset Formula $a\mathcal{U}b$
 \end_inset
 
@@ -2126,21 +2246,21 @@ E infatti si dimostra facilmente che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $[\forall F]a\equiv\neg\exists(\top\mathcal{U\neg}a)$
+\begin_inset Formula $[\forall G]a\equiv\neg\exists(\top\mathcal{U\neg}a)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $[\exists F]a\equiv\neg\forall(\top\mathcal{U\neg}a)$
+\begin_inset Formula $[\exists G]a\equiv\neg\forall(\top\mathcal{U\neg}a)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $[\exists xX]a\equiv\neg[\forall X]\neg a$
+\begin_inset Formula $[\exists X]a\equiv\neg[\forall X]\neg a$
 \end_inset
 
 
@@ -2416,7 +2536,7 @@ Le relazioni che descrivono il comportamento dei programmi composti sono
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $R_{a?}\equiv\{(s,\, s)\,|\,\veraw{\mu}sa\}$
+\begin_inset Formula $R_{a?}\equiv\{(s,\, s)\,|\,\veraw\mu sa\}$
 \end_inset
 
 
@@ -2521,14 +2641,14 @@ E' quindi necessario cambiare pure la semantica della logica:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}S{[\alpha]a}\iff\forall T\subseteq S\,:\,(\alpha,\, T)\in R_{\alpha}\,\wedge\,\forall t\in T\,\veraw{\mu}ta$
+\begin_inset Formula $\veraw{\mu}s{[\alpha]a}\iff\forall T\subseteq S\,:\,(s,\, T)\in R_{\alpha}\,\wedge\,\forall t\in T\,\veraw{\mu}ta$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}S{<\alpha>a}\iff\exists T\subseteq S\,:\,(\alpha,\, T)\in R_{\alpha}\,\wedge\,\forall t\in T\,\veraw{\mu}ta$
+\begin_inset Formula $\veraw{\mu}s{<\alpha>a}\iff\exists T\subseteq S\,:\,(s,\, T)\in R_{\alpha}\,\wedge\,\forall t\in T\,\veraw{\mu}ta$
 \end_inset
 
 

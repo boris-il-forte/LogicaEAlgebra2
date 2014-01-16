@@ -105,6 +105,36 @@
 
 \begin_body
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{savequote}[50mm]
+\end_layout
+
+\begin_layout Plain Layout
+
+---Non so spiegarlo chiaramente, perchè non è chiaro neanche a me---
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+qauthor{Alice} 
+\backslash
+end{savequote}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Logiche Descrittive	
 \end_layout
@@ -125,7 +155,7 @@ Un sistema di rappresentazione della conoscenza (KR) fornisce i mezzi per
 \end_layout
 
 \begin_layout Standard
-In una KB ci sono TBox e ABox
+In una KB ci sono T-Box e A-Box
 \end_layout
 
 \begin_layout Standard
@@ -382,7 +412,7 @@ es.
 \begin_inset Formula $\exists HaFiglio.Femmina$
 \end_inset
 
- cioè l'insieme dei genitori con una figlia femmina (grow up well kid)
+ cioè l'insieme dei genitori con una figlia femmina
 \begin_inset Newline newline
 \end_inset
 
@@ -634,7 +664,7 @@ Sfruttando De Morgan possiamo scrivere:
 \end_layout
 
 \begin_layout Subsection
-Confronto con logica del prim ordine
+Confronto con logica del prim'ordine
 \end_layout
 
 \begin_layout Standard
@@ -671,7 +701,7 @@ R è un ruolo:
 
 \begin_layout Standard
 Notiamo che ci sono due sole variabili libere e il dominio è fissato (controllar
-e) la logica del prim ordine è decibile.
+e) la logica del prim'ordine è decidibile.
 \end_layout
 
 \begin_layout Description
@@ -827,7 +857,7 @@ T-Box definitorio:
 \end_layout
 
 \begin_layout Standard
-La sua interpretazione si estende in modo unico a una interpreatazione di
+La sua interpretazione si estende in modo unico a una interpretazione di
  tutto il t-box (estesa)
 \end_layout
 
@@ -1103,7 +1133,7 @@ per ogni modello di T
 \series bold
 Disgiunzione: 
 \series default
-Due concetti C e D sono disgiunti tispetto a T se 
+Due concetti C e D sono disgiunti rispetto a T se 
 \begin_inset Formula $C^{I}\cap D^{I}=\emptyset$
 \end_inset
 
@@ -1425,7 +1455,7 @@ Per controllare
 \end_layout
 
 \begin_layout Section
-A-Box Reasoning
+A-Box Reasoning	
 \end_layout
 
 \begin_layout Standard
@@ -1501,7 +1531,7 @@ T-Box ed A-Box si possono arricchire con
 
 \begin_layout Standard
 Notiamo che NON vale 
-\begin_inset Formula $\neg D\implies\\$
+\begin_inset Formula $\neg D\implies\neg C$
 \end_inset
 
 

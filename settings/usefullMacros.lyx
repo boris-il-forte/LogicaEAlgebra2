@@ -270,7 +270,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\veraCanAlfa}[1]{\vera{}#1}
+\newcommand{\veraCanAlfa}[1]{\vera{}{#1}}
 \end_inset
 
 
@@ -286,7 +286,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\veraCan}[2]{\vera{}#2}
+\newcommand{\veraCan}[2]{\vera{}{#2}}
 \end_inset
 
 
@@ -414,7 +414,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\alue}{AL\mbox{\mathcal{UE}}}
+\newcommand{\alue}{\mathcal{AL}\mbox{\mathcal{UE}}}
 \end_inset
 
 
@@ -422,7 +422,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\alc}{AL\mbox{\mathcal{\mathcal{C}}}}
+\newcommand{\alc}{\mathcal{AL}\mbox{\mathcal{\mathcal{C}}}}
 \end_inset
 
 	
