@@ -141,7 +141,7 @@ Sia
 \end_inset
 
 -consistente se: 
-\begin_inset Formula $\nonSinW\Gamma\Lambda\bot$
+\begin_inset Formula $\nonSemW{\Gamma}{\Lambda}{\bot}$
 \end_inset
 
 , dove 
@@ -172,14 +172,6 @@ Sia
 \end_inset
 
  
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -187,10 +179,6 @@ Sia
 \series bold
 Proprietà:
 \series default
- 
-\begin_inset Formula $ $
-\end_inset
-
  
 \end_layout
 
@@ -410,11 +398,7 @@ Ritorno
 \begin_inset Formula $a$
 \end_inset
 
- tra le 
-\begin_inset Formula $ $
-\end_inset
-
-and.
+ tra le and.
  
 \end_layout
 
@@ -467,10 +451,6 @@ Andata
 Ritorno
 \series default
 : Se
-\begin_inset Formula $ $
-\end_inset
-
-
 \begin_inset Formula $\Gamma\cup\{\neg a\}$
 \end_inset
 
@@ -519,10 +499,6 @@ Ritorno
 \end_inset
 
  è 
-\begin_inset Formula $ $
-\end_inset
-
-
 \begin_inset Formula $\consist$
 \end_inset
 
@@ -606,10 +582,6 @@ Ritorno
 \end_inset
 
  allora 
-\begin_inset Formula $ $
-\end_inset
-
-
 \begin_inset Formula $\Gamma\cup\{\neg a\}$
 \end_inset
 
@@ -638,10 +610,6 @@ Ritorno
 \end_inset
 
  allora 
-\begin_inset Formula $ $
-\end_inset
-
-
 \begin_inset Formula $\Gamma\cup\{\neg a\}$
 \end_inset
 
@@ -1175,7 +1143,7 @@ Sia
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $M^{\Lambda}\veraCanAlfa{_{\alpha}a}$
+\begin_inset Formula $\veraCanAlfa a$
 \end_inset
 
  se e solo se 
@@ -1191,7 +1159,7 @@ Sia
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $M^{\Lambda}\veraCanAlfa{_{\alpha}a}$
+\begin_inset Formula $\veraCanAlfa a$
 \end_inset
 
 
@@ -1250,7 +1218,7 @@ n=0
 \end_inset
 
  (lettera enunciativa) da cui 
-\begin_inset Formula $M^{\Lambda}\veraCanAlfa{_{\alpha}a}$
+\begin_inset Formula $\veraCanAlfa a$
 \end_inset
 
  se e solo se 
@@ -1318,11 +1286,11 @@ Ipotesi di Induzione
 Caso 1:
 \series default
  
-\begin_inset Formula $M^{\Lambda}\veraCanAlfa{_{\alpha}a}$
+\begin_inset Formula $\veraCanAlfa a$
 \end_inset
 
  se e solo se 
-\begin_inset Formula $M^{\Lambda}\veraCanAlfa{_{\alpha}\neg b}$
+\begin_inset Formula $\veraCanAlfa{\neg b}$
 \end_inset
 
  se e solo se 
@@ -1383,14 +1351,6 @@ Caso 1:
  
 \series default
 se e solo se 
-\series bold
-
-\begin_inset Formula $ $
-\end_inset
-
-
-\series default
-
 \begin_inset Formula $\neg b\in\alpha$
 \end_inset
 
@@ -1409,12 +1369,8 @@ se e solo se
 \series bold
 Caso
 \series default
- 2:
-\begin_inset Formula $ $
-\end_inset
-
- 
-\begin_inset Formula $M^{\Lambda}\veraCanAlfa{_{\alpha}a}$
+ 2: 
+\begin_inset Formula $\veraCanAlfa a$
 \end_inset
 
  se e solo se
@@ -1554,11 +1510,7 @@ da cui per MP con
 Caso 22
 \series default
 : 
-\begin_inset Formula $M^{\Lambda}\veraCanAlfa{_{\alpha}c}$
-\end_inset
-
-
-\begin_inset Newline newline
+\begin_inset Formula $\veraCanAlfa c$
 \end_inset
 
 
@@ -1654,7 +1606,7 @@ Caso 3
 
 \begin_layout Standard
 Ip)
-\begin_inset Formula $M^{\Lambda}\veraCanAlfa{_{\alpha}\boxx b}$
+\begin_inset Formula $\veraCanAlfa{\boxx b}$
 \end_inset
 
 
@@ -1666,10 +1618,6 @@ Ts)
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1678,7 +1626,7 @@ Dall'ipotesi segue che
 \end_inset
 
  si ha: 
-\begin_inset Formula $M^{\Lambda}\veraCanAlfa{_{\beta}b}$
+\begin_inset Formula $\veraw{M^{\Lambda}}{\beta}b$
 \end_inset
 
  (questo per la definizione di 
@@ -1907,7 +1855,7 @@ Ip)
 
 \begin_layout Standard
 TS) 
-\begin_inset Formula $M^{\Lambda}\veraCanAlfa{_{\alpha}\boxx b}$
+\begin_inset Formula $\veraCanAlfa{\boxx b}$
 \end_inset
 
 
@@ -1954,26 +1902,18 @@ Notiamo che
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $ $
-\end_inset
-
-
 \begin_inset Formula $b\in\beta$
 \end_inset
 
  se e solo se 
-\begin_inset Formula $M^{\Lambda}\veraCanAlfa{_{\beta}b}$
+\begin_inset Formula $\veraw{M^{\Lambda}}{\beta}b$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Dato che questo vale 
-\begin_inset Formula $ $
-\end_inset
-
-per ogni 
+Dato che questo vale per ogni 
 \begin_inset Formula $\beta$
 \end_inset
 
@@ -1982,7 +1922,7 @@ per ogni
 \end_inset
 
 , si ha: 
-\begin_inset Formula $M^{\Lambda}\veraCanAlfa{\beta\boxx b}$
+\begin_inset Formula $\veraCanAlfa{\boxx b}$
 \end_inset
 
 

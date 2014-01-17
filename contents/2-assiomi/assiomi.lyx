@@ -123,7 +123,7 @@ Oppure infine se è valida in ogni frame:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\valida{a\iff b}$
+\begin_inset Formula $\models a\iff b$
 \end_inset
 
 

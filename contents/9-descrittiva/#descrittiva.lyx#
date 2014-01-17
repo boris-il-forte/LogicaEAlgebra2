@@ -140,7 +140,11 @@ Logiche Descrittive
 \end_layout
 
 \begin_layout Section
-Introduzione - Logica AL
+Introduzione - Logica 
+\begin_inset Formula $\mathcal{AL}$
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Standard
@@ -186,12 +190,19 @@ ABox es.
 \end_layout
 
 \begin_layout Standard
-La famiglia di logiche descrittive più utilizzata è la famiglia AL (Attributive
- Language).
+La famiglia di logiche descrittive più utilizzata è la famiglia 
+\begin_inset Formula $\mathcal{AL}$
+\end_inset
+
+ (Attributive Language).
 \end_layout
 
 \begin_layout Standard
-Nella logica AL (logica descrittiva tra le più semplici) ci sono:
+Nella logica 
+\begin_inset Formula $\mathcal{AL}$
+\end_inset
+
+ (logica descrittiva tra le più semplici) ci sono:
 \end_layout
 
 \begin_layout Description
@@ -268,7 +279,7 @@ quantificazioni:
 
 \begin_layout Standard
 Un'interpretazione I di una base di conoscenza ́e una coppia 
-\begin_inset Formula $I=<\Delta^{i},·^{I}>$
+\begin_inset Formula $I=<\Delta^{I},\ ·^{I}>$
 \end_inset
 
  composta da un dominio di interpretazione 
@@ -420,24 +431,53 @@ es.
 \end_layout
 
 \begin_layout Subsection
-Varianti di AL
+Varianti di 
+\begin_inset Formula $\mathcal{AL}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Indebolendo la logica AL si ottengono le logiche poco descrittive della
- famiglia FL:
+Indebolendo la logica 
+\begin_inset Formula $\mathcal{AL}$
+\end_inset
+
+ si ottengono le logiche poco descrittive della famiglia 
+\begin_inset Formula $\mathcal{FL}$
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Itemize
-F L- è ottenuta da AL eliminando la negazione atomica •
+\begin_inset Formula $\mathcal{FL}$
+\end_inset
+
+- è ottenuta da 
+\begin_inset Formula $\mathcal{AL}$
+\end_inset
+
+ eliminando la negazione atomica 
 \end_layout
 
 \begin_layout Itemize
-FL0 è ottenuta da FL- eliminando anche la quantificazione esistenziale
+\begin_inset Formula $\mathcal{FL}_{0}$
+\end_inset
+
+ è ottenuta da 
+\begin_inset Formula $\mathcal{FL}$
+\end_inset
+
+- eliminando anche la quantificazione esistenziale
 \end_layout
 
 \begin_layout Standard
-La logica AL può essere estesa aggiungendo alcuni costruttori: 
+La logica 
+\begin_inset Formula $\mathcal{AL}$
+\end_inset
+
+ può essere estesa aggiungendo alcuni costruttori: 
 \end_layout
 
 \begin_layout Itemize
@@ -515,7 +555,7 @@ Equivalenza
 \end_inset
 
 ed 
-\begin_inset Formula $\alc$
+\begin_inset Formula $\mathcal{ALC}$
 \end_inset
 
 
@@ -523,7 +563,7 @@ ed
 
 \begin_layout Standard
 Dimostriamo che 
-\begin_inset Formula $AL\mathcal{UE}\equiv AL\mathcal{C}$
+\begin_inset Formula $\mathcal{AL}\mathcal{UE}\equiv\mathcal{AL}\mathcal{C}$
 \end_inset
 
 
@@ -555,11 +595,11 @@ Ts)
 
 \begin_layout Standard
 Si vuole mostrate che a partire in
-\begin_inset Formula $AL\mathcal{UE}$
+\begin_inset Formula $\mathcal{AL}\mathcal{UE}$
 \end_inset
 
  posso fare tutto ciò che faccio in 
-\begin_inset Formula $AL\mathcal{C}$
+\begin_inset Formula $\mathcal{AL}\mathcal{C}$
 \end_inset
 
 , il che si riduce a mostrare che in 
@@ -572,7 +612,7 @@ posso fare negazioni di concetti qualsiasi.
 \begin_layout Standard
 Questo è immediato per i concetti atomici la cui negazione è per definizione
  in 
-\begin_inset Formula $AL$
+\begin_inset Formula $\mathcal{AL}$
 \end_inset
 
 
@@ -668,8 +708,15 @@ Confronto con logica del prim'ordine
 \end_layout
 
 \begin_layout Standard
-È possibile vedere le logiche AL, ALC, ALN, (deve essere con identità nel
- caso di N)
+È possibile vedere le logiche 
+\begin_inset Formula $\mathcal{AL\mbox{,}ALC\mbox{,}ALN}$
+\end_inset
+
+, (deve essere con identità nel caso di 
+\begin_inset Formula $\mathcal{N}$
+\end_inset
+
+)
 \end_layout
 
 \begin_layout Itemize
@@ -778,6 +825,9 @@ e) la logica del prim'ordine è decidibile.
 \end_inset
 
  
+\end_layout
+
+\begin_layout Description
 \begin_inset Formula $\implies E(x_{1},x_{2})\vee E(x_{1},x_{2})\vee\dots..\underset{1\leq i\leq j\leq n+1}{\bigvee}E(x_{i},x_{j})$
 \end_inset
 
@@ -1192,16 +1242,27 @@ Feauture Logic
 
 \begin_layout Standard
 Le logiche descrittive più semplici appartengono alla famiglia della features
- logics (FL in breve) e sono ottenute indebolendo la più ́famosa logica
- AL inibendo i costruttori di concetto più complessi.
+ logics (
+\begin_inset Formula $\mathcal{FL}$
+\end_inset
+
+ in breve) e sono ottenute indebolendo la più ́famosa logica 
+\begin_inset Formula $\mathcal{AL}$
+\end_inset
+
+ inibendo i costruttori di concetto più complessi.
 \end_layout
 
 \begin_layout Standard
 La più semplice di queste è 
-\begin_inset Formula $FL_{0}$
+\begin_inset Formula $\mathcal{FL_{\mbox{0}}}$
 \end_inset
 
- che si ottiene da AL togliendo 
+ che si ottiene da 
+\begin_inset Formula $\mathcal{AL}$
+\end_inset
+
+ togliendo 
 \begin_inset Formula $\bot$
 \end_inset
 
@@ -1363,7 +1424,7 @@ Varianti
 
 \begin_layout Standard
 Ad 
-\begin_inset Formula $AL_{0}$
+\begin_inset Formula $\mathcal{AL}_{0}$
 \end_inset
 
 può essere aggiunto il concetto 
@@ -1371,7 +1432,7 @@ può essere aggiunto il concetto
 \end_inset
 
 , ottenendo 
-\begin_inset Formula $AL_{\bot}$
+\begin_inset Formula $\mathcal{AL_{\bot}}$
 \end_inset
 
 e la forma normale viene a essere la stessa di prima a cui si aggiunge l'opportu
@@ -1400,7 +1461,7 @@ Ad
 \end_inset
 
  si può aggiungere la negazione di concetti atomici ottenendo 
-\begin_inset Formula $AL_{\neg}$
+\begin_inset Formula $\mathcal{AL}_{\neg}$
 \end_inset
 
 
@@ -1412,11 +1473,11 @@ Notiamo che
 \end_inset
 
 , quindi 
-\begin_inset Formula $AL_{\neg}$
+\begin_inset Formula $\mathcal{AL_{\neg}}$
 \end_inset
 
 contiene strettamente
-\begin_inset Formula $AL_{0}$
+\begin_inset Formula $\mathcal{AL_{\mbox{0}}}$
 \end_inset
 
 	
@@ -1455,7 +1516,7 @@ Per controllare
 \end_layout
 
 \begin_layout Section
-A-Box Reasoning	
+A-Box Reasoning			
 \end_layout
 
 \begin_layout Standard
@@ -1538,8 +1599,840 @@ Notiamo che NON vale
 \end_layout
 
 \begin_layout Standard
-		
+		Tableaux per 
+\begin_inset Formula $\alc$
+\end_inset
+
+
 \end_layout
 
+\begin_layout Section
+Tableaux per 
+\begin_inset Formula $\alc$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $\alc\approx K_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si può notare che 
+\begin_inset Formula $\alc$
+\end_inset
+
+ è equivalente a una logica multimodale con n operatori modali, uno per
+ ogni ruolo usato nelle formule considerate:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C\sqcap D\longrightarrow C\wedge D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C\sqcup D\longrightarrow C\vee D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\neg C\longrightarrow\neg C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\exists R.C\longrightarrow<R>C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall R.C\longrightarrow[R]C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Quindi si potrà usare l'algoritmo dei tableaux per 
+\begin_inset Formula $K_{n}$
+\end_inset
+
+ anche per 
+\begin_inset Formula $\alc$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Forma normale negata
+\end_layout
+
+\begin_layout Standard
+Definiamo la forma nrmale negata di una formula, una formula equivalente
+ a quella di partenza ma in cui le negazioni sono spostate solo sui concetti
+ atomici (possiamo sempre farlo, vista l'equivalenza tra 
+\begin_inset Formula $\alc$
+\end_inset
+
+ e 
+\begin_inset Formula $\alue$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Se C è in forma normale negata scriviamo NNF(C).
+\end_layout
+
+\begin_layout Standard
+se C è in forma normale negata, allora 
+\begin_inset Formula $\neg C$
+\end_inset
+
+ non è in forma normale negata.
+ Definiamo allora 
+\begin_inset Formula $\sim C$
+\end_inset
+
+ come la forma normale negata di 
+\begin_inset Formula $\neg C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Possiamo allora definire:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{D}:\,\begin{cases}
+R_{D} & Insieme\, dei\, nomi\, ruolo\\
+clos(D) & Insieme\, di\, tutte\, le\, sottoformule\, in\, NNF
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $clos(D):\,\begin{cases}
+D\in clos(D)\\
+sottoformule(D)\in clos(D)\\
+\sim D\in clos(D)
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Definizione di Tableaux
+\end_layout
+
+\begin_layout Standard
+Un tableaux è definito come:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T=<S,\, L,\,\mathcal{E}>$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dove:
+\end_layout
+
+\begin_layout Standard
+S è un insieme di individui
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L:\, S\longrightarrow2^{clos(D)}$
+\end_inset
+
+ funzione di labelling
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathcal{E}:\, R_{D}\longrightarrow2^{S\times S}$
+\end_inset
+
+ funzione di labelling degli archi
+\end_layout
+
+\begin_layout Standard
+Un tableaux si dice completo se rispetta le seguenti proprietà:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $C\in L(s)\implies\sim C\notin L(s)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $C_{1}\sqcap C_{2}\in L(s)\implies C_{1}\in L(s),\, C_{2}\in L(s)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $C_{1}\sqcup C_{2}\in L(s)\implies C_{1}\in L(s)\,\vee\, C_{2}\in L(s)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\forall R.C\in L(s),\,<s,\, t>\in\mathcal{E}(R)\implies C\in L(t)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\exists R.C\in L(s)\implies\exists t\,|\,<s,\, t>\in\mathcal{E}(R)\,\wedge\, C\in L(t)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Il tableaux può essere facilmente interpretato come modello: chiamiamo interpret
+azione canonica del tableaux la seguente interpretazione:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C^{I}=\{a\in S\,|\, C\in L(a)\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R^{I}=\mathcal{E}(R)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Algoritmo di tableaux per 
+\begin_inset Formula $\alc$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Supponendo di dover verificare la soddisfacibilità del concetto C, sia lo
+ stato iniziale del tableaux:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{0}=\{S_{0},\, L_{0},\,\mathcal{E}_{0}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+con:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{0}=\{x_{0}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L_{0}(x_{0})=\{C\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathcal{E}_{0}=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si applicano le seguenti regole:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\longrightarrow_{\sqcap}$
+\end_inset
+
+: se 
+\begin_inset Formula $(C_{1}\sqcap C_{2})\in L(x)$
+\end_inset
+
+, 
+\begin_inset Formula $\{C_{1},\, C_{2}\}\not\subseteq L(x)$
+\end_inset
+
+ allora
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $L(x)\leftarrow L(x)\cup C_{1},\, C_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\longrightarrow_{\sqcup}$
+\end_inset
+
+: se 
+\begin_inset Formula $(C_{1}\sqcup C_{2})\in L(x)$
+\end_inset
+
+, 
+\begin_inset Formula $\{C_{1},\, C_{2}\}\cap L(x)=\emptyset$
+\end_inset
+
+ allora 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $L(x)\leftarrow L(x)\cup C$
+\end_inset
+
+ con 
+\begin_inset Formula $C=C_{1}\,\vee\, C_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\longrightarrow_{\exists}$
+\end_inset
+
+: se 
+\begin_inset Formula $\exists R.C\in L(x)$
+\end_inset
+
+, e non esiste y R-succ di x tale che 
+\begin_inset Formula $c\in L(y)$
+\end_inset
+
+ allora 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $L(y)\leftarrow C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S\leftarrow S\cup\{y\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathcal{E}(R)\leftarrow\mathcal{E}(R)\cup<x,\, y>$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\longrightarrow_{\forall}$
+\end_inset
+
+: se 
+\begin_inset Formula $\forall R.C\in L(x)$
+\end_inset
+
+, e y R-succ di x tale che 
+\begin_inset Formula $c\notin L(y)$
+\end_inset
+
+ allora
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $L(y)\leftarrow L(y)\cup\{c\}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+L'algoritmo termina se:
+\end_layout
+
+\begin_layout Enumerate
+Il tableaux è completo, ossia non posso più applicare nessuna regola
+\end_layout
+
+\begin_layout Enumerate
+Clash, ossia C e 
+\begin_inset Formula $\sim C$
+\end_inset
+
+ sono nella marcatura dello stesso nodo.
+ un tableaux che presenta un clash viene detto tableaux chiuso.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\alc$
+\end_inset
+
+gode di due importanti proprietà:
+\end_layout
+
+\begin_layout Enumerate
+Modello finito
+\end_layout
+
+\begin_layout Enumerate
+Modello ad albero
+\end_layout
+
+\begin_layout Standard
+Ogni formula soddisfacibile ha almeno un modello finito ad albero, quindi
+ l'algoritmo di Tableux può limitarsi a cercare questa classe di modelli.
+\end_layout
+
+\begin_layout Section
+Logica 
+\begin_inset Formula $\alc_{R^{+}}$
+\end_inset
+
+, o logica S
+\end_layout
+
+\begin_layout Standard
+la logica 
+\begin_inset Formula $\alc_{R^{+}}$
+\end_inset
+
+ non è altro che la logica 
+\begin_inset Formula $\alc$
+\end_inset
+
+ con la possibilità di considerare ruoli transitivi.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{R}^{+}\subseteq\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I ruoli in 
+\begin_inset Formula $\mathbb{R}^{+}$
+\end_inset
+
+ godono della proprità transitiva, ossia:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $<x,\, y>\in R^{I}\,\wedge\,<y,\, z>\in R^{I}\,\wedge\, R\in\mathbb{R}^{+}\implies<x,\, z>\in R^{I}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Per considerare la proprietà transitiva nel nostro tableaux, dobbiamo modificare
+ l'algoritmo aggiungendo la regola:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\longrightarrow_{\forall^{+}}$
+\end_inset
+
+: se 
+\begin_inset Formula $\forall R.C\in L(x)$
+\end_inset
+
+, 
+\begin_inset Formula $R\in\mathbb{R}^{+}$
+\end_inset
+
+, e y R-succ di x tale che 
+\begin_inset Formula $\forall R.C\notin L(y)$
+\end_inset
+
+ allora
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $L(y)\leftarrow L(y)\cup\{\forall R.C\}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Tuttavia, aggiungere la regola non basta, infatti considerando la seguente
+ formula:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D\equiv C\sqcap\exists R.C\sqcap\forall R.\exists R.C$
+\end_inset
+
+ con 
+\begin_inset Formula $R\in\mathbb{R}^{+}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+<<MANCA TABLEAUX>>
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L(y)\subseteq L(x)\implies x\, blocca\, y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Infatti, tutto quello che posso generare per cercare un clash in y, lo posso
+ generare in x, inutile quindi proseguire lungo una catena infinita di geneazion
+e di nodi identici, e quindi non devo generare nemmeno z.
+\end_layout
+
+\begin_layout Standard
+Quello che ottengo si chiama completion tree, e non tableaux.
+ Per ricavare il tableaux ci sono due vie: cercando un modello aciclico,
+ e allora si otterrà un modello infinito ad albero, oppure si può ottenere
+ un modello ciclico, collasando i nodi che vengono bloccati in un unico
+ mondo col loro bloccante.
+\end_layout
+
+\begin_layout Section
+Logica SI
+\end_layout
+
+\begin_layout Subsection
+Definizioni di base
+\end_layout
+
+\begin_layout Standard
+La logica SI è la logica S con l'aggiunta dei ruoli inversi.
+\end_layout
+
+\begin_layout Standard
+Diciamo che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $<x,\, y>\in(R^{-})^{I}\iff<y,\, x>\in R^{I}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e quindi l'insieme dei ruoli in SI sarà:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{R}_{SI}=\mathbb{R}\cup\{R^{-}\,|\, R\in\mathbb{R}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Deiniamo per comodità la seguente funzione:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $inv:\,\mathbb{R}_{SI}\longrightarrow\mathbb{R}_{SI}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $inv(R)=\begin{cases}
+R^{-} & se\, R\in\mathbb{R}\\
+S & se\, R=S^{-},\, S\in\mathbb{R}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Inoltre definiamo il predicato trans come:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $trans(R)\iff\begin{cases}
+R\in\mathbb{R}^{+}\\
+R=S^{-},\, S\in\mathbb{R}^{+}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Diciamo infine che y è R-prox di x se e solo se vale almeno una delle seguenti:
+\end_layout
+
+\begin_layout Standard
+y è R-successore di x
+\end_layout
+
+\begin_layout Standard
+x è inv(R)-successore di y
+\end_layout
+
+\begin_layout Subsection
+Tableaux e bloccaggio
+\end_layout
+
+\begin_layout Standard
+Consideriamo i seguenti esempi, che costringono l'algo
+\end_layout
+
+\begin_layout Standard
+<<MANCA TABLEAUX BLOCCAGGIO =>>
+\end_layout
+
+\begin_layout Standard
+<<MANCA TABLEAUX bloccaggio diretto, indiretto e dinamico>>
+\end_layout
+
+\begin_layout Standard
+Si possono notare due cose dall'esempio precedente, ossia, il blocco è dinamico,
+ i nodi si possono bloccare e sbloccare, ed esistono due tipi di bloccaggio:
+\end_layout
+
+\begin_layout Enumerate
+Bloccaggio indiretto: un nodo è bloccato indirettamente se un suo antenato
+ è bloccato
+\end_layout
+
+\begin_layout Enumerate
+Bloccaggio diretto: un antenato del nodo ha la stessa marcatura, e il nodo
+ non è bloccato indirettamente
+\end_layout
+
+\begin_layout Standard
+Il bloccaggio stretto si applica ai nodi bloccati indirettamente.
+\end_layout
+
+\begin_layout Subsection
+Algoritmo di Tableaux
+\end_layout
+
+\begin_layout Standard
+L'algoritmo di tableaux va quindi così ridefinito:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L(x)\subseteq clos(D)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L(<x,\, y>)\in\mathbb{R}_{SI}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e le regole verranno modificate come segue:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\longrightarrow_{\sqcap}$
+\end_inset
+
+: se 
+\begin_inset Formula $(C_{1}\sqcap C_{2})\in L(x)$
+\end_inset
+
+, 
+\begin_inset Formula $\{C_{1},\, C_{2}\}\not\subseteq L(x)$
+\end_inset
+
+ e il nodo x non è bloccato indirettamente allora
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L(x)\leftarrow L(x)\cup C_{1},\, C_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\longrightarrow_{\sqcup}$
+\end_inset
+
+: se 
+\begin_inset Formula $(C_{1}\sqcup C_{2})\in L(x)$
+\end_inset
+
+, 
+\begin_inset Formula $\{C_{1},\, C_{2}\}\cap L(x)=\emptyset$
+\end_inset
+
+ e il nodo x non è bloccato indirettamente allora 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $L(x)\leftarrow L(x)\cup C$
+\end_inset
+
+ con 
+\begin_inset Formula $C=C_{1}\,\vee\, C_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\longrightarrow_{\exists}$
+\end_inset
+
+: se 
+\begin_inset Formula $\exists R.C\in L(x)$
+\end_inset
+
+, e non esiste y R-prox di x tale che 
+\begin_inset Formula $c\in L(y)$
+\end_inset
+
+ e il nodo x non è bloccato, ne direttamente ne indirettamente, allora 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $L(y)\leftarrow C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S\leftarrow S\cup\{y\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathcal{E}(R)\leftarrow\mathcal{E}(R)\cup<x,\, y>$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\longrightarrow_{\forall}$
+\end_inset
+
+: se 
+\begin_inset Formula $\forall R.C\in L(x)$
+\end_inset
+
+, e y R-prox di x tale che 
+\begin_inset Formula $c\notin L(y)$
+\end_inset
+
+ e il nodo x non è bloccato indirettamente allora
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $L(y)\leftarrow L(y)\cup\{C\}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\longrightarrow_{\forall^{+}}$
+\end_inset
+
+: se 
+\begin_inset Formula $\forall R.C\in L(x)$
+\end_inset
+
+, 
+\begin_inset Formula $trans(R)$
+\end_inset
+
+, e y R-prox di x tale che 
+\begin_inset Formula $\forall R.C\notin L(y)$
+\end_inset
+
+ e x non è bloccato indirettamente allora
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $L(y)\leftarrow L(y)\cup\{\forall R.C\}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document

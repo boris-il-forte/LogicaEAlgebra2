@@ -78,14 +78,6 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\valida}[1]{\models#1}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
 \newcommand{\nonvera}[2]{#1\nvDash#2}
 \end_inset
 
@@ -118,7 +110,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\nonSinW}[3]{#1\nvdash_{#2}#3}
+\newcommand{\nonSemW}[3]{#1\nvdash_{#2}#3}
 \end_inset
 
 
@@ -158,7 +150,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\sinGen}[2]{#1\vdash#2}
+\newcommand{\semGen}[2]{#1\vdash#2}
 \end_inset
 
 
@@ -270,7 +262,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\veraCanAlfa}[1]{\vera{}{#1}}
+\newcommand{\veraCanAlfa}[1]{\vera{M^{\Lambda}}{_{\alpha}}#1}
 \end_inset
 
 
@@ -278,7 +270,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\veraCA}{\vera{}a}
+\newcommand{\veraCA}{\vera{M^{\Lambda}}{_{\alpha}}a}
 \end_inset
 
 
@@ -286,7 +278,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\veraCan}[2]{\vera{}{#2}}
+\newcommand{\veraCan}[2]{\vera{M^{\Lambda}}{_{#1}}#2}
 \end_inset
 
 
@@ -414,7 +406,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\alue}{\mathcal{AL}\mbox{\mathcal{UE}}}
+\newcommand{\alue}{AL\mbox{\mathcal{UE}}}
 \end_inset
 
 
@@ -422,7 +414,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\alc}{\mathcal{AL}\mbox{\mathcal{\mathcal{C}}}}
+\newcommand{\alc}{AL\mbox{\mathcal{\mathcal{C}}}}
 \end_inset
 
 	
