@@ -2841,12 +2841,622 @@ Indecidibilità di
 
 \end_layout
 
+\begin_layout Standard
+La logica 
+\begin_inset Formula $SHIN^{+}$
+\end_inset
+
+ è la logica SHIN con la possibilità di usare liberamente i vincoli di cardinali
+tà anche per i ruoli transitivi.
+ Si può dimostrare che la logica 
+\begin_inset Formula $SHIN^{+}$
+\end_inset
+
+ è indecidibile, e per mostrarlo si mostra che un problema indecidibile
+ può essere rappresentato in essa.
+\end_layout
+
+\begin_layout Standard
+Consideriamo il problema del domino:
+\end_layout
+
+\begin_layout Standard
+<<MANCA DISEGNO QUADRANTE>>
+\end_layout
+
+\begin_layout Standard
+Ho un quadrante da ricoprire con delle tessere, rispettando un insieme di
+ regole che mi vincolano la vicinanza tra le tessere.
+ Esistono vincoli orizzontali e verticali.
+\end_layout
+
+\begin_layout Standard
+Dati:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D=\{D_{1},\ldots D_{n}\}$
+\end_inset
+
+ insieme di n tessere
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $H,V\subseteq D\times D$
+\end_inset
+
+ insieme di regole
+\end_layout
+
+\begin_layout Standard
+Il problema di decidere se esiste una copertura che rispetta le regole e
+ che copra l'intero quadrante è indecidibile, o più formalmente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t:\,\mathbb{N}^{2}\longrightarrow D\,|\,<t(m,\, n),\, t(m+n,\, n)>\in H\wedge<t(m,\, n),\, t(m,\, n+1)>\in V$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+il problema di determinare t è indecidibile.
+\end_layout
+
+\begin_layout Standard
+Per modellare lo spazio degli stati usiamo il seguente sistema:
+\end_layout
+
+\begin_layout Standard
+<<MANCA DISEGNO DI BASE>>
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\sqsubseteq\neg B\sqcap\neg C\sqcap\neg D\sqcap\exists X_{1}.B\sqcap\exists Y_{1}.C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B\sqsubseteq\neg A\sqcap\neg C\sqcap\neg D\sqcap\exists X_{2}.A\sqcap\exists Y_{1}.D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C\sqsubseteq\neg A\sqcap\neg B\sqcap\neg D\sqcap\exists X_{1}.D\sqcap\exists Y_{2}.A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D\sqsubseteq\neg A\sqcap\neg B\sqcap\neg C\sqcap\exists X_{2}.C\sqcap\exists Y_{2}.B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ma questo modello non basta, dobbiamo considerare che il mondo raggiunto
+ applicando prima 
+\begin_inset Formula $X_{1}$
+\end_inset
+
+ e poi 
+\begin_inset Formula $Y_{1}$
+\end_inset
+
+ è lo stesso raggiunto applicando prima 
+\begin_inset Formula $Y_{1}$
+\end_inset
+
+ e poi 
+\begin_inset Formula $X_{1}$
+\end_inset
+
+ .
+ Per farlo definiamo le relazioni 
+\begin_inset Formula $S_{ij}\in\mathbb{R}^{+}$
+\end_inset
+
+ definite così:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S_{11}\sqsubseteq X_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $S_{11}\sqsubseteq Y_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S_{12}\sqsubseteq X_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $S_{12}\sqsubseteq Y_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S_{21}\sqsubseteq X_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $S_{21}\sqsubseteq Y_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S_{22}\sqsubseteq X_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $S_{22}\sqsubseteq Y_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Allora avremo:
+\end_layout
+
+\begin_layout Standard
+<<MANCA DISEGNO GRAFO>>
+\end_layout
+
+\begin_layout Standard
+Per fare collassare le coppie di strati ridondanti, basta aggiungere a ogni
+ concetto del modello un vincolo di cardinalità sulle 
+\begin_inset Formula $S_{ij}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\sqsubseteq\neg B\sqcap\neg C\sqcap\neg D\sqcap\exists X_{1}.B\sqcap\exists Y_{1}.C\sqcap\leq3S_{11}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B\sqsubseteq\neg A\sqcap\neg C\sqcap\neg D\sqcap\exists X_{2}.A\sqcap\exists Y_{1}.D\sqcap\leq3S_{21}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C\sqsubseteq\neg A\sqcap\neg B\sqcap\neg D\sqcap\exists X_{1}.D\sqcap\exists Y_{2}.A\sqcap\leq3S_{12}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D\sqsubseteq\neg A\sqcap\neg B\sqcap\neg C\sqcap\exists X_{2}.C\sqcap\exists Y_{2}.B\sqcap\leq3S_{22}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ora si pososno modellizzare le tessere con dei concetti:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{C}=\{C_{D_{1}},\ldots,\, C_{D_{n}}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Imponiamo ora la copertura totale del quadrante:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\sqcup B\sqcup C\sqcup D\sqsubseteq\underset{i}{\bigsqcup}C_{D_{i}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Infine imponiamo la presenza di una unica tessera per casella tramite le
+ formule:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C_{D_{i}}\sqsubseteq\leq1C_{D_{j}}$
+\end_inset
+
+ con 
+\begin_inset Formula $1\leq i<j\leq n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Per rappresentare i vincoli H e V prima di tutto definiamo i sopraruoli
+ X e Y:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X\sqsubseteq X_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $X\sqsubseteq Y_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Y\sqsubseteq Y_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $Y\sqsubseteq Y_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dunque esprimiamo i vincoli con la seguente formula:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C_{D_{i}}\sqsubseteq\forall X.\left(\underset{<D_{i},\, D_{j}>\in H}{\bigsqcup}C_{D_{j}}\right)\sqcap\forall Y.\left(\underset{<D_{i},\, D_{j}>\in V}{\bigsqcup}C_{D_{j}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ora basta considerare il test di soddisfacibilità seguente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera T{A\sqsubseteq\bot}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ossia, chiedersi se il concetto A è soddisfacibile (e come conseguenza la
+ copertura)
+\end_layout
+
+\begin_layout Standard
+Ma, poichè il problema del domino non è decidibile, e la logica 
+\begin_inset Formula $SHIN^{+}$
+\end_inset
+
+ permette di modellizzare un problema indecidibile, allora anche 
+\begin_inset Formula $SHIN^{+}$
+\end_inset
+
+è una logica non decidibile.
+\end_layout
+
+\begin_layout Standard
+Cio che causa l'indecidibilità della logica è l'applicazione di un vincolo
+ di cardinalità al ruolo transitivo.
+\end_layout
+
+\begin_layout Standard
+I vincoli di cardinalità possono allora essere applicati solamente ai ruoli
+ semplici.
+\end_layout
+
+\begin_layout Standard
+Si definisce Rolo semplice un ruolo che non è transitivo e non ha sottoruoli
+ transitivi.
+\end_layout
+
 \begin_layout Subsection
 Modello finito
 \end_layout
 
+\begin_layout Standard
+La logica SHIF e tutte le logiche più espressive non hanno la proprietà
+ di modello finito, infatti si può dimostrare considerando la seguente formula:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\neg A\sqcap\exists S.A\sqcap\forall R.(\exists S.A\sqcap\leq1S^{-})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R\sqsubseteq S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R\in\mathcal{R}^{+}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+<<MANCA TABLEAUX>>
+\end_layout
+
+\begin_layout Standard
+Non posso identificare z con y: infatti identificando z con y non solo avrei
+ x come 
+\begin_inset Formula $S^{-}$
+\end_inset
+
+-prox per y, ma anche se stesso a causa dell'autoanello, ma poichè posso
+ avere un solo s-prox a causa del concetto 
+\begin_inset Formula $\leq1S^{-}$
+\end_inset
+
+, non posso avere un modello finito (ma una infinità numerabile di mondi
+ in catena è un valido modello per il sistema)
+\end_layout
+
 \begin_layout Subsection
 Tableaux per SHIQ
+\end_layout
+
+\begin_layout Standard
+Definiamo i tableaux per la logica SHIQ come:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T=\{S,\, L,\,\neq\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dove S è l'insieme di mondi, L è la funzione di etichettatura dei mondi,
+ e 
+\begin_inset Formula $\neq$
+\end_inset
+
+ è la funzione che dice quali mondi sono necessariamente distinti.
+\end_layout
+
+\begin_layout Standard
+Inizializiamo il tableaux con:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{0}=\{x\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L_{0}(x)=\{C\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\neq_{0}=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dobbiamo aggiungere tre regole nuove all'algoritmo di tableaux per SHI:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\longrightarrow_{\geq}$
+\end_inset
+
+: se 
+\begin_inset Formula $\geq nR.C\in L(x)$
+\end_inset
+
+, il nodo x non è bloccato ne direttamente ne indirettamente, e non ci sono
+ n R-prox di x, 
+\begin_inset Formula $y_{1},\ldots,\, y_{n}$
+\end_inset
+
+ tali che 
+\begin_inset Formula $C\in L(y_{i})$
+\end_inset
+
+ e 
+\begin_inset Formula $\neq(y_{i},\, y_{j})\,\forall1\leq i<j\leq n$
+\end_inset
+
+, allora 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $S\leftarrow S\cup\{y_{1},\ldots,\, y_{n}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L(x,\, y_{i})\leftarrow\{R\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L(y_{i})=\{C\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\neq\leftarrow\neq\cup\{<y_{i},\, y_{j}>,\,\forall1\leq i<j\leq n,\,\forall1\leq j<i\leq n\}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\longrightarrow_{\leq}$
+\end_inset
+
+: se 
+\begin_inset Formula $\leq nR.C\in L(x)$
+\end_inset
+
+, il nodo x non è bloccato indirettamente e esistono n+1 R-prox di x, 
+\begin_inset Formula $y_{1},\ldots,\, y_{n}$
+\end_inset
+
+ tali che 
+\begin_inset Formula $C\in L(y_{i})$
+\end_inset
+
+ e esistono y, z R-prox di xtali che 
+\begin_inset Formula $C\in L(y)$
+\end_inset
+
+ e 
+\begin_inset Formula $C\in L(z)$
+\end_inset
+
+ e 
+\begin_inset Formula $<y,\, z>\notin\neq$
+\end_inset
+
+ e y non è antenato di x allora
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $L(z)\leftarrow L(z)\cup L(y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+se z è antenato di x allora: 
+\begin_inset Formula $L(<z,\, x>)\leftarrow L(<z,\, x>)\cup inv(L(<x,\, y>))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+se z è discendente di x allora: 
+\begin_inset Formula $L(<z,\, x>)\leftarrow L(<z,\, x>)\cup L(<x,\, y>)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L(<z,\, x>)=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+aggiungi 
+\begin_inset Formula $w\neq z$
+\end_inset
+
+ per ogni 
+\begin_inset Formula $w\neq y$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\longrightarrow_{R?}$
+\end_inset
+
+: se 
+\begin_inset Formula $\leq nR.C\in L(x)$
+\end_inset
+
+, x non è bloccato indirettamente e y R-prox di x con 
+\begin_inset Formula $\{C,\,\neg C\}\cap L(x)=\emptyset$
+\end_inset
+
+ allora
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $L(y)\leftarrow L(y)\cup\{C\}$
+\end_inset
+
+ con 
+\begin_inset Formula $C\in\{C,\,\neg C\}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Quest'ultima regola, detta regola della scelta, per n molto grande genera
+ un'esposione di stati, tuttavia è necessaria per gestire casi del tipo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D\equiv\geq3R.A\sqcap\leq1R.B\sqcap1.R\neg B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+<<MANCA TABLEAUX>>
+\end_layout
+
+\begin_layout Standard
+Il concetto è insoddisfacibile, ma senza la regola della scelta semplicemente
+ non si assegnerebbe il concetto B a uno dei tre nodi, cosa che non può
+ essere ragionevole in nessun modello (o vale B oppure vale 
+\begin_inset Formula $\neg B$
+\end_inset
+
+).
 \end_layout
 
 \end_body
