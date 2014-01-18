@@ -2460,5 +2460,394 @@ e le regole verranno modificate come segue:
 \end_layout
 
 \end_deeper
+\begin_layout Section
+Logica SHI
+\end_layout
+
+\begin_layout Subsection
+Definizione della logica SHI
+\end_layout
+
+\begin_layout Standard
+Lo logica SHI include, oltre a tutti i costrutti in SI, anche I Role Inclusion
+ Axioms (RIA):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R\sqsubseteq S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R\equiv S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+l'ultimo costrutto è equivalente a:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R\sqsubseteq S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S\sqsubseteq R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Chiamiamo gli insiemi:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $RIA_{S}=\{R\sqsubseteq S_{i}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $RIA_{S^{+}}=RIA_{S}\cup\{inv(R)\sqsubseteq inv(S)\,|\, R\sqsubseteq S\in RIA_{S},\,\sqsubseteq_{*}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Algoritmo di Tableaux per SHI
+\end_layout
+
+\begin_layout Standard
+Per estendere l'algoritmo di tableaux dobbiamo attuare le seguenti modifiche:
+\end_layout
+
+\begin_layout Enumerate
+y è S-prox di X se e solo se 
+\begin_inset Formula $R\sqsubseteq S\in RIA_{S^{+}}$
+\end_inset
+
+ e y è R-succ di x oppure xinv(R)-succ di y.
+\end_layout
+
+\begin_layout Enumerate
+modifico la regola 
+\begin_inset Formula $\forall_{+}$
+\end_inset
+
+, esistono due modi equivalenti per estenderla nel caso di sottoruoli di
+ ruoli transitivi:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\longrightarrow_{\forall^{+'}}$
+\end_inset
+
+: se 
+\begin_inset Formula $\forall S.C\in L(x)$
+\end_inset
+
+, 
+\begin_inset Formula $R\sqsubseteq S\in RIA_{S^{+}}$
+\end_inset
+
+ , 
+\begin_inset Formula $trans(R)$
+\end_inset
+
+ e y R-prox di x tale che 
+\begin_inset Formula $\forall R.C\notin L(y)$
+\end_inset
+
+, e x non è bloccato indirettamente allora
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $L(y)\leftarrow L(y)\cup\{\forall R.C\}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\longrightarrow_{\forall^{+''}}$
+\end_inset
+
+: se 
+\begin_inset Formula $\forall S.C\in L(x)$
+\end_inset
+
+, 
+\begin_inset Formula $R\sqsubseteq S\in RIA_{S^{+}}$
+\end_inset
+
+ , 
+\begin_inset Formula $trans(R)$
+\end_inset
+
+ e x non è bloccato indirettamente allora
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $L(x)\leftarrow L(x)\cup\{\forall R.C\}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Internalizzazzione
+\end_layout
+
+\begin_layout Standard
+Con SHI abbiamo abbastanza potere espressivo da poter esprimere nella nostra
+ logica la soddisfacibilità della knowledge base direttamente nell'algoritmo
+ di tableaux.
+ Per dimostrare che un concetto c è insoddisfacibile:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vera T{C\sqsubseteq\bot}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Costruiamo un concetto C' tale che C è soddisfacibile nel T-box T se e solo
+ se:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\models C'\sqsubseteq\bot$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Per farlo supponiamo che il T-box sia:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T=\{C_{1}\sqsubseteq D_{1},\,\ldots,\, C_{n}\sqsubseteq D_{n}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+allora possiamo definire il concetto:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C_{T}=\underset{C_{i}\sqsubseteq D_{i}\in T}{\bigsqcap}(\neg C_{1}\sqcup\, D_{1})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e definiamo quindi:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C'\equiv C\sqcap C_{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tuttavia non è sufficiente, perchè è necessario che il concetto 
+\begin_inset Formula $C_{T}$
+\end_inset
+
+ sia propragato in tutti i nodi della knowledge base, per ottenere il risultato
+ desiderato, costruisco un ruolo U che sia una approssimazione del ruolo
+ universale, ovvero che sia un sopraruolo di tutti i ruoli usati nella T-Box.
+\end_layout
+
+\begin_layout Standard
+Il concetto C' diventa:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C'\equiv C\sqcap C_{T}\sqcap\forall U.C_{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U\in R^{+}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Logiche con vincoli di cardinalità
+\end_layout
+
+\begin_layout Subsection
+Logiche SHIF, SHIN, e SHIQ
+\end_layout
+
+\begin_layout Standard
+La logica SHI può essere estesa aggiungendo i vincoli di cardinalità, aggiungend
+o gli schemi F, N, Q, in ordine di potenza espressiva:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\leq1R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\{x\in\Delta^{I}\,|\,\#\{y\,|\,<x,\, y>\in R^{I}\}\leq1\}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+N
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\leq nR$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\{x\in\Delta^{I}\,|\,\#\{y\,|\,<x,\, y>\in R^{I}\}\leq n\}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Q
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\leq nR.C$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\{x\in\Delta^{I}\,|\,\#\{y\,|\,<x,\, y>\in R^{I}\wedge y\in C^{I}\}\leq n\}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Indecidibilità di 
+\begin_inset Formula $SHIN^{+}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Modello finito
+\end_layout
+
+\begin_layout Subsection
+Tableaux per SHIQ
+\end_layout
+
 \end_body
 \end_document

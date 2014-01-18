@@ -318,7 +318,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\andoria}[1]{a_{1}\wedge...\wedge a#1}
+\renewcommand{\andoria}[1]{a_{1}\wedge...\wedge a#1}
 \end_inset
 
 
@@ -326,7 +326,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\andbox}[1]{\boa_{1}\wedge\dots\wedge\boxx a#1}
+\renewcommand{\andbox}[1]{\boa_{1}\wedge\dots\wedge\boxx a#1}
 \end_inset
 
 
@@ -334,7 +334,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\neci}[2]{[#1]#2}
+\renewcommand{\neci}[2]{[#1]#2}
 \end_inset
 
 
@@ -342,7 +342,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\posi}[2]{<#1>#2}
+\renewcommand{\posi}[2]{<#1>#2}
 \end_inset
 
 
@@ -350,7 +350,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\necf}[1]{[F]#1}
+\renewcommand{\necf}[1]{[F]#1}
 \end_inset
 
 
@@ -358,7 +358,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\posf}[1]{<F>#1}
+\renewcommand{\posf}[1]{<F>#1}
 \end_inset
 
 
@@ -366,7 +366,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\necp}[1]{[P]#1}
+\renewcommand{\necp}[1]{[P]#1}
 \end_inset
 
 
@@ -374,7 +374,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\posp}[1]{<P>#1}
+\renewcommand{\posp}[1]{<P>#1}
 \end_inset
 
 
@@ -382,7 +382,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\verins}[1]{\Vert#1\Vert^{\mu}}
+\renewcommand{\verins}[1]{\Vert#1\Vert^{\mu}}
 \end_inset
 
 
@@ -390,7 +390,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\verinsx}[2]{\Vert#1\Vert^{\mu^{#2}}}
+\renewcommand{\verinsx}[2]{\Vert#1\Vert^{\mu^{#2}}}
 \end_inset
 
 
@@ -398,7 +398,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\cardinal}[1]{\Vert#1\Vert}
+\renewcommand{\cardinal}[1]{\Vert#1\Vert}
 \end_inset
 
 
@@ -406,7 +406,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\alue}{AL\mbox{\mathcal{UE}}}
+\renewcommand{\alue}{AL\mbox{\mathcal{UE}}}
 \end_inset
 
 
@@ -414,7 +414,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\alc}{AL\mbox{\mathcal{\mathcal{C}}}}
+\renewcommand{\alc}{AL\mbox{\mathcal{\mathcal{C}}}}
 \end_inset
 
 	
@@ -422,7 +422,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\globally}[1]{\mathcal{G}#1}
+\renewcommand{\globally}[1]{\mathcal{G}#1}
 \end_inset
 
 
@@ -430,7 +430,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\eventually}[1]{\mathcal{F}#1}
+\renewcommand{\eventually}[1]{\mathcal{F}#1}
 \end_inset
 
 
@@ -438,7 +438,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\next}[1]{\mathcal{X}#1}
+\renewcommand{\next}[1]{\mathcal{X}#1}
 \end_inset
 
 
@@ -446,7 +446,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\until}[2]{#1\mathcal{U}#2}
+\renewcommand{\until}[2]{#1\mathcal{U}#2}
 \end_inset
 
 
@@ -454,7 +454,45 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\release}[2]{#1\mathcal{R}#2}
+\renewcommand{\release}[2]{#1\mathcal{R}#2}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+makeatletter 
+\backslash
+providecommand{
+\backslash
+bigsqcap}{%   
+\backslash
+mathop{%     
+\backslash
+mathpalette
+\backslash
+@updown
+\backslash
+bigsqcup   }% } 
+\backslash
+newcommand*{
+\backslash
+@updown}[2]{%   
+\backslash
+rotatebox[origin=c]{180}{$
+\backslash
+m@th#1#2$}% } 
+\backslash
+makeatother
+\end_layout
+
 \end_inset
 
 
