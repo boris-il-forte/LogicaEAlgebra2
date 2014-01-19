@@ -406,7 +406,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\alue}{AL\mbox{\mathcal{UE}}}
+\newcommand{\alue}{\mbox{\mathcal{ALUE}}}
 \end_inset
 
 

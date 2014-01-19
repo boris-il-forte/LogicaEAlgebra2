@@ -1665,11 +1665,11 @@ Quindi si potrà usare l'algoritmo dei tableaux per
 \end_layout
 
 \begin_layout Subsection
-Forma normale simata
+Forma normale negata
 \end_layout
 
 \begin_layout Standard
-Definiamo la forma nrmale simata di una formula, una formula equivalente
+Definiamo la forma normale negata di una formula, una formula equivalente
  a quella di partenza ma in cui le simazioni sono spostate solo sui concetti
  atomici (possiamo sempre farlo, vista l'equivalenza tra 
 \begin_inset Formula $\alc$
@@ -1691,12 +1691,12 @@ se C è in forma normale simata, allora
 \begin_inset Formula $\neg C$
 \end_inset
 
- non è in forma normale simata.
+ non è in forma normale negata.
  Definiamo allora 
 \begin_inset Formula $\sim C$
 \end_inset
 
- come la forma normale simata di 
+ come la forma normale negata di 
 \begin_inset Formula $\neg C$
 \end_inset
 
@@ -2725,7 +2725,7 @@ draw (47.4,-22.3) node {$y$};
 \backslash
 draw [black] (47.4,-37.2) circle (3); 
 \backslash
-draw (47.4,-37.2) node {$z$};
+draw (47.4,-37.2) node {$v$};
 \end_layout
 
 \begin_layout Plain Layout
@@ -2736,7 +2736,7 @@ draw (47.4,-37.2) node {$z$};
 
 
 \backslash
-draw (55.2,-3.8) node {$L(x)=
+draw (45.2,-3.8) node {$L(x)=
 \backslash
 {D,
 \backslash
@@ -2785,7 +2785,7 @@ exists P.T)
 
 
 \backslash
-draw (65.2,-26.6) node {$L(y)=
+draw (45.2,-17) node {$L(y)=
 \backslash
 {
 \backslash
@@ -2809,87 +2809,21 @@ exists R,
 \backslash
 forall P.
 \backslash
-exists R,
-\backslash
- 
-\backslash
-forall P.
-\backslash
 exists P,
 \backslash
  
 \backslash
 forall P.
 \backslash
-forall R.C
-\backslash
-}$};
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw (65.2,-42.2) node {$L(z)=
-\backslash
-{
-\backslash
-exists R,
-\backslash
- 
-\backslash
-exists P,
-\backslash
- 
-\backslash
 forall R.C,
 \backslash
  
 \backslash
-forall P.
+forall P^{-}.
 \backslash
-forall R.C,
+forall S^{-}.
 \backslash
- 
-\backslash
-forall P.
-\backslash
-forall R.C,
-\backslash
- 
-\backslash
-forall P.
-\backslash
-exists R,
-\backslash
- 
-\backslash
-forall P.
-\backslash
-exists P
-\backslash
-}$};
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-draw (26.3,-47.3) node {$L(u)=
-\backslash
-{
-\backslash
-forall R^{-}.
-\backslash
-forall P^{-},
+sim A,
 \backslash
  
 \backslash
@@ -2908,15 +2842,87 @@ sim A
 
 
 \backslash
-draw (25.3,-32.7) node {$L(v)=
+draw (65.2,-37.2) node {$L(v)=
 \backslash
 {
 \backslash
 forall R^{-}.
 \backslash
-forall P^{-},
+forall P^{-}.
+\backslash
+forall S^{-}.
+\backslash
+sim A
+\backslash
+}$};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (28.3,-47.3) node {$L(u)=
+\backslash
+{
+\backslash
+forall R^{-}.
+\backslash
+forall P^{-}.
+\backslash
+forall S^{-}.
+\backslash
+sim A
+\backslash
+}$};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (15,-27.7) node {$L(z)=
+\backslash
+{
+\backslash
+exists R,
 \backslash
  
+\backslash
+exists P,
+\backslash
+ 
+\backslash
+forall R.C,
+\backslash
+ 
+\backslash
+forall P.
+\backslash
+forall R.C,
+\backslash
+ 
+\backslash
+forall P.
+\backslash
+exists R,
+\backslash
+ 
+\backslash
+forall P.
+\backslash
+exists P,
+\backslash
+ 
+\backslash
+forall P^{-}.
 \backslash
 forall S^{-}.
 \backslash
@@ -2948,7 +2954,7 @@ draw [black] (7.4,-32.7) circle (3);
 
 
 \backslash
-draw (7.4,-32.7) node {$v$}; 
+draw (7.4,-32.7) node {$z$}; 
 \end_layout
 
 \begin_layout Plain Layout
@@ -2999,13 +3005,13 @@ draw [black] (47.4,-10.8) -- (47.4,-19.3);
 \backslash
 fill [black] (47.4,-19.3) -- (47.9,-18.5) -- (46.9,-18.5); 
 \backslash
-draw (46.9,-15.05) node [left] {$R$}; 
+draw (46.9,-15.05) node [left] {$S$}; 
 \backslash
 draw [black] (9.357,-30.427) arc (136.7599:72.38853:34.167); 
 \backslash
 fill [black] (9.36,-30.43) -- (10.27,-30.19) -- (9.54,-29.5); 
 \backslash
-draw (24.79,-20.19) node [above] {$R$}; 
+draw (24.79,-20.19) node [above] {$P$}; 
 \backslash
 draw [black] (8.08,-35.62) -- (10.12,-44.38); 
 \backslash
