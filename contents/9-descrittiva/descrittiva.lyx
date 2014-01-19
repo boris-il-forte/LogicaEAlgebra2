@@ -278,7 +278,7 @@ quantificazioni:
 \end_layout
 
 \begin_layout Standard
-Un'interpretazione I di una base di conoscenza ́e una coppia 
+Un'interpretazione I di una base di conoscenza è una coppia 
 \begin_inset Formula $I=<\Delta^{I},\ ·^{I}>$
 \end_inset
 
@@ -344,7 +344,7 @@ I :
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $R:\ R^{I}\subseteq\Delta^{I}\times\Delta^{I}$
+\begin_inset Formula $I:\ R\rightarrow R^{I}\subseteq\Delta^{I}\times\Delta^{I}$
 \end_inset
 
 
@@ -712,11 +712,12 @@ Confronto con logica del prim'ordine
 \begin_inset Formula $\mathcal{AL\mbox{,}ALC\mbox{,}ALN}$
 \end_inset
 
-, (deve essere con identità nel caso di 
+ come casi particolari di una logica del prim ordine(deve essere con identità
+ nel caso di 
 \begin_inset Formula $\mathcal{N}$
 \end_inset
 
-)
+).
 \end_layout
 
 \begin_layout Itemize
@@ -780,7 +781,7 @@ e) la logica del prim'ordine è decidibile.
 \color none
 \lang english
 
-\begin_inset Formula $C(x)\vee D(x)$
+\begin_inset Formula $C(x)\wedge D(x)$
 \end_inset
 
 
@@ -829,32 +830,6 @@ e) la logica del prim'ordine è decidibile.
 
 \begin_layout Description
 \begin_inset Formula $\implies E(x_{1},x_{2})\vee E(x_{1},x_{2})\vee\dots..\underset{1\leq i\leq j\leq n+1}{\bigvee}E(x_{i},x_{j})$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Confronto con logica multimodale
-\end_layout
-
-\begin_layout Standard
-\noindent
-L'espressività di ALC è la stessa di 
-\begin_inset Formula $K_{n}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\noindent
-Infatti ogni ruolo 
-\begin_inset Formula $R_{i}$
-\end_inset
-
- si può mettere in corrispondenza con 
-\begin_inset Formula $[R_{i}]c$
 \end_inset
 
 
@@ -958,6 +933,10 @@ Terminologia generalizzata
 
 \begin_layout Standard
 A volte è possibile aggiungere nuovi operatori qua descritti.
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1040,6 +1019,10 @@ Così facendo si ha che:
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1049,7 +1032,11 @@ Set
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $Set{a_{1},a_{2},\dots,a_{n}}^{I}=\{a_{1}^{I},a_{2}^{I},\dots,a_{n}^{I}\}$
+\begin_inset Formula $Set\ \{a_{1},a_{2},\dots,a_{n}^{I}\}=\{a_{1}^{I},a_{2}^{I},\dots,a_{n}^{I}\}$
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
@@ -1214,7 +1201,7 @@ Mostriamo che una KB che fornisce il servizio di sussunzione risolve anche
 \begin_inset Formula $C,D$
 \end_inset
 
-sono equivalenti se 
+ sono equivalenti se 
 \begin_inset Formula $C\sqsubseteq D$
 \end_inset
 
@@ -1229,7 +1216,7 @@ sono equivalenti se
 \begin_inset Formula $C,D$
 \end_inset
 
-sono disgiunti se 
+ sono disgiunti se 
 \begin_inset Formula $C\sqcap D\sqsubseteq\bot$
 \end_inset
 
@@ -1246,7 +1233,7 @@ Le logiche descrittive più semplici appartengono alla famiglia della features
 \begin_inset Formula $\mathcal{FL}$
 \end_inset
 
- in breve) e sono ottenute indebolendo la più ́famosa logica 
+ in breve) e sono ottenute indebolendo la più famosa logica 
 \begin_inset Formula $\mathcal{AL}$
 \end_inset
 
@@ -1282,7 +1269,7 @@ forma normale
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $A_{1}\sqcap A_{2}\sqcap\dot{\dots A_{n}\forall R_{1}.C_{1}\sqcap\forall R_{2}.C_{2}\dots\sqcap\forall R_{m}.C_{m}}$
+\begin_inset Formula $A_{1}\sqcap A_{2}\sqcap\dots\sqcap A_{n}\sqcap\forall R_{1}.C_{1}\sqcap\forall R_{2}.C_{2}\dots\sqcap\forall R_{m}.C_{m}$
 \end_inset
 
 
@@ -1351,14 +1338,14 @@ Siano C e D due concetti
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $C\equiv A_{1}\sqcap\dots\sqcap A_{m}\sqcap\forall R1.C1\sqcap\forall Rn.Cn$
+\begin_inset Formula $C\equiv A_{1}\sqcap\dots\sqcap A_{m}\sqcap\forall R_{1}.C_{1}\sqcap\forall R_{n}.C_{n}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $D\equiv B1\sqcap\dots\sqcap Bk\sqcap\forall S1.D1\sqcap\forall Sl.Dl$
+\begin_inset Formula $D\equiv B_{1}\sqcap\dots\sqcap B_{k}\sqcap\forall S_{1}.D_{1}\sqcap\forall S_{l}.D_{l}$
 \end_inset
 
 	
@@ -1391,7 +1378,7 @@ allora
 \end_inset
 
  per il quale 
-\begin_inset Formula $Bi=Aj$
+\begin_inset Formula $B_{i}=A_{j}$
 \end_inset
 
 .
@@ -1408,11 +1395,11 @@ allora
 \end_inset
 
  per il quale 
-\begin_inset Formula $Si=Rj$
+\begin_inset Formula $S_{i}=R_{j}$
 \end_inset
 
- e
-\begin_inset Formula $Cj\sqsubseteq Di$
+ e 
+\begin_inset Formula $C_{j}\sqsubseteq D_{i}$
 \end_inset
 
 .
@@ -1427,7 +1414,7 @@ Ad
 \begin_inset Formula $\mathcal{AL}_{0}$
 \end_inset
 
-può essere aggiunto il concetto 
+ può essere aggiunto il concetto 
 \begin_inset Formula $\bot$
 \end_inset
 
@@ -1435,8 +1422,8 @@ può essere aggiunto il concetto
 \begin_inset Formula $\mathcal{AL_{\bot}}$
 \end_inset
 
-e la forma normale viene a essere la stessa di prima a cui si aggiunge l'opportu
-nità per un concetto di essere o
+ e la forma normale viene a essere la stessa di prima a cui si aggiunge
+ l'opportunità per un concetto di essere o
 \begin_inset Formula $\bot$
 \end_inset
 
@@ -1476,7 +1463,7 @@ Notiamo che
 \begin_inset Formula $\mathcal{AL_{\neg}}$
 \end_inset
 
-contiene strettamente
+ contiene strettamente
 \begin_inset Formula $\mathcal{AL_{\mbox{0}}}$
 \end_inset
 
@@ -1496,7 +1483,7 @@ In
 \begin_inset Formula $C\sqcap\neg D$
 \end_inset
 
- si insoddisfacibile
+ sia insoddisfacibile
 \end_layout
 
 \begin_layout Standard
