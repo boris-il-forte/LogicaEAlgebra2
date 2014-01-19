@@ -2653,7 +2653,7 @@ Ossia effettuo il bloccaggio solo se le due marcature sono uguali.
 
 es.
  
-\begin_inset Formula $A\sqcap\exists S.(\exists R.T\sqcap\exists P.T\sqcap\forall R.C\sqcap\forall P.\exists R.T\sqcap\forall P.\forall R.C\sqcap\forall P.\exists P.T$
+\begin_inset Formula $A\sqcap\exists S.(\exists R.T\sqcap\exists P.T\sqcap\forall R.C\sqcap\forall P.\exists R.T\sqcap\forall P.\forall R.C\sqcap\forall P.\exists P.T)$
 \end_inset
 
 
@@ -2667,24 +2667,38 @@ es.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $L(x)=$
+\begin_inset Formula $L(x)=\{D,\ A,\ \exists R.(\exists R.T\sqcap\exists P.T\sqcap\forall R.C\sqcap\forall P.\exists R.T\sqcap\forall P.\forall R.C\sqcap\forall P.\exists P.T)\}$
 \end_inset
 
- <<MANCA!>>
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $L(y)=$
+\begin_inset Formula $L(y)=\{\exists R,\ \exists P,\ \forall R.C,\ \forall P.\exists R,\ \forall P.\exists R,\ \forall P.\exists P,\ \forall P.\forall R.C\}$
 \end_inset
 
- <<MANCA!>>
+ 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $L(z)=$
+\begin_inset Formula $L(z)=\{\exists R,\ \exists P,\ \forall R.C,\ \forall P.\forall R.C,\ \forall P.\forall R.C,\ \forall P.\exists R,\ \forall P.\exists P\}$
 \end_inset
 
- <<MANCA!>>
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L(v)=\{\forall R^{-}.\forall P^{-},\ \forall S^{-}.\sim A\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L(u)=\{\forall R^{-}.\forall P^{-},\ \forall S^{-}.\sim A\}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2716,50 +2730,259 @@ draw (47.4,-37.2) node {$z$};
 
 \begin_layout Plain Layout
 
-
-\backslash
-draw (65.2,-7.8) node {$lx$};
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-draw (65.2,-23.6) node {$ly$};
+draw (55.2,-3.8) node {$L(x)=
+\backslash
+{D,
+\backslash
+ A,
+\backslash
+ 
+\backslash
+exists R.(
+\backslash
+exists R.T
+\backslash
+sqcap
+\backslash
+exists P.T
+\backslash
+sqcap
+\backslash
+forall R.C
+\backslash
+sqcap
+\backslash
+forall P.
+\backslash
+exists R.T
+\backslash
+sqcap
+\backslash
+forall P.
+\backslash
+forall R.C
+\backslash
+sqcap
+\backslash
+forall P.
+\backslash
+exists P.T)
+\backslash
+}$};
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-draw (65.2,-37.2) node {$lz$};
+draw (65.2,-26.6) node {$L(y)=
+\backslash
+{
+\backslash
+exists R,
+\backslash
+ 
+\backslash
+exists P,
+\backslash
+ 
+\backslash
+forall R.C,
+\backslash
+ 
+\backslash
+forall P.
+\backslash
+exists R,
+\backslash
+ 
+\backslash
+forall P.
+\backslash
+exists R,
+\backslash
+ 
+\backslash
+forall P.
+\backslash
+exists P,
+\backslash
+ 
+\backslash
+forall P.
+\backslash
+forall R.C
+\backslash
+}$};
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-draw [black] (7.4,-32.7) circle (3); 
+draw (65.2,-42.2) node {$L(z)=
+\backslash
+{
+\backslash
+exists R,
+\backslash
+ 
+\backslash
+exists P,
+\backslash
+ 
+\backslash
+forall R.C,
+\backslash
+ 
+\backslash
+forall P.
+\backslash
+forall R.C,
+\backslash
+ 
+\backslash
+forall P.
+\backslash
+forall R.C,
+\backslash
+ 
+\backslash
+forall P.
+\backslash
+exists R,
+\backslash
+ 
+\backslash
+forall P.
+\backslash
+exists P
+\backslash
+}$};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (26.3,-47.3) node {$L(u)=
+\backslash
+{
+\backslash
+forall R^{-}.
+\backslash
+forall P^{-},
+\backslash
+ 
+\backslash
+forall S^{-}.
+\backslash
+sim A
+\backslash
+}$};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (25.3,-32.7) node {$L(v)=
+\backslash
+{
+\backslash
+forall R^{-}.
+\backslash
+forall P^{-},
+\backslash
+ 
+\backslash
+forall S^{-}.
+\backslash
+sim A
+\backslash
+}$};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (7.4,-32.7) circle (3);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
 draw (7.4,-32.7) node {$v$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
 draw [black] (10.8,-47.3) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
 draw (10.8,-47.3) node {$u$};
 \end_layout
 
 \begin_layout Plain Layout
 
-
-\backslash
-draw (26.3,-47.3) node {$lu$};
 \end_layout
 
 \begin_layout Plain Layout
 
+\end_layout
 
-\backslash
-draw (25.3,-32.7) node {$lv$};
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout

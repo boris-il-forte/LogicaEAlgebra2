@@ -2653,7 +2653,7 @@ Ossia effettuo il bloccaggio solo se le due marcature sono uguali.
 
 es.
  
-\begin_inset Formula $A\sqcap\exists S.(\exists R.T\sqcap\exists P.T\sqcap\forall R.C\sqcap\forall P.\exists R.T\sqcap\forall P.\forall R.C\sqcap\forall P.\exists P.T$
+\begin_inset Formula $A\sqcap\exists S.(\exists R.T\sqcap\exists P.T\sqcap\forall R.C\sqcap\forall P.\exists R.T\sqcap\forall P.\forall R.C\sqcap\forall P.\exists P.T)$
 \end_inset
 
 
@@ -2670,21 +2670,33 @@ es.
 \begin_inset Formula $L(x)=$
 \end_inset
 
- <<MANCA!>>
+
+\begin_inset Formula $\{D,\ A,\ \exists R.(\exists R.T\sqcap\exists P.T\sqcap\forall R.C\sqcap\forall P.\exists R.T\sqcap\forall P.\forall R.C\sqcap\forall P.\exists P.T)\}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $L(y)=$
 \end_inset
 
- <<MANCA!>>
+ 
+\begin_inset Formula $\{\exists R,\ \exists P,\ \forall R.C,\ \forall P.\exists R,\ \forall P.\exists R,\ \forall P.\exists P,\ \forall P.\forall R.C\}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $L(z)=$
 \end_inset
 
- <<MANCA!>>
+ 
+\begin_inset Formula $\{\exists R,\ \exists P,\ \forall R.C,\ \forall P.\forall R.C,\ \forall P.\\fo$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4118,13 +4130,6 @@ La logica SHIF e tutte le logiche più espressive non hanno la proprietà
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $L(x)=\{\neg A,\dots\}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -4199,7 +4204,15 @@ draw (52.4,-19.6) node {$z$};
 
 
 \backslash
-draw (10.5,-13.8) node {$L(x)$};
+draw (10.5,-13.8) node {$L(x)=
+\backslash
+{
+\backslash
+neg A,
+\backslash
+dots
+\backslash
+}$};
 \end_layout
 
 \begin_layout Plain Layout
@@ -4210,7 +4223,17 @@ draw (10.5,-13.8) node {$L(x)$};
 
 
 \backslash
-draw (32.9,-14.2) node {$Ly$};
+draw (32.9,-14.2) node {$L(y)=
+\backslash
+{A,
+\backslash
+ 
+\backslash
+exists S.A,
+\backslash
+dots
+\backslash
+}$};
 \end_layout
 
 \begin_layout Plain Layout
@@ -4221,7 +4244,17 @@ draw (32.9,-14.2) node {$Ly$};
 
 
 \backslash
-draw (52.1,-14.3) node {$Lz$}; 
+draw (55.1,-14.3) node {$L(z)=
+\backslash
+{A,
+\backslash
+ 
+\backslash
+exists S.A,
+\backslash
+dots
+\backslash
+}$}; 
 \end_layout
 
 \begin_layout Plain Layout
@@ -4492,7 +4525,144 @@ Quest'ultima regola, detta regola della scelta, per n molto grande genera
 \end_layout
 
 \begin_layout Standard
-<<MANCA TABLEAUX>>
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+begin{center} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.2]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (10.5,-19.6) circle (3);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (10.5,-19.6) node {$x$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (29.5,-9.5) circle (3);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (29.5,-9.5) node {$y1$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (30.2,-19.6) circle (3);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (30.2,-19.6) node {$y2$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (30.2,-29.6) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (30.2,-29.6) node {$y3$};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (13.15,-18.19) -- (26.85,-10.91);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (26.85,-10.91) -- (25.91,-10.84) -- (26.38,-11.73);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (13.5,-19.6) -- (27.2,-19.6);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (27.2,-19.6) -- (26.4,-19.1) -- (26.4,-20.1);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (13.18,-20.96) -- (27.52,-28.24); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (27.52,-28.24) -- (27.04,-27.43) -- (26.59,-28.33);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture} 
+\backslash
+end{center} 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
