@@ -1010,6 +1010,20 @@ Simboliche: basate su tableaux, deduzione formale e SMT solver
 Operazionali: Basate sulla manipolazione di automi a stati finiti
 \end_layout
 
+\begin_layout Standard
+Storicamente, i modelli operazionali erano i più usati perchè si credeva
+ dessero migliori risultati in termini di complessità.
+ Tuttavia esistono anche modelli descrittivi, che descrivono il sistema
+ da modellizzare non come un automa, ma con una descrizione, con lun linguaggio
+ formale, ad alto livello del sistema, e ultimamente le tecniche basate
+ sui modelli descrittivi hanno avuto maggior successo perchè, sfruttando
+ gli SMT solver (solver per la logica del prim'ordine ristretta a una interpreta
+zione specifica numerica, che riduce il problema al calcolo di disequazioni),
+ riescono a ottenere risultati migliori con un utilizzo di memoria decisamente
+ inferiore, non dovendo modellizzare il sistema da controllare con automi
+ spesso estremamente complessi.
+\end_layout
+
 \begin_layout Subsection
 Model Checking operazionale
 \end_layout
@@ -1201,7 +1215,23 @@ Costruisco l'automa locale
 \end_layout
 
 \begin_layout Enumerate
-altro che non abbiamo fatto
+Costruisco l'automa delle eventualità 
+\begin_inset Formula $A_{ev}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Ricavo l'automa globale da 
+\begin_inset Formula $A_{L}$
+\end_inset
+
+ e 
+\begin_inset Formula $A_{ev}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -2112,6 +2142,2594 @@ Si può notare chel'automa locale riconosce anche sequenze di esecuzione
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection
+Automa delle eventualità
+\end_layout
+
+\begin_layout Standard
+Per risolvere il problema delle eventualità mai realizzate, introduciamo
+ l'automa delle eventualità.
+ L'automa delle eventualità è definito come:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{ev}=(\Sigma,\,2^{ev(\varphi)},\,\tau_{ev},\,\{\emptyset\},\, F)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+con:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\Sigma\subseteq2^{cl(\varphi)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ev(\varphi)$
+\end_inset
+
+: sottoinsiemi di 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ che contengono solo sottoformule del tipo 
+\begin_inset Formula $\until{\psi}{\theta}$
+\end_inset
+
+ e 
+\begin_inset Formula $\eventually{\psi}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tau_{ev}$
+\end_inset
+
+: 
+\begin_inset Formula $(s,\, a,\, s')\in\tau_{ev}$
+\end_inset
+
+ se e solo se vale uno dei due casi
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\eventually{\psi}\in s'\iff\psi\notin a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\until{\psi}{\theta}\in s'\iff\theta\notin a$
+\end_inset
+
+ù
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+F: siano 
+\begin_inset Formula $e_{1},\ldots,\, e_{n}$
+\end_inset
+
+ le eventualità della nostra formula di 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ cioè 
+\begin_inset Formula $e_{i}\equiv\until{\psi_{i}}{\theta_{i}}$
+\end_inset
+
+, costruisco 
+\begin_inset Formula $F'=\{A_{1},\ldots,\, A_{m}\}$
+\end_inset
+
+ tale che 
+\begin_inset Formula $A_{i}=\{s\in S\,|\, e_{i}\in s\implies\theta_{i}\in s\}$
+\end_inset
+
+.
+ Un path è accettato dall'automa delle eventualità se passa definitivamente
+ per tutti gli stati di uno tra 
+\begin_inset Formula $A_{1},\ldots,\, A_{m}$
+\end_inset
+
+.
+ Questa condizione di accettazione è detta condizione di accettazione di
+ Müller, che nel caso di automi non deterministici, è equivalente alla condizion
+e di Büchi.
+\end_layout
+
+\begin_layout Subsubsection*
+Esempio
+\end_layout
+
+\begin_layout Standard
+Costruiamo l'automa delle eventualità di 
+\begin_inset Formula $\eventually P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (20.7,-18.6) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (20.7,-18.6) node {$
+\backslash
+{
+\backslash
+emptyset
+\backslash
+}$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (20.7,-18.6) circle (2.4); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (39.6,-18.6) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (39.6,-18.6) node {$
+\backslash
+eventually{P}$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (22.719,-16.392) arc (130.11115:49.88885:11.534); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (37.58,-16.39) -- (37.29,-15.49) -- (36.65,-16.26); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (30.15,-13.18) node [above,align=center] {$
+\backslash
+{
+\backslash
+eventually P,
+\backslash
+,
+\backslash
+neg P
+\backslash
+}$
+\backslash
+
+\backslash
+ $
+\backslash
+{
+\backslash
+neg
+\backslash
+eventually P,
+\backslash
+,
+\backslash
+neg P
+\backslash
+}$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (22.023,-21.28) arc (54:-234:2.25); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (20.7,-25.85) node [below,align=center] {$
+\backslash
+{
+\backslash
+eventually P,
+\backslash
+, P
+\backslash
+}$
+\backslash
+
+\backslash
+ $
+\backslash
+{
+\backslash
+neg
+\backslash
+eventually P,
+\backslash
+, P
+\backslash
+}$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (19.38,-21.28) -- (18.5,-21.63) -- (19.31,-22.22); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (37.084,-20.224) arc (-62.8177:-117.1823:15.178); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (23.22,-20.22) -- (23.7,-21.03) -- (24.16,-20.15); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (30.15,-22.4) node [below,align=center] {$
+\backslash
+{
+\backslash
+eventually P,
+\backslash
+, P
+\backslash
+}$
+\backslash
+
+\backslash
+ $
+\backslash
+{
+\backslash
+neg
+\backslash
+eventually P,
+\backslash
+, P
+\backslash
+}$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (38.277,-15.92) arc (234:-54:2.25); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (39.6,-11.35) node [above,align=center] {$
+\backslash
+{
+\backslash
+eventually P,
+\backslash
+,
+\backslash
+neg P
+\backslash
+}$
+\backslash
+
+\backslash
+ $
+\backslash
+{
+\backslash
+neg
+\backslash
+eventually P,
+\backslash
+,
+\backslash
+neg P
+\backslash
+}$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (40.92,-15.92) -- (41.8,-15.57) -- (40.99,-14.98); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (16.81,-12.97) -- (18.99,-16.13); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (18.99,-16.13) -- (18.95,-15.19) -- (18.13,-15.76); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pulendo l'automa si ottiene:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (20.7,-18.6) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (20.7,-18.6) node {$1$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (20.7,-18.6) circle (2.4); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (39.6,-18.6) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (39.6,-18.6) node {$2$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (22.719,-16.392) arc (130.11115:49.88885:11.534); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (37.58,-16.39) -- (37.29,-15.49) -- (36.65,-16.26); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (30.15,-13.18) node [above] {$
+\backslash
+neg P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (22.023,-21.28) arc (54:-234:2.25); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (20.7,-25.85) node [below] {$P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (19.38,-21.28) -- (18.5,-21.63) -- (19.31,-22.22); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (37.084,-20.224) arc (-62.8177:-117.1823:15.178); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (23.22,-20.22) -- (23.7,-21.03) -- (24.16,-20.15); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (30.15,-22.4) node [below] {$P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (38.277,-15.92) arc (234:-54:2.25); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (39.6,-11.35) node [above] {$
+\backslash
+neg P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (40.92,-15.92) -- (41.8,-15.57) -- (40.99,-14.98); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (16.81,-12.97) -- (18.99,-16.13); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (18.99,-16.13) -- (18.95,-15.19) -- (18.13,-15.76); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Automa globale
+\end_layout
+
+\begin_layout Standard
+Per ottenere l'automa globale basta comporre l'automa locale con l'automa
+ delle eventualità, principalmente usando il prodotto cartesiano tra i due,
+ ma aggiungendo alcune accortezze: si dimostra infatti che come condizione
+ di accettazione per l'automa globale si può usare la condizione di Büchi.
+ In generale si dovrà ottenere un automa del tipo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{\varphi}=(\Sigma,\, S,\,\tau,\, I,\, F)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+con:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\Sigma=2^{cl(\varphi)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S=S_{L}\times S_{ev}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $((s,\, t),\, a,\,(p,\, q))\in\tau\iff(s,\, a,\, p)\in\tau_{L}\,\wedge\,(t,\, a,\, q)\in\tau_{ev}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $I=I_{L}\times\{\emptyset\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F=F_{L}\times\{\emptyset\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Esempio
+\end_layout
+
+\begin_layout Standard
+<<MANCA>>
+\end_layout
+
+\begin_layout Standard
+l'automa ripulito sarà:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (24.2,-10.6) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (24.2,-10.6) node {$1$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (24.2,-10.6) circle (2.4); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (24.2,-26.3) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (24.2,-26.3) node {$3$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (24.2,-26.3) circle (2.4); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (24.2,-42.8) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (24.2,-42.8) node {$5$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (24.2,-42.8) circle (2.4); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (42.9,-10.6) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (42.9,-10.6) node {$2$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (42.9,-26.3) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (42.9,-26.3) node {$4$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (42.9,-42.8) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (42.9,-42.8) node {$6$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (45.58,-41.477) arc (144:-144:2.25); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (50.15,-42.8) node [right] {$
+\backslash
+neg P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (45.58,-44.12) -- (45.93,-45) -- (46.52,-44.19); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (42.9,-39.8) -- (42.9,-29.3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (42.9,-29.3) -- (42.4,-30.1) -- (43.4,-30.1); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (40.6,-24.37) -- (26.5,-12.53); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (26.5,-12.53) -- (26.79,-13.43) -- (27.43,-12.66); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (34.61,-17.96) node [above] {$P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (16.4,-10.6) -- (21.2,-10.6); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (21.2,-10.6) -- (20.4,-10.1) -- (20.4,-11.1); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (16.4,-26.3) -- (21.2,-26.3);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (21.2,-26.3) -- (20.4,-25.8) -- (20.4,-26.8); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (16.4,-42.8) -- (21.2,-42.8);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (21.2,-42.8) -- (20.4,-42.3) -- (20.4,-43.3);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (27.2,-10.6) -- (39.9,-10.6); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (39.9,-10.6) -- (39.1,-10.1) -- (39.1,-11.1); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (33.55,-11.1) node [below] {$
+\backslash
+neg P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (45.58,-9.277) arc (144:-144:2.25);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (50.15,-10.6) node [right] {$
+\backslash
+neg P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (45.58,-11.92) -- (45.93,-12.8) -- (46.52,-11.99); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (39.9,-26.3) -- (27.2,-26.3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (27.2,-26.3) -- (28,-26.8) -- (28,-25.8); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (33.55,-25.8) node [above] {$P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (24.2,-23.3) -- (24.2,-13.6); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (24.2,-13.6) -- (23.7,-14.4) -- (24.7,-14.4);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (24.7,-18.45) node [right] {$P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (24.2,-29.3) -- (24.2,-39.8); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (24.2,-39.8) -- (24.7,-39) -- (23.7,-39); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (23.7,-34.55) node [left] {$P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (27.2,-42.8) -- (39.9,-42.8); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (39.9,-42.8) -- (39.1,-42.3) -- (39.1,-43.3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (33.55,-43.3) node [below] {$
+\backslash
+neg P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (25.501,-40.098) arc (151.27384:111.57349:28.584); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (40.06,-27.25) -- (39.13,-27.08) -- (39.5,-28.01); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (28.59,-31.91) node [above] {$
+\backslash
+neg P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (41.453,-28.927) arc (-31.47356:-65.67911:32.801); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (26.99,-41.69) -- (27.92,-41.82) -- (27.51,-40.91); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (36.24,-36.89) node [below] {$P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+minimizzato diventa:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (22.9,-22.7) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (22.9,-22.7) node {$1$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (36.2,-22.7) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (36.2,-22.7) node {$2$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (36.2,-22.7) circle (2.4); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (16,-22.7) -- (19.9,-22.7); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (19.9,-22.7) -- (19.1,-22.2) -- (19.1,-23.2); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (25.9,-22.7) -- (33.2,-22.7); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (33.2,-22.7) -- (32.4,-22.2) -- (32.4,-23.2);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (29.55,-23.2) node [below] {$P$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (21.577,-20.02) arc (234:-54:2.25); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (22.9,-15.45) node [above] {$
+\backslash
+neg P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (24.22,-20.02) -- (25.1,-19.67) -- (24.29,-19.08); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (34.877,-20.02) arc (234:-54:2.25); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (36.2,-15.45) node [above] {$
+\backslash
+neg P, P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (37.52,-20.02) -- (38.4,-19.67) -- (37.59,-19.08); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Complessità
+\end_layout
+
+\begin_layout Standard
+La complessità degli automi della costruzione di un automa di Büchi è lineare
+ alla lunghezza della formula 
+\begin_inset Formula $\varphi$
+\end_inset
+
+, con lunghezza si può benissimo intendere il numero di caratteri 
+\begin_inset Formula $|\varphi|$
+\end_inset
+
+, poichè qualsiasi altra metrica sarebbe lineare rispetto alla lunghezza
+ in caratteri.
+\end_layout
+
+\begin_layout Standard
+si ha che l'automa costruito, nel caso pessimo avranno dimensione (e quindi
+ complessità temporale)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $|S_{L}|=O(2^{2|\varphi|})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $|S_{ev}|=O(2^{|\varphi|})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $|S|=O(2^{3|\varphi|})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Esempi di automi di Büchi
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\until PQ$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.2]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{every node}+=[inner sep=0pt]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (21.2,-15) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (21.2,-15) node {$1$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (36.3,-15) circle (3);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (36.3,-15) node {$2$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (36.3,-15) circle (2.4);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (13.6,-15) -- (18.2,-15);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (18.2,-15) -- (17.4,-14.5) -- (17.4,-15.5);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (19.877,-12.32) arc (234:-54:2.25); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (21.2,-7.75) node [above] {$P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (22.52,-12.32) -- (23.4,-11.97) -- (22.59,-11.38); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (38.98,-13.677) arc (144:-144:2.25);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (43.55,-15) node [right] {$
+\backslash
+Sigma$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (38.98,-16.32) -- (39.33,-17.2) -- (39.92,-16.39); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (24.2,-15) -- (33.3,-15); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (33.3,-15) -- (32.5,-14.5) -- (32.5,-15.5); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (28.75,-15.5) node [below] {$Q$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\globally{\eventually P}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (21.2,-15) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (21.2,-15) node {$1$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (36.3,-15) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (36.3,-15) node {$2$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (36.3,-15) circle (2.4);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (13.6,-15) -- (18.2,-15); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (18.2,-15) -- (17.4,-14.5) -- (17.4,-15.5); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (19.877,-12.32) arc (234:-54:2.25); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (21.2,-7.75) node [above] {$
+\backslash
+Sigma$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (22.52,-12.32) -- (23.4,-11.97) -- (22.59,-11.38); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (38.98,-13.677) arc (144:-144:2.25); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (43.55,-15) node [right] {$P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (38.98,-16.32) -- (39.33,-17.2) -- (39.92,-16.39); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (23.461,-13.046) arc (122.17312:57.82688:9.932); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (34.04,-13.05) -- (33.63,-12.2) -- (33.1,-13.04);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (28.75,-11.02) node [above] {$P$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (34.009,-16.92) arc (-58.55952:-121.44048:10.082); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (23.49,-16.92) -- (23.91,-17.76) -- (24.43,-16.91); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (28.75,-18.9) node [below] {$
+\backslash
+Sigma$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Intersezione tra automi di Büchi
+\end_layout
+
+\begin_layout Standard
+Dati gli automi 
+\begin_inset Formula $A_{\mu}$
+\end_inset
+
+ , che rappresenta il modello del sistema, e 
+\begin_inset Formula $A_{\neg\varphi}$
+\end_inset
+
+ che rappresenta l'automa che riconosce la negazione delle proprietà che
+ il sistema dovrebbe possedere, vogliamo vedere se 
+\begin_inset Formula $L(A_{\mu}\cap A_{\neg\varphi})=\emptyset$
+\end_inset
+
+, ossia che sia impossibile per il sistema violare le proprietà 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Tuttavia con gli automi di Büchi non è possibile effettuare l'intersezione
+ con l'automa prodotto come negli automi a stati finiti, come si può notare
+ dal seguente esempio:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (28.2,-7.6) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (28.2,-7.6) node {$P$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (28.2,-7.6) circle (2.4);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (48.6,-7.6) circle (3);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (48.6,-7.6) node {$P'$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (9.3,-24.1) circle (3);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (9.3,-24.1) node {$Q$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (9.3,-24.1) circle (2.4); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (9.3,-41.4) circle (3);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (9.3,-41.4) node {$Q'$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (28.2,-24.1) circle (3);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (28.2,-24.1) node {$P, Q$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (28.2,-24.1) circle (2.4); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (48.6,-24.1) circle (3);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (48.6,-24.1) node {$P', Q$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (28.2,-41.4) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (28.2,-41.4) node {$P, Q'$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (48.6,-41.4) circle (3);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (48.6,-41.4) node {$P', Q'$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (21.7,-7.6) -- (25.2,-7.6);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (25.2,-7.6) -- (24.4,-7.1) -- (24.4,-8.1);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (9.3,-17) -- (9.3,-21.1); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (9.3,-21.1) -- (9.8,-20.3) -- (8.8,-20.3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (21.16,-19.21) -- (25.74,-22.39); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (25.74,-22.39) -- (25.36,-21.52) -- (24.79,-22.34); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (30.849,-6.198) arc (113.37892:66.62108:19.03); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (45.95,-6.2) -- (45.42,-5.42) -- (45.02,-6.34); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (38.4,-4.14) node [above] {$b$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (45.974,-9.044) arc (-65.82847:-114.17153:18.498); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (30.83,-9.04) -- (31.35,-9.83) -- (31.76,-8.92); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (38.4,-11.17) node [below] {$a$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (51.28,-6.277) arc (144:-144:2.25); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (55.85,-7.6) node [right] {$b$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (51.28,-8.92) -- (51.63,-9.8) -- (52.22,-8.99); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (7.534,-38.983) arc (-150.6141:-209.3859:12.703); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (7.53,-38.98) -- (7.58,-38.04) -- (6.71,-38.53); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (5.4,-32.75) node [left] {$a$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (10.939,-26.605) arc (26.87558:-26.87558:13.593); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (10.94,-26.61) -- (10.85,-27.54) -- (11.75,-27.09); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (12.91,-32.75) node [right] {$b$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (6.62,-25.423) arc (-36:-324:2.25); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (2.05,-24.1) node [left] {$b$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (6.62,-22.78) -- (6.27,-21.9) -- (5.68,-22.71); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (10.623,-44.08) arc (54:-234:2.25);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (9.3,-48.65) node [below] {$a$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (7.98,-44.08) -- (7.1,-44.43) -- (7.91,-45.02); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (48.6,-38.4) -- (48.6,-27.1); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (48.6,-27.1) -- (48.1,-27.9) -- (49.1,-27.9); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (49.1,-32.75) node [right] {$b$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (31.2,-24.1) -- (45.6,-24.1); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (45.6,-24.1) -- (44.8,-23.6) -- (44.8,-24.6); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (38.4,-24.6) node [below] {$b$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (28.2,-27.1) -- (28.2,-38.4); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (28.2,-38.4) -- (28.7,-37.6) -- (27.7,-37.6);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (27.7,-32.75) node [left] {$a$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (29.316,-38.617) arc (154.8203:105.7782:25.836);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (29.32,-38.62) -- (30.11,-38.11) -- (29.2,-37.68);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (34.78,-29.41) node [above] {$a$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (47.215,-26.76) arc (-30.21704:-69.18446:31.772); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (47.21,-26.76) -- (46.38,-27.2) -- (47.24,-27.7);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (41.47,-35.49) node [below] {$b$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (29.523,-44.08) arc (54:-234:2.25); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (28.2,-48.65) node [below] {$a$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (26.88,-44.08) -- (26,-44.43) -- (26.81,-45.02); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (51.28,-22.777) arc (144:-144:2.25);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (55.85,-24.1) node [right] {$b$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (51.28,-25.42) -- (51.63,-26.3) -- (52.22,-25.49);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Negli automi a stati finiti, l'intersezione dei due linguaggi è il linguaggio
+ che contiene solo la stringa vuota.
+ Negli automi di Büchi invece abbiamo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L^{\omega}(A_{1})=(a^{*}b^{+}a^{+})^{\omega}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L^{\omega}(A_{2})=(a^{*}a^{+}b^{+})^{\omega}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L^{\omega}(A_{1})\cap L^{\omega}(A_{1})\neq\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+infatti:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(ba)^{\omega}\in L^{\omega}(A_{1})\cap L^{\omega}(A_{1})$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Gli automi di Büchi necessitano di una definizione diversa di automa intersezion
+e:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{1}=(\Sigma,\, Q_{1},\,\tau_{1},\, I_{1},\, F_{1})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{2}=(\Sigma,\, Q_{2},\,\tau_{2},\, I_{2},\, F_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{1}\times A_{2}=(\Sigma,\, Q_{1}\times Q_{2}\times\{0,\,1\},\,\sigma,\,(i_{1}i_{2},\,1),\, Q_{1}\times F_{2}\times\{1\})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $i_{1}\in I_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $i_{2}\in I_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $((P_{1},\, Q_{1},\, s),\, a,\,(P_{2},\, Q_{2},\, t))\in\sigma$
+\end_inset
+
+ se e solo se valgono le seguenti:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(P{}_{1},\, a,\, P_{2})\in\tau_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(Q{}_{1},\, a,\, Q_{2})\in\tau_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(t=0)\iff((s=1)\wedge(Q_{1}\in F_{2})\wedge(P_{2}\notin F_{1}))\vee((s=0)\wedge(P_{2}\notin F_{1}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si può ricavare con queste regole l'automa di Büchi dell'esempio precedente,
+ si può notare che l'automa ottenuto non è vuoto, e riconosce la stringa
+ 
+\begin_inset Formula $(ba)^{\omega}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.2] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{every node}+=[inner sep=0pt] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (30,-13.5) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (30,-13.5) node {$P,Q,1$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (30,-13.5) circle (2.4); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (16.6,-28.3) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (16.6,-28.3) node {$P,Q',1$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (42.9,-28.3) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (42.9,-28.3) node {$P',Q,0$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (30,-42.8) circle (3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (30,-42.8) node {$P',Q,1$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (30,-42.8) circle (2.4);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (27.99,-15.72) -- (18.61,-26.08); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (18.61,-26.08) -- (19.52,-25.82) -- (18.78,-25.15); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (22.76,-19.44) node [left] {$a$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (31.97,-15.76) -- (40.93,-26.04); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (40.93,-26.04) -- (40.78,-25.11) -- (40.03,-25.76); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (35.91,-22.35) node [left] {$b$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (45.58,-26.977) arc (144:-144:2.25); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (50.15,-28.3) node [right] {$b$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (45.58,-29.62) -- (45.93,-30.5) -- (46.52,-29.69);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (31.99,-40.56) -- (40.91,-30.54); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (40.91,-30.54) -- (40,-30.81) -- (40.75,-31.47);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (36.99,-37) node [right] {$b$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (39.9,-28.3) -- (19.6,-28.3); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (19.6,-28.3) -- (20.4,-28.8) -- (20.4,-27.8); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (13.92,-29.623) arc (-36:-324:2.25); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (9.35,-28.3) node [left] {$a$}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (13.92,-26.98) -- (13.57,-26.1) -- (12.98,-26.91); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (19.323,-29.553) arc (61.41956:24.06483:22.181);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (28.97,-39.99) -- (29.1,-39.05) -- (28.18,-39.46); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (25.54,-32.51) node [right] {$a$}; 
+\backslash
+draw [black] (27.349,-41.398) arc (-121.23694:-153.27867:25.521); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (17.79,-31.05) -- (17.7,-31.99) -- (18.59,-31.54); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (21.31,-38.36) node [left] {$b$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [black] (30,-6.1) -- (30,-10.5); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [black] (30,-10.5) -- (30.5,-9.7) -- (29.5,-9.7); 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Il problema di determinare se il linguaggio ottenuto è vuoto si riduce al
+ problema di trovare uno stato di ripetizione accessibile che fa parte di
+ un ciclo.
 \end_layout
 
 \end_body
