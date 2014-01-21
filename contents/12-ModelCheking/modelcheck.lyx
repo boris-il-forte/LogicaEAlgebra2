@@ -533,7 +533,95 @@ Nel primo caso, costruisco E tale che:
 \end_layout
 
 \begin_layout Standard
-<<MANCA! non ci ho capito molto, pessimi appunti...>>
+Nel secondo caso costruisco E tale che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(n,\, m)\in E\iff(n,\, m\notin\{3k\,|\, k\in\mathbb{N}\})\vee(n,\, m\in\{3k\,|\, k\in\mathbb{N}\})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se esistesse una formula 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ per esprimere il next, allora sarebbe vera in tutti i mondi che precedono
+ i multipli di 3.
+\end_layout
+
+\begin_layout Standard
+Usando la bisimulazione 
+\begin_inset Formula $(\mu,\, n)\leftrightarroweq(\mu,\, n+3)$
+\end_inset
+
+, notiamo che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall n((\veraw{\mu}n{\varphi})\iff(\veraw{\mu}{n+3}{\varphi}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e quindi la formula è vera anche nel modello bisimulato.
+\end_layout
+
+\begin_layout Standard
+Usando la bisimulazione 
+\begin_inset Formula $(\mu,\,1)\leftrightarroweq(\mu,\,2)$
+\end_inset
+
+ notiamo che:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\veraw{\mu}2{\varphi}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nonveraw{\mu}1{\varphi}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+la formula non è vera nel modello bisimulato, e quindi il lemma di invarianza
+ non vale, assurdo.
+ Deve quindi essere vera la tesi, e quindi
+\begin_inset Formula $\mathcal{X}$
+\end_inset
+
+ non può essere espresso con gli operatori 
+\begin_inset Formula $\mathcal{G}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+Si noti che il lemma di invarianza non vale se valgono gli operatori 
+\begin_inset Formula $\mathcal{X}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathcal{U}$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Section

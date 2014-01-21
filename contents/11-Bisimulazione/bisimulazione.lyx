@@ -139,14 +139,14 @@ Si dice che le coppie
 \end_inset
 
  e 
-\begin_inset Formula $(\mu',\, s)$
+\begin_inset Formula $(\mu',\, t)$
 \end_inset
 
  sono in bisimulazione tra loro, ossia:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $(\mu,\, s)\leftrightarroweq(\mu',\, s)$
+\begin_inset Formula $(\mu,\, s)\leftrightarroweq(\mu',\, t)$
 \end_inset
 
 
@@ -177,7 +177,7 @@ se
 \end_inset
 
 a)
-\begin_inset Formula $\forall P\in\phi\, x\in V(P)\iff y\in V'(P)$
+\begin_inset Formula $\forall P\in\phi,\, x\in V(P)\iff y\in V'(P)$
 \end_inset
 
 
@@ -204,12 +204,12 @@ Due frame sono in bisimulazione se soddisfano le condizioni 1, b1 e b2.
 \end_layout
 
 \begin_layout Subsection
-Teorema
+Lemma di invarianza
 \end_layout
 
 \begin_layout Standard
 se 
-\begin_inset Formula $(\mu,\, s)\leftrightarroweq(\mu',\, s)$
+\begin_inset Formula $(\mu,\, s)\leftrightarroweq(\mu',\, t)$
 \end_inset
 
 
