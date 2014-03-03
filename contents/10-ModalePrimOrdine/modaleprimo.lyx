@@ -218,7 +218,7 @@ Parentesi ), (
 \end_layout
 
 \begin_layout Standard
-Si chiamano termini le costanti e le lettere predicative, gli indichiamo
+Si chiamano termini le costanti e le lettere predicative, li indichiamo
  come 
 \begin_inset Formula $t_{i}$
 \end_inset
@@ -332,7 +332,7 @@ Tipi di dominio
 \end_layout
 
 \begin_layout Standard
-I domini nella logica modale del pr'imordine possono essere visti in verie
+I domini nella logica modale del prim'ordine possono essere visti in varie
  maniere differenti, a seconda che gli stati abbiano domini uguali o diversi
  tra loro.
 \end_layout
@@ -512,14 +512,14 @@ La verità di una formula è definita per induzione sui connettivi minimi:
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\veraw{\mu,s}{\alpha}{A_{i}^{n}(t_{1},...,t_{n})\iff(s*(t_{1}),...,s*(t_{n}))\in I_{P}(A_{i}^{n},\alpha)}$
+\begin_inset Formula $\veraw{\mu,s}{\alpha}{A_{i}^{n}(t_{1},...,t_{n})\ se\ e\ solo\ se\ (s*(t_{1}),...,s*(t_{n}))\in I_{P}(A_{i}^{n},\alpha)}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\veraw{\mu,s}{\alpha}{\neg b}\iff\nonveraw{\mu,s}{\alpha}b$
+\begin_inset Formula $\veraw{\mu,s}{\alpha}{\neg b}\ \ \ se\ e\ solo\ se\ \ \nonveraw{\mu,s}{\alpha}b$
 \end_inset
 
 
@@ -538,21 +538,21 @@ La verità di una formula è definita per induzione sui connettivi minimi:
 \uwave off
 \noun off
 \color none
-\begin_inset Formula $\veraw{\mu,s}{\alpha}{b\implies c}\iff\veraw{\mu,s}{\alpha}{c\,\vee\,\nonveraw{\mu,s}{\alpha}b}$
+\begin_inset Formula $\veraw{\mu,s}{\alpha}{b\implies c}\ \ \ se\ e\ solo\ se\ \ \veraw{\mu,s}{\alpha}{c\,\vee\,\nonveraw{\mu,s}{\alpha}b}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\veraw{\mu,s}{\alpha}{(\forall x)b}\iff(\forall s'\,:\, s'(x)\not=s(x)\,\wedge\, s'(x_{i})=s(x_{i}))\,\veraw{\mu,s}{\alpha}{(\forall x)b}$
+\begin_inset Formula $\veraw{\mu,s}{\alpha}{(\forall x)b}\ \ \ se\ e\ solo\ se\ \ (\forall s'\,:\, s'(x)\not=s(x)\,\wedge\, s'(x_{i})=s(x_{i}))\,\veraw{\mu,s}{\alpha}{(\forall x)b}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\veraw{\mu,s}{\alpha}{\boxx b}\iff\forall\beta\,:\,(\alpha,\,\beta)\in R\,\veraw{\mu,s}{\beta}b$
+\begin_inset Formula $\veraw{\mu,s}{\alpha}{\boxx b}\ \ \ se\ e\ solo\ se\ \ \ \forall\beta\,:\,(\alpha,\,\beta)\in R\,\veraw{\mu,s}{\beta}b$
 \end_inset
 
 
