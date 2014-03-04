@@ -218,7 +218,7 @@ R ruoli
 \begin_inset Formula $\neg$
 \end_inset
 
- simazione (solo di concetti atomici)
+ negazione (solo di concetti atomici)
 \end_layout
 
 \begin_layout Description
@@ -250,7 +250,7 @@ Concetti atomici A,B
 \end_layout
 
 \begin_layout Itemize
-simazione di concetti atomici: 
+negazione di concetti atomici: 
 \begin_inset Formula $\neg A$
 \end_inset
 
@@ -283,10 +283,10 @@ Un'interpretazione I di una base di conoscenza è una coppia
 \end_inset
 
  composta da un dominio di interpretazione 
-\begin_inset Formula $\Delta$
+\begin_inset Formula $\Delta^{I}$
 \end_inset
 
-I, detto dominio di I e da una funzione di interpretazione 
+, detto dominio di I e da una funzione di interpretazione 
 \begin_inset Formula $·^{I}$
 \end_inset
 
@@ -333,14 +333,14 @@ e ad ogni
 ruolo
 \series default
  un sottoinsieme di 
-\begin_inset Formula $\Delta$
+\begin_inset Formula $\Delta^{I}$
 \end_inset
 
-I × 
-\begin_inset Formula $\Delta$
+ × 
+\begin_inset Formula $\Delta^{I}$
 \end_inset
 
-I :
+ :
 \end_layout
 
 \begin_layout Standard
@@ -458,7 +458,7 @@ Indebolendo la logica
 \begin_inset Formula $\mathcal{AL}$
 \end_inset
 
- eliminando la simazione atomica 
+ eliminando la negazione atomica 
 \end_layout
 
 \begin_layout Itemize
@@ -606,11 +606,11 @@ Si vuole mostrate che a partire in
 \begin_inset Formula $\alue$
 \end_inset
 
-posso fare simazioni di concetti qualsiasi.
+posso fare negazioni di concetti qualsiasi.
 \end_layout
 
 \begin_layout Standard
-Questo è immediato per i concetti atomici la cui simazione è per definizione
+Questo è immediato per i concetti atomici la cui negazione è per definizione
  in 
 \begin_inset Formula $\mathcal{AL}$
 \end_inset
@@ -638,7 +638,7 @@ Per simare l'and di due concetti:
 \end_inset
 
  che sono concetti più semplici di cui ricorsivamente posso costruire la
- simazione
+ negazione
 \end_layout
 
 \begin_layout Standard
@@ -803,7 +803,7 @@ e) la logica del prim'ordine è decidibile.
 \end_inset
 
  
-\begin_inset Formula $\exists y:(R(x,y)\implies C(y))$
+\begin_inset Formula $\exists y:(R(x,y)\wedge C(y))$
 \end_inset
 
 
@@ -1032,7 +1032,7 @@ Set
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $Set\ \{a_{1},a_{2},\dots,a_{n}^{I}\}=\{a_{1}^{I},a_{2}^{I},\dots,a_{n}^{I}\}$
+\begin_inset Formula $Set\ \{a_{1},a_{2},\dots,a_{n}\}^{I}=\{a_{1}^{I},a_{2}^{I},\dots,a_{n}^{I}\}$
 \end_inset
 
 
@@ -1447,7 +1447,7 @@ Ad
 \begin_inset Formula $AL_{0}$
 \end_inset
 
- si può aggiungere la simazione di concetti atomici ottenendo 
+ si può aggiungere la negazione di concetti atomici ottenendo 
 \begin_inset Formula $\mathcal{AL}_{\neg}$
 \end_inset
 
@@ -1585,14 +1585,6 @@ Notiamo che NON vale
 
 \end_layout
 
-\begin_layout Standard
-		Tableaux per 
-\begin_inset Formula $\alc$
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Tableaux per 
 \begin_inset Formula $\alc$
@@ -1670,7 +1662,7 @@ Forma normale negata
 
 \begin_layout Standard
 Definiamo la forma normale negata di una formula, una formula equivalente
- a quella di partenza ma in cui le simazioni sono spostate solo sui concetti
+ a quella di partenza ma in cui le negazioni sono spostate solo sui concetti
  atomici (possiamo sempre farlo, vista l'equivalenza tra 
 \begin_inset Formula $\alc$
 \end_inset
@@ -1683,11 +1675,11 @@ Definiamo la forma normale negata di una formula, una formula equivalente
 \end_layout
 
 \begin_layout Standard
-Se C è in forma normale simata scriviamo NNF(C).
+Se C è in forma normale negata scriviamo NNF(C).
 \end_layout
 
 \begin_layout Standard
-se C è in forma normale simata, allora 
+se C è in forma normale negata, allora 
 \begin_inset Formula $\neg C$
 \end_inset
 
@@ -3433,7 +3425,7 @@ Tuttavia non è sufficiente, perchè è necessario che il concetto
 \end_inset
 
  sia propragato in tutti i nodi della knowledge base, per ottenere il risultato
- desiderato, costruisco un ruolo U che sia una approssimazione del ruolo
+ desiderato, costruisco un ruolo U che sia una approsnegazione del ruolo
  universale, ovvero che sia un sopraruolo di tutti i ruoli usati nella T-Box.
 \end_layout
 
