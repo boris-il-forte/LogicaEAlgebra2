@@ -1696,7 +1696,7 @@ se C è in forma normale negata, allora
 \end_layout
 
 \begin_layout Standard
-Possiamo allora definire:
+Possiamo allora definire, supponendo che D sia già in NNF:
 \end_layout
 
 \begin_layout Standard
@@ -3777,7 +3777,63 @@ Dati:
 \begin_inset Formula $H,V\subseteq D\times D$
 \end_inset
 
- insieme di regole
+ insieme di regole,
+\end_layout
+
+\begin_layout Standard
+dove 
+\begin_inset Formula $H$
+\end_inset
+
+ specifica i vincoli in verticale, 
+\begin_inset Formula $D_{i},D_{j}\in H$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $D_{j}$
+\end_inset
+
+ può stare 
+\begin_inset Quotes eld
+\end_inset
+
+appena sopra
+\begin_inset Quotes erd
+\end_inset
+
+ a 
+\begin_inset Formula $D_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e dove 
+\begin_inset Formula $V$
+\end_inset
+
+ specifica i vincoli in verticale, 
+\begin_inset Formula $D_{i},D_{j}\in V$
+\end_inset
+
+ se e solo se 
+\begin_inset Formula $D_{j}$
+\end_inset
+
+ può stare 
+\begin_inset Quotes eld
+\end_inset
+
+appena a destra
+\begin_inset Quotes erd
+\end_inset
+
+ a 
+\begin_inset Formula $D_{i}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3786,14 +3842,46 @@ Il problema di decidere se esiste una copertura che rispetta le regole e
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $t:\,\mathbb{N}^{2}\longrightarrow D\,|\,<t(m,\, n),\, t(m+n,\, n)>\in H\wedge<t(m,\, n),\, t(m,\, n+1)>\in V$
+\begin_inset Formula $t:\,\mathbb{N}^{2}\longrightarrow D\,|\,<t(m,\, n),\, t(m,\, n+1)>\in H\wedge<t(m,\, n),\, t(m+1,\, n)>\in V$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
-il problema di determinare t è indecidibile.
+(cioè 
+\begin_inset Formula $t$
+\end_inset
+
+ prende una coordinata 
+\begin_inset Formula $(x,y)$
+\end_inset
+
+ con 
+\begin_inset Formula $x,y\in\mathbb{N}$
+\end_inset
+
+ e restituisce una tessera 
+\begin_inset Formula $D$
+\end_inset
+
+ che rispetti i vincoli in 
+\begin_inset Formula $H$
+\end_inset
+
+ e in 
+\begin_inset Formula $V$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+il problema di determinare 
+\begin_inset Formula $t$
+\end_inset
+
+ è indecidibile.
 \end_layout
 
 \begin_layout Standard
@@ -3950,6 +4038,14 @@ end{center}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Come prima cosa diciamo che 
+\begin_inset Formula $A,B,C,D$
+\end_inset
+
+ sono disgiunti e per ognuno specifichiamo le tessere che ha accanto
 \end_layout
 
 \begin_layout Standard
@@ -4237,7 +4333,7 @@ Per rappresentare i vincoli H e V prima di tutto definiamo i sopraruoli
 \end_inset
 
 , 
-\begin_inset Formula $X\sqsubseteq Y_{1}$
+\begin_inset Formula $X\sqsubseteq X_{2}$
 \end_inset
 
 
