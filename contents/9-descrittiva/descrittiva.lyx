@@ -4103,44 +4103,44 @@ Ma questo modello non basta, dobbiamo considerare che il mondo raggiunto
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $S_{11}\sqsubseteq X_{1}$
+\begin_inset Formula $X_{1}\sqsubseteq S_{11}$
 \end_inset
 
 , 
-\begin_inset Formula $S_{11}\sqsubseteq Y_{1}$
+\begin_inset Formula $Y_{1}\sqsubseteq S_{11}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $S_{12}\sqsubseteq X_{1}$
+\begin_inset Formula $X_{1}\sqsubseteq S_{12}$
 \end_inset
 
 , 
-\begin_inset Formula $S_{12}\sqsubseteq Y_{2}$
+\begin_inset Formula $Y_{2}\sqsubseteq S_{12}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $S_{21}\sqsubseteq X_{2}$
+\begin_inset Formula $X_{2}\sqsubseteq S_{21}$
 \end_inset
 
 , 
-\begin_inset Formula $S_{21}\sqsubseteq Y_{1}$
+\begin_inset Formula $Y_{1}\sqsubseteq S_{21}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $S_{22}\sqsubseteq X_{2}$
+\begin_inset Formula $X_{2}\sqsubseteq S_{22}$
 \end_inset
 
 , 
-\begin_inset Formula $S_{22}\sqsubseteq Y_{2}$
+\begin_inset Formula $Y_{2}\sqsubseteq S_{22}$
 \end_inset
 
 
@@ -4313,7 +4313,7 @@ Infine imponiamo la presenza di una unica tessera per casella tramite le
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $C_{D_{i}}\sqsubseteq\leq1C_{D_{j}}$
+\begin_inset Formula $C_{D_{i}}\sqsubseteq\neg C_{D_{j}}$
 \end_inset
 
  con 
@@ -4329,22 +4329,22 @@ Per rappresentare i vincoli H e V prima di tutto definiamo i sopraruoli
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $X\sqsubseteq X_{1}$
+\begin_inset Formula $X_{1}\sqsubseteq X$
 \end_inset
 
 , 
-\begin_inset Formula $X\sqsubseteq X_{2}$
+\begin_inset Formula $X_{2}\sqsubseteq X$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $Y\sqsubseteq Y_{1}$
+\begin_inset Formula $Y_{1}\sqsubseteq Y$
 \end_inset
 
 , 
-\begin_inset Formula $Y\sqsubseteq Y_{2}$
+\begin_inset Formula $Y_{2}\sqsubseteq Y$
 \end_inset
 
 
