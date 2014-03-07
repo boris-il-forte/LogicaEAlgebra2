@@ -302,14 +302,14 @@ Se per assurdo non lo fosse
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\teoremaDi{KD}\andbox{_{n}}\implies\boxx{\neg a_{n}}$
+\begin_inset Formula $\teoremaDi{KD}\andbox{_{n-1}}\implies\boxx{\neg a_{n}}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\andbox{_{n}}\implies\boxx{\neg a_{n}}\in\alpha$
+\begin_inset Formula $\andbox{_{n-1}}\implies\boxx{\neg a_{n}}\in\alpha$
 \end_inset
 
  (dato che 
@@ -328,7 +328,7 @@ Se per assurdo non lo fosse
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\andbox{_{n}}\in\alpha$
+\begin_inset Formula $\andbox{_{n-1}}\in\alpha$
 \end_inset
 
  per costruzione di 
