@@ -189,7 +189,7 @@ Nella logica modale, come l'abbiamo descritta nei precedenti capitoli, sono
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\boxx\top$
+\begin_inset Formula $\boxx{\top}$
 \end_inset
 
  (schema 
@@ -228,8 +228,8 @@ Ma diventa già discutibile se
 \begin_inset Quotes erd
 \end_inset
 
-, infatti il teorema di goedel asserisce che non tutto ciò che è vero è
- dimostrabile
+, infatti il teorema di Gödel asserisce che non tutto ciò che è vero è dimostrab
+ile
 \end_layout
 
 \begin_layout Itemize
@@ -323,7 +323,7 @@ A questo proposito si definisce diversamente il concetto di frame:
 
 \begin_layout Standard
 e in modo naturale il modello 
-\begin_inset Formula $M=(S,N.V)$
+\begin_inset Formula $M=(S,N,V)$
 \end_inset
 
  che fissa una funzione di verità
@@ -335,7 +335,7 @@ Si definisce insieme di verità di
 \end_inset
 
  il seguente: 
-\begin_inset Formula $\verins a=\{\alpha:\ \veraw M\alpha{a\}}$
+\begin_inset Formula $\verins a=\{\alpha:\ \veraw M{\alpha}{a\}}$
 \end_inset
 
 
@@ -350,7 +350,7 @@ Inoltre diciamo che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw M\alpha{\boxx a}$
+\begin_inset Formula $\veraw M{\alpha}{\boxx a}$
 \end_inset
 
  se e solo se: 
@@ -361,7 +361,7 @@ Inoltre diciamo che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw M\alpha\dia$
+\begin_inset Formula $\veraw M{\alpha}{\dia}$
 \end_inset
 
  se e solo se: 
@@ -422,7 +422,7 @@ Consideriamo un frame con due stati
 \end_inset
 
  è vero in ogni mondo, ma 
-\begin_inset Formula $\nonveraw M\alpha{\boxx T}$
+\begin_inset Formula $\nonveraw M{\alpha}{\boxx T}$
 \end_inset
 
  
@@ -441,7 +441,7 @@ Validità di N
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\vera F{\boxx\top}$
+\begin_inset Formula $\vera F{\boxx{\top}}$
 \end_inset
 
  se e solo se 
@@ -509,7 +509,7 @@ Considero un frame in cui vale l'antecedente:
 
 \begin_layout Standard
 Con queste ipotesi si ha: 
-\begin_inset Formula $\veraw M\alpha{\boxx{(A\wedge B)}}$
+\begin_inset Formula $\veraw M{\alpha}{\boxx{(A\wedge B)}}$
 \end_inset
 
 
@@ -517,7 +517,7 @@ Con queste ipotesi si ha:
 
 \begin_layout Standard
 infatti 
-\begin_inset Formula $\verins{A\wedge B}=\{\gamma:\ \mbox{\veraw M\gamma{A\wedge B}\}}$
+\begin_inset Formula $\verins{A\wedge B}=\{\gamma:\ \mbox{\veraw M{\gamma}{A\wedge B}\}}$
 \end_inset
 
  = 
@@ -548,14 +548,14 @@ Ora mostro che non vale il conseguente:
 \end_inset
 
  da cui 
-\begin_inset Formula $\nonveraw M\alpha{\boxx A}$
+\begin_inset Formula $\nonveraw M{\alpha}{\boxx A}$
 \end_inset
 
  da qui quindi neppure:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw M\alpha{\boxx{A\wedge\boxx B}}$
+\begin_inset Formula $\nonveraw M{\alpha}{\boxx{A\wedge\boxx B}}$
 \end_inset
 
 
@@ -637,7 +637,7 @@ si ha che
 \end_inset
 
 , infatti 
-\begin_inset Formula $\verins{A\wedge B}=\{\gamma\ :\ \veraw M\gamma{A\wedge B\}}=\{s\ :\ s\in X\ e\ s\in Y\}=\{s\ :\ s\in X\cap Y\}=X\cap Y$
+\begin_inset Formula $\verins{A\wedge B}=\{\gamma\ :\ \veraw M{\gamma}{A\wedge B\}}=\{s\ :\ s\in X\ e\ s\in Y\}=\{s\ :\ s\in X\cap Y\}=X\cap Y$
 \end_inset
 
 
@@ -669,36 +669,36 @@ cioè gli stati in cui è vera
 
 \begin_layout Standard
 Si ha quindi 
-\begin_inset Formula $\veraw M\alpha{\boxx{(A\wedge B)}}$
+\begin_inset Formula $\veraw M{\alpha}{\boxx{(A\wedge B)}}$
 \end_inset
 
  da cui per ipotesi:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw M\alpha{\boa\wedge\boxx b}$
+\begin_inset Formula $\veraw M{\alpha}{\boa\wedge\boxx b}$
 \end_inset
 
  e cioè: 
-\begin_inset Formula $\veraw M\alpha\boa$
+\begin_inset Formula $\veraw M{\alpha}{\boa}$
 \end_inset
 
  e 
-\begin_inset Formula $\veraw M\alpha{\boxx b}$
+\begin_inset Formula $\veraw M{\alpha}{\boxx b}$
 \end_inset
 
  da cui:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\verins A=\{\alpha:\ \veraw M\alpha A\}=X\in N(\alpha)$
+\begin_inset Formula $\verins A=\{\alpha:\ \veraw M{\alpha}A\}=X\in N(\alpha)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\verins B=\{\alpha:\ \veraw M\alpha B\}=Y\in N(\alpha)$
+\begin_inset Formula $\verins B=\{\alpha:\ \veraw M{\alpha}B\}=Y\in N(\alpha)$
 \end_inset
 
 	
@@ -730,7 +730,7 @@ Ts)
 
 \begin_layout Standard
 Supponiamo valga 
-\begin_inset Formula $\veraw M\alpha{\boxx{(a\wedge b)}}$
+\begin_inset Formula $\veraw M{\alpha}{\boxx{(a\wedge b)}}$
 \end_inset
 
  allora: 
@@ -780,7 +780,7 @@ dalla prima, per definizione di
 \end_inset
 
  ottengo 
-\begin_inset Formula $\veraw M\alpha\boa$
+\begin_inset Formula $\veraw M{\alpha}{\boa}$
 \end_inset
 
 
@@ -788,7 +788,7 @@ dalla prima, per definizione di
 
 \begin_layout Standard
 dalla seconda ottengo 
-\begin_inset Formula $\veraw M\alpha{\boxx b}$
+\begin_inset Formula $\veraw M{\alpha}{\boxx b}$
 \end_inset
 
  
@@ -796,7 +796,7 @@ dalla seconda ottengo
 
 \begin_layout Standard
 quindi complessivamente 
-\begin_inset Formula $\veraw M\alpha{\boa\wedge\boxx b}$
+\begin_inset Formula $\veraw M{\alpha}{\boa\wedge\boxx b}$
 \end_inset
 
 
