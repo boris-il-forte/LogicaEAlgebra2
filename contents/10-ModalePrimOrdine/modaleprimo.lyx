@@ -357,7 +357,7 @@ Si dicono domini variabili monotoni i domini per cui vale:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\forall\alpha,\beta\in S\, D_{\alpha}\subseteq D_{\beta}$
+\begin_inset Formula $\forall\alpha,\beta\in S,\,\alpha R\beta,\, D_{\alpha}\subseteq D_{\beta}$
 \end_inset
 
 
@@ -368,7 +368,7 @@ Si dicono domini variabili antimonotoni i domini per cui vale:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\forall\alpha,\beta\in S\, D_{\alpha}\supseteq D_{\beta}$
+\begin_inset Formula $\forall\alpha,\beta\in S,\,\alpha R\beta,\, D_{\alpha}\supseteq D_{\beta}$
 \end_inset
 
 
