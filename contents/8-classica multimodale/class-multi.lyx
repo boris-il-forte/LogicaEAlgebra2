@@ -860,14 +860,14 @@ avremo dunque che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\alpha\boa$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boa}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\alpha{\boxx b}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx b}$
 \end_inset
 
 
@@ -878,7 +878,7 @@ ma non vale:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw\mu\alpha{\boxx{}(A\wedge B)}$
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{\boxx{}(A\wedge B)}$
 \end_inset
 
 
@@ -971,7 +971,7 @@ Ma per modus ponens vale il conseguente, e quindi:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\alpha{\boxx{(A\wedge B)}}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx{(A\wedge B)}}$
 \end_inset
 
 
@@ -1029,7 +1029,7 @@ Se l'antecedente è falso, C è vero, per cui consideriamo il caso in cui
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\alpha{\boa\wedge\boxx b}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boa\wedge\boxx b}$
 \end_inset
 
 
@@ -1077,7 +1077,7 @@ Proprietà dei frame
 \end_layout
 
 \begin_layout Standard
-Un frame si quasi filtro se:
+Un frame si dice quasi filtro se:
 \end_layout
 
 \begin_layout Enumerate
@@ -1919,7 +1919,7 @@ e quindi vale:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{s}}\alpha{\boxx\beta}$
+\begin_inset Formula $\veraw{\mu^{s}}{\alpha}{\boxx{\beta}}$
 \end_inset
 
 
@@ -1930,7 +1930,7 @@ viceversa, se è vero:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{s}}\alpha{\boxx b}$
+\begin_inset Formula $\veraw{\mu^{s}}{\alpha}{\boxx b}$
 \end_inset
 
 
@@ -1941,7 +1941,7 @@ allora avremo che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{s}}\beta b$
+\begin_inset Formula $\veraw{\mu^{s}}{\beta}b$
 \end_inset
 
 , 
@@ -1978,7 +1978,7 @@ e dunque:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{a}}\alpha a$
+\begin_inset Formula $\veraw{\mu^{a}}{\alpha}a$
 \end_inset
 
 
@@ -1986,7 +1986,7 @@ e dunque:
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\veraw{\mu^{s}}\alpha a$
+\begin_inset Formula $\veraw{\mu^{s}}{\alpha}a$
 \end_inset
 
 
@@ -1994,7 +1994,7 @@ Ip)
 
 \begin_layout Standard
 Ts) 
-\begin_inset Formula $\exists\mu^{a}\,:\,\veraw{\mu^{a}}\alpha a\iff\veraw{\mu^{s}}\alpha a$
+\begin_inset Formula $\exists\mu^{a}\,:\,\veraw{\mu^{a}}{\alpha}a\iff\veraw{\mu^{s}}{\alpha}a$
 \end_inset
 
 
@@ -2020,7 +2020,7 @@ supponiamo che valga:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{s}}\alpha{\boxx b}$
+\begin_inset Formula $\veraw{\mu^{s}}{\alpha}{\boxx b}$
 \end_inset
 
 
@@ -2031,7 +2031,7 @@ e quindi:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{s}}\beta b$
+\begin_inset Formula $\veraw{\mu^{s}}{\beta}b$
 \end_inset
 
 
@@ -2064,7 +2064,7 @@ e quindi:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{a}}\alpha{\boxx b}$
+\begin_inset Formula $\veraw{\mu^{a}}{\alpha}{\boxx b}$
 \end_inset
 
 
@@ -2075,7 +2075,7 @@ viceversa, supponiamo di avere:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{a}}\alpha{\boxx b}$
+\begin_inset Formula $\veraw{\mu^{a}}{\alpha}{\boxx b}$
 \end_inset
 
 
@@ -2119,14 +2119,14 @@ da cui si ricavano banalmente:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{s}}\beta b$
+\begin_inset Formula $\veraw{\mu^{s}}{\beta}b$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu^{s}}\alpha{\boxx b}$
+\begin_inset Formula $\veraw{\mu^{s}}{\alpha}{\boxx b}$
 \end_inset
 
 
