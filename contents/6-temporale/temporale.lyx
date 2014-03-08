@@ -3512,7 +3512,7 @@ Per assurdo, supponiamo:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\beta b$
+\begin_inset Formula $\veraw{\mu}{\beta}b$
 \end_inset
 
  per ogni 
@@ -3531,7 +3531,7 @@ allora deve valere
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw\mu\delta b$
+\begin_inset Formula $\nonveraw{\mu}{\delta}b$
 \end_inset
 
  in qualche mondo 
@@ -3712,7 +3712,7 @@ allora, poiché la relazione è transitiva e connessa, abbiamo che
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw\mu\gamma{\boxx b}$
+\begin_inset Formula $\nonveraw{\mu}{\gamma}{\boxx b}$
 \end_inset
 
 
@@ -3723,7 +3723,7 @@ e per questo possiamo dire che vale:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\gamma{\boxx b\implies b}$
+\begin_inset Formula $\veraw{\mu}{\gamma}{\boxx b\implies b}$
 \end_inset
 
 
@@ -3750,7 +3750,7 @@ Poiché in tutti i mondi successivi è vera
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\vera\mu{\boxx{(\boxx{b\implies b)}}}$
+\begin_inset Formula $\vera{\mu}{\boxx{(\boxx{b\implies b)}}}$
 \end_inset
 
 
@@ -3762,7 +3762,7 @@ Però applicando a questo punto il modus ponens all'assioma Z e alla precedente
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\vera\mu{\diam{\boxx b}\implies\boxx b}$
+\begin_inset Formula $\vera{\mu}{\diam{\boxx b}\implies\boxx b}$
 \end_inset
 
 
@@ -3793,7 +3793,7 @@ Ma allora in
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\alpha{\diam{\boxx b}}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\diam{\boxx b}}$
 \end_inset
 
  
@@ -3812,7 +3812,7 @@ ma allora per Modus Ponens, è vale anche:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\alpha{\boxx b}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\boxx b}$
 \end_inset
 
 
@@ -3860,7 +3860,7 @@ Dove all'assioma Z vengono sostituiti rispettivamente:
 
 \begin_layout Itemize
 Dum: 
-\begin_inset Formula $\boxx{(\boa\implies a)\implies(\diam\boa\implies\boa)}$
+\begin_inset Formula $\boxx{((\boa\implies a)\implies a)\implies(\diam{\boa}\implies\boa)}$
 \end_inset
 
 
@@ -3868,7 +3868,7 @@ Dum:
 
 \begin_layout Itemize
 X: 
-\begin_inset Formula $\boxx\boa\implies\boa$
+\begin_inset Formula $\boxx{\boa}\implies\boa$
 \end_inset
 
 
