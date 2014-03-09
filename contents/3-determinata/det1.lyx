@@ -1127,6 +1127,61 @@ lightning
 \end_layout
 
 \begin_layout Section
+Modello canonico
+\end_layout
+
+\begin_layout Standard
+Si dice modello canonico di una logica 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ il modello:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M^{\Lambda}(S^{\Lambda},R^{\Lambda},V^{\Lambda})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+dove:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S^{\Lambda}=\{\alpha\subseteq f.b.f\,|\,\alpha\,\Lambda-consistente\, massimale\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\alpha,\,\beta)\in R^{\Lambda}\iff\{\alpha\subseteq f.b.f\,|\,\boa\in\alpha\}\subseteq\beta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V^{\Lambda}(A)=\{\alpha\in S^{\Lambda}|\, A\in\alpha\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+si dice frame canonico il frame:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R^{\Lambda}(S^{\Lambda},R^{\Lambda})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Lemma di Verità
 \end_layout
 

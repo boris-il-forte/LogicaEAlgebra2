@@ -439,40 +439,6 @@ Varianti di
 \end_layout
 
 \begin_layout Standard
-Indebolendo la logica 
-\begin_inset Formula $\mathcal{AL}$
-\end_inset
-
- si ottengono le logiche poco descrittive della famiglia 
-\begin_inset Formula $\mathcal{FL}$
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $\mathcal{FL}$
-\end_inset
-
-- è ottenuta da 
-\begin_inset Formula $\mathcal{AL}$
-\end_inset
-
- eliminando la negazione atomica 
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $\mathcal{FL}_{0}$
-\end_inset
-
- è ottenuta da 
-\begin_inset Formula $\mathcal{FL}$
-\end_inset
-
-- eliminando anche la quantificazione esistenziale
-\end_layout
-
-\begin_layout Standard
 La logica 
 \begin_inset Formula $\mathcal{AL}$
 \end_inset
@@ -847,7 +813,7 @@ Definizione:
 Una definizione associa a un concetto atomico un concetto complesso (non
  atomico) es.
  
-\begin_inset Formula $Parent\equiv Father\sqcup Mather$
+\begin_inset Formula $Parent\equiv Father\sqcup Mother$
 \end_inset
 
 , il concetto atomico viene detto anche simbolo nominale
@@ -1240,6 +1206,43 @@ Le logiche descrittive più semplici appartengono alla famiglia della features
  inibendo i costruttori di concetto più complessi.
 \end_layout
 
+\begin_layout Itemize
+\begin_inset Formula $\mathcal{FL}_{-}$
+\end_inset
+
+ è ottenuta da 
+\begin_inset Formula $\mathcal{AL}$
+\end_inset
+
+ eliminando la quantificazione esistenziale
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathcal{FL}_{\bot}$
+\end_inset
+
+ è ottenuta da 
+\begin_inset Formula $\mathcal{FL}_{-}$
+\end_inset
+
+ eliminando anche la negazione atomica
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathcal{FL}_{0}$
+\end_inset
+
+ è ottenuta da 
+\begin_inset Formula $\mathcal{FL}_{\bot}$
+\end_inset
+
+ eliminando anche il concetto insoddisfacibile 
+\begin_inset Formula $\bot$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 La più semplice di queste è 
 \begin_inset Formula $\mathcal{FL_{\mbox{0}}}$
@@ -1403,103 +1406,34 @@ allora
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Subsection
-Varianti
-\end_layout
-
-\begin_layout Standard
-Ad 
-\begin_inset Formula $\mathcal{AL}_{0}$
-\end_inset
-
- può essere aggiunto il concetto 
-\begin_inset Formula $\bot$
-\end_inset
-
-, ottenendo 
-\begin_inset Formula $\mathcal{AL_{\bot}}$
-\end_inset
-
- e la forma normale viene a essere la stessa di prima a cui si aggiunge
- l'opportunità per un concetto di essere o
-\begin_inset Formula $\bot$
+\begin_inset Newline newline
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Notiamo che 
-\begin_inset Formula $\bot\sqsubseteq C$
+Si può notare che ogni concetto di 
+\begin_inset Formula $FL_{0}$
 \end_inset
 
-, per ogni 
-\begin_inset Formula $C$
-\end_inset
-
-
+ è soddisfacibile.
 \end_layout
 
 \begin_layout Standard
-Ad 
-\begin_inset Formula $AL_{0}$
-\end_inset
-
- si può aggiungere la negazione di concetti atomici ottenendo 
-\begin_inset Formula $\mathcal{AL}_{\neg}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Notiamo che 
-\begin_inset Formula $\bot\equiv A\wedge\neg A$
-\end_inset
-
-, quindi 
-\begin_inset Formula $\mathcal{AL_{\neg}}$
-\end_inset
-
- contiene strettamente
-\begin_inset Formula $\mathcal{AL_{\mbox{0}}}$
-\end_inset
-
-	
-\end_layout
-
-\begin_layout Standard
-In 
-\begin_inset Formula $ALC$
-\end_inset
-
- per verificare se 
-\begin_inset Formula $C\sqsubseteq D$
-\end_inset
-
- possiamo controllare che 
-\begin_inset Formula $C\sqcap\neg D$
-\end_inset
-
- sia insoddisfacibile
-\end_layout
-
-\begin_layout Standard
-Per controllare 
-\begin_inset Formula $C\equiv D$
-\end_inset
-
- possiamo quindi testare 
-\begin_inset Formula $C\sqcap\neg D$
+Algoritmi simili a quello mostrato sopra si applicano anche a 
+\begin_inset Formula $FL_{\bot}$
 \end_inset
 
  e 
-\begin_inset Formula $D\sqcap\neg C$
+\begin_inset Formula $FL_{-}$
 \end_inset
 
-.
+, a patto di gestire correttamente il concetto 
+\begin_inset Formula $\bot$
+\end_inset
+
+ e la presenza di congiunzioni di concetti opposti.
 \end_layout
 
 \begin_layout Section
