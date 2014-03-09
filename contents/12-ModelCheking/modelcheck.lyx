@@ -932,17 +932,17 @@ La semantica delle formule di cammino è la seguente:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\vera{\mu,\pi^{i}}{\until{\varphi}{\psi}}\iff\exists j\geq i\,:\,\vera{\mu,\pi^{j}}{\varphi\,\wedge\,\forall k\,:\, i<k<j}\,\vera{\mu,\,\pi^{k}}{\psi}$
+\begin_inset Formula $\vera{\mu,\pi^{i}}{\until{\varphi}{\psi}}\iff\exists j\geq i\,:\,\vera{\mu,\pi^{j}}{\psi}\,\wedge\,\forall k\,:\, i<k<j\,\vera{\mu,\,\pi^{k}}{\varphi}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\vera{\mu,\pi^{i}}{\until{\varphi}{\psi}}\iff\exists j\geq i\,:\,\vera{\mu,\pi^{j}}{\varphi\,\wedge\,\forall k\,:\, i<k<j}\,\vera{\mu,\,\pi^{k}}{\psi}$
+\begin_inset Formula $\vera{\mu,\pi^{i}}{\release{\varphi}{\psi}}\iff\exists j\geq i\,:\,\nonvera{\mu,\pi^{k}}{\varphi}\,\wedge\,\forall k\,:\, i<k<j\,\vera{\mu,\,\pi^{k}}{\psi}$
 \end_inset
 
- <<sbagliati gli ultimi due, controllare>>
+ 
 \end_layout
 
 \begin_layout Section
