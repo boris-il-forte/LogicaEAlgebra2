@@ -965,6 +965,91 @@ logica normale temporale
 
 \end_layout
 
+\begin_layout Subsection
+Logica Lineare temporale
+\end_layout
+
+\begin_layout Standard
+La logica lineare temporale è una logica che si applica al frame (
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+, <).
+ Per definirla dobbiamo aggiungere agli assiomi della logica temporale i
+ seguenti assiomi:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $D_{F}:\,\posf{\top}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $D_{P}:\,\posp{\top}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Z_{P}:\,\necp{(\necp a\implies a)}\implies(\posp{\necp a}\implies\necp a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Z_{F}:\,\necf{(\necf a\implies a)}\implies(\posf{\necf a}\implies\necf a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se invece si vuole considerare il frame (
+\begin_inset Formula $\omega$
+\end_inset
+
+, <) si deve sostituire a 
+\begin_inset Formula $Z_{P}$
+\end_inset
+
+ l'assioma:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega_{P}:\,\necp{(\necp a\implies a)}\implies\necp a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se invece si vuole considerare il frame (
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+, <) si devono sostituire agli assiomi 
+\begin_inset Formula $Z_{P}$
+\end_inset
+
+ e 
+\begin_inset Formula $Z_{F}$
+\end_inset
+
+ gli assiomi 
+\begin_inset Formula $X_{P}$
+\end_inset
+
+ e 
+\begin_inset Formula $X_{F}$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 Correttezza, completezza e decidibilità nelle logiche multimodali
 \end_layout
@@ -1040,7 +1125,7 @@ F1)
 
 \begin_layout Standard
 F2) 
-\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necf b\in\Gamma\,\veraw\mu\alpha{\necf b}\implies\veraw\mu\beta b)$
+\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necf b\in\Gamma\,\veraw{\mu}{\alpha}{\necf b}\implies\veraw{\mu}{\beta}b)$
 \end_inset
 
 
@@ -1048,7 +1133,7 @@ F2)
 
 \begin_layout Standard
 F3) 
-\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necp b\in\Gamma\,\veraw\mu\beta{\necp b}\implies\veraw\mu\alpha b)$
+\begin_inset Formula $([\alpha],\,[\beta])\in R'\implies(\forall\necp b\in\Gamma\,\veraw{\mu}{\beta}{\necp b}\implies\veraw{\mu}{\alpha}b)$
 \end_inset
 
 
@@ -1152,14 +1237,14 @@ Preso
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\alpha{\necp A}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\necp A}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw\mu\alpha{\necf A}$
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necf A}$
 \end_inset
 
 
@@ -1174,7 +1259,7 @@ e quindi possiamo scrivere
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw\mu\alpha{\necp A\implies\necf A}$
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necp A\implies\necf A}$
 \end_inset
 
 
@@ -1189,7 +1274,7 @@ Tuttavia l'antecedente di Cont è vero, infatti
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\alpha{\posf{\necp A}}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\posf{\necp A}}$
 \end_inset
 
  
@@ -1208,7 +1293,7 @@ mentre
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw\mu\alpha{\necp A}$
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necp A}$
 \end_inset
 
 
@@ -1406,7 +1491,7 @@ end{tikzpicture}
 
 \begin_layout Standard
 Ip) 
-\begin_inset Formula $\delta=\max\limits _{\eta\in\mathbb{R}}(\veraw\mu\eta{A\,\eta<\delta)}$
+\begin_inset Formula $\delta=\max\limits _{\eta\in\mathbb{R}}(\veraw{\mu}{\eta}{A\,\eta<\delta)}$
 \end_inset
 
 
@@ -1429,15 +1514,15 @@ Ts)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonvera\mu{[P]A}$
+\begin_inset Formula $\nonvera{\mu}{[P]A}$
 \end_inset
 
  da cui 
-\begin_inset Formula $\vera\mu\text{[P]A\implies[F]A}$
+\begin_inset Formula $\vera{\mu}{\text{[P]A\implies[F]A}}$
 \end_inset
 
  da cui 
-\begin_inset Formula $\vera\mu{Cont}$
+\begin_inset Formula $\vera{\mu}{Cont}$
 \end_inset
 
  dato che il conseguente è vero e quindi non devo controllare l'antecedente.
@@ -1451,14 +1536,14 @@ Ts)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\alpha{\necp A}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{\necp A}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw\mu\alpha{\necf A}$
+\begin_inset Formula $\nonveraw{\mu}{\alpha}{\necf A}$
 \end_inset
 
 
@@ -1469,7 +1554,7 @@ Tuttavia l'antecedente di Cont è falso, infatti:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw\mu\delta{\necp A}$
+\begin_inset Formula $\veraw{\mu}{\delta}{\necp A}$
 \end_inset
 
 
@@ -1488,7 +1573,7 @@ ma poiché non può esistere nessun mondo
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonveraw\mu\delta{\posf{\necp A}}$
+\begin_inset Formula $\nonveraw{\mu}{\delta}{\posf{\necp A}}$
 \end_inset
 
 
@@ -1499,7 +1584,7 @@ e quindi non potrà che essere che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonvera\mu{_{\delta}\necp A\implies\posf{\necp A}}$
+\begin_inset Formula $\nonvera{\mu}{_{\delta}\necp A\implies\posf{\necp A}}$
 \end_inset
 
 
@@ -1518,7 +1603,7 @@ Poiché
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\nonvera\mu{_{\alpha}\boxx{(\necp A\implies\posf{\necp A})}}$
+\begin_inset Formula $\nonvera{\mu}{_{\alpha}\boxx{(\necp A\implies\posf{\necp A})}}$
 \end_inset
 
 
@@ -1526,7 +1611,7 @@ Poiché
 
 \begin_layout Standard
 e quindi 
-\begin_inset Formula $\veraw\mu\alpha{Cont}$
+\begin_inset Formula $\veraw{\mu}{\alpha}{Cont}$
 \end_inset
 
 , inoltre 
@@ -1538,11 +1623,11 @@ e quindi
 \end_inset
 
  dato che l'antecedente è falso perché se 
-\begin_inset Formula $\nonvera\mu{_{\delta}\necp A\implies\posf{\necp A}}$
+\begin_inset Formula $\nonvera{\mu}{_{\delta}\necp A\implies\posf{\necp A}}$
 \end_inset
 
 , allora anche 
-\begin_inset Formula $\nonvera\mu{_{\delta}\boxx{}\necp A\implies\posf{\necp A}}$
+\begin_inset Formula $\nonvera{\mu}{_{\delta}\boxx{}\necp A\implies\posf{\necp A}}$
 \end_inset
 
 
@@ -1796,7 +1881,7 @@ La funzione di valutazione V si da in modo consueto, tranne che per i seguenti:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw Mj\circ a$
+\begin_inset Formula $\veraw Mj{\circ}a$
 \end_inset
 
 , se e solo se 
@@ -1807,7 +1892,7 @@ La funzione di valutazione V si da in modo consueto, tranne che per i seguenti:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw Mj\boa$
+\begin_inset Formula $\veraw Mj{\boa}$
 \end_inset
 
 , se e solo se 
@@ -2536,7 +2621,7 @@ Le relazioni che descrivono il comportamento dei programmi composti sono
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $R_{a?}\equiv\{(s,\, s)\,|\,\veraw\mu sa\}$
+\begin_inset Formula $R_{a?}\equiv\{(s,\, s)\,|\,\veraw{\mu}sa\}$
 \end_inset
 
 

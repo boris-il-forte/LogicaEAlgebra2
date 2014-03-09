@@ -965,6 +965,67 @@ logica normale temporale
 
 \end_layout
 
+\begin_layout Subsection
+Logica Lineare temporale
+\end_layout
+
+\begin_layout Standard
+La logica lineare temporale è una logica che si applica al frame (
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+, <).
+ Per definirla dobbiamo aggiungere agli assiomi della logica temporale i
+ seguenti assiomi:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $D_{F}:\,\posf{\top}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $D_{P}:\,\posp{\top}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Z_{P}:\,\necp{(\necp a\implies a)}\implies(\posp{\necp a}\implies\necp a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Z_{F}:\,\necf{(\necf a\implies a)}\implies(\posf{\necf a}\implies\necf a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se invece si vuole considerare il frame (
+\begin_inset Formula $\omega$
+\end_inset
+
+, <) si deve sostituire a 
+\begin_inset Formula $Z_{P}$
+\end_inset
+
+ l'assioma:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega_{P}:\,\necp{(\necp a\implies a)}\implies\necp a$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Correttezza, completezza e decidibilità nelle logiche multimodali
 \end_layout
@@ -2064,6 +2125,66 @@ CTL usa i seguenti operatori modali:
 \end_layout
 
 \begin_layout Standard
+in cui 
+\begin_inset Formula $F$
+\end_inset
+
+ sta per 
+\begin_inset Quotes eld
+\end_inset
+
+finally
+\begin_inset Quotes erd
+\end_inset
+
+ cioè 
+\begin_inset Quotes eld
+\end_inset
+
+prima o poi
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Formula $G$
+\end_inset
+
+ sta per 
+\begin_inset Quotes eld
+\end_inset
+
+generally
+\begin_inset Quotes erd
+\end_inset
+
+ cioè 
+\begin_inset Quotes eld
+\end_inset
+
+sempre
+\begin_inset Quotes erd
+\end_inset
+
+ e 
+\begin_inset Formula $X$
+\end_inset
+
+ sta per 
+\begin_inset Quotes eld
+\end_inset
+
+next
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ cioè nello stato successivo
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $[\forall F]a$
 \end_inset
 
@@ -2123,7 +2244,7 @@ CTL usa i seguenti operatori modali:
 \begin_inset Formula $\forall(a\mathcal{U}b)$
 \end_inset
 
-: in tutti i rami vale 
+: in tutte le sequenze di stati successive all'attuale vale 
 \begin_inset Formula $a\mathcal{U}b$
 \end_inset
 
@@ -2134,7 +2255,7 @@ CTL usa i seguenti operatori modali:
 \begin_inset Formula $\exists(a\mathcal{U}b)$
 \end_inset
 
-: in almeno un ramo vale 
+: in almeno una sequenza di stati successiva all'attuale in cui vale 
 \begin_inset Formula $a\mathcal{U}b$
 \end_inset
 
@@ -2186,21 +2307,21 @@ E infatti si dimostra facilmente che:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $[\forall F]a\equiv\neg\exists(\top\mathcal{U\neg}a)$
+\begin_inset Formula $[\forall G]a\equiv\neg\exists(\top\mathcal{U\neg}a)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $[\exists F]a\equiv\neg\forall(\top\mathcal{U\neg}a)$
+\begin_inset Formula $[\exists G]a\equiv\neg\forall(\top\mathcal{U\neg}a)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $[\exists xX]a\equiv\neg[\forall X]\neg a$
+\begin_inset Formula $[\exists X]a\equiv\neg[\forall X]\neg a$
 \end_inset
 
 
@@ -2581,14 +2702,14 @@ E' quindi necessario cambiare pure la semantica della logica:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}S{[\alpha]a}\iff\forall T\subseteq S\,:\,(\alpha,\, T)\in R_{\alpha}\,\wedge\,\forall t\in T\,\veraw{\mu}ta$
+\begin_inset Formula $\veraw{\mu}s{[\alpha]a}\iff\forall T\subseteq S\,:\,(s,\, T)\in R_{\alpha}\,\wedge\,\forall t\in T\,\veraw{\mu}ta$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\veraw{\mu}S{<\alpha>a}\iff\exists T\subseteq S\,:\,(\alpha,\, T)\in R_{\alpha}\,\wedge\,\forall t\in T\,\veraw{\mu}ta$
+\begin_inset Formula $\veraw{\mu}s{<\alpha>a}\iff\exists T\subseteq S\,:\,(s,\, T)\in R_{\alpha}\,\wedge\,\forall t\in T\,\veraw{\mu}ta$
 \end_inset
 
 
