@@ -732,10 +732,19 @@ abbiamo così dimostrato la chiusura secondo la necessitazione.
 \end_layout
 
 \begin_layout Standard
+Per andare avanti dobbiamo ricavare un'ulteriore schema, supponiamo che
+ valga la seguente:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $\teolm{\Lambda}{a\wedge b\implies c}$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+allora possiamo scrivere:
 \end_layout
 
 \begin_layout Standard
@@ -757,6 +766,10 @@ abbiamo così dimostrato la chiusura secondo la necessitazione.
 \end_inset
 
  -- per la combinazione delle due implicazioni precedenti
+\end_layout
+
+\begin_layout Standard
+Ora che abbiamo ricavato questo schema, terminiamo la dimostrazione:
 \end_layout
 
 \begin_layout Standard
@@ -790,7 +803,7 @@ e così è dimostrato che K è implicato da 3.
 \end_layout
 
 \begin_layout Section
-Decidibilità di una formula
+Deducibilità di una formula
 \end_layout
 
 \begin_layout Standard
