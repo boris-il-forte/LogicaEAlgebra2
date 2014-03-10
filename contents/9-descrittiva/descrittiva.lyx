@@ -4334,7 +4334,7 @@ I vincoli di cardinalità possono allora essere applicati solamente ai ruoli
 \end_layout
 
 \begin_layout Standard
-Si definisce Rolo semplice un ruolo che non è transitivo e non ha sottoruoli
+Si definisce Ruolo semplice un ruolo che non è transitivo e non ha sottoruoli
  transitivi.
 \end_layout
 
